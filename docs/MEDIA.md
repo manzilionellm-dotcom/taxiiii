@@ -9,13 +9,7 @@ Lionel’s coordinator box already has the drop. This repo **cannot see that mac
 | Merged questions | `/workspace/taxiprov/manzi/questions-merged.jsonl` | **1668** lines |
 | Image tree | `/workspace/taxiprov/manzi/images/` | **2877** files, ~**389 MB** (`T1/` `T2/` `T3/` `bok3/` `utbildning/` `teori…`) |
 
-About **132** questions already carry `imageUrl` values like:
-
-```
-media/T3/lagstiftning/exam.php-filer/101.jpg
-```
-
-Many Lagstiftning / Säkerhet items are **PDF-only** (no separate jpg yet). Import every available raster anyway. **Never invent a drawing** to fill the gap.
+About **225** questions carry `imageUrl` values: **132** Manzi rasters like `media/T3/lagstiftning/exam.php-filer/101.jpg`, plus **93** authentic PDF-page JPEGs for Lagstiftning / Säkerhet stems that say «på bilden» (`/media/pdf-pages/LAGSTIFNING-{n}/page-{qq}.jpg` and `/media/pdf-pages/S_KERHET-{n}/page-{qq}.jpg`). Mapping: `data/pdf-page-links.json`. **Never invent a drawing** to fill a gap.
 
 `rs-yt-lag1-gul-linje` (research / YouTube): use a real Manzi Lagstiftning photo of *gul heldragen linje* **if** the imported bank has one. If it does not, **show no image**. The decorative `gul-heldragen-linje.svg` is deleted and must not come back.
 
@@ -48,7 +42,7 @@ Env overrides: `MANZI_JSONL`, `MANZI_IMAGES`.
 
 ## Upload to Vercel Blob (required for production)
 
-1. In the Vercel project **taxiiii**, Storage → Blob store `store_VmgBARxpqkgZrT73` (already has the 1993 private rasters).
+1. In the Vercel project **taxiiii**, Storage → Blob store `store_VmgBARxpqkgZrT73` (already has the **2086** private rasters: 1993 T3/… + 93 `pdf-pages/`).
 2. Set `BLOB_READ_WRITE_TOKEN` on Production + Preview (Settings → Environment Variables). Locally: `vercel env pull` or paste the token.
 3. From the machine that has the 389 MB tree **after** `npm run import -- --coordinator`:
 
@@ -65,8 +59,8 @@ From `data/media-report.json` / the import log:
 - [ ] `rastersCopied` ≈ 2877 (minus PDFs / non-images)
 - [ ] `questionsTotal` = compiled research + Manzi QCM that have an answer key (source JSONL is 1668 + research bank)
 - [ ] `questionsWithImageUrl` = Manzi rasters linked to compiled items (`/media/…`, never `gul-heldragen-linje.svg`)
-- [ ] `data/media-manifest.json` ≈ 1993 private Blob entries (commit the manifest, not the 389 MB tree)
-- [ ] `questionsMissingFile` explained (PDF-only or path mismatch)
+- [ ] `data/media-manifest.json` ≈ **2086** private Blob entries (1993 T3/… + 93 PDF pages; commit the manifest, not the binaries)
+- [ ] `questionsMissingFile` explained (research-* without a PDF page, or path mismatch)
 - [ ] `gulLinje` is a `/media/T3/…jpg` **or** `null` — never `gul-heldragen-linje.svg`
 
 ```bash

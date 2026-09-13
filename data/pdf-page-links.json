@@ -1,0 +1,572 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-13T21:50:58.000Z",
+  "count": 93,
+  "blobHost": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/",
+  "note": "Coordinator uploaded 93 private PDF-page JPEGs. This environment could not read BLOB_READ_WRITE_TOKEN (private Blob 403). imageUrl values follow the coordinator rule: LAGSTIFNING-{d}-Qn → /media/pdf-pages/LAGSTIFNING-{d}/page-{nn}.jpg; S_KERHET|SAKERHET-{d}-Qn → /media/pdf-pages/S_KERHET-{d}/page-{nn}.jpg. No stems, options, or answers were invented.",
+  "mustFix": [
+    "S_KERHET-2-Q11",
+    "S_KERHET-4-Q34",
+    "S_KERHET-7-Q37"
+  ],
+  "links": [
+    {
+      "id": "LAGSTIFNING-1-Q1",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-01.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-01.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-1/page-01.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-1-Q2",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-02.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-02.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-1/page-02.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-1-Q11",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-11.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-11.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-1/page-11.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-1-Q12",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-12.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-12.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-1/page-12.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-1-Q13",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-13.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-13.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-1/page-13.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-1-Q21",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-21.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-21.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-1/page-21.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-1-Q40",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-40.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-40.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-1/page-40.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-2-Q4",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-2/page-04.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-04.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-2/page-04.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-2-Q12",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-2/page-12.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-12.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-2/page-12.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-2-Q23",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-2/page-23.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-23.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-2/page-23.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-2-Q33",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-2/page-33.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-33.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-2/page-33.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-2-Q35",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-2/page-35.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-35.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-2/page-35.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-3-Q3",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-3/page-03.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-03.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-3/page-03.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-3-Q4",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-3/page-04.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-04.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-3/page-04.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-3-Q5",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-3/page-05.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-05.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-3/page-05.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-3-Q14",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-3/page-14.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-14.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-3/page-14.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-3-Q16",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-3/page-16.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-16.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-3/page-16.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-3-Q22",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-3/page-22.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-22.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-3/page-22.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-3-Q34",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-3/page-34.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-34.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-3/page-34.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-4-Q10",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-4/page-10.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-4/page-10.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-4/page-10.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-4-Q38",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-4/page-38.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-4/page-38.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-4/page-38.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-4-Q40",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-4/page-40.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-4/page-40.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-4/page-40.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-5-Q1",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-5/page-01.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-01.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-5/page-01.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-5-Q8",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-5/page-08.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-08.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-5/page-08.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-5-Q23",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-5/page-23.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-23.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-5/page-23.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-5-Q24",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-5/page-24.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-24.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-5/page-24.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-5-Q32",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-5/page-32.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-32.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-5/page-32.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-5-Q35",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-5/page-35.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-35.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-5/page-35.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-5-Q38",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-5/page-38.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-38.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-5/page-38.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-6-Q6",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-6/page-06.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-06.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-6/page-06.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-6-Q15",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-6/page-15.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-15.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-6/page-15.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-6-Q18",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-6/page-18.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-18.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-6/page-18.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-6-Q20",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-6/page-20.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-20.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-6/page-20.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-6-Q22",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-6/page-22.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-22.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-6/page-22.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-6-Q23",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-6/page-23.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-23.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-6/page-23.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-6-Q35",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-6/page-35.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-35.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-6/page-35.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-6-Q39",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-6/page-39.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-39.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-6/page-39.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q1",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-01.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-01.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-01.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q16",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-16.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-16.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-16.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q20",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-20.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-20.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-20.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q21",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-21.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-21.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-21.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q25",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-25.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-25.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-25.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q26",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-26.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-26.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-26.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q29",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-29.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-29.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-29.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q32",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-32.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-32.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-32.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-7-Q37",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-37.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-37.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-7/page-37.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q3",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-03.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-03.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-03.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q4",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-04.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-04.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-04.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q6",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-06.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-06.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-06.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q9",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-09.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-09.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-09.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q12",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-12.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-12.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-12.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q14",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-14.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-14.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-14.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q17",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-17.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-17.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-17.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q19",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-19.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-19.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-19.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q23",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-23.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-23.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-23.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q24",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-24.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-24.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-24.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q47",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-47.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-47.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-47.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q49",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-49.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-49.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-49.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q50",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-50.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-50.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-50.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q52",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-52.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-52.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-52.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q54",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-54.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-54.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-54.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q55",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-55.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-55.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-55.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q56",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-56.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-56.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-56.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q57",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-57.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-57.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-57.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q60",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-60.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-60.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-60.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q61",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-61.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-61.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-61.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q63",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-63.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-63.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-63.jpg"
+    },
+    {
+      "id": "LAGSTIFNING-8-Q64",
+      "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-64.jpg",
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-64.jpg",
+      "logicalKey": "pdf-pages/LAGSTIFNING-8/page-64.jpg"
+    },
+    {
+      "id": "SAKERHET-1-Q9",
+      "imageUrl": "/media/pdf-pages/S_KERHET-1/page-09.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-1/page-09.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-1/page-09.jpg"
+    },
+    {
+      "id": "SAKERHET-1-Q16",
+      "imageUrl": "/media/pdf-pages/S_KERHET-1/page-16.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-1/page-16.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-1/page-16.jpg"
+    },
+    {
+      "id": "SAKERHET-1-Q17",
+      "imageUrl": "/media/pdf-pages/S_KERHET-1/page-17.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-1/page-17.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-1/page-17.jpg"
+    },
+    {
+      "id": "SAKERHET-1-Q27",
+      "imageUrl": "/media/pdf-pages/S_KERHET-1/page-27.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-1/page-27.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-1/page-27.jpg"
+    },
+    {
+      "id": "SAKERHET-1-Q33",
+      "imageUrl": "/media/pdf-pages/S_KERHET-1/page-33.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-1/page-33.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-1/page-33.jpg"
+    },
+    {
+      "id": "S_KERHET-8-Q20",
+      "imageUrl": "/media/pdf-pages/S_KERHET-8/page-20.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-8/page-20.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-8/page-20.jpg"
+    },
+    {
+      "id": "S_KERHET-8-Q38",
+      "imageUrl": "/media/pdf-pages/S_KERHET-8/page-38.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-8/page-38.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-8/page-38.jpg"
+    },
+    {
+      "id": "S_KERHET-4-Q3",
+      "imageUrl": "/media/pdf-pages/S_KERHET-4/page-03.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-4/page-03.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-4/page-03.jpg"
+    },
+    {
+      "id": "S_KERHET-4-Q26",
+      "imageUrl": "/media/pdf-pages/S_KERHET-4/page-26.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-4/page-26.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-4/page-26.jpg"
+    },
+    {
+      "id": "S_KERHET-4-Q33",
+      "imageUrl": "/media/pdf-pages/S_KERHET-4/page-33.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-4/page-33.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-4/page-33.jpg"
+    },
+    {
+      "id": "S_KERHET-4-Q34",
+      "imageUrl": "/media/pdf-pages/S_KERHET-4/page-34.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-4/page-34.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-4/page-34.jpg"
+    },
+    {
+      "id": "S_KERHET-7-Q1",
+      "imageUrl": "/media/pdf-pages/S_KERHET-7/page-01.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-7/page-01.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-7/page-01.jpg"
+    },
+    {
+      "id": "S_KERHET-7-Q10",
+      "imageUrl": "/media/pdf-pages/S_KERHET-7/page-10.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-7/page-10.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-7/page-10.jpg"
+    },
+    {
+      "id": "S_KERHET-7-Q25",
+      "imageUrl": "/media/pdf-pages/S_KERHET-7/page-25.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-7/page-25.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-7/page-25.jpg"
+    },
+    {
+      "id": "S_KERHET-7-Q30",
+      "imageUrl": "/media/pdf-pages/S_KERHET-7/page-30.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-7/page-30.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-7/page-30.jpg"
+    },
+    {
+      "id": "S_KERHET-7-Q33",
+      "imageUrl": "/media/pdf-pages/S_KERHET-7/page-33.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-7/page-33.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-7/page-33.jpg"
+    },
+    {
+      "id": "S_KERHET-7-Q37",
+      "imageUrl": "/media/pdf-pages/S_KERHET-7/page-37.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-7/page-37.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-7/page-37.jpg"
+    },
+    {
+      "id": "S_KERHET-5-Q9",
+      "imageUrl": "/media/pdf-pages/S_KERHET-5/page-09.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-5/page-09.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-5/page-09.jpg"
+    },
+    {
+      "id": "S_KERHET-6-Q10",
+      "imageUrl": "/media/pdf-pages/S_KERHET-6/page-10.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-6/page-10.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-6/page-10.jpg"
+    },
+    {
+      "id": "S_KERHET-2-Q11",
+      "imageUrl": "/media/pdf-pages/S_KERHET-2/page-11.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-2/page-11.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-2/page-11.jpg"
+    },
+    {
+      "id": "S_KERHET-2-Q19",
+      "imageUrl": "/media/pdf-pages/S_KERHET-2/page-19.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-2/page-19.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-2/page-19.jpg"
+    },
+    {
+      "id": "S_KERHET-2-Q23",
+      "imageUrl": "/media/pdf-pages/S_KERHET-2/page-23.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-2/page-23.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-2/page-23.jpg"
+    },
+    {
+      "id": "S_KERHET-3-Q9",
+      "imageUrl": "/media/pdf-pages/S_KERHET-3/page-09.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-3/page-09.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-3/page-09.jpg"
+    },
+    {
+      "id": "S_KERHET-3-Q10",
+      "imageUrl": "/media/pdf-pages/S_KERHET-3/page-10.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-3/page-10.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-3/page-10.jpg"
+    },
+    {
+      "id": "S_KERHET-9-Q28",
+      "imageUrl": "/media/pdf-pages/S_KERHET-9/page-28.jpg",
+      "pathname": "media/pdf-pages/S_KERHET-9/page-28.jpg",
+      "logicalKey": "pdf-pages/S_KERHET-9/page-28.jpg"
+    }
+  ]
+}
