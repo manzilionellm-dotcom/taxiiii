@@ -23,6 +23,10 @@ KörkortGO makes casual copy, scrape, and screenshot-and-share harder. It does *
 
 Treat this as **friction + legal notice**, not DRM.
 
+## Android (FLAG_SECURE)
+
+The Capacitor APK sets `WindowManager.LayoutParams.FLAG_SECURE` on the activity. Android then blocks most screenshots and Recents thumbnails. Rebuild after `cap sync` with `npm run apk` so [scripts/patch-android.mjs](../scripts/patch-android.mjs) re-applies the flag. Details: [ANDROID.md](ANDROID.md).
+
 ## Production
 
 Set `SESSION_SECRET` (long random). The HMAC signs cookies and media tokens. The in-memory rate limiter is per instance (fine for a single Vercel region demo; use Redis/Upstash if you scale out).

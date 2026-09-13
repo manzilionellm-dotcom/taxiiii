@@ -7,6 +7,11 @@ export const BRAND = {
   signature: "by MZ",
   slogan: "Förstå teorin. Klara provet.",
   keyMessage: "Lär dig på svenska. Förstå på ditt språk.",
+  native: {
+    appId: "se.mz.korkortgo",
+    /** Public production host. Override with CAPACITOR_SERVER_URL when building the APK. */
+    serverUrl: "https://taxiiii.vercel.app",
+  },
   tracks: {
     b: {
       id: "b" as const,

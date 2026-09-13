@@ -1,11 +1,13 @@
-# Native wrap (future)
+# Native wrap (Android shipped)
 
-The web stack cannot mark the framebuffer as non-capturable. If KörkortGO is later wrapped:
+KörkortGO Android is a **Capacitor 7** WebView (`se.mz.korkortgo`) that loads the Vercel Next.js app. See [ANDROID.md](ANDROID.md) to install or rebuild the APK.
 
-| Platform | API | Note |
+The web stack cannot mark the framebuffer as non-capturable. Native flags add a layer:
+
+| Platform | API | Status |
 |---|---|---|
-| Android (Capacitor / TWA / WebView) | `WindowManager.LayoutParams.FLAG_SECURE` | Blocks most system screenshots and recents previews. Set on the Activity that hosts the WebView. |
-| iOS (Capacitor / WKWebView) | Screen-capture notifications (`UIScreen.capturedDidChangeNotification`) + prefer not to advertise ReplayKit | You can blur the native layer when `isCaptured` is true. There is no public equivalent of FLAG_SECURE. |
-| TWA | Same as Android FLAG_SECURE on the Trusted Web Activity | Still does nothing to a second phone photographing the glass. |
+| Android (Capacitor WebView) | `WindowManager.LayoutParams.FLAG_SECURE` on `MainActivity` | **Shipped** — `scripts/patch-android.mjs` |
+| iOS (Capacitor / WKWebView) | `UIScreen.capturedDidChangeNotification` + blur | Not built yet |
+| TWA | Same FLAG_SECURE on the Trusted Web Activity | Alternative; Capacitor is the current APK |
 
-Keep the web overlay + signed media even after a native wrap. Native flags are an extra layer, not a replacement.
+Keep the web overlay + signed media. Native flags are an extra layer, not a replacement. A second camera pointed at the glass is still possible.

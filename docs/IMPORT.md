@@ -31,6 +31,8 @@ npm run import -- --manzi /path/manzi.jsonl --research /path/research.jsonl --im
 
 Swedish in research `sv` and Manzi `stem_sv` is copied **word for word**.
 
+The Android APK does not bundle the bank. After Vercel is live it loads questions from `/api/questions` on `native.serverUrl`. Drop the full JSONL here, compile, deploy — the APK picks up the new bank without a Play rebuild if you use the remote WebView host.
+
 ## Research schema
 
 ```json

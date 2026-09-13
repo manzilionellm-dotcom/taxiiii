@@ -40,3 +40,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Capacitor / Android build output (sources under android/ are committed)
+android/app/build/
+android/app/.cxx/
+android/build/
+android/.gradle/
+android/local.properties
+android/captures/
+android/.idea/
+*.iml
+*.apk
+*.aab
+!releases/*.apk

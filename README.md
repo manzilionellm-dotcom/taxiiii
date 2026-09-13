@@ -80,6 +80,16 @@ Auth for the MVP is a local profile (onboarding + settings). Progress tables are
 
 i18n dictionaries live in `lib/i18n/{sv,fr}.ts` and pull brand/category strings from `lib/branding.ts`. Add `ar` later by extending `LOCALES` and a new dictionary — question content stays Swedish-first.
 
+## Android APK
+
+Installable debug APK: [`releases/KorkortGO-by-MZ-debug.apk`](releases/KorkortGO-by-MZ-debug.apk) (app id `se.mz.korkortgo`, label **KörkortGO**).
+
+1. On the phone enable **Install unknown apps** for the browser/Files app.
+2. Download the APK and open it → Install.
+3. The WebView loads `https://taxiiii.vercel.app` (override with `CAPACITOR_SERVER_URL`). Screenshot capture is blocked with **FLAG_SECURE**.
+
+Rebuild: `npm run apk` (needs Android SDK + JDK). Full steps: [docs/ANDROID.md](docs/ANDROID.md).
+
 ## Deploy
 
 See [docs/DEPLOY.md](docs/DEPLOY.md). Framework: Next.js 16 on Vercel project **taxiiii**.
@@ -96,6 +106,6 @@ Shipped on quiz, mock exam, Calcul, cloze, and tutor chat:
 4. **Scrape friction** — the full bank is `server-only`. Clients receive a **per-session slice** (study 6–10, exam 8) from `/api/questions`. Meta mode returns ids + topics only. APIs are rate-limited. `questions.jsonl` is not in `public/`.
 5. **Headers** — CSP (`frame-ancestors 'none'`), `X-Frame-Options: DENY`, `Cache-Control: private, no-store` on APIs and media.
 6. **Legal UX** — ToS on onboarding / settings / nav: redistribution of the bank is forbidden. Rapid hide/capture patterns show a soft warning.
-7. **Native later** — [docs/ARCH-NATIVE.md](docs/ARCH-NATIVE.md) notes `FLAG_SECURE` (Android) and iOS screen-capture APIs if you wrap with Capacitor/TWA.
+7. **Android APK** — Capacitor WebView + `FLAG_SECURE` (see [docs/ANDROID.md](docs/ANDROID.md)). iOS capture APIs are still future.
 
 Limits: a determined user can still photograph the screen, dump the session JSON from DevTools, or ignore the overlay. That is why the README does not promise a lock, only layered friction. Details: [docs/CONTENT-PROTECTION.md](docs/CONTENT-PROTECTION.md).

@@ -16,7 +16,7 @@ In the Vercel dashboard (team **manzi's projects**):
    - `DATABASE_URL` only after you provision Postgres
    - `SESSION_SECRET` (required in production — signs cookies + media URLs)
 
-The app builds and runs **without** a database. Progress is stored in the browser. Questions are loaded **per session** from `/api/questions` (the compiled bank stays on the server).
+The app builds and runs **without** a database. Progress is stored in the browser. Questions are loaded **per session** from `/api/questions` (the compiled bank stays on the server). The Android APK is a Capacitor WebView pointed at this host — see [ANDROID.md](ANDROID.md).
 
 ## Production checklist
 
