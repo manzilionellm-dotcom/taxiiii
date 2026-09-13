@@ -53,20 +53,14 @@ async function readBlobMedia(key: string) {
   if (!entry?.url || !process.env.BLOB_READ_WRITE_TOKEN) return null;
   try {
     const { get } = await import("@vercel/blob");
-    const result = await get(entry.url);
-    if (!result) return null;
-    const stream =
-      result && typeof result === "object" && "stream" in result
-        ? (result as { stream: ReadableStream }).stream
-        : result;
-    if (stream && typeof (stream as ReadableStream).getReader === "function") {
-      const buffer = Buffer.from(await new Response(stream as ReadableStream).arrayBuffer());
-      return {
-        bytes: new Uint8Array(buffer),
-        type: entry.contentType || contentTypeFor(logical),
-        size: buffer.byteLength,
-      };
-    }
+    const result = await get(entry.url, { access: "private" });
+    if (!result || result.statusCode !== 200 || !result.stream) return null;
+    const buffer = Buffer.from(await new Response(result.stream).arrayBuffer());
+    return {
+      bytes: new Uint8Array(buffer),
+      type: result.blob.contentType || entry.contentType || contentTypeFor(logical),
+      size: buffer.byteLength,
+    };
   } catch {
     return null;
   }
