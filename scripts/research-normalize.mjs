@@ -77,6 +77,36 @@ export function coerceTrap(trap) {
   return typeof trap === "string" && trap.trim() ? trap.trim() : undefined;
 }
 
+/**
+ * French coaching notes / scrape leftovers that must never become exam language.
+ * Swedish stems may use «à» (à 6,5 h) — that alone is not a leak.
+ */
+const FRENCH_EXAM_LEAK =
+  /\b(?:ne pas|ne délivre|n['’]est|ce n['’]|seulement|chauffeur|fréquence|taximètre|responsabilité|traduction littérale|piège fréquent|oublier|ignorer les|prise en charge|localité|carte de ville|confondre|confondu|contrôle technique|renforcée|exempté|coordonnées|quadrillage|découpage|bonne réponse|mots-clés|à quelle|qui est|que faire|quand utiliser|aussi appelé|agence qui|éco-conduite|santé-sécurité|code de la route|repos journalier|carnet de temps|affichage des|prix de comparaison|titulaire de|transport scolaire|transport adapté|profondeur des|pneus cloutés|index des noms|organisme d|loi sur le|astreinte|feuille de route|atelier accrédit|position latérale|premiers secours|pas seulement|chercher une|petite localité|convertir heures|au total ne suffit|les deux doivent|plus gros bloc|s['’]enregistrer|à renouveler|très fréquent|règles ceinture|souvent (?:traité|adapté|confondu|p\.)|facteur majeur|période d['’]usage|complément de la|atlas rouge|petites localités|flèches noires|numéroté dans|seuls ateliers|loi centrale|base des connaissances|disponibilité pour|mentions obligatoires|parfois à la place|doit être dans|pour inconscient|avec 112|si découpé|trajet passager|jour = |autoris(?:e|er) seulement|la dépose|tous les 2 ans|du métier|pour les <)/i;
+
+const PLACEHOLDER_OPTION = /^(question|option|alt\.?|n\/a|todo|tbd|\.\.\.)$/i;
+
+export function looksFrenchExamLeak(text) {
+  return typeof text === "string" && FRENCH_EXAM_LEAK.test(text);
+}
+
+export function isPlaceholderOption(text) {
+  return typeof text === "string" && PLACEHOLDER_OPTION.test(text.trim());
+}
+
+export function isResearchOwnedId(id) {
+  return String(id || "").startsWith("research-") || String(id || "").startsWith("rs-");
+}
+
+function swedishExamFieldOk(text) {
+  return Boolean(text) && !looksFrenchExamLeak(text) && !isPlaceholderOption(text);
+}
+
+function examSafeTrap(trap) {
+  const value = coerceTrap(trap);
+  return value && swedishExamFieldOk(value) ? value : undefined;
+}
+
 function optionTextKey(text) {
   return stemKey(text).replace(/[.,;:()]/g, "");
 }
@@ -123,17 +153,18 @@ function fallbackExplanation(record, lang, trap) {
   const existing = lang === "sv" ? record.explanation_sv : record.explanation_fr;
   if (typeof existing === "string" && existing.trim()) return existing.trim();
   const note = lang === "sv" ? record.note_sv : record.note_fr;
+  const svTrap = lang === "sv" ? examSafeTrap(trap) : coerceTrap(trap);
   if (typeof note === "string" && note.trim()) {
     const extra =
       lang === "sv"
-        ? [trap ? `Vanlig fälla: ${trap}.` : "", record.source ? `Källa: ${record.source}` : ""]
-        : [trap ? `Piège fréquent : ${trap}.` : "", record.source ? `Source : ${record.source}` : ""];
+        ? [svTrap ? `Vanlig fälla: ${svTrap}.` : "", record.source ? `Källa: ${record.source}` : ""]
+        : [svTrap ? `Piège fréquent : ${svTrap}.` : "", record.source ? `Source : ${record.source}` : ""];
     return [note.trim(), ...extra].filter(Boolean).join(" ");
   }
   if (lang === "sv") {
     return [
       LETTERS.includes(record.answer) ? `Rätt svar: ${record.answer}.` : "",
-      trap ? `Vanlig fälla: ${trap}.` : "",
+      svTrap ? `Vanlig fälla: ${svTrap}.` : "",
       `Källa: ${record.source || "research"}`,
     ]
       .filter(Boolean)
@@ -141,7 +172,7 @@ function fallbackExplanation(record, lang, trap) {
   }
   return [
     LETTERS.includes(record.answer) ? `Bonne réponse : ${record.answer}.` : "",
-    trap ? `Piège fréquent : ${trap}.` : "",
+    svTrap ? `Piège fréquent : ${svTrap}.` : "",
     `Source : ${record.source || "research"}`,
   ]
     .filter(Boolean)
@@ -214,32 +245,21 @@ export function normalizeResearchRecord(record, index) {
     issues.push(`${prefix}: topic must be lagstiftning|sakerhet|karta|bkort`);
   }
   const { stem, options: embedded } = splitSvAlts(record.sv);
-  let options = embedded.length ? embedded : cleanOptions(record.options);
-  const trap = coerceTrap(record.trap) || "";
-  let synthesizedFromAnswer = false;
-  if (!options.length) {
-    if (typeof record.answer === "string" && record.answer.trim() && !LETTERS.includes(record.answer)) {
-      options = [{ letter: "A", text: record.answer.trim() }];
-      if (trap) {
-        trap
-          .split(/[|,]/)
-          .map((part) => part.trim())
-          .filter(Boolean)
-          .forEach((text, i) => {
-            const letter = LETTERS[i + 1];
-            if (letter) options.push({ letter, text });
-          });
-      }
-      if (options.length < 2) {
-        options.push({ letter: "B", text: "Påståendet stämmer inte." });
-      }
-      synthesizedFromAnswer = true;
-    } else {
-      return emptyResult([`${prefix}: skipped — no options and no answer key`]);
-    }
+  const options = embedded.length ? embedded : cleanOptions(record.options);
+  if (!swedishExamFieldOk(stem)) {
+    return emptyResult([`${prefix}: skipped — stem is not Swedish exam language`]);
   }
-  let answer = letterFromAnswer(record.answer, options);
-  if (!answer && synthesizedFromAnswer) answer = options[0].letter;
+  if (options.length < 2) {
+    return emptyResult([`${prefix}: skipped — fewer than 2 real options (no invented keys)`]);
+  }
+  if (options.some((option) => !swedishExamFieldOk(option.text))) {
+    return emptyResult([`${prefix}: skipped — French or placeholder in options`]);
+  }
+  const trap = examSafeTrap(record.trap) || "";
+  if (coerceTrap(record.trap) && !trap) {
+    warnings.push(`${prefix}: dropped French/coaching trap`);
+  }
+  const answer = letterFromAnswer(record.answer, options);
   if (!answer) {
     return emptyResult([`${prefix}: skipped — missing answer key`]);
   }
@@ -290,6 +310,13 @@ export function normalizeManziRecord(record, index) {
   if (options.length < 2) {
     return emptyResult([`${prefix}: skipped — fewer than 2 options`]);
   }
+  const researchOwned =
+    record.corpus === "research" || String(record.id || "").startsWith("research-");
+  if (researchOwned) {
+    if (!swedishExamFieldOk(record.stem_sv) || options.some((option) => !swedishExamFieldOk(option.text))) {
+      return emptyResult([`${prefix}: skipped — French or placeholder in research exam fields`]);
+    }
+  }
   const answer = letterFromAnswer(record.answer, options);
   if (!answer) {
     return emptyResult([`${prefix}: skipped — missing answer key`]);
@@ -302,7 +329,10 @@ export function normalizeManziRecord(record, index) {
     issues.push(`${prefix}: topic must be lagstiftning|sakerhet|karta|bkort`);
     return { issues, warnings, question: null };
   }
-  const trap = coerceTrap(record.trap);
+  let trap = researchOwned ? examSafeTrap(record.trap) : coerceTrap(record.trap);
+  if (researchOwned && coerceTrap(record.trap) && !trap) {
+    warnings.push(`${prefix}: dropped French/coaching trap`);
+  }
   const freq = mapFreq(record.freq);
   const question = {
     id: record.id,
@@ -316,8 +346,8 @@ export function normalizeManziRecord(record, index) {
     ...(record.imageCaption || record.caption
       ? { imageCaption: sanitizeCaption(record.imageCaption || record.caption) }
       : {}),
-    source: record.source || "manzi",
-    corpus: record.corpus || "manzi",
+    source: record.source || (researchOwned ? "research" : "manzi"),
+    corpus: researchOwned ? "research" : record.corpus || "manzi",
     ...(freq ? { freq } : {}),
     ...(trap ? { trap } : {}),
     ...(record.type ? { type: record.type } : {}),
