@@ -67,7 +67,7 @@ export function ClozeText({
                   <button
                     key={choice}
                     type="button"
-                    className="rounded-md border border-[#ddd6c8] bg-white px-2 py-0.5 font-sans text-sm text-black"
+                    className="min-h-10 rounded-md border border-[#ddd6c8] bg-white px-2.5 py-1.5 font-sans text-sm text-black"
                     onClick={() => {
                       const next = [...values];
                       next[i] = choice;
@@ -93,7 +93,7 @@ export function ClozeText({
                     next[i] = event.target.value;
                     setValues(next);
                   }}
-                  className="w-32 rounded-md border border-[#c41e3a]/40 bg-white px-2 py-1 font-sans text-sm text-black"
+                  className="h-10 w-32 rounded-md border border-[#c41e3a]/40 bg-white px-2 font-sans text-sm text-black"
                 />
                 <button
                   type="button"

@@ -107,6 +107,14 @@ export const sv = {
   resumeExam: "Jag är tillbaka — fortsätt provet",
   protectionNote:
     "Ingen webbapp kan stoppa skärmbilder på operativsystemnivå. Vi döljer frågan när fönstret tappar fokus.",
+  errorTitle: "Något gick fel",
+  errorLead: "Försök igen. Din lokala progress är kvar.",
+  errorRetry: "Försök igen",
+  notFoundTitle: "Sidan finns inte",
+  notFoundLead: "Den här vägen finns inte.",
+  goHome: "Till startsidan",
+  loadingApp: "Laddar…",
+  trustReady: "95 % beredskap",
   topic: {
     bkort: BRAND.tracks.b.label,
     lagstiftning: "Lagstiftning",

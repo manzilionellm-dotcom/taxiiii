@@ -69,7 +69,7 @@ export function CalculForm({
             <input
               value={cloze}
               onChange={(event) => setCloze(event.target.value)}
-              className="ml-2 rounded-md border border-[#c41e3a]/40 px-2 py-1"
+              className="ml-2 min-h-10 rounded-md border border-[#c41e3a]/40 px-2 py-1"
             />
           )}
         </p>
@@ -104,7 +104,7 @@ export function CalculForm({
               onChange={(event) =>
                 setValues((prev) => ({ ...prev, [field.name]: event.target.value }))
               }
-              className="w-full rounded-xl border border-[#ddd6c8] px-3 py-2 text-black"
+              className="field"
             />
           </label>
         ))}

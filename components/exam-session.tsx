@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 import { ProtectedView } from "@/components/protected-view";
 import { QuestionCard } from "@/components/question-card";
 import { ReadinessWidget } from "@/components/readiness-widget";
+import { SessionSkeleton } from "@/components/splash-screen";
 import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
@@ -31,13 +33,18 @@ export function ExamSession({ track }: { track: Track }) {
   const [answered, setAnswered] = useState(false);
   const [remaining, setRemaining] = useState(EXAM_MS);
   const [done, setDone] = useState(false);
+  const [failed, setFailed] = useState(false);
   const finished = useRef(false);
 
   useEffect(() => {
     let cancelled = false;
-    void fetchSessionQuestions({ track, mode: "exam" }).then((questions) => {
-      if (!cancelled) setQueue(questions);
-    });
+    void fetchSessionQuestions({ track, mode: "exam" })
+      .then((questions) => {
+        if (!cancelled) setQueue(questions);
+      })
+      .catch(() => {
+        if (!cancelled) setFailed(true);
+      });
     return () => {
       cancelled = true;
     };
@@ -65,21 +72,32 @@ export function ExamSession({ track }: { track: Track }) {
     [track, catalog, state.attempts, state.exams],
   );
 
+  if (failed) {
+    return (
+      <EmptyState
+        title={dict.errorTitle}
+        lead={dict.errorLead}
+        actionHref={`/${track}`}
+        actionLabel={dict.goHome}
+      />
+    );
+  }
+
   if (!queue) {
-    return <p className="text-sm text-[#6b6560]">{dict.loadingSession}</p>;
+    return <SessionSkeleton label={dict.loadingSession} />;
   }
 
   if (done || !current) {
     return (
       <div className="space-y-4">
-        <div className="card space-y-2">
+        <div className="card space-y-2 px-6 py-8 text-center">
           <h1 className="font-serif text-2xl text-black">{dict.examDone}</h1>
-          <p className="text-black">
+          <p className="font-serif text-4xl tabular-nums text-[#1f3d2b]">
             {correctCount}/{queue.length}
           </p>
         </div>
         <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
-        <Link href={`/${track}`} className="btn-primary inline-flex">
+        <Link href={`/${track}`} className="btn-primary inline-flex w-full">
           {dict.dashboard}
         </Link>
       </div>
@@ -89,11 +107,19 @@ export function ExamSession({ track }: { track: Track }) {
   return (
     <ProtectedView locale={state.profile.locale} exam>
       <div className="space-y-4">
-        <div className="flex items-center justify-between text-sm text-[#6b6560]">
-          <span>
+        <div className="flex items-center justify-between gap-3 text-sm text-[#6b6560]">
+          <span className="tabular-nums">
             {index + 1}/{queue.length} · {Math.ceil(remaining / 60000)} {dict.minutesLeft}
           </span>
-          <Link href={`/${track}`}>{dict.back}</Link>
+          <Link href={`/${track}`} className="min-h-10 font-medium text-[#1f3d2b]">
+            {dict.back}
+          </Link>
+        </div>
+        <div className="h-1 overflow-hidden rounded-full bg-[#ece6d8]">
+          <div
+            className="h-full rounded-full bg-[#1f3d2b] transition-[width] duration-300"
+            style={{ width: `${((index + (answered ? 1 : 0)) / queue.length) * 100}%` }}
+          />
         </div>
         <QuestionCard
           key={current.id}

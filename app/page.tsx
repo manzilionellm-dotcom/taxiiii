@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { Onboarding } from "@/components/onboarding";
 import { ReadinessWidget } from "@/components/readiness-widget";
+import { TrackCard } from "@/components/track-card";
+import { TrustStrip } from "@/components/trust-strip";
 import { useAppState } from "@/components/app-state";
 import { BrandMark } from "@/components/brand-mark";
 import { BRAND, trackLabel, trackProduct } from "@/lib/branding";
@@ -14,7 +16,7 @@ export default function HomePage() {
   const { state, hydrated } = useAppState();
   const track = state.profile.activeTrack;
   const { catalog } = useQuestionCatalog(track);
-  if (!hydrated) return <div className="h-40" />;
+  if (!hydrated) return null;
   if (!state.profile.onboarded) return <Onboarding />;
 
   const dict = t(state.profile.locale);
@@ -27,36 +29,54 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6">
-      <header className="space-y-2">
+      <header className="space-y-3">
         <p className="text-xs uppercase tracking-[0.16em] text-[#6b6560]">
           {state.profile.name || <BrandMark compact />}
         </p>
-        <h1 className="font-serif text-3xl text-black">{trackLabel(track)}</h1>
-        <p className="max-w-xl text-[#6b6560]">{BRAND.slogan}</p>
+        <h1 className="font-serif text-3xl leading-tight text-black">{trackLabel(track)}</h1>
+        <p className="max-w-xl text-lg leading-7 text-[#6b6560]">{BRAND.slogan}</p>
         <p className="max-w-xl text-sm text-[#6b6560]">{BRAND.keyMessage}</p>
-        <p className="text-sm text-[#6b6560]">{dict.demoNote}</p>
+        <TrustStrip locale={state.profile.locale} />
       </header>
+
+      <div className="grid gap-3">
+        <Link href={`/${track}/study`} className="btn-primary">
+          {dict.startSession}
+        </Link>
+        <Link href={`/${track}/exam`} className="btn-secondary">
+          {dict.startExam}
+        </Link>
+      </div>
 
       <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         {state.profile.tracks.map((item) => (
-          <Link key={item} href={`/${item}`} className="card block">
-            <p className="font-serif text-xl text-black">{trackLabel(item)}</p>
-            <p className="mt-1 text-sm text-[#6b6560]">{trackProduct(item)}</p>
-          </Link>
+          <TrackCard
+            key={item}
+            href={`/${item}`}
+            icon={item}
+            title={trackLabel(item)}
+            description={trackProduct(item)}
+          />
         ))}
-        <Link href="/owner" className="card block opacity-70">
-          <p className="font-serif text-xl text-black">{trackLabel("owner")}</p>
-          <p className="mt-1 text-sm text-[#6b6560]">
-            {dict.comingSoon} — {trackProduct("owner")}
-          </p>
-        </Link>
-        <Link href="/chat" className="card block">
-          <p className="font-serif text-xl text-black">{dict.chat}</p>
-          <p className="mt-1 text-sm text-[#6b6560]">{dict.chatLead}</p>
-        </Link>
+        <TrackCard
+          href="/owner"
+          icon="owner"
+          title={trackLabel("owner")}
+          description={`${dict.comingSoon} — ${trackProduct("owner")}`}
+          muted
+          badge={dict.comingSoon}
+        />
+        <TrackCard
+          href="/chat"
+          icon="chat"
+          title={dict.chat}
+          description={dict.chatLead}
+        />
       </div>
+
+      <p className="text-xs leading-5 text-[#8a8276]">{dict.demoNote}</p>
     </div>
   );
 }
