@@ -56,6 +56,8 @@ export function TrackDashboard({ track }: { track: Track }) {
         <p className="max-w-xl text-[#6b6560]">
           {track === "b" ? dict.trackBDesc : dict.trackTaxiDesc}
         </p>
+        <p className="max-w-xl text-sm text-[#6b6560]">{dict.studyOrder}</p>
+        <p className="text-xs text-[#8a8276]">{dict.demoNote}</p>
       </header>
 
       <ReadinessWidget locale={state.profile.locale} readiness={readiness} />

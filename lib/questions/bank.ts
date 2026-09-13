@@ -2,6 +2,7 @@ import translations from "@/data/translations.fr.json";
 import type { QuestionRecord, QuestionTranslation, Topic, Track } from "@/lib/types";
 import { trackForTopic } from "@/lib/types";
 import { questionSchema } from "@/lib/questions/schema";
+import { sortForStudy } from "@/lib/questions/priority";
 import rawQuestions from "@/data/questions.json";
 
 const frMap = translations as Record<string, QuestionTranslation>;
@@ -16,10 +17,14 @@ export function parseQuestionBank(records: unknown[]): QuestionRecord[] {
   });
 }
 
-export const QUESTIONS: QuestionRecord[] = parseQuestionBank(rawQuestions as unknown[]);
+export const QUESTIONS: QuestionRecord[] = sortForStudy(
+  parseQuestionBank(rawQuestions as unknown[]),
+);
 
 export function questionsForTrack(track: Track): QuestionRecord[] {
-  return QUESTIONS.filter((question) => trackForTopic(question.topic) === track);
+  return sortForStudy(
+    QUESTIONS.filter((question) => trackForTopic(question.topic) === track),
+  );
 }
 
 export function questionsForTopic(topic: Topic): QuestionRecord[] {
@@ -33,7 +38,10 @@ export function getQuestion(id: string): QuestionRecord | undefined {
 export function getFrench(question: QuestionRecord): QuestionTranslation {
   return (
     frMap[question.id] ?? {
-      stem: "Traduction française à ajouter dans data/translations.fr.json — le texte suédois ci-dessus est la source.",
+      stem:
+        question.corpus === "research"
+          ? question.explanation_fr
+          : "Traduction française à ajouter dans data/translations.fr.json — le texte suédois ci-dessus est la source.",
     }
   );
 }

@@ -14,6 +14,9 @@ export interface QuestionOption {
   text: string;
 }
 
+export type Corpus = "research" | "manzi";
+export type Freq = "high" | "medium" | "low";
+
 export interface QuestionRecord {
   id: string;
   topic: Topic;
@@ -24,6 +27,11 @@ export interface QuestionRecord {
   explanation_fr: string;
   imageUrl?: string;
   source?: string;
+  corpus?: Corpus;
+  freq?: Freq;
+  trap?: string;
+  type?: string;
+  youtubeId?: string;
 }
 
 export interface QuestionTranslation {

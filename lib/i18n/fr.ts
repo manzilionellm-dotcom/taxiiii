@@ -60,7 +60,7 @@ export const fr: Dictionary = {
   chatLead:
     "Les réponses viennent uniquement de la banque. Hors corpus, on le dit.",
   outOfCorpus:
-    "Je ne trouve pas cela dans la banque (corpus Manzi). Je ne réponds qu'à partir des questions, explications et légendes importées.",
+    "Je ne trouve pas cela dans le corpus research, la banque Manzi ou les notes YouTube. Je ne réponds qu'à partir des questions, explications, légendes et notes vidéo importées.",
   chatEmpty: "Écris en français ou en suédois.",
   send: "Envoyer",
   examReadyChat: "Tu es prêt pour l'examen — tu peux continuer à discuter.",
@@ -82,7 +82,12 @@ export const fr: Dictionary = {
     "Section réservée aux examens propriétaire. Contenu à venir.",
   resetProgress: "Réinitialiser la progression locale",
   demoNote:
-    "Banque démo (échantillon). Dépose le JSONL Manzi + images selon docs/IMPORT.md — textes importés mot pour mot.",
+    "Deux corpus compilés : data/research-bank.jsonl (YouTube + apps + exemples publics) et data/questions.jsonl (Manzi). Research d'abord — Manzi ne l'écrase pas.",
+  corpusResearch: "research",
+  corpusManzi: "manzi",
+  freqHigh: "haute freq.",
+  studyOrder:
+    "Commence par YouTube/research (vilotid 11/8, taxamètre piège 24 mois, ligne jaune, tidbok, prisräkning), puis Manzi.",
   supportFade: "Aide",
   supportHigh: "Beaucoup d'aide",
   supportLow: "Peu d'aide",

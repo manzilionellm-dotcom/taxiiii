@@ -43,10 +43,12 @@ export const CALCUL_EXERCISES: CalculExercise[] = [
     slug: "bemotande",
     titleSv: "Bemötande — ungefärligt respris (punkt 8)",
     titleFr: "Accueil — prix approximatif (point 8)",
-    formulaSv: "Pris ≈ startavgift + (km × km-pris) + (minuter × tidspris).",
-    formulaFr: "Prix ≈ prise en charge + (km × prix/km) + (minutes × prix/min).",
+    formulaSv:
+      "Pris ≈ startavgift + (km × km-pris) + (minuter × tidspris). Jämförpris = 10 km / 15 min inkl. moms och grundavgift (YouTube 110t__6WZ7Q). Bindande prisuppgift om jämförpriset > 700 kr.",
+    formulaFr:
+      "Prix ≈ prise en charge + (km × prix/km) + (minutes × prix/min). Jämförpris = 10 km / 15 min TTC. Devis contraignant si > 700 kr.",
     exampleSv:
-      "Start 45 kr, 12,50 kr/km, 6,50 kr/min. Resa 9 km, 16 min. 45 + 9×12,50 + 16×6,50 = 45 + 112,50 + 104 = 261,50 kr. Uppge alltid att beloppet är ungefärligt innan taxametern visar slutpris.",
+      "Start 45 kr, 12,50 kr/km, 6,50 kr/min. Resa 9 km, 16 min. 45 + 9×12,50 + 16×6,50 = 45 + 112,50 + 104 = 261,50 kr. Jämförpris-exempel: 45 + 10×12,50 + 15×6,50 = 267,50 kr. Uppge alltid att beloppet är ungefärligt innan taxametern visar slutpris.",
     exampleFr:
       "Prise en charge 45 kr, 12,50 kr/km, 6,50 kr/min. Trajet 9 km, 16 min. 45 + 9×12,50 + 16×6,50 = 261,50 kr. Dire toujours que c'est une estimation avant le prix taximètre.",
     fields: [
@@ -98,13 +100,13 @@ export const CALCUL_EXERCISES: CalculExercise[] = [
     titleSv: "Dygnsvila och vilotid",
     titleFr: "Repos journalier et temps de repos",
     formulaSv:
-      "Ordinarie dygnsvila = minst 11 timmar. Reducerad dygnsvila = minst 9 timmar (begränsat antal gånger). Tid från passets start till nästa start ≥ körtid + raster + dygnsvila.",
+      "Taxi (SFS 1994:1297, YouTube QD8ute2KywU): minst 11 timmar dygnsvila per 24-timmarsperiod. Får delas i två perioder, varav en minst 8 timmar. Två × 6,5 h räcker inte. Jourtid räknas inte som vila.",
     formulaFr:
-      "Repos journalier normal = 11 h min. Réduit = 9 h min (nombre limité). Délai entre deux prises de service ≥ conduite + pauses + repos.",
+      "Taxi (1994:1297) : 11 h min / 24 h. Peut être coupé en deux, dont une période ≥ 8 h. Deux fois 6,5 h = insuffisant. L'astreinte n'est pas du repos.",
     exampleSv:
-      "Passet slutar 02:30. Ordinarie dygnsvila 11 h ger tidigaste start 13:30. Reducerad 9 h ger 11:30.",
+      "Passet slutar 02:30. 11 timmar dygnsvila ger tidigaste start 13:30. Om vilan delas måste ena perioden vara minst 8 timmar (fälla: 6,5 + 6,5).",
     exampleFr:
-      "Le service finit à 02:30. Repos 11 h → reprise au plus tôt 13:30. Réduit 9 h → 11:30.",
+      "Le service finit à 02:30. 11 h de repos → reprise 13:30. Si le repos est coupé, une période doit faire ≥ 8 h (piège : 6,5 + 6,5).",
     fields: [
       { name: "endHour", labelSv: "Passet slutar (timme 0–23)", labelFr: "Fin de service (heure 0–23)" },
       { name: "endMin", labelSv: "Minut", labelFr: "Minute" },

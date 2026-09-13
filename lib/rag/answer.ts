@@ -1,5 +1,7 @@
+import extras from "@/data/rag-extras.json";
 import { QUESTIONS, getFrench, getQuestion } from "@/lib/questions/bank";
-import { buildCorpus, searchCorpus, type SearchHit } from "@/lib/rag/search";
+import { youtubeDocs } from "@/lib/rag/extras";
+import { buildQuestionDocs, searchCorpus, type SearchHit } from "@/lib/rag/search";
 import type { ChatTurn, Locale } from "@/lib/types";
 import { t } from "@/lib/i18n";
 
@@ -13,8 +15,12 @@ function isFollowUp(query: string) {
   return FOLLOW_UP.test(query.trim()) || words.length <= 3;
 }
 
+function allDocs() {
+  return [...buildQuestionDocs(QUESTIONS), ...youtubeDocs()];
+}
+
 export function retrieveHits(query: string, history: ChatTurn[]): SearchHit[] {
-  const docs = buildCorpus(QUESTIONS);
+  const docs = allDocs();
   const direct = searchCorpus(docs, query, 5);
   if (direct.length && direct[0].score >= MIN_SCORE) return direct;
   if (isFollowUp(query) && history.length) {
@@ -43,10 +49,17 @@ export function groundedFallback(query: string, locale: Locale, history: ChatTur
 }
 
 function formatHits(hits: SearchHit[], locale: Locale) {
+  const notes = extras as { id: string; title: string; text_sv: string; text_fr?: string }[];
   return hits
     .map((hit) => {
+      const note = notes.find((item) => item.id === hit.questionId || item.id === hit.id);
+      if (note) {
+        return locale === "fr"
+          ? `[${note.id}] ${note.title}\n${note.text_fr ?? note.text_sv}`
+          : `[${note.id}] ${note.title}\n${note.text_sv}`;
+      }
       const question = getQuestion(hit.questionId);
-      if (!question) return "";
+      if (!question) return hit.snippet || "";
       const french = getFrench(question);
       const correct =
         question.options.find((option) => option.letter === question.answer)?.text ?? "";

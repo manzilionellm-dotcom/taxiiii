@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "import": "node scripts/import-questions.mjs",
-    "import:check": "node scripts/import-questions.mjs --check",
-    "seed": "node scripts/import-questions.mjs data/questions.jsonl"
+    "import": "node scripts/compile-banks.mjs",
+    "import:check": "node scripts/compile-banks.mjs --check",
+    "import:research": "node scripts/compile-banks.mjs --research",
+    "seed": "node scripts/compile-banks.mjs",
+    "check:corpus": "node scripts/self-check.mjs"
   },
   "dependencies": {
     "next": "16.2.4",

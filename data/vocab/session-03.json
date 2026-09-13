@@ -1,0 +1,11 @@
+{
+  "id": "session-03",
+  "title": "Tidbok och arbetsgivare",
+  "words": [
+    { "sv": "arbetspass", "forms": ["arbetspass", "körpass"], "fr": "vacation / service" },
+    { "sv": "tillståndshavare", "forms": ["tillståndshavare", "tillståndshavaren"], "fr": "titulaire de l'autorisation" },
+    { "sv": "besiktningsorgan", "forms": ["besiktningsorgan"], "fr": "organisme de contrôle agréé" },
+    { "sv": "ackrediterad", "forms": ["ackrediterad", "ackreditering"], "fr": "accrédité" },
+    { "sv": "jourtjänst", "forms": ["jourtjänst", "jourtid"], "fr": "astreinte" }
+  ]
+}

@@ -17,8 +17,12 @@ export const questionSchema = z
     explanation_fr: z.string().min(1),
     imageUrl: z.string().optional(),
     source: z.string().optional(),
+    corpus: z.enum(["research", "manzi"]).optional(),
+    freq: z.enum(["high", "medium", "low"]).optional(),
+    trap: z.string().optional(),
+    type: z.string().optional(),
+    youtubeId: z.string().optional(),
   })
-  .strict()
   .superRefine((value, ctx) => {
     if (!value.options.some((option) => option.letter === value.answer)) {
       ctx.addIssue({

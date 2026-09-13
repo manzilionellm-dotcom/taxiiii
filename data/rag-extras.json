@@ -1,0 +1,38 @@
+[
+  {
+    "id": "yt:110t__6WZ7Q",
+    "youtubeId": "110t__6WZ7Q",
+    "title": "Räkna ut prisresan — study notes",
+    "text_sv": "Räkna ut prisresan (YouTube 110t__6WZ7Q). Ungefärligt respris = startavgift + (km × km-pris) + (minuter × tidspris). Jämförpris = pris inklusive moms för 10 kilometer och 15 minuter inklusive grundavgift. Fri prissättning, därför synlig prisinformation. Bindande prisuppgift när jämförpriset överstiger 700 kronor. Säg alltid att beloppet är ungefärligt innan taxametern visar slutpris. Används i Körklart Calcul / Bemötande.",
+    "text_fr": "Calcul du prix (prisresan). Prix ≈ prise en charge + km + minutes. Jämförpris = 10 km / 15 min TTC. Devis contraignant si jämförpris > 700 kr."
+  },
+  {
+    "id": "yt:AZv2VQrdD_Q",
+    "youtubeId": "AZv2VQrdD_Q",
+    "title": "Karta Taxi 2 — study notes",
+    "text_sv": "Karta Taxi 2 (YouTube AZv2VQrdD_Q). E4 norr–syd via bland annat Helsingborg, Stockholm och vidare mot Sundsvall. Arlanda ligger norr om Stockholm C (Märsta/Uppsala). E6 följer västkusten Malmö–Göteborg–norska gränsen. E20 bland annat Stockholm–Örebro–Göteborg.",
+    "text_fr": "Carte taxi 2. E4 nord–sud via Stockholm. Arlanda au nord. E6 côte ouest. E20 Stockholm–Örebro–Göteborg."
+  },
+  {
+    "id": "yt:BFwxXv3hujU",
+    "youtubeId": "BFwxXv3hujU",
+    "title": "Lagstiftning del 1 — study notes",
+    "text_sv": "Lagstiftning del 1 (YouTube BFwxXv3hujU). Taxameterutrustning ska vara av godkänd typ, fungera och vara plomberad. Besiktning senast ett år från installation eller senaste besiktning — inte 24 månader. Bruten plombering: fordonet får inte användas i taxitrafik förrän ackrediterad verkstad plomberat. Handlingar vid färd inkluderar taxiförarlegitimation och kontroll- och plomberingsrapport. Gul heldragen linje på trottoarkanten anger förbud att stanna och parkera.",
+    "text_fr": "Législation partie 1. Taximètre agréé, plombé, contrôlé au plus tard une fois par an (piège : 24 mois). Plomb rompu : pas de taxitrafik. Ligne jaune continue au trottoir = arrêt et stationnement interdits."
+  },
+  {
+    "id": "yt:QD8ute2KywU",
+    "youtubeId": "QD8ute2KywU",
+    "title": "Lagstiftning del 2 — study notes",
+    "text_sv": "Lagstiftning del 2 (YouTube QD8ute2KywU). Dygnsvila minst 11 timmar under den 24-timmarsperiod som föregår varje transport. Får delas i två perioder, varav en minst 8 timmar. Två perioder à 6,5 timmar räcker inte. Anteckna föregående dygnsvila i personlig tidbok innan körningen påbörjas. Tidboken ska medföras och visas för polis eller bilinspektör. Avslutad tidbok behålls en vecka och lämnas sedan till arbetsgivaren. Fel rättas genom att stryka över, inte radera.",
+    "text_fr": "Législation partie 2. Repos 11 h / 24 h, coupable en 2 dont une ≥ 8 h. Tidbok avant de rouler, une semaine après clôture, ratures seulement."
+  },
+  {
+    "id": "apps-report",
+    "title": "Competitor / research coverage (Lionel)",
+    "source": "docs/apps-report.md",
+    "topic": "lagstiftning",
+    "text_sv": "# Competitor / research coverage (Lionel)\n\nProduct and topic map from the apps and sites used to seed `data/research-bank.jsonl`. This is **coverage**, not a scrape of their full paid banks.\n\n| Source | What we took | Topics |\n|---|---|---|\n| YouTube Lagstiftning del 1 `BFwxXv3hujU` | High-freq taxameter, plomb, gul linje, handlingar | lagstiftning |\n| YouTube Lagstiftning del 2 `QD8ute2KywU` | Vilotid 11/8, tidbok | lagstiftning |\n| YouTube Räkna ut prisresan `110t__6WZ7Q` | Formula + jämförpris + 700 kr → Calcul + RAG | calcul, lagstiftning |\n| YouTube Karta Taxi 2 `AZv2VQrdD_Q` | E4 / Arlanda / E6 | karta |\n| [teori-taxi.com](https://www.teori-taxi.com/lagstiftning-fragor/) groups Lagstiftning / Säkerhet / Kartläsning | Public quiz stems (gul linje, 12 vs 24 mån, tidbok, kvitto) | lagstiftning, sakerhet, karta |\n| TaxiKortet blog / demo | Same official vilotid wording as Transportstyrelsen | lagstiftning |\n| [taxi-prov.se vilotid](https://test.taxi-prov.se/vilotid) | Worked 6,5+6,5 h fail example | lagstiftning |\n| Trafikverket taxiförarlegitimation | Two delprov, 50 min, 34/46 | lagstiftning |\n| Transportstyrelsen + SFS 1994:1297, 2012:211, 2012:238, TSFS 2021:119 | Verbatim legal facts | all taxi |\n\n**Teori Taxi / TaxiKortet / TaxiTeori** all drill the same high-frequency traps: 24-month taxameter, 8 h “enough” rest, tidbok timing, yellow kerb line, prisräkning. Körklart starts study there, then Manzi.\n\nManzi (~1475) is the full QCM bank. Research stays compiled **in front** of Manzi and is indexed in RAG with the YouTube notes.\n",
+    "text_fr": "Couverture produit des sources YouTube / Teori Taxi / TaxiKortet / TaxiTeori / Trafikverket. Pas un scrape de leurs banques payantes. Körklart commence par les pièges haute fréquence (vilotid 11/8, taxameter 24 mois, ligne jaune, tidbok, prisräkning) puis Manzi."
+  }
+]

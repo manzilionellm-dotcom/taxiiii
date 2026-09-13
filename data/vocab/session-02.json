@@ -1,0 +1,11 @@
+{
+  "id": "session-02",
+  "title": "Taxameter och pris",
+  "words": [
+    { "sv": "plomberad", "forms": ["plomberad", "plombering"], "fr": "plombé / plombage" },
+    { "sv": "jämförpris", "forms": ["jämförpris", "jämförpriset"], "fr": "prix de comparaison (10 km / 15 min)" },
+    { "sv": "prisuppgift", "forms": ["prisuppgift", "prisuppgiften"], "fr": "devis / prix maximal contraignant" },
+    { "sv": "startavgift", "forms": ["startavgift", "grundavgift"], "fr": "prise en charge" },
+    { "sv": "redovisningscentral", "forms": ["redovisningscentral", "redovisningscentralen"], "fr": "centre de déclaration fiscale taxi" }
+  ]
+}

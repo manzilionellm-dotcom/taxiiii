@@ -7,17 +7,20 @@ import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
 import { recordAttempt } from "@/lib/progress/store";
 import { isDue } from "@/lib/progress/srs";
-import { interleave, questionsForTrack } from "@/lib/questions/bank";
+import { questionsForTrack } from "@/lib/questions/bank";
+import { studyPriority } from "@/lib/questions/priority";
 import type { QuestionRecord, Track } from "@/lib/types";
 
 const SESSION_MS = 8 * 60 * 1000;
 
 function pickSession(track: Track, dueIds: Set<string>, fragile: boolean): QuestionRecord[] {
-  const bank = interleave(questionsForTrack(track));
-  const due = bank.filter((q) => dueIds.has(q.id));
-  const rest = bank.filter((q) => !dueIds.has(q.id));
+  const bank = [...questionsForTrack(track)].sort((a, b) => {
+    const dueDelta = Number(dueIds.has(b.id)) - Number(dueIds.has(a.id));
+    if (dueDelta !== 0) return dueDelta;
+    return studyPriority(a) - studyPriority(b);
+  });
   const limit = fragile ? 6 : 10;
-  return [...due, ...rest].slice(0, limit);
+  return bank.slice(0, limit);
 }
 
 export function StudySession({ track }: { track: Track }) {

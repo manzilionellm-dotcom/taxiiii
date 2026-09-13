@@ -198,5 +198,134 @@
       "B": "La côte ouest, notamment Malmö–Göteborg–frontière norvégienne",
       "C": "Uniquement Gotland"
     }
+  },
+  "rs-yt-lag1-gul-linje": {
+    "stem": "Que signifie une ligne jaune continue sur le bord du trottoir ?"
+  },
+  "rs-yt-lag1-taxameter-24": {
+    "stem": "Quel délai maximal entre deux contrôles du taximètre ?"
+  },
+  "rs-yt-lag1-taxameter-nar": {
+    "stem": "Quand le taximètre doit-il normalement être contrôlé ?"
+  },
+  "rs-yt-lag2-vila-11-8": {
+    "stem": "Quelle est la durée minimale du repos journalier sur 24 heures ?"
+  },
+  "rs-taxi-prov-vila-split-fail": {
+    "stem": "Deux repos de 6 h 30 : le chauffeur a-t-il respecté le repos journalier ?"
+  },
+  "rs-ts-tidbok-fore": {
+    "stem": "Quand noter le dernier repos journalier dans le tidbok ?"
+  },
+  "rs-tt-tidbok-vecka": {
+    "stem": "Tidbok terminé : quand le rendre à l'employeur ?"
+  },
+  "rs-tt-tidbok-ansvar": {
+    "stem": "Qui est responsable que le tidbok soit rempli ?"
+  },
+  "rs-tt-tidbok-fel": {
+    "stem": "Erreur dans le tidbok : que faire ?"
+  },
+  "rs-yt-prisresa-jamfor": {
+    "stem": "Qu'est-ce que le jämförpris ?"
+  },
+  "rs-yt-prisresa-700": {
+    "stem": "Quand donner un prix maximum contraignant ?"
+  },
+  "rs-yt-prisresa-formel": {
+    "stem": "Comment estimer le prix du trajet (prisresan) ?"
+  },
+  "rs-tt-legitimation-synlig": {
+    "stem": "Où placer la carte professionnelle pendant la course ?"
+  },
+  "rs-tt-fornya-10": {
+    "stem": "Après combien d'années renouveler la legitimation ?"
+  },
+  "rs-sfs-alder-20": {
+    "stem": "Âge minimal pour la carte taxi ?"
+  },
+  "rs-sfs-b-tva-ar": {
+    "stem": "Quelle condition de permis ?"
+  },
+  "rs-ts-tidbok-7": {
+    "stem": "Combien de jours le tidbok doit-il couvrir ?"
+  },
+  "rs-ts-ag-12-man": {
+    "stem": "Combien de temps conserver les notes de repos ?"
+  },
+  "rs-ts-en-tidbok": {
+    "stem": "Combien de tidbok à la fois ?"
+  },
+  "rs-ts-visa-polis": {
+    "stem": "À qui présenter le tidbok ?"
+  },
+  "rs-ts-jour-inte-vila": {
+    "stem": "Qu'est-ce qui n'est pas un repos journalier ?"
+  },
+  "rs-tt-plomb": {
+    "stem": "Plomb du taximètre rompu : que faire ?"
+  },
+  "rs-tt-kvitto": {
+    "stem": "Quand proposer un reçu taximètre ?"
+  },
+  "rs-tt-dokument": {
+    "stem": "Quels deux documents emporter ?"
+  },
+  "rs-tt-anmal-borttappad": {
+    "stem": "Carte perdue : qui prévenir ?"
+  },
+  "rs-tt-boter-placering": {
+    "stem": "Sanction si la carte n'est pas placée correctement ?"
+  },
+  "rs-tt-balte": {
+    "stem": "Ceinture pour le chauffeur taxi ?"
+  },
+  "rs-ts-redovisning": {
+    "stem": "Fréquence d'envoi au redovisningscentral ?"
+  },
+  "rs-ts-anvand-varje": {
+    "stem": "Quand utiliser le taximètre ?"
+  },
+  "rs-ts-sarskild-utr": {
+    "stem": "Dispense de taximètre depuis 2021 ?"
+  },
+  "rs-tv-delprov": {
+    "stem": "Structure de l'examen théorique taxi ?"
+  },
+  "rs-tv-poang": {
+    "stem": "Seuil de réussite du delprov lagstiftning ?"
+  },
+  "rs-yt-karta-e4": {
+    "stem": "Direction principale de l'E4 ?"
+  },
+  "rs-yt-karta-arlanda": {
+    "stem": "Stockholm C → Arlanda : quelle direction ?"
+  },
+  "rs-yt-karta-e6": {
+    "stem": "Où passe l'E6 ?"
+  },
+  "rs-ts-undantag-4h30": {
+    "stem": "Exemption de tidbok (marchandises) ?"
+  },
+  "rs-ts-fardsrivare": {
+    "stem": "Tachigraphe à la place du tidbok ?"
+  },
+  "rs-sfs-giltig-med-korkort": {
+    "stem": "Validité de la legitimation ?"
+  },
+  "rs-ts-kopia-6-veckor": {
+    "stem": "Durée de la copie temporaire ?"
+  },
+  "rs-ts-gul-kort": {
+    "stem": "Couleur de la carte taxi ?"
+  },
+  "rs-fri-pris": {
+    "stem": "Y a-t-il un tarif légal plafond ?"
+  },
+  "rs-tt-prisinfo-lasbar": {
+    "stem": "Où doit être lisible l'info tarifaire à l'intérieur ?"
+  },
+  "rs-taxikortet-demo-vila": {
+    "stem": "La phrase officielle sur les 11 heures est-elle exacte ?"
   }
 }

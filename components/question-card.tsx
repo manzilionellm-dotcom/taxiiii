@@ -32,7 +32,15 @@ export function QuestionCard({
   return (
     <article className="card space-y-5">
       <header className="flex flex-wrap items-center justify-between gap-2 text-xs uppercase tracking-[0.14em] text-[#6b6560]">
-        <span>{dict.topic[question.topic]}</span>
+        <span title={question.source ?? question.corpus}>
+          {dict.topic[question.topic]}
+          {question.corpus === "research"
+            ? ` · ${dict.corpusResearch}`
+            : question.corpus === "manzi"
+              ? ` · ${dict.corpusManzi}`
+              : ""}
+          {question.freq === "high" ? ` · ${dict.freqHigh}` : ""}
+        </span>
         <span>{question.id}</span>
       </header>
 

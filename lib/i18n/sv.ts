@@ -57,7 +57,7 @@ export const sv = {
   chatLead:
     "Svaren kommer bara från frågebanken. Finns det inte i korpusen säger vi det.",
   outOfCorpus:
-    "Jag hittar inte det i frågebanken (Manzi-korpusen). Jag kan bara svara utifrån importerade frågor, förklaringar och bildtexter.",
+    "Jag hittar inte det i forskningskorpusen, Manzi-banken eller YouTube-anteckningarna. Jag svarar bara utifrån importerade frågor, förklaringar, bildtexter och videonoter.",
   chatEmpty: "Ställ en fråga på svenska eller franska.",
   send: "Skicka",
   examReadyChat: "Du är examensklar — du kan fortsätta chatta ändå.",
@@ -79,7 +79,12 @@ export const sv = {
     "Den här sektionen är förberedd för taxiägarens examina. Inget innehåll än.",
   resetProgress: "Nollställ lokal progress",
   demoNote:
-    "Demobank (urval). Lägg Manzis fulla JSONL + bilder enligt docs/IMPORT.md — texterna importeras ordagrant.",
+    "Två korpusar kompileras: data/research-bank.jsonl (YouTube + appar + offentliga exempel) och data/questions.jsonl (Manzi). Research först — Manzi droppar den inte.",
+  corpusResearch: "research",
+  corpusManzi: "manzi",
+  freqHigh: "hög",
+  studyOrder:
+    "Börja med YouTube/research (vilotid 11/8, taxameter 24 mån-fälla, gul heldragen linje, tidbok, prisräkning), sedan Manzi.",
   supportFade: "Stöd",
   supportHigh: "Mycket hjälp",
   supportLow: "Lite hjälp",

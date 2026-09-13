@@ -97,7 +97,7 @@ export function tokenize(text: string): string[] {
     .filter((token) => token.length > 1 && !STOP.has(token));
 }
 
-export function buildCorpus(questions: QuestionRecord[]): CorpusDoc[] {
+export function buildQuestionDocs(questions: QuestionRecord[]): CorpusDoc[] {
   return questions.map((question) => ({
     id: `q:${question.id}`,
     questionId: question.id,
@@ -105,16 +105,23 @@ export function buildCorpus(questions: QuestionRecord[]): CorpusDoc[] {
     text: [
       question.id,
       question.topic,
+      question.corpus ?? "",
       question.stem_sv,
       question.options.map((option) => `${option.letter}. ${option.text}`).join(" "),
       question.explanation_sv,
       question.explanation_fr,
       question.imageUrl ? `bild image ${question.imageUrl}` : "",
       question.source ?? "",
+      question.trap ?? "",
+      question.youtubeId ?? "",
     ]
       .filter(Boolean)
       .join("\n"),
   }));
+}
+
+export function buildCorpus(questions: QuestionRecord[]): CorpusDoc[] {
+  return buildQuestionDocs(questions);
 }
 
 export function searchCorpus(docs: CorpusDoc[], query: string, limit = 5): SearchHit[] {

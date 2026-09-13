@@ -14,18 +14,29 @@ This is not a toy landing page. It is a working vertical slice:
 
 ## Content rule
 
-Manzi’s bank is imported **word for word**. Do not reformulate, summarize, or drop Swedish stems, options, or explanations. Image paths stay attached.
+Two corpora, both kept:
 
-Until the full ~1475 items are dropped in, `data/questions.jsonl` is a **same-schema sample** so the pipeline and UI work end-to-end.
+1. **Research** (`data/research-bank.jsonl`) — Lionel’s early bank (~193 when complete): YouTube Lagstiftning del 1–2, prisresan, Karta Taxi 2; teori-taxi.com; TaxiKortet; taxi-prov.se vilotid; Trafikverket. Schema uses `sv` / `fr` / `type` / `source` / `topic` / `answer` / `trap` / `freq`. Swedish `sv` stays intact.
+2. **Manzi** (`data/questions.jsonl`) — full QCM (~1475). `stem_sv` / options / explanations stay word for word.
 
-Lionel: see **[docs/IMPORT.md](docs/IMPORT.md)**.
+`npm run import` **compiles both**. A larger Manzi file must not drop research. Study order: high-frequency research (vilotid 11/8, taxameter 24 mån fälla, gul heldragen linje, tidbok, prisräkning) **then** Manzi.
+
+Until Lionel drops the full ~193-line `research-bank.jsonl`, the repo ships a high-frequency seed (YouTube + teori-taxi / TaxiKortet / taxi-prov.se / Trafikverket / SFS). Replace the file; do not merge research into Manzi’s JSONL.
+
+Vocab sessions `data/vocab/session-01` … `session-05-friday-mini` seed cloze. YouTube notes in `data/youtube-transcripts/` are in the RAG index (Calcul + chat), not QCM-only.
+
+Lionel: **[docs/IMPORT.md](docs/IMPORT.md)** · competitor map **[docs/apps-report.md](docs/apps-report.md)**.
 
 ## Scripts
 
 ```bash
 npm install
-npm run import:check          # validate data/questions.jsonl
-npm run import -- <file.jsonl> [--images <dir>]
+npm run import:check
+npm run check:corpus
+# compile + assert data/research-bank.jsonl + data/questions.jsonl are both kept
+
+npm run import -- --manzi /path/manzi.jsonl
+npm run import -- --research /path/research-bank.jsonl --images /path/media
 npm run dev
 npm run build
 ```
@@ -47,8 +58,11 @@ Without a key, `/api/chat` still answers from the corpus using scripted search.
 
 | Path | Purpose |
 |---|---|
-| `data/questions.jsonl` | Source of truth (Manzi schema) |
-| `data/questions.json` | Generated for the app import |
+| `data/research-bank.jsonl` | Research corpus (YouTube + apps + public law) |
+| `data/questions.jsonl` | Manzi QCM (never overwrites research) |
+| `data/questions.json` | Compiled merge — research first |
+| `data/vocab/` | Cloze sessions 01–05-friday-mini |
+| `data/youtube-links.json` + `youtube-transcripts/` | Calcul + RAG |
 | `data/translations.fr.json` | Blue FR line under the original SV stem |
 | `data/hard-words.json` | Cloze + red gloss dictionary |
 | `public/media/` | Dual-coding images (`imageUrl`) |
