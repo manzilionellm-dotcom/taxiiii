@@ -77,6 +77,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 pb-24 pt-6">{children}</main>
 
       <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-[#ddd6c8] bg-[#fffdf8]/95 backdrop-blur">
+        <p className="mx-auto max-w-5xl px-3 pt-1 text-center text-[10px] leading-3 text-[#8a8276]">
+          {dict.tosAccept}
+        </p>
         <div className="mx-auto grid max-w-5xl grid-cols-5 px-1 py-2 text-[11px] sm:grid-cols-6">
           {NAV.filter((item) => !item.taxiOnly || track === "taxi").map((item) => {
             const href =

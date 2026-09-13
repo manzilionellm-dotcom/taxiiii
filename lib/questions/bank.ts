@@ -1,3 +1,5 @@
+import "server-only";
+
 import translations from "@/data/translations.fr.json";
 import type { QuestionRecord, QuestionTranslation, Topic, Track } from "@/lib/types";
 import { trackForTopic } from "@/lib/types";

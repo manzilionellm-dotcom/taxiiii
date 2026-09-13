@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useMemo, useSyncExternalStore, type ReactNode } from "react";
+import { useEffect } from "react";
 import {
   getAppServerSnapshot,
   getAppSnapshot,
@@ -26,6 +27,19 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   if (hydrated) hydrateAppState();
 
   const state = useSyncExternalStore(subscribeAppState, getAppSnapshot, getAppServerSnapshot);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    void fetch("/api/session", {
+      method: "POST",
+      credentials: "same-origin",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: state.profile.name,
+        email: state.profile.email,
+      }),
+    });
+  }, [hydrated, state.profile.email, state.profile.name, state.profile.onboarded]);
 
   const value = useMemo(
     () => ({

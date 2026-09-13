@@ -78,4 +78,4 @@ Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `exp
 
 ## Images
 
-`--images` copies into `public/media/`. Never delete files on the Desktop/manzi machine — copy only.
+`--images` copies into `content/media/` (session-signed `/api/media`, not a public CDN folder). Never delete files on the Desktop/manzi machine — copy only.

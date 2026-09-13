@@ -7,22 +7,22 @@ import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
 import { isDue } from "@/lib/progress/srs";
-import { questionsForTrack } from "@/lib/questions/bank";
+import { useQuestionCatalog } from "@/lib/questions/use-catalog";
 import { topicsForTrack, type Track } from "@/lib/types";
 
 export function TrackDashboard({ track }: { track: Track }) {
   const { state } = useAppState();
   const dict = t(state.profile.locale);
-  const questions = questionsForTrack(track);
+  const { catalog } = useQuestionCatalog(track);
   const readiness = useMemo(
-    () => computeReadiness(track, questions, state.attempts, state.exams),
-    [track, questions, state.attempts, state.exams],
+    () => computeReadiness(track, catalog, state.attempts, state.exams),
+    [track, catalog, state.attempts, state.exams],
   );
   const attempts = state.attempts.filter((item) => item.track === track);
   const correct = attempts.filter((item) => item.correct).length;
   const due = state.srs.filter((card) => card.track === track && isDue(card)).length;
   const byTopic = topicsForTrack(track).map((topic) => {
-    const ids = questions.filter((q) => q.topic === topic);
+    const ids = catalog.filter((q) => q.topic === topic);
     const seen = new Set(
       attempts.filter((item) => ids.some((q) => q.id === item.questionId)).map((a) => a.questionId),
     );

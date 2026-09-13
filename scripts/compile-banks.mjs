@@ -73,7 +73,7 @@ function mergeVocab() {
 }
 
 function copyImages(fromDir) {
-  const dest = join(root, "public/media");
+  const dest = join(root, "content/media");
   mkdirSync(dest, { recursive: true });
   let copied = 0;
   for (const name of readdirSync(fromDir)) {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { ProtectedView } from "@/components/protected-view";
 import { t } from "@/lib/i18n";
 import type { CalculExercise } from "@/lib/calcul/exercises";
 import type { Locale } from "@/lib/types";
@@ -36,6 +37,7 @@ export function CalculForm({
     cloze.trim().toLowerCase() === exercise.cloze.sv.toLowerCase() || revealed;
 
   return (
+    <ProtectedView locale={locale}>
     <article className="space-y-6">
       <header className="space-y-2">
         <h1 className="font-serif text-3xl text-black">
@@ -121,5 +123,6 @@ export function CalculForm({
         </section>
       ) : null}
     </article>
+    </ProtectedView>
   );
 }

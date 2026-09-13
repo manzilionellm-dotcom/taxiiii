@@ -82,6 +82,24 @@ export default function SettingsPage() {
         </label>
       </section>
 
+      <section className="card space-y-3">
+        <p className="font-medium text-black">{dict.tosTitle}</p>
+        <p className="text-sm text-[#6b6560]">{dict.tos}</p>
+        <label className="block space-y-1">
+          <span className="text-sm text-[#6b6560]">{dict.yourEmail}</span>
+          <input
+            type="email"
+            value={state.profile.email ?? ""}
+            onChange={(event) =>
+              setState(updateProfile(state, { email: event.target.value }))
+            }
+            className="w-full rounded-xl border border-[#ddd6c8] bg-white px-3 py-2 text-black"
+          />
+        </label>
+      </section>
+
+      <p className="text-xs text-[#8a8276]">{dict.protectionNote}</p>
+
       <button type="button" className="btn-secondary" onClick={() => setState(emptyState())}>
         {dict.resetProgress}
       </button>

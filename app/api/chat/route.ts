@@ -1,9 +1,16 @@
 import { answerWithModel, groundedFallback } from "@/lib/rag/answer";
+import { clientKey, limitedJson, rateLimit } from "@/lib/protect/rate-limit";
+import { withPrivateHeaders } from "@/lib/protect/http";
+import { ensureSession } from "@/lib/protect/session";
 import type { ChatTurn, Locale } from "@/lib/types";
 
 export const runtime = "nodejs";
 
 export async function POST(request: Request) {
+  const { session, setCookie } = await ensureSession(request);
+  const limited = rateLimit(`chat:${clientKey(request, session.id)}`, 20);
+  if (!limited.ok) return limitedJson(limited.retryAfter);
+
   const body = (await request.json()) as {
     message?: string;
     history?: ChatTurn[];
@@ -13,8 +20,10 @@ export async function POST(request: Request) {
   const locale = body.locale === "sv" ? "sv" : "fr";
   const history = Array.isArray(body.history) ? body.history : [];
   if (!message) {
-    return Response.json(groundedFallback("", locale, history));
+    return Response.json(groundedFallback("", locale, history), {
+      headers: withPrivateHeaders(undefined, setCookie),
+    });
   }
   const result = await answerWithModel(message, locale, history);
-  return Response.json(result);
+  return Response.json(result, { headers: withPrivateHeaders(undefined, setCookie) });
 }

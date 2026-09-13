@@ -16,12 +16,14 @@ export const STORAGE_KEY = "korklart.v1";
 
 export const defaultProfile: Profile = {
   name: "",
+  email: "",
   tracks: ["taxi"],
   activeTrack: "taxi",
   locale: "fr",
   fragileMode: false,
   supportLevel: 2,
   onboarded: false,
+  tosAccepted: false,
 };
 
 export function emptyState(): AppState {

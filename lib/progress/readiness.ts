@@ -1,5 +1,7 @@
-import type { Attempt, MockExam, QuestionRecord, Track } from "@/lib/types";
+import type { Attempt, MockExam, Topic, Track } from "@/lib/types";
 import { topicsForTrack } from "@/lib/types";
+
+export type ReadinessCatalogItem = { id: string; topic: Topic };
 
 export interface ReadinessBreakdown {
   score: number;
@@ -23,7 +25,7 @@ function accuracy(attempts: Attempt[]) {
 
 export function computeReadiness(
   track: Track,
-  questions: QuestionRecord[],
+  questions: ReadinessCatalogItem[],
   attempts: Attempt[],
   exams: MockExam[],
   now = new Date(),

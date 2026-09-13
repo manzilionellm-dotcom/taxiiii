@@ -12,19 +12,24 @@ export function Onboarding() {
   const dict = t(locale);
   const [choice, setChoice] = useState<"b" | "taxi" | "both">("taxi");
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [tos, setTos] = useState(false);
   const [fragile, setFragile] = useState(false);
 
   function submit() {
+    if (!tos) return;
     const tracks: Track[] = choice === "both" ? ["b", "taxi"] : [choice];
     setState(
       updateProfile(state, {
         name,
+        email,
         tracks,
         activeTrack: tracks.includes("taxi") ? "taxi" : "b",
         locale,
         fragileMode: fragile,
         supportLevel: fragile ? 3 : 2,
         onboarded: true,
+        tosAccepted: true,
       }),
     );
   }
@@ -87,6 +92,16 @@ export function Onboarding() {
         />
       </label>
 
+      <label className="block space-y-2">
+        <span className="text-sm text-[#6b6560]">{dict.yourEmail}</span>
+        <input
+          type="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          className="w-full rounded-xl border border-[#ddd6c8] bg-white px-3 py-3 text-black"
+        />
+      </label>
+
       <label className="card flex items-start gap-3">
         <input
           type="checkbox"
@@ -100,9 +115,24 @@ export function Onboarding() {
         </span>
       </label>
 
-      <button type="button" className="btn-primary w-full" onClick={submit}>
+      <label className="card flex items-start gap-3">
+        <input
+          type="checkbox"
+          checked={tos}
+          onChange={(event) => setTos(event.target.checked)}
+          className="mt-1"
+        />
+        <span>
+          <span className="block font-medium text-black">{dict.tosTitle}</span>
+          <span className="text-sm text-[#6b6560]">{dict.tos}</span>
+          <span className="mt-1 block text-sm font-medium text-black">{dict.tosAccept}</span>
+        </span>
+      </label>
+
+      <button type="button" className="btn-primary w-full" disabled={!tos} onClick={submit}>
         {dict.start}
       </button>
+      {!tos ? <p className="text-center text-xs text-[#6b6560]">{dict.tosRequired}</p> : null}
     </div>
   );
 }

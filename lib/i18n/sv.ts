@@ -90,6 +90,19 @@ export const sv = {
   supportLow: "Lite hjälp",
   recognition: "Välj rätt ord",
   imageCaption: "Tillhörande bild",
+  loadingSession: "Laddar skyddat pass…",
+  tosTitle: "Användarvillkor — innehåll",
+  tos:
+    "Frågor, bilder och förklaringar i Körklart får inte kopieras, delas eller säljas vidare. Skärmbilder och utdrag för privat studier är begränsade; spridning av banken är förbjuden.",
+  tosAccept: "Jag accepterar att jag inte får sprida frågebanken.",
+  tosRequired: "Acceptera villkoren för att fortsätta.",
+  yourEmail: "E-post (valfritt, vattenstämpel)",
+  captureWarning:
+    "Flera avbrott / möjliga skärmfångster på kort tid. Omfördelning av bankinnehåll är förbjuden.",
+  contentHidden: "Innehållet är dolt",
+  resumeExam: "Jag är tillbaka — fortsätt provet",
+  protectionNote:
+    "Ingen webbapp kan stoppa skärmbilder på operativsystemnivå. Vi döljer frågan när fönstret tappar fokus.",
   topic: {
     bkort: "Körkort B",
     lagstiftning: "Lagstiftning",

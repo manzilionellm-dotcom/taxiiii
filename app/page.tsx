@@ -6,18 +6,19 @@ import { ReadinessWidget } from "@/components/readiness-widget";
 import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
-import { questionsForTrack } from "@/lib/questions/bank";
+import { useQuestionCatalog } from "@/lib/questions/use-catalog";
 
 export default function HomePage() {
   const { state, hydrated } = useAppState();
+  const track = state.profile.activeTrack;
+  const { catalog } = useQuestionCatalog(track);
   if (!hydrated) return <div className="h-40" />;
   if (!state.profile.onboarded) return <Onboarding />;
 
   const dict = t(state.profile.locale);
-  const track = state.profile.activeTrack;
   const readiness = computeReadiness(
     track,
-    questionsForTrack(track),
+    catalog,
     state.attempts,
     state.exams,
   );

@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { ClozeText } from "@/components/cloze-text";
+import { ProtectedImage } from "@/components/protected-image";
 import { t } from "@/lib/i18n";
-import { getFrench } from "@/lib/questions/bank";
-import type { Locale, QuestionRecord, SupportLevel } from "@/lib/types";
+import type { SessionQuestion } from "@/lib/questions/session-types";
+import type { Locale, SupportLevel } from "@/lib/types";
 
 export function QuestionCard({
   question,
@@ -14,15 +15,15 @@ export function QuestionCard({
   onAnswer,
   disabled,
 }: {
-  question: QuestionRecord;
+  question: SessionQuestion;
   locale: Locale;
   fragile: boolean;
   supportLevel: SupportLevel;
-  onAnswer?: (letter: QuestionRecord["answer"], correct: boolean) => void;
+  onAnswer?: (letter: SessionQuestion["answer"], correct: boolean) => void;
   disabled?: boolean;
 }) {
   const dict = t(locale);
-  const french = getFrench(question);
+  const french = question.translation;
   const [picked, setPicked] = useState<string | null>(null);
   const [showFr, setShowFr] = useState(supportLevel >= 2);
 
@@ -66,14 +67,13 @@ export function QuestionCard({
 
       {question.imageUrl ? (
         <figure className="overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f7f2e8]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <ProtectedImage
             src={question.imageUrl}
             alt={dict.imageCaption}
-            className="mx-auto max-h-64 w-full object-contain p-4"
+            watermark={question.watermark}
           />
           <figcaption className="px-4 pb-3 text-center text-xs text-[#6b6560]">
-            {question.imageUrl}
+            {dict.imageCaption}
           </figcaption>
         </figure>
       ) : null}

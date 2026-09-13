@@ -51,6 +51,7 @@ Copy `.env.example`. All keys are optional for the demo.
 | `AI_GATEWAY_API_KEY` | Same via [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) |
 | `AI_MODEL` | Gateway model id, default `openai/gpt-4.1-mini` |
 | `DATABASE_URL` | Optional Postgres (Prisma + pgvector schema in `prisma/schema.prisma`) |
+| `SESSION_SECRET` | HMAC for session cookies + short-lived media URLs (dev fallback exists) |
 
 Without a key, `/api/chat` still answers from the corpus using scripted search.
 
@@ -65,7 +66,7 @@ Without a key, `/api/chat` still answers from the corpus using scripted search.
 | `data/youtube-links.json` + `youtube-transcripts/` | Calcul + RAG |
 | `data/translations.fr.json` | Blue FR line under the original SV stem |
 | `data/hard-words.json` | Cloze + red gloss dictionary |
-| `public/media/` | Dual-coding images (`imageUrl`) |
+| `content/media/` | Question images (served only via signed `/api/media`, not a public CDN path) |
 | `lib/progress/` | localStorage attempts, SM-2 SRS, readiness |
 | `lib/rag/` | Corpus index + grounded chat |
 | `prisma/schema.prisma` | Future User / Question / SRS / chat / embeddings |
@@ -77,3 +78,19 @@ i18n dictionaries live in `lib/i18n/{sv,fr}.ts`. Add `ar` later by extending `LO
 ## Deploy
 
 See [docs/DEPLOY.md](docs/DEPLOY.md). Framework: Next.js 16 on Vercel project **taxiiii**.
+
+## Content protection
+
+No web app can **100% block OS-level screenshots**, especially on desktop (Print Screen, OS snipping tools, another phone pointed at the display). Körklart maximizes friction; it does not claim “screenshot impossible”.
+
+Shipped on quiz, mock exam, Calcul, cloze, and tutor chat:
+
+1. **Copy / select** — `user-select: none` on stems, options, explanations, and images; context menu disabled on protected views; common copy / save / print shortcuts blocked (inputs still work).
+2. **Visibility / capture** — leaving the tab, blurring the window, printing, or Print Screen hides the question behind a black overlay until you confirm. Exam mode waits a short beat before “continue” (soft re-auth).
+3. **Images** — files live in `content/media/` (not hotlinked as permanent `/media/…` CDN paths). The client fetches a **short-lived signed URL**, draws on a **canvas**, and paints a faint watermark (`name` / `email` / session id). Direct `/media/*` returns 403.
+4. **Scrape friction** — the full bank is `server-only`. Clients receive a **per-session slice** (study 6–10, exam 8) from `/api/questions`. Meta mode returns ids + topics only. APIs are rate-limited. `questions.jsonl` is not in `public/`.
+5. **Headers** — CSP (`frame-ancestors 'none'`), `X-Frame-Options: DENY`, `Cache-Control: private, no-store` on APIs and media.
+6. **Legal UX** — ToS on onboarding / settings / nav: redistribution of the bank is forbidden. Rapid hide/capture patterns show a soft warning.
+7. **Native later** — [docs/ARCH-NATIVE.md](docs/ARCH-NATIVE.md) notes `FLAG_SECURE` (Android) and iOS screen-capture APIs if you wrap with Capacitor/TWA.
+
+Limits: a determined user can still photograph the screen, dump the session JSON from DevTools, or ignore the overlay. That is why the README does not promise a lock, only layered friction. Details: [docs/CONTENT-PROTECTION.md](docs/CONTENT-PROTECTION.md).

@@ -68,3 +68,14 @@ body {
 .question-fr {
   color: var(--french);
 }
+
+.protected-content {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.protected-content input,
+.protected-content textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}

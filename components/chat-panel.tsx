@@ -6,7 +6,8 @@ import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
 import { appendChat } from "@/lib/progress/store";
-import { questionsForTrack } from "@/lib/questions/bank";
+import { ProtectedView } from "@/components/protected-view";
+import { useQuestionCatalog } from "@/lib/questions/use-catalog";
 import type { ChatTurn } from "@/lib/types";
 
 export function ChatPanel() {
@@ -15,9 +16,10 @@ export function ChatPanel() {
   const [input, setInput] = useState("");
   const [pending, setPending] = useState(false);
   const track = state.profile.activeTrack;
+  const { catalog } = useQuestionCatalog(track);
   const readiness = computeReadiness(
     track,
-    questionsForTrack(track),
+    catalog,
     state.attempts,
     state.exams,
   );
@@ -58,6 +60,7 @@ export function ChatPanel() {
   }
 
   return (
+    <ProtectedView locale={state.profile.locale}>
     <div className="space-y-4">
       <header className="space-y-2">
         <h1 className="font-serif text-3xl text-black">{dict.chat}</h1>
@@ -102,5 +105,6 @@ export function ChatPanel() {
         </button>
       </form>
     </div>
+    </ProtectedView>
   );
 }

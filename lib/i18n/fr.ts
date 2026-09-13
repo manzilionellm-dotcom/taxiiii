@@ -93,6 +93,19 @@ export const fr: Dictionary = {
   supportLow: "Peu d'aide",
   recognition: "Choisis le mot",
   imageCaption: "Image associée",
+  loadingSession: "Chargement de la session protégée…",
+  tosTitle: "Conditions — contenu",
+  tos:
+    "Les questions, images et explications de Körklart ne peuvent pas être copiées, partagées ou revendues. Les captures pour usage privé sont limitées ; la redistribution de la banque est interdite.",
+  tosAccept: "J'accepte de ne pas diffuser la banque de questions.",
+  tosRequired: "Accepte les conditions pour continuer.",
+  yourEmail: "E-mail (facultatif, filigrane)",
+  captureWarning:
+    "Plusieurs interruptions / captures possibles en peu de temps. Redistribuer le contenu de la banque est interdit.",
+  contentHidden: "Contenu masqué",
+  resumeExam: "Je suis de retour — continuer l'examen",
+  protectionNote:
+    "Aucune appli web ne peut bloquer les captures au niveau de l'OS. Nous masquons la question quand la fenêtre perd le focus.",
   topic: {
     bkort: "Permis B",
     lagstiftning: "Législation",

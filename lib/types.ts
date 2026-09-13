@@ -49,12 +49,14 @@ export type SupportLevel = 0 | 1 | 2 | 3;
 
 export interface Profile {
   name: string;
+  email?: string;
   tracks: Track[];
   activeTrack: Track;
   locale: Locale;
   fragileMode: boolean;
   supportLevel: SupportLevel;
   onboarded: boolean;
+  tosAccepted: boolean;
 }
 
 export interface Attempt {
