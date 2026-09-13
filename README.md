@@ -20,12 +20,10 @@ This is not a toy landing page. It is a working vertical slice:
 
 Two corpora, both kept:
 
-1. **Research** (`data/research-bank.jsonl`) — Lionel’s early bank (~193 when complete): YouTube Lagstiftning del 1–2, prisresan, Karta Taxi 2; teori-taxi.com; TaxiKortet; taxi-prov.se vilotid; Trafikverket. Schema uses `sv` / `fr` / `type` / `source` / `topic` / `answer` / `trap` / `freq`. Swedish `sv` stays intact.
-2. **Manzi** (`data/questions.jsonl`) — full QCM (**1668** when the coordinator `questions-merged.jsonl` is dropped). `stem_sv` / options / explanations stay word for word. Exam photos live under `/workspace/taxiprov/manzi/images/` (2877 files, ~389 MB) — see [docs/MEDIA.md](docs/MEDIA.md).
+1. **Research** (`data/research-bank.jsonl`) — high-frequency YouTube/SFS seed plus the full mined coordinator file. Schema uses `sv` / `fr` / `type` / `source` / `topic` / `answer` / `trap` / `freq`. Swedish `sv` stays intact. Terms without a QCM key stay in the JSONL but are not compiled.
+2. **Manzi** (`data/questions.jsonl`) — coordinator merge (**1668** lines). `stem_sv` / options / explanations stay word for word. Exam photos resolve from `data/media-manifest.json` + private Vercel Blob (see [docs/MEDIA.md](docs/MEDIA.md)). Records without an answer key or with fewer than two options are skipped — we do not invent keys or SVGs.
 
-`npm run import` **compiles both**. A larger Manzi file must not drop research. Study order: high-frequency research (vilotid 11/8, taxameter 24 mån fälla, gul heldragen linje, tidbok, prisräkning) **then** Manzi.
-
-Until Lionel drops the full ~193-line `research-bank.jsonl`, the repo ships a high-frequency seed (YouTube + teori-taxi / TaxiKortet / taxi-prov.se / Trafikverket / SFS). Replace the file; do not merge research into Manzi’s JSONL.
+`npm run import` **compiles both**. A larger Manzi file must not drop research. Study order: one of each high-frequency trap (gul heldragen linje, taxameter 24 mån, vilotid 11/8, tidbok, prisräkning) **then** other research **then** Manzi.
 
 Vocab sessions `data/vocab/session-01` … `session-05-friday-mini` seed cloze. YouTube notes in `data/youtube-transcripts/` are in the RAG index (Calcul + chat), not QCM-only.
 

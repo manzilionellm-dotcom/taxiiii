@@ -3,9 +3,10 @@
 Two files. **Both** are compiled. Manzi never deletes research.
 
 ```
-data/research-bank.jsonl    ← YouTube + apps + public examples (~193 when full)
-data/questions.jsonl        ← Manzi bank (1668 when the coordinator drop is copied)
-data/questions.json         ← compiled merge (research first, then Manzi)
+data/research-bank.jsonl    ← YouTube + apps + public examples (seed + full mined file)
+data/questions.jsonl        ← coordinator merge (1668 lines: Manzi + research copies)
+data/questions.json         ← compiled merge (research first, then Manzi; incomplete keys skipped)
+data/media-manifest.json    ← private Vercel Blob keys (~1993 rasters)
 data/vocab/session-01.json … session-05-friday-mini.json
 data/youtube-links.json
 data/youtube-transcripts/*.json

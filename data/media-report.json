@@ -1,11 +1,17 @@
 {
-  "generatedAt": "2026-09-13T20:05:49.819Z",
+  "generatedAt": "2026-09-13T21:26:35.048Z",
   "imagesDir": null,
-  "questionsTotal": 68,
-  "questionsWithImageUrl": 8,
+  "questionsTotal": 1441,
+  "researchCount": 63,
+  "manziCount": 1378,
+  "researchJsonl": 223,
+  "manziJsonl": 1668,
+  "skippedIncomplete": 450,
+  "questionsWithImageUrl": 107,
   "rastersCopied": 0,
-  "questionsLinkedToFile": 8,
+  "questionsLinkedToFile": 107,
   "questionsMissingFile": 0,
+  "manifestFiles": 1993,
   "gulLinje": null,
   "coordinator": {
     "questions": "/workspace/taxiprov/manzi/questions-merged.jsonl",
@@ -13,5 +19,5 @@
     "expectedQuestions": 1668,
     "expectedImages": 2877
   },
-  "note": "No --images this run. Drop /workspace/taxiprov/manzi/images (~389MB, 2877 rasters) and re-run with --coordinator. Do not invent SVGs."
+  "note": "No --images this run. Exam rasters resolve from data/media-manifest.json + private Vercel Blob. Do not invent SVGs."
 }

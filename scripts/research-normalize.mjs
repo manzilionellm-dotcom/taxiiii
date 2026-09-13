@@ -5,6 +5,15 @@ import { sanitizeCaption, stripFakeExamArt, toImageUrl } from "../lib/media/path
 const TOPICS = new Set(["lagstiftning", "sakerhet", "karta", "bkort"]);
 const LETTERS = ["A", "B", "C", "D", "E"];
 
+/** Coordinator drop uses finer topics than the four exam tracks. */
+export const TOPIC_ALIASES = {
+  vilotid: "lagstiftning",
+  pris: "lagstiftning",
+  vagskyltar: "sakerhet",
+  bemotande: "sakerhet",
+  fordonskannedom: "sakerhet",
+};
+
 export function parseJsonl(text) {
   const issues = [];
   const records = [];
@@ -31,6 +40,61 @@ export function splitSvAlts(sv) {
   return { stem, options };
 }
 
+export function stemKey(text) {
+  return String(text || "")
+    .normalize("NFC")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function recordStem(record) {
+  if (!record) return "";
+  if (typeof record.stem_sv === "string" && record.stem_sv.trim()) return record.stem_sv.trim();
+  if (typeof record.sv === "string" && record.sv.trim()) return splitSvAlts(record.sv).stem;
+  if (typeof record.sv_original === "string" && record.sv_original.trim()) {
+    return splitSvAlts(record.sv_original).stem;
+  }
+  return "";
+}
+
+export function mapTopic(topic) {
+  if (!topic) return "lagstiftning";
+  if (TOPICS.has(topic)) return topic;
+  return TOPIC_ALIASES[topic] || null;
+}
+
+export function mapFreq(freq) {
+  if (freq == null || freq === "") return undefined;
+  const value = String(freq).toLowerCase().trim();
+  if (["high", "haute", "hög", "h"].includes(value)) return "high";
+  if (["medium", "moyenne", "medel", "m"].includes(value)) return "medium";
+  if (["low", "basse", "låg", "l"].includes(value)) return "low";
+  return undefined;
+}
+
+export function coerceTrap(trap) {
+  return typeof trap === "string" && trap.trim() ? trap.trim() : undefined;
+}
+
+function optionTextKey(text) {
+  return stemKey(text).replace(/[.,;:()]/g, "");
+}
+
+export function letterFromAnswer(answer, options) {
+  if (LETTERS.includes(answer)) return answer;
+  if (typeof answer !== "string" || !answer.trim() || !Array.isArray(options)) return undefined;
+  const exact = options.find((option) => option.text === answer);
+  if (exact) return exact.letter;
+  const needle = optionTextKey(answer);
+  if (!needle) return undefined;
+  const fuzzy = options.find((option) => {
+    const hay = optionTextKey(option.text);
+    return hay === needle || hay.includes(needle) || needle.includes(hay);
+  });
+  return fuzzy?.letter;
+}
+
 export function isResearchShape(record) {
   return record && typeof record.sv === "string" && record.sv.trim();
 }
@@ -39,56 +103,156 @@ export function isManziShape(record) {
   return record && typeof record.stem_sv === "string" && Array.isArray(record.options);
 }
 
+function cleanOptions(options) {
+  if (!Array.isArray(options)) return [];
+  return options
+    .map((option, index) => {
+      if (typeof option === "string") {
+        const letter = LETTERS[index];
+        return letter && option.trim() ? { letter, text: option.trim() } : null;
+      }
+      if (!option || typeof option !== "object") return null;
+      const letter = LETTERS.includes(option.letter) ? option.letter : LETTERS[index];
+      const text = typeof option.text === "string" ? option.text.trim() : "";
+      return letter && text ? { letter, text } : null;
+    })
+    .filter(Boolean);
+}
+
+function fallbackExplanation(record, lang, trap) {
+  const existing = lang === "sv" ? record.explanation_sv : record.explanation_fr;
+  if (typeof existing === "string" && existing.trim()) return existing.trim();
+  const note = lang === "sv" ? record.note_sv : record.note_fr;
+  if (typeof note === "string" && note.trim()) {
+    const extra =
+      lang === "sv"
+        ? [trap ? `Vanlig fälla: ${trap}.` : "", record.source ? `Källa: ${record.source}` : ""]
+        : [trap ? `Piège fréquent : ${trap}.` : "", record.source ? `Source : ${record.source}` : ""];
+    return [note.trim(), ...extra].filter(Boolean).join(" ");
+  }
+  if (lang === "sv") {
+    return [
+      LETTERS.includes(record.answer) ? `Rätt svar: ${record.answer}.` : "",
+      trap ? `Vanlig fälla: ${trap}.` : "",
+      `Källa: ${record.source || "research"}`,
+    ]
+      .filter(Boolean)
+      .join(" ");
+  }
+  return [
+    LETTERS.includes(record.answer) ? `Bonne réponse : ${record.answer}.` : "",
+    trap ? `Piège fréquent : ${trap}.` : "",
+    `Source : ${record.source || "research"}`,
+  ]
+    .filter(Boolean)
+    .join(" ");
+}
+
+function emptyResult(warnings, issues = []) {
+  return { issues, warnings, question: null, translation: null };
+}
+
+export function coordinatorToResearchSource(record) {
+  const stem = recordStem(record);
+  const sv =
+    (typeof record.sv === "string" && record.sv.trim()) ||
+    (typeof record.sv_original === "string" && record.sv_original.trim()) ||
+    stem;
+  const next = {
+    id: record.id,
+    topic: mapTopic(record.topic) || record.topic,
+    sv,
+    ...(record.stem_sv ? { stem_sv: record.stem_sv } : {}),
+    ...(Array.isArray(record.options) ? { options: record.options } : {}),
+    ...(record.answer != null && record.answer !== "" ? { answer: record.answer } : {}),
+    ...(record.explanation_sv ? { explanation_sv: record.explanation_sv } : {}),
+    ...(record.explanation_fr ? { explanation_fr: record.explanation_fr } : {}),
+    ...(record.fr ? { fr: record.fr } : {}),
+    ...(record.note_sv ? { note_sv: record.note_sv } : {}),
+    ...(record.note_fr ? { note_fr: record.note_fr } : {}),
+    source: record.source || "research",
+    ...(record.type ? { type: record.type } : {}),
+    ...(mapFreq(record.freq) ? { freq: mapFreq(record.freq) } : {}),
+    ...(coerceTrap(record.trap) ? { trap: coerceTrap(record.trap) } : {}),
+    ...(record.youtubeId ? { youtubeId: record.youtubeId } : {}),
+    ...(toImageUrl(record.imageUrl) ? { imageUrl: toImageUrl(record.imageUrl) } : {}),
+    ...(record.sv_original ? { sv_original: record.sv_original } : {}),
+  };
+  return next;
+}
+
+export function mergeResearchSources(seedRecords, incomingRecords) {
+  const out = [];
+  const stems = new Set();
+  for (const record of seedRecords) {
+    out.push(record);
+    const key = stemKey(recordStem(record));
+    if (key) stems.add(key);
+  }
+  for (const raw of incomingRecords) {
+    const record = coordinatorToResearchSource(raw);
+    const key = stemKey(recordStem(record));
+    if (key && stems.has(key)) continue;
+    if (key) stems.add(key);
+    out.push(record);
+  }
+  return out;
+}
+
 export function normalizeResearchRecord(record, index) {
   const issues = [];
+  const warnings = [];
   const prefix = record.id || `research#${index + 1}`;
-  if (!isResearchShape(record)) {
-    return { issues: [`${prefix}: missing sv`], question: null, translation: null };
+  if (record?.type === "term") {
+    return emptyResult([`${prefix}: term skipped (vocab, not QCM)`]);
   }
-  if (record.topic && !TOPICS.has(record.topic)) {
+  if (!isResearchShape(record)) {
+    return { issues: [`${prefix}: missing sv`], warnings, question: null, translation: null };
+  }
+  const topic = mapTopic(record.topic);
+  if (record.topic && !topic) {
     issues.push(`${prefix}: topic must be lagstiftning|sakerhet|karta|bkort`);
   }
   const { stem, options: embedded } = splitSvAlts(record.sv);
-  let options = embedded;
-  if (!options.length && Array.isArray(record.options)) options = record.options;
-  const trap = record.trap ? String(record.trap) : "";
+  let options = embedded.length ? embedded : cleanOptions(record.options);
+  const trap = coerceTrap(record.trap) || "";
+  let synthesizedFromAnswer = false;
   if (!options.length) {
-    const answerText = typeof record.answer === "string" && !LETTERS.includes(record.answer)
-      ? record.answer
-      : stem;
-    options = [{ letter: "A", text: answerText }];
-    if (trap) {
-      trap.split(/[|,]/).map((part) => part.trim()).filter(Boolean).forEach((text, i) => {
-        const letter = LETTERS[i + 1];
-        if (letter) options.push({ letter, text });
-      });
-    }
-    if (options.length < 2) {
-      options.push({ letter: "B", text: "Påståendet stämmer inte." });
+    if (typeof record.answer === "string" && record.answer.trim() && !LETTERS.includes(record.answer)) {
+      options = [{ letter: "A", text: record.answer.trim() }];
+      if (trap) {
+        trap
+          .split(/[|,]/)
+          .map((part) => part.trim())
+          .filter(Boolean)
+          .forEach((text, i) => {
+            const letter = LETTERS[i + 1];
+            if (letter) options.push({ letter, text });
+          });
+      }
+      if (options.length < 2) {
+        options.push({ letter: "B", text: "Påståendet stämmer inte." });
+      }
+      synthesizedFromAnswer = true;
+    } else {
+      return emptyResult([`${prefix}: skipped — no options and no answer key`]);
     }
   }
-  let answer = record.answer;
-  if (!LETTERS.includes(answer)) {
-    const hit = options.find((option) => option.text === record.answer);
-    answer = hit?.letter ?? options[0].letter;
+  let answer = letterFromAnswer(record.answer, options);
+  if (!answer && synthesizedFromAnswer) answer = options[0].letter;
+  if (!answer) {
+    return emptyResult([`${prefix}: skipped — missing answer key`]);
   }
   if (!options.some((option) => option.letter === answer)) {
-    issues.push(`${prefix}: answer ${answer} not in options`);
+    return emptyResult([`${prefix}: skipped — answer ${answer} not among options`]);
   }
   const id = record.id || `rs-${index + 1}`;
-  const explanation_sv =
-    record.explanation_sv ||
-    [record.note_sv, trap ? `Vanlig fälla: ${trap}.` : "", `Källa: ${record.source || "research"}`]
-      .filter(Boolean)
-      .join(" ");
-  const explanation_fr =
-    record.explanation_fr ||
-    [record.note_fr, trap ? `Piège fréquent : ${trap}.` : "", `Source : ${record.source || "research"}`]
-      .filter(Boolean)
-      .join(" ");
+  const explanation_sv = fallbackExplanation(record, "sv", trap);
+  const explanation_fr = fallbackExplanation(record, "fr", trap);
+  const freq = mapFreq(record.freq);
   const question = {
     id,
-    topic: record.topic || "lagstiftning",
+    topic: topic || "lagstiftning",
     stem_sv: stem,
     options,
     answer,
@@ -96,7 +260,7 @@ export function normalizeResearchRecord(record, index) {
     explanation_fr,
     source: record.source || "research",
     corpus: "research",
-    ...(record.freq ? { freq: record.freq } : {}),
+    ...(freq ? { freq } : {}),
     ...(trap ? { trap } : {}),
     ...(record.type ? { type: record.type } : {}),
     ...(record.youtubeId ? { youtubeId: record.youtubeId } : {}),
@@ -109,36 +273,58 @@ export function normalizeResearchRecord(record, index) {
   const translation = record.fr
     ? { stem: record.fr, options: record.options_fr || undefined }
     : null;
-  return { issues, question, translation };
+  return { issues, warnings, question, translation };
 }
 
 export function normalizeManziRecord(record, index) {
   const issues = [];
+  const warnings = [];
   const prefix = record.id || `manzi#${index + 1}`;
-  if (!isManziShape(record)) {
-    return { issues: [`${prefix}: missing stem_sv/options`], question: null };
+  if (record?.type === "term") {
+    return emptyResult([`${prefix}: term skipped (vocab, not QCM)`]);
   }
+  if (!isManziShape(record)) {
+    return { issues: [`${prefix}: missing stem_sv/options`], warnings, question: null };
+  }
+  const options = cleanOptions(record.options);
+  if (options.length < 2) {
+    return emptyResult([`${prefix}: skipped — fewer than 2 options`]);
+  }
+  const answer = letterFromAnswer(record.answer, options);
+  if (!answer) {
+    return emptyResult([`${prefix}: skipped — missing answer key`]);
+  }
+  if (!options.some((option) => option.letter === answer)) {
+    return emptyResult([`${prefix}: skipped — answer ${answer} not among options`]);
+  }
+  const topic = mapTopic(record.topic);
+  if (!topic) {
+    issues.push(`${prefix}: topic must be lagstiftning|sakerhet|karta|bkort`);
+    return { issues, warnings, question: null };
+  }
+  const trap = coerceTrap(record.trap);
+  const freq = mapFreq(record.freq);
   const question = {
     id: record.id,
-    topic: record.topic,
+    topic,
     stem_sv: record.stem_sv,
-    options: record.options.map((option) => ({ letter: option.letter, text: option.text })),
-    answer: record.answer,
-    explanation_sv: record.explanation_sv,
-    explanation_fr: record.explanation_fr,
+    options,
+    answer,
+    explanation_sv: fallbackExplanation({ ...record, answer }, "sv", trap),
+    explanation_fr: fallbackExplanation({ ...record, answer }, "fr", trap),
     ...(toImageUrl(record.imageUrl) ? { imageUrl: toImageUrl(record.imageUrl) } : {}),
     ...(record.imageCaption || record.caption
       ? { imageCaption: sanitizeCaption(record.imageCaption || record.caption) }
       : {}),
     source: record.source || "manzi",
     corpus: record.corpus || "manzi",
-    ...(record.freq ? { freq: record.freq } : {}),
-    ...(record.trap ? { trap: record.trap } : {}),
+    ...(freq ? { freq } : {}),
+    ...(trap ? { trap } : {}),
     ...(record.type ? { type: record.type } : {}),
     ...(record.youtubeId ? { youtubeId: record.youtubeId } : {}),
   };
   Object.assign(question, stripFakeExamArt(question));
-  return { issues, question };
+  return { issues, warnings, question };
 }
 
 const HIGH_FREQ =
@@ -170,14 +356,25 @@ export function studyPriority(question) {
   return 2;
 }
 
+export function compareStudyOrder(a, b) {
+  const d = studyPriority(a) - studyPriority(b);
+  if (d !== 0) return d;
+  const start = starterRank(a) - starterRank(b);
+  if (start !== 0) return start;
+  const fa = a.freq === "high" ? 0 : a.freq === "medium" ? 1 : 2;
+  const fb = b.freq === "high" ? 0 : b.freq === "medium" ? 1 : 2;
+  return fa - fb || a.id.localeCompare(b.id);
+}
+
 export function sortForStudy(questions) {
-  return [...questions].sort((a, b) => {
-    const d = studyPriority(a) - studyPriority(b);
-    if (d !== 0) return d;
-    const start = starterRank(a) - starterRank(b);
-    if (start !== 0) return start;
-    const fa = a.freq === "high" ? 0 : a.freq === "medium" ? 1 : 2;
-    const fb = b.freq === "high" ? 0 : b.freq === "medium" ? 1 : 2;
-    return fa - fb || a.id.localeCompare(b.id);
-  });
+  const remaining = [...questions];
+  const head = [];
+  for (const pattern of STARTER_PATTERNS) {
+    const index = remaining.findIndex(
+      (question) => studyPriority(question) === 0 && pattern.test(haystack(question)),
+    );
+    if (index !== -1) head.push(...remaining.splice(index, 1));
+  }
+  remaining.sort(compareStudyOrder);
+  return [...head, ...remaining];
 }

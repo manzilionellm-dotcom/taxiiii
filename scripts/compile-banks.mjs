@@ -14,6 +14,7 @@ import {
   normalizeResearchRecord,
   parseJsonl,
   sortForStudy,
+  stemKey,
 } from "./research-normalize.mjs";
 import { RESEARCH_ITEMS } from "./research-items.mjs";
 import {
@@ -83,46 +84,58 @@ export function compile({ check = false, images = null } = {}) {
   const researchFile = readJsonl("data/research-bank.jsonl");
   const manziFile = readJsonl("data/questions.jsonl");
   const issues = [...researchFile.issues, ...manziFile.issues];
+  const warnings = [];
   const questions = [];
   const translations = {};
   const seen = new Set();
+  const seenStems = new Set();
+
+  function take(result, { duplicateMessage } = {}) {
+    issues.push(...(result.issues || []));
+    warnings.push(...(result.warnings || []));
+    if (!result.question) return;
+    if (seen.has(result.question.id)) {
+      warnings.push(duplicateMessage || `duplicate id ${result.question.id} (kept first)`);
+      return;
+    }
+    const stem = stemKey(result.question.stem_sv);
+    const researchCopy =
+      result.question.corpus === "research" || String(result.question.id).startsWith("research-");
+    if (stem && seenStems.has(stem) && researchCopy) {
+      warnings.push(`duplicate stem ${result.question.id} (kept first / research)`);
+      return;
+    }
+    seen.add(result.question.id);
+    if (stem && result.question.corpus === "research") seenStems.add(stem);
+    questions.push(result.question);
+    if (result.translation) translations[result.question.id] = result.translation;
+  }
 
   researchFile.records.forEach((record, index) => {
     const result = isResearchShape(record)
       ? normalizeResearchRecord(record, index)
       : normalizeManziRecord({ ...record, corpus: record.corpus || "research" }, index);
-    issues.push(...result.issues);
-    if (!result.question) return;
-    if (seen.has(result.question.id)) {
-      issues.push(`duplicate id ${result.question.id} (kept first / research)`);
-      return;
-    }
-    seen.add(result.question.id);
-    questions.push(result.question);
-    if (result.translation) translations[result.question.id] = result.translation;
+    take(result, { duplicateMessage: `duplicate id ${record.id} (kept first / research)` });
   });
 
   manziFile.records.forEach((record, index) => {
     if (isResearchShape(record) && !isManziShape(record)) {
-      const result = normalizeResearchRecord(record, index);
-      issues.push(...result.issues);
-      if (!result.question || seen.has(result.question.id)) return;
-      seen.add(result.question.id);
-      questions.push(result.question);
+      take(normalizeResearchRecord(record, index), {
+        duplicateMessage: `Manzi research-shape ${record.id} skipped — already compiled`,
+      });
       return;
     }
-    const result = normalizeManziRecord(record, index);
-    issues.push(...result.issues);
-    if (!result.question) return;
-    if (seen.has(result.question.id)) {
-      issues.push(`Manzi id ${result.question.id} skipped — research already owns this id`);
-      return;
-    }
-    seen.add(result.question.id);
-    questions.push(result.question);
+    take(normalizeManziRecord(record, index), {
+      duplicateMessage: `Manzi id ${record.id} skipped — research already owns this id`,
+    });
   });
 
   if (issues.length) fail("validation failed", issues);
+  if (warnings.length) {
+    console.warn(`compile-banks: ${warnings.length} skipped/incomplete records (not fatal)`);
+    for (const warning of warnings.slice(0, 12)) console.warn(`  - ${warning}`);
+    if (warnings.length > 12) console.warn(`  … ${warnings.length - 12} more`);
+  }
 
   let authentic = attachAuthenticMedia(questions);
   if (images) {
@@ -157,6 +170,15 @@ export function compile({ check = false, images = null } = {}) {
   const vocab = mergeVocab();
   if (!images) {
     const withUrl = ordered.filter((item) => item.imageUrl);
+    let manifestFiles = 0;
+    const manifestPath = join(root, "data/media-manifest.json");
+    if (existsSync(manifestPath)) {
+      try {
+        manifestFiles = Object.keys(JSON.parse(readFileSync(manifestPath, "utf8")).files || {}).length;
+      } catch {
+        manifestFiles = 0;
+      }
+    }
     writeFileSync(
       join(root, "data/media-report.json"),
       `${JSON.stringify(
@@ -164,10 +186,16 @@ export function compile({ check = false, images = null } = {}) {
           generatedAt: new Date().toISOString(),
           imagesDir: null,
           questionsTotal: ordered.length,
+          researchCount,
+          manziCount,
+          researchJsonl: researchFile.records.length,
+          manziJsonl: manziFile.records.length,
+          skippedIncomplete: warnings.length,
           questionsWithImageUrl: withUrl.length,
           rastersCopied: 0,
           questionsLinkedToFile: withUrl.length,
           questionsMissingFile: 0,
+          manifestFiles,
           gulLinje: ordered.find((item) => item.id === "rs-yt-lag1-gul-linje")?.imageUrl ?? null,
           coordinator: {
             questions: COORDINATOR_MANZI_JSONL,
@@ -175,7 +203,7 @@ export function compile({ check = false, images = null } = {}) {
             expectedQuestions: 1668,
             expectedImages: 2877,
           },
-          note: "No --images this run. Drop /workspace/taxiprov/manzi/images (~389MB, 2877 rasters) and re-run with --coordinator. Do not invent SVGs.",
+          note: "No --images this run. Exam rasters resolve from data/media-manifest.json + private Vercel Blob. Do not invent SVGs.",
         },
         null,
         2,

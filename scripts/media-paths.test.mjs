@@ -12,6 +12,7 @@ import {
   toImageUrl,
   toLogicalKey,
 } from "../lib/media/paths.mjs";
+import { letterFromAnswer, mapFreq, mapTopic, stemKey } from "./research-normalize.mjs";
 import { importMediaTree, resolveImageFile, indexImageTree } from "./import-media.mjs";
 
 function assert(cond, message) {
@@ -29,6 +30,17 @@ assert(toLogicalKey("media/T3/lag/exam.php-filer/101.jpg") === "T3/lag/exam.php-
 assert(toLogicalKey("/media/T3/lag/exam.php-filer/101.jpg") === "T3/lag/exam.php-filer/101.jpg", "strip /media/");
 assert(toLogicalKey("media\\T3\\lag\\101.jpg") === "T3/lag/101.jpg", "windows slashes");
 assert(toImageUrl("media/T3/a/1.jpg") === "/media/T3/a/1.jpg", "public url");
+assert(
+  toImageUrl("media/T3/Taxi porove/kartap/kartp1/1/exam.php-filer/799508375.jpg") ===
+    "/media/T3/Taxi porove/kartap/kartp1/1/exam.php-filer/799508375.jpg",
+  "leading slash on spaced Manzi path",
+);
+assert(mapTopic("vilotid") === "lagstiftning", "vilotid alias");
+assert(mapTopic("pris") === "lagstiftning", "pris alias");
+assert(mapFreq("haute") === "high", "freq haute");
+assert(mapFreq("moyenne") === "medium", "freq moyenne");
+assert(letterFromAnswer("C", [{ letter: "C", text: "12 månader" }]) === "C", "letter answer");
+assert(stemKey("  Gul   linje ") === "gul linje", "stem key");
 assert(!isSafeMediaKey("../secret.jpg"), "reject parent");
 assert(!isSafeMediaKey("T3/../../etc/passwd"), "reject traversal");
 assert(!toLogicalKey("media/../etc/passwd"), "logical rejects traversal");
