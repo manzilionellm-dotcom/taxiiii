@@ -4,6 +4,10 @@ import { useEffect, useRef, useState } from "react";
 
 type Status = "loading" | "ready" | "error";
 
+function isSvgSrc(src: string) {
+  return /\.svg(\?|$)/i.test(src);
+}
+
 export function ProtectedImage({
   src,
   alt,
@@ -17,30 +21,26 @@ export function ProtectedImage({
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [status, setStatus] = useState<Status>("loading");
-  const [fallbackSrc, setFallbackSrc] = useState<string | null>(null);
 
   useEffect(() => {
+    if (isSvgSrc(src)) return;
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) {
+      setStatus("error");
+      return;
+    }
+
     let cancelled = false;
     let revoked: string | null = null;
-    let keepBlob = false;
     setStatus("loading");
-    setFallbackSrc(null);
 
-    const showFallback = (url: string) => {
+    const image = new Image();
+    image.onload = () => {
       if (cancelled) return;
-      keepBlob = true;
-      setFallbackSrc(url);
-      setStatus("ready");
-    };
-
-    const paint = (image: HTMLImageElement) => {
-      const canvas = canvasRef.current;
-      if (!canvas) return false;
-      const ctx = canvas.getContext("2d");
-      if (!ctx) return false;
       const width = image.naturalWidth || 640;
       const height = image.naturalHeight || 360;
-      if (!width || !height) return false;
       canvas.width = width;
       canvas.height = height;
       ctx.clearRect(0, 0, width, height);
@@ -53,7 +53,10 @@ export function ProtectedImage({
       ctx.rotate(-0.28);
       ctx.fillText(watermark, 0, 0);
       ctx.restore();
-      return true;
+      setStatus("ready");
+    };
+    image.onerror = () => {
+      if (!cancelled) setStatus("error");
     };
 
     void fetch(src, { credentials: "same-origin", cache: "no-store" })
@@ -61,16 +64,6 @@ export function ProtectedImage({
       .then((blob) => {
         if (cancelled) return;
         revoked = URL.createObjectURL(blob);
-        const image = new Image();
-        image.onload = () => {
-          if (cancelled) return;
-          if (paint(image)) {
-            setStatus("ready");
-            return;
-          }
-          showFallback(revoked as string);
-        };
-        image.onerror = () => showFallback(revoked as string);
         image.src = revoked;
       })
       .catch(() => {
@@ -79,9 +72,39 @@ export function ProtectedImage({
 
     return () => {
       cancelled = true;
-      if (revoked && !keepBlob) URL.revokeObjectURL(revoked);
+      if (revoked) URL.revokeObjectURL(revoked);
     };
   }, [src, watermark]);
+
+  if (isSvgSrc(src)) {
+    return (
+      <div className="relative">
+        {status === "error" ? (
+          <div className="flex min-h-24 items-center justify-center px-4 py-6 text-center text-sm text-[#6b6560]">
+            {unavailableLabel}
+          </div>
+        ) : (
+          <>
+            {/* Signed same-origin URL; HttpOnly session cookie is sent automatically. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={src}
+              alt={alt}
+              className="mx-auto max-h-64 w-full object-contain"
+              onLoad={() => setStatus("ready")}
+              onError={() => setStatus("error")}
+            />
+            <span
+              aria-hidden
+              className="pointer-events-none absolute inset-x-6 bottom-8 rotate-[-12deg] text-center text-sm font-medium text-[#1f3d2b]/25"
+            >
+              {watermark}
+            </span>
+          </>
+        )}
+      </div>
+    );
+  }
 
   if (status === "error") {
     return (
@@ -102,21 +125,9 @@ export function ProtectedImage({
         aria-label={alt}
         aria-busy={status === "loading"}
         className={`mx-auto max-h-64 w-full object-contain ${
-          fallbackSrc || status !== "ready" ? "hidden" : "block"
+          status === "ready" ? "opacity-100" : "h-40 opacity-0"
         }`}
       />
-      {fallbackSrc ? (
-        <div className="relative">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={fallbackSrc} alt={alt} className="mx-auto max-h-64 w-full object-contain" />
-          <span
-            aria-hidden
-            className="pointer-events-none absolute inset-x-6 bottom-8 rotate-[-12deg] text-center text-sm font-medium text-[#1f3d2b]/25"
-          >
-            {watermark}
-          </span>
-        </div>
-      ) : null}
     </div>
   );
 }
