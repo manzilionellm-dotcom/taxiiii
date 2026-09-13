@@ -125,6 +125,9 @@ export function compile({ check = false, images = null } = {}) {
       });
       return;
     }
+    if (String(record.id || "").startsWith("research-")) {
+      return;
+    }
     take(normalizeManziRecord(record, index), {
       duplicateMessage: `Manzi id ${record.id} skipped — research already owns this id`,
     });

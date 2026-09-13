@@ -3,6 +3,7 @@ import { createRequire } from "node:module";
 import {
   parseJsonl,
   isResearchShape,
+  looksFrenchExamLeak,
   normalizeManziRecord,
   normalizeResearchRecord,
   sortForStudy,
@@ -147,6 +148,45 @@ assert(
   compiled.filter((item) => item.imageUrl).every((item) => !item.imageUrl.startsWith("media/")),
   "compiled imageUrl must not be media/ without leading slash",
 );
+
+const compiledResearch = compiled.filter((item) => item.corpus === "research");
+for (const question of compiledResearch) {
+  assert(!looksFrenchExamLeak(question.stem_sv), `French leaked into stem_sv ${question.id}`);
+  assert(
+    question.options.every((option) => !looksFrenchExamLeak(option.text)),
+    `French leaked into options ${question.id}`,
+  );
+  assert(!question.trap || !looksFrenchExamLeak(question.trap), `French leaked into trap ${question.id}`);
+  assert(question.options.length >= 2, `compiled research ${question.id} has fewer than 2 options`);
+  assert(
+    !question.options.some((option) => option.text === "Påståendet stämmer inte."),
+    `compiled research ${question.id} used a dummy option`,
+  );
+}
+
+const bannedFakeQcm = [
+  "research-0122",
+  "research-0123",
+  "research-0124",
+  "research-0125",
+  "research-0126",
+  "research-0127",
+  "research-0128",
+  "research-0129",
+  "research-0130",
+  "research-0132",
+  "research-0133",
+  "research-0134",
+  "research-0135",
+  "research-0149",
+  "research-0168",
+];
+for (const id of bannedFakeQcm) {
+  assert(
+    !compiled.some((item) => item.id === id),
+    `${id} must stay out of the compiled exam bank`,
+  );
+}
 
 console.log(
   `self-check OK · research ${researchCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,

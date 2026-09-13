@@ -174,57 +174,11 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt: C",
+    "explanation_sv": "Kontroll- och plomberingsrapporten ska förvaras i fordonet. Källa: teori-taxi.com",
     "explanation_fr": "Traduction littérale : Var ska taxameterns kontroll- och plomberingsrapport förvaras? Options : Hos länsstyrelsen / Hos vägverket / I fordonet / Hos tillståndshavaren",
     "source": "https://www.teori-taxi.com/lagstiftning-fragor2/",
     "corpus": "research",
     "freq": "high",
-    "type": "question"
-  },
-  {
-    "id": "research-0125",
-    "topic": "lagstiftning",
-    "stem_sv": "Hur ofta ska taxametern kontrolleras?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Vart annat år enligt föreskrift"
-      },
-      {
-        "letter": "B",
-        "text": "Ne pas confondre avec la contrôle technique annuelle du véhicule."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Vanlig fälla: Ne pas confondre avec la contrôle technique annuelle du véhicule.. Källa: https://taxikortet.se/blogg/taxi-kunskapsprov-exempelfragor-transportstyrelsen",
-    "explanation_fr": "À quelle fréquence le taximètre doit-il être contrôlé ?",
-    "source": "https://taxikortet.se/blogg/taxi-kunskapsprov-exempelfragor-transportstyrelsen",
-    "corpus": "research",
-    "freq": "high",
-    "trap": "Ne pas confondre avec la contrôle technique annuelle du véhicule.",
-    "type": "question"
-  },
-  {
-    "id": "research-0129",
-    "topic": "lagstiftning",
-    "stem_sv": "Vem är ansvarig för att taxametern är korrekt installerad?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Tillståndshavaren"
-      },
-      {
-        "letter": "B",
-        "text": "Ce n’est pas seulement le chauffeur."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Vanlig fälla: Ce n’est pas seulement le chauffeur.. Källa: https://taxikortet.se/blogg/taxi-teoriprov-delprov-2-fragor",
-    "explanation_fr": "Qui est responsable que le taximètre soit correctement installé ?",
-    "source": "https://taxikortet.se/blogg/taxi-teoriprov-delprov-2-fragor",
-    "corpus": "research",
-    "freq": "high",
-    "trap": "Ce n’est pas seulement le chauffeur.",
     "type": "question"
   },
   {
@@ -377,7 +331,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: B",
+    "explanation_sv": "Kvitto eller följesedel ska skrivas ut efter alla körningar. Källa: teori-taxi.com",
     "explanation_fr": "Quand devez-vous proposer / imprimer un reçu (kvitto) depuis le taximètre ? Options : Alla körningar utom skolskjutsning / Alla körningar / Alla körningar utom körning med fast pris / Alla körningar utom färdtjänstuppdraget",
     "source": "https://www.teori-taxi.com/lagstiftning-fragor1/",
     "corpus": "research",
@@ -443,29 +397,6 @@
     "corpus": "research",
     "freq": "medium",
     "type": "qcm"
-  },
-  {
-    "id": "research-0130",
-    "topic": "lagstiftning",
-    "stem_sv": "Du ska ha haft en dygnsvila på minst 11 timmar under den 24-timmarsperiod som föregår varje tidpunkt då du utför transporter. Dygnsvilan får delas upp i två perioder, varav den ena perioden ska vara minst åtta timmar. Har föraren följt reglerna om två viloperioder à 6,5 h vardera?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Nej – ena perioden måste vara minst 8 timmar"
-      },
-      {
-        "letter": "B",
-        "text": "Avoir 11 h au total ne suffit pas si le découpage viole la règle des 8 h."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Vanlig fälla: Avoir 11 h au total ne suffit pas si le découpage viole la règle des 8 h.. Källa: https://taxi-prov.se/vilotid",
-    "explanation_fr": "Repos journalier : 11 h / 24 h, divisible en 2 périodes dont une ≥ 8 h. Deux périodes de 6,5 h — conforme ?",
-    "source": "https://taxi-prov.se/vilotid",
-    "corpus": "research",
-    "freq": "high",
-    "trap": "Avoir 11 h au total ne suffit pas si le découpage viole la règle des 8 h.",
-    "type": "question"
   },
   {
     "id": "rs-taxi-prov-vila-split-fail",
@@ -663,7 +594,7 @@
       }
     ],
     "answer": "A",
-    "explanation_sv": "Rätt: A",
+    "explanation_sv": "Anteckna den närmast föregående dygnsvilan innan körpasset. Källa: teori-taxi.com + SFS 1994:1297",
     "explanation_fr": "Question sur le carnet de temps (tidbok) et les repos — lisez attentivement les horaires. Options : Den närmaste föregående dygnsvilan / De två närmast föregående dygnsvilorna / De tre närmast föregående dygnsvilorna / De sju närmast föregående dygnsvilorna",
     "source": "https://www.teori-taxi.com/lagstiftning-fragor2/",
     "corpus": "research",
@@ -908,7 +839,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Källa: https://www.teori-taxi.com/lagstiftning-fragor1/",
+    "explanation_sv": "Fast pris registreras när köruppdraget påbörjas. Källa: teori-taxi.com",
     "explanation_fr": "Que signifie le tarif « prix fixe » (fast pris) en taxi ? Options : Det är ett fastställt belopp utöver grundavgiften som ska registreras före resan / Det är ett fastställt belopp som ska registreras när köruppdraget påbörjas / Det är en tariff som enbart används vid godstransporter / Det är en tariff som enbar används vid persontransporter",
     "source": "https://www.teori-taxi.com/lagstiftning-fragor1/",
     "corpus": "research",
@@ -938,7 +869,7 @@
       }
     ],
     "answer": "D",
-    "explanation_sv": "Rätt: D",
+    "explanation_sv": "Vid skolskjuts ansvarar föraren för att ett 14-årigt barn använder bilbälte. Källa: teori-taxi.com",
     "explanation_fr": "Qui est responsable que l’enfant de 14 ans porte la ceinture lors d’un transport scolaire en taxi ? Options : Barnet själv / Skolpersonalen om det finns sådan med i bilen / Barnets föräldrar om de finns med i bilen / Föraren",
     "source": "https://www.teori-taxi.com/lagstiftning-fragor2/",
     "corpus": "research",
@@ -968,7 +899,7 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt: C",
+    "explanation_sv": "Mönsterdjupet påverkar risken för vattenplaning mest. Källa: teori-taxi.com",
     "explanation_fr": "Qu’est-ce qui influence le plus le risque d’aquaplaning ? Options : Bakdāckens lufttryck / Däckens omkrets / Däckens mönsterdjup / Framdäckens lufttryck",
     "source": "https://www.teori-taxi.com/sakerhet1/",
     "corpus": "research",
@@ -998,218 +929,12 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: B",
+    "explanation_sv": "55 + (8×23) + (12×7) = 323 kr. Vanlig fälla: 184 kr (bara kilometerna). Källa: taxikortet.se",
     "explanation_fr": "Une course : prise en charge 55 kr, 23 kr/km, 7 kr/min. 8 km et 12 min — quel prix ? Formule : 55 + (8×23) + (12×7) = 55+184+84 = 323 kr",
     "source": "https://taxikortet.se/quiz?mode=demo",
     "corpus": "research",
     "freq": "high",
-    "trap": "Oublier la prise en charge ou convertir mal les minutes.",
-    "type": "question"
-  },
-  {
-    "id": "research-0122",
-    "topic": "sakerhet",
-    "stem_sv": "Vilken är den vanligaste orsaken till trafikolyckor i taxi?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Trötthet och stress"
-      },
-      {
-        "letter": "B",
-        "text": "Påståendet stämmer inte."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Källa: https://taxikortet.se/blogg/taxi-kunskapsprov-exempelfragor-transportstyrelsen",
-    "explanation_fr": "Quelle est la cause la plus fréquente d’accidents en taxi ?",
-    "source": "https://taxikortet.se/blogg/taxi-kunskapsprov-exempelfragor-transportstyrelsen",
-    "corpus": "research",
-    "freq": "high",
-    "type": "question"
-  },
-  {
-    "id": "research-0123",
-    "topic": "sakerhet",
-    "stem_sv": "Hur ska du agera om en passagerare blir akut sjuk?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Stanna säkert, ring 112, ge första hjälpen"
-      },
-      {
-        "letter": "B",
-        "text": "Påståendet stämmer inte."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Källa: https://taxikortet.se/blogg/taxi-kunskapsprov-exempelfragor-transportstyrelsen",
-    "explanation_fr": "Que faire si un passager tombe gravement malade ?",
-    "source": "https://taxikortet.se/blogg/taxi-kunskapsprov-exempelfragor-transportstyrelsen",
-    "corpus": "research",
-    "freq": "high",
-    "type": "question"
-  },
-  {
-    "id": "research-0124",
-    "topic": "lagstiftning",
-    "stem_sv": "Vilket dokument måste alltid finnas i taxin?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Taxiförarlegitimation och fordonshandlingar"
-      },
-      {
-        "letter": "B",
-        "text": "Påståendet stämmer inte."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Källa: https://taxikortet.se/blogg/taxi-kunskapsprov-exempelfragor-transportstyrelsen",
-    "explanation_fr": "Quel document doit toujours se trouver dans le taxi ?",
-    "source": "https://taxikortet.se/blogg/taxi-kunskapsprov-exempelfragor-transportstyrelsen",
-    "corpus": "research",
-    "freq": "high",
-    "type": "question"
-  },
-  {
-    "id": "research-0126",
-    "topic": "sakerhet",
-    "stem_sv": "En passagerare vägrar använda säkerhetsbälte. Vad är ditt ansvar som taxiförare?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Du måste informera om bältesplikten – men passageraren är själv ansvarig från 15 års ålder."
-      },
-      {
-        "letter": "B",
-        "text": "En skolskjuts"
-      },
-      {
-        "letter": "C",
-        "text": "responsabilité renforcée du chauffeur pour les <15 ans."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Vanlig fälla: En skolskjuts, responsabilité renforcée du chauffeur pour les <15 ans.. Källa: https://taxikortet.se/blogg/taxi-teoriprov-delprov-1-fragor",
-    "explanation_fr": "Un passager refuse la ceinture. Quelle est votre responsabilité ?",
-    "source": "https://taxikortet.se/blogg/taxi-teoriprov-delprov-1-fragor",
-    "corpus": "research",
-    "freq": "high",
-    "trap": "En skolskjuts, responsabilité renforcée du chauffeur pour les <15 ans.",
-    "type": "question"
-  },
-  {
-    "id": "research-0128",
-    "topic": "lagstiftning",
-    "stem_sv": "Vilken lag reglerar taxiverksamhet i Sverige?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Taxitrafiklagen 2012:211"
-      },
-      {
-        "letter": "B",
-        "text": "Påståendet stämmer inte."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Källa: https://taxikortet.se/blogg/taxi-teoriprov-delprov-2-fragor",
-    "explanation_fr": "Quelle loi régit l’activité taxi en Suède ?",
-    "source": "https://taxikortet.se/blogg/taxi-teoriprov-delprov-2-fragor",
-    "corpus": "research",
-    "freq": "high",
-    "type": "question"
-  },
-  {
-    "id": "research-0132",
-    "topic": "lagstiftning",
-    "stem_sv": "Hur räknar man ut priset på en taxiresa? Formeln enligt lärare Zaed Kazem.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "grundavgift + (min×pris/min) + (km×pris/km)"
-      },
-      {
-        "letter": "B",
-        "text": "Oublier de convertir heures→minutes."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Vanlig fälla: Oublier de convertir heures→minutes.. Källa: https://www.youtube.com/watch?v=110t__6WZ7Q",
-    "explanation_fr": "Comment calculer le prix d’une course ? Formule : grundavgift + (minuter × pris/minut) + (km × pris/km). Convertir kr/timme ÷ 60 = kr/minut.",
-    "source": "https://www.youtube.com/watch?v=110t__6WZ7Q",
-    "corpus": "research",
-    "freq": "high",
-    "trap": "Oublier de convertir heures→minutes.",
-    "type": "question"
-  },
-  {
-    "id": "research-0133",
-    "topic": "karta",
-    "stem_sv": "Var hittar du teckenförklaringen i den röda kartboken som används vid navigering/kartfrågor?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sidan 11 (teckenförklaring)"
-      },
-      {
-        "letter": "B",
-        "text": "Ignorer les coordonnées bleues lat/long; utiliser le quadrillage noir fin."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Vanlig fälla: Ignorer les coordonnées bleues lat/long; utiliser le quadrillage noir fin.. Källa: https://www.youtube.com/watch?v=AZv2VQrdD_Q",
-    "explanation_fr": "Où trouver la légende (teckenförklaring) dans l’atlas rouge utilisé à l’examen ?",
-    "source": "https://www.youtube.com/watch?v=AZv2VQrdD_Q",
-    "corpus": "research",
-    "freq": "high",
-    "trap": "Ignorer les coordonnées bleues lat/long; utiliser le quadrillage noir fin.",
-    "type": "question"
-  },
-  {
-    "id": "research-0134",
-    "topic": "karta",
-    "stem_sv": "När använder du namnregistret i kartboken?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "För småorter/flygplatser m.m. som inte är gator (~s.212); sedan huvudkartotek"
-      },
-      {
-        "letter": "B",
-        "text": "Ne pas chercher une petite localité seulement sur la carte de ville."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Vanlig fälla: Ne pas chercher une petite localité seulement sur la carte de ville.. Källa: https://www.youtube.com/watch?v=AZv2VQrdD_Q",
-    "explanation_fr": "Quand utiliser l’index des noms (namnregister) de l’atlas ?",
-    "source": "https://www.youtube.com/watch?v=AZv2VQrdD_Q",
-    "corpus": "research",
-    "freq": "high",
-    "trap": "Ne pas chercher une petite localité seulement sur la carte de ville.",
-    "type": "question"
-  },
-  {
-    "id": "research-0135",
-    "topic": "karta",
-    "stem_sv": "Vad betyder orange färg respektive rund ring i kartboken?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Orange = tätort; rund ring = km (vägavstånd); kvadrat = vägnummer; svarta pilar = vägavståndsmarkeringar"
-      },
-      {
-        "letter": "B",
-        "text": "Påståendet stämmer inte."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Källa: https://www.youtube.com/watch?v=AZv2VQrdD_Q",
-    "explanation_fr": "Que signifient la couleur orange et l’anneau rond dans l’atlas ?",
-    "source": "https://www.youtube.com/watch?v=AZv2VQrdD_Q",
-    "corpus": "research",
-    "freq": "high",
+    "trap": "184",
     "type": "question"
   },
   {
@@ -1398,28 +1123,6 @@
     "type": "qcm",
     "youtubeId": "AZv2VQrdD_Q",
     "imageUrl": "/media/e4-karta.svg"
-  },
-  {
-    "id": "research-0127",
-    "topic": "sakerhet",
-    "stem_sv": "Hur långt fram bör du fästa blicken vid stadskörning?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "12–15 sekunder framåt"
-      },
-      {
-        "letter": "B",
-        "text": "Påståendet stämmer inte."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Källa: https://taxikortet.se/blogg/taxi-teoriprov-delprov-1-fragor",
-    "explanation_fr": "Jusqu’où devez-vous porter le regard en ville ?",
-    "source": "https://taxikortet.se/blogg/taxi-teoriprov-delprov-1-fragor",
-    "corpus": "research",
-    "freq": "medium",
-    "type": "question"
   },
   {
     "id": "rs-fri-pris",
