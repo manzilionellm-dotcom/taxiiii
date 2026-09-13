@@ -6,7 +6,8 @@ Two files. **Both** are compiled. Manzi never deletes research.
 data/research-bank.jsonl    ← YouTube + apps + public examples (seed + full mined file)
 data/questions.jsonl        ← coordinator merge (1668 lines: Manzi + research copies)
 data/questions.json         ← compiled merge (research first, then Manzi; incomplete keys skipped)
-data/media-manifest.json    ← private Vercel Blob keys (~1993 rasters)
+data/media-manifest.json    ← private Vercel Blob keys (~2086 rasters: 1993 T3/… + 93 pdf-pages)
+data/pdf-page-links.json    ← 93 LAGSTIFNING/S_KERHET «på bilden» id → /media/pdf-pages/…jpg
 data/vocab/session-01.json … session-05-friday-mini.json
 data/youtube-links.json
 data/youtube-transcripts/*.json
@@ -40,7 +41,7 @@ npm run import -- --coordinator
 # then (production): BLOB_READ_WRITE_TOKEN=… npm run media:upload
 ```
 
-See [MEDIA.md](MEDIA.md) for the image pipeline. Never invent SVG drawings for exam items. PDF-only questions stay image-less.
+See [MEDIA.md](MEDIA.md) for the image pipeline. Never invent SVG drawings for exam items. Lagstiftning / Säkerhet «på bilden» items use authentic PDF page rasters under `/media/pdf-pages/`.
 
 Swedish in research `sv` and Manzi `stem_sv` is copied **word for word**.
 
@@ -75,7 +76,7 @@ Until the full ~193-line file is dropped, the repo ships a **high-frequency seed
 
 ## Manzi schema
 
-Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `explanation_fr`, optional `imageUrl` (Manzi path `media/T3/…/exam.php-filer/NNN.jpg`), optional `imageCaption`, `source`. `imageUrl` is normalized to `/media/<logical-key>` and must point at a real raster. Decorative SVGs are stripped.
+Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `explanation_fr`, optional `imageUrl` (Manzi path `media/T3/…/exam.php-filer/NNN.jpg` or `/media/pdf-pages/…/page-NN.jpg`), optional `imageCaption`, `source`. `imageUrl` is normalized to `/media/<logical-key>` and must point at a real raster. Decorative SVGs are stripped.
 
 ## Study order
 

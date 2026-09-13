@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-13T21:18:45.141Z",
+  "generatedAt": "2026-09-13T21:50:58.000Z",
   "store": "vercel-blob",
   "access": "private",
   "files": {
@@ -11961,6 +11961,476 @@
       "size": 1285479,
       "contentType": "image/jpeg",
       "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/utbildning%20bok/bok3/image%5B9%5D.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-1/page-01.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-01.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-1/page-01.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-1/page-02.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-02.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-1/page-02.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-1/page-11.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-11.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-1/page-11.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-1/page-12.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-12.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-1/page-12.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-1/page-13.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-13.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-1/page-13.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-1/page-21.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-21.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-1/page-21.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-1/page-40.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-1/page-40.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-1/page-40.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-2/page-04.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-04.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-2/page-04.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-2/page-12.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-12.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-2/page-12.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-2/page-23.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-23.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-2/page-23.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-2/page-33.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-33.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-2/page-33.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-2/page-35.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-2/page-35.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-2/page-35.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-3/page-03.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-03.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-3/page-03.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-3/page-04.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-04.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-3/page-04.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-3/page-05.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-05.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-3/page-05.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-3/page-14.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-14.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-3/page-14.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-3/page-16.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-16.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-3/page-16.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-3/page-22.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-22.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-3/page-22.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-3/page-34.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-3/page-34.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-3/page-34.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-4/page-10.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-4/page-10.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-4/page-10.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-4/page-38.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-4/page-38.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-4/page-38.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-4/page-40.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-4/page-40.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-4/page-40.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-5/page-01.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-01.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-5/page-01.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-5/page-08.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-08.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-5/page-08.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-5/page-23.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-23.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-5/page-23.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-5/page-24.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-24.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-5/page-24.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-5/page-32.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-32.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-5/page-32.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-5/page-35.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-35.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-5/page-35.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-5/page-38.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-5/page-38.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-5/page-38.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-6/page-06.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-06.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-6/page-06.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-6/page-15.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-15.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-6/page-15.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-6/page-18.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-18.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-6/page-18.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-6/page-20.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-20.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-6/page-20.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-6/page-22.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-22.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-6/page-22.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-6/page-23.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-23.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-6/page-23.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-6/page-35.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-35.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-6/page-35.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-6/page-39.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-6/page-39.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-6/page-39.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-01.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-01.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-01.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-16.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-16.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-16.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-20.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-20.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-20.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-21.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-21.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-21.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-25.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-25.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-25.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-26.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-26.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-26.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-29.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-29.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-29.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-32.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-32.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-32.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-7/page-37.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-7/page-37.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-7/page-37.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-03.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-03.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-03.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-04.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-04.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-04.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-06.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-06.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-06.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-09.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-09.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-09.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-12.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-12.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-12.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-14.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-14.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-14.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-17.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-17.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-17.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-19.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-19.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-19.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-23.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-23.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-23.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-24.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-24.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-24.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-47.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-47.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-47.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-49.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-49.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-49.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-50.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-50.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-50.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-52.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-52.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-52.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-54.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-54.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-54.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-55.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-55.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-55.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-56.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-56.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-56.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-57.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-57.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-57.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-60.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-60.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-60.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-61.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-61.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-61.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-63.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-63.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-63.jpg"
+    },
+    "pdf-pages/LAGSTIFNING-8/page-64.jpg": {
+      "pathname": "media/pdf-pages/LAGSTIFNING-8/page-64.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/LAGSTIFNING-8/page-64.jpg"
+    },
+    "pdf-pages/S_KERHET-1/page-09.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-1/page-09.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-1/page-09.jpg"
+    },
+    "pdf-pages/S_KERHET-1/page-16.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-1/page-16.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-1/page-16.jpg"
+    },
+    "pdf-pages/S_KERHET-1/page-17.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-1/page-17.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-1/page-17.jpg"
+    },
+    "pdf-pages/S_KERHET-1/page-27.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-1/page-27.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-1/page-27.jpg"
+    },
+    "pdf-pages/S_KERHET-1/page-33.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-1/page-33.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-1/page-33.jpg"
+    },
+    "pdf-pages/S_KERHET-8/page-20.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-8/page-20.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-8/page-20.jpg"
+    },
+    "pdf-pages/S_KERHET-8/page-38.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-8/page-38.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-8/page-38.jpg"
+    },
+    "pdf-pages/S_KERHET-4/page-03.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-4/page-03.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-4/page-03.jpg"
+    },
+    "pdf-pages/S_KERHET-4/page-26.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-4/page-26.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-4/page-26.jpg"
+    },
+    "pdf-pages/S_KERHET-4/page-33.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-4/page-33.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-4/page-33.jpg"
+    },
+    "pdf-pages/S_KERHET-4/page-34.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-4/page-34.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-4/page-34.jpg"
+    },
+    "pdf-pages/S_KERHET-7/page-01.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-7/page-01.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-7/page-01.jpg"
+    },
+    "pdf-pages/S_KERHET-7/page-10.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-7/page-10.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-7/page-10.jpg"
+    },
+    "pdf-pages/S_KERHET-7/page-25.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-7/page-25.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-7/page-25.jpg"
+    },
+    "pdf-pages/S_KERHET-7/page-30.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-7/page-30.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-7/page-30.jpg"
+    },
+    "pdf-pages/S_KERHET-7/page-33.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-7/page-33.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-7/page-33.jpg"
+    },
+    "pdf-pages/S_KERHET-7/page-37.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-7/page-37.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-7/page-37.jpg"
+    },
+    "pdf-pages/S_KERHET-5/page-09.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-5/page-09.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-5/page-09.jpg"
+    },
+    "pdf-pages/S_KERHET-6/page-10.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-6/page-10.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-6/page-10.jpg"
+    },
+    "pdf-pages/S_KERHET-2/page-11.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-2/page-11.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-2/page-11.jpg"
+    },
+    "pdf-pages/S_KERHET-2/page-19.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-2/page-19.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-2/page-19.jpg"
+    },
+    "pdf-pages/S_KERHET-2/page-23.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-2/page-23.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-2/page-23.jpg"
+    },
+    "pdf-pages/S_KERHET-3/page-09.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-3/page-09.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-3/page-09.jpg"
+    },
+    "pdf-pages/S_KERHET-3/page-10.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-3/page-10.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-3/page-10.jpg"
+    },
+    "pdf-pages/S_KERHET-9/page-28.jpg": {
+      "pathname": "media/pdf-pages/S_KERHET-9/page-28.jpg",
+      "contentType": "image/jpeg",
+      "url": "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-9/page-28.jpg"
     }
+  },
+  "pdfPages": {
+    "added": 93,
+    "total": 2086,
+    "source": "coordinator PDF page rasters (pdftoppm JPEG); urls reconstructed from store host + pathname"
   }
 }
