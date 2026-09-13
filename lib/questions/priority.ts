@@ -31,14 +31,25 @@ export function studyPriority(question: QuestionRecord): number {
   return 2;
 }
 
+export function compareStudyOrder(a: QuestionRecord, b: QuestionRecord): number {
+  const delta = studyPriority(a) - studyPriority(b);
+  if (delta !== 0) return delta;
+  const start = starterRank(a) - starterRank(b);
+  if (start !== 0) return start;
+  const rank = (item: QuestionRecord) =>
+    item.freq === "high" ? 0 : item.freq === "medium" ? 1 : 2;
+  return rank(a) - rank(b) || a.id.localeCompare(b.id);
+}
+
 export function sortForStudy(questions: QuestionRecord[]): QuestionRecord[] {
-  return [...questions].sort((a, b) => {
-    const delta = studyPriority(a) - studyPriority(b);
-    if (delta !== 0) return delta;
-    const start = starterRank(a) - starterRank(b);
-    if (start !== 0) return start;
-    const rank = (item: QuestionRecord) =>
-      item.freq === "high" ? 0 : item.freq === "medium" ? 1 : 2;
-    return rank(a) - rank(b) || a.id.localeCompare(b.id);
-  });
+  const remaining = [...questions];
+  const head: QuestionRecord[] = [];
+  for (const pattern of STARTER_PATTERNS) {
+    const index = remaining.findIndex(
+      (question) => studyPriority(question) === 0 && pattern.test(haystack(question)),
+    );
+    if (index !== -1) head.push(...remaining.splice(index, 1));
+  }
+  remaining.sort(compareStudyOrder);
+  return [...head, ...remaining];
 }

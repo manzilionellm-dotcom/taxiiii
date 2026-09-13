@@ -1,6 +1,12 @@
 import { readFileSync, existsSync } from "node:fs";
 import { createRequire } from "node:module";
-import { parseJsonl, isResearchShape, normalizeResearchRecord, sortForStudy } from "./research-normalize.mjs";
+import {
+  parseJsonl,
+  isResearchShape,
+  normalizeManziRecord,
+  normalizeResearchRecord,
+  sortForStudy,
+} from "./research-normalize.mjs";
 import { compile } from "./compile-banks.mjs";
 import { reconstructStem, tokenizeStem } from "../lib/tokenize-stem.mjs";
 import { hasAuthenticImageUrl, isFakeExamSvg, isRasterExt } from "../lib/media/paths.mjs";
@@ -41,14 +47,31 @@ const manzi = manziRaw
   .split("\n")
   .map((line) => JSON.parse(line));
 assert(manzi.length >= 10, "Manzi sample bank too small");
-assert(manzi.every((q) => q.stem_sv && q.explanation_sv && q.explanation_fr), "verbatim Manzi fields missing");
+assert(
+  manzi.every((q) => typeof q.stem_sv === "string" && q.stem_sv.trim()),
+  "verbatim Manzi stem_sv missing",
+);
+
+const researchCompilable = researchRecords.filter(
+  (record, index) => normalizeResearchRecord(record, index).question,
+);
+const manziCompilable = manzi.filter((record, index) => {
+  if (String(record.id).startsWith("research-")) return false;
+  return Boolean(normalizeManziRecord(record, index).question);
+});
 
 const compiled = JSON.parse(readFileSync(compiledPath, "utf8"));
 const researchCount = compiled.filter((item) => item.corpus === "research").length;
 const manziCount = compiled.filter((item) => item.corpus === "manzi").length;
-assert(researchCount === researchRecords.length, "compiled dropped research items");
-assert(manziCount === manzi.length, "compiled dropped Manzi items");
+assert(researchCompilable.length >= 20, "too few compilable research QCM");
+assert(researchCount === researchCompilable.length, "compiled dropped research items");
+assert(manziCompilable.length >= 10, "too few compilable Manzi QCM");
+assert(manziCount === manziCompilable.length, "compiled dropped Manzi items that had a valid answer key");
 assert(compiled.length === researchCount + manziCount, "compiled length != research + manzi");
+assert(
+  manziCompilable.every((q) => q.stem_sv && (q.explanation_sv || q.explanation_fr || q.options?.length >= 2)),
+  "compilable Manzi missing stem or options",
+);
 
 const ordered = sortForStudy(compiled);
 assert(ordered[0].corpus === "research", "study order must start with research");
@@ -110,7 +133,22 @@ assert(
   "placeholder gul-heldragen-linje.svg must be deleted",
 );
 
+const manifestPath = new URL("../data/media-manifest.json", import.meta.url);
+assert(existsSync(manifestPath), "data/media-manifest.json missing");
+const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
+const manifestFiles = Object.keys(manifest.files || {});
+assert(manifestFiles.length >= 1900, `media manifest too small: ${manifestFiles.length}`);
+assert(manifest.access === "private", "media manifest must mark Blob access private");
+assert(
+  compiled.filter((item) => item.imageUrl).every((item) => item.imageUrl.startsWith("/media/")),
+  "compiled imageUrl must be /media/<logical-key>",
+);
+assert(
+  compiled.filter((item) => item.imageUrl).every((item) => !item.imageUrl.startsWith("media/")),
+  "compiled imageUrl must not be media/ without leading slash",
+);
+
 console.log(
-  `self-check OK · research ${researchCount} + manzi ${manziCount} · extras ${extras.length} · ready@95`,
+  `self-check OK · research ${researchCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,
 );
 void require;

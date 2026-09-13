@@ -48,8 +48,8 @@ Env overrides: `MANZI_JSONL`, `MANZI_IMAGES`.
 
 ## Upload to Vercel Blob (required for production)
 
-1. In the Vercel project **taxiiii**, Storage → Create Database → **Blob**.
-2. `BLOB_READ_WRITE_TOKEN` is injected on Vercel. Locally: `vercel env pull` or paste the token.
+1. In the Vercel project **taxiiii**, Storage → Blob store `store_VmgBARxpqkgZrT73` (already has the 1993 private rasters).
+2. Set `BLOB_READ_WRITE_TOKEN` on Production + Preview (Settings → Environment Variables). Locally: `vercel env pull` or paste the token.
 3. From the machine that has the 389 MB tree **after** `npm run import -- --coordinator`:
 
 ```bash
@@ -63,8 +63,9 @@ Writes `data/media-manifest.json` (logical key → private blob URL + byte size)
 From `data/media-report.json` / the import log:
 
 - [ ] `rastersCopied` ≈ 2877 (minus PDFs / non-images)
-- [ ] `questionsTotal` = 1668 Manzi + research seed
-- [ ] `questionsWithImageUrl` ≈ 132 (plus any research items that reused a Manzi photo)
+- [ ] `questionsTotal` = compiled research + Manzi QCM that have an answer key (source JSONL is 1668 + research bank)
+- [ ] `questionsWithImageUrl` = Manzi rasters linked to compiled items (`/media/…`, never `gul-heldragen-linje.svg`)
+- [ ] `data/media-manifest.json` ≈ 1993 private Blob entries (commit the manifest, not the 389 MB tree)
 - [ ] `questionsMissingFile` explained (PDF-only or path mismatch)
 - [ ] `gulLinje` is a `/media/T3/…jpg` **or** `null` — never `gul-heldragen-linje.svg`
 
