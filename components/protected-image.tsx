@@ -21,21 +21,42 @@ export function ProtectedImage({
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [status, setStatus] = useState<Status>("loading");
+  const [svgMarkup, setSvgMarkup] = useState<string | null>(null);
 
   useEffect(() => {
-    if (isSvgSrc(src)) return;
+    let cancelled = false;
+    setStatus("loading");
+    setSvgMarkup(null);
+
+    if (isSvgSrc(src)) {
+      void fetch(src, { credentials: "same-origin", cache: "no-store" })
+        .then(async (response) => {
+          if (!response.ok) throw new Error("media");
+          const text = await response.text();
+          if (!text.includes("<svg")) throw new Error("empty");
+          return text;
+        })
+        .then((text) => {
+          if (cancelled) return;
+          setSvgMarkup(text);
+          setStatus("ready");
+        })
+        .catch(() => {
+          if (!cancelled) setStatus("error");
+        });
+      return () => {
+        cancelled = true;
+      };
+    }
+
     const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) {
+    const ctx = canvas?.getContext("2d");
+    if (!canvas || !ctx) {
       setStatus("error");
       return;
     }
 
-    let cancelled = false;
     let revoked: string | null = null;
-    setStatus("loading");
-
     const image = new Image();
     image.onload = () => {
       if (cancelled) return;
@@ -76,40 +97,36 @@ export function ProtectedImage({
     };
   }, [src, watermark]);
 
-  if (isSvgSrc(src)) {
-    return (
-      <div className="relative">
-        {status === "error" ? (
-          <div className="flex min-h-24 items-center justify-center px-4 py-6 text-center text-sm text-[#6b6560]">
-            {unavailableLabel}
-          </div>
-        ) : (
-          <>
-            {/* Signed same-origin URL; HttpOnly session cookie is sent automatically. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={src}
-              alt={alt}
-              className="mx-auto max-h-64 w-full object-contain"
-              onLoad={() => setStatus("ready")}
-              onError={() => setStatus("error")}
-            />
-            <span
-              aria-hidden
-              className="pointer-events-none absolute inset-x-6 bottom-8 rotate-[-12deg] text-center text-sm font-medium text-[#1f3d2b]/25"
-            >
-              {watermark}
-            </span>
-          </>
-        )}
-      </div>
-    );
-  }
-
   if (status === "error") {
     return (
       <div className="flex min-h-24 items-center justify-center px-4 py-6 text-center text-sm text-[#6b6560]">
         {unavailableLabel}
+      </div>
+    );
+  }
+
+  if (isSvgSrc(src)) {
+    return (
+      <div className="relative">
+        {status === "loading" ? (
+          <div className="h-40 animate-pulse rounded-xl bg-[#efe8d8]" aria-hidden />
+        ) : null}
+        {svgMarkup ? (
+          <div
+            role="img"
+            aria-label={alt}
+            className="mx-auto max-h-64 w-full overflow-hidden [&_svg]:mx-auto [&_svg]:h-auto [&_svg]:max-h-64 [&_svg]:w-full"
+            dangerouslySetInnerHTML={{ __html: svgMarkup }}
+          />
+        ) : null}
+        {status === "ready" ? (
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-x-6 bottom-8 rotate-[-12deg] text-center text-sm font-medium text-[#1f3d2b]/25"
+          >
+            {watermark}
+          </span>
+        ) : null}
       </div>
     );
   }
