@@ -26,6 +26,7 @@ export interface QuestionRecord {
   explanation_sv: string;
   explanation_fr: string;
   imageUrl?: string;
+  imageCaption?: string;
   source?: string;
   corpus?: Corpus;
   freq?: Freq;

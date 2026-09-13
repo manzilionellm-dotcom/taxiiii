@@ -5,29 +5,28 @@ import { studyPriority } from "@/lib/questions/priority";
 import type { QuestionCatalogItem, SessionQuestion } from "@/lib/questions/session-types";
 import { signMediaToken, type ViewerSession } from "@/lib/protect/session";
 import { topicsForTrack, type QuestionRecord, type Track } from "@/lib/types";
+import { hasAuthenticImageUrl, sanitizeCaption, toLogicalKey } from "@/lib/media/paths.mjs";
+import { signedMediaPath } from "@/lib/media/store";
 
 export type { QuestionCatalogItem, SessionQuestion };
-
-function mediaName(imageUrl?: string) {
-  if (!imageUrl) return null;
-  const match = imageUrl.match(/\/media\/([^/?#]+)$/);
-  return match?.[1] ?? null;
-}
 
 export async function protectQuestion(
   question: QuestionRecord,
   session: ViewerSession,
 ): Promise<SessionQuestion> {
-  const rawImage = question.imageUrl?.trim() || undefined;
-  const name = mediaName(rawImage);
-  let imageUrl = rawImage;
-  if (name) {
-    const token = await signMediaToken(name, session.id);
-    imageUrl = `/api/media/${encodeURIComponent(name)}?exp=${token.exp}&sig=${token.sig}`;
+  const key = toLogicalKey(question.imageUrl);
+  let imageUrl: string | undefined;
+  if (key && hasAuthenticImageUrl(question.imageUrl)) {
+    const token = await signMediaToken(key, session.id);
+    imageUrl = signedMediaPath(key, token.exp, token.sig);
   }
+  const imageCaption = question.imageCaption
+    ? sanitizeCaption(question.imageCaption)
+    : undefined;
   return {
     ...question,
     ...(imageUrl ? { imageUrl } : { imageUrl: undefined }),
+    ...(imageCaption ? { imageCaption } : { imageCaption: undefined }),
     translation: getFrench(question),
     watermark: session.label,
   };

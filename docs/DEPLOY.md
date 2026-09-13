@@ -15,13 +15,17 @@ In the Vercel dashboard (team **manzi's projects**):
    - `AI_MODEL` (optional)
    - `DATABASE_URL` only after you provision Postgres
    - `SESSION_SECRET` (required in production — signs cookies + media URLs)
+   - `BLOB_READ_WRITE_TOKEN` (after you attach a Vercel Blob store — serves the ~389MB Manzi image tree)
 
 The app builds and runs **without** a database. Progress is stored in the browser. Questions are loaded **per session** from `/api/questions` (the compiled bank stays on the server). The Android APK is a Capacitor WebView pointed at this host — see [ANDROID.md](ANDROID.md).
 
 ## Production checklist
 
 - [ ] `npm run import:check` on the bank you ship
-- [ ] Images present under `content/media/` for every `imageUrl`
+- [ ] Manzi drop imported (`npm run import -- --coordinator`) — see [MEDIA.md](MEDIA.md)
+- [ ] `data/media-report.json`: rasters copied, Q with `imageUrl`, gul-linje is a real jpg or empty (never a fake SVG)
+- [ ] Production images on Vercel Blob (`npm run media:upload`); `data/media-manifest.json` committed
+- [ ] Images present under `content/media/` **or** Blob for every remaining `imageUrl`
 - [ ] `data/translations.fr.json` filled for new ids (Swedish stays untouched)
 - [ ] Optional: Neon Postgres + `npx prisma migrate deploy` when you persist accounts
 - [ ] Auth: local profile is enough for the demo. Add Clerk/Auth.js later; do not block launch.

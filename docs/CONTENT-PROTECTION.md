@@ -9,7 +9,7 @@ KörkortGO makes casual copy, scrape, and screenshot-and-share harder. It does *
 | Select / copy | `.protected-content { user-select: none }`, no context menu, block Ctrl/Cmd+C/A/U/S/P and F12 on quiz/exam/Calcul/chat |
 | Focus | `visibilitychange`, `blur`, `beforeprint`, Print Screen → black overlay |
 | Exam | Overlay + short delay before “Jag är tillbaka” |
-| Images | `content/media/` → `/api/media/:name?exp=&sig=` (HMAC, 5 min) → canvas + watermark |
+| Images | `content/media/…` or private Vercel Blob → `/api/media/:path*?exp=&sig=` (HMAC, 5 min) → canvas + watermark. Nested Manzi keys (`T3/…/exam.php-filer/NNN.jpg`) are signed as the full logical path. |
 | Bank | `import "server-only"` on `lib/questions/bank.ts`. Session API only. |
 | Transport | CSP, `X-Frame-Options: DENY`, `Cache-Control: private, no-store` |
 | Legal | ToS must be accepted at onboarding; warning after 3 hides in 60 s |

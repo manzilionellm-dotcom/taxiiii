@@ -141,9 +141,10 @@ export function ProtectedImage({
         role="img"
         aria-label={alt}
         aria-busy={status === "loading"}
-        className={`mx-auto max-h-72 w-full object-contain ${
+        className={`mx-auto w-full object-contain ${
           status === "ready" ? "opacity-100" : "h-40 opacity-0"
         }`}
+        style={status === "ready" ? { maxHeight: "min(70vh, 40rem)" } : undefined}
       />
     </div>
   );
