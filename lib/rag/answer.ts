@@ -5,11 +5,30 @@ import { t } from "@/lib/i18n";
 
 const MIN_SCORE = 2.4;
 
+const FOLLOW_UP =
+  /^(et |and |explique|förklara|pourquoi|varför|comment |hur |det |ça |cette |den |plus|encore|same|même|samma)/i;
+
+function isFollowUp(query: string) {
+  const words = query.trim().split(/\s+/);
+  return FOLLOW_UP.test(query.trim()) || words.length <= 3;
+}
+
+export function retrieveHits(query: string, history: ChatTurn[]): SearchHit[] {
+  const docs = buildCorpus(QUESTIONS);
+  const direct = searchCorpus(docs, query, 5);
+  if (direct.length && direct[0].score >= MIN_SCORE) return direct;
+  if (isFollowUp(query) && history.length) {
+    const previousUser = [...history].reverse().find((turn) => turn.role === "user")?.content ?? "";
+    const contextual = searchCorpus(docs, `${query} ${previousUser}`, 5);
+    if (contextual.length && contextual[0].score >= MIN_SCORE) return contextual;
+  }
+  return [];
+}
+
 export function groundedFallback(query: string, locale: Locale, history: ChatTurn[]) {
   const dict = t(locale);
-  const contextual = [query, ...history.slice(-4).map((turn) => turn.content)].join(" ");
-  const hits = searchCorpus(buildCorpus(QUESTIONS), contextual, 5);
-  if (!hits.length || hits[0].score < MIN_SCORE) {
+  const hits = retrieveHits(query, history);
+  if (!hits.length) {
     return {
       answer: dict.outOfCorpus,
       sources: [] as string[],
@@ -59,12 +78,7 @@ export function buildGroundedMessages(
   locale: Locale,
   history: ChatTurn[],
 ) {
-  const hits = searchCorpus(
-    buildCorpus(QUESTIONS),
-    [query, ...history.slice(-4).map((turn) => turn.content)].join(" "),
-    5,
-  );
-  return { hits, ...groundedFallback(query, locale, history) };
+  return { hits: retrieveHits(query, history), ...groundedFallback(query, locale, history) };
 }
 
 export async function answerWithModel(
