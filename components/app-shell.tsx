@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { BrandMark } from "@/components/brand-mark";
 import { useAppState } from "@/components/app-state";
@@ -32,10 +33,14 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     setState(updateProfile(state, { activeTrack: next }));
   }
 
+  useEffect(() => {
+    document.documentElement.lang = state.profile.locale;
+  }, [state.profile.locale]);
+
   return (
-    <div className="flex min-h-full flex-col">
-      <header className="sticky top-0 z-20 border-b border-[#ddd6c8] bg-[#f4efe4]/90 backdrop-blur">
-        <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3">
+    <div className="flex min-h-dvh flex-col">
+      <header className="sticky top-0 z-20 border-b border-[#ddd6c8] bg-[#f4efe4]/90 pt-[env(safe-area-inset-top)] backdrop-blur">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-2.5 sm:py-3">
           <Link href="/" className="text-xl text-[#1f3d2b]">
             <BrandMark compact />
           </Link>
@@ -76,9 +81,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-5xl flex-1 px-4 pb-24 pt-6">{children}</main>
+      <main className="mx-auto w-full max-w-5xl flex-1 px-4 pb-[calc(7.75rem+env(safe-area-inset-bottom))] pt-4 sm:pt-6">
+        {children}
+      </main>
 
-      <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-[#ddd6c8] bg-[#fffdf8]/95 backdrop-blur">
+      <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-[#ddd6c8] bg-[#fffdf8]/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
         <p className="mx-auto max-w-5xl px-3 pt-1 text-center text-[10px] leading-3 text-[#8a8276]">
           {dict.tosAccept}
         </p>

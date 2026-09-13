@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ProtectedView } from "@/components/protected-view";
 import { QuestionCard } from "@/components/question-card";
 import { useAppState } from "@/components/app-state";
@@ -15,51 +15,81 @@ import type { Track } from "@/lib/types";
 const SESSION_MS = 8 * 60 * 1000;
 
 export function StudySession({ track }: { track: Track }) {
-  const { state, setState } = useAppState();
+  const { state, setState, hydrated } = useAppState();
   const dict = t(state.profile.locale);
-  const dueIds = useMemo(
-    () => state.srs.filter((card) => card.track === track && isDue(card)).map((c) => c.questionId),
-    [state.srs, track],
-  );
   const [queue, setQueue] = useState<SessionQuestion[] | null>(null);
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [remaining, setRemaining] = useState(SESSION_MS);
   const [done, setDone] = useState(false);
+  const [error, setError] = useState(false);
+  const [reload, setReload] = useState(0);
+  const startedAt = useRef<number | null>(null);
 
   useEffect(() => {
+    if (!hydrated) return;
     let cancelled = false;
+    setError(false);
+    setQueue(null);
+    setIndex(0);
+    setAnswered(false);
+    setDone(false);
+    startedAt.current = null;
+    const dueIds = state.srs
+      .filter((card) => card.track === track && isDue(card))
+      .map((card) => card.questionId);
     void fetchSessionQuestions({
       track,
       mode: "study",
       dueIds,
       fragile: state.profile.fragileMode,
-    }).then((questions) => {
-      if (!cancelled) setQueue(questions);
-    });
+    })
+      .then((questions) => {
+        if (cancelled) return;
+        setQueue(questions);
+        startedAt.current = Date.now();
+        setRemaining(SESSION_MS);
+      })
+      .catch(() => {
+        if (!cancelled) setError(true);
+      });
     return () => {
       cancelled = true;
     };
-  }, [dueIds, state.profile.fragileMode, track]);
+  }, [hydrated, reload, state.profile.fragileMode, track]);
 
   useEffect(() => {
-    const started = Date.now();
+    if (!startedAt.current) return;
     const timer = window.setInterval(() => {
-      const left = SESSION_MS - (Date.now() - started);
+      const origin = startedAt.current;
+      if (!origin) return;
+      const left = SESSION_MS - (Date.now() - origin);
       setRemaining(Math.max(0, left));
       if (left <= 0) setDone(true);
     }, 250);
     return () => window.clearInterval(timer);
-  }, []);
+  }, [queue]);
 
   const current = queue?.[index];
   const minutes = Math.ceil(remaining / 60000);
+  const dueCount = state.srs.filter((card) => card.track === track && isDue(card)).length;
 
-  if (!queue) {
+  if (!hydrated || (!queue && !error)) {
     return <p className="text-sm text-[#6b6560]">{dict.loadingSession}</p>;
   }
 
-  if (done || !current) {
+  if (error) {
+    return (
+      <div className="card space-y-3">
+        <p className="text-sm text-black">{dict.sessionError}</p>
+        <button type="button" className="btn-primary" onClick={() => setReload((value) => value + 1)}>
+          {dict.retry}
+        </button>
+      </div>
+    );
+  }
+
+  if (!queue || done || !current) {
     return (
       <div className="card space-y-4">
         <h1 className="font-serif text-2xl text-black">{dict.sessionDone}</h1>
@@ -79,7 +109,7 @@ export function StudySession({ track }: { track: Track }) {
           </span>
           <Link href={`/${track}`}>{dict.back}</Link>
         </div>
-        {dueIds.length === 0 ? <p className="text-sm text-[#6b6560]">{dict.noDue}</p> : null}
+        {dueCount === 0 ? <p className="text-sm text-[#6b6560]">{dict.noDue}</p> : null}
         <QuestionCard
           key={current.id}
           question={current}

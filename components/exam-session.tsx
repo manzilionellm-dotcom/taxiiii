@@ -17,7 +17,7 @@ import type { MockExam, Track } from "@/lib/types";
 const EXAM_MS = 12 * 60 * 1000;
 
 export function ExamSession({ track }: { track: Track }) {
-  const { state, setState } = useAppState();
+  const { state, setState, hydrated } = useAppState();
   const dict = t(state.profile.locale);
   const { catalog } = useQuestionCatalog(track);
   const [exam] = useState<MockExam>(() => ({
@@ -31,27 +31,44 @@ export function ExamSession({ track }: { track: Track }) {
   const [answered, setAnswered] = useState(false);
   const [remaining, setRemaining] = useState(EXAM_MS);
   const [done, setDone] = useState(false);
+  const [error, setError] = useState(false);
+  const [reload, setReload] = useState(0);
   const finished = useRef(false);
+  const startedAt = useRef<number | null>(null);
 
   useEffect(() => {
+    if (!hydrated) return;
     let cancelled = false;
-    void fetchSessionQuestions({ track, mode: "exam" }).then((questions) => {
-      if (!cancelled) setQueue(questions);
-    });
+    setError(false);
+    setQueue(null);
+    finished.current = false;
+    startedAt.current = null;
+    void fetchSessionQuestions({ track, mode: "exam" })
+      .then((questions) => {
+        if (cancelled) return;
+        setQueue(questions);
+        startedAt.current = Date.now();
+        setRemaining(EXAM_MS);
+      })
+      .catch(() => {
+        if (!cancelled) setError(true);
+      });
     return () => {
       cancelled = true;
     };
-  }, [track]);
+  }, [hydrated, reload, track]);
 
   useEffect(() => {
-    const started = Date.now();
+    if (!startedAt.current) return;
     const timer = window.setInterval(() => {
-      const left = EXAM_MS - (Date.now() - started);
+      const origin = startedAt.current;
+      if (!origin) return;
+      const left = EXAM_MS - (Date.now() - origin);
       setRemaining(Math.max(0, left));
       if (left <= 0) setDone(true);
     }, 250);
     return () => window.clearInterval(timer);
-  }, []);
+  }, [queue]);
 
   useEffect(() => {
     if (!done || finished.current || !queue) return;
@@ -65,8 +82,19 @@ export function ExamSession({ track }: { track: Track }) {
     [track, catalog, state.attempts, state.exams],
   );
 
-  if (!queue) {
+  if (!hydrated || (!queue && !error)) {
     return <p className="text-sm text-[#6b6560]">{dict.loadingSession}</p>;
+  }
+
+  if (error) {
+    return (
+      <div className="card space-y-3">
+        <p className="text-sm text-black">{dict.sessionError}</p>
+        <button type="button" className="btn-primary" onClick={() => setReload((value) => value + 1)}>
+          {dict.retry}
+        </button>
+      </div>
+    );
   }
 
   if (done || !current) {
@@ -75,7 +103,7 @@ export function ExamSession({ track }: { track: Track }) {
         <div className="card space-y-2">
           <h1 className="font-serif text-2xl text-black">{dict.examDone}</h1>
           <p className="text-black">
-            {correctCount}/{queue.length}
+            {correctCount}/{queue?.length ?? 0}
           </p>
         </div>
         <ReadinessWidget locale={state.profile.locale} readiness={readiness} />

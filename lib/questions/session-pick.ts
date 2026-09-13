@@ -18,15 +18,16 @@ export async function protectQuestion(
   question: QuestionRecord,
   session: ViewerSession,
 ): Promise<SessionQuestion> {
-  const name = mediaName(question.imageUrl);
-  let imageUrl = question.imageUrl;
+  const rawImage = question.imageUrl?.trim() || undefined;
+  const name = mediaName(rawImage);
+  let imageUrl = rawImage;
   if (name) {
     const token = await signMediaToken(name, session.id);
     imageUrl = `/api/media/${encodeURIComponent(name)}?exp=${token.exp}&sig=${token.sig}`;
   }
   return {
     ...question,
-    imageUrl,
+    ...(imageUrl ? { imageUrl } : { imageUrl: undefined }),
     translation: getFrench(question),
     watermark: session.label,
   };

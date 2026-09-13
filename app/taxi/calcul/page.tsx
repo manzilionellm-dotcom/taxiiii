@@ -17,8 +17,12 @@ export default function CalculIndexPage() {
       <div className="grid gap-3">
         {CALCUL_EXERCISES.map((exercise) => (
           <Link key={exercise.slug} href={`/taxi/calcul/${exercise.slug}`} className="card block">
-            <p className="font-serif text-xl text-black">{exercise.titleSv}</p>
-            <p className="mt-1 text-[#1d4ed8]">{exercise.titleFr}</p>
+            <p className="font-serif text-xl text-black">
+              {state.profile.locale === "sv" ? exercise.titleSv : exercise.titleFr}
+            </p>
+            <p className="mt-1 text-[#1d4ed8]">
+              {state.profile.locale === "sv" ? exercise.titleFr : exercise.titleSv}
+            </p>
           </Link>
         ))}
       </div>

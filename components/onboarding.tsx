@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { BrandMark } from "@/components/brand-mark";
 import { useAppState } from "@/components/app-state";
-import { BRAND, trackLabel, trackProduct } from "@/lib/branding";
+import { trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { updateProfile } from "@/lib/progress/store";
 import type { Track } from "@/lib/types";
@@ -42,8 +42,8 @@ export function Onboarding() {
         <p className="text-xs uppercase tracking-[0.2em] text-[#6b6560]">
           <BrandMark compact />
         </p>
-        <h1 className="font-serif text-4xl leading-tight text-black">{BRAND.slogan}</h1>
-        <p className="text-lg text-[#6b6560]">{BRAND.keyMessage}</p>
+        <h1 className="font-serif text-4xl leading-tight text-black">{dict.tagline}</h1>
+        <p className="text-lg text-[#6b6560]">{dict.keyMessage}</p>
         <p className="text-[#6b6560]">{dict.onboardingLead}</p>
       </header>
 

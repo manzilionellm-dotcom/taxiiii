@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Source_Serif_4 } from "next/font/google";
 import { AppStateProvider } from "@/components/app-state";
 import { AppShell } from "@/components/app-shell";
@@ -20,6 +20,13 @@ export const metadata: Metadata = {
   description: documentDescription(),
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#f4efe4",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,7 +37,7 @@ export default function RootLayout({
       lang="sv"
       className={`${geistSans.variable} ${sourceSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-dvh flex-col">
         <AppStateProvider>
           <AppShell>{children}</AppShell>
         </AppStateProvider>
