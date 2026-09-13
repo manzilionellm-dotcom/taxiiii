@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Source_Serif_4 } from "next/font/google";
 import { AppStateProvider } from "@/components/app-state";
 import { AppShell } from "@/components/app-shell";
+import { documentDescription, documentTitle } from "@/lib/branding";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,9 +16,8 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Körklart — teoriprov B & taxi",
-  description:
-    "Professionell förberedelse för körkort B och taxiförarlegitimation. Svenska + franska, aktiv repetition, RAG från frågebanken.",
+  title: documentTitle(),
+  description: documentDescription(),
 };
 
 export default function RootLayout({

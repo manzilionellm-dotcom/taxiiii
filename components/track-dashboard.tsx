@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { ReadinessWidget } from "@/components/readiness-widget";
 import { useAppState } from "@/components/app-state";
+import { trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
 import { isDue } from "@/lib/progress/srs";
@@ -50,12 +51,8 @@ export function TrackDashboard({ track }: { track: Track }) {
     <div className="space-y-6">
       <header className="space-y-2">
         <p className="text-xs uppercase tracking-[0.16em] text-[#6b6560]">{dict.dashboard}</p>
-        <h1 className="font-serif text-3xl text-black">
-          {track === "b" ? dict.trackB : dict.trackTaxi}
-        </h1>
-        <p className="max-w-xl text-[#6b6560]">
-          {track === "b" ? dict.trackBDesc : dict.trackTaxiDesc}
-        </p>
+        <h1 className="font-serif text-3xl text-black">{trackLabel(track)}</h1>
+        <p className="max-w-xl text-[#6b6560]">{trackProduct(track)}</p>
         <p className="max-w-xl text-sm text-[#6b6560]">{dict.studyOrder}</p>
         <p className="text-xs text-[#8a8276]">{dict.demoNote}</p>
       </header>

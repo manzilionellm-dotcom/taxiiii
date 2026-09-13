@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { BrandMark } from "@/components/brand-mark";
 import { useAppState } from "@/components/app-state";
+import { BRAND, trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { updateProfile } from "@/lib/progress/store";
 import type { Track } from "@/lib/types";
@@ -37,9 +39,12 @@ export function Onboarding() {
   return (
     <div className="mx-auto max-w-xl space-y-8 py-6">
       <header className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.2em] text-[#6b6560]">{dict.brand}</p>
-        <h1 className="font-serif text-4xl leading-tight text-black">{dict.onboardingTitle}</h1>
-        <p className="text-lg text-[#6b6560]">{dict.onboardingLead}</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-[#6b6560]">
+          <BrandMark compact />
+        </p>
+        <h1 className="font-serif text-4xl leading-tight text-black">{BRAND.slogan}</h1>
+        <p className="text-lg text-[#6b6560]">{BRAND.keyMessage}</p>
+        <p className="text-[#6b6560]">{dict.onboardingLead}</p>
       </header>
 
       <div className="flex rounded-full border border-[#ddd6c8] bg-white p-1">
@@ -60,8 +65,8 @@ export function Onboarding() {
       <div className="grid gap-3">
         {(
           [
-            ["b", dict.trackB, dict.trackBDesc],
-            ["taxi", dict.trackTaxi, dict.trackTaxiDesc],
+            ["b", trackLabel("b"), trackProduct("b")],
+            ["taxi", trackLabel("taxi"), trackProduct("taxi")],
             ["both", dict.bothTracks, dict.onboardingLead],
           ] as const
         ).map(([id, title, desc]) => (
@@ -76,9 +81,9 @@ export function Onboarding() {
           </button>
         ))}
         <div className="card opacity-70">
-          <p className="font-serif text-xl text-black">{dict.trackOwner}</p>
+          <p className="font-serif text-xl text-black">{trackLabel("owner")}</p>
           <p className="mt-1 text-sm text-[#6b6560]">
-            {dict.trackOwnerDesc} · {dict.comingSoon}
+            {trackProduct("owner")} · {dict.comingSoon}
           </p>
         </div>
       </div>

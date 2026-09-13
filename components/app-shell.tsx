@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BrandMark } from "@/components/brand-mark";
 import { useAppState } from "@/components/app-state";
+import { trackLabel } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { updateProfile } from "@/lib/progress/store";
 import type { Locale, Track } from "@/lib/types";
@@ -34,8 +36,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-full flex-col">
       <header className="sticky top-0 z-20 border-b border-[#ddd6c8] bg-[#f4efe4]/90 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3">
-          <Link href="/" className="font-serif text-xl tracking-tight text-[#1f3d2b]">
-            {dict.brand}
+          <Link href="/" className="text-xl text-[#1f3d2b]">
+            <BrandMark compact />
           </Link>
           <div className="flex items-center gap-2">
             {hydrated && state.profile.tracks.length > 1 ? (
@@ -49,7 +51,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                       track === item ? "bg-[#1f3d2b] text-white" : "text-[#1f3d2b]"
                     }`}
                   >
-                    {item === "b" ? dict.trackB : dict.trackTaxi}
+                    {trackLabel(item)}
                   </button>
                 ))}
               </div>
@@ -103,7 +105,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             href="/owner"
             className="hidden flex-col items-center gap-0.5 px-1 py-1 text-[#9a9388] sm:flex"
           >
-            {dict.trackOwner}
+            {trackLabel("owner")}
           </Link>
         </div>
       </nav>

@@ -1,6 +1,10 @@
+import { BRAND } from "@/lib/branding";
+
 export const sv = {
-  brand: "Körklart",
-  tagline: "Teoriprov B och taxiförarlegitimation — lugn, aktiv repetition.",
+  brand: BRAND.appName,
+  signature: BRAND.signature,
+  tagline: BRAND.slogan,
+  keyMessage: BRAND.keyMessage,
   language: "Språk",
   swedish: "Svenska",
   french: "Franska",
@@ -16,14 +20,14 @@ export const sv = {
   onboardingTitle: "Välj din väg",
   onboardingLead:
     "Två helt skilda resor. Har du redan B kan du läsa bara taxi.",
-  trackB: "Permis B",
-  trackBDesc: "Vanligt teoriprov för körkort B.",
-  trackTaxi: "Permis taxi",
-  trackTaxiDesc: "Taxiförarlegitimation — lagstiftning, säkerhet och karta.",
-  trackOwner: "Taxiägare / business",
-  trackOwnerDesc: "Ägarexamen kommer senare.",
+  trackB: BRAND.tracks.b.label,
+  trackBDesc: `${BRAND.tracks.b.product} — vanligt teoriprov.`,
+  trackTaxi: BRAND.tracks.taxi.label,
+  trackTaxiDesc: `${BRAND.tracks.taxi.product} — lagstiftning, säkerhet och karta.`,
+  trackOwner: BRAND.tracks.owner.label,
+  trackOwnerDesc: `${BRAND.tracks.owner.product} — kommer senare.`,
   comingSoon: "Kommer snart",
-  bothTracks: "Både B och taxi",
+  bothTracks: `${BRAND.tracks.b.label} + ${BRAND.tracks.taxi.label}`,
   yourName: "Ditt namn (valfritt)",
   fragileMode: "Skört läge",
   fragileHint:
@@ -76,7 +80,7 @@ export const sv = {
   accuracy: "Träffsäkerhet",
   dueToday: "Att repetera",
   ownerSoon:
-    "Den här sektionen är förberedd för taxiägarens examina. Inget innehåll än.",
+    `Den här sektionen är förberedd för ${BRAND.tracks.owner.label} (${BRAND.tracks.owner.product}). Inget innehåll än.`,
   resetProgress: "Nollställ lokal progress",
   demoNote:
     "Två korpusar kompileras: data/research-bank.jsonl (YouTube + appar + offentliga exempel) och data/questions.jsonl (Manzi). Research först — Manzi droppar den inte.",
@@ -93,7 +97,7 @@ export const sv = {
   loadingSession: "Laddar skyddat pass…",
   tosTitle: "Användarvillkor — innehåll",
   tos:
-    "Frågor, bilder och förklaringar i Körklart får inte kopieras, delas eller säljas vidare. Skärmbilder och utdrag för privat studier är begränsade; spridning av banken är förbjuden.",
+    `Frågor, bilder och förklaringar i ${BRAND.appName} får inte kopieras, delas eller säljas vidare. Skärmbilder och utdrag för privat studier är begränsade; spridning av banken är förbjuden.`,
   tosAccept: "Jag accepterar att jag inte får sprida frågebanken.",
   tosRequired: "Acceptera villkoren för att fortsätta.",
   yourEmail: "E-post (valfritt, vattenstämpel)",
@@ -104,7 +108,7 @@ export const sv = {
   protectionNote:
     "Ingen webbapp kan stoppa skärmbilder på operativsystemnivå. Vi döljer frågan när fönstret tappar fokus.",
   topic: {
-    bkort: "Körkort B",
+    bkort: BRAND.tracks.b.label,
     lagstiftning: "Lagstiftning",
     sakerhet: "Säkerhet",
     karta: "Karta",

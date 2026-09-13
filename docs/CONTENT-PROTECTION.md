@@ -1,6 +1,6 @@
 # Content protection (honest limits)
 
-Körklart makes casual copy, scrape, and screenshot-and-share harder. It does **not** make screenshots impossible.
+KörkortGO makes casual copy, scrape, and screenshot-and-share harder. It does **not** make screenshots impossible.
 
 ## What is in place
 

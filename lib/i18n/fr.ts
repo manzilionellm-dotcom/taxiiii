@@ -1,8 +1,11 @@
+import { BRAND } from "@/lib/branding";
 import type { Dictionary } from "@/lib/i18n/sv";
 
 export const fr: Dictionary = {
-  brand: "Körklart",
-  tagline: "Teoriprov B et carte professionnelle taxi — calme, rappel actif.",
+  brand: BRAND.appName,
+  signature: BRAND.signature,
+  tagline: BRAND.slogan,
+  keyMessage: BRAND.keyMessage,
   language: "Langue",
   swedish: "Suédois",
   french: "Français",
@@ -18,15 +21,14 @@ export const fr: Dictionary = {
   onboardingTitle: "Choisis ton parcours",
   onboardingLead:
     "Deux sections distinctes. Si tu as déjà le B, tu peux n'étudier que le taxi.",
-  trackB: "Permis B",
-  trackBDesc: "Teoriprov classique du permis B.",
-  trackTaxi: "Permis taxi",
-  trackTaxiDesc:
-    "Taxiförarlegitimation — législation, sécurité et lecture de carte.",
-  trackOwner: "Taxiägare / business",
-  trackOwnerDesc: "Examens propriétaire à venir.",
+  trackB: BRAND.tracks.b.label,
+  trackBDesc: `${BRAND.tracks.b.product} — teoriprov classique.`,
+  trackTaxi: BRAND.tracks.taxi.label,
+  trackTaxiDesc: `${BRAND.tracks.taxi.product} — législation, sécurité et lecture de carte.`,
+  trackOwner: BRAND.tracks.owner.label,
+  trackOwnerDesc: `${BRAND.tracks.owner.product} — à venir.`,
   comingSoon: "Bientôt",
-  bothTracks: "B et taxi",
+  bothTracks: `${BRAND.tracks.b.label} + ${BRAND.tracks.taxi.label}`,
   yourName: "Ton prénom (facultatif)",
   fragileMode: "Profil fragile",
   fragileHint:
@@ -79,7 +81,7 @@ export const fr: Dictionary = {
   accuracy: "Justesse",
   dueToday: "À réviser",
   ownerSoon:
-    "Section réservée aux examens propriétaire. Contenu à venir.",
+    `Section ${BRAND.tracks.owner.label} (${BRAND.tracks.owner.product}). Contenu à venir.`,
   resetProgress: "Réinitialiser la progression locale",
   demoNote:
     "Deux corpus compilés : data/research-bank.jsonl (YouTube + apps + exemples publics) et data/questions.jsonl (Manzi). Research d'abord — Manzi ne l'écrase pas.",
@@ -96,7 +98,7 @@ export const fr: Dictionary = {
   loadingSession: "Chargement de la session protégée…",
   tosTitle: "Conditions — contenu",
   tos:
-    "Les questions, images et explications de Körklart ne peuvent pas être copiées, partagées ou revendues. Les captures pour usage privé sont limitées ; la redistribution de la banque est interdite.",
+    `Les questions, images et explications de ${BRAND.appName} ne peuvent pas être copiées, partagées ou revendues. Les captures pour usage privé sont limitées ; la redistribution de la banque est interdite.`,
   tosAccept: "J'accepte de ne pas diffuser la banque de questions.",
   tosRequired: "Accepte les conditions pour continuer.",
   yourEmail: "E-mail (facultatif, filigrane)",
@@ -107,7 +109,7 @@ export const fr: Dictionary = {
   protectionNote:
     "Aucune appli web ne peut bloquer les captures au niveau de l'OS. Nous masquons la question quand la fenêtre perd le focus.",
   topic: {
-    bkort: "Permis B",
+    bkort: BRAND.tracks.b.label,
     lagstiftning: "Législation",
     sakerhet: "Sécurité",
     karta: "Carte",

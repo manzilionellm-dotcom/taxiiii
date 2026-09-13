@@ -1,6 +1,7 @@
 "use client";
 
 import { useAppState } from "@/components/app-state";
+import { trackLabel } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { emptyState, updateProfile } from "@/lib/progress/store";
 import type { SupportLevel, Track } from "@/lib/types";
@@ -38,11 +39,11 @@ export default function SettingsPage() {
               checked={tracks.includes(track)}
               onChange={() => toggleTrack(track)}
             />
-            {track === "b" ? dict.trackB : dict.trackTaxi}
+            {trackLabel(track)}
           </label>
         ))}
         <p className="text-sm text-[#9a9388]">
-          {dict.trackOwner} — {dict.comingSoon}
+          {trackLabel("owner")} — {dict.comingSoon}
         </p>
       </section>
 

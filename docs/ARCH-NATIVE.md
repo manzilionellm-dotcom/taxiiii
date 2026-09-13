@@ -1,6 +1,6 @@
 # Native wrap (future)
 
-The web stack cannot mark the framebuffer as non-capturable. If Körklart is later wrapped:
+The web stack cannot mark the framebuffer as non-capturable. If KörkortGO is later wrapped:
 
 | Platform | API | Note |
 |---|---|---|

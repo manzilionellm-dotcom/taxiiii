@@ -14,6 +14,6 @@ Product and topic map from the apps and sites used to seed `data/research-bank.j
 | Trafikverket taxiförarlegitimation | Two delprov, 50 min, 34/46 | lagstiftning |
 | Transportstyrelsen + SFS 1994:1297, 2012:211, 2012:238, TSFS 2021:119 | Verbatim legal facts | all taxi |
 
-**Teori Taxi / TaxiKortet / TaxiTeori** all drill the same high-frequency traps: 24-month taxameter, 8 h “enough” rest, tidbok timing, yellow kerb line, prisräkning. Körklart starts study there, then Manzi.
+**Teori Taxi / TaxiKortet / TaxiTeori** all drill the same high-frequency traps: 24-month taxameter, 8 h “enough” rest, tidbok timing, yellow kerb line, prisräkning. KörkortGO starts study there, then Manzi.
 
 Manzi (~1475) is the full QCM bank. Research stays compiled **in front** of Manzi and is indexed in RAG with the YouTube notes.

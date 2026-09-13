@@ -1,16 +1,20 @@
-# Körklart — teoriprov B & taxi
+# KörkortGO — by MZ
 
-Professional Swedish teoriprov prep for **körkort B** and **taxiförarlegitimation**. Bilingual SV + FR. Linked Vercel project: `manzis-projects-3add5703/taxiiii`.
+Visible brand is **KörkortGO** (`by MZ`). Slogan: **Förstå teorin. Klara provet.** Categories: **Körkort**, **Taxi**, **Taxi Företag**. Key message: **Lär dig på svenska. Förstå på ditt språk.**
+
+All of those strings live in **[`lib/branding.ts`](lib/branding.ts)** — change them there, not in UI screens. Repo / npm / Vercel project name can stay `taxiiii`.
+
+Professional Swedish teoriprov prep for **Körkort** (permis B) and **Taxi** (taxiförarlegitimation). Bilingual SV + FR. Linked Vercel project: `manzis-projects-3add5703/taxiiii`.
 
 This is not a toy landing page. It is a working vertical slice:
 
-- Separate **Permis B** and **Permis taxi** journeys, scores, and stats
+- Separate **Körkort** and **Taxi** journeys, scores, and stats
 - Question screen: Swedish **black**, French **blue**, hard words **bold red** + cloze
 - Taxi **Calcul** (körekonomi, trip price, distance/time, dygnsvila)
 - **IA** chat grounded on the question corpus (refuses out-of-bank answers)
 - Readiness score; at **≥ 95%** shows « Bravo, tu es prêt à passer l'examen. » / « Bravo, du är redo att göra provet. »
 - SRS 5–10 min sessions, interleaving, fragile-profile mode
-- Taxiägare / business nav item is **coming soon**
+- **Taxi Företag** (taxiägare / business) nav item is **coming soon**
 
 ## Content rule
 
@@ -67,13 +71,14 @@ Without a key, `/api/chat` still answers from the corpus using scripted search.
 | `data/translations.fr.json` | Blue FR line under the original SV stem |
 | `data/hard-words.json` | Cloze + red gloss dictionary |
 | `content/media/` | Question images (served only via signed `/api/media`, not a public CDN path) |
+| `lib/branding.ts` | User-facing name, signature, slogan, categories |
 | `lib/progress/` | localStorage attempts, SM-2 SRS, readiness |
 | `lib/rag/` | Corpus index + grounded chat |
 | `prisma/schema.prisma` | Future User / Question / SRS / chat / embeddings |
 
 Auth for the MVP is a local profile (onboarding + settings). Progress tables are **per section** (`b` vs `taxi`). Stripe is not present in this repo; nothing to keep.
 
-i18n dictionaries live in `lib/i18n/{sv,fr}.ts`. Add `ar` later by extending `LOCALES` and a new dictionary — question content stays Swedish-first.
+i18n dictionaries live in `lib/i18n/{sv,fr}.ts` and pull brand/category strings from `lib/branding.ts`. Add `ar` later by extending `LOCALES` and a new dictionary — question content stays Swedish-first.
 
 ## Deploy
 
@@ -81,7 +86,7 @@ See [docs/DEPLOY.md](docs/DEPLOY.md). Framework: Next.js 16 on Vercel project **
 
 ## Content protection
 
-No web app can **100% block OS-level screenshots**, especially on desktop (Print Screen, OS snipping tools, another phone pointed at the display). Körklart maximizes friction; it does not claim “screenshot impossible”.
+No web app can **100% block OS-level screenshots**, especially on desktop (Print Screen, OS snipping tools, another phone pointed at the display). KörkortGO maximizes friction; it does not claim “screenshot impossible”.
 
 Shipped on quiz, mock exam, Calcul, cloze, and tutor chat:
 
