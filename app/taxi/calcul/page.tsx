@@ -22,8 +22,12 @@ export default function CalculIndexPage() {
               <CalculIcon className="h-5 w-5" />
             </span>
             <span className="min-w-0">
-              <span className="block font-serif text-xl text-black">{exercise.titleSv}</span>
-              <span className="mt-1 block text-[#1d4ed8]">{exercise.titleFr}</span>
+              <span className="block font-serif text-xl text-black">
+                {state.profile.locale === "sv" ? exercise.titleSv : exercise.titleFr}
+              </span>
+              <span className="mt-1 block text-[#1d4ed8]">
+                {state.profile.locale === "sv" ? exercise.titleFr : exercise.titleSv}
+              </span>
             </span>
           </Link>
         ))}

@@ -7,7 +7,7 @@ import { TrackCard } from "@/components/track-card";
 import { TrustStrip } from "@/components/trust-strip";
 import { useAppState } from "@/components/app-state";
 import { BrandMark } from "@/components/brand-mark";
-import { BRAND, trackLabel, trackProduct } from "@/lib/branding";
+import { trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
 import { useQuestionCatalog } from "@/lib/questions/use-catalog";
@@ -34,8 +34,8 @@ export default function HomePage() {
           {state.profile.name || <BrandMark compact />}
         </p>
         <h1 className="font-serif text-3xl leading-tight text-black">{trackLabel(track)}</h1>
-        <p className="max-w-xl text-lg leading-7 text-[#6b6560]">{BRAND.slogan}</p>
-        <p className="max-w-xl text-sm text-[#6b6560]">{BRAND.keyMessage}</p>
+        <p className="max-w-xl text-lg leading-7 text-[#6b6560]">{dict.tagline}</p>
+        <p className="max-w-xl text-sm text-[#6b6560]">{dict.keyMessage}</p>
         <TrustStrip locale={state.profile.locale} />
       </header>
 

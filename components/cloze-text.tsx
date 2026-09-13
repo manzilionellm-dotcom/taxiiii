@@ -36,6 +36,8 @@ export function ClozeText({
     .map((token, index) => ({ token, index }))
     .filter((item) => item.token.type === "blank");
 
+  const highlightByDefault = supportLevel >= 2;
+
   return (
     <p className="question-sv font-serif text-[1.15rem] leading-8 text-black sm:text-[1.25rem]">
       {tokens.map((token, index) => {
@@ -43,71 +45,79 @@ export function ClozeText({
           return <span key={index}>{token.text}</span>;
         }
         const i = blankSlots.findIndex((item) => item.index === index);
-        const ok = normalize(values[i] ?? "") === normalize(token.text);
-        const show = revealAll || revealed[i] || ok;
-        const choices = fragile
-          ? Array.from(new Set([token.text, ...blanks.map((b) => b.text)]))
-              .sort((a, b) => a.localeCompare(b, "sv"))
-          : [];
+        const typed = values[i] ?? "";
+        const ok = normalize(typed) === normalize(token.text);
+        const show = Boolean(revealAll || revealed[i] || ok || highlightByDefault);
+        const choices = Array.from(new Set(blanks.map((blank) => blank.text))).sort((a, b) =>
+          a.localeCompare(b, "sv"),
+        );
 
-        return (
-          <span key={index} className="inline-block align-baseline">
-            {show ? (
-              <span className="inline-flex flex-col items-start">
-                <strong className="font-bold text-[#b91c1c]">{token.text}</strong>
-                {supportLevel > 0 && token.gloss ? (
-                  <span className="text-[0.7rem] font-sans font-medium leading-4 text-[#b91c1c]/80">
-                    {token.gloss}
-                  </span>
-                ) : null}
-              </span>
-            ) : fragile ? (
-              <span className="mx-0.5 inline-flex flex-wrap gap-1 align-middle">
-                {choices.map((choice) => (
-                  <button
-                    key={choice}
-                    type="button"
-                    className="min-h-10 rounded-md border border-[#ddd6c8] bg-white px-2.5 py-1.5 font-sans text-sm text-black"
-                    onClick={() => {
-                      const next = [...values];
-                      next[i] = choice;
-                      setValues(next);
-                      if (normalize(choice) === normalize(token.text)) {
-                        const rev = [...revealed];
-                        rev[i] = true;
-                        setRevealed(rev);
-                      }
-                    }}
-                  >
-                    {choice}
-                  </button>
-                ))}
-              </span>
-            ) : (
-              <span className="mx-1 inline-flex items-center gap-1 align-middle">
-                <input
-                  aria-label={dict.typeWord}
-                  value={values[i] ?? ""}
-                  onChange={(event) => {
-                    const next = [...values];
-                    next[i] = event.target.value;
-                    setValues(next);
-                  }}
-                  className="h-10 w-32 rounded-md border border-[#c41e3a]/40 bg-white px-2 font-sans text-sm text-black"
-                />
-                <button
-                  type="button"
-                  className="text-xs font-medium text-[#b91c1c] underline"
-                  onClick={() => {
+        if (show) {
+          return (
+            <span
+              key={index}
+              className="cloze-box"
+              title={supportLevel > 0 ? token.gloss : undefined}
+            >
+              <strong className="font-bold text-[#b91c1c]">{token.text}</strong>
+            </span>
+          );
+        }
+
+        if (fragile) {
+          return (
+            <label key={index} className="mx-0.5 inline-block align-baseline">
+              <span className="sr-only">{dict.recognition}</span>
+              <select
+                aria-label={dict.recognition}
+                value={typed}
+                onChange={(event) => {
+                  const next = [...values];
+                  next[i] = event.target.value;
+                  setValues(next);
+                  if (normalize(event.target.value) === normalize(token.text)) {
                     const rev = [...revealed];
                     rev[i] = true;
                     setRevealed(rev);
-                  }}
-                >
-                  {dict.reveal}
-                </button>
-              </span>
-            )}
+                  }
+                }}
+                className="cloze-select max-w-[11rem] rounded-md border border-[#c41e3a]/40 bg-white px-1.5 py-0.5 font-sans text-sm text-black"
+              >
+                <option value="">{dict.recognition}</option>
+                {choices.map((choice) => (
+                  <option key={choice} value={choice}>
+                    {choice}
+                  </option>
+                ))}
+              </select>
+            </label>
+          );
+        }
+
+        return (
+          <span key={index} className="mx-0.5 inline-flex items-baseline gap-1 align-baseline">
+            <input
+              aria-label={dict.typeWord}
+              value={typed}
+              size={Math.max(6, token.text.length)}
+              onChange={(event) => {
+                const next = [...values];
+                next[i] = event.target.value;
+                setValues(next);
+              }}
+              className="h-10 min-w-[4.5rem] max-w-[10rem] rounded-md border border-[#c41e3a]/40 bg-white px-1.5 font-sans text-sm text-black"
+            />
+            <button
+              type="button"
+              className="text-xs font-medium text-[#b91c1c] underline"
+              onClick={() => {
+                const rev = [...revealed];
+                rev[i] = true;
+                setRevealed(rev);
+              }}
+            >
+              {dict.reveal}
+            </button>
           </span>
         );
       })}

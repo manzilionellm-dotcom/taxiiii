@@ -15,6 +15,7 @@ export function ChatPanel() {
   const dict = t(state.profile.locale);
   const [input, setInput] = useState("");
   const [pending, setPending] = useState(false);
+  const [error, setError] = useState(false);
   const track = state.profile.activeTrack;
   const { catalog } = useQuestionCatalog(track);
   const readiness = computeReadiness(
@@ -28,6 +29,7 @@ export function ChatPanel() {
     const text = input.trim();
     if (!text || pending) return;
     setInput("");
+    setError(false);
     const user: ChatTurn = { role: "user", content: text, at: new Date().toISOString() };
     setState((prev) => appendChat(prev, [user]));
     setPending(true);
@@ -41,19 +43,32 @@ export function ChatPanel() {
           locale: state.profile.locale,
         }),
       });
+      if (!response.ok) throw new Error("chat_failed");
       const data = (await response.json()) as {
-        answer: string;
+        answer?: string;
         sources?: string[];
         grounded?: boolean;
       };
       const assistant: ChatTurn = {
         role: "assistant",
-        content: data.answer,
+        content: data.answer || dict.outOfCorpus,
         sources: data.sources,
         grounded: data.grounded,
         at: new Date().toISOString(),
       };
       setState((prev) => appendChat(prev, [assistant]));
+    } catch {
+      setError(true);
+      setState((prev) =>
+        appendChat(prev, [
+          {
+            role: "assistant",
+            content: dict.chatError,
+            grounded: false,
+            at: new Date().toISOString(),
+          },
+        ]),
+      );
     } finally {
       setPending(false);
     }
@@ -91,7 +106,7 @@ export function ChatPanel() {
                   turn.role === "user" ? "text-[#d7d0c3]" : "text-[#6b6560]"
                 }`}
               >
-                {turn.role === "user" ? "Du" : "IA"}
+                {turn.role === "user" ? dict.you : dict.tutor}
               </p>
               <p className="leading-6">{turn.content}</p>
               {turn.sources?.length ? (
@@ -123,9 +138,10 @@ export function ChatPanel() {
           className="field flex-1"
         />
         <button type="submit" className="btn-primary shrink-0 px-5" disabled={pending}>
-          {dict.send}
+          {pending ? "…" : dict.send}
         </button>
       </form>
+      {error ? <p className="text-sm text-[#b91c1c]">{dict.chatError}</p> : null}
     </div>
     </ProtectedView>
   );

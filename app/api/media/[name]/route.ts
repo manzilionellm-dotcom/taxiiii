@@ -45,14 +45,17 @@ export async function GET(
 
   try {
     const file = await readFile(join(process.cwd(), "content/media", name));
+    const type = TYPES[extname(name).toLowerCase()] ?? "application/octet-stream";
     const headers = new Headers({
-      "Content-Type": TYPES[extname(name).toLowerCase()] ?? "application/octet-stream",
+      "Content-Type": type === "image/svg+xml" ? "image/svg+xml; charset=utf-8" : type,
       "Cache-Control": PRIVATE_CACHE,
       "Content-Disposition": "inline",
       "X-Content-Type-Options": "nosniff",
+      "Content-Length": String(file.byteLength),
     });
     if (setCookie) headers.append("Set-Cookie", setCookie);
-    return new Response(file, { headers });
+    // Next/undici can drop a Node Buffer body; send a real Uint8Array.
+    return new Response(Uint8Array.from(file), { headers });
   } catch {
     return new Response("missing", { status: 404, headers: { "Cache-Control": PRIVATE_CACHE } });
   }

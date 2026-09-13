@@ -2,6 +2,7 @@ import { readFileSync, existsSync } from "node:fs";
 import { createRequire } from "node:module";
 import { parseJsonl, isResearchShape, normalizeResearchRecord, sortForStudy } from "./research-normalize.mjs";
 import { compile } from "./compile-banks.mjs";
+import { reconstructStem, tokenizeStem } from "../lib/tokenize-stem.mjs";
 
 const require = createRequire(import.meta.url);
 
@@ -79,6 +80,26 @@ const readySv = "Bravo, du är redo att göra provet.";
 const readyFr = "Bravo, tu es prêt à passer l'examen.";
 assert(readySv.includes("redo"), "SV ready message");
 assert(readyFr.includes("prêt"), "FR ready message");
+
+const hardWords = JSON.parse(readFileSync(new URL("../data/hard-words.json", import.meta.url), "utf8"));
+const gulStem = "Vad anger en gul heldragen linje på trottoarkanten?";
+const gulTokens = tokenizeStem(gulStem, hardWords);
+assert(reconstructStem(gulTokens) === gulStem, "cloze must keep Swedish stem word-for-word");
+const gulBlanks = gulTokens.filter((token) => token.type === "blank").map((token) => token.text);
+assert(gulBlanks.length === 2, "gul linje stem should have two cloze spans");
+assert(gulBlanks[0] === "heldragen linje", "phrase heldragen linje once");
+assert(gulBlanks[1] === "trottoarkanten", "trottoarkanten once");
+assert(!gulBlanks.includes("trottoarkant"), "shorter form must not also chip");
+
+const overlapStem = "En bindande prisuppgift och prisuppgift krävs.";
+const overlapTokens = tokenizeStem(overlapStem, hardWords);
+assert(reconstructStem(overlapTokens) === overlapStem, "overlapping dictionary forms must not drop text");
+const overlapBlanks = overlapTokens.filter((token) => token.type === "blank").map((token) => token.text.toLowerCase());
+assert(overlapBlanks.filter((text) => text.includes("prisuppgift")).length === 2, "two prisuppgift spans");
+
+const gulCompiled = compiled.find((item) => item.id === "rs-yt-lag1-gul-linje");
+assert(gulCompiled?.imageUrl === "/media/gul-heldragen-linje.svg", "gul linje must ship dual-coding image");
+assert(existsSync(new URL("../content/media/gul-heldragen-linje.svg", import.meta.url)), "gul linje svg missing");
 
 console.log(
   `self-check OK · research ${researchCount} + manzi ${manziCount} · extras ${extras.length} · ready@95`,

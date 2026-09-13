@@ -19,7 +19,7 @@ export const defaultProfile: Profile = {
   email: "",
   tracks: ["taxi"],
   activeTrack: "taxi",
-  locale: "fr",
+  locale: "sv",
   fragileMode: false,
   supportLevel: 2,
   onboarded: false,

@@ -19,7 +19,7 @@ import type { MockExam, Track } from "@/lib/types";
 const EXAM_MS = 12 * 60 * 1000;
 
 export function ExamSession({ track }: { track: Track }) {
-  const { state, setState } = useAppState();
+  const { state, setState, hydrated } = useAppState();
   const dict = t(state.profile.locale);
   const { catalog } = useQuestionCatalog(track);
   const [exam] = useState<MockExam>(() => ({
@@ -34,13 +34,23 @@ export function ExamSession({ track }: { track: Track }) {
   const [remaining, setRemaining] = useState(EXAM_MS);
   const [done, setDone] = useState(false);
   const [failed, setFailed] = useState(false);
+  const [reload, setReload] = useState(0);
   const finished = useRef(false);
+  const startedAt = useRef<number | null>(null);
 
   useEffect(() => {
+    if (!hydrated) return;
     let cancelled = false;
+    setFailed(false);
+    setQueue(null);
+    finished.current = false;
+    startedAt.current = null;
     void fetchSessionQuestions({ track, mode: "exam" })
       .then((questions) => {
-        if (!cancelled) setQueue(questions);
+        if (cancelled) return;
+        setQueue(questions);
+        startedAt.current = Date.now();
+        setRemaining(EXAM_MS);
       })
       .catch(() => {
         if (!cancelled) setFailed(true);
@@ -48,17 +58,19 @@ export function ExamSession({ track }: { track: Track }) {
     return () => {
       cancelled = true;
     };
-  }, [track]);
+  }, [hydrated, reload, track]);
 
   useEffect(() => {
-    const started = Date.now();
+    if (!startedAt.current) return;
     const timer = window.setInterval(() => {
-      const left = EXAM_MS - (Date.now() - started);
+      const origin = startedAt.current;
+      if (!origin) return;
+      const left = EXAM_MS - (Date.now() - origin);
       setRemaining(Math.max(0, left));
       if (left <= 0) setDone(true);
     }, 250);
     return () => window.clearInterval(timer);
-  }, []);
+  }, [queue]);
 
   useEffect(() => {
     if (!done || finished.current || !queue) return;
@@ -76,14 +88,14 @@ export function ExamSession({ track }: { track: Track }) {
     return (
       <EmptyState
         title={dict.errorTitle}
-        lead={dict.errorLead}
-        actionHref={`/${track}`}
-        actionLabel={dict.goHome}
+        lead={dict.sessionError}
+        actionLabel={dict.retry}
+        onAction={() => setReload((value) => value + 1)}
       />
     );
   }
 
-  if (!queue) {
+  if (!hydrated || !queue) {
     return <SessionSkeleton label={dict.loadingSession} />;
   }
 

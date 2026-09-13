@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { BrandMark } from "@/components/brand-mark";
 import { useAppState } from "@/components/app-state";
@@ -42,6 +43,10 @@ export function AppShell({ children }: { children: ReactNode }) {
   function setTrack(next: Track) {
     setState(updateProfile(state, { activeTrack: next }));
   }
+
+  useEffect(() => {
+    document.documentElement.lang = state.profile.locale;
+  }, [state.profile.locale]);
 
   if (!hydrated) {
     return <SplashScreen />;

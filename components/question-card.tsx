@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ClozeText } from "@/components/cloze-text";
 import { ProtectedImage } from "@/components/protected-image";
 import { t } from "@/lib/i18n";
+import { hasImageUrl } from "@/lib/tokenize-stem.mjs";
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { Locale, SupportLevel } from "@/lib/types";
 
@@ -67,13 +68,14 @@ export function QuestionCard({
         </button>
       )}
 
-      {question.imageUrl ? (
+      {hasImageUrl(question.imageUrl) ? (
         <figure className="overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
           <div className="flex min-h-40 items-center justify-center px-2 pt-3">
             <ProtectedImage
-              src={question.imageUrl}
+              src={question.imageUrl!}
               alt={dict.imageCaption}
               watermark={question.watermark}
+              unavailableLabel={dict.imageUnavailable}
             />
           </div>
           <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">
@@ -82,7 +84,7 @@ export function QuestionCard({
         </figure>
       ) : null}
 
-      <ul className="space-y-2.5">
+      <ul className="space-y-2.5 pb-2">
         {question.options.map((option) => {
           const selected = picked === option.letter;
           const isRight = answered && option.letter === question.answer;

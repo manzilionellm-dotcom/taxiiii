@@ -10,6 +10,7 @@ import {
   writeAppState,
 } from "@/lib/progress/client-store";
 import { emptyState } from "@/lib/progress/store";
+import { ensureClientSession } from "@/lib/protect/client-session";
 import type { AppState } from "@/lib/types";
 
 const StateContext = createContext<{
@@ -30,14 +31,9 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!hydrated) return;
-    void fetch("/api/session", {
-      method: "POST",
-      credentials: "same-origin",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: state.profile.name,
-        email: state.profile.email,
-      }),
+    void ensureClientSession({
+      name: state.profile.name,
+      email: state.profile.email,
     });
   }, [hydrated, state.profile.email, state.profile.name, state.profile.onboarded]);
 

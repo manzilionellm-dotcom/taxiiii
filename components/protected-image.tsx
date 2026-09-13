@@ -1,31 +1,70 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+type Status = "loading" | "ready" | "error";
+
+function isSvgSrc(src: string) {
+  return /\.svg(\?|$)/i.test(src);
+}
 
 export function ProtectedImage({
   src,
   alt,
   watermark,
+  unavailableLabel,
 }: {
   src: string;
   alt: string;
   watermark: string;
+  unavailableLabel: string;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [status, setStatus] = useState<Status>("loading");
+  const [svgMarkup, setSvgMarkup] = useState<string | null>(null);
 
   useEffect(() => {
+    let cancelled = false;
+    setStatus("loading");
+    setSvgMarkup(null);
+
+    if (isSvgSrc(src)) {
+      void fetch(src, { credentials: "same-origin", cache: "no-store" })
+        .then(async (response) => {
+          if (!response.ok) throw new Error("media");
+          const text = await response.text();
+          if (!text.includes("<svg")) throw new Error("empty");
+          return text;
+        })
+        .then((text) => {
+          if (cancelled) return;
+          setSvgMarkup(text);
+          setStatus("ready");
+        })
+        .catch(() => {
+          if (!cancelled) setStatus("error");
+        });
+      return () => {
+        cancelled = true;
+      };
+    }
+
     const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    const ctx = canvas?.getContext("2d");
+    if (!canvas || !ctx) {
+      setStatus("error");
+      return;
+    }
+
     let revoked: string | null = null;
     const image = new Image();
-    image.crossOrigin = "anonymous";
     image.onload = () => {
+      if (cancelled) return;
       const width = image.naturalWidth || 640;
       const height = image.naturalHeight || 360;
       canvas.width = width;
       canvas.height = height;
+      ctx.clearRect(0, 0, width, height);
       ctx.drawImage(image, 0, 0, width, height);
       ctx.save();
       ctx.globalAlpha = 0.18;
@@ -35,28 +74,77 @@ export function ProtectedImage({
       ctx.rotate(-0.28);
       ctx.fillText(watermark, 0, 0);
       ctx.restore();
-      if (revoked) URL.revokeObjectURL(revoked);
+      setStatus("ready");
     };
+    image.onerror = () => {
+      if (!cancelled) setStatus("error");
+    };
+
     void fetch(src, { credentials: "same-origin", cache: "no-store" })
-      .then((response) => (response.ok ? response.blob() : Promise.reject()))
+      .then((response) => (response.ok ? response.blob() : Promise.reject(new Error("media"))))
       .then((blob) => {
+        if (cancelled) return;
         revoked = URL.createObjectURL(blob);
         image.src = revoked;
       })
       .catch(() => {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        if (!cancelled) setStatus("error");
       });
+
     return () => {
+      cancelled = true;
       if (revoked) URL.revokeObjectURL(revoked);
     };
   }, [src, watermark]);
 
+  if (status === "error") {
+    return (
+      <div className="flex min-h-24 items-center justify-center px-4 py-6 text-center text-sm text-[#6b6560]">
+        {unavailableLabel}
+      </div>
+    );
+  }
+
+  if (isSvgSrc(src)) {
+    return (
+      <div className="relative">
+        {status === "loading" ? (
+          <div className="h-40 animate-pulse rounded-xl bg-[#efe8d8]" aria-hidden />
+        ) : null}
+        {svgMarkup ? (
+          <div
+            role="img"
+            aria-label={alt}
+            className="mx-auto max-h-64 w-full overflow-hidden [&_svg]:mx-auto [&_svg]:h-auto [&_svg]:max-h-64 [&_svg]:w-full"
+            dangerouslySetInnerHTML={{ __html: svgMarkup }}
+          />
+        ) : null}
+        {status === "ready" ? (
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-x-6 bottom-8 rotate-[-12deg] text-center text-sm font-medium text-[#1f3d2b]/25"
+          >
+            {watermark}
+          </span>
+        ) : null}
+      </div>
+    );
+  }
+
   return (
-    <canvas
-      ref={canvasRef}
-      role="img"
-      aria-label={alt}
-      className="mx-auto max-h-72 w-full object-contain"
-    />
+    <div className="relative">
+      {status === "loading" ? (
+        <div className="h-40 animate-pulse rounded-xl bg-[#efe8d8]" aria-hidden />
+      ) : null}
+      <canvas
+        ref={canvasRef}
+        role="img"
+        aria-label={alt}
+        aria-busy={status === "loading"}
+        className={`mx-auto max-h-72 w-full object-contain ${
+          status === "ready" ? "opacity-100" : "h-40 opacity-0"
+        }`}
+      />
+    </div>
   );
 }

@@ -1,9 +1,11 @@
+import { ensureClientSession } from "@/lib/protect/client-session";
 import type { QuestionCatalogItem, SessionQuestion } from "@/lib/questions/session-types";
 import type { Track } from "@/lib/types";
 
 export type { QuestionCatalogItem, SessionQuestion };
 
 export async function fetchCatalog(track: Track): Promise<QuestionCatalogItem[]> {
+  await ensureClientSession();
   const response = await fetch(`/api/questions?mode=meta&track=${track}`, {
     cache: "no-store",
     credentials: "same-origin",
@@ -25,6 +27,7 @@ export async function fetchSessionQuestions(input: {
   });
   if (input.fragile) params.set("fragile", "1");
   if (input.dueIds?.length) params.set("due", input.dueIds.join(","));
+  await ensureClientSession();
   const response = await fetch(`/api/questions?${params}`, {
     cache: "no-store",
     credentials: "same-origin",
