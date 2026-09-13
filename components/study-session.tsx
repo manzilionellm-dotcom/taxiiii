@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 import { ProtectedView } from "@/components/protected-view";
 import { QuestionCard } from "@/components/question-card";
+import { SessionSkeleton } from "@/components/splash-screen";
 import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
 import { recordAttempt } from "@/lib/progress/store";
@@ -26,6 +28,7 @@ export function StudySession({ track }: { track: Track }) {
   const [answered, setAnswered] = useState(false);
   const [remaining, setRemaining] = useState(SESSION_MS);
   const [done, setDone] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -34,9 +37,13 @@ export function StudySession({ track }: { track: Track }) {
       mode: "study",
       dueIds,
       fragile: state.profile.fragileMode,
-    }).then((questions) => {
-      if (!cancelled) setQueue(questions);
-    });
+    })
+      .then((questions) => {
+        if (!cancelled) setQueue(questions);
+      })
+      .catch(() => {
+        if (!cancelled) setFailed(true);
+      });
     return () => {
       cancelled = true;
     };
@@ -55,29 +62,47 @@ export function StudySession({ track }: { track: Track }) {
   const current = queue?.[index];
   const minutes = Math.ceil(remaining / 60000);
 
+  if (failed) {
+    return (
+      <EmptyState
+        title={dict.errorTitle}
+        lead={dict.errorLead}
+        actionHref={`/${track}`}
+        actionLabel={dict.goHome}
+      />
+    );
+  }
+
   if (!queue) {
-    return <p className="text-sm text-[#6b6560]">{dict.loadingSession}</p>;
+    return <SessionSkeleton label={dict.loadingSession} />;
   }
 
   if (done || !current) {
     return (
-      <div className="card space-y-4">
-        <h1 className="font-serif text-2xl text-black">{dict.sessionDone}</h1>
-        <Link href={`/${track}`} className="btn-primary inline-flex">
-          {dict.dashboard}
-        </Link>
-      </div>
+      <EmptyState
+        title={dict.sessionDone}
+        actionHref={`/${track}`}
+        actionLabel={dict.dashboard}
+      />
     );
   }
 
   return (
     <ProtectedView locale={state.profile.locale}>
       <div className="space-y-4">
-        <div className="flex items-center justify-between text-sm text-[#6b6560]">
-          <span>
+        <div className="flex items-center justify-between gap-3 text-sm text-[#6b6560]">
+          <span className="tabular-nums">
             {index + 1}/{queue.length} · {minutes} {dict.minutesLeft}
           </span>
-          <Link href={`/${track}`}>{dict.back}</Link>
+          <Link href={`/${track}`} className="min-h-10 font-medium text-[#1f3d2b]">
+            {dict.back}
+          </Link>
+        </div>
+        <div className="h-1 overflow-hidden rounded-full bg-[#ece6d8]">
+          <div
+            className="h-full rounded-full bg-[#1f3d2b] transition-[width] duration-300"
+            style={{ width: `${((index + (answered ? 1 : 0)) / queue.length) * 100}%` }}
+          />
         </div>
         {dueIds.length === 0 ? <p className="text-sm text-[#6b6560]">{dict.noDue}</p> : null}
         <QuestionCard

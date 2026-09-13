@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Source_Serif_4 } from "next/font/google";
 import { AppStateProvider } from "@/components/app-state";
 import { AppShell } from "@/components/app-shell";
-import { documentDescription, documentTitle } from "@/lib/branding";
+import { BRAND, documentDescription, documentTitle } from "@/lib/branding";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,9 +15,30 @@ const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#1f3d2b",
+  colorScheme: "light",
+};
+
 export const metadata: Metadata = {
   title: documentTitle(),
   description: documentDescription(),
+  applicationName: BRAND.appName,
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: BRAND.appName,
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -30,7 +51,7 @@ export default function RootLayout({
       lang="sv"
       className={`${geistSans.variable} ${sourceSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full min-h-dvh flex-col">
         <AppStateProvider>
           <AppShell>{children}</AppShell>
         </AppStateProvider>

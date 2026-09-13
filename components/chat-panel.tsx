@@ -72,20 +72,42 @@ export function ChatPanel() {
       <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
       <div className="card max-h-[28rem] space-y-3 overflow-y-auto">
         {state.chat.length === 0 ? (
-          <p className="text-sm text-[#6b6560]">{dict.chatEmpty}</p>
+          <div className="px-2 py-8 text-center">
+            <p className="font-serif text-lg text-black">{dict.chat}</p>
+            <p className="mt-2 text-sm leading-6 text-[#6b6560]">{dict.chatEmpty}</p>
+          </div>
         ) : (
           state.chat.map((turn, index) => (
-            <div key={`${turn.at}-${index}`} className="space-y-1">
-              <p className="text-xs uppercase tracking-[0.12em] text-[#6b6560]">
+            <div
+              key={`${turn.at}-${index}`}
+              className={`max-w-[92%] space-y-1 rounded-2xl px-3.5 py-2.5 ${
+                turn.role === "user"
+                  ? "ml-auto bg-[#1f3d2b] text-[#fffdf8]"
+                  : "bg-[#f3eee4] text-black"
+              }`}
+            >
+              <p
+                className={`text-[10px] uppercase tracking-[0.12em] ${
+                  turn.role === "user" ? "text-[#d7d0c3]" : "text-[#6b6560]"
+                }`}
+              >
                 {turn.role === "user" ? "Du" : "IA"}
               </p>
-              <p className={turn.role === "user" ? "text-black" : "text-black"}>{turn.content}</p>
+              <p className="leading-6">{turn.content}</p>
               {turn.sources?.length ? (
-                <p className="text-xs text-[#6b6560]">{turn.sources.join(" · ")}</p>
+                <p className={`text-xs ${turn.role === "user" ? "text-[#d7d0c3]" : "text-[#6b6560]"}`}>
+                  {turn.sources.join(" · ")}
+                </p>
               ) : null}
             </div>
           ))
         )}
+        {pending ? (
+          <div className="max-w-[60%] space-y-2 rounded-2xl bg-[#f3eee4] px-3.5 py-3">
+            <div className="skeleton h-2.5 w-24" />
+            <div className="skeleton h-2.5 w-40" />
+          </div>
+        ) : null}
       </div>
       <form
         className="flex gap-2"
@@ -98,9 +120,9 @@ export function ChatPanel() {
           value={input}
           onChange={(event) => setInput(event.target.value)}
           placeholder={dict.chatPlaceholder}
-          className="flex-1 rounded-xl border border-[#ddd6c8] bg-white px-3 py-3 text-black"
+          className="field flex-1"
         />
-        <button type="submit" className="btn-primary" disabled={pending}>
+        <button type="submit" className="btn-primary shrink-0 px-5" disabled={pending}>
           {dict.send}
         </button>
       </form>

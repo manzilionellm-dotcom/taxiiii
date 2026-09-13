@@ -108,6 +108,14 @@ export const fr: Dictionary = {
   resumeExam: "Je suis de retour — continuer l'examen",
   protectionNote:
     "Aucune appli web ne peut bloquer les captures au niveau de l'OS. Nous masquons la question quand la fenêtre perd le focus.",
+  errorTitle: "Une erreur s'est produite",
+  errorLead: "Réessaie. Ta progression locale est conservée.",
+  errorRetry: "Réessayer",
+  notFoundTitle: "Page introuvable",
+  notFoundLead: "Ce chemin n'existe pas.",
+  goHome: "Retour à l'accueil",
+  loadingApp: "Chargement…",
+  trustReady: "95 % de préparation",
   topic: {
     bkort: BRAND.tracks.b.label,
     lagstiftning: "Législation",

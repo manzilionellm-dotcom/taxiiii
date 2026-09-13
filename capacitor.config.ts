@@ -23,6 +23,10 @@ const config: CapacitorConfig = {
       backgroundColor: "#1f3d2b",
       showSpinner: false,
     },
+    StatusBar: {
+      style: "LIGHT",
+      backgroundColor: "#1f3d2b",
+    },
   },
 };
 

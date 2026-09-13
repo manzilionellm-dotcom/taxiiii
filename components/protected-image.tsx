@@ -56,7 +56,7 @@ export function ProtectedImage({
       ref={canvasRef}
       role="img"
       aria-label={alt}
-      className="mx-auto max-h-64 w-full object-contain"
+      className="mx-auto max-h-72 w-full object-contain"
     />
   );
 }

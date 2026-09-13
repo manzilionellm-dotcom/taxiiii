@@ -31,8 +31,8 @@ export function QuestionCard({
   const correct = picked === question.answer;
 
   return (
-    <article className="card space-y-5">
-      <header className="flex flex-wrap items-center justify-between gap-2 text-xs uppercase tracking-[0.14em] text-[#6b6560]">
+    <article className="question-paper space-y-5">
+      <header className="flex flex-wrap items-center justify-between gap-2 text-[11px] uppercase tracking-[0.14em] text-[#6b6560]">
         <span title={question.source ?? question.corpus}>
           {dict.topic[question.topic]}
           {question.corpus === "research"
@@ -42,7 +42,7 @@ export function QuestionCard({
               : ""}
           {question.freq === "high" ? ` · ${dict.freqHigh}` : ""}
         </span>
-        <span>{question.id}</span>
+        <span className="tabular-nums">{question.id}</span>
       </header>
 
       <ClozeText
@@ -54,11 +54,11 @@ export function QuestionCard({
       />
 
       {showFr || supportLevel >= 3 ? (
-        <p className="question-fr text-[1.02rem] leading-7 text-[#1d4ed8]">{french.stem}</p>
+        <p className="question-fr text-[1.02rem] leading-7">{french.stem}</p>
       ) : (
         <button
           type="button"
-          className="text-sm font-medium text-[#1d4ed8]"
+          className="min-h-11 text-left text-sm font-medium text-[#1d4ed8]"
           onClick={() => setShowFr(true)}
         >
           {dict.showTranslation}
@@ -66,19 +66,21 @@ export function QuestionCard({
       )}
 
       {question.imageUrl ? (
-        <figure className="overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f7f2e8]">
-          <ProtectedImage
-            src={question.imageUrl}
-            alt={dict.imageCaption}
-            watermark={question.watermark}
-          />
-          <figcaption className="px-4 pb-3 text-center text-xs text-[#6b6560]">
+        <figure className="overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
+          <div className="flex min-h-40 items-center justify-center px-2 pt-3">
+            <ProtectedImage
+              src={question.imageUrl}
+              alt={dict.imageCaption}
+              watermark={question.watermark}
+            />
+          </div>
+          <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">
             {dict.imageCaption}
           </figcaption>
         </figure>
       ) : null}
 
-      <ul className="space-y-2">
+      <ul className="space-y-2.5">
         {question.options.map((option) => {
           const selected = picked === option.letter;
           const isRight = answered && option.letter === question.answer;
@@ -92,7 +94,7 @@ export function QuestionCard({
                   setPicked(option.letter);
                   onAnswer?.(option.letter, option.letter === question.answer);
                 }}
-                className={`flex w-full items-start gap-3 rounded-xl border px-3 py-3 text-left text-black transition ${
+                className={`flex min-h-14 w-full items-center gap-3 rounded-2xl border px-3.5 py-3 text-left text-black transition ${
                   isRight
                     ? "border-emerald-700 bg-emerald-50"
                     : isWrong
@@ -102,13 +104,21 @@ export function QuestionCard({
                         : "border-[#ddd6c8] bg-white hover:border-[#1f3d2b]/40"
                 }`}
               >
-                <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f4efe4] font-semibold">
+                <span
+                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-semibold ${
+                    isRight
+                      ? "bg-emerald-700 text-white"
+                      : isWrong
+                        ? "bg-red-600 text-white"
+                        : "bg-[#f3eee4] text-[#1f3d2b]"
+                  }`}
+                >
                   {option.letter}
                 </span>
-                <span>
-                  <span className="block font-medium">{option.text}</span>
+                <span className="min-w-0">
+                  <span className="block font-medium leading-6">{option.text}</span>
                   {(answered || showFr) && french.options?.[option.letter] ? (
-                    <span className="mt-1 block text-sm text-[#1d4ed8]">
+                    <span className="mt-1 block text-sm leading-6 text-[#1d4ed8]">
                       {french.options[option.letter]}
                     </span>
                   ) : null}
@@ -120,7 +130,7 @@ export function QuestionCard({
       </ul>
 
       {answered ? (
-        <div className="rounded-xl bg-[#f4efe4] px-4 py-3">
+        <div className="rounded-xl bg-[#f3eee4] px-4 py-3.5">
           <p className="text-sm font-semibold text-black">
             {correct ? dict.correct : dict.incorrect} · {dict.explanation}
           </p>
