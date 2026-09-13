@@ -41,6 +41,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Full Manzi exam rasters (~389MB). Keep demo SVGs; upload the rest to Vercel Blob.
+/content/media/**
+!/content/media/*.svg
+
 # Capacitor / Android build output (sources under android/ are committed)
 android/app/build/
 android/app/.cxx/

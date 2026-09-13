@@ -14,7 +14,6 @@ export const RESEARCH_ITEMS = [
     answer: "C",
     note_sv: "Gul heldragen linje vid trottoarkant = stannande- och parkeringsförbud.",
     note_fr: "Ligne jaune continue au trottoir = interdiction de s'arrêter et de stationner.",
-    imageUrl: "/media/gul-heldragen-linje.svg",
   },
   {
     id: "rs-yt-lag1-taxameter-24",

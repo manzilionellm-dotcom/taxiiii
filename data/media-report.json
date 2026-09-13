@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-09-13T20:05:49.819Z",
+  "imagesDir": null,
+  "questionsTotal": 68,
+  "questionsWithImageUrl": 8,
+  "rastersCopied": 0,
+  "questionsLinkedToFile": 8,
+  "questionsMissingFile": 0,
+  "gulLinje": null,
+  "coordinator": {
+    "questions": "/workspace/taxiprov/manzi/questions-merged.jsonl",
+    "images": "/workspace/taxiprov/manzi/images",
+    "expectedQuestions": 1668,
+    "expectedImages": 2877
+  },
+  "note": "No --images this run. Drop /workspace/taxiprov/manzi/images (~389MB, 2877 rasters) and re-run with --coordinator. Do not invent SVGs."
+}

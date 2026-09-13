@@ -21,7 +21,7 @@ This is not a toy landing page. It is a working vertical slice:
 Two corpora, both kept:
 
 1. **Research** (`data/research-bank.jsonl`) — Lionel’s early bank (~193 when complete): YouTube Lagstiftning del 1–2, prisresan, Karta Taxi 2; teori-taxi.com; TaxiKortet; taxi-prov.se vilotid; Trafikverket. Schema uses `sv` / `fr` / `type` / `source` / `topic` / `answer` / `trap` / `freq`. Swedish `sv` stays intact.
-2. **Manzi** (`data/questions.jsonl`) — full QCM (~1475). `stem_sv` / options / explanations stay word for word.
+2. **Manzi** (`data/questions.jsonl`) — full QCM (**1668** when the coordinator `questions-merged.jsonl` is dropped). `stem_sv` / options / explanations stay word for word. Exam photos live under `/workspace/taxiprov/manzi/images/` (2877 files, ~389 MB) — see [docs/MEDIA.md](docs/MEDIA.md).
 
 `npm run import` **compiles both**. A larger Manzi file must not drop research. Study order: high-frequency research (vilotid 11/8, taxameter 24 mån fälla, gul heldragen linje, tidbok, prisräkning) **then** Manzi.
 
@@ -41,6 +41,9 @@ npm run check:corpus
 
 npm run import -- --manzi /path/manzi.jsonl
 npm run import -- --research /path/research-bank.jsonl --images /path/media
+npm run import -- --coordinator
+# /workspace/taxiprov/manzi/questions-merged.jsonl + images/ (1668 + 2877)
+npm run test:media
 npm run dev
 npm run build
 ```
@@ -56,6 +59,7 @@ Copy `.env.example`. All keys are optional for the demo.
 | `AI_MODEL` | Gateway model id, default `openai/gpt-4.1-mini` |
 | `DATABASE_URL` | Optional Postgres (Prisma + pgvector schema in `prisma/schema.prisma`) |
 | `SESSION_SECRET` | HMAC for session cookies + short-lived media URLs (dev fallback exists) |
+| `BLOB_READ_WRITE_TOKEN` | Private Vercel Blob for the 389MB Manzi image tree (`npm run media:upload`) |
 
 Without a key, `/api/chat` still answers from the corpus using scripted search.
 
@@ -70,7 +74,7 @@ Without a key, `/api/chat` still answers from the corpus using scripted search.
 | `data/youtube-links.json` + `youtube-transcripts/` | Calcul + RAG |
 | `data/translations.fr.json` | Blue FR line under the original SV stem |
 | `data/hard-words.json` | Cloze + red gloss dictionary |
-| `content/media/` | Question images (served only via signed `/api/media`, not a public CDN path) |
+| `content/media/` | Question images (signed `/api/media/…`, nested Manzi paths; full tree on Blob, not git) |
 | `lib/branding.ts` | User-facing name, signature, slogan, categories |
 | `lib/progress/` | localStorage attempts, SM-2 SRS, readiness |
 | `lib/rag/` | Corpus index + grounded chat |

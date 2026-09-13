@@ -1,5 +1,7 @@
 /** Normalize Lionel's research-bank schema → app question model. Swedish `sv` is never rewritten. */
 
+import { sanitizeCaption, stripFakeExamArt, toImageUrl } from "../lib/media/paths.mjs";
+
 const TOPICS = new Set(["lagstiftning", "sakerhet", "karta", "bkort"]);
 const LETTERS = ["A", "B", "C", "D", "E"];
 
@@ -98,8 +100,12 @@ export function normalizeResearchRecord(record, index) {
     ...(trap ? { trap } : {}),
     ...(record.type ? { type: record.type } : {}),
     ...(record.youtubeId ? { youtubeId: record.youtubeId } : {}),
-    ...(record.imageUrl ? { imageUrl: record.imageUrl } : {}),
+    ...(toImageUrl(record.imageUrl) ? { imageUrl: toImageUrl(record.imageUrl) } : {}),
+    ...(record.imageCaption || record.caption
+      ? { imageCaption: sanitizeCaption(record.imageCaption || record.caption) }
+      : {}),
   };
+  Object.assign(question, stripFakeExamArt(question));
   const translation = record.fr
     ? { stem: record.fr, options: record.options_fr || undefined }
     : null;
@@ -120,7 +126,10 @@ export function normalizeManziRecord(record, index) {
     answer: record.answer,
     explanation_sv: record.explanation_sv,
     explanation_fr: record.explanation_fr,
-    ...(record.imageUrl ? { imageUrl: record.imageUrl } : {}),
+    ...(toImageUrl(record.imageUrl) ? { imageUrl: toImageUrl(record.imageUrl) } : {}),
+    ...(record.imageCaption || record.caption
+      ? { imageCaption: sanitizeCaption(record.imageCaption || record.caption) }
+      : {}),
     source: record.source || "manzi",
     corpus: record.corpus || "manzi",
     ...(record.freq ? { freq: record.freq } : {}),
@@ -128,6 +137,7 @@ export function normalizeManziRecord(record, index) {
     ...(record.type ? { type: record.type } : {}),
     ...(record.youtubeId ? { youtubeId: record.youtubeId } : {}),
   };
+  Object.assign(question, stripFakeExamArt(question));
   return { issues, question };
 }
 

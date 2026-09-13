@@ -3,6 +3,7 @@ import { createRequire } from "node:module";
 import { parseJsonl, isResearchShape, normalizeResearchRecord, sortForStudy } from "./research-normalize.mjs";
 import { compile } from "./compile-banks.mjs";
 import { reconstructStem, tokenizeStem } from "../lib/tokenize-stem.mjs";
+import { hasAuthenticImageUrl, isFakeExamSvg, isRasterExt } from "../lib/media/paths.mjs";
 
 const require = createRequire(import.meta.url);
 
@@ -98,8 +99,16 @@ const overlapBlanks = overlapTokens.filter((token) => token.type === "blank").ma
 assert(overlapBlanks.filter((text) => text.includes("prisuppgift")).length === 2, "two prisuppgift spans");
 
 const gulCompiled = compiled.find((item) => item.id === "rs-yt-lag1-gul-linje");
-assert(gulCompiled?.imageUrl === "/media/gul-heldragen-linje.svg", "gul linje must ship dual-coding image");
-assert(existsSync(new URL("../content/media/gul-heldragen-linje.svg", import.meta.url)), "gul linje svg missing");
+assert(gulCompiled, "gul linje question missing");
+assert(!isFakeExamSvg(gulCompiled.imageUrl), "gul linje must not use a fake SVG");
+assert(
+  !gulCompiled.imageUrl || (hasAuthenticImageUrl(gulCompiled.imageUrl) && isRasterExt(gulCompiled.imageUrl)),
+  "gul linje may only show a real Manzi raster, otherwise no image",
+);
+assert(
+  !existsSync(new URL("../content/media/gul-heldragen-linje.svg", import.meta.url)),
+  "placeholder gul-heldragen-linje.svg must be deleted",
+);
 
 console.log(
   `self-check OK · research ${researchCount} + manzi ${manziCount} · extras ${extras.length} · ready@95`,

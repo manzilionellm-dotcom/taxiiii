@@ -16,6 +16,7 @@ export const questionSchema = z
     explanation_sv: z.string().min(1),
     explanation_fr: z.string().min(1),
     imageUrl: z.string().optional(),
+    imageCaption: z.string().optional(),
     source: z.string().optional(),
     corpus: z.enum(["research", "manzi"]).optional(),
     freq: z.enum(["high", "medium", "low"]).optional(),

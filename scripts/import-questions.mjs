@@ -7,6 +7,8 @@
  *   npm run import -- --manzi /path/manzi.jsonl
  *   npm run import -- --research /path/research-bank.jsonl
  *   npm run import -- --manzi /path/manzi.jsonl --research /path/research-bank.jsonl --images /path/media
+ *   npm run import -- --coordinator
+ *     → /workspace/taxiprov/manzi/questions-merged.jsonl + images/ (1668 + 2877)
  */
 
 import { pathToFileURL } from "node:url";

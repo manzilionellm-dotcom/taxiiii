@@ -5,6 +5,7 @@ import { ClozeText } from "@/components/cloze-text";
 import { ProtectedImage } from "@/components/protected-image";
 import { t } from "@/lib/i18n";
 import { hasImageUrl } from "@/lib/tokenize-stem.mjs";
+import { sanitizeCaption } from "@/lib/media/paths.mjs";
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { Locale, SupportLevel } from "@/lib/types";
 
@@ -70,16 +71,16 @@ export function QuestionCard({
 
       {hasImageUrl(question.imageUrl) ? (
         <figure className="overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
-          <div className="flex min-h-40 items-center justify-center px-2 pt-3">
+          <div className="flex min-h-40 items-center justify-center overflow-auto px-2 pt-3">
             <ProtectedImage
               src={question.imageUrl!}
-              alt={dict.imageCaption}
+              alt={sanitizeCaption(question.imageCaption) || dict.imageCaption}
               watermark={question.watermark}
               unavailableLabel={dict.imageUnavailable}
             />
           </div>
           <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">
-            {dict.imageCaption}
+            {sanitizeCaption(question.imageCaption) || dict.imageCaption}
           </figcaption>
         </figure>
       ) : null}

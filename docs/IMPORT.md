@@ -4,13 +4,19 @@ Two files. **Both** are compiled. Manzi never deletes research.
 
 ```
 data/research-bank.jsonl    ← YouTube + apps + public examples (~193 when full)
-data/questions.jsonl        ← Manzi bank (~1475 when full)
+data/questions.jsonl        ← Manzi bank (1668 when the coordinator drop is copied)
 data/questions.json         ← compiled merge (research first, then Manzi)
 data/vocab/session-01.json … session-05-friday-mini.json
 data/youtube-links.json
 data/youtube-transcripts/*.json
 docs/apps-report.md
+docs/MEDIA.md               ← 2877 rasters / 389MB / Blob upload
 ```
+
+Coordinator machine (this repo cannot see it until you drop the files):
+
+- `/workspace/taxiprov/manzi/questions-merged.jsonl` — 1668 questions, ~132 with `imageUrl` like `media/T3/…/exam.php-filer/NNN.jpg`
+- `/workspace/taxiprov/manzi/images/` — 2877 files, ~389 MB
 
 Do **not** drop `research-bank.jsonl` when you add the large Manzi file.
 
@@ -27,7 +33,13 @@ npm run import -- --research /path/to/research-bank.jsonl
 # copies research only (full ~193), leaves Manzi alone
 
 npm run import -- --manzi /path/manzi.jsonl --research /path/research.jsonl --images /path/media
+
+# Lionel's coordinator drop (1668 JSONL + 2877 rasters):
+npm run import -- --coordinator
+# then (production): BLOB_READ_WRITE_TOKEN=… npm run media:upload
 ```
+
+See [MEDIA.md](MEDIA.md) for the image pipeline. Never invent SVG drawings for exam items. PDF-only questions stay image-less.
 
 Swedish in research `sv` and Manzi `stem_sv` is copied **word for word**.
 
@@ -62,7 +74,7 @@ Until the full ~193-line file is dropped, the repo ships a **high-frequency seed
 
 ## Manzi schema
 
-Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `explanation_fr`, optional `imageUrl`, `source`.
+Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `explanation_fr`, optional `imageUrl` (Manzi path `media/T3/…/exam.php-filer/NNN.jpg`), optional `imageCaption`, `source`. `imageUrl` is normalized to `/media/<logical-key>` and must point at a real raster. Decorative SVGs are stripped.
 
 ## Study order
 
@@ -80,4 +92,8 @@ Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `exp
 
 ## Images
 
-`--images` copies into `content/media/` (session-signed `/api/media`, not a public CDN folder). Never delete files on the Desktop/manzi machine — copy only.
+`--images` walks the **whole tree** (not a flat folder), copies every jpg/png/gif/webp **without resizing**, and links questions by `imageUrl`. Unlinked rasters are still copied. PDFs are skipped.
+
+The 389 MB production set must **not** be committed. Upload with `npm run media:upload` to private Vercel Blob and commit `data/media-manifest.json`. Details: [MEDIA.md](MEDIA.md).
+
+Never delete files on the Desktop/manzi machine — copy only.

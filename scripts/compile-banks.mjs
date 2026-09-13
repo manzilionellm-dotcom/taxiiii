@@ -5,7 +5,7 @@
  */
 
 import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { dirname, extname, join, resolve } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import {
   isManziShape,
@@ -16,6 +16,12 @@ import {
   sortForStudy,
 } from "./research-normalize.mjs";
 import { RESEARCH_ITEMS } from "./research-items.mjs";
+import {
+  COORDINATOR_MANZI_IMAGES,
+  COORDINATOR_MANZI_JSONL,
+  attachAuthenticMedia,
+} from "../lib/media/paths.mjs";
+import { importMediaTree } from "./import-media.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -72,20 +78,6 @@ function mergeVocab() {
   return words;
 }
 
-function copyImages(fromDir) {
-  const dest = join(root, "content/media");
-  mkdirSync(dest, { recursive: true });
-  let copied = 0;
-  for (const name of readdirSync(fromDir)) {
-    if (![".svg", ".png", ".jpg", ".jpeg", ".webp", ".gif"].includes(extname(name).toLowerCase())) {
-      continue;
-    }
-    copyFileSync(join(fromDir, name), join(dest, name));
-    copied += 1;
-  }
-  return copied;
-}
-
 export function compile({ check = false, images = null } = {}) {
   writeResearchSeed();
   const researchFile = readJsonl("data/research-bank.jsonl");
@@ -132,7 +124,16 @@ export function compile({ check = false, images = null } = {}) {
 
   if (issues.length) fail("validation failed", issues);
 
-  const ordered = sortForStudy(questions);
+  let authentic = attachAuthenticMedia(questions);
+  if (images) {
+    const imported = importMediaTree({ imagesDir: images, questions: authentic });
+    authentic = attachAuthenticMedia(imported.questions);
+    console.log(
+      `media: ${imported.report.rastersCopied} rasters copied, ${imported.report.questionsLinkedToFile} Q linked, ${imported.report.questionsMissingFile} missing, gul-linje ${imported.report.gulLinje || "no image"}`,
+    );
+  }
+
+  const ordered = sortForStudy(authentic);
   const researchCount = ordered.filter((item) => item.corpus === "research").length;
   const manziCount = ordered.filter((item) => item.corpus !== "research").length;
 
@@ -154,7 +155,33 @@ export function compile({ check = false, images = null } = {}) {
   writeFileSync(join(root, "data/questions.json"), `${JSON.stringify(ordered, null, 2)}\n`);
   mergeTranslations(translations);
   const vocab = mergeVocab();
-  if (images) copyImages(images);
+  if (!images) {
+    const withUrl = ordered.filter((item) => item.imageUrl);
+    writeFileSync(
+      join(root, "data/media-report.json"),
+      `${JSON.stringify(
+        {
+          generatedAt: new Date().toISOString(),
+          imagesDir: null,
+          questionsTotal: ordered.length,
+          questionsWithImageUrl: withUrl.length,
+          rastersCopied: 0,
+          questionsLinkedToFile: withUrl.length,
+          questionsMissingFile: 0,
+          gulLinje: ordered.find((item) => item.id === "rs-yt-lag1-gul-linje")?.imageUrl ?? null,
+          coordinator: {
+            questions: COORDINATOR_MANZI_JSONL,
+            images: COORDINATOR_MANZI_IMAGES,
+            expectedQuestions: 1668,
+            expectedImages: 2877,
+          },
+          note: "No --images this run. Drop /workspace/taxiprov/manzi/images (~389MB, 2877 rasters) and re-run with --coordinator. Do not invent SVGs.",
+        },
+        null,
+        2,
+      )}\n`,
+    );
+  }
 
   const extras = [];
   const yt = join(root, "data/youtube-links.json");
@@ -188,14 +215,19 @@ export function compile({ check = false, images = null } = {}) {
 }
 
 function parseArgs(argv) {
-  const args = { check: false, images: null, manzi: null, research: null };
+  const args = { check: false, images: null, manzi: null, research: null, coordinator: false };
   const rest = [...argv];
   while (rest.length) {
     const token = rest.shift();
     if (token === "--check") args.check = true;
+    else if (token === "--coordinator") args.coordinator = true;
     else if (token === "--images") args.images = rest.shift();
     else if (token === "--manzi") args.manzi = rest.shift();
     else if (token === "--research") args.research = rest.shift();
+  }
+  if (args.coordinator) {
+    args.manzi = args.manzi || COORDINATOR_MANZI_JSONL;
+    args.images = args.images || COORDINATOR_MANZI_IMAGES;
   }
   return args;
 }
@@ -214,7 +246,14 @@ function main() {
     copyFileSync(from, join(root, "data/research-bank.jsonl"));
     console.log(`Copied research → data/research-bank.jsonl (Manzi untouched)`);
   }
-  compile({ check: args.check, images: args.images });
+  let images = args.images ? resolve(args.images) : null;
+  if (images && !existsSync(images)) fail(`Images dir not found: ${images}`);
+  if (!images && existsSync(COORDINATOR_MANZI_IMAGES)) {
+    console.log(
+      `Hint: coordinator images exist at ${COORDINATOR_MANZI_IMAGES} — re-run with --coordinator to import all rasters.`,
+    );
+  }
+  compile({ check: args.check, images });
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
