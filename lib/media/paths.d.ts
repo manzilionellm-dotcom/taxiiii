@@ -14,6 +14,7 @@ export function hasImageUrl(url?: string | null): boolean;
 export function isSafeMediaKey(key?: string | null): boolean;
 export function toLogicalKey(imageUrl?: string | null): string | null;
 export function toImageUrl(logicalKey?: string | null): string | undefined;
+export function blobRefForManifest(entry?: { url?: string | null; pathname?: string | null } | null): string | null;
 export function contentTypeFor(name: string): string;
 export function sanitizeCaption(text?: string | null): string;
 export function candidateSourceRels(logicalKey: string): string[];

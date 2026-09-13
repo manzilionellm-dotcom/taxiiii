@@ -1,6 +1,6 @@
 import { readFile, stat } from "node:fs/promises";
 import { resolve } from "node:path";
-import { contentTypeFor, isSafeMediaKey, toLogicalKey } from "@/lib/media/paths.mjs";
+import { blobRefForManifest, contentTypeFor, isSafeMediaKey, toLogicalKey } from "@/lib/media/paths.mjs";
 
 type ManifestFile = {
   pathname: string;
@@ -50,21 +50,21 @@ async function readBlobMedia(key: string) {
   const logical = toLogicalKey(key);
   if (!logical) return null;
   const entry = (await loadManifest()).files[logical];
-  if (!entry?.url || !process.env.BLOB_READ_WRITE_TOKEN) return null;
+  const blobRef = blobRefForManifest(entry);
+  if (!blobRef || !process.env.BLOB_READ_WRITE_TOKEN) return null;
   try {
     const { get } = await import("@vercel/blob");
-    const result = await get(entry.url, { access: "private" });
+    const result = await get(blobRef, { access: "private" });
     if (!result || result.statusCode !== 200 || !result.stream) return null;
     const buffer = Buffer.from(await new Response(result.stream).arrayBuffer());
     return {
       bytes: new Uint8Array(buffer),
-      type: result.blob.contentType || entry.contentType || contentTypeFor(logical),
+      type: result.blob.contentType || entry?.contentType || contentTypeFor(logical),
       size: buffer.byteLength,
     };
   } catch {
     return null;
   }
-  return null;
 }
 
 export async function readMediaBytes(key: string) {

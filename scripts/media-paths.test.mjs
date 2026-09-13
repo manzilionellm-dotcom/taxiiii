@@ -5,6 +5,7 @@ import { join } from "node:path";
 import {
   GUL_LINJE_ID,
   attachAuthenticMedia,
+  blobRefForManifest,
   hasAuthenticImageUrl,
   isFakeExamSvg,
   isSafeMediaKey,
@@ -47,6 +48,22 @@ assert(!toLogicalKey("media/../etc/passwd"), "logical rejects traversal");
 assert(isFakeExamSvg("/media/gul-heldragen-linje.svg"), "fake svg flagged");
 assert(!hasAuthenticImageUrl("/media/gul-heldragen-linje.svg"), "fake svg not authentic");
 assert(hasAuthenticImageUrl("/media/T3/lag/exam.php-filer/101.jpg"), "raster authentic");
+assert(
+  blobRefForManifest({
+    pathname: "media/pdf-pages/S_KERHET-2/page-11.jpg",
+    contentType: "image/jpeg",
+  }) === "media/pdf-pages/S_KERHET-2/page-11.jpg",
+  "pathname-only manifest is enough for Blob get()",
+);
+assert(
+  blobRefForManifest({
+    pathname: "media/pdf-pages/S_KERHET-2/page-11.jpg",
+    url: "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-2/page-11.jpg",
+  }) ===
+    "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-2/page-11.jpg",
+  "url wins when both are present",
+);
+assert(!blobRefForManifest({}), "empty manifest entry has no blob ref");
 
 assert(sanitizeCaption("Gul heldragen linje · trottoarkant") === "Gul heldragen linje trottoarkant", "middle-dot caption");
 assert(sanitizeCaption("Gul heldragen linje ♦ trottoarkant") === "Gul heldragen linje trottoarkant", "diamond caption");
