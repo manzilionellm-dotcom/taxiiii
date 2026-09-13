@@ -105,7 +105,7 @@ export function ClozeText({
                 next[i] = event.target.value;
                 setValues(next);
               }}
-              className="min-w-[4.5rem] max-w-[10rem] rounded-md border border-[#c41e3a]/40 bg-white px-1.5 py-0.5 font-sans text-sm text-black"
+              className="h-10 min-w-[4.5rem] max-w-[10rem] rounded-md border border-[#c41e3a]/40 bg-white px-1.5 font-sans text-sm text-black"
             />
             <button
               type="button"

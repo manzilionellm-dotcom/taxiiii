@@ -141,7 +141,7 @@ export function ProtectedImage({
         role="img"
         aria-label={alt}
         aria-busy={status === "loading"}
-        className={`mx-auto max-h-64 w-full object-contain ${
+        className={`mx-auto max-h-72 w-full object-contain ${
           status === "ready" ? "opacity-100" : "h-40 opacity-0"
         }`}
       />

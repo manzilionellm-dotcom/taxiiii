@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 import { ProtectedView } from "@/components/protected-view";
 import { QuestionCard } from "@/components/question-card";
+import { SessionSkeleton } from "@/components/splash-screen";
 import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
 import { recordAttempt } from "@/lib/progress/store";
@@ -22,14 +24,14 @@ export function StudySession({ track }: { track: Track }) {
   const [answered, setAnswered] = useState(false);
   const [remaining, setRemaining] = useState(SESSION_MS);
   const [done, setDone] = useState(false);
-  const [error, setError] = useState(false);
+  const [failed, setFailed] = useState(false);
   const [reload, setReload] = useState(0);
   const startedAt = useRef<number | null>(null);
 
   useEffect(() => {
     if (!hydrated) return;
     let cancelled = false;
-    setError(false);
+    setFailed(false);
     setQueue(null);
     setIndex(0);
     setAnswered(false);
@@ -51,7 +53,7 @@ export function StudySession({ track }: { track: Track }) {
         setRemaining(SESSION_MS);
       })
       .catch(() => {
-        if (!cancelled) setError(true);
+        if (!cancelled) setFailed(true);
       });
     return () => {
       cancelled = true;
@@ -74,40 +76,47 @@ export function StudySession({ track }: { track: Track }) {
   const minutes = Math.ceil(remaining / 60000);
   const dueCount = state.srs.filter((card) => card.track === track && isDue(card)).length;
 
-  if (!hydrated || (!queue && !error)) {
-    return <p className="text-sm text-[#6b6560]">{dict.loadingSession}</p>;
-  }
-
-  if (error) {
+  if (failed) {
     return (
-      <div className="card space-y-3">
-        <p className="text-sm text-black">{dict.sessionError}</p>
-        <button type="button" className="btn-primary" onClick={() => setReload((value) => value + 1)}>
-          {dict.retry}
-        </button>
-      </div>
+      <EmptyState
+        title={dict.errorTitle}
+        lead={dict.sessionError}
+        actionLabel={dict.retry}
+        onAction={() => setReload((value) => value + 1)}
+      />
     );
   }
 
-  if (!queue || done || !current) {
+  if (!hydrated || !queue) {
+    return <SessionSkeleton label={dict.loadingSession} />;
+  }
+
+  if (done || !current) {
     return (
-      <div className="card space-y-4">
-        <h1 className="font-serif text-2xl text-black">{dict.sessionDone}</h1>
-        <Link href={`/${track}`} className="btn-primary inline-flex">
-          {dict.dashboard}
-        </Link>
-      </div>
+      <EmptyState
+        title={dict.sessionDone}
+        actionHref={`/${track}`}
+        actionLabel={dict.dashboard}
+      />
     );
   }
 
   return (
     <ProtectedView locale={state.profile.locale}>
       <div className="space-y-4">
-        <div className="flex items-center justify-between text-sm text-[#6b6560]">
-          <span>
+        <div className="flex items-center justify-between gap-3 text-sm text-[#6b6560]">
+          <span className="tabular-nums">
             {index + 1}/{queue.length} · {minutes} {dict.minutesLeft}
           </span>
-          <Link href={`/${track}`}>{dict.back}</Link>
+          <Link href={`/${track}`} className="min-h-10 font-medium text-[#1f3d2b]">
+            {dict.back}
+          </Link>
+        </div>
+        <div className="h-1 overflow-hidden rounded-full bg-[#ece6d8]">
+          <div
+            className="h-full rounded-full bg-[#1f3d2b] transition-[width] duration-300"
+            style={{ width: `${((index + (answered ? 1 : 0)) / queue.length) * 100}%` }}
+          />
         </div>
         {dueCount === 0 ? <p className="text-sm text-[#6b6560]">{dict.noDue}</p> : null}
         <QuestionCard

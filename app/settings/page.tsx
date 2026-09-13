@@ -33,11 +33,12 @@ export default function SettingsPage() {
       <section className="card space-y-3">
         <p className="text-sm font-medium text-black">{dict.switchTrack}</p>
         {(["b", "taxi"] as const).map((track) => (
-          <label key={track} className="flex items-center gap-2 text-black">
+          <label key={track} className="flex min-h-11 items-center gap-3 text-black">
             <input
               type="checkbox"
               checked={tracks.includes(track)}
               onChange={() => toggleTrack(track)}
+              className="checkbox mt-0"
             />
             {trackLabel(track)}
           </label>
@@ -48,13 +49,14 @@ export default function SettingsPage() {
       </section>
 
       <section className="card space-y-3">
-        <label className="flex items-start gap-2">
+        <label className="flex items-start gap-3">
           <input
             type="checkbox"
             checked={state.profile.fragileMode}
             onChange={(event) =>
               setState(updateProfile(state, { fragileMode: event.target.checked }))
             }
+            className="checkbox"
           />
           <span>
             <span className="block text-black">{dict.fragileMode}</span>
@@ -85,7 +87,7 @@ export default function SettingsPage() {
 
       <section className="card space-y-3">
         <p className="font-medium text-black">{dict.tosTitle}</p>
-        <p className="text-sm text-[#6b6560]">{dict.tos}</p>
+        <p className="text-sm leading-6 text-[#6b6560]">{dict.tos}</p>
         <label className="block space-y-1">
           <span className="text-sm text-[#6b6560]">{dict.yourEmail}</span>
           <input
@@ -94,12 +96,12 @@ export default function SettingsPage() {
             onChange={(event) =>
               setState(updateProfile(state, { email: event.target.value }))
             }
-            className="w-full rounded-xl border border-[#ddd6c8] bg-white px-3 py-2 text-black"
+            className="field"
           />
         </label>
       </section>
 
-      <p className="text-xs text-[#8a8276]">{dict.protectionNote}</p>
+      <p className="text-xs leading-5 text-[#8a8276]">{dict.protectionNote}</p>
 
       <button type="button" className="btn-secondary" onClick={() => setState(emptyState())}>
         {dict.resetProgress}

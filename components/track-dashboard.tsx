@@ -54,7 +54,7 @@ export function TrackDashboard({ track }: { track: Track }) {
         <h1 className="font-serif text-3xl text-black">{trackLabel(track)}</h1>
         <p className="max-w-xl text-[#6b6560]">{trackProduct(track)}</p>
         <p className="max-w-xl text-sm text-[#6b6560]">{dict.studyOrder}</p>
-        <p className="text-xs text-[#8a8276]">{dict.demoNote}</p>
+        <p className="text-xs leading-5 text-[#8a8276]">{dict.demoNote}</p>
       </header>
 
       <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
@@ -68,7 +68,7 @@ export function TrackDashboard({ track }: { track: Track }) {
         <Stat label={dict.dueToday} value={String(due)} />
       </section>
 
-      <section className="card">
+      <section className="card overflow-x-auto">
         <h2 className="font-serif text-lg text-black">{dict.stats}</h2>
         <table className="mt-3 w-full text-sm">
           <thead className="text-left text-[#6b6560]">
@@ -81,11 +81,11 @@ export function TrackDashboard({ track }: { track: Track }) {
           <tbody>
             {byTopic.map((row) => (
               <tr key={row.topic} className="border-t border-[#eee6d6]">
-                <td className="py-2 text-black">{dict.topic[row.topic]}</td>
-                <td className="py-2">
+                <td className="py-2.5 text-black">{dict.topic[row.topic]}</td>
+                <td className="py-2.5 tabular-nums">
                   {row.seen}/{row.total}
                 </td>
-                <td className="py-2">{row.acc}%</td>
+                <td className="py-2.5 tabular-nums">{row.acc}%</td>
               </tr>
             ))}
           </tbody>
@@ -113,7 +113,7 @@ function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div className="card">
       <p className="text-xs uppercase tracking-[0.14em] text-[#6b6560]">{label}</p>
-      <p className="mt-1 font-serif text-3xl text-black">{value}</p>
+      <p className="mt-1 font-serif text-3xl tabular-nums text-black">{value}</p>
     </div>
   );
 }

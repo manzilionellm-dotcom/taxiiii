@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CalculIcon } from "@/components/nav-icons";
 import { useAppState } from "@/components/app-state";
 import { CALCUL_EXERCISES } from "@/lib/calcul/exercises";
 import { t } from "@/lib/i18n";
@@ -16,13 +17,18 @@ export default function CalculIndexPage() {
       </header>
       <div className="grid gap-3">
         {CALCUL_EXERCISES.map((exercise) => (
-          <Link key={exercise.slug} href={`/taxi/calcul/${exercise.slug}`} className="card block">
-            <p className="font-serif text-xl text-black">
-              {state.profile.locale === "sv" ? exercise.titleSv : exercise.titleFr}
-            </p>
-            <p className="mt-1 text-[#1d4ed8]">
-              {state.profile.locale === "sv" ? exercise.titleFr : exercise.titleSv}
-            </p>
+          <Link key={exercise.slug} href={`/taxi/calcul/${exercise.slug}`} className="card flex items-center gap-3">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#1f3d2b]/8 text-[#1f3d2b]">
+              <CalculIcon className="h-5 w-5" />
+            </span>
+            <span className="min-w-0">
+              <span className="block font-serif text-xl text-black">
+                {state.profile.locale === "sv" ? exercise.titleSv : exercise.titleFr}
+              </span>
+              <span className="mt-1 block text-[#1d4ed8]">
+                {state.profile.locale === "sv" ? exercise.titleFr : exercise.titleSv}
+              </span>
+            </span>
           </Link>
         ))}
       </div>

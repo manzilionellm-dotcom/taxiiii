@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { BrandMark } from "@/components/brand-mark";
+import { TrackCard } from "@/components/track-card";
+import { TrustStrip } from "@/components/trust-strip";
 import { useAppState } from "@/components/app-state";
 import { trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
@@ -37,14 +39,17 @@ export function Onboarding() {
   }
 
   return (
-    <div className="mx-auto max-w-xl space-y-8 py-6">
-      <header className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.2em] text-[#6b6560]">
-          <BrandMark compact />
+    <div className="mx-auto max-w-xl space-y-8 py-2">
+      <header className="space-y-4">
+        <p className="text-[#1f3d2b]">
+          <BrandMark compact glyph />
         </p>
-        <h1 className="font-serif text-4xl leading-tight text-black">{dict.tagline}</h1>
-        <p className="text-lg text-[#6b6560]">{dict.keyMessage}</p>
+        <h1 className="font-serif text-[2.15rem] leading-[1.15] text-black sm:text-4xl">
+          {dict.tagline}
+        </h1>
+        <p className="text-lg leading-7 text-[#6b6560]">{dict.keyMessage}</p>
         <p className="text-[#6b6560]">{dict.onboardingLead}</p>
+        <TrustStrip locale={locale} />
       </header>
 
       <div className="flex rounded-full border border-[#ddd6c8] bg-white p-1">
@@ -53,7 +58,7 @@ export function Onboarding() {
             key={item}
             type="button"
             onClick={() => setLocale(item)}
-            className={`flex-1 rounded-full py-2 text-sm ${
+            className={`min-h-11 flex-1 rounded-full text-sm font-medium ${
               locale === item ? "bg-[#1f3d2b] text-white" : "text-[#1f3d2b]"
             }`}
           >
@@ -63,29 +68,34 @@ export function Onboarding() {
       </div>
 
       <div className="grid gap-3">
-        {(
-          [
-            ["b", trackLabel("b"), trackProduct("b")],
-            ["taxi", trackLabel("taxi"), trackProduct("taxi")],
-            ["both", dict.bothTracks, dict.onboardingLead],
-          ] as const
-        ).map(([id, title, desc]) => (
-          <button
-            key={id}
-            type="button"
-            onClick={() => setChoice(id)}
-            className={`card text-left ${choice === id ? "ring-2 ring-[#1f3d2b]" : ""}`}
-          >
-            <p className="font-serif text-xl text-black">{title}</p>
-            <p className="mt-1 text-sm text-[#6b6560]">{desc}</p>
-          </button>
-        ))}
-        <div className="card opacity-70">
-          <p className="font-serif text-xl text-black">{trackLabel("owner")}</p>
-          <p className="mt-1 text-sm text-[#6b6560]">
-            {trackProduct("owner")} · {dict.comingSoon}
-          </p>
-        </div>
+        <TrackCard
+          icon="b"
+          title={trackLabel("b")}
+          description={dict.trackBDesc}
+          selected={choice === "b"}
+          onClick={() => setChoice("b")}
+        />
+        <TrackCard
+          icon="taxi"
+          title={trackLabel("taxi")}
+          description={dict.trackTaxiDesc}
+          selected={choice === "taxi"}
+          onClick={() => setChoice("taxi")}
+        />
+        <TrackCard
+          icon="both"
+          title={dict.bothTracks}
+          description={dict.onboardingLead}
+          selected={choice === "both"}
+          onClick={() => setChoice("both")}
+        />
+        <TrackCard
+          icon="owner"
+          title={trackLabel("owner")}
+          description={`${trackProduct("owner")} · ${dict.comingSoon}`}
+          muted
+          badge={dict.comingSoon}
+        />
       </div>
 
       <label className="block space-y-2">
@@ -93,7 +103,7 @@ export function Onboarding() {
         <input
           value={name}
           onChange={(event) => setName(event.target.value)}
-          className="w-full rounded-xl border border-[#ddd6c8] bg-white px-3 py-3 text-black"
+          className="field"
         />
       </label>
 
@@ -103,7 +113,7 @@ export function Onboarding() {
           type="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          className="w-full rounded-xl border border-[#ddd6c8] bg-white px-3 py-3 text-black"
+          className="field"
         />
       </label>
 
@@ -112,7 +122,7 @@ export function Onboarding() {
           type="checkbox"
           checked={fragile}
           onChange={(event) => setFragile(event.target.checked)}
-          className="mt-1"
+          className="checkbox"
         />
         <span>
           <span className="block font-medium text-black">{dict.fragileMode}</span>
@@ -125,7 +135,7 @@ export function Onboarding() {
           type="checkbox"
           checked={tos}
           onChange={(event) => setTos(event.target.checked)}
-          className="mt-1"
+          className="checkbox"
         />
         <span>
           <span className="block font-medium text-black">{dict.tosTitle}</span>
