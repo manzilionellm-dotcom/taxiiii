@@ -82,11 +82,13 @@ i18n dictionaries live in `lib/i18n/{sv,fr}.ts` and pull brand/category strings 
 
 ## Android APK
 
-Installable debug APK: [`releases/KorkortGO-by-MZ-debug.apk`](releases/KorkortGO-by-MZ-debug.apk) (app id `se.mz.korkortgo`, label **KörkortGO**).
+Installable debug APK (app id `se.mz.korkortgo`, label **KörkortGO**). The repo is private so anonymous GitHub raw links 404.
+
+**Public download:** https://gofile.io/d/N86Btgvw
 
 1. On the phone enable **Install unknown apps** for the browser/Files app.
 2. Download the APK and open it → Install.
-3. The WebView loads `https://taxiiii.vercel.app` (override with `CAPACITOR_SERVER_URL`). Screenshot capture is blocked with **FLAG_SECURE**.
+3. The WebView loads `https://taxiiii.vercel.app` (override with `CAPACITOR_SERVER_URL`). Screenshot capture is blocked with **FLAG_SECURE**. Merge PR #1 so production is KörkortGO (not the blank starter).
 
 Rebuild: `npm run apk` (needs Android SDK + JDK). Full steps: [docs/ANDROID.md](docs/ANDROID.md).
 

@@ -16,10 +16,21 @@ Questions still come from the **server** (`/api/questions`) once that host is li
 
 ## Install on a phone (Lionel)
 
-1. On the phone: **Settings → Security → Install unknown apps** (or **Allow from this source**) for Chrome / Files / Drive.
-2. Download [`releases/KorkortGO-by-MZ-debug.apk`](../releases/KorkortGO-by-MZ-debug.apk).
-3. Open the file → **Install**.
-4. First launch needs **internet**. The WebView loads the Vercel host. After you merge this PR, production `https://taxiiii.vercel.app` is KörkortGO; until then point `CAPACITOR_SERVER_URL` at the PR preview (Vercel Authentication may show a login unless protection is off).
+The app repo `taxiiii` is **private**, so unauthenticated `raw.githubusercontent.com` links **404**. The APK **is** on the PR branch (`releases/KorkortGO-by-MZ-debug.apk`, 3.9 MB, not gitignored, not LFS).
+
+**Public download (open on the phone):** https://gofile.io/d/N86Btgvw
+
+Also:
+
+- Logged in as repo owner: [GitHub blob → Download](https://github.com/manzilionellm-dotcom/taxiiii/blob/cursor/swedish-teoriprov-app-7481/releases/KorkortGO-by-MZ-debug.apk)
+- Cursor agent artifacts: https://cursor.com/agents/bc-5e3e7990-e148-4fbc-94c3-bb56f6697481 (file `KorkortGO-by-MZ-debug.apk`)
+- Public notes repo: https://github.com/manzilionellm-dotcom/korkortgo-apk
+
+Then:
+
+1. Phone: **Settings → Security → Install unknown apps** for Chrome / Files / Drive.
+2. Open the APK → **Install**.
+3. First launch needs **internet**. WebView loads `https://taxiiii.vercel.app`. **Merge PR #1** so that host is KörkortGO (today `main` is still the blank starter; the PR preview is behind Vercel login).
 
 This is a **debug-signed** APK (fine for first handoff). For Play Store later: `cd android && ./gradlew assembleRelease` with your keystore.
 
