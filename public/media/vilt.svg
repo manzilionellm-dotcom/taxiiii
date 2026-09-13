@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Viltolycka">
+  <rect width="200" height="200" fill="#f7f2e8"/>
+  <polygon points="100,18 186,170 14,170" fill="#f5c518"/>
+  <polygon points="100,38 168,162 32,162" fill="#141414"/>
+  <path d="M78 118 h16 l6-22 8 22 h18 l-14 12 6 20-16-10-16 10 6-20z" fill="#f5c518"/>
+</svg>

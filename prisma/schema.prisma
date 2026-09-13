@@ -1,0 +1,120 @@
+// Optional production schema. The MVP stores progress in localStorage and
+// questions in data/questions.jsonl so `next build` works without DATABASE_URL.
+// When Neon/Postgres is ready: set DATABASE_URL, run `npx prisma migrate dev`.
+// Embeddings: enable the pgvector extension, then backfill QuestionEmbedding.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Topic {
+  lagstiftning
+  sakerhet
+  karta
+  bkort
+}
+
+enum Track {
+  b
+  taxi
+}
+
+model User {
+  id        String     @id @default(cuid())
+  email     String?    @unique
+  name      String?
+  locale    String     @default("fr")
+  createdAt DateTime   @default(now())
+  attempts  Attempt[]
+  srs       SrsCard[]
+  exams     MockExam[]
+  chats     ChatSession[]
+}
+
+model Question {
+  id             String   @id
+  topic          Topic
+  track          Track
+  stemSv         String
+  explanationSv  String
+  explanationFr  String
+  answer         String
+  imageUrl       String?
+  source         String?
+  options        Json
+  createdAt      DateTime @default(now())
+  embedding      QuestionEmbedding?
+  attempts       Attempt[]
+}
+
+model QuestionEmbedding {
+  questionId String                      @id
+  question   Question                    @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  /// Store as vector(1536) after `CREATE EXTENSION vector;`
+  embedding  Unsupported("vector")?
+  caption    String?
+  updatedAt  DateTime                    @updatedAt
+}
+
+model Attempt {
+  id         String   @id @default(cuid())
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id])
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id])
+  track      Track
+  correct    Boolean
+  timed      Boolean  @default(false)
+  mockExamId String?
+  createdAt  DateTime @default(now())
+}
+
+model SrsCard {
+  id           String   @id @default(cuid())
+  userId       String?
+  user         User?    @relation(fields: [userId], references: [id])
+  questionId   String
+  track        Track
+  ease         Float    @default(2.5)
+  interval     Float    @default(0)
+  repetitions  Int      @default(0)
+  lapses       Int      @default(0)
+  due          DateTime
+  @@unique([userId, questionId, track])
+}
+
+model MockExam {
+  id         String    @id @default(cuid())
+  userId     String?
+  user       User?     @relation(fields: [userId], references: [id])
+  track      Track
+  startedAt  DateTime
+  finishedAt DateTime?
+  score      Int?
+  total      Int?
+  correct    Int?
+}
+
+model ChatSession {
+  id        String        @id @default(cuid())
+  userId    String?
+  user      User?         @relation(fields: [userId], references: [id])
+  createdAt DateTime      @default(now())
+  messages  ChatMessage[]
+}
+
+model ChatMessage {
+  id        String      @id @default(cuid())
+  sessionId String
+  session   ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  role      String
+  content   String
+  sources   Json?
+  grounded  Boolean     @default(true)
+  createdAt DateTime    @default(now())
+}

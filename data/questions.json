@@ -1,0 +1,583 @@
+[
+  {
+    "id": "b-stopplikt-01",
+    "topic": "bkort",
+    "stem_sv": "Du närmar dig en vägkorsning med stopplikt. Vad måste du göra?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stanna endast om det kommer trafik från höger."
+      },
+      {
+        "letter": "B",
+        "text": "Stanna helt och försäkra dig om att du kan fortsätta utan fara."
+      },
+      {
+        "letter": "C",
+        "text": "Sänka farten och fortsätta om vägen ser fri ut."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Stopplikt innebär att du måste stanna helt och därefter försäkra dig om att du kan fortsätta utan fara. Det räcker inte att sakta in.",
+    "explanation_fr": "L'obligation d'arrêt (stopplikt) exige un arrêt complet, puis de s'assurer que l'on peut repartir sans danger. Ralentir ne suffit pas.",
+    "imageUrl": "/media/stopplikt.svg",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-hogerregel-01",
+    "topic": "bkort",
+    "stem_sv": "I en vägkorsning utan vägmärken gäller högerregeln. Vad innebär det?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trafik från vänster har företräde."
+      },
+      {
+        "letter": "B",
+        "text": "Du har väjningsplikt mot fordon som kommer från höger."
+      },
+      {
+        "letter": "C",
+        "text": "Den som kör fortast har företräde."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Högerregeln betyder att du har väjningsplikt mot fordon som kommer från höger när inget annat anges.",
+    "explanation_fr": "La règle de la priorité à droite signifie que tu dois céder le passage aux véhicules venant de droite, sauf signalisation contraire.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-cirkulation-01",
+    "topic": "bkort",
+    "stem_sv": "Du ska köra in i en cirkulationsplats. Vilket påstående är korrekt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trafik i cirkulationsplatsen har väjningsplikt mot dig."
+      },
+      {
+        "letter": "B",
+        "text": "Du har väjningsplikt mot trafik som redan befinner sig i cirkulationsplatsen."
+      },
+      {
+        "letter": "C",
+        "text": "Du måste alltid stanna helt innan du kör in."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "När du kör in i en cirkulationsplats har du väjningsplikt mot den trafik som redan cirkulerar. Fullt stopp krävs bara om det också finns stopplikt.",
+    "explanation_fr": "À l'entrée d'un giratoire tu as obligation de céder le passage à la circulation déjà engagée. Un arrêt complet n'est exigé que s'il y a aussi stopplikt.",
+    "imageUrl": "/media/cirkulationsplats.svg",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-rattfylleri-01",
+    "topic": "bkort",
+    "stem_sv": "Vilken alkoholkoncentration i blodet räknas som rattfylleri i Sverige?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "0,5 promille"
+      },
+      {
+        "letter": "B",
+        "text": "0,2 promille"
+      },
+      {
+        "letter": "C",
+        "text": "0,1 promille"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rattfylleri föreligger bland annat vid en alkoholkoncentration om 0,2 promille i blodet. Grova fall har högre gränser och strängare påföljd.",
+    "explanation_fr": "La conduite en état d'ivresse (rattfylleri) est notamment constituée à 0,2 pour mille dans le sang. Les cas graves ont des seuils plus élevés.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-tatort-01",
+    "topic": "bkort",
+    "stem_sv": "Vilken högsta tillåtna hastighet gäller i tättbebyggt område om inget annat anges?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "30 km/h"
+      },
+      {
+        "letter": "B",
+        "text": "50 km/h"
+      },
+      {
+        "letter": "C",
+        "text": "70 km/h"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Om inget annat anges är högsta tillåtna hastighet i tättbebyggt område 50 km/h.",
+    "explanation_fr": "Sauf indication contraire, la vitesse maximale en agglomération (tättbebyggt område) est de 50 km/h.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-monsterdjup-01",
+    "topic": "bkort",
+    "stem_sv": "Vilket är det minsta tillåtna mönsterdjupet på däck vid körning på sommarväglag?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1,6 mm"
+      },
+      {
+        "letter": "B",
+        "text": "3,0 mm"
+      },
+      {
+        "letter": "C",
+        "text": "1,0 mm"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "På sommarväglag är minsta tillåtna mönsterdjup 1,6 mm. Vid vinterväglag under perioden 1 december–31 mars gäller 3 mm.",
+    "explanation_fr": "Sur chaussée d'été le mönsterdjup minimal est 1,6 mm. En conditions hivernales du 1er décembre au 31 mars, 3 mm.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-barnstol-01",
+    "topic": "bkort",
+    "stem_sv": "Ett barn som är 125 cm långt ska åka i din personbil. Vad gäller?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Barnet får sitta i framsätet utan särskild skyddsutrustning."
+      },
+      {
+        "letter": "B",
+        "text": "Barnet ska använda en särskild skyddsanordning som är avsedd för barnet."
+      },
+      {
+        "letter": "C",
+        "text": "Det räcker att barnet använder vuxenbälte."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Barn som är kortare än 135 cm ska använda en särskild skyddsanordning. Vuxenbälte ensamt räcker inte.",
+    "explanation_fr": "Un enfant de moins de 135 cm doit utiliser un dispositif de retenue adapté. La ceinture adulte seule ne suffit pas.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-vilt-01",
+    "topic": "bkort",
+    "stem_sv": "Du har kört på en älg. Vilket påstående är korrekt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Du behöver bara flytta djuret från vägen och sedan köra vidare."
+      },
+      {
+        "letter": "B",
+        "text": "Du ska märka platsen, varna andra trafikanter och kontakta polisen."
+      },
+      {
+        "letter": "C",
+        "text": "Du ska alltid avliva djuret själv innan du ringer någon."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Vid viltolycka med bland annat älg ska du märka platsen, varna andra och kontakta polisen. Du ska inte utsätta dig för onödig fara.",
+    "explanation_fr": "En cas de collision avec un élan tu marques les lieux, tu préviens les autres usagers et tu contactes la police. Ne te mets pas en danger.",
+    "imageUrl": "/media/vilt.svg",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-halvljus-01",
+    "topic": "bkort",
+    "stem_sv": "När måste du använda halvljus på personbil i Sverige?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Endast när det är mörkt."
+      },
+      {
+        "letter": "B",
+        "text": "Alltid när du kör, även i dagsljus."
+      },
+      {
+        "letter": "C",
+        "text": "Endast vid dimma."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Personbil ska föra halvljus eller annat föreskrivet ljus även i dagsljus när fordonet körs.",
+    "explanation_fr": "Une voiture particulière doit circuler avec les feux de croisement (halvljus) ou un éclairage prescrit, y compris de jour.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-avstand-01",
+    "topic": "bkort",
+    "stem_sv": "Varför är det viktigt att hålla ett tillräckligt säkerhetsavstånd till fordonet framför?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "För att kunna stanna i tid om framförvarande bromsar."
+      },
+      {
+        "letter": "B",
+        "text": "För att andra ska kunna köra om dig lättare."
+      },
+      {
+        "letter": "C",
+        "text": "För att motorn ska kylas bättre."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Säkerhetsavståndet ger tid och utrymme att stanna om fordonet framför bromsar eller stannar oväntat.",
+    "explanation_fr": "La distance de sécurité donne le temps et l'espace pour s'arrêter si le véhicule de devant freine.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "b-mote-01",
+    "topic": "bkort",
+    "stem_sv": "Två fordon möts på en smal väg där det är svårt att mötas. Vem bör i första hand stanna?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Den som har det lättast att stanna, till exempel den som har en mötesplats närmast."
+      },
+      {
+        "letter": "B",
+        "text": "Alltid den som kör uppför."
+      },
+      {
+        "letter": "C",
+        "text": "Alltid den som har den största bilen."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Den som har det lättast att stanna — ofta den som är närmast en mötesplats — bör göra det så att mötet kan ske säkert.",
+    "explanation_fr": "Celui qui peut s'arrêter le plus facilement — souvent le plus proche d'un élargissement — doit le faire pour un croisement sûr.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-legitimation-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vem måste ha taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Endast den som äger taxiföretaget."
+      },
+      {
+        "letter": "B",
+        "text": "Den som kör personbil eller lätt lastbil i taxitrafik."
+      },
+      {
+        "letter": "C",
+        "text": "Endast den som kör buss."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Den som kör personbil eller lätt lastbil i taxitrafik ska ha taxiförarlegitimation. Ägande av företaget räcker inte.",
+    "explanation_fr": "Quiconque conduit une voiture ou un utilitaire léger en taxitrafik doit avoir la taxiförarlegitimation. Être propriétaire ne suffit pas.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-krav-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilket krav gäller bland annat för att få taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Du måste ha fyllt 21 år och ha haft körkort med behörighet B i minst två år."
+      },
+      {
+        "letter": "B",
+        "text": "Du måste ha fyllt 18 år och ha övningskörningstillstånd."
+      },
+      {
+        "letter": "C",
+        "text": "Du måste ha körkort C i minst fem år."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "För taxiförarlegitimation krävs bland annat att du fyllt 21 år och har haft körkort med behörighet B i minst två år, plus lämplighet och godkänt prov.",
+    "explanation_fr": "Pour la carte taxi il faut notamment 21 ans et un körkort B depuis au moins deux ans, plus aptitude et examen réussi.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-taxameter-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad gäller för taxameter i taxitrafik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Taxametern är frivillig om föraren kan räkna priset själv."
+      },
+      {
+        "letter": "B",
+        "text": "Taxametern ska vara av godkänd typ, fungera och vara plomberad."
+      },
+      {
+        "letter": "C",
+        "text": "Taxametern får saknas om kunden betalar kontant."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "I taxitrafik ska taxametern vara av godkänd typ, i funktion och plomberad, om inte särskilt undantag gäller.",
+    "explanation_fr": "En taxitrafik le taximètre doit être d'un type agréé, en état de marche et plombé, sauf exemption particulière.",
+    "imageUrl": "/media/taxameter.svg",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-pris-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad gäller om prisinformation i taxi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prisinformationen ska vara väl synlig för passageraren."
+      },
+      {
+        "letter": "B",
+        "text": "Priset får bara uppges efter avslutad resa."
+      },
+      {
+        "letter": "C",
+        "text": "Endast taxiföretaget behöver känna till priset."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Prisinformation ska vara väl synlig för passageraren så att det går att förstå hur priset beräknas.",
+    "explanation_fr": "L'information tarifaire doit être bien visible pour le passager afin qu'il comprenne le calcul du prix.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-tillstand-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vem ska ha taxitrafiktillstånd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Varje enskild förare."
+      },
+      {
+        "letter": "B",
+        "text": "Den som bedriver taxitrafik, det vill säga tillståndshavaren."
+      },
+      {
+        "letter": "C",
+        "text": "Endast kommunen."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Taxitrafiktillstånd krävs för den som bedriver taxitrafik (tillståndshavaren). Föraren behöver taxiförarlegitimation.",
+    "explanation_fr": "L'autorisation d'exploiter (taxitrafiktillstånd) concerne l'exploitant. Le conducteur, lui, a besoin de la legitimation.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-myndighet-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilken myndighet prövar bland annat frågor om taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trafikverket"
+      },
+      {
+        "letter": "B",
+        "text": "Transportstyrelsen"
+      },
+      {
+        "letter": "C",
+        "text": "Skatteverket"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Transportstyrelsen prövar bland annat frågor om taxiförarlegitimation och taxitrafiktillstånd.",
+    "explanation_fr": "Transportstyrelsen instruit notamment la carte professionnelle taxi et l'autorisation d'exploiter.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-balte-01",
+    "topic": "sakerhet",
+    "stem_sv": "Vad gäller för säkerhetsbälte i taxi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Passagerare behöver inte använda bälte i taxi."
+      },
+      {
+        "letter": "B",
+        "text": "Passagerare ska använda säkerhetsbälte, och föraren ska se till att passagerare under 15 år använder bälte eller annan skyddsanordning."
+      },
+      {
+        "letter": "C",
+        "text": "Endast föraren måste använda bälte."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Säkerhetsbälte ska användas. Föraren ansvarar särskilt för att passagerare under 15 år använder bälte eller annan skyddsanordning.",
+    "explanation_fr": "La ceinture est obligatoire. Le conducteur veille notamment à ce que les passagers de moins de 15 ans soient attachés.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-vagra-01",
+    "topic": "sakerhet",
+    "stem_sv": "I vilket fall får en taxiförare i regel vägra att ta med en passagerare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Om passageraren ska en kort sträcka."
+      },
+      {
+        "letter": "B",
+        "text": "Om passageraren är berusad och kan störa ordningen eller utgöra en fara."
+      },
+      {
+        "letter": "C",
+        "text": "Om passageraren talar ett annat språk."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "En förare får vägra om passageraren är berusad och kan störa ordningen eller utgöra en fara för trafiksäkerheten. Kort resa eller annat språk är inte grund.",
+    "explanation_fr": "Le chauffeur peut refuser un passager ivre qui trouble l'ordre ou crée un danger. Un trajet court ou une autre langue ne suffisent pas.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-vila-01",
+    "topic": "sakerhet",
+    "stem_sv": "En yrkesförare ska som huvudregel ha en dygnsvila. Hur lång är den ordinarie dygnsvilan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Minst 9 timmar"
+      },
+      {
+        "letter": "B",
+        "text": "Minst 11 timmar"
+      },
+      {
+        "letter": "C",
+        "text": "Minst 6 timmar"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Ordinarie dygnsvila är minst 11 timmar. En reducerad dygnsvila om minst 9 timmar får användas i begränsad omfattning.",
+    "explanation_fr": "Le repos journalier normal est d'au moins 11 heures. Un repos réduit d'au moins 9 heures n'est possible que de façon limitée.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-kontroll-01",
+    "topic": "sakerhet",
+    "stem_sv": "Vad bör en taxiförare kontrollera före arbetspassets början ur ett säkerhetsperspektiv?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Endast att taxametern är avstängd."
+      },
+      {
+        "letter": "B",
+        "text": "Bland annat däck, belysning, bromsar och att säkerhetsutrustningen fungerar."
+      },
+      {
+        "letter": "C",
+        "text": "Enbart bränslenivån."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Före arbetspasset ska föraren kontrollera att fordonet är i säkert skick: däck, ljus, bromsar och övrig säkerhetsutrustning.",
+    "explanation_fr": "Avant le service, contrôler l'état de sécurité du véhicule : pneus, feux, freins et équipements de sécurité.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-e4-01",
+    "topic": "karta",
+    "stem_sv": "Europaväg E4 går bland annat i nord-sydlig riktning genom Sverige. Vilket påstående är korrekt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "E4 förbinder bland annat Stockholm med orter norrut mot Sundsvall och söderut mot Helsingborg."
+      },
+      {
+        "letter": "B",
+        "text": "E4 går endast mellan Göteborg och Oslo."
+      },
+      {
+        "letter": "C",
+        "text": "E4 är en ringled enbart inne i Stockholm."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "E4 är en europaväg i nord–sydlig riktning och förbinder bland annat Helsingborg, Stockholm och vidare norrut mot bland annat Sundsvall.",
+    "explanation_fr": "L'E4 est une route européenne nord–sud : Helsingborg, Stockholm, puis vers le nord notamment vers Sundsvall.",
+    "imageUrl": "/media/e4-karta.svg",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-e20-01",
+    "topic": "karta",
+    "stem_sv": "Vilken europaväg går bland annat mellan Stockholm, Örebro och vidare mot Göteborg?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "E6"
+      },
+      {
+        "letter": "B",
+        "text": "E20"
+      },
+      {
+        "letter": "C",
+        "text": "E45"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "E20 går bland annat från Stockholmsområdet via Örebro mot Göteborg. E6 följer i huvudsak västkusten.",
+    "explanation_fr": "L'E20 relie notamment la région de Stockholm, Örebro et Göteborg. L'E6 suit surtout la côte ouest.",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-arlanda-01",
+    "topic": "karta",
+    "stem_sv": "Du ska köra en kund från Stockholm C till Arlanda. I vilken ungefärlig riktning kör du?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Söderut mot Södertälje"
+      },
+      {
+        "letter": "B",
+        "text": "Norrut mot Uppsala/Märsta"
+      },
+      {
+        "letter": "C",
+        "text": "Västerut mot Västerås"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Arlanda ligger norr om Stockholm, mot Märsta/Uppsala. Södertälje ligger söderut och Västerås västerut.",
+    "explanation_fr": "Arlanda est au nord de Stockholm, vers Märsta/Uppsala. Södertälje est au sud, Västerås à l'ouest.",
+    "imageUrl": "/media/e4-karta.svg",
+    "source": "sample-public-law"
+  },
+  {
+    "id": "tx-e6-01",
+    "topic": "karta",
+    "stem_sv": "Europaväg E6 följer i huvudsak vilken del av Sverige?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Norrlandskusten mot Haparanda"
+      },
+      {
+        "letter": "B",
+        "text": "Västkusten, bland annat Malmö–Göteborg–norska gränsen"
+      },
+      {
+        "letter": "C",
+        "text": "Enbart Gotland"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "E6 följer västkusten och går bland annat mellan Malmö, Göteborg och vidare mot den norska gränsen.",
+    "explanation_fr": "L'E6 suit la côte ouest : Malmö, Göteborg, puis la frontière norvégienne.",
+    "source": "sample-public-law"
+  }
+]

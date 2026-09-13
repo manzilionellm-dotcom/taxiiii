@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Körklart — teoriprov B & taxi
 
-## Getting Started
+Professional Swedish teoriprov prep for **körkort B** and **taxiförarlegitimation**. Bilingual SV + FR. Linked Vercel project: `manzis-projects-3add5703/taxiiii`.
 
-First, run the development server:
+This is not a toy landing page. It is a working vertical slice:
+
+- Separate **Permis B** and **Permis taxi** journeys, scores, and stats
+- Question screen: Swedish **black**, French **blue**, hard words **bold red** + cloze
+- Taxi **Calcul** (körekonomi, trip price, distance/time, dygnsvila)
+- **IA** chat grounded on the question corpus (refuses out-of-bank answers)
+- Readiness score; at **≥ 95%** shows « Bravo, tu es prêt à passer l'examen. » / « Bravo, du är redo att göra provet. »
+- SRS 5–10 min sessions, interleaving, fragile-profile mode
+- Taxiägare / business nav item is **coming soon**
+
+## Content rule
+
+Manzi’s bank is imported **word for word**. Do not reformulate, summarize, or drop Swedish stems, options, or explanations. Image paths stay attached.
+
+Until the full ~1475 items are dropped in, `data/questions.jsonl` is a **same-schema sample** so the pipeline and UI work end-to-end.
+
+Lionel: see **[docs/IMPORT.md](docs/IMPORT.md)**.
+
+## Scripts
 
 ```bash
+npm install
+npm run import:check          # validate data/questions.jsonl
+npm run import -- <file.jsonl> [--images <dir>]
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Env
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Copy `.env.example`. All keys are optional for the demo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Role |
+|---|---|
+| `OPENAI_API_KEY` | Chat completions (direct OpenAI) |
+| `AI_GATEWAY_API_KEY` | Same via [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) |
+| `AI_MODEL` | Gateway model id, default `openai/gpt-4.1-mini` |
+| `DATABASE_URL` | Optional Postgres (Prisma + pgvector schema in `prisma/schema.prisma`) |
 
-## Learn More
+Without a key, `/api/chat` still answers from the corpus using scripted search.
 
-To learn more about Next.js, take a look at the following resources:
+## Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Path | Purpose |
+|---|---|
+| `data/questions.jsonl` | Source of truth (Manzi schema) |
+| `data/questions.json` | Generated for the app import |
+| `data/translations.fr.json` | Blue FR line under the original SV stem |
+| `data/hard-words.json` | Cloze + red gloss dictionary |
+| `public/media/` | Dual-coding images (`imageUrl`) |
+| `lib/progress/` | localStorage attempts, SM-2 SRS, readiness |
+| `lib/rag/` | Corpus index + grounded chat |
+| `prisma/schema.prisma` | Future User / Question / SRS / chat / embeddings |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Auth for the MVP is a local profile (onboarding + settings). Progress tables are **per section** (`b` vs `taxi`). Stripe is not present in this repo; nothing to keep.
 
-## Deploy on Vercel
+i18n dictionaries live in `lib/i18n/{sv,fr}.ts`. Add `ar` later by extending `LOCALES` and a new dictionary — question content stays Swedish-first.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See [docs/DEPLOY.md](docs/DEPLOY.md). Framework: Next.js 16 on Vercel project **taxiiii**.
