@@ -1,0 +1,11 @@
+{
+  "id": "session-01",
+  "title": "Lagstiftning — kärnord",
+  "words": [
+    { "sv": "taxiförarlegitimation", "forms": ["taxiförarlegitimation", "taxiförarlegitimationen"], "fr": "carte professionnelle de taxi" },
+    { "sv": "dygnsvila", "forms": ["dygnsvila", "dygnsvilan"], "fr": "repos journalier" },
+    { "sv": "taxameter", "forms": ["taxameter", "taxametern"], "fr": "taximètre" },
+    { "sv": "tidbok", "forms": ["tidbok", "tidboken", "tidboksbladet"], "fr": "livret de temps / carnet de repos" },
+    { "sv": "vilotid", "forms": ["vilotid", "vilotiden", "vilotider"], "fr": "temps de repos" }
+  ]
+}

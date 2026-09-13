@@ -1,0 +1,11 @@
+{
+  "id": "session-05-friday-mini",
+  "title": "Fredagsmini — 8 minuter",
+  "words": [
+    { "sv": "taxitrafiktillstånd", "forms": ["taxitrafiktillstånd"], "fr": "autorisation d'exploiter un taxi" },
+    { "sv": "särskild utrustning", "forms": ["särskild utrustning för taxifordon"], "fr": "équipement spécial taxi (sans taximètre classique)" },
+    { "sv": "bindande", "forms": ["bindande prisuppgift"], "fr": "contraignant" },
+    { "sv": "förnyelse", "forms": ["förnyelse", "förnyas"], "fr": "renouvellement" },
+    { "sv": "skolskjuts", "forms": ["skolskjuts", "skolskjutsning"], "fr": "transport scolaire" }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "videos": [
+    {
+      "id": "BFwxXv3hujU",
+      "title": "Lagstiftning del 1",
+      "url": "https://www.youtube.com/watch?v=BFwxXv3hujU",
+      "use": ["lagstiftning", "rag"],
+      "topics": ["taxameter", "plombering", "gul heldragen linje", "handlingar"],
+      "highFreqThemes": ["taxameter 12 månader inte 24", "gul heldragen linje", "plombering"],
+      "notes": "Study notes in data/youtube-transcripts/BFwxXv3hujU.json — RAG + high-freq QCM, not a verbatim caption dump."
+    },
+    {
+      "id": "QD8ute2KywU",
+      "title": "Lagstiftning del 2",
+      "url": "https://www.youtube.com/watch?v=QD8ute2KywU",
+      "use": ["lagstiftning", "rag"],
+      "topics": ["vilotid 11/8", "tidbok", "dygnsvila"],
+      "highFreqThemes": ["dygnsvila 11 timmar", "delad vila 8 timmar", "tidbok före körning"],
+      "notes": "Study notes in data/youtube-transcripts/QD8ute2KywU.json — vilotid 11/8 and tidbok."
+    },
+    {
+      "id": "110t__6WZ7Q",
+      "title": "Räkna ut prisresan",
+      "url": "https://www.youtube.com/watch?v=110t__6WZ7Q",
+      "use": ["calcul", "rag", "prisräkning"],
+      "topics": ["jämförpris 10 km / 15 min", "startavgift + km + tid", "prisuppgift 700 kr"],
+      "highFreqThemes": ["jämförpris", "bindande prisuppgift 700 kr", "prisresan"],
+      "notes": "Used by Taxi Calcul / Bemötande, not QCM-only. Formula: start + km + minutes. Jämförpris = 10 km / 15 min TTC."
+    },
+    {
+      "id": "AZv2VQrdD_Q",
+      "title": "Karta Taxi 2",
+      "url": "https://www.youtube.com/watch?v=AZv2VQrdD_Q",
+      "use": ["karta", "rag"],
+      "topics": ["E4", "Arlanda", "E6", "Stockholm"],
+      "highFreqThemes": ["E4 norr-syd", "Arlanda norr om Stockholm", "E6 västkust"],
+      "notes": "Study notes in data/youtube-transcripts/AZv2VQrdD_Q.json — kartläsning RAG."
+    }
+  ]
+}

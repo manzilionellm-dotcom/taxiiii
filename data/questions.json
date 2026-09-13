@@ -1,0 +1,1917 @@
+[
+  {
+    "id": "rs-yt-lag1-gul-linje",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad anger en gul heldragen linje på trottoarkanten?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tillåtet att stanna men endast för att släppa av passagerare"
+      },
+      {
+        "letter": "B",
+        "text": "Tillåtet att stanna men endast för att lasta av gods"
+      },
+      {
+        "letter": "C",
+        "text": "Förbud att stanna och parkera fordon"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Gul heldragen linje vid trottoarkant = stannande- och parkeringsförbud. Vanlig fälla: Tillåtet att stanna för av- eller påstigning. Källa: youtube:BFwxXv3hujU+teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Ligne jaune continue au trottoir = interdiction de s'arrêter et de stationner. Piège fréquent : Tillåtet att stanna för av- eller påstigning. Source : youtube:BFwxXv3hujU+teori-taxi.com/lagstiftning-fragor1",
+    "source": "youtube:BFwxXv3hujU+teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Tillåtet att stanna för av- eller påstigning",
+    "type": "qcm",
+    "youtubeId": "BFwxXv3hujU"
+  },
+  {
+    "id": "rs-ts-anvand-varje",
+    "topic": "lagstiftning",
+    "stem_sv": "När ska taxametern användas om fordonet är utrustat med taxameter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara vid kontantbetalning"
+      },
+      {
+        "letter": "B",
+        "text": "Vid varje köruppdrag"
+      },
+      {
+        "letter": "C",
+        "text": "Bara om kunden begär kvitto"
+      },
+      {
+        "letter": "D",
+        "text": "Bara utanför tätort"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Finns taxameter ska den användas vid varje köruppdrag. Källa: transportstyrelsen/taxameter",
+    "explanation_fr": "À chaque course. Source : transportstyrelsen/taxameter",
+    "source": "transportstyrelsen/taxameter",
+    "corpus": "research",
+    "freq": "high",
+    "type": "qcm",
+    "youtubeId": "BFwxXv3hujU"
+  },
+  {
+    "id": "rs-tt-plomb",
+    "topic": "lagstiftning",
+    "stem_sv": "Du upptäcker att en plombering på din taxameter är bruten. Vad gäller?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jag får endast använda bilen för köruppdrag mot fast pris"
+      },
+      {
+        "letter": "B",
+        "text": "En verkstad som är ackrediterad av SWEDAC måste plombera taxametern innan jag får använda bilen i taxitrafik"
+      },
+      {
+        "letter": "C",
+        "text": "Jag får avsluta ett påbörjat körpass, men därefter måste en godkänd verkstad plombera taxametern innan använder bilen i taxitrafik"
+      },
+      {
+        "letter": "D",
+        "text": "Svensk Bilprovning måste plombera taxametern innan jag får andvända bilen i taxitrafik"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Bruten plombering: fordonet får inte användas i taxitrafik förrän ackrediterad verkstad plomberat på nytt. Vanlig fälla: Avsluta passet och köra vidare. Källa: teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Pas de taxitrafik tant que le plomb n'est pas refait par un atelier accrédité SWEDAC. Piège fréquent : Avsluta passet och köra vidare. Source : teori-taxi.com/lagstiftning-fragor1",
+    "source": "teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Avsluta passet och köra vidare",
+    "type": "qcm",
+    "youtubeId": "BFwxXv3hujU"
+  },
+  {
+    "id": "rs-yt-lag1-taxameter-24",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur lång tid får det högst vara mellan besiktning av en taxameter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "6 månader"
+      },
+      {
+        "letter": "B",
+        "text": "18 månader"
+      },
+      {
+        "letter": "C",
+        "text": "12 månader"
+      },
+      {
+        "letter": "D",
+        "text": "24 månader"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Taxitrafikförordningen 5 kap. 3 §: besiktning senast ett år från installationen eller senaste besiktningen. 24 månader är fällan. Vanlig fälla: 24 månader. Källa: youtube:BFwxXv3hujU+teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Contrôle au plus tard un an après l'installation ou le dernier contrôle. 24 mois est le piège. Piège fréquent : 24 månader. Source : youtube:BFwxXv3hujU+teori-taxi.com/lagstiftning-fragor1",
+    "source": "youtube:BFwxXv3hujU+teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "24 månader",
+    "type": "qcm",
+    "youtubeId": "BFwxXv3hujU"
+  },
+  {
+    "id": "rs-yt-lag1-taxameter-nar",
+    "topic": "lagstiftning",
+    "stem_sv": "När ska taxametern normalt besiktas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I samband med fordonets kontrollbesiktning"
+      },
+      {
+        "letter": "B",
+        "text": "Varje år, senast ett år efter föregående besiktning av taxametern"
+      },
+      {
+        "letter": "C",
+        "text": "Vartannat år, senast två år efter föregående besiktning av taxametern"
+      },
+      {
+        "letter": "D",
+        "text": "Varje år i januari"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Årligen, senast ett år efter föregående taxameterbesiktning — inte vartannat år. Vanlig fälla: Vartannat år / två år. Källa: youtube:QD8ute2KywU+teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Chaque année, pas tous les deux ans. Piège fréquent : Vartannat år / två år. Source : youtube:QD8ute2KywU+teori-taxi.com/lagstiftning-fragor1",
+    "source": "youtube:QD8ute2KywU+teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Vartannat år / två år",
+    "type": "qcm",
+    "youtubeId": "QD8ute2KywU"
+  },
+  {
+    "id": "rs-yt-prisresa-formel",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur räknar du ett ungefärligt respris innan taxametern visar slutpris?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara kilometer × km-pris"
+      },
+      {
+        "letter": "B",
+        "text": "Startavgift + (km × km-pris) + (minuter × tidspris)"
+      },
+      {
+        "letter": "C",
+        "text": "Jämförpriset × 2"
+      },
+      {
+        "letter": "D",
+        "text": "Fast 200 kr i tätort"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "YouTube « räkna ut prisresan »: startavgift + sträcka + tid. Uppge att beloppet är ungefärligt. Vanlig fälla: Bara km-pris. Källa: youtube:110t__6WZ7Q",
+    "explanation_fr": "Prise en charge + km + minutes. Dire que c'est une estimation. Piège fréquent : Bara km-pris. Source : youtube:110t__6WZ7Q",
+    "source": "youtube:110t__6WZ7Q",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Bara km-pris",
+    "type": "qcm",
+    "youtubeId": "110t__6WZ7Q"
+  },
+  {
+    "id": "rs-ts-redovisning",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur ofta ska taxameteruppgifter föras över till en redovisningscentral?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "En gång per år"
+      },
+      {
+        "letter": "B",
+        "text": "Minst en gång i veckan"
+      },
+      {
+        "letter": "C",
+        "text": "Endast vid kontroll"
+      },
+      {
+        "letter": "D",
+        "text": "Aldrig om man kör fast pris"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Minst en gång per vecka, trådlöst och digitalt. Källa: transportstyrelsen/taxameter+taxikurs.nu",
+    "explanation_fr": "Au moins une fois par semaine. Source : transportstyrelsen/taxameter+taxikurs.nu",
+    "source": "transportstyrelsen/taxameter+taxikurs.nu",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-sarskild-utr",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad gäller sedan 1 januari 2021 om taxameterkravet?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dispens kan sökas hos kommunen"
+      },
+      {
+        "letter": "B",
+        "text": "Det går inte längre att få dispens; fordonet ska ha godkänd taxameter eller särskild utrustning ansluten till tillståndspliktig beställningscentral"
+      },
+      {
+        "letter": "C",
+        "text": "Taxameter är frivillig i glesbygd"
+      },
+      {
+        "letter": "D",
+        "text": "Bara åkare behöver taxameter"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Ingen ny dispens. Taxameter eller särskild utrustning + beställningscentral. Källa: taxikurs.nu+taxitrafiklagen",
+    "explanation_fr": "Plus de dispense. Taximètre ou équipement spécial + centrale. Source : taxikurs.nu+taxitrafiklagen",
+    "source": "taxikurs.nu+taxitrafiklagen",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-taxi-prov-vila-split-fail",
+    "topic": "lagstiftning",
+    "stem_sv": "En förare har under 24 timmar två viloperioder à 6 timmar och 30 minuter (tillsammans 13 timmar). Har föraren följt reglerna om dygnsvila?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ja, den sammanlagda vilan är mer än 11 timmar"
+      },
+      {
+        "letter": "B",
+        "text": "Nej, vilan får inte delas alls"
+      },
+      {
+        "letter": "C",
+        "text": "Nej, när vilan delas måste en period vara minst 8 timmar"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "taxi-prov.se: två perioder à 6,5 h följer inte kravet att ena perioden ska vara minst åtta timmar. Vanlig fälla: 14 h 45 totalt räcker. Källa: taxi-prov.se/vilotid",
+    "explanation_fr": "Si le repos est coupé, une des deux périodes doit faire au moins 8 h. Piège fréquent : 14 h 45 totalt räcker. Source : taxi-prov.se/vilotid",
+    "source": "taxi-prov.se/vilotid",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "14 h 45 totalt räcker",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-taxikortet-demo-vila",
+    "topic": "lagstiftning",
+    "stem_sv": "Som förare ska du ha haft en dygnsvila på minst 11 timmar under den 24-timmarsperiod som föregår varje tidpunkt då du utför transporter. Stämmer påståendet?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ja"
+      },
+      {
+        "letter": "B",
+        "text": "Nej, det räcker med 8 timmar alltid"
+      },
+      {
+        "letter": "C",
+        "text": "Nej, regeln gäller bara buss"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Ordagrant från Transportstyrelsen / 1994:1297 3 §. TaxiKortet och taxi-prov.se använder samma formulering. Källa: taxikortet.se/demo+SFS 1994:1297",
+    "explanation_fr": "Oui, texte officiel. Source : taxikortet.se/demo+SFS 1994:1297",
+    "source": "taxikortet.se/demo+SFS 1994:1297",
+    "corpus": "research",
+    "freq": "high",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-jour-inte-vila",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad räknas inte som dygnsvila?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sömn i hemmet utan jour"
+      },
+      {
+        "letter": "B",
+        "text": "Tid då föraren är tillgänglig på arbetsplatsen eller i fordonet på grund av jourtjänst"
+      },
+      {
+        "letter": "C",
+        "text": "Ledig tid utan tillgänglighet"
+      },
+      {
+        "letter": "D",
+        "text": "En sammanhängande nattvila på 11 timmar hemma"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Jourtid, medfölja i bilen under färd och vara tillgänglig för transport räknas inte som dygnsvila. Källa: taxi-prov.se/vilotid+SFS 1994:1297 3 §",
+    "explanation_fr": "Astreinte / jour, présence dans le véhicule = pas du repos. Source : taxi-prov.se/vilotid+SFS 1994:1297 3 §",
+    "source": "taxi-prov.se/vilotid+SFS 1994:1297 3 §",
+    "corpus": "research",
+    "freq": "high",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-tidbok-fore",
+    "topic": "lagstiftning",
+    "stem_sv": "När ska föraren anteckna den närmast föregående dygnsvilan i den personliga tidboken?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Efter avslutat körpass"
+      },
+      {
+        "letter": "B",
+        "text": "Innan körningen påbörjas"
+      },
+      {
+        "letter": "C",
+        "text": "Endast om polisen begär det"
+      },
+      {
+        "letter": "D",
+        "text": "En gång i veckan"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "1994:1297 5 §: anteckningar ska göras innan körningen påbörjas och ange den närmaste föregående dygnsvilan. Vanlig fälla: Efter körpasset. Källa: transportstyrelsen/vilotider-latta-fordon+SFS 1994:1297",
+    "explanation_fr": "Avant de commencer à conduire. Piège fréquent : Efter körpasset. Source : transportstyrelsen/vilotider-latta-fordon+SFS 1994:1297",
+    "source": "transportstyrelsen/vilotider-latta-fordon+SFS 1994:1297",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Efter körpasset",
+    "type": "qcm",
+    "youtubeId": "QD8ute2KywU"
+  },
+  {
+    "id": "rs-yt-lag2-vila-11-8",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur lång måste dygnsvilan minst vara för en taxiförare under en 24-timmars period",
+    "options": [
+      {
+        "letter": "A",
+        "text": "8 timmar och den ska vara sammanhängande"
+      },
+      {
+        "letter": "B",
+        "text": "8 timmar och den får delas upp på två perioder"
+      },
+      {
+        "letter": "C",
+        "text": "11 timmar och den får delas upp på två perioder"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Förordning (1994:1297) 3 §: minst elva timmar. Får delas i två perioder varav en minst åtta timmar. Vanlig fälla: 8 timmar sammanhängande. Källa: youtube:QD8ute2KywU+taxi-prov.se/vilotid+transportstyrelsen",
+    "explanation_fr": "11 h min. Peut être coupé en deux, dont une période d'au moins 8 h. Piège fréquent : 8 timmar sammanhängande. Source : youtube:QD8ute2KywU+taxi-prov.se/vilotid+transportstyrelsen",
+    "source": "youtube:QD8ute2KywU+taxi-prov.se/vilotid+transportstyrelsen",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "8 timmar sammanhängande",
+    "type": "qcm",
+    "youtubeId": "QD8ute2KywU"
+  },
+  {
+    "id": "rs-ts-ag-12-man",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur länge ska arbetsgivaren (och egenföretagaren) bevara anteckningarna om dygnsvila?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "En vecka"
+      },
+      {
+        "letter": "B",
+        "text": "Tre månader"
+      },
+      {
+        "letter": "C",
+        "text": "Minst tolv månader från den dag anteckningarna gäller"
+      },
+      {
+        "letter": "D",
+        "text": "Sju år"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Minst tolv månader. Källa: SFS 1994:1297 8 §+transportstyrelsen",
+    "explanation_fr": "Au moins douze mois. Source : SFS 1994:1297 8 §+transportstyrelsen",
+    "source": "SFS 1994:1297 8 §+transportstyrelsen",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-en-tidbok",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur många personliga tidböcker får du använda samtidigt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "En per arbetsgivare samtidigt i samma bokuppsättning"
+      },
+      {
+        "letter": "B",
+        "text": "Du får bara använda en tidbok åt gången"
+      },
+      {
+        "letter": "C",
+        "text": "En analog och en digital"
+      },
+      {
+        "letter": "D",
+        "text": "Obegränsat"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Bara en tidbok åt gången. Flera arbetsgivare antecknas på skilda sidor i samma bok. Källa: transportstyrelsen/vilotider-latta-fordon",
+    "explanation_fr": "Un seul tidbok à la fois. Source : transportstyrelsen/vilotider-latta-fordon",
+    "source": "transportstyrelsen/vilotider-latta-fordon",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-fardsrivare",
+    "topic": "lagstiftning",
+    "stem_sv": "Om det finns en godkänd färdskrivare i fordonet, vad får du göra?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Strunta i vilotid"
+      },
+      {
+        "letter": "B",
+        "text": "Använda färdskrivaren i stället för personlig tidbok"
+      },
+      {
+        "letter": "C",
+        "text": "Köra 24 timmar i sträck"
+      },
+      {
+        "letter": "D",
+        "text": "Lämna förarkortet hemma"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Godkänd fungerande färdskrivare får användas i stället för tidbok. Digital: förarkort och OUT-läge + manuell inmatning av föregående dygnsvila. Källa: transportstyrelsen/vilotider-latta-fordon",
+    "explanation_fr": "Oui, si le tachigraphe est agréé. Carte conducteur + mode OUT. Source : transportstyrelsen/vilotider-latta-fordon",
+    "source": "transportstyrelsen/vilotider-latta-fordon",
+    "corpus": "research",
+    "freq": "low",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-tidbok-ansvar",
+    "topic": "lagstiftning",
+    "stem_sv": "Vem har ansvaret för att en anställd taxiförarens personliga tidbok blir i fylld?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Både arbetsgivaren och beställnings centralen"
+      },
+      {
+        "letter": "B",
+        "text": "Både föraren och arbetsgivaren"
+      },
+      {
+        "letter": "C",
+        "text": "Enbart föraren"
+      },
+      {
+        "letter": "D",
+        "text": "Enbart arbetsgivaren"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Föraren antecknar. Arbetsgivaren ska tillhandahålla tidbok och se till att föreskrivna anteckningar görs (9 §). Vanlig fälla: Enbart föraren / enbart arbetsgivaren. Källa: teori-taxi.com/lagstiftning-fragor1+SFS 1994:1297",
+    "explanation_fr": "Chauffeur et employeur. Piège fréquent : Enbart föraren / enbart arbetsgivaren. Source : teori-taxi.com/lagstiftning-fragor1+SFS 1994:1297",
+    "source": "teori-taxi.com/lagstiftning-fragor1+SFS 1994:1297",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Enbart föraren / enbart arbetsgivaren",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-tidbok-fel",
+    "topic": "lagstiftning",
+    "stem_sv": "Du har skrivit fel i din personliga tidbok. Vad ska du göra innan du skriver rätt text?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jag ska radera ut det felskrivna"
+      },
+      {
+        "letter": "B",
+        "text": "Jag ska stryka över det felskrivna med ett streck"
+      },
+      {
+        "letter": "C",
+        "text": "Jag ska riva ut bladet där jag har skrivit fel och börja på ett nytt blad"
+      },
+      {
+        "letter": "D",
+        "text": "Jag ska måla över det felskrivna med korrigeringsmedel"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Stryk över det felaktiga och anteckna rätt text över eller under. Riv inte ut blad. Vanlig fälla: Radera / korrekturlack. Källa: teori-taxi.com/lagstiftning-fragor1+transportstyrelsen",
+    "explanation_fr": "Barrer et écrire la correction. Ne pas gommer ni arracher la page. Piège fréquent : Radera / korrekturlack. Source : teori-taxi.com/lagstiftning-fragor1+transportstyrelsen",
+    "source": "teori-taxi.com/lagstiftning-fragor1+transportstyrelsen",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Radera / korrekturlack",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-tidbok-vecka",
+    "topic": "lagstiftning",
+    "stem_sv": "Din personliga tidbok är avslutad. När ska du som anställd taxiförare återlämna tidboken till din arbetsgivare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jag ska lämna den till arbetsgivaren direkt efter avslutat körpass"
+      },
+      {
+        "letter": "B",
+        "text": "Jag ska behålla den ett dygn och sedan lämna den till arbetsgivaren"
+      },
+      {
+        "letter": "C",
+        "text": "Jag ska behålla den en månad och sedan länna den till arbetsgivaren"
+      },
+      {
+        "letter": "D",
+        "text": "Jag ska behålla den en vecka och sedan lämna den till arbetsgivaren"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Behåll den avslutade tidboken en vecka, sedan återlämna till den arbetsgivare som lämnade ut den. Vanlig fälla: Direkt efter passet / en månad. Källa: teori-taxi.com/lagstiftning-fragor1+transportstyrelsen",
+    "explanation_fr": "Une semaine, puis restitution à l'employeur. Piège fréquent : Direkt efter passet / en månad. Source : teori-taxi.com/lagstiftning-fragor1+transportstyrelsen",
+    "source": "teori-taxi.com/lagstiftning-fragor1+transportstyrelsen",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Direkt efter passet / en månad",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-tidbok-7",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur många av de senaste dygnen med anteckningsskyldighet ska tidboken innehålla?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "7"
+      },
+      {
+        "letter": "C",
+        "text": "28"
+      },
+      {
+        "letter": "D",
+        "text": "90"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tidboken ska innehålla anteckningar för de sju senaste dygnen under vilka föraren varit skyldig att göra anteckningar. Källa: SFS 1994:1297 6 §",
+    "explanation_fr": "Les sept derniers jours soumis à obligation. Source : SFS 1994:1297 6 §",
+    "source": "SFS 1994:1297 6 §",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-visa-polis",
+    "topic": "lagstiftning",
+    "stem_sv": "Vem ska tidboken visas upp för på begäran under färd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Endast Transportstyrelsen"
+      },
+      {
+        "letter": "B",
+        "text": "Polisman eller bilinspektör"
+      },
+      {
+        "letter": "C",
+        "text": "Beställningscentralen"
+      },
+      {
+        "letter": "D",
+        "text": "Kunden"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tidboken skall medföras. På begäran av polisman eller bilinspektör tillhandahålla boken. Källa: SFS 1994:1297 7 §",
+    "explanation_fr": "Police ou inspecteur. Source : SFS 1994:1297 7 §",
+    "source": "SFS 1994:1297 7 §",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-undantag-4h30",
+    "topic": "lagstiftning",
+    "stem_sv": "När kan förare av godstransport slippa personlig tidbok?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Alltid i tätort"
+      },
+      {
+        "letter": "B",
+        "text": "Om transporterna har underordnad betydelse och sammanlagd körtid under varje 24-timmarsperiod inte överstiger fyra timmar och trettio minuter"
+      },
+      {
+        "letter": "C",
+        "text": "Aldrig"
+      },
+      {
+        "letter": "D",
+        "text": "Om man kör taxi"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Undantaget gäller inte taxitrafik som sådan — det avser vissa godstransporter med underordnad betydelse. Källa: TSFS 2015:17 17 §",
+    "explanation_fr": "Marchandises accessoires, ≤ 4 h 30 de conduite / 24 h. Pas le taxi. Source : TSFS 2015:17 17 §",
+    "source": "TSFS 2015:17 17 §",
+    "corpus": "research",
+    "freq": "low",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-yt-prisresa-700",
+    "topic": "lagstiftning",
+    "stem_sv": "När ska föraren lämna en bindande prisuppgift?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Alltid före varje resa"
+      },
+      {
+        "letter": "B",
+        "text": "När jämförpriset för resan överstiger 700 kronor"
+      },
+      {
+        "letter": "C",
+        "text": "Bara om kunden begär det"
+      },
+      {
+        "letter": "D",
+        "text": "Aldrig vid taxameterkörning"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Om jämförpriset överstiger 700 kr ska en bindande högsta-prisuppgift lämnas när färden beställs. Sparas 2 dygn i bilen och 6 månader hos tillståndshavaren. Vanlig fälla: Alltid / aldrig. Källa: youtube:110t__6WZ7Q+taxikurs.nu",
+    "explanation_fr": "Si le jämförpris dépasse 700 kr. Conservé 2 jours dans le véhicule, 6 mois chez l'exploitant. Piège fréquent : Alltid / aldrig. Source : youtube:110t__6WZ7Q+taxikurs.nu",
+    "source": "youtube:110t__6WZ7Q+taxikurs.nu",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Alltid / aldrig",
+    "type": "qcm",
+    "youtubeId": "110t__6WZ7Q"
+  },
+  {
+    "id": "rs-yt-prisresa-jamfor",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad är jämförpriset för taxi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Priset för en mil i 50 km/h utan startavgift"
+      },
+      {
+        "letter": "B",
+        "text": "Priset inklusive moms för en typresa på 10 kilometer som tar 15 minuter, inklusive eventuell grundavgift"
+      },
+      {
+        "letter": "C",
+        "text": "Medelpriset för alla körningar under ett körpass"
+      },
+      {
+        "letter": "D",
+        "text": "Fast pris till Arlanda"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Typresa 10 km / 15 min inkl. moms och grundavgift. Används för att jämföra bolag. Vanlig fälla: Valfri sträcka. Källa: youtube:110t__6WZ7Q+taxikurs.nu+transportstyrelsen",
+    "explanation_fr": "Course type 10 km / 15 min TTC, prise en charge comprise. Piège fréquent : Valfri sträcka. Source : youtube:110t__6WZ7Q+taxikurs.nu+transportstyrelsen",
+    "source": "youtube:110t__6WZ7Q+taxikurs.nu+transportstyrelsen",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "Valfri sträcka",
+    "type": "qcm",
+    "youtubeId": "110t__6WZ7Q"
+  },
+  {
+    "id": "rs-sfs-alder-20",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilken lägsta ålder krävs för taxiförarlegitimation enligt taxitrafiklagen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "18 år"
+      },
+      {
+        "letter": "B",
+        "text": "20 år"
+      },
+      {
+        "letter": "C",
+        "text": "21 år"
+      },
+      {
+        "letter": "D",
+        "text": "25 år"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "3 kap. 3 §: den som har fyllt 20 år. Äldre studiematerial säger ofta 21 — det är fällan. Vanlig fälla: 21 år. Källa: SFS 2012:211 3 kap. 3 §",
+    "explanation_fr": "20 ans. Beaucoup de cours disent encore 21. Piège fréquent : 21 år. Source : SFS 2012:211 3 kap. 3 §",
+    "source": "SFS 2012:211 3 kap. 3 §",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "21 år",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-sfs-b-tva-ar",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilket körkortskrav gäller bland annat för taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Körkort AM i minst ett år"
+      },
+      {
+        "letter": "B",
+        "text": "Körkort med behörighet B sedan minst två år, eller körkort med behörighet D"
+      },
+      {
+        "letter": "C",
+        "text": "Körkort C i minst fem år"
+      },
+      {
+        "letter": "D",
+        "text": "Inget körkort om man har yrkesbevis"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "B i minst två år, eller D. Källa: SFS 2012:211 3 kap. 3 §",
+    "explanation_fr": "B depuis deux ans, ou D. Source : SFS 2012:211 3 kap. 3 §",
+    "source": "SFS 2012:211 3 kap. 3 §",
+    "corpus": "research",
+    "freq": "high",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-fornya-10",
+    "topic": "lagstiftning",
+    "stem_sv": "Taxiförarlegitimationen ska förnyas efter ett visat antal år. Hur många?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "3 år"
+      },
+      {
+        "letter": "B",
+        "text": "5 år"
+      },
+      {
+        "letter": "C",
+        "text": "7 år"
+      },
+      {
+        "letter": "D",
+        "text": "10 år"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Taxitrafiklagen 3 kap. 12 §: förnyas inom tio år efter utfärdande eller senaste förnyelse med nya uppgifter. Vanlig fälla: 5 år / 7 år. Källa: teori-taxi.com/lagstiftning-fragor1+SFS 2012:211 3 kap. 12 §",
+    "explanation_fr": "Dans les dix ans. Piège fréquent : 5 år / 7 år. Source : teori-taxi.com/lagstiftning-fragor1+SFS 2012:211 3 kap. 12 §",
+    "source": "teori-taxi.com/lagstiftning-fragor1+SFS 2012:211 3 kap. 12 §",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "5 år / 7 år",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-legitimation-synlig",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur ska du förvara taxiförarlegitimationen under färd när du har passagerare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tillsammans med körkortet"
+      },
+      {
+        "letter": "B",
+        "text": "Tillsammans med fordonets registreringsbevis"
+      },
+      {
+        "letter": "C",
+        "text": "Lätt åtkomlig i bilen"
+      },
+      {
+        "letter": "D",
+        "text": "Väl synlig för passagerarana"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Taxitrafikförordningen: legitimationen ska medföras och vara väl synlig för passagerarna. Vanlig fälla: I fickan tillsammans med körkortet. Källa: teori-taxi.com/lagstiftning-fragor1+SFS 2012:238",
+    "explanation_fr": "Bien visible pour les passagers. Piège fréquent : I fickan tillsammans med körkortet. Source : teori-taxi.com/lagstiftning-fragor1+SFS 2012:238",
+    "source": "teori-taxi.com/lagstiftning-fragor1+SFS 2012:238",
+    "corpus": "research",
+    "freq": "high",
+    "trap": "I fickan tillsammans med körkortet",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-yt-karta-arlanda",
+    "topic": "karta",
+    "stem_sv": "Från Stockholm C mot Arlanda kör du i huvudsak:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Söderut mot Södertälje"
+      },
+      {
+        "letter": "B",
+        "text": "Norrut mot Märsta/Uppsala"
+      },
+      {
+        "letter": "C",
+        "text": "Västerut mot Västerås"
+      },
+      {
+        "letter": "D",
+        "text": "Österut mot Värmdö"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Arlanda ligger norr om Stockholm. Källa: youtube:AZv2VQrdD_Q",
+    "explanation_fr": "Au nord, vers Märsta/Uppsala. Source : youtube:AZv2VQrdD_Q",
+    "source": "youtube:AZv2VQrdD_Q",
+    "corpus": "research",
+    "freq": "high",
+    "type": "qcm",
+    "youtubeId": "AZv2VQrdD_Q",
+    "imageUrl": "/media/e4-karta.svg"
+  },
+  {
+    "id": "rs-yt-karta-e4",
+    "topic": "karta",
+    "stem_sv": "Europaväg E4 genom Sverige går i huvudsak i vilken riktning?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara Göteborg–Oslo"
+      },
+      {
+        "letter": "B",
+        "text": "Nord–syd, bland annat Helsingborg–Stockholm–vidare norrut mot bland annat Sundsvall"
+      },
+      {
+        "letter": "C",
+        "text": "Enbart Gotland"
+      },
+      {
+        "letter": "D",
+        "text": "Örebro–Karlstad"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Karta Taxi-videor: E4 är ryggraden norr–syd via Stockholm. Källa: youtube:AZv2VQrdD_Q",
+    "explanation_fr": "Nord–sud via Stockholm. Source : youtube:AZv2VQrdD_Q",
+    "source": "youtube:AZv2VQrdD_Q",
+    "corpus": "research",
+    "freq": "high",
+    "type": "qcm",
+    "youtubeId": "AZv2VQrdD_Q",
+    "imageUrl": "/media/e4-karta.svg"
+  },
+  {
+    "id": "rs-fri-pris",
+    "topic": "lagstiftning",
+    "stem_sv": "Finns det ett lagstadgat pristak för taxi i Sverige?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ja, 500 kr i tätort"
+      },
+      {
+        "letter": "B",
+        "text": "Nej, det råder fri prissättning — därför är prisinformationen och jämförpriset viktiga"
+      },
+      {
+        "letter": "C",
+        "text": "Ja, Transportstyrelsen fastställer taxan varje år"
+      },
+      {
+        "letter": "D",
+        "text": "Ja, kommunen"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Fri prissättning. Jämförpris och synlig prisinfo skyddar kunden. Källa: taxikurs.nu+transportstyrelsen",
+    "explanation_fr": "Prix libres. D'où l'affichage et le jämförpris. Source : taxikurs.nu+transportstyrelsen",
+    "source": "taxikurs.nu+transportstyrelsen",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm",
+    "youtubeId": "110t__6WZ7Q"
+  },
+  {
+    "id": "rs-sfs-giltig-med-korkort",
+    "topic": "lagstiftning",
+    "stem_sv": "När gäller en taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ensam, även utan körkort"
+      },
+      {
+        "letter": "B",
+        "text": "Från utlämnandet och endast tillsammans med ett giltigt körkort"
+      },
+      {
+        "letter": "C",
+        "text": "Från ansökan"
+      },
+      {
+        "letter": "D",
+        "text": "Bara inom hemkommunen"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Gäller från utlämnandet och endast tillsammans med giltigt körkort. Källa: SFS 2012:211 3 kap. 10 §",
+    "explanation_fr": "Avec un permis valide uniquement. Source : SFS 2012:211 3 kap. 10 §",
+    "source": "SFS 2012:211 3 kap. 10 §",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-anmal-borttappad",
+    "topic": "lagstiftning",
+    "stem_sv": "Du har tappat bort din Taxiförarlegitimation. Till vem ska du anmäla detta?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Länsstyrelsen"
+      },
+      {
+        "letter": "B",
+        "text": "Svenska taxiförbundet"
+      },
+      {
+        "letter": "C",
+        "text": "Vägverket"
+      },
+      {
+        "letter": "D",
+        "text": "Polisen"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Borttappad legitimation anmäls till polisen. Vanlig fälla: Länsstyrelsen / Vägverket. Källa: teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "La police. Piège fréquent : Länsstyrelsen / Vägverket. Source : teori-taxi.com/lagstiftning-fragor1",
+    "source": "teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "medium",
+    "trap": "Länsstyrelsen / Vägverket",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-balte",
+    "topic": "sakerhet",
+    "stem_sv": "Vilka regler gäller för hur taxiförare ska andvända bilbälte vid körning i trafik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "De behöver intle andvända bilbälte vid körning i tättbebyggt område"
+      },
+      {
+        "letter": "B",
+        "text": "De är inte undantagna från bilbälteskravet"
+      },
+      {
+        "letter": "C",
+        "text": "De behöver inte använda bilbälte vid korta körningar"
+      },
+      {
+        "letter": "D",
+        "text": "De är undantagna från bilbälteskravet"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Taxiförare är inte undantagna från bilbälteskravet. Vanlig fälla: Undantag i tätort. Källa: teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Pas d'exemption ceinture. Piège fréquent : Undantag i tätort. Source : teori-taxi.com/lagstiftning-fragor1",
+    "source": "teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "medium",
+    "trap": "Undantag i tätort",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-boter-placering",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad kan påföljden bli om du inte har din taxiförarlegtimation placerad på föreskrivet sätt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fängelse i högst 3 månader"
+      },
+      {
+        "letter": "B",
+        "text": "Böter"
+      },
+      {
+        "letter": "C",
+        "text": "Återkallelse av taxiförarlegitimationen"
+      },
+      {
+        "letter": "D",
+        "text": "Fängelse i högst 6 månader"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Felaktig placering kan ge böter. Källa: teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Amende. Source : teori-taxi.com/lagstiftning-fragor1",
+    "source": "teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-dokument",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilket alternativ anger två dokument som du måste ha med dig när du kör taxitrafik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yrkestrafikmärke – Kopia av trafiktillståndet"
+      },
+      {
+        "letter": "B",
+        "text": "Taxiförarlegitimation – Bilen registreringsbevis"
+      },
+      {
+        "letter": "C",
+        "text": "Kopia av trafiktillståndet – Körkort"
+      },
+      {
+        "letter": "D",
+        "text": "Taxiförarlegitimation – Kontroll- och plomberingsrapport för taxametern"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Legitimation plus kontroll- och plomberingsrapport för taxametern är det par som efterfrågas här. Källa: teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Carte pro + rapport de contrôle/plombage du taximètre. Source : teori-taxi.com/lagstiftning-fragor1",
+    "source": "teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tt-kvitto",
+    "topic": "lagstiftning",
+    "stem_sv": "När ska du erbjuda kunden kvitto från Taxa mettern?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vid alla typer av köruppdrag"
+      },
+      {
+        "letter": "B",
+        "text": "Endast när kunden begär det"
+      },
+      {
+        "letter": "C",
+        "text": "Endast vid körningar med företagskunder"
+      },
+      {
+        "letter": "D",
+        "text": "Endast vid körningar med fast pris"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Kvitto ska kunna lämnas vid köruppdragen — inte bara på begäran. Källa: teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Pour tous les types de courses. Source : teori-taxi.com/lagstiftning-fragor1",
+    "source": "teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm",
+    "youtubeId": "110t__6WZ7Q"
+  },
+  {
+    "id": "rs-tt-prisinfo-lasbar",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilket påstående är rätt om prisinformationen i en taxi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Den ska vara fastsatt i det nedre vänstra hörnet av fordonets vindruta"
+      },
+      {
+        "letter": "B",
+        "text": "Den ska vara tryckt på reflekterande material som är läsbart i mörker"
+      },
+      {
+        "letter": "C",
+        "text": "Den ska vara läsbar från varje passagerarplats i fordonet"
+      },
+      {
+        "letter": "D",
+        "text": "Den ska finnas till gånglig i pappersform så att kunden kan få ett exempel"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Läsbar från varje passagerarplats. Källa: teori-taxi.com/lagstiftning-fragor1",
+    "explanation_fr": "Lisible depuis chaque place. Source : teori-taxi.com/lagstiftning-fragor1",
+    "source": "teori-taxi.com/lagstiftning-fragor1",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tv-delprov",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur är teoriprovet för taxiförarlegitimation uppbyggt hos Trafikverket?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ett enda prov på 90 minuter"
+      },
+      {
+        "letter": "B",
+        "text": "Två delprov à 50 minuter: säkerhet och beteende samt lagstiftning"
+      },
+      {
+        "letter": "C",
+        "text": "Bara kartprov"
+      },
+      {
+        "letter": "D",
+        "text": "Bara muntligt körprov"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Delprov 1 säkerhet och beteende, delprov 2 lagstiftning. 50 minuter vardera. Båda godkända inom sex månader. Källa: trafikverket.se/korkort/yrkesprov/taxiforarlegitimation",
+    "explanation_fr": "Deux épreuves de 50 min. Les deux dans les six mois. Source : trafikverket.se/korkort/yrkesprov/taxiforarlegitimation",
+    "source": "trafikverket.se/korkort/yrkesprov/taxiforarlegitimation",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-tv-poang",
+    "topic": "lagstiftning",
+    "stem_sv": "Delprov 2 Lagstiftning har 50 frågor. Vad krävs för godkänt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "25 rätt av 50"
+      },
+      {
+        "letter": "B",
+        "text": "Minst 34 rätt (4 frågor är testfrågor och räknas inte, max 46 poäng)"
+      },
+      {
+        "letter": "C",
+        "text": "46 rätt av 46"
+      },
+      {
+        "letter": "D",
+        "text": "Inget poängkrav, bara tid"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Minst 34 rätt. Fyra testfrågor räknas inte. Källa: trafikverket.se/korkort/yrkesprov/taxiforarlegitimation",
+    "explanation_fr": "Au moins 34. Quatre items de test exclus. Source : trafikverket.se/korkort/yrkesprov/taxiforarlegitimation",
+    "source": "trafikverket.se/korkort/yrkesprov/taxiforarlegitimation",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-yt-karta-e6",
+    "topic": "karta",
+    "stem_sv": "E6 följer i huvudsak:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Norrlandskusten mot Haparanda"
+      },
+      {
+        "letter": "B",
+        "text": "Västkusten Malmö–Göteborg–norska gränsen"
+      },
+      {
+        "letter": "C",
+        "text": "Mälaren runt"
+      },
+      {
+        "letter": "D",
+        "text": "E4:s sträckning"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Västkusten. Källa: youtube:AZv2VQrdD_Q",
+    "explanation_fr": "Côte ouest. Source : youtube:AZv2VQrdD_Q",
+    "source": "youtube:AZv2VQrdD_Q",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "qcm",
+    "youtubeId": "AZv2VQrdD_Q"
+  },
+  {
+    "id": "rs-ts-gul-kort",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilken färg ska taxiförarlegitimationen ha?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Blå som körkortet"
+      },
+      {
+        "letter": "B",
+        "text": "Gul"
+      },
+      {
+        "letter": "C",
+        "text": "Grön"
+      },
+      {
+        "letter": "D",
+        "text": "Vit"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "TSFS 2021:119: taxiförarlegitimationen ska vara gul. Källa: TSFS 2021:119",
+    "explanation_fr": "Jaune. Source : TSFS 2021:119",
+    "source": "TSFS 2021:119",
+    "corpus": "research",
+    "freq": "low",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-ts-kopia-6-veckor",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur länge gäller en kopia av taxiförarlegitimationen som Transportstyrelsen tillhandahåller vid förnyelse?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "En vecka"
+      },
+      {
+        "letter": "B",
+        "text": "Sex veckor från utfärdandedatum"
+      },
+      {
+        "letter": "C",
+        "text": "Ett år"
+      },
+      {
+        "letter": "D",
+        "text": "Tills den nya plastkortet kommer, utan tidsgräns"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Kopian gäller under sex veckor från utfärdandedatum. Källa: TSFS 2021:119",
+    "explanation_fr": "Six semaines. Source : TSFS 2021:119",
+    "source": "TSFS 2021:119",
+    "corpus": "research",
+    "freq": "low",
+    "type": "qcm"
+  },
+  {
+    "id": "tx-taxameter-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad gäller för taxameter i taxitrafik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Taxametern är frivillig om föraren kan räkna priset själv."
+      },
+      {
+        "letter": "B",
+        "text": "Taxametern ska vara av godkänd typ, fungera och vara plomberad."
+      },
+      {
+        "letter": "C",
+        "text": "Taxametern får saknas om kunden betalar kontant."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "I taxitrafik ska taxametern vara av godkänd typ, i funktion och plomberad, om inte särskilt undantag gäller.",
+    "explanation_fr": "En taxitrafik le taximètre doit être d'un type agréé, en état de marche et plombé, sauf exemption particulière.",
+    "imageUrl": "/media/taxameter.svg",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-vila-01",
+    "topic": "sakerhet",
+    "stem_sv": "En yrkesförare ska som huvudregel ha en dygnsvila. Hur lång är den ordinarie dygnsvilan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Minst 9 timmar"
+      },
+      {
+        "letter": "B",
+        "text": "Minst 11 timmar"
+      },
+      {
+        "letter": "C",
+        "text": "Minst 6 timmar"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Ordinarie dygnsvila är minst 11 timmar. En reducerad dygnsvila om minst 9 timmar får användas i begränsad omfattning.",
+    "explanation_fr": "Le repos journalier normal est d'au moins 11 heures. Un repos réduit d'au moins 9 heures n'est possible que de façon limitée.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-avstand-01",
+    "topic": "bkort",
+    "stem_sv": "Varför är det viktigt att hålla ett tillräckligt säkerhetsavstånd till fordonet framför?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "För att kunna stanna i tid om framförvarande bromsar."
+      },
+      {
+        "letter": "B",
+        "text": "För att andra ska kunna köra om dig lättare."
+      },
+      {
+        "letter": "C",
+        "text": "För att motorn ska kylas bättre."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Säkerhetsavståndet ger tid och utrymme att stanna om fordonet framför bromsar eller stannar oväntat.",
+    "explanation_fr": "La distance de sécurité donne le temps et l'espace pour s'arrêter si le véhicule de devant freine.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-barnstol-01",
+    "topic": "bkort",
+    "stem_sv": "Ett barn som är 125 cm långt ska åka i din personbil. Vad gäller?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Barnet får sitta i framsätet utan särskild skyddsutrustning."
+      },
+      {
+        "letter": "B",
+        "text": "Barnet ska använda en särskild skyddsanordning som är avsedd för barnet."
+      },
+      {
+        "letter": "C",
+        "text": "Det räcker att barnet använder vuxenbälte."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Barn som är kortare än 135 cm ska använda en särskild skyddsanordning. Vuxenbälte ensamt räcker inte.",
+    "explanation_fr": "Un enfant de moins de 135 cm doit utiliser un dispositif de retenue adapté. La ceinture adulte seule ne suffit pas.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-cirkulation-01",
+    "topic": "bkort",
+    "stem_sv": "Du ska köra in i en cirkulationsplats. Vilket påstående är korrekt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trafik i cirkulationsplatsen har väjningsplikt mot dig."
+      },
+      {
+        "letter": "B",
+        "text": "Du har väjningsplikt mot trafik som redan befinner sig i cirkulationsplatsen."
+      },
+      {
+        "letter": "C",
+        "text": "Du måste alltid stanna helt innan du kör in."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "När du kör in i en cirkulationsplats har du väjningsplikt mot den trafik som redan cirkulerar. Fullt stopp krävs bara om det också finns stopplikt.",
+    "explanation_fr": "À l'entrée d'un giratoire tu as obligation de céder le passage à la circulation déjà engagée. Un arrêt complet n'est exigé que s'il y a aussi stopplikt.",
+    "imageUrl": "/media/cirkulationsplats.svg",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-halvljus-01",
+    "topic": "bkort",
+    "stem_sv": "När måste du använda halvljus på personbil i Sverige?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Endast när det är mörkt."
+      },
+      {
+        "letter": "B",
+        "text": "Alltid när du kör, även i dagsljus."
+      },
+      {
+        "letter": "C",
+        "text": "Endast vid dimma."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Personbil ska föra halvljus eller annat föreskrivet ljus även i dagsljus när fordonet körs.",
+    "explanation_fr": "Une voiture particulière doit circuler avec les feux de croisement (halvljus) ou un éclairage prescrit, y compris de jour.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-hogerregel-01",
+    "topic": "bkort",
+    "stem_sv": "I en vägkorsning utan vägmärken gäller högerregeln. Vad innebär det?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trafik från vänster har företräde."
+      },
+      {
+        "letter": "B",
+        "text": "Du har väjningsplikt mot fordon som kommer från höger."
+      },
+      {
+        "letter": "C",
+        "text": "Den som kör fortast har företräde."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Högerregeln betyder att du har väjningsplikt mot fordon som kommer från höger när inget annat anges.",
+    "explanation_fr": "La règle de la priorité à droite signifie que tu dois céder le passage aux véhicules venant de droite, sauf signalisation contraire.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-monsterdjup-01",
+    "topic": "bkort",
+    "stem_sv": "Vilket är det minsta tillåtna mönsterdjupet på däck vid körning på sommarväglag?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1,6 mm"
+      },
+      {
+        "letter": "B",
+        "text": "3,0 mm"
+      },
+      {
+        "letter": "C",
+        "text": "1,0 mm"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "På sommarväglag är minsta tillåtna mönsterdjup 1,6 mm. Vid vinterväglag under perioden 1 december–31 mars gäller 3 mm.",
+    "explanation_fr": "Sur chaussée d'été le mönsterdjup minimal est 1,6 mm. En conditions hivernales du 1er décembre au 31 mars, 3 mm.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-mote-01",
+    "topic": "bkort",
+    "stem_sv": "Två fordon möts på en smal väg där det är svårt att mötas. Vem bör i första hand stanna?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Den som har det lättast att stanna, till exempel den som har en mötesplats närmast."
+      },
+      {
+        "letter": "B",
+        "text": "Alltid den som kör uppför."
+      },
+      {
+        "letter": "C",
+        "text": "Alltid den som har den största bilen."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Den som har det lättast att stanna — ofta den som är närmast en mötesplats — bör göra det så att mötet kan ske säkert.",
+    "explanation_fr": "Celui qui peut s'arrêter le plus facilement — souvent le plus proche d'un élargissement — doit le faire pour un croisement sûr.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-rattfylleri-01",
+    "topic": "bkort",
+    "stem_sv": "Vilken alkoholkoncentration i blodet räknas som rattfylleri i Sverige?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "0,5 promille"
+      },
+      {
+        "letter": "B",
+        "text": "0,2 promille"
+      },
+      {
+        "letter": "C",
+        "text": "0,1 promille"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rattfylleri föreligger bland annat vid en alkoholkoncentration om 0,2 promille i blodet. Grova fall har högre gränser och strängare påföljd.",
+    "explanation_fr": "La conduite en état d'ivresse (rattfylleri) est notamment constituée à 0,2 pour mille dans le sang. Les cas graves ont des seuils plus élevés.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-stopplikt-01",
+    "topic": "bkort",
+    "stem_sv": "Du närmar dig en vägkorsning med stopplikt. Vad måste du göra?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stanna endast om det kommer trafik från höger."
+      },
+      {
+        "letter": "B",
+        "text": "Stanna helt och försäkra dig om att du kan fortsätta utan fara."
+      },
+      {
+        "letter": "C",
+        "text": "Sänka farten och fortsätta om vägen ser fri ut."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Stopplikt innebär att du måste stanna helt och därefter försäkra dig om att du kan fortsätta utan fara. Det räcker inte att sakta in.",
+    "explanation_fr": "L'obligation d'arrêt (stopplikt) exige un arrêt complet, puis de s'assurer que l'on peut repartir sans danger. Ralentir ne suffit pas.",
+    "imageUrl": "/media/stopplikt.svg",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-tatort-01",
+    "topic": "bkort",
+    "stem_sv": "Vilken högsta tillåtna hastighet gäller i tättbebyggt område om inget annat anges?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "30 km/h"
+      },
+      {
+        "letter": "B",
+        "text": "50 km/h"
+      },
+      {
+        "letter": "C",
+        "text": "70 km/h"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Om inget annat anges är högsta tillåtna hastighet i tättbebyggt område 50 km/h.",
+    "explanation_fr": "Sauf indication contraire, la vitesse maximale en agglomération (tättbebyggt område) est de 50 km/h.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "b-vilt-01",
+    "topic": "bkort",
+    "stem_sv": "Du har kört på en älg. Vilket påstående är korrekt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Du behöver bara flytta djuret från vägen och sedan köra vidare."
+      },
+      {
+        "letter": "B",
+        "text": "Du ska märka platsen, varna andra trafikanter och kontakta polisen."
+      },
+      {
+        "letter": "C",
+        "text": "Du ska alltid avliva djuret själv innan du ringer någon."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Vid viltolycka med bland annat älg ska du märka platsen, varna andra och kontakta polisen. Du ska inte utsätta dig för onödig fara.",
+    "explanation_fr": "En cas de collision avec un élan tu marques les lieux, tu préviens les autres usagers et tu contactes la police. Ne te mets pas en danger.",
+    "imageUrl": "/media/vilt.svg",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-arlanda-01",
+    "topic": "karta",
+    "stem_sv": "Du ska köra en kund från Stockholm C till Arlanda. I vilken ungefärlig riktning kör du?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Söderut mot Södertälje"
+      },
+      {
+        "letter": "B",
+        "text": "Norrut mot Uppsala/Märsta"
+      },
+      {
+        "letter": "C",
+        "text": "Västerut mot Västerås"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Arlanda ligger norr om Stockholm, mot Märsta/Uppsala. Södertälje ligger söderut och Västerås västerut.",
+    "explanation_fr": "Arlanda est au nord de Stockholm, vers Märsta/Uppsala. Södertälje est au sud, Västerås à l'ouest.",
+    "imageUrl": "/media/e4-karta.svg",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-balte-01",
+    "topic": "sakerhet",
+    "stem_sv": "Vad gäller för säkerhetsbälte i taxi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Passagerare behöver inte använda bälte i taxi."
+      },
+      {
+        "letter": "B",
+        "text": "Passagerare ska använda säkerhetsbälte, och föraren ska se till att passagerare under 15 år använder bälte eller annan skyddsanordning."
+      },
+      {
+        "letter": "C",
+        "text": "Endast föraren måste använda bälte."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Säkerhetsbälte ska användas. Föraren ansvarar särskilt för att passagerare under 15 år använder bälte eller annan skyddsanordning.",
+    "explanation_fr": "La ceinture est obligatoire. Le conducteur veille notamment à ce que les passagers de moins de 15 ans soient attachés.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-e20-01",
+    "topic": "karta",
+    "stem_sv": "Vilken europaväg går bland annat mellan Stockholm, Örebro och vidare mot Göteborg?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "E6"
+      },
+      {
+        "letter": "B",
+        "text": "E20"
+      },
+      {
+        "letter": "C",
+        "text": "E45"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "E20 går bland annat från Stockholmsområdet via Örebro mot Göteborg. E6 följer i huvudsak västkusten.",
+    "explanation_fr": "L'E20 relie notamment la région de Stockholm, Örebro et Göteborg. L'E6 suit surtout la côte ouest.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-e4-01",
+    "topic": "karta",
+    "stem_sv": "Europaväg E4 går bland annat i nord-sydlig riktning genom Sverige. Vilket påstående är korrekt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "E4 förbinder bland annat Stockholm med orter norrut mot Sundsvall och söderut mot Helsingborg."
+      },
+      {
+        "letter": "B",
+        "text": "E4 går endast mellan Göteborg och Oslo."
+      },
+      {
+        "letter": "C",
+        "text": "E4 är en ringled enbart inne i Stockholm."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "E4 är en europaväg i nord–sydlig riktning och förbinder bland annat Helsingborg, Stockholm och vidare norrut mot bland annat Sundsvall.",
+    "explanation_fr": "L'E4 est une route européenne nord–sud : Helsingborg, Stockholm, puis vers le nord notamment vers Sundsvall.",
+    "imageUrl": "/media/e4-karta.svg",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-e6-01",
+    "topic": "karta",
+    "stem_sv": "Europaväg E6 följer i huvudsak vilken del av Sverige?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Norrlandskusten mot Haparanda"
+      },
+      {
+        "letter": "B",
+        "text": "Västkusten, bland annat Malmö–Göteborg–norska gränsen"
+      },
+      {
+        "letter": "C",
+        "text": "Enbart Gotland"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "E6 följer västkusten och går bland annat mellan Malmö, Göteborg och vidare mot den norska gränsen.",
+    "explanation_fr": "L'E6 suit la côte ouest : Malmö, Göteborg, puis la frontière norvégienne.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-kontroll-01",
+    "topic": "sakerhet",
+    "stem_sv": "Vad bör en taxiförare kontrollera före arbetspassets början ur ett säkerhetsperspektiv?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Endast att taxametern är avstängd."
+      },
+      {
+        "letter": "B",
+        "text": "Bland annat däck, belysning, bromsar och att säkerhetsutrustningen fungerar."
+      },
+      {
+        "letter": "C",
+        "text": "Enbart bränslenivån."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Före arbetspasset ska föraren kontrollera att fordonet är i säkert skick: däck, ljus, bromsar och övrig säkerhetsutrustning.",
+    "explanation_fr": "Avant le service, contrôler l'état de sécurité du véhicule : pneus, feux, freins et équipements de sécurité.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-krav-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilket krav gäller bland annat för att få taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Du måste ha fyllt 21 år och ha haft körkort med behörighet B i minst två år."
+      },
+      {
+        "letter": "B",
+        "text": "Du måste ha fyllt 18 år och ha övningskörningstillstånd."
+      },
+      {
+        "letter": "C",
+        "text": "Du måste ha körkort C i minst fem år."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "För taxiförarlegitimation krävs bland annat att du fyllt 21 år och har haft körkort med behörighet B i minst två år, plus lämplighet och godkänt prov.",
+    "explanation_fr": "Pour la carte taxi il faut notamment 21 ans et un körkort B depuis au moins deux ans, plus aptitude et examen réussi.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-legitimation-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vem måste ha taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Endast den som äger taxiföretaget."
+      },
+      {
+        "letter": "B",
+        "text": "Den som kör personbil eller lätt lastbil i taxitrafik."
+      },
+      {
+        "letter": "C",
+        "text": "Endast den som kör buss."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Den som kör personbil eller lätt lastbil i taxitrafik ska ha taxiförarlegitimation. Ägande av företaget räcker inte.",
+    "explanation_fr": "Quiconque conduit une voiture ou un utilitaire léger en taxitrafik doit avoir la taxiförarlegitimation. Être propriétaire ne suffit pas.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-myndighet-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilken myndighet prövar bland annat frågor om taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trafikverket"
+      },
+      {
+        "letter": "B",
+        "text": "Transportstyrelsen"
+      },
+      {
+        "letter": "C",
+        "text": "Skatteverket"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Transportstyrelsen prövar bland annat frågor om taxiförarlegitimation och taxitrafiktillstånd.",
+    "explanation_fr": "Transportstyrelsen instruit notamment la carte professionnelle taxi et l'autorisation d'exploiter.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-pris-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad gäller om prisinformation i taxi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prisinformationen ska vara väl synlig för passageraren."
+      },
+      {
+        "letter": "B",
+        "text": "Priset får bara uppges efter avslutad resa."
+      },
+      {
+        "letter": "C",
+        "text": "Endast taxiföretaget behöver känna till priset."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Prisinformation ska vara väl synlig för passageraren så att det går att förstå hur priset beräknas.",
+    "explanation_fr": "L'information tarifaire doit être bien visible pour le passager afin qu'il comprenne le calcul du prix.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-tillstand-01",
+    "topic": "lagstiftning",
+    "stem_sv": "Vem ska ha taxitrafiktillstånd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Varje enskild förare."
+      },
+      {
+        "letter": "B",
+        "text": "Den som bedriver taxitrafik, det vill säga tillståndshavaren."
+      },
+      {
+        "letter": "C",
+        "text": "Endast kommunen."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Taxitrafiktillstånd krävs för den som bedriver taxitrafik (tillståndshavaren). Föraren behöver taxiförarlegitimation.",
+    "explanation_fr": "L'autorisation d'exploiter (taxitrafiktillstånd) concerne l'exploitant. Le conducteur, lui, a besoin de la legitimation.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  },
+  {
+    "id": "tx-vagra-01",
+    "topic": "sakerhet",
+    "stem_sv": "I vilket fall får en taxiförare i regel vägra att ta med en passagerare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Om passageraren ska en kort sträcka."
+      },
+      {
+        "letter": "B",
+        "text": "Om passageraren är berusad och kan störa ordningen eller utgöra en fara."
+      },
+      {
+        "letter": "C",
+        "text": "Om passageraren talar ett annat språk."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "En förare får vägra om passageraren är berusad och kan störa ordningen eller utgöra en fara för trafiksäkerheten. Kort resa eller annat språk är inte grund.",
+    "explanation_fr": "Le chauffeur peut refuser un passager ivre qui trouble l'ordre ou crée un danger. Un trajet court ou une autre langue ne suffisent pas.",
+    "source": "sample-public-law",
+    "corpus": "manzi"
+  }
+]

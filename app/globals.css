@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4efe4;
+  --foreground: #141414;
+  --card: #fffdf8;
+  --forest: #1f3d2b;
+  --french: #1d4ed8;
+  --cloze: #b91c1c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-source-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-source-serif), "Source Serif 4", Georgia, serif;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #ddd6c8;
+  border-radius: 1.1rem;
+  padding: 1.15rem 1.2rem;
+  box-shadow: 0 1px 0 rgba(31, 61, 43, 0.04);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--forest);
+  color: #fffdf8;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #fffdf8;
+  color: var(--forest);
+  border: 1px solid #cfc6b4;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+}
+
+.question-sv {
+  color: #000;
+}
+
+.question-fr {
+  color: var(--french);
+}
+
+.protected-content {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.protected-content input,
+.protected-content textarea {
+  -webkit-user-select: text;
+  user-select: text;
 }

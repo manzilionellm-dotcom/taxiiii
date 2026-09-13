@@ -1,19 +1,36 @@
 {
-  "name": "nextjs",
+  "name": "taxiiii",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "import": "node scripts/compile-banks.mjs",
+    "import:check": "node scripts/compile-banks.mjs --check",
+    "import:research": "node scripts/compile-banks.mjs --research",
+    "seed": "node scripts/compile-banks.mjs",
+    "check:corpus": "node scripts/self-check.mjs",
+    "native:www": "node scripts/write-native-www.mjs",
+    "native:icon": "node scripts/make-app-icon.mjs",
+    "cap:sync": "npm run native:www && cap sync android && node scripts/patch-android.mjs",
+    "apk": "node scripts/build-apk.mjs"
   },
   "dependencies": {
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/app": "^7.1.0",
+    "@capacitor/core": "^7.4.4",
+    "@capacitor/splash-screen": "^7.0.3",
+    "@capacitor/status-bar": "^7.0.3",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.4"
   },
   "devDependencies": {
+    "@capacitor/cli": "^7.4.4",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

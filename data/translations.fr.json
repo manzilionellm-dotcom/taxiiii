@@ -1,0 +1,331 @@
+{
+  "b-stopplikt-01": {
+    "stem": "Tu t'approches d'une intersection avec obligation d'arrêt. Que dois-tu faire ?",
+    "options": {
+      "A": "S'arrêter seulement s'il arrive du trafic par la droite.",
+      "B": "S'arrêter complètement et s'assurer que l'on peut continuer sans danger.",
+      "C": "Ralentir et continuer si la route paraît libre."
+    }
+  },
+  "b-hogerregel-01": {
+    "stem": "À une intersection sans panneaux, la règle de la priorité à droite s'applique. Que signifie-t-elle ?",
+    "options": {
+      "A": "Le trafic venant de gauche a la priorité.",
+      "B": "Tu as obligation de céder le passage aux véhicules venant de droite.",
+      "C": "Le plus rapide a la priorité."
+    }
+  },
+  "b-cirkulation-01": {
+    "stem": "Tu vas entrer dans un giratoire. Quelle affirmation est correcte ?",
+    "options": {
+      "A": "Le trafic dans le giratoire doit te céder le passage.",
+      "B": "Tu dois céder le passage au trafic déjà engagé dans le giratoire.",
+      "C": "Tu dois toujours t'arrêter complètement avant d'entrer."
+    }
+  },
+  "b-rattfylleri-01": {
+    "stem": "Quelle concentration d'alcool dans le sang constitue une conduite en état d'ivresse en Suède ?",
+    "options": {
+      "A": "0,5 pour mille",
+      "B": "0,2 pour mille",
+      "C": "0,1 pour mille"
+    }
+  },
+  "b-tatort-01": {
+    "stem": "Quelle est la vitesse maximale en agglomération si rien d'autre n'est indiqué ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "50 km/h",
+      "C": "70 km/h"
+    }
+  },
+  "b-monsterdjup-01": {
+    "stem": "Quelle est la profondeur minimale des sculptures sur chaussée d'été ?",
+    "options": {
+      "A": "1,6 mm",
+      "B": "3,0 mm",
+      "C": "1,0 mm"
+    }
+  },
+  "b-barnstol-01": {
+    "stem": "Un enfant de 125 cm voyage dans ta voiture. Que s'applique-t-il ?",
+    "options": {
+      "A": "L'enfant peut s'asseoir à l'avant sans équipement particulier.",
+      "B": "L'enfant doit utiliser un dispositif de retenue adapté.",
+      "C": "La ceinture adulte suffit."
+    }
+  },
+  "b-vilt-01": {
+    "stem": "Tu as heurté un élan. Quelle affirmation est correcte ?",
+    "options": {
+      "A": "Il suffit de dégager l'animal et de repartir.",
+      "B": "Tu marques les lieux, tu préviens les autres usagers et tu contactes la police.",
+      "C": "Tu dois toujours achever l'animal toi-même avant d'appeler."
+    }
+  },
+  "b-halvljus-01": {
+    "stem": "Quand dois-tu utiliser les feux de croisement sur une voiture particulière en Suède ?",
+    "options": {
+      "A": "Seulement la nuit.",
+      "B": "Toujours en circulation, y compris de jour.",
+      "C": "Seulement dans le brouillard."
+    }
+  },
+  "b-avstand-01": {
+    "stem": "Pourquoi faut-il garder une distance de sécurité suffisante avec le véhicule de devant ?",
+    "options": {
+      "A": "Pour pouvoir s'arrêter à temps s'il freine.",
+      "B": "Pour que les autres te dépassent plus facilement.",
+      "C": "Pour mieux refroidir le moteur."
+    }
+  },
+  "b-mote-01": {
+    "stem": "Deux véhicules se croisent sur une route étroite. Qui devrait s'arrêter en premier ?",
+    "options": {
+      "A": "Celui qui peut s'arrêter le plus facilement, par exemple le plus proche d'un élargissement.",
+      "B": "Toujours celui qui monte.",
+      "C": "Toujours le plus gros véhicule."
+    }
+  },
+  "tx-legitimation-01": {
+    "stem": "Qui doit avoir la carte professionnelle de taxi ?",
+    "options": {
+      "A": "Seulement le propriétaire de l'entreprise.",
+      "B": "Celui qui conduit une voiture ou un utilitaire léger en trafic de taxi.",
+      "C": "Seulement le conducteur de bus."
+    }
+  },
+  "tx-krav-01": {
+    "stem": "Quelle exigence s'applique notamment pour obtenir la carte professionnelle de taxi ?",
+    "options": {
+      "A": "Avoir 21 ans et un permis B depuis au moins deux ans.",
+      "B": "Avoir 18 ans et une autorisation de conduite accompagnée.",
+      "C": "Avoir un permis C depuis au moins cinq ans."
+    }
+  },
+  "tx-taxameter-01": {
+    "stem": "Que s'applique-t-il au taximètre en trafic de taxi ?",
+    "options": {
+      "A": "Le taximètre est facultatif si le chauffeur sait calculer le prix.",
+      "B": "Le taximètre doit être d'un type agréé, fonctionner et être plombé.",
+      "C": "Le taximètre peut manquer si le client paie en espèces."
+    }
+  },
+  "tx-pris-01": {
+    "stem": "Que s'applique-t-il à l'information tarifaire dans un taxi ?",
+    "options": {
+      "A": "L'information tarifaire doit être bien visible pour le passager.",
+      "B": "Le prix ne peut être indiqué qu'après la course.",
+      "C": "Seule l'entreprise a besoin de connaître le prix."
+    }
+  },
+  "tx-tillstand-01": {
+    "stem": "Qui doit détenir l'autorisation d'exploiter un taxi ?",
+    "options": {
+      "A": "Chaque chauffeur individuellement.",
+      "B": "Celui qui exerce le trafic de taxi, c'est-à-dire le titulaire de l'autorisation.",
+      "C": "Seulement la commune."
+    }
+  },
+  "tx-myndighet-01": {
+    "stem": "Quelle autorité instruit notamment les questions de carte professionnelle taxi ?",
+    "options": {
+      "A": "Trafikverket",
+      "B": "Transportstyrelsen",
+      "C": "Skatteverket"
+    }
+  },
+  "tx-balte-01": {
+    "stem": "Que s'applique-t-il à la ceinture de sécurité dans un taxi ?",
+    "options": {
+      "A": "Les passagers n'ont pas à s'attacher.",
+      "B": "Les passagers doivent s'attacher, et le chauffeur veille à ce que les moins de 15 ans soient attachés.",
+      "C": "Seul le chauffeur doit s'attacher."
+    }
+  },
+  "tx-vagra-01": {
+    "stem": "Dans quel cas un chauffeur de taxi peut-il en principe refuser un passager ?",
+    "options": {
+      "A": "Si le trajet est court.",
+      "B": "Si le passager est ivre et peut troubler l'ordre ou créer un danger.",
+      "C": "Si le passager parle une autre langue."
+    }
+  },
+  "tx-vila-01": {
+    "stem": "Un conducteur professionnel doit en principe prendre un repos journalier. Quelle est la durée normale ?",
+    "options": {
+      "A": "Au moins 9 heures",
+      "B": "Au moins 11 heures",
+      "C": "Au moins 6 heures"
+    }
+  },
+  "tx-kontroll-01": {
+    "stem": "Que devrait contrôler un chauffeur de taxi avant le service, du point de vue de la sécurité ?",
+    "options": {
+      "A": "Seulement que le taximètre est éteint.",
+      "B": "Entre autres pneus, éclairage, freins et équipements de sécurité.",
+      "C": "Uniquement le niveau de carburant."
+    }
+  },
+  "tx-e4-01": {
+    "stem": "La route européenne E4 traverse la Suède notamment nord–sud. Quelle affirmation est correcte ?",
+    "options": {
+      "A": "L'E4 relie notamment Stockholm à des villes vers Sundsvall au nord et Helsingborg au sud.",
+      "B": "L'E4 va seulement de Göteborg à Oslo.",
+      "C": "L'E4 est uniquement un périphérique à Stockholm."
+    }
+  },
+  "tx-e20-01": {
+    "stem": "Quelle route européenne relie notamment Stockholm, Örebro et Göteborg ?",
+    "options": {
+      "A": "E6",
+      "B": "E20",
+      "C": "E45"
+    }
+  },
+  "tx-arlanda-01": {
+    "stem": "Tu dois conduire un client de Stockholm C à Arlanda. Dans quelle direction approximative roules-tu ?",
+    "options": {
+      "A": "Vers le sud, vers Södertälje",
+      "B": "Vers le nord, vers Uppsala/Märsta",
+      "C": "Vers l'ouest, vers Västerås"
+    }
+  },
+  "tx-e6-01": {
+    "stem": "La route européenne E6 suit principalement quelle partie de la Suède ?",
+    "options": {
+      "A": "La côte du Norrland vers Haparanda",
+      "B": "La côte ouest, notamment Malmö–Göteborg–frontière norvégienne",
+      "C": "Uniquement Gotland"
+    }
+  },
+  "rs-yt-lag1-gul-linje": {
+    "stem": "Que signifie une ligne jaune continue sur le bord du trottoir ?"
+  },
+  "rs-yt-lag1-taxameter-24": {
+    "stem": "Quel délai maximal entre deux contrôles du taximètre ?"
+  },
+  "rs-yt-lag1-taxameter-nar": {
+    "stem": "Quand le taximètre doit-il normalement être contrôlé ?"
+  },
+  "rs-yt-lag2-vila-11-8": {
+    "stem": "Quelle est la durée minimale du repos journalier sur 24 heures ?"
+  },
+  "rs-taxi-prov-vila-split-fail": {
+    "stem": "Deux repos de 6 h 30 : le chauffeur a-t-il respecté le repos journalier ?"
+  },
+  "rs-ts-tidbok-fore": {
+    "stem": "Quand noter le dernier repos journalier dans le tidbok ?"
+  },
+  "rs-tt-tidbok-vecka": {
+    "stem": "Tidbok terminé : quand le rendre à l'employeur ?"
+  },
+  "rs-tt-tidbok-ansvar": {
+    "stem": "Qui est responsable que le tidbok soit rempli ?"
+  },
+  "rs-tt-tidbok-fel": {
+    "stem": "Erreur dans le tidbok : que faire ?"
+  },
+  "rs-yt-prisresa-jamfor": {
+    "stem": "Qu'est-ce que le jämförpris ?"
+  },
+  "rs-yt-prisresa-700": {
+    "stem": "Quand donner un prix maximum contraignant ?"
+  },
+  "rs-yt-prisresa-formel": {
+    "stem": "Comment estimer le prix du trajet (prisresan) ?"
+  },
+  "rs-tt-legitimation-synlig": {
+    "stem": "Où placer la carte professionnelle pendant la course ?"
+  },
+  "rs-tt-fornya-10": {
+    "stem": "Après combien d'années renouveler la legitimation ?"
+  },
+  "rs-sfs-alder-20": {
+    "stem": "Âge minimal pour la carte taxi ?"
+  },
+  "rs-sfs-b-tva-ar": {
+    "stem": "Quelle condition de permis ?"
+  },
+  "rs-ts-tidbok-7": {
+    "stem": "Combien de jours le tidbok doit-il couvrir ?"
+  },
+  "rs-ts-ag-12-man": {
+    "stem": "Combien de temps conserver les notes de repos ?"
+  },
+  "rs-ts-en-tidbok": {
+    "stem": "Combien de tidbok à la fois ?"
+  },
+  "rs-ts-visa-polis": {
+    "stem": "À qui présenter le tidbok ?"
+  },
+  "rs-ts-jour-inte-vila": {
+    "stem": "Qu'est-ce qui n'est pas un repos journalier ?"
+  },
+  "rs-tt-plomb": {
+    "stem": "Plomb du taximètre rompu : que faire ?"
+  },
+  "rs-tt-kvitto": {
+    "stem": "Quand proposer un reçu taximètre ?"
+  },
+  "rs-tt-dokument": {
+    "stem": "Quels deux documents emporter ?"
+  },
+  "rs-tt-anmal-borttappad": {
+    "stem": "Carte perdue : qui prévenir ?"
+  },
+  "rs-tt-boter-placering": {
+    "stem": "Sanction si la carte n'est pas placée correctement ?"
+  },
+  "rs-tt-balte": {
+    "stem": "Ceinture pour le chauffeur taxi ?"
+  },
+  "rs-ts-redovisning": {
+    "stem": "Fréquence d'envoi au redovisningscentral ?"
+  },
+  "rs-ts-anvand-varje": {
+    "stem": "Quand utiliser le taximètre ?"
+  },
+  "rs-ts-sarskild-utr": {
+    "stem": "Dispense de taximètre depuis 2021 ?"
+  },
+  "rs-tv-delprov": {
+    "stem": "Structure de l'examen théorique taxi ?"
+  },
+  "rs-tv-poang": {
+    "stem": "Seuil de réussite du delprov lagstiftning ?"
+  },
+  "rs-yt-karta-e4": {
+    "stem": "Direction principale de l'E4 ?"
+  },
+  "rs-yt-karta-arlanda": {
+    "stem": "Stockholm C → Arlanda : quelle direction ?"
+  },
+  "rs-yt-karta-e6": {
+    "stem": "Où passe l'E6 ?"
+  },
+  "rs-ts-undantag-4h30": {
+    "stem": "Exemption de tidbok (marchandises) ?"
+  },
+  "rs-ts-fardsrivare": {
+    "stem": "Tachigraphe à la place du tidbok ?"
+  },
+  "rs-sfs-giltig-med-korkort": {
+    "stem": "Validité de la legitimation ?"
+  },
+  "rs-ts-kopia-6-veckor": {
+    "stem": "Durée de la copie temporaire ?"
+  },
+  "rs-ts-gul-kort": {
+    "stem": "Couleur de la carte taxi ?"
+  },
+  "rs-fri-pris": {
+    "stem": "Y a-t-il un tarif légal plafond ?"
+  },
+  "rs-tt-prisinfo-lasbar": {
+    "stem": "Où doit être lisible l'info tarifaire à l'intérieur ?"
+  },
+  "rs-taxikortet-demo-vila": {
+    "stem": "La phrase officielle sur les 11 heures est-elle exacte ?"
+  }
+}

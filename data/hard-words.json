@@ -1,0 +1,381 @@
+[
+  {
+    "sv": "väjningsplikt",
+    "forms": [
+      "väjningsplikt",
+      "väjningsplikten"
+    ],
+    "fr": "obligation de céder le passage"
+  },
+  {
+    "sv": "stopplikt",
+    "forms": [
+      "stopplikt",
+      "stopplikten"
+    ],
+    "fr": "obligation d'arrêt"
+  },
+  {
+    "sv": "cirkulationsplats",
+    "forms": [
+      "cirkulationsplats",
+      "cirkulationsplatsen",
+      "cirkulationsplatsen"
+    ],
+    "fr": "giratoire"
+  },
+  {
+    "sv": "tättbebyggt område",
+    "forms": [
+      "tättbebyggt område",
+      "tättbebyggda området"
+    ],
+    "fr": "agglomération"
+  },
+  {
+    "sv": "mönsterdjup",
+    "forms": [
+      "mönsterdjup",
+      "mönsterdjupet"
+    ],
+    "fr": "profondeur des sculptures"
+  },
+  {
+    "sv": "rattfylleri",
+    "forms": [
+      "rattfylleri",
+      "rattfylleriet"
+    ],
+    "fr": "conduite en état d'ivresse"
+  },
+  {
+    "sv": "alkoholkoncentration",
+    "forms": [
+      "alkoholkoncentration",
+      "alkoholkoncentrationen"
+    ],
+    "fr": "concentration d'alcool"
+  },
+  {
+    "sv": "skyddsanordning",
+    "forms": [
+      "skyddsanordning",
+      "skyddsanordningen"
+    ],
+    "fr": "dispositif de retenue"
+  },
+  {
+    "sv": "viltolycka",
+    "forms": [
+      "viltolycka",
+      "viltolyckan"
+    ],
+    "fr": "collision avec un animal sauvage"
+  },
+  {
+    "sv": "halvljus",
+    "forms": [
+      "halvljus"
+    ],
+    "fr": "feux de croisement"
+  },
+  {
+    "sv": "säkerhetsavstånd",
+    "forms": [
+      "säkerhetsavstånd",
+      "säkerhetsavståndet"
+    ],
+    "fr": "distance de sécurité"
+  },
+  {
+    "sv": "taxiförarlegitimation",
+    "forms": [
+      "taxiförarlegitimation",
+      "taxiförarlegitimationen"
+    ],
+    "fr": "carte professionnelle de taxi"
+  },
+  {
+    "sv": "taxitrafik",
+    "forms": [
+      "taxitrafik",
+      "taxitrafiken"
+    ],
+    "fr": "trafic de taxi"
+  },
+  {
+    "sv": "taxameter",
+    "forms": [
+      "taxameter",
+      "taxametern"
+    ],
+    "fr": "taximètre"
+  },
+  {
+    "sv": "plomberad",
+    "forms": [
+      "plomberad",
+      "plomberade"
+    ],
+    "fr": "plombé(e)"
+  },
+  {
+    "sv": "prisinformation",
+    "forms": [
+      "prisinformation",
+      "prisinformationen"
+    ],
+    "fr": "information tarifaire"
+  },
+  {
+    "sv": "taxitrafiktillstånd",
+    "forms": [
+      "taxitrafiktillstånd",
+      "taxitrafiktillståndet"
+    ],
+    "fr": "autorisation d'exploiter un taxi"
+  },
+  {
+    "sv": "tillståndshavaren",
+    "forms": [
+      "tillståndshavaren",
+      "tillståndshavare"
+    ],
+    "fr": "titulaire de l'autorisation"
+  },
+  {
+    "sv": "Transportstyrelsen",
+    "forms": [
+      "Transportstyrelsen"
+    ],
+    "fr": "Direction des transports (autorité)"
+  },
+  {
+    "sv": "dygnsvila",
+    "forms": [
+      "dygnsvila",
+      "dygnsvilan"
+    ],
+    "fr": "repos journalier"
+  },
+  {
+    "sv": "yrkesförare",
+    "forms": [
+      "yrkesförare"
+    ],
+    "fr": "conducteur professionnel"
+  },
+  {
+    "sv": "säkerhetsbälte",
+    "forms": [
+      "säkerhetsbälte",
+      "säkerhetsbältet"
+    ],
+    "fr": "ceinture de sécurité"
+  },
+  {
+    "sv": "europaväg",
+    "forms": [
+      "europaväg",
+      "europavägen"
+    ],
+    "fr": "route européenne"
+  },
+  {
+    "sv": "vägkorsning",
+    "forms": [
+      "vägkorsning",
+      "vägkorsningen"
+    ],
+    "fr": "intersection"
+  },
+  {
+    "sv": "högerregeln",
+    "forms": [
+      "högerregeln",
+      "högerregel"
+    ],
+    "fr": "règle de la priorité à droite"
+  },
+  {
+    "sv": "sommarväglag",
+    "forms": [
+      "sommarväglag"
+    ],
+    "fr": "chaussée d'été"
+  },
+  {
+    "sv": "behörighet",
+    "forms": [
+      "behörighet",
+      "behörigheten"
+    ],
+    "fr": "catégorie de permis"
+  },
+  {
+    "sv": "arbetspassets",
+    "forms": [
+      "arbetspassets",
+      "arbetspass"
+    ],
+    "fr": "vacation / service"
+  },
+  {
+    "sv": "körkort",
+    "forms": [
+      "körkort",
+      "körkortet"
+    ],
+    "fr": "permis de conduire"
+  },
+  {
+    "sv": "vägmärken",
+    "forms": [
+      "vägmärken",
+      "vägmärke"
+    ],
+    "fr": "panneaux de signalisation"
+  },
+  {
+    "sv": "tidbok",
+    "forms": [
+      "tidbok",
+      "tidboken",
+      "tidboksbladet"
+    ],
+    "fr": "livret de temps / carnet de repos"
+  },
+  {
+    "sv": "vilotid",
+    "forms": [
+      "vilotid",
+      "vilotiden",
+      "vilotider"
+    ],
+    "fr": "temps de repos"
+  },
+  {
+    "sv": "jämförpris",
+    "forms": [
+      "jämförpris",
+      "jämförpriset"
+    ],
+    "fr": "prix de comparaison (10 km / 15 min)"
+  },
+  {
+    "sv": "prisuppgift",
+    "forms": [
+      "prisuppgift",
+      "prisuppgiften"
+    ],
+    "fr": "devis / prix maximal contraignant"
+  },
+  {
+    "sv": "startavgift",
+    "forms": [
+      "startavgift",
+      "grundavgift"
+    ],
+    "fr": "prise en charge"
+  },
+  {
+    "sv": "redovisningscentral",
+    "forms": [
+      "redovisningscentral",
+      "redovisningscentralen"
+    ],
+    "fr": "centre de déclaration fiscale taxi"
+  },
+  {
+    "sv": "arbetspass",
+    "forms": [
+      "arbetspass",
+      "körpass"
+    ],
+    "fr": "vacation / service"
+  },
+  {
+    "sv": "tillståndshavare",
+    "forms": [
+      "tillståndshavare",
+      "tillståndshavaren"
+    ],
+    "fr": "titulaire de l'autorisation"
+  },
+  {
+    "sv": "besiktningsorgan",
+    "forms": [
+      "besiktningsorgan"
+    ],
+    "fr": "organisme de contrôle agréé"
+  },
+  {
+    "sv": "ackrediterad",
+    "forms": [
+      "ackrediterad",
+      "ackreditering"
+    ],
+    "fr": "accrédité"
+  },
+  {
+    "sv": "jourtjänst",
+    "forms": [
+      "jourtjänst",
+      "jourtid"
+    ],
+    "fr": "astreinte"
+  },
+  {
+    "sv": "heldragen linje",
+    "forms": [
+      "heldragen linje",
+      "heldragna linjen"
+    ],
+    "fr": "ligne continue"
+  },
+  {
+    "sv": "trottoarkanten",
+    "forms": [
+      "trottoarkant",
+      "trottoarkanten"
+    ],
+    "fr": "bordure de trottoir"
+  },
+  {
+    "sv": "yrkestrafikmärke",
+    "forms": [
+      "yrkestrafikmärke"
+    ],
+    "fr": "vignette trafic professionnel"
+  },
+  {
+    "sv": "särskild utrustning",
+    "forms": [
+      "särskild utrustning för taxifordon"
+    ],
+    "fr": "équipement spécial taxi (sans taximètre classique)"
+  },
+  {
+    "sv": "bindande",
+    "forms": [
+      "bindande prisuppgift"
+    ],
+    "fr": "contraignant"
+  },
+  {
+    "sv": "förnyelse",
+    "forms": [
+      "förnyelse",
+      "förnyas"
+    ],
+    "fr": "renouvellement"
+  },
+  {
+    "sv": "skolskjuts",
+    "forms": [
+      "skolskjuts",
+      "skolskjutsning"
+    ],
+    "fr": "transport scolaire"
+  }
+]

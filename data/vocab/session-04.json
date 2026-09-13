@@ -1,0 +1,11 @@
+{
+  "id": "session-04",
+  "title": "Karta och väg",
+  "words": [
+    { "sv": "europaväg", "forms": ["europaväg", "europavägen"], "fr": "route européenne" },
+    { "sv": "heldragen linje", "forms": ["heldragen linje", "heldragna linjen"], "fr": "ligne continue" },
+    { "sv": "trottoarkanten", "forms": ["trottoarkant", "trottoarkanten"], "fr": "bordure de trottoir" },
+    { "sv": "väjningsplikt", "forms": ["väjningsplikt"], "fr": "obligation de céder le passage" },
+    { "sv": "yrkestrafikmärke", "forms": ["yrkestrafikmärke"], "fr": "vignette trafic professionnel" }
+  ]
+}

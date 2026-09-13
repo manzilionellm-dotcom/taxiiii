@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Stopplikt">
+  <rect width="200" height="200" fill="#f7f2e8"/>
+  <polygon points="100,18 168,42 192,110 168,178 100,182 32,178 8,110 32,42" fill="#c41e3a"/>
+  <polygon points="100,28 160,48 180,110 160,170 100,174 40,170 20,110 40,48" fill="#fff"/>
+  <polygon points="100,38 152,55 168,110 152,162 100,166 48,162 32,110 48,55" fill="#c41e3a"/>
+  <text x="100" y="118" text-anchor="middle" fill="#fff" font-size="36" font-family="Georgia, serif" font-weight="700">STOP</text>
+</svg>
