@@ -37,19 +37,18 @@ export default function HomePage() {
         <p className="max-w-xl text-lg leading-7 text-[#6b6560]">{BRAND.slogan}</p>
         <p className="max-w-xl text-sm text-[#6b6560]">{BRAND.keyMessage}</p>
         <TrustStrip locale={state.profile.locale} />
-        <p className="text-xs leading-5 text-[#8a8276]">{dict.demoNote}</p>
       </header>
 
-      <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
-
-      <div className="grid gap-3 sm:grid-cols-2">
-        <Link href={`/${track}/study`} className="btn-primary sm:col-span-2">
+      <div className="grid gap-3">
+        <Link href={`/${track}/study`} className="btn-primary">
           {dict.startSession}
         </Link>
-        <Link href={`/${track}/exam`} className="btn-secondary sm:col-span-2">
+        <Link href={`/${track}/exam`} className="btn-secondary">
           {dict.startExam}
         </Link>
       </div>
+
+      <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         {state.profile.tracks.map((item) => (
@@ -76,6 +75,8 @@ export default function HomePage() {
           description={dict.chatLead}
         />
       </div>
+
+      <p className="text-xs leading-5 text-[#8a8276]">{dict.demoNote}</p>
     </div>
   );
 }

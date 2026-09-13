@@ -32,7 +32,7 @@ export function QuestionCard({
 
   return (
     <article className="question-paper space-y-5">
-      <header className="flex flex-wrap items-center justify-between gap-2 text-[11px] uppercase tracking-[0.14em] text-[#6b6560]">
+      <header className="space-y-1 text-[11px] uppercase tracking-[0.14em] text-[#6b6560]">
         <span title={question.source ?? question.corpus}>
           {dict.topic[question.topic]}
           {question.corpus === "research"
@@ -42,7 +42,9 @@ export function QuestionCard({
               : ""}
           {question.freq === "high" ? ` · ${dict.freqHigh}` : ""}
         </span>
-        <span className="tabular-nums">{question.id}</span>
+        <span className="block truncate text-right text-[10px] tracking-normal text-[#8a8276]">
+          {question.id}
+        </span>
       </header>
 
       <ClozeText
