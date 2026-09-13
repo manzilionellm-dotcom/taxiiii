@@ -17,26 +17,30 @@ export function ProtectedImage({
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [status, setStatus] = useState<Status>("loading");
+  const [fallbackSrc, setFallbackSrc] = useState<string | null>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) {
-      setStatus("error");
-      return;
-    }
-
     let cancelled = false;
     let revoked: string | null = null;
+    let keepBlob = false;
     setStatus("loading");
+    setFallbackSrc(null);
 
-    const image = new Image();
-    image.crossOrigin = "anonymous";
-    image.onload = () => {
+    const showFallback = (url: string) => {
       if (cancelled) return;
+      keepBlob = true;
+      setFallbackSrc(url);
+      setStatus("ready");
+    };
+
+    const paint = (image: HTMLImageElement) => {
+      const canvas = canvasRef.current;
+      if (!canvas) return false;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return false;
       const width = image.naturalWidth || 640;
       const height = image.naturalHeight || 360;
+      if (!width || !height) return false;
       canvas.width = width;
       canvas.height = height;
       ctx.clearRect(0, 0, width, height);
@@ -49,11 +53,7 @@ export function ProtectedImage({
       ctx.rotate(-0.28);
       ctx.fillText(watermark, 0, 0);
       ctx.restore();
-      setStatus("ready");
-      if (revoked) URL.revokeObjectURL(revoked);
-    };
-    image.onerror = () => {
-      if (!cancelled) setStatus("error");
+      return true;
     };
 
     void fetch(src, { credentials: "same-origin", cache: "no-store" })
@@ -61,6 +61,16 @@ export function ProtectedImage({
       .then((blob) => {
         if (cancelled) return;
         revoked = URL.createObjectURL(blob);
+        const image = new Image();
+        image.onload = () => {
+          if (cancelled) return;
+          if (paint(image)) {
+            setStatus("ready");
+            return;
+          }
+          showFallback(revoked as string);
+        };
+        image.onerror = () => showFallback(revoked as string);
         image.src = revoked;
       })
       .catch(() => {
@@ -69,7 +79,7 @@ export function ProtectedImage({
 
     return () => {
       cancelled = true;
-      if (revoked) URL.revokeObjectURL(revoked);
+      if (revoked && !keepBlob) URL.revokeObjectURL(revoked);
     };
   }, [src, watermark]);
 
@@ -84,10 +94,7 @@ export function ProtectedImage({
   return (
     <div className="relative">
       {status === "loading" ? (
-        <div
-          className="absolute inset-0 animate-pulse rounded-xl bg-[#efe8d8]"
-          aria-hidden
-        />
+        <div className="h-40 animate-pulse rounded-xl bg-[#efe8d8]" aria-hidden />
       ) : null}
       <canvas
         ref={canvasRef}
@@ -95,9 +102,21 @@ export function ProtectedImage({
         aria-label={alt}
         aria-busy={status === "loading"}
         className={`mx-auto max-h-64 w-full object-contain ${
-          status === "ready" ? "opacity-100" : "h-40 opacity-0"
+          fallbackSrc || status !== "ready" ? "hidden" : "block"
         }`}
       />
+      {fallbackSrc ? (
+        <div className="relative">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={fallbackSrc} alt={alt} className="mx-auto max-h-64 w-full object-contain" />
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-x-6 bottom-8 rotate-[-12deg] text-center text-sm font-medium text-[#1f3d2b]/25"
+          >
+            {watermark}
+          </span>
+        </div>
+      ) : null}
     </div>
   );
 }
