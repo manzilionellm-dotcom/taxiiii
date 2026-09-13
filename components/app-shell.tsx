@@ -121,7 +121,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                   key={item.key}
                   href={href}
                   aria-current={active ? "page" : undefined}
-                  className={`flex min-h-12 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 text-[10px] leading-3 transition ${
+                  className={`flex min-h-12 flex-col items-center justify-center gap-0.5 rounded-xl px-0.5 py-1 text-[10px] leading-3 transition sm:text-[11px] ${
                     active
                       ? "font-semibold text-[#1f3d2b]"
                       : "text-[#6b6560] hover:text-[#1f3d2b]"
@@ -138,12 +138,6 @@ export function AppShell({ children }: { children: ReactNode }) {
                 </Link>
               );
             })}
-            <Link
-              href="/owner"
-              className="hidden min-h-12 flex-col items-center justify-center gap-0.5 px-1 py-1 text-[10px] text-[#9a9388] sm:flex"
-            >
-              {trackLabel("owner")}
-            </Link>
           </div>
         </nav>
       ) : null}
