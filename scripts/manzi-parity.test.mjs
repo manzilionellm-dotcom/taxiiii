@@ -143,9 +143,10 @@ const tooFewOptions = skips.filter((s) => /fewer than 2 options/.test(s.why));
 const answerNotAmong = skips.filter((s) => /not among options/.test(s.why));
 
 assert(
-  missingAnswer.length === 80,
-  `rows with no answer key anywhere: expected 80, got ${missingAnswer.length}. ` +
-    "Up = rows lost a key; down = a key was restored (update this number and say where it came from).",
+  missingAnswer.length === 62,
+  `rows with no answer key anywhere: expected 62, got ${missingAnswer.length}. ` +
+    "Up = rows lost a key; down = a key was restored (update this number and say where it came from). " +
+    "The 18 KARTA rows recovered from identical twins are already accounted for here.",
 );
 assert(
   tooFewOptions.length === 15,
@@ -159,6 +160,83 @@ assert(
 assert(
   answerNotAmong[0]?.id === "S_KERHET-1-Q1",
   `the only answer-without-option row should be S_KERHET-1-Q1, got ${answerNotAmong[0]?.id}`,
+);
+
+/* ------------------- 4b. the answer-recovery premise must still hold ------ */
+
+/**
+ * 18 KARTA answers were recovered from a row with an identical stem, identical
+ * options and the identical raster. The premise is that such rows never
+ * disagree on the letter. Re-checked here on every run: if Manzi's bank ever
+ * contains a counterexample, the transfer was unsafe and this fails.
+ */
+const normText = (v) =>
+  String(v || "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").replace(/\s+/g, " ").trim();
+const fullSignature = (r) =>
+  `${normText(r.stem_sv)}##${(r.options || []).map((o) => `${o.letter}:${normText(o.text)}`).join("|")}` +
+  `##${String(r.imageUrl || "").split("/").pop() || ""}`;
+
+const answeredGroups = new Map();
+for (const r of rows) {
+  if (!String(r.answer ?? "").trim()) continue;
+  if ((r.options || []).filter((o) => String(o.text || "").trim()).length < 2) continue;
+  const key = fullSignature(r);
+  if (!answeredGroups.has(key)) answeredGroups.set(key, []);
+  answeredGroups.get(key).push(r);
+}
+let agree = 0;
+const disagree = [];
+for (const [, list] of answeredGroups) {
+  if (list.length < 2) continue;
+  const letters = new Set(list.map((r) => String(r.answer).trim().toUpperCase()));
+  if (letters.size > 1) disagree.push(list.map((r) => `${r.id}=${r.answer}`).join(" "));
+  else agree += 1;
+}
+assert(
+  !disagree.length,
+  `identical question appears with different answers, so twin recovery is unsafe: ${disagree.slice(0, 3).join(" | ")}`,
+);
+assert(
+  agree >= 26,
+  `expected at least 26 corroborating identical-question groups, found ${agree}`,
+);
+
+/** Every recovered answer must still name a real option, and cite its source. */
+const recovered = rows.filter((r) => Array.isArray(r.answerRecoveredFrom));
+assert(
+  recovered.length === 18,
+  `expected 18 rows with recorded answer provenance, got ${recovered.length}`,
+);
+for (const r of recovered) {
+  assert(
+    (r.options || []).some((o) => o.letter === String(r.answer).trim().toUpperCase()),
+    `${r.id}: recovered answer ${r.answer} names no option`,
+  );
+  assert(r.answerRecoveredFrom.length >= 1, `${r.id}: provenance list is empty`);
+  for (const donorId of r.answerRecoveredFrom) {
+    const donor = rows.find((x) => String(x.id) === donorId);
+    assert(donor, `${r.id}: provenance cites missing row ${donorId}`);
+    assert(
+      String(donor.answer).trim().toUpperCase() === String(r.answer).trim().toUpperCase(),
+      `${r.id}: provenance row ${donorId} no longer agrees`,
+    );
+    assert(
+      fullSignature(donor) === fullSignature(r),
+      `${r.id}: provenance row ${donorId} is no longer the identical question`,
+    );
+  }
+}
+
+/**
+ * bkort-classic rows must stay out. They carry an answer letter with an empty
+ * option list, and bkort-classic-5 claims «A» where its verified twin
+ * kkalk-S-088 answers «D» (Väjningsplikt) — the letter refers to a lost option
+ * order, so importing options and keeping it would teach the wrong sign.
+ */
+const bkortClassic = compiled.filter((q) => /^bkort-classic-/.test(String(q.id)));
+assert(
+  !bkortClassic.length,
+  `bkort-classic rows must not enter the bank: ${bkortClassic.map((q) => q.id).join(", ")}`,
 );
 
 /* No compiled question may promise a picture it does not have. */

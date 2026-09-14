@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-14T19:02:37.705Z",
-  "questions": 1901,
+  "generatedAt": "2026-09-14T20:09:15.671Z",
+  "questions": 1919,
   "translations": 927,
   "uniqueBankTokens": 5779,
   "uniqueHits": 3817,
   "uniqueMisses": 1962,
   "uniqueCoveragePct": 66,
-  "occurrenceTotal": 55108,
-  "occurrenceHits": 53045,
+  "occurrenceTotal": 55495,
+  "occurrenceHits": 53420,
   "occurrenceCoveragePct": 96.3,
   "allUniqueBankTokens": 7073,
   "allUniqueCoveragePct": 57,
@@ -18,7 +18,31 @@
       "count": 7
     },
     {
+      "sv": "aspen",
+      "count": 3
+    },
+    {
+      "sv": "campingplats",
+      "count": 3
+    },
+    {
       "sv": "cp",
+      "count": 3
+    },
+    {
+      "sv": "delsjön",
+      "count": 3
+    },
+    {
+      "sv": "landvettersjön",
+      "count": 3
+    },
+    {
+      "sv": "nedsjön",
+      "count": 3
+    },
+    {
+      "sv": "sjön",
       "count": 3
     },
     {
@@ -307,30 +331,6 @@
     },
     {
       "sv": "turas",
-      "count": 2
-    },
-    {
-      "sv": "typiskt",
-      "count": 2
-    },
-    {
-      "sv": "tystnad",
-      "count": 2
-    },
-    {
-      "sv": "tömningscentral",
-      "count": 2
-    },
-    {
-      "sv": "underlåtenhet",
-      "count": 2
-    },
-    {
-      "sv": "underordnad",
-      "count": 2
-    },
-    {
-      "sv": "uppbyggnad",
       "count": 2
     }
   ]

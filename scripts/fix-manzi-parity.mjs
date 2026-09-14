@@ -213,6 +213,82 @@ for (const row of rows) {
   }
 }
 
+/* ------------------------------------------- 2b. recover lost answer cells */
+
+/**
+ * Some rows lost their answer cell in the scrape while the identical question
+ * survived on another exam paper. Recovering the letter from that twin is
+ * reading Manzi's own data, not authoring an answer — but only when the twin
+ * is provably the same question, so all four guards are required:
+ *
+ *   1. identical stem (normalised),
+ *   2. identical option set (normalised, letter by letter),
+ *   3. identical image raster, so it is the same map/photo being read,
+ *   4. every matching twin agrees on the letter.
+ *
+ * Verified on this bank before enabling: among KARTA rows that do carry an
+ * answer, 26 groups share an identical stem+options and 0 disagree on the
+ * letter. `scripts/manzi-parity.test.mjs` re-runs that consistency check, so a
+ * future counterexample fails the build instead of silently transferring.
+ *
+ * Deliberately NOT applied to rows with an empty option list. bkort-classic-5
+ * shows why: it claims answer «A» with no options, while its verified twin
+ * kkalk-S-088 answers «D» (Väjningsplikt). Its letter refers to an option list
+ * that no longer exists, so importing options and keeping the letter would
+ * teach «Huvudled» as the meaning of a give-way sign.
+ */
+const normText = (value) =>
+  String(value || "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").replace(/\s+/g, " ").trim();
+const optionSignature = (row) =>
+  (row.options || []).map((option) => `${option.letter}:${normText(option.text)}`).join("|");
+const rasterOf = (row) => String(row.imageUrl || "").split("/").pop() || "";
+const usableOptions = (row) =>
+  (row.options || []).filter((option) => String(option.text || "").trim());
+
+const donorsBySignature = new Map();
+for (const row of rows) {
+  if (!String(row.answer ?? "").trim()) continue;
+  if (usableOptions(row).length < 2) continue;
+  const signature = `${normText(row.stem_sv)}##${optionSignature(row)}##${rasterOf(row)}`;
+  if (!donorsBySignature.has(signature)) donorsBySignature.set(signature, []);
+  donorsBySignature.get(signature).push(row);
+}
+
+report.answersRecovered = [];
+report.recoveryRefused = [];
+for (const row of rows) {
+  if (String(row.answer ?? "").trim()) continue;
+  if (row.type === "term") continue;
+  // research-* rows compile from data/research-bank.jsonl, not this pass.
+  if (String(row.id).startsWith("research-")) continue;
+  const options = usableOptions(row);
+  if (options.length < 2) {
+    report.recoveryRefused.push(`${row.id}: no option list to anchor a letter to`);
+    continue;
+  }
+  const signature = `${normText(row.stem_sv)}##${optionSignature(row)}##${rasterOf(row)}`;
+  const twins = (donorsBySignature.get(signature) || []).filter((twin) => twin.id !== row.id);
+  if (!twins.length) {
+    report.recoveryRefused.push(`${row.id}: no identical twin carries an answer`);
+    continue;
+  }
+  const letters = new Set(twins.map((twin) => String(twin.answer).trim().toUpperCase()));
+  if (letters.size !== 1) {
+    report.recoveryRefused.push(`${row.id}: twins disagree (${[...letters].join("/")})`);
+    continue;
+  }
+  const letter = [...letters][0];
+  if (!options.some((option) => option.letter === letter)) {
+    report.recoveryRefused.push(`${row.id}: recovered letter ${letter} has no matching option`);
+    continue;
+  }
+  row.answer = letter;
+  row.answerRecoveredFrom = twins.map((twin) => String(twin.id)).sort();
+  report.answersRecovered.push(
+    `${row.id} = ${letter} (from ${twins.length} identical twin${twins.length > 1 ? "s" : ""}: ${row.answerRecoveredFrom.slice(0, 3).join(", ")})`,
+  );
+}
+
 writeJsonl(QUESTIONS_JSONL, rows);
 
 /* ---------------------------------------------------------- 3. media manifest */
@@ -257,9 +333,13 @@ console.log(
   `fix-manzi-parity${CHECK ? " (check)" : ""}: ids renamed ${report.renamedIds}` +
     ` · FR keys moved ${report.renamedFrKeys}` +
     ` · option repairs ${report.optionRepairs.length}` +
+    ` · answers recovered ${(report.answersRecovered || []).length}` +
+    ` · recovery refused ${(report.recoveryRefused || []).length}` +
     ` · manifest keys absorbed ${report.manifestAdded}`,
 );
 for (const line of report.optionRepairs) console.log(`  repaired: ${line}`);
+for (const line of report.answersRecovered || []) console.log(`  recovered: ${line}`);
+for (const line of report.recoveryRefused || []) console.log(`  refused: ${line}`);
 for (const line of report.skipped) console.log(`  no-op: ${line}`);
 for (const line of problems) console.error(`  PROBLEM: ${line}`);
 if (problems.length) process.exitCode = 1;

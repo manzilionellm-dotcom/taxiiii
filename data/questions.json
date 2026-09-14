@@ -3519,6 +3519,64 @@
     "corpus": "manzi"
   },
   {
+    "id": "KARTA-KARTP1-Q1",
+    "topic": "karta",
+    "stem_sv": "När måste du senast lämna Kivik om du skall kunna lämna av sällskapet i uppdrag 1 och ha 10 min till godo?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "kl. 17:45 – 17:50"
+      },
+      {
+        "letter": "B",
+        "text": "kl. 18:00 – 18:05"
+      },
+      {
+        "letter": "C",
+        "text": "kl. 18:15 – 18:20"
+      },
+      {
+        "letter": "D",
+        "text": "kl. 18:20 – 18:25"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/1/exam.php.htm",
+    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/1/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/1/exam.php-filer/799508375.jpg",
+    "source": "T3/Taxi porove/kartap/kartp1/1/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP1-Q10",
+    "topic": "karta",
+    "stem_sv": "Du svänger ut på E4 vid Säby, strax söder om Säby frågar telefonisten hur lång tid du beräknas ha kvar till Mantorps motorstadion i uppdrag 2? Från avfart E4 till motorstadion kan du räkna med att det tar 3 minuter.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ca: 12 min"
+      },
+      {
+        "letter": "B",
+        "text": "Ca: 15 min"
+      },
+      {
+        "letter": "C",
+        "text": "Ca: 18 min"
+      },
+      {
+        "letter": "D",
+        "text": "Ca: 21 min"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/10/exam.php.htm",
+    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/10/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/10/exam.php-filer/172177858.jpg",
+    "source": "T3/Taxi porove/kartap/kartp1/10/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
     "id": "KARTA-KARTP1-Q11",
     "topic": "karta",
     "stem_sv": "Du är på väg med din kund till Norrköpings flygplats på E4 i uppdrag 2. Vid Bäckeby frågar dig kunden hur långt kvar det är till flygplatsen?",
@@ -3635,6 +3693,64 @@
     "corpus": "manzi"
   },
   {
+    "id": "KARTA-KARTP1-Q15",
+    "topic": "karta",
+    "stem_sv": "Hur lång tid beräknas framkörningen ta till Alva kyrka i uppdrag 3?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "20 min"
+      },
+      {
+        "letter": "B",
+        "text": "30 min"
+      },
+      {
+        "letter": "C",
+        "text": "40 min"
+      },
+      {
+        "letter": "D",
+        "text": "50 min"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/15/exam.php.htm",
+    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/15/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/15/exam.php-filer/493614962.jpg",
+    "source": "T3/Taxi porove/kartap/kartp1/15/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP1-Q16",
+    "topic": "karta",
+    "stem_sv": "Vilken är den närmaste vägen från gästhamnen i Burgsvik till Visby Centrum?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hemse, Hejde och Vall"
+      },
+      {
+        "letter": "B",
+        "text": "Hemse, Buttle och Roma kloster"
+      },
+      {
+        "letter": "C",
+        "text": "Hemse, Klintehamn och Tofte"
+      },
+      {
+        "letter": "D",
+        "text": "Sproge, Klintehamn och Tofte"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp1/16/exam.php.htm",
+    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp1/16/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/16/exam.php-filer/210370005.jpg",
+    "source": "T3/Taxi porove/kartap/kartp1/16/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
     "id": "KARTA-KARTP1-Q2",
     "topic": "karta",
     "stem_sv": "Hur lång körning är det i uppdrag 2?",
@@ -3661,6 +3777,35 @@
     "explanation_fr": "Bonne réponse: B. Explication (SV): 1. Leta efter Tosterup i namnregistret. Du hittar Tosterup på sidan 29 D4. 2. Symbolen för slott hittar du på sidan 11. 3. Leta reda på Rv 19. 4. Mät med linjal från Ystad till Tosterup. Det är ca: 5 cm. 5. Enligt skalan längst ner på sidan 29 är 1 cm = 2,5 km. 6. Avståndet är då: 5 x 2,5 = 12,5 km. | Mots-clés FR: index des noms; règle; échelle; distance; page; mesure",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/2/exam.php-filer/878575092.jpg",
     "source": "T3/Taxi porove/kartap/kartp1/2/exam.php.htm | kartp1/s2/questionkey.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP1-Q3",
+    "topic": "karta",
+    "stem_sv": "På väg tillbaka från uppdrag 2 när du passerar Tomelilla ringer växeln i Kivik och undrar när du tidigast kan vara tillbaka i Kivik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Om 10 – 15 min"
+      },
+      {
+        "letter": "B",
+        "text": "Om 15 – 20 min"
+      },
+      {
+        "letter": "C",
+        "text": "Om 25 – 35 min"
+      },
+      {
+        "letter": "D",
+        "text": "Om 35 – 45 min"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C. Källa: T3/Taxi porove/kartap/kartp1/3/exam.php.htm",
+    "explanation_fr": "Bonne réponse : C. Source : T3/Taxi porove/kartap/kartp1/3/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/3/exam.php-filer/452250714.jpg",
+    "source": "T3/Taxi porove/kartap/kartp1/3/exam.php.htm",
     "corpus": "manzi"
   },
   {
@@ -3722,6 +3867,35 @@
     "corpus": "manzi"
   },
   {
+    "id": "KARTA-KARTP1-Q6",
+    "topic": "karta",
+    "stem_sv": "Kl. 9:00 på väg till Björkö är du i trafikkorsning E6 och Rv 155. Vilken färja kommer du tidigast kunna ta?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Den kl. 09:10"
+      },
+      {
+        "letter": "B",
+        "text": "Den kl. 09:40"
+      },
+      {
+        "letter": "C",
+        "text": "Den kl. 10:10"
+      },
+      {
+        "letter": "D",
+        "text": "Den kl. 10:40"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/6/exam.php.htm",
+    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/6/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/6/exam.php-filer/029082753.jpg",
+    "source": "T3/Taxi porove/kartap/kartp1/6/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
     "id": "KARTA-KARTP1-Q7",
     "topic": "karta",
     "stem_sv": "Hur lång tid tar resan till Landvetter flygplats från att du svänger av från E6 till Rv 40?",
@@ -3780,6 +3954,35 @@
     "corpus": "manzi"
   },
   {
+    "id": "KARTA-KARTP1-Q9",
+    "topic": "karta",
+    "stem_sv": "Hur lång är framkörningssträckan i uppdrag 1?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1,0 km"
+      },
+      {
+        "letter": "B",
+        "text": "1,5 km"
+      },
+      {
+        "letter": "C",
+        "text": "2,0 km"
+      },
+      {
+        "letter": "D",
+        "text": "2,5 km"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/9/exam.php.htm",
+    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/9/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/9/exam.php-filer/027718601.jpg",
+    "source": "T3/Taxi porove/kartap/kartp1/9/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
     "id": "KARTA-KARTP2-Q1",
     "topic": "karta",
     "stem_sv": "Hur lång är resan?",
@@ -3835,6 +4038,35 @@
     "explanation_fr": "Bonne réponse: A. Explication (SV): 1. Leta reda på Järnvägsstationen. Du hittar den nära Vaxsjösjön. 2. Mät med linjal från Kristina Nilsson Väg 36 till Järnvägsstationen. 3. Det är ca: 11 cm. 4. Enligt skalan är 1 cm = 150 meter. 5. Sträckan blir: 11 x 150 = 1650 meter = 1,65 km. 6. Rätt svar: A. | Mots-clés FR: règle; échelle; mesure",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp2/10/exam.php-filer/614436256.jpg",
     "source": "T3/Taxi porove/kartap/kartp2/10/exam.php.htm | kartp2/s10/questionkey.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP2-Q11",
+    "topic": "karta",
+    "stem_sv": "Hur lång är körningen i uppdrag 2 ?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "5 km"
+      },
+      {
+        "letter": "B",
+        "text": "6 km"
+      },
+      {
+        "letter": "C",
+        "text": "7 km"
+      },
+      {
+        "letter": "D",
+        "text": "8 km"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp2/11/exam.php.htm",
+    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp2/11/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp2/11/exam.php-filer/861729096.jpg",
+    "source": "T3/Taxi porove/kartap/kartp2/11/exam.php.htm",
     "corpus": "manzi"
   },
   {
@@ -3983,6 +4215,35 @@
     "corpus": "manzi"
   },
   {
+    "id": "KARTA-KARTP2-Q2",
+    "topic": "karta",
+    "stem_sv": "I uppdrag 2 kör du ut på E6 från Halmstad vid Rv 25. Hur lång är resan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "40 – 50 km"
+      },
+      {
+        "letter": "B",
+        "text": "51 – 60 km"
+      },
+      {
+        "letter": "C",
+        "text": "61 – 70 km"
+      },
+      {
+        "letter": "D",
+        "text": "71 – 80 km"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp2/2/exam.php.htm",
+    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp2/2/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp2/2/exam.php-filer/456263792.jpg",
+    "source": "T3/Taxi porove/kartap/kartp2/2/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
     "id": "KARTA-KARTP2-Q3",
     "topic": "karta",
     "stem_sv": "Till vänster om Asige kyrka hittar du två stycken markeringar. Vad står dessa för?",
@@ -4038,6 +4299,35 @@
     "explanation_fr": "Bonne réponse: B. Explication (SV): 1. Slå upp Trönö och Ren i namnregistret. Du hittar Trönö på sidan 118 C4 och Ren på sidan 118 B5. 2. Om du är osäker på symbolen för torn och kyrka slå upp sidan 11. 3. Mät med linjal mellan Trönö och Ren. Det är ca: 10 cm. 4. Längst ner på sidan 119 ser du på skalan att 1 cm = 2,5 km. 5. Sträckan  | Mots-clés FR: index des noms; règle; échelle; page; mesure",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp2/5/exam.php-filer/541123882.jpg",
     "source": "T3/Taxi porove/kartap/kartp2/5/exam.php.htm | kartp2/s5/questionkey.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP2-Q6",
+    "topic": "karta",
+    "stem_sv": "Hur lång är framkörningen i uppdrag 2?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "15 km"
+      },
+      {
+        "letter": "B",
+        "text": "20 km"
+      },
+      {
+        "letter": "C",
+        "text": "25 km"
+      },
+      {
+        "letter": "D",
+        "text": "30 km"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp2/6/exam.php.htm",
+    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp2/6/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp2/6/exam.php-filer/712908674.jpg",
+    "source": "T3/Taxi porove/kartap/kartp2/6/exam.php.htm",
     "corpus": "manzi"
   },
   {
@@ -4154,6 +4444,35 @@
     "explanation_fr": "Bonne réponse: D. Explication (SV): 1. Slå upp Harplinge i namnregistret. 2. Harplinge ligger på sidan 36 C4. 3. Rotorp hittar du bredvid vandrarhemmet i Halmstad på sidan 36. 4. Slå upp tätortskartan för Halmstad på sidan 174. Leta efter bussterminalen. 5. Bussterminalen hittar du på höger sida om floden Nissan. 6. Mät med linjalen p | Mots-clés FR: index des noms; échelle; page; mesure",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp3/1/exam.php-filer/196342268.jpg",
     "source": "T3/Taxi porove/kartap/kartp3/1/exam.php.htm | kartp3/s1/questionkey.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP3-Q10",
+    "topic": "karta",
+    "stem_sv": "Hur lång är körningen i uppdrag 1?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2 km"
+      },
+      {
+        "letter": "B",
+        "text": "3 km"
+      },
+      {
+        "letter": "C",
+        "text": "4 km"
+      },
+      {
+        "letter": "D",
+        "text": "5 km"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp3/10/exam.php.htm",
+    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp3/10/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp3/10/exam.php-filer/614436256.jpg",
+    "source": "T3/Taxi porove/kartap/kartp3/10/exam.php.htm",
     "corpus": "manzi"
   },
   {
@@ -4940,6 +5259,35 @@
     "corpus": "manzi"
   },
   {
+    "id": "KARTA-KARTP4-Q8",
+    "topic": "karta",
+    "stem_sv": "När du lämnat av din kund i uppdrag 3 på Landvetter flygplats får du en ny kund som frågar om du kan köra honom till närmaste campingplats. Vart ligger den?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vid sjön Aspen"
+      },
+      {
+        "letter": "B",
+        "text": "Vid Landvettersjön"
+      },
+      {
+        "letter": "C",
+        "text": "Norr om Stora Delsjön"
+      },
+      {
+        "letter": "D",
+        "text": "Vid Västra Nedsjön"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D. Källa: T3/Taxi porove/kartap/kartp4/8/exam.php.htm",
+    "explanation_fr": "Bonne réponse : D. Source : T3/Taxi porove/kartap/kartp4/8/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp4/8/exam.php-filer/784433889.jpg",
+    "source": "T3/Taxi porove/kartap/kartp4/8/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
     "id": "KARTA-KARTP4-Q9",
     "topic": "karta",
     "stem_sv": "Hur lång är framkörningssträckan i uppdrag 1?",
@@ -5375,6 +5723,35 @@
     "corpus": "manzi"
   },
   {
+    "id": "KARTA-KARTP5-Q8",
+    "topic": "karta",
+    "stem_sv": "När du lämnat av din kund i uppdrag 3 på Landvetter flygplats får du en ny kund som frågar om du kan köra honom till närmaste campingplats. Vart ligger den?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vid sjön Aspen"
+      },
+      {
+        "letter": "B",
+        "text": "Vid Landvettersjön"
+      },
+      {
+        "letter": "C",
+        "text": "Norr om Stora Delsjön"
+      },
+      {
+        "letter": "D",
+        "text": "Vid Västra Nedsjön"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D. Källa: T3/Taxi porove/kartap/kartp5/8/exam.php.htm",
+    "explanation_fr": "Bonne réponse : D. Source : T3/Taxi porove/kartap/kartp5/8/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp5/8/exam.php-filer/784433889.jpg",
+    "source": "T3/Taxi porove/kartap/kartp5/8/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
     "id": "KARTA-KARTP5-Q9",
     "topic": "karta",
     "stem_sv": "Hur lång är framkörningssträckan i uppdrag 1?",
@@ -5430,6 +5807,35 @@
     "explanation_fr": "Bonne réponse: D. Explication (SV): 1. Slå upp Harplinge i namnregistret. 2. Harplinge ligger på sidan 36 C4. 3. Rotorp hittar du bredvid vandrarhemmet i Halmstad på sidan 36. 4. Slå upp tätortskartan för Halmstad på sidan 174. Leta efter bussterminalen. 5. Bussterminalen hittar du på höger sida om floden Nissan. 6. Mät med linjalen p | Mots-clés FR: index des noms; échelle; page; mesure",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp6/1/exam.php-filer/196342268.jpg",
     "source": "T3/Taxi porove/kartap/kartp6/1/exam.php.htm | kartp6/s1/questionkey.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP6-Q10",
+    "topic": "karta",
+    "stem_sv": "Hur lång är körningen i uppdrag 1?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2 km"
+      },
+      {
+        "letter": "B",
+        "text": "3 km"
+      },
+      {
+        "letter": "C",
+        "text": "4 km"
+      },
+      {
+        "letter": "D",
+        "text": "5 km"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp6/10/exam.php.htm",
+    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp6/10/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp6/10/exam.php-filer/614436256.jpg",
+    "source": "T3/Taxi porove/kartap/kartp6/10/exam.php.htm",
     "corpus": "manzi"
   },
   {
@@ -5604,6 +6010,35 @@
     "explanation_fr": "Bonne réponse: B. Explication (SV): 1. Slå upp sidan 29 och leta reda på Simrishamn (sidan 29 F4). 2. Räkna nu ut avståndet mellan Kivik och Ystad. 3. Använd de svarta pilarna mellan Ystad och Simrishamn. Vilket blir: 37 km. 4. Använd nu linjalen och mät mellan Simrishamn och Kivik. 5. Det är ca: 7 cm. Använd skalan längst ner på sida | Mots-clés FR: échelle; distance; page; flèches; mesure",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp6/16/exam.php-filer/732877402.jpg",
     "source": "T3/Taxi porove/kartap/kartp6/16/exam.php.htm | kartp6/s16/questionkey.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP6-Q2",
+    "topic": "karta",
+    "stem_sv": "I uppdrag 2 kör du ut på E6 från Halmstad vid Rv 25. Hur lång är resan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "40 – 50 km"
+      },
+      {
+        "letter": "B",
+        "text": "51 – 60 km"
+      },
+      {
+        "letter": "C",
+        "text": "61 – 70 km"
+      },
+      {
+        "letter": "D",
+        "text": "71 – 80 km"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp6/2/exam.php.htm",
+    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp6/2/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp6/2/exam.php-filer/456263792.jpg",
+    "source": "T3/Taxi porove/kartap/kartp6/2/exam.php.htm",
     "corpus": "manzi"
   },
   {
@@ -5807,6 +6242,35 @@
     "explanation_fr": "Bonne réponse: D. Explication (SV): 1. Slå upp Harplinge i namnregistret. 2. Harplinge ligger på sidan 36 C4. 3. Rotorp hittar du bredvid vandrarhemmet i Halmstad på sidan 36. 4. Slå upp tätortskartan för Halmstad på sidan 174. Leta efter bussterminalen. 5. Bussterminalen hittar du på höger sida om floden Nissan. 6. Mät med linjalen p | Mots-clés FR: index des noms; échelle; page; mesure",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp7/1/exam.php-filer/196342268.jpg",
     "source": "T3/Taxi porove/kartap/kartp7/1/exam.php.htm | kartp7/s1/questionkey.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP7-Q10",
+    "topic": "karta",
+    "stem_sv": "Hur lång är körningen i uppdrag 1?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2 km"
+      },
+      {
+        "letter": "B",
+        "text": "3 km"
+      },
+      {
+        "letter": "C",
+        "text": "4 km"
+      },
+      {
+        "letter": "D",
+        "text": "5 km"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp7/10/exam.php.htm",
+    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp7/10/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp7/10/exam.php-filer/614436256.jpg",
+    "source": "T3/Taxi porove/kartap/kartp7/10/exam.php.htm",
     "corpus": "manzi"
   },
   {
@@ -6274,6 +6738,35 @@
     "corpus": "manzi"
   },
   {
+    "id": "KARTA-KARTP8-Q12",
+    "topic": "karta",
+    "stem_sv": "Vilken tid måste du göra hämtningen i uppdrag 3?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "18:00"
+      },
+      {
+        "letter": "B",
+        "text": "18:30"
+      },
+      {
+        "letter": "C",
+        "text": "19:00"
+      },
+      {
+        "letter": "D",
+        "text": "19:30"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C. Källa: T3/Taxi porove/kartap/kartp8/12/exam.php.htm",
+    "explanation_fr": "Bonne réponse : C. Source : T3/Taxi porove/kartap/kartp8/12/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp8/12/exam.php-filer/414735510.jpg",
+    "source": "T3/Taxi porove/kartap/kartp8/12/exam.php.htm",
+    "corpus": "manzi"
+  },
+  {
     "id": "KARTA-KARTP8-Q13",
     "topic": "karta",
     "stem_sv": "När måste du senast lämna Kivik om du skall kunna lämna av sällskapet i uppdrag 1 och ha 10 min till godo?",
@@ -6532,6 +7025,35 @@
     "explanation_fr": "Bonne réponse: D. Explication (SV): 1. På sidan 119 ser du både Söderhamn och Hudiksvall. 2. Du åker först till Söderhamn och sedan till Hudiksvall. 3. Använd det svarta pilarna. Från Bollnäs till Söderhamn är det: 29 + 9 = 38 km. 4. Från Söderhamn till Hudiksvall är det: 50 km. 5. Total blir sjukresan: 38 + 50 = 88 km. 6. Rätt svar:  | Mots-clés FR: page; flèches",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp8/7/exam.php-filer/085254120.jpg",
     "source": "T3/Taxi porove/kartap/kartp8/7/exam.php.htm | kartp8/s7/questionkey.php.htm",
+    "corpus": "manzi"
+  },
+  {
+    "id": "KARTA-KARTP8-Q8",
+    "topic": "karta",
+    "stem_sv": "På E4:an är det halt väglag vilket medför att hastigheten inte är högre än 40 km/tim. Hur lång är restiden på E4:an?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 tim"
+      },
+      {
+        "letter": "B",
+        "text": "1 tim och 15 min"
+      },
+      {
+        "letter": "C",
+        "text": "1 tim och 30 min"
+      },
+      {
+        "letter": "D",
+        "text": "1 tim och 45 min"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp8/8/exam.php.htm",
+    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp8/8/exam.php.htm",
+    "imageUrl": "/media/T3/Taxi porove/kartap/kartp8/8/exam.php-filer/926290381.jpg",
+    "source": "T3/Taxi porove/kartap/kartp8/8/exam.php.htm",
     "corpus": "manzi"
   },
   {
