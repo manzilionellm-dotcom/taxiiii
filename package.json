@@ -11,6 +11,7 @@
     "import:check": "node scripts/compile-banks.mjs --check",
     "import:research": "node scripts/compile-banks.mjs --research",
     "import:coordinator": "node scripts/compile-banks.mjs --coordinator",
+    "scan:pc": "node scripts/scan-pc-bank.mjs",
     "media:import": "node scripts/import-media.mjs",
     "media:upload": "node scripts/upload-media-blob.mjs",
     "seed": "node scripts/compile-banks.mjs",

@@ -14,8 +14,21 @@ export interface QuestionOption {
   text: string;
 }
 
-export type Corpus = "research" | "manzi" | "owner-seed";
+export const CORPORA = [
+  "research",
+  "manzi",
+  "owner-seed",
+  "owner-official",
+  "owner-import",
+] as const;
+export type Corpus = (typeof CORPORA)[number];
+export const OWNER_CORPORA = ["owner-seed", "owner-official", "owner-import"] as const;
+export type OwnerCorpus = (typeof OWNER_CORPORA)[number];
 export type Freq = "high" | "medium" | "low";
+
+export function isOwnerCorpus(value?: string): value is OwnerCorpus {
+  return OWNER_CORPORA.includes(value as OwnerCorpus);
+}
 
 export interface QuestionRecord {
   id: string;
@@ -116,7 +129,7 @@ export function isOwnerQuestion(question: {
   return (
     question.trackHint === "owner" ||
     question.topic === "agare" ||
-    question.corpus === "owner-seed"
+    isOwnerCorpus(question.corpus)
   );
 }
 

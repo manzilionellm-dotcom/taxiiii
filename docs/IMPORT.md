@@ -76,9 +76,25 @@ Until the full ~193-line file is dropped, the repo ships a **high-frequency seed
 
 **Taxi Företag** items live in the same research JSONL with `topic: agare`, `trackHint: owner`, `corpus: owner-seed` (`scripts/owner-items.mjs`). They compile into `data/questions.json` but `questionsForTrack('owner')` keeps them out of chauffeur B/taxi study order. Do not invent Manzi owner stems.
 
+Leave room for a later **whole-PC dump** (not only the Manzi folder). Scan first, then compile:
+
+```bash
+npm run scan:pc -- /path/to/pc-dump
+npm run import -- --manzi /path/owner-or-manzi.jsonl
+npm run import -- --research /path/owner-or-research.jsonl
+```
+
+Import rules for that dump:
+
+- Keep `explanation_sv` / `explanation_fr` **verbatim** (book-length text included). Also accepted: `explanation`, `förklaring`, `forklaring`, `facit`, `lösning`, `kommentar`, `note_sv` / `note_fr`.
+- Never rewrite, truncate, or replace a non-empty explanation with a generated one-liner.
+- Keep the incoming `corpus` when it is `owner-seed`, `owner-official`, `owner-import`, `research`, or `manzi`. New owner dumps should use `corpus: "owner-import"` so the existing 42 `owner-seed` QCMs stay untouched.
+- Optional delprov hint: `type: "delprov-1"` … `delprov-4` (TSFS 2021:118).
+- Append only. Do not delete or rewrite Manzi or the owner-seed rows.
+
 ## Manzi schema
 
-Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `explanation_fr`, optional `imageUrl` (Manzi path `media/T3/…/exam.php-filer/NNN.jpg` or `/media/pdf-pages/…/page-NN.jpg`), optional `imageCaption`, `source`. `imageUrl` is normalized to `/media/<logical-key>` and must point at a real raster. Decorative SVGs are stripped.
+Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `explanation_fr`, optional `imageUrl` (Manzi path `media/T3/…/exam.php-filer/NNN.jpg` or `/media/pdf-pages/…/page-NN.jpg`), optional `imageCaption`, `source`. `imageUrl` is normalized to `/media/<logical-key>` and must point at a real raster. Decorative SVGs are stripped. Explanations stay word for word.
 
 ## Study order
 

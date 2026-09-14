@@ -9,6 +9,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import {
   isManziShape,
+  isOwnerCorpus,
   isResearchShape,
   normalizeManziRecord,
   normalizeResearchRecord,
@@ -102,7 +103,7 @@ export function compile({ check = false, images = null } = {}) {
     const stem = stemKey(result.question.stem_sv);
     const researchCopy =
       result.question.corpus === "research" ||
-      result.question.corpus === "owner-seed" ||
+      isOwnerCorpus(result.question.corpus) ||
       String(result.question.id).startsWith("research-") ||
       String(result.question.id).startsWith("rs-");
     if (stem && seenStems.has(stem) && researchCopy) {
@@ -110,7 +111,7 @@ export function compile({ check = false, images = null } = {}) {
       return;
     }
     seen.add(result.question.id);
-    if (stem && (result.question.corpus === "research" || result.question.corpus === "owner-seed")) {
+    if (stem && (result.question.corpus === "research" || isOwnerCorpus(result.question.corpus))) {
       seenStems.add(stem);
     }
     questions.push(result.question);
@@ -157,7 +158,10 @@ export function compile({ check = false, images = null } = {}) {
 
   const ordered = sortForStudy(authentic);
   const researchCount = ordered.filter((item) => item.corpus === "research").length;
-  const ownerCount = ordered.filter((item) => item.corpus === "owner-seed").length;
+  const ownerSeedCount = ordered.filter((item) => item.corpus === "owner-seed").length;
+  const ownerOfficialCount = ordered.filter((item) => item.corpus === "owner-official").length;
+  const ownerImportCount = ordered.filter((item) => item.corpus === "owner-import").length;
+  const ownerCount = ownerSeedCount + ownerOfficialCount + ownerImportCount;
   const manziCount = ordered.filter((item) => item.corpus === "manzi").length;
 
   if (researchFile.records.length && researchCount === 0) {
@@ -172,7 +176,7 @@ export function compile({ check = false, images = null } = {}) {
 
   if (check) {
     console.log(
-      `OK compile ${ordered.length} (research ${researchCount} + owner-seed ${ownerCount} + manzi ${manziCount})`,
+      `OK compile ${ordered.length} (research ${researchCount} + owner-seed ${ownerSeedCount} + owner-official ${ownerOfficialCount} + owner-import ${ownerImportCount} + manzi ${manziCount})`,
     );
     return ordered;
   }
@@ -200,6 +204,9 @@ export function compile({ check = false, images = null } = {}) {
           questionsTotal: ordered.length,
           researchCount,
           ownerCount,
+          ownerSeedCount,
+          ownerOfficialCount,
+          ownerImportCount,
           manziCount,
           researchJsonl: researchFile.records.length,
           manziJsonl: manziFile.records.length,
@@ -250,7 +257,7 @@ export function compile({ check = false, images = null } = {}) {
 
   const lexicon = buildLexicon({ silent: true });
   console.log(
-    `Compiled ${ordered.length} questions → data/questions.json (research ${researchCount} first, owner-seed ${ownerCount}, manzi ${manziCount}). Vocab merged ${vocab.length}. YouTube extras ${extras.length}. Gloss ${lexicon.uniqueHits}/${lexicon.uniqueBankTokens} (${lexicon.uniqueCoveragePct}%).`,
+    `Compiled ${ordered.length} questions → data/questions.json (research ${researchCount} first, owner-seed ${ownerSeedCount}, owner-official ${ownerOfficialCount}, owner-import ${ownerImportCount}, manzi ${manziCount}). Vocab merged ${vocab.length}. YouTube extras ${extras.length}. Gloss ${lexicon.uniqueHits}/${lexicon.uniqueBankTokens} (${lexicon.uniqueCoveragePct}%).`,
   );
   console.log("Research was not dropped. Swedish research `sv` / Manzi stems copied verbatim.");
   return ordered;

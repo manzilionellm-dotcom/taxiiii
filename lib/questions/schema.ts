@@ -19,7 +19,7 @@ export const questionSchema = z
     imageUrl: z.string().optional(),
     imageCaption: z.string().optional(),
     source: z.string().optional(),
-    corpus: z.enum(["research", "manzi", "owner-seed"]).optional(),
+    corpus: z.enum(["research", "manzi", "owner-seed", "owner-official", "owner-import"]).optional(),
     freq: z.enum(["high", "medium", "low"]).optional(),
     trap: z.string().optional(),
     type: z.string().optional(),

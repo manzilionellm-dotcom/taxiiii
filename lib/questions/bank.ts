@@ -41,7 +41,10 @@ export function getFrench(question: QuestionRecord): QuestionTranslation {
   return (
     frMap[question.id] ?? {
       stem:
-        question.corpus === "research" || question.corpus === "owner-seed"
+        question.corpus === "research" ||
+        question.corpus === "owner-seed" ||
+        question.corpus === "owner-official" ||
+        question.corpus === "owner-import"
           ? question.explanation_fr
           : "Traduction française à ajouter dans data/translations.fr.json — le texte suédois ci-dessus est la source.",
     }

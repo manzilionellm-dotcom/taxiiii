@@ -41,6 +41,8 @@ npm run import -- --manzi /path/manzi.jsonl
 npm run import -- --research /path/research-bank.jsonl --images /path/media
 npm run import -- --coordinator
 # /workspace/taxiprov/manzi/questions-merged.jsonl + images/ (1668 + 2877)
+npm run scan:pc -- /path/to/pc-dump
+# whole-machine dump: report banks + whether explanations are present (never strips)
 npm run test:media
 npm run dev
 npm run build
