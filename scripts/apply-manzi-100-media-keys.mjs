@@ -17,8 +17,12 @@ if (existsSync(manifestPath)) {
   for (const name of readdirSync(dataDir).filter((n) => /^media-manifest-pdf-keys\.part\d+\.json$/.test(n)).sort()) {
     const spec = JSON.parse(readFileSync(join(dataDir, name), "utf8"));
     for (const key of spec.keys || []) {
-      if (!mm.files[key]) added++;
-      mm.files[key] = { ...(mm.files[key] || {}), size: 0, confirmed: true };
+      if (!mm.files[key]) {
+        added++;
+        // No invented `size`. mediaKeyIsPresent treats size>0 as proof of bytes;
+        // confirmed + pdf-pages-on-blob.json is the honest presence signal (#23).
+        mm.files[key] = { confirmed: true };
+      }
     }
   }
   if (added) {

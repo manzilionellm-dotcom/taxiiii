@@ -143,9 +143,10 @@ const tooFewOptions = skips.filter((s) => /fewer than 2 options/.test(s.why));
 const answerNotAmong = skips.filter((s) => /not among options/.test(s.why));
 
 assert(
-  missingAnswer.length === 62,
-  `rows with no answer key anywhere: expected 62, got ${missingAnswer.length}. ` +
+  missingAnswer.length === 61,
+  `rows with no answer key anywhere: expected 61, got ${missingAnswer.length}. ` +
     "Up = rows lost a key; down = a key was restored (update this number and say where it came from). " +
+    "LAGSTIFNING-4-Q6 is no longer in this bucket (PDF option F / SWEDAC was glued onto E). " +
     "The 18 KARTA rows recovered from identical twins are already accounted for here.",
 );
 assert(

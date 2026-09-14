@@ -13,4 +13,4 @@ Play Console wants the **AAB**, not this folder’s old debug APK.
 
 Rebuild: `npm run aab`. Signing note (gitignored): `secrets/PLAY-SIGNING.note.md`. Steps: [docs/PLAY-CONSOLE.md](../docs/PLAY-CONSOLE.md).
 
-The debug APK `KorkortGO-by-MZ-debug.apk` is only for an old sideload test (debug key). Uninstall it before installing the release-signed APK or the Play build.
+The debug APK `KorkortGO-by-MZ-debug.apk` (rebuilt 2026-09-14 after #23) is the **sideload test** build. It is debug-signed (`se.mz.korkortgo` 1.0.0), loads **https://taxiiii.vercel.app**, and keeps native `FLAG_SECURE`. Uninstall any older debug/release build of the same id before installing. Not for Play Console — Play wants the AAB.
