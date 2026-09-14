@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-14T08:04:21.613Z",
+  "generatedAt": "2026-09-14T08:52:08.670Z",
   "questions": 1900,
   "translations": 383,
   "uniqueBankTokens": 5780,
-  "uniqueHits": 3799,
-  "uniqueMisses": 1981,
-  "uniqueCoveragePct": 65.7,
+  "uniqueHits": 3817,
+  "uniqueMisses": 1963,
+  "uniqueCoveragePct": 66,
   "occurrenceTotal": 55148,
-  "occurrenceHits": 53063,
-  "occurrenceCoveragePct": 96.2,
+  "occurrenceHits": 53084,
+  "occurrenceCoveragePct": 96.3,
   "allUniqueBankTokens": 7074,
-  "allUniqueCoveragePct": 56.7,
-  "lexiconEntries": 4275,
+  "allUniqueCoveragePct": 57,
+  "lexiconEntries": 4299,
   "missSample": [
     {
       "sv": "kap",
@@ -27,10 +27,6 @@
     },
     {
       "sv": "bc",
-      "count": 2
-    },
-    {
-      "sv": "busshållplatsskylt",
       "count": 2
     },
     {
@@ -87,10 +83,6 @@
     },
     {
       "sv": "godkänner",
-      "count": 2
-    },
-    {
-      "sv": "grovsopanläggning",
       "count": 2
     },
     {
@@ -331,6 +323,14 @@
     },
     {
       "sv": "underlåtenhet",
+      "count": 2
+    },
+    {
+      "sv": "underordnad",
+      "count": 2
+    },
+    {
+      "sv": "uppbyggnad",
       "count": 2
     }
   ]

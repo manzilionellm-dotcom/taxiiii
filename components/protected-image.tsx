@@ -13,15 +13,25 @@ export function ProtectedImage({
   alt,
   watermark,
   unavailableLabel,
+  omitOnError = false,
+  onError,
+  onReady,
 }: {
   src: string;
   alt: string;
   watermark: string;
   unavailableLabel: string;
+  omitOnError?: boolean;
+  onError?: () => void;
+  onReady?: () => void;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [status, setStatus] = useState<Status>("loading");
   const [svgMarkup, setSvgMarkup] = useState<string | null>(null);
+  const onErrorRef = useRef(onError);
+  const onReadyRef = useRef(onReady);
+  onErrorRef.current = onError;
+  onReadyRef.current = onReady;
 
   useEffect(() => {
     let cancelled = false;
@@ -40,9 +50,13 @@ export function ProtectedImage({
           if (cancelled) return;
           setSvgMarkup(text);
           setStatus("ready");
+          onReadyRef.current?.();
         })
         .catch(() => {
-          if (!cancelled) setStatus("error");
+          if (!cancelled) {
+            setStatus("error");
+            onErrorRef.current?.();
+          }
         });
       return () => {
         cancelled = true;
@@ -53,6 +67,7 @@ export function ProtectedImage({
     const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) {
       setStatus("error");
+      onErrorRef.current?.();
       return;
     }
 
@@ -75,9 +90,13 @@ export function ProtectedImage({
       ctx.fillText(watermark, 0, 0);
       ctx.restore();
       setStatus("ready");
+      onReadyRef.current?.();
     };
     image.onerror = () => {
-      if (!cancelled) setStatus("error");
+      if (!cancelled) {
+        setStatus("error");
+        onErrorRef.current?.();
+      }
     };
 
     void fetch(src, { credentials: "same-origin", cache: "no-store" })
@@ -88,7 +107,10 @@ export function ProtectedImage({
         image.src = revoked;
       })
       .catch(() => {
-        if (!cancelled) setStatus("error");
+        if (!cancelled) {
+          setStatus("error");
+          onErrorRef.current?.();
+        }
       });
 
     return () => {
@@ -98,6 +120,7 @@ export function ProtectedImage({
   }, [src, watermark]);
 
   if (status === "error") {
+    if (omitOnError) return null;
     return (
       <div className="flex min-h-24 items-center justify-center px-4 py-6 text-center text-sm text-[#6b6560]">
         {unavailableLabel}

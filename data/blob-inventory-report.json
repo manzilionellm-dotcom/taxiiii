@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-09-14T08:52:08.703Z",
+  "tokenPresent": false,
+  "confirmedPdfPages": 93,
+  "manifestPdfPagePathnames": 644,
+  "manifestPdfPagesWithSize": 0,
+  "listedPdfPages": 0,
+  "listedBytes": 0,
+  "wroteConfirmed": false,
+  "blocker": "BLOB_READ_WRITE_TOKEN is missing in this environment. Private Blob list/get cannot run, so exam PDF pages cannot be opened (signed /api/media URLs 404). Set the token on Vercel project taxiiii (Production + Preview) and re-run `npm run media:inventory-pdf`. Do not invent rasters. Confirmed inventory stays the original 93 «på bilden» keys in data/pdf-pages-on-blob.json."
+}

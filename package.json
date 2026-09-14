@@ -16,6 +16,7 @@
     "media:import": "node scripts/import-media.mjs",
     "media:link-pdf-pages": "node scripts/link-pdf-pages.mjs",
     "media:upload": "node scripts/upload-media-blob.mjs",
+    "media:inventory-pdf": "node scripts/inventory-pdf-blob.mjs",
     "seed": "node scripts/compile-banks.mjs",
     "check:corpus": "node scripts/self-check.mjs",
     "lexicon": "node scripts/build-lexicon.mjs",

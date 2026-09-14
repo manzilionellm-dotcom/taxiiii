@@ -47,12 +47,19 @@ npm run media:link-pdf-pages
 npm run import
 ```
 
-If a linked `pdf-pages/{BOOK}-{n}/page-{qq}.jpg` is not on Blob yet, extract that page from the matching PDF on the coordinator (`pdftoppm -jpeg -f N -l N LAGSTIFNING-n.pdf …`) and `npm run media:upload`. This Cloud Agent has no PDFs and no `BLOB_READ_WRITE_TOKEN`.
+If a linked `pdf-pages/{BOOK}-{n}/page-{qq}.jpg` is not **actually on Blob**, compile + `/api/media` omit it (no gray « Bilden kunde inte visas » / « Examenssida » box). Extract missing pages on the coordinator (`pdftoppm -jpeg -f N -l N LAGSTIFNING-n.pdf …`) and `npm run media:upload`. Then:
+
+```bash
+BLOB_READ_WRITE_TOKEN=vercel_blob_… npm run media:inventory-pdf
+npm run import
+```
+
+That lists real `media/pdf-pages/` objects and rewrites `data/pdf-pages-on-blob.json` **only** for blobs with size > 0. This Cloud Agent has no PDFs. **Without `BLOB_READ_WRITE_TOKEN` the inventory cannot run and `/api/media` cannot `get()` private blobs** — that is a production blocker (see [DEPLOY.md](DEPLOY.md)). Do not invent rasters or SVGs.
 
 ## Upload to Vercel Blob (required for production)
 
-1. In the Vercel project **taxiiii**, Storage → Blob store `store_VmgBARxpqkgZrT73`. Manifest lists **2637** keys (1993 T3/… + 639 `pdf-pages/` pathnames). The original **93** «på bilden» JPEGs are confirmed on Blob; remaining PDF pages use the same pathname rule so production can `get()` them when the coordinator drop / `pdftoppm` upload is present.
-2. Set `BLOB_READ_WRITE_TOKEN` on Production + Preview (Settings → Environment Variables). Locally: `vercel env pull` or paste the token.
+1. In the Vercel project **taxiiii**, Storage → Blob store `store_VmgBARxpqkgZrT73`. Manifest lists **2637** keys (1993 T3/… + ~644 `pdf-pages/` pathnames). Only keys with `size` **or** listed in `data/pdf-pages-on-blob.json` (the original **93** «på bilden» JPEGs, until a token-backed inventory expands it) are treated as present.
+2. **Blocker:** set `BLOB_READ_WRITE_TOKEN` on Production + Preview (Settings → Environment Variables). If it is missing, exam PDF pages cannot open — signed URLs 404. Locally: `vercel env pull` or paste the token, then `npm run media:inventory-pdf`.
 3. From the machine that has the 389 MB tree **after** `npm run import -- --coordinator`:
 
 ```bash

@@ -230,6 +230,20 @@ if (confirmedPdf.has(q19Key)) {
   assert(!sak7q19.imageUrl, "Q19 must not show a phantom page-19 that is not on Blob");
 }
 
+const flowerQ = compiled.find((item) => item.id === "LAGSTIFNING-7-Q9");
+assert(flowerQ, "LAGSTIFNING-7-Q9 (bukett / allergi) missing");
+assert(
+  flowerQ.stem_sv.includes("stor blombukett") &&
+    flowerQ.options.some((option) => option.text.includes("bagageutrymmet på grund av risk för allergi")),
+  "flower/allergy Manzi Swedish stays verbatim",
+);
+const flowerKey = "pdf-pages/LAGSTIFNING-7/page-09.jpg";
+if (confirmedPdf.has(flowerKey)) {
+  assert(flowerQ.imageUrl === `/media/${flowerKey}`, "flower Q9 exam page opens when Blob has page-09");
+} else {
+  assert(!flowerQ.imageUrl, "flower Q9 must omit phantom Examenssida — page-09 is not in the confirmed Blob inventory");
+}
+
 const translations = JSON.parse(readFileSync(new URL("../data/translations.fr.json", import.meta.url), "utf8"));
 assert(translations["S_KERHET-7-Q19"]?.stem, "Q19 French stem missing");
 assert(!looksPlaceholderFrench(translations["S_KERHET-7-Q19"].stem), "Q19 FR must not be a placeholder");
