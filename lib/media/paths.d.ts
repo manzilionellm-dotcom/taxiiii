@@ -30,6 +30,23 @@ export function parsePdfPageId(id?: string | null): {
 export function pdfPageImageUrlFromId(id?: string | null): string | null;
 export function applyPdfPageImageUrl<T extends { id?: string; imageUrl?: string }>(question: T): T;
 export function blobRefForManifest(entry?: { url?: string | null; pathname?: string | null } | null): string | null;
+export function mediaKeyIsPresent(
+  logicalKey?: string | null,
+  entry?: { size?: number; confirmed?: boolean } | null,
+  media?: {
+    confirmedKeys?: Set<string> | string[];
+    hasLocal?: (key: string) => boolean;
+    files?: Record<string, { size?: number; confirmed?: boolean }>;
+  },
+): boolean;
+export function dropMissingImageUrl<T extends { imageUrl?: string }>(
+  question: T,
+  files?: Record<string, { size?: number; confirmed?: boolean }>,
+  media?: {
+    confirmedKeys?: Set<string> | string[];
+    hasLocal?: (key: string) => boolean;
+  },
+): T;
 export function contentTypeFor(name: string): string;
 export function sanitizeCaption(text?: string | null): string;
 export function candidateSourceRels(logicalKey: string): string[];
@@ -48,6 +65,11 @@ export function stripFakeExamArt<T extends { imageUrl?: string; imageCaption?: s
 ): T;
 export function attachAuthenticMedia<T extends { id: string; stem_sv?: string; imageUrl?: string; imageCaption?: string; corpus?: string }>(
   questions: T[],
+  media?: {
+    files?: Record<string, { size?: number; confirmed?: boolean }>;
+    confirmedKeys?: Set<string> | string[];
+    hasLocal?: (key: string) => boolean;
+  } | null,
 ): T[];
 export function isPdfPageImage(url?: string | null): boolean;
 export function questionNeedsExamFigure(question?: {

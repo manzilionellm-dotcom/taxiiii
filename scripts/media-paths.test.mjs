@@ -6,9 +6,11 @@ import {
   GUL_LINJE_ID,
   attachAuthenticMedia,
   blobRefForManifest,
+  dropMissingImageUrl,
   hasAuthenticImageUrl,
   isFakeExamSvg,
   isSafeMediaKey,
+  mediaKeyIsPresent,
   parsePdfPageId,
   pdfPageImageUrlFromId,
   sanitizeCaption,
@@ -61,9 +63,8 @@ assert(
   blobRefForManifest({
     pathname: "media/pdf-pages/S_KERHET-2/page-11.jpg",
     url: "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-2/page-11.jpg",
-  }) ===
-    "https://vmgbarxpqkgzrt73.private.blob.vercel-storage.com/media/pdf-pages/S_KERHET-2/page-11.jpg",
-  "url wins when both are present",
+  }) === "media/pdf-pages/S_KERHET-2/page-11.jpg",
+  "pathname is preferred over url",
 );
 assert(!blobRefForManifest({}), "empty manifest entry has no blob ref");
 
@@ -92,6 +93,33 @@ assert(pdfAttached[1].imageUrl === "/media/pdf-pages/S_KERHET-7/page-19.jpg", "c
 assert(!pdfAttached[2].imageUrl, "Q2009 not attached");
 assert(!pdfAttached[3].imageUrl, "kkalk not attached");
 assert(pdfAttached[4].imageUrl === "/media/T3/karta/exam.php-filer/1.jpg", "existing HTM karta url kept");
+
+const confirmed = new Set(["pdf-pages/LAGSTIFNING-1/page-01.jpg"]);
+assert(
+  mediaKeyIsPresent("pdf-pages/LAGSTIFNING-1/page-01.jpg", {}, { confirmedKeys: confirmed }),
+  "original 93 pdf-pages are present",
+);
+assert(
+  !mediaKeyIsPresent("pdf-pages/LAGSTIFNING-1/page-04.jpg", { contentType: "image/jpeg" }, { confirmedKeys: confirmed }),
+  "phantom page-04 is not present",
+);
+const dropped = attachAuthenticMedia(
+  [
+    { id: "LAGSTIFNING-1-Q1", stem_sv: "på bilden" },
+    { id: "LAGSTIFNING-1-Q4", stem_sv: "dygnsvila kl 08:00" },
+  ],
+  { confirmedKeys: confirmed, files: {} },
+);
+assert(dropped[0].imageUrl === "/media/pdf-pages/LAGSTIFNING-1/page-01.jpg", "confirmed PDF page kept");
+assert(!dropped[1].imageUrl, "unuploaded PDF page imageUrl cleared");
+assert(
+  !dropMissingImageUrl(
+    { imageUrl: "/media/pdf-pages/LAGSTIFNING-1/page-04.jpg" },
+    {},
+    { confirmedKeys: confirmed },
+  ).imageUrl,
+  "dropMissingImageUrl strips phantom url",
+);
 
 assert(sanitizeCaption("Gul heldragen linje · trottoarkant") === "Gul heldragen linje trottoarkant", "middle-dot caption");
 assert(sanitizeCaption("Gul heldragen linje ♦ trottoarkant") === "Gul heldragen linje trottoarkant", "diamond caption");

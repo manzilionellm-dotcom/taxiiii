@@ -44,6 +44,11 @@ assert(taxameter && /taxim/i.test(taxameter.fr), `taxameter FR, got ${taxameter?
 const dygn = lookup("dygnsvila", lexicon, hard);
 assert(dygn && /repos/i.test(dygn.fr), `dygnsvila FR, got ${dygn?.fr}`);
 
+const igensatt = lookup("igensatt", lexicon, hard);
+assert(igensatt && /encrass|bouch/i.test(igensatt.fr), `igensatt FR, got ${igensatt?.fr}`);
+const luftfilter = lookup("luftfilter", lexicon, hard);
+assert(luftfilter && /filtre/i.test(luftfilter.fr), `luftfilter FR, got ${luftfilter?.fr}`);
+
 const och = lookup("och", lexicon, hard);
 assert(och && och.fr === "et", `och → et, got ${och?.fr}`);
 

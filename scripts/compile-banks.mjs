@@ -23,11 +23,33 @@ import {
   COORDINATOR_MANZI_JSONL,
   attachAuthenticMedia,
 } from "../lib/media/paths.mjs";
+import { looksUnusableFrench } from "../lib/questions/french.mjs";
 import { importMediaTree } from "./import-media.mjs";
 import { buildLexicon } from "./build-lexicon.mjs";
 import { ingestLawWatch } from "./ingest-law-watch.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+
+function loadMediaPresence() {
+  let files = {};
+  try {
+    files = JSON.parse(readFileSync(join(root, "data/media-manifest.json"), "utf8")).files || {};
+  } catch {
+    files = {};
+  }
+  let confirmedKeys = new Set();
+  try {
+    const keys = JSON.parse(readFileSync(join(root, "data/pdf-pages-on-blob.json"), "utf8"));
+    confirmedKeys = new Set(Array.isArray(keys) ? keys : []);
+  } catch {
+    confirmedKeys = new Set();
+  }
+  return {
+    files,
+    confirmedKeys,
+    hasLocal: (key) => existsSync(join(root, "content/media", key)),
+  };
+}
 
 function fail(message, issues = []) {
   console.error(`compile-banks: ${message}`);
@@ -82,7 +104,10 @@ function mergeTranslations(researchTranslations) {
   let current = {};
   if (existsSync(dest)) current = JSON.parse(readFileSync(dest, "utf8"));
   for (const [id, value] of Object.entries(researchTranslations)) {
-    if (!current[id]) current[id] = value;
+    if (current[id]) continue;
+    const stem = value?.stem;
+    if (typeof stem === "string" && looksUnusableFrench(stem)) continue;
+    current[id] = value;
   }
   writeFileSync(dest, `${JSON.stringify(current, null, 2)}\n`);
 }
@@ -187,10 +212,10 @@ export function compile({ check = false, images = null } = {}) {
     if (warnings.length > 12) console.warn(`  … ${warnings.length - 12} more`);
   }
 
-  let authentic = attachAuthenticMedia(questions);
+  let authentic = attachAuthenticMedia(questions, loadMediaPresence());
   if (images) {
     const imported = importMediaTree({ imagesDir: images, questions: authentic });
-    authentic = attachAuthenticMedia(imported.questions);
+    authentic = attachAuthenticMedia(imported.questions, loadMediaPresence());
     console.log(
       `media: ${imported.report.rastersCopied} rasters copied, ${imported.report.questionsLinkedToFile} Q linked, ${imported.report.questionsMissingFile} missing, gul-linje ${imported.report.gulLinje || "no image"}`,
     );

@@ -47,14 +47,16 @@ type GlossaryApi = {
 
 const GlossaryContext = createContext<GlossaryApi | null>(null);
 
-function placeChip(rect: DOMRect) {
+function placeChip(rect: DOMRect, preferAbove = false) {
   const width = Math.min(280, Math.max(188, window.innerWidth - 32));
   const left = Math.min(
     Math.max(16, rect.left + rect.width / 2 - width / 2),
     window.innerWidth - width - 16,
   );
   const spaceBelow = window.innerHeight - rect.bottom;
-  const above = spaceBelow < 132 && rect.top > 140;
+  const above = preferAbove
+    ? rect.top > 132
+    : spaceBelow < 132 && rect.top > 140;
   const top = above ? rect.top - 14 : rect.bottom + 14;
   return { top, left, width, above };
 }
@@ -80,7 +82,8 @@ export function GlossaryProvider({
       if (!shouldOfferGloss(token) || !anchor) return;
       const hit: GlossHit | null = lookupGloss(token);
       const rect = anchor.getBoundingClientRect();
-      const pos = placeChip(rect);
+      const preferAbove = Boolean(anchor.closest(".question-sv, .cloze-box"));
+      const pos = placeChip(rect, preferAbove);
       const next: OpenGloss = {
         id: `${token}-${Math.round(rect.left)}-${Math.round(rect.top)}`,
         surface: token,

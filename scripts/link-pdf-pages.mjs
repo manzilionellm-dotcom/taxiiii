@@ -8,7 +8,7 @@
  * Does not invent kkalk-T-* links. Does not rewrite stems.
  */
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { BLOB_STORE_HOST, parsePdfPageId } from "../lib/media/paths.mjs";
@@ -82,6 +82,8 @@ export function linkPdfPages({
   let manifestAdded = 0;
   for (const key of [...neededKeys].sort()) {
     if (manifest.files[key]) continue;
+    const local = join(root, "content/media", key);
+    if (!existsSync(local)) continue;
     manifest.files[key] = {
       pathname: `media/${key}`,
       contentType: "image/jpeg",
