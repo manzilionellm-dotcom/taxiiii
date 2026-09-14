@@ -1,7 +1,8 @@
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { createRequire } from "node:module";
 import {
   parseJsonl,
+  briefFacitFr,
   isOwnerCorpus,
   isResearchShape,
   looksFrenchExamLeak,
@@ -71,7 +72,7 @@ const ownerImportCount = compiled.filter((item) => item.corpus === "owner-import
 const manziCount = compiled.filter((item) => item.corpus === "manzi").length;
 assert(researchCompilable.length >= 20, "too few compilable research QCM");
 assert(
-  researchCount + ownerCount + ownerOfficialCount + ownerImportCount === researchCompilable.length,
+  researchCount + ownerCount + ownerOfficialCount === researchCompilable.length,
   "compiled dropped research or owner-track items",
 );
 assert(manziCompilable.length >= 10, "too few compilable Manzi QCM");
@@ -81,6 +82,7 @@ assert(
   "compiled length != research + owner corpora + manzi",
 );
 assert(ownerCount >= 15, `owner-seed too small: ${ownerCount}`);
+assert(ownerCount === 42, `owner-seed must stay 42 untouched, got ${ownerCount}`);
 assert(ownerOfficialCount >= 100, `owner-official too small: ${ownerOfficialCount}`);
 assert(
   compiled
@@ -93,6 +95,12 @@ assert(
     .filter((item) => item.corpus === "owner-official")
     .every((item) => item.source && /^delprov-[1-4]$/.test(item.type || "")),
   "owner-official must cite source and delprov-1..4",
+);
+assert(
+  compiled
+    .filter((item) => item.corpus === "owner-import")
+    .every((item) => item.topic === "agare" && item.trackHint === "owner"),
+  "owner-import must be tagged topic=agare trackHint=owner",
 );
 assert(
   compiled
@@ -139,6 +147,10 @@ assert(
 assert(
   check.filter((item) => item.corpus === "owner-official").length === ownerOfficialCount,
   "check compile dropped owner-official",
+);
+assert(
+  check.filter((item) => item.corpus === "owner-import").length === ownerImportCount,
+  "check compile dropped owner-import",
 );
 
 const readySv = "Bravo, du är redo att göra provet.";
@@ -269,6 +281,83 @@ assert(imported.question.corpus === "owner-import", "PC dump corpus must stay ow
 assert(imported.question.explanation_sv === bookSv, "must keep full SV explanation verbatim");
 assert(imported.question.explanation_fr === bookFr, "must keep full FR explanation verbatim");
 assert(imported.question.type === "delprov-1", "delprov type hint must pass through");
+
+const textSvImport = normalizeManziRecord(
+  {
+    id: "pc-owner-text-sv",
+    topic: "agare",
+    track: "owner",
+    corpus: "owner-import",
+    stem_sv: "Vilket svar är rätt i denna importrad?",
+    options: [
+      { letter: "A", text_sv: "Transportstyrelsen" },
+      { letter: "B", text_sv: "Kommunen" },
+    ],
+    answer: "A",
+    explanation_sv: "Rätt svar: Transportstyrelsen",
+    explanation_fr: null,
+    type: "delprov-2",
+    source: "Manzi Taxi Ägare / Ekonomi-1.exe",
+    freq: "high",
+  },
+  0,
+);
+assert(textSvImport.question, "text_sv options must compile");
+assert(textSvImport.question.options[0].text === "Transportstyrelsen", "text_sv must map to text");
+assert(textSvImport.question.trackHint === "owner", "track=owner must become trackHint");
+assert(
+  textSvImport.question.explanation_fr === "Bonne réponse : Transportstyrelsen",
+  "missing FR must be a brief facit translation, not invented law",
+);
+assert(
+  briefFacitFr("Rätt svar: A", "A", "src") === "Bonne réponse : A",
+  "facit FR should translate the facit line only",
+);
+assert(
+  !compiled.some((item) => item.id === "pc-owner-text-sv"),
+  "text_sv fixture must not leak into the compiled bank",
+);
+
+const importDirUrl = new URL("../data/imports/", import.meta.url);
+if (existsSync(importDirUrl)) {
+  const importFiles = readdirSync(importDirUrl)
+    .filter((name) => name.endsWith(".jsonl") || name.endsWith(".ndjson"))
+    .sort();
+  const seenImportIds = new Set();
+  let compilableImports = 0;
+  for (const name of importFiles) {
+    const parsed = parseJsonl(readFileSync(new URL(name, importDirUrl), "utf8"));
+    parsed.records.forEach((record, index) => {
+      const id = String(record.id || "");
+      if (!id || seenImportIds.has(id)) return;
+      seenImportIds.add(id);
+      const trackHint =
+        record.trackHint ||
+        (record.track === "owner" || record.track === "taxi" || record.track === "b"
+          ? record.track
+          : undefined);
+      const shaped = {
+        ...record,
+        ...(trackHint ? { trackHint } : {}),
+        corpus: record.corpus || "owner-import",
+      };
+      const result = isResearchShape(shaped)
+        ? normalizeResearchRecord(shaped, index)
+        : normalizeManziRecord(shaped, index);
+      if (result.question) compilableImports += 1;
+    });
+  }
+  if (importFiles.length) {
+    assert(
+      seenImportIds.size >= 301,
+      `owner-import JSONL unique ids ${seenImportIds.size} (expected ≥301)`,
+    );
+    assert(
+      ownerImportCount === compilableImports,
+      `owner-import compiled ${ownerImportCount} != compilable dump rows ${compilableImports} (incomplete keys skipped, answers not invented)`,
+    );
+  }
+}
 
 const altField = pickExplanation(
   { forklaring: bookSv, note_sv: "kort anteckning som inte får ersätta facit" },

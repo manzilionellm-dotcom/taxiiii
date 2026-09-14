@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-14T06:29:07.193Z",
-  "questions": 1608,
+  "generatedAt": "2026-09-14T06:54:17.462Z",
+  "questions": 1900,
   "translations": 248,
   "uniqueBankTokens": 5780,
   "uniqueHits": 3797,
@@ -9,7 +9,9 @@
   "occurrenceTotal": 55148,
   "occurrenceHits": 53061,
   "occurrenceCoveragePct": 96.2,
-  "lexiconEntries": 4080,
+  "allUniqueBankTokens": 7074,
+  "allUniqueCoveragePct": 56.7,
+  "lexiconEntries": 4271,
   "missSample": [
     {
       "sv": "kap",

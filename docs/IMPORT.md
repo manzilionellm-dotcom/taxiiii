@@ -78,7 +78,7 @@ Until the full ~193-line file is dropped, the repo ships a **high-frequency seed
 
 - `owner-seed` — 42 public Transportstyrelsen / SFS QCMs (`scripts/owner-items.mjs`). Do not rewrite or delete them.
 - `owner-official` — practice QCMs authored from official law only (TSFS 2021:118 delprov 1–4, taxitrafiklag 2012:211, taxitrafikförordning 2012:238, Transportstyrelsen pages). Source of truth: `scripts/owner-official-items.mjs` + `scripts/owner-official-rest.mjs`. Each item has `type: "delprov-1"` … `delprov-4` and a `source` cite. No paid-app stems.
-- `owner-import` — reserved for a later whole-PC dump (18 AutoPlay .exe is not a text dump).
+- `owner-import` — 301 Taxi Ägare EXE QCMs dropped as `data/imports/agare-mini-01.jsonl` … `agare-mini-31.jsonl` (dedupe by `id`). Facit lines only; missing `explanation_fr` is a one-line `Bonne réponse : …`, never invented law.
 
 They compile into `data/questions.json` but `questionsForTrack('owner')` keeps them out of chauffeur B/taxi study order. Do not invent Manzi owner stems.
 
@@ -97,6 +97,7 @@ Import rules for that dump:
 - Keep the incoming `corpus` when it is `owner-seed`, `owner-official`, `owner-import`, `research`, or `manzi`. New owner dumps should use `corpus: "owner-import"` so the existing 42 `owner-seed` QCMs stay untouched.
 - Optional delprov hint: `type: "delprov-1"` … `delprov-4` (TSFS 2021:118).
 - Append only. Do not delete or rewrite Manzi or the owner-seed rows.
+- Drop files under `data/imports/*.jsonl` (Taxi Ägare EXE: `agare-mini-01.jsonl` … `agare-mini-31.jsonl`, 301 unique ids). The compiler reads that folder after `research-bank.jsonl` and before Manzi, dedupes `owner-import` by `id` only, maps `options[].text_sv` → `text`, and maps `track: "owner"` → `trackHint`. Missing `explanation_fr` becomes a one-line facit translation (`Bonne réponse : …`), never invented law. Rows without an answer key or with fewer than two option texts are skipped.
 
 ## Manzi schema
 

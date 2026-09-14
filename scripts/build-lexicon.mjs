@@ -96,6 +96,9 @@ export function buildLexicon({ silent = false } = {}) {
   }
 
   const bankCounts = extractBankTokens(questions);
+  const coverageCounts = extractBankTokens(
+    questions.filter((item) => item.corpus !== "owner-import"),
+  );
   const lexicon = {};
   for (const [token, count] of bankCounts) {
     let hit = lemmas.get(token);
@@ -127,15 +130,20 @@ export function buildLexicon({ silent = false } = {}) {
     }
   }
 
-  const uniqueBank = [...bankCounts.keys()];
+  const uniqueBank = [...coverageCounts.keys()];
   const hits = uniqueBank.filter((token) => lexicon[token]);
   const misses = uniqueBank
     .filter((token) => !lexicon[token])
-    .sort((a, b) => (bankCounts.get(b) || 0) - (bankCounts.get(a) || 0) || a.localeCompare(b, "sv"));
-  const occurrenceTotal = [...bankCounts.values()].reduce((sum, n) => sum + n, 0);
+    .sort(
+      (a, b) =>
+        (coverageCounts.get(b) || 0) - (coverageCounts.get(a) || 0) || a.localeCompare(b, "sv"),
+    );
+  const occurrenceTotal = [...coverageCounts.values()].reduce((sum, n) => sum + n, 0);
   const occurrenceHits = uniqueBank
     .filter((token) => lexicon[token])
-    .reduce((sum, token) => sum + (bankCounts.get(token) || 0), 0);
+    .reduce((sum, token) => sum + (coverageCounts.get(token) || 0), 0);
+  const allUnique = [...bankCounts.keys()];
+  const allHits = allUnique.filter((token) => lexicon[token]).length;
 
   const coverage = {
     generatedAt: new Date().toISOString(),
@@ -152,10 +160,14 @@ export function buildLexicon({ silent = false } = {}) {
     occurrenceCoveragePct: occurrenceTotal
       ? Math.round((occurrenceHits / occurrenceTotal) * 1000) / 10
       : 0,
+    allUniqueBankTokens: allUnique.length,
+    allUniqueCoveragePct: allUnique.length
+      ? Math.round((allHits / allUnique.length) * 1000) / 10
+      : 0,
     lexiconEntries: Object.keys(lexicon).length,
     missSample: misses.slice(0, 80).map((token) => ({
       sv: token,
-      count: bankCounts.get(token) || 0,
+      count: coverageCounts.get(token) || 0,
     })),
   };
 
