@@ -1,0 +1,3 @@
+# Sideload APKs live on GitHub for phone install. They are not part of the
+# Next.js site and must not ride the Vercel upload (Hobby/Pro source limits).
+releases/*.apk

@@ -1,8 +1,8 @@
 import { z } from "zod";
-import { TOPICS } from "@/lib/types";
+import { OPTION_LETTERS, TOPICS } from "@/lib/types";
 
 export const optionSchema = z.object({
-  letter: z.enum(["A", "B", "C", "D", "E"]),
+  letter: z.enum(OPTION_LETTERS),
   text: z.string().min(1),
 });
 
@@ -13,7 +13,7 @@ export const questionSchema = z
     trackHint: z.enum(["b", "taxi", "owner"]).optional(),
     stem_sv: z.string().min(1),
     options: z.array(optionSchema).min(2),
-    answer: z.enum(["A", "B", "C", "D", "E"]),
+    answer: z.enum(OPTION_LETTERS),
     explanation_sv: z.string().min(1),
     explanation_fr: z.string().min(1),
     imageUrl: z.string().optional(),
