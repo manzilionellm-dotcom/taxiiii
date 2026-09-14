@@ -13,7 +13,12 @@ import {
 } from "./research-normalize.mjs";
 import { compile } from "./compile-banks.mjs";
 import { reconstructStem, tokenizeStem } from "../lib/tokenize-stem.mjs";
-import { hasAuthenticImageUrl, isFakeExamSvg, isRasterExt } from "../lib/media/paths.mjs";
+import {
+  FAKE_EXAM_SVG_NAMES,
+  hasAuthenticImageUrl,
+  isFakeExamSvg,
+  isRasterExt,
+} from "../lib/media/paths.mjs";
 import {
   frenchFromStore,
   looksHybridFrench,
@@ -188,10 +193,35 @@ assert(
   !gulCompiled.imageUrl || (hasAuthenticImageUrl(gulCompiled.imageUrl) && isRasterExt(gulCompiled.imageUrl)),
   "gul linje may only show a real Manzi raster, otherwise no image",
 );
+/**
+ * No invented art anywhere. The card captions an uncaptioned figure
+ * «Examenssida», so a hand-drawn schematic was shown to the student as a real
+ * exam page — `e4-karta.svg` was live on two Karta questions with a mojibake
+ * «Nyköping» label. Every drawn SVG is deleted and blacklisted; a question
+ * shows a real Manzi raster or no image at all.
+ */
+for (const name of FAKE_EXAM_SVG_NAMES) {
+  assert(
+    !existsSync(new URL(`../content/media/${name}`, import.meta.url)),
+    `invented art ${name} must stay deleted`,
+  );
+}
+const inventedLinks = compiled.filter((item) => isFakeExamSvg(item.imageUrl));
 assert(
-  !existsSync(new URL("../content/media/gul-heldragen-linje.svg", import.meta.url)),
-  "placeholder gul-heldragen-linje.svg must be deleted",
+  !inventedLinks.length,
+  `questions linking invented art: ${inventedLinks.map((item) => item.id).slice(0, 5).join(", ")}`,
 );
+const svgLinks = compiled.filter((item) => item.imageUrl?.toLowerCase().endsWith(".svg"));
+assert(
+  !svgLinks.length,
+  `no question may link an SVG — real Manzi rasters only: ${svgLinks.map((item) => item.id).slice(0, 5).join(", ")}`,
+);
+for (const id of ["rs-yt-karta-arlanda", "rs-yt-karta-e4"]) {
+  const question = compiled.find((item) => item.id === id);
+  assert(question, `${id} missing`);
+  assert(!question.imageUrl, `${id} must not show the invented E4 schematic`);
+  assert(question.stem_sv.trim(), `${id} must still read from its text alone`);
+}
 
 const manifestPath = new URL("../data/media-manifest.json", import.meta.url);
 assert(existsSync(manifestPath), "data/media-manifest.json missing");
