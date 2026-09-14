@@ -70,8 +70,10 @@ ligga	être couché
 livslängd	durée de vie
 lokalkännedom	connaissance du lieu
 luftfilter	filtre à air
-igensatt	encrassé / bouché
-igensatta	encrassé / bouché
+luftfiltret	filtre à air
+igensatt	bouché / encrassé
+igensatta	bouché / encrassé
+igensättning	encrassement
 följd	conséquence
 följden	conséquence
 låsningsfria	antiblocage
@@ -1115,6 +1117,26 @@ vinterväglag	conditions hivernales
 vinterdäck	pneus hiver
 kontrollbesiktning	contrôle technique
 nollvisionen	Vision Zéro
+grovsopanläggning	déchetterie / centre de déchets
+accelerationsfält	voie d'accélération
+accelerationsfältet	voie d'accélération
+andningssvårighet	difficulté respiratoire
+andningssvårigheter	difficulté respiratoire
+antifrysvätska	antigel
+antisladdsystem	antipatinage (ESP)
+avgassystem	système d'échappement
+bagageutrymme	coffre
+barnsäkerhetslås	sécurité enfant
+barnsäkerhetslåset	sécurité enfant
+brytpunktstariff	tarif au point de rupture
+busshållsplats	arrêt de bus
+busshållplats	arrêt de bus
+busshållplatsskylt	panneau d'arrêt de bus
+bältesträckare	prétensionneur de ceinture
+cerebralpares	infirmité motrice cérébrale
+överbevakning	surveillance excessive
+dygnetsvila	repos journalier
+dygnvilan	repos journalier
 jourtjänst	astreinte
 körpassrapport	rapport de vacation
 följesedel	bordereau

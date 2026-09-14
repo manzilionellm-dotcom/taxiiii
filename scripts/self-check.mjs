@@ -474,12 +474,20 @@ assert(
 );
 assert(
   !protectedViewSrc.includes("contentHidden"),
-  "ProtectedView must not show the Innehållet är dolt overlay",
+  "ProtectedView must not show a hide-on-blur overlay",
 );
 assert(
   !protectedViewSrc.includes("addEventListener"),
   "web ProtectedView must not attach capture/focus listeners",
 );
+
+const svI18n = readFileSync(new URL("../lib/i18n/sv.ts", import.meta.url), "utf8");
+const frI18n = readFileSync(new URL("../lib/i18n/fr.ts", import.meta.url), "utf8");
+assert(!svI18n.includes("Innehållet är dolt"), "sv i18n must not ship hide-on-blur overlay title");
+assert(!svI18n.includes("Jag är tillbaka"), "sv i18n must not ship overlay resume CTA");
+assert(!svI18n.includes("Vi döljer frågan när fönstret tappar fokus"), "sv i18n must not claim hide-on-blur");
+assert(!frI18n.includes("Contenu masqué"), "fr i18n must not ship overlay title");
+assert(!/"contentHidden"/.test(svI18n) && !/"resumeExam"/.test(svI18n), "overlay i18n keys must be deleted");
 
 console.log(
   `self-check OK · research ${researchCount} + owner-seed ${ownerCount} + owner-official ${ownerOfficialCount} + owner-import ${ownerImportCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,
