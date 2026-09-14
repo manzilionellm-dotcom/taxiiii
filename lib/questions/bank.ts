@@ -2,7 +2,8 @@ import "server-only";
 
 import translations from "@/data/translations.fr.json";
 import type { QuestionRecord, QuestionTranslation, Topic, Track } from "@/lib/types";
-import { questionTrack } from "@/lib/types";
+import { isOwnerCorpus, questionTrack } from "@/lib/types";
+import { isRealFrenchText } from "@/lib/questions/french-text";
 import { questionSchema } from "@/lib/questions/schema";
 import { sortForStudy } from "@/lib/questions/priority";
 import rawQuestions from "@/data/questions.json";
@@ -38,17 +39,14 @@ export function getQuestion(id: string): QuestionRecord | undefined {
 }
 
 export function getFrench(question: QuestionRecord): QuestionTranslation {
-  return (
-    frMap[question.id] ?? {
-      stem:
-        question.corpus === "research" ||
-        question.corpus === "owner-seed" ||
-        question.corpus === "owner-official" ||
-        question.corpus === "owner-import"
-          ? question.explanation_fr
-          : "Traduction française à ajouter dans data/translations.fr.json — le texte suédois ci-dessus est la source.",
-    }
-  );
+  const mapped = frMap[question.id];
+  if (mapped) return mapped;
+
+  const useExplanation =
+    (question.corpus === "research" || isOwnerCorpus(question.corpus)) &&
+    isRealFrenchText(question.explanation_fr);
+
+  return { stem: useExplanation ? question.explanation_fr.trim() : "" };
 }
 
 export function interleave(questions: QuestionRecord[]): QuestionRecord[] {
