@@ -2344,6 +2344,43 @@
     "corpus": "manzi"
   },
   {
+    "id": "LAGSTIFNING-4-Q6",
+    "topic": "lagstiftning",
+    "stem_sv": "Var kan du göra kontroll av taxameter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I företagets lokaler."
+      },
+      {
+        "letter": "B",
+        "text": "Hos polisen."
+      },
+      {
+        "letter": "C",
+        "text": "I Förarens hus."
+      },
+      {
+        "letter": "D",
+        "text": "I taxi."
+      },
+      {
+        "letter": "E",
+        "text": "I verkstad."
+      },
+      {
+        "letter": "F",
+        "text": "SWEDAC"
+      }
+    ],
+    "answer": "F",
+    "explanation_sv": "Rätt svar: F",
+    "explanation_fr": "Bonne réponse : F",
+    "imageUrl": "/media/pdf-pages/LAGSTIFNING-4/page-06.jpg",
+    "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-4.pdf",
+    "corpus": "manzi"
+  },
+  {
     "id": "LAGSTIFNING-4-Q7",
     "topic": "lagstiftning",
     "stem_sv": "Var kan vägkontroll av taxameter ske?",
@@ -3541,8 +3578,8 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/1/exam.php.htm",
-    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/1/exam.php.htm",
+    "explanation_sv": "Rätt svar: B. 1. Leta efter Kivik i namnregistret. Du hittar Kivik på sidan 29 E3. 2. Slå upp sidan 29 och leta reda på Kivik och Ystad (sidan 29 D5). 3. Du vet att du ska köra via Brösarp och Skåne-Tranås. Leta efter dessa två orter (= städer) mellan Kivik och Ystad. 4. Räkna nu ut avståndet mellan Kivik och Ystad. 5. Använd de svarta pilarna mellan Ystad och Brösarp. Vilket blir: 17 + 24 = 41 km. 6. Använd nu linjalen och mät mellan Brösarp och Kivik. 7. Det är ca: 4 cm. Använd skalan längst ner på sidan 29. Vilket ger att 4 cm = 10 km. 8. Avståndet mellan Kivik och Ystad är då totalt: 41 + 10 = 51 km. 9. Tiden = Sträckan / Hastigheten. 10. Tiden = 51 / 65 = 0,78 tim. 11. I minuter blir det: 0,78 x 60 = 47 min. 12. I frågan står det att du behöver 10 min tillgodo (= extra). 13. Total tid blir: 47 + 10 = 57 min. 14. Du vet att du ska vara i Ystad kl. 19:00 och körningen tar 57 min. 15. Du måste då åka från Kivik: kl. 19:00 – 57 min = kl. 18:03. 16. Rätt svar: B.",
+    "explanation_fr": "Bonne réponse: B",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/1/exam.php-filer/799508375.jpg",
     "source": "T3/Taxi porove/kartap/kartp1/1/exam.php.htm",
     "corpus": "manzi"
@@ -3570,8 +3607,8 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/10/exam.php.htm",
-    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/10/exam.php.htm",
+    "explanation_sv": "Rätt svar: B. 1. Slå upp sidan 10 och leta efter Linköping. Du hittar den på sidan 70-71. 2. Leta efter Säby längst med E4 vid Linköping. 3. Beräkna avståndet mellan Säby och avfarten från E4 till Mantorp. 4. Använd de svarta pilarna. Det är 16 km från Mantorp till Örberga. 5. Mät sedan med linjal mellan Örberga till Säby. 6. Det är ca: 1 cm. Enligt skalan på sidan 70 är 1 cm = 2,5 km. 7. Totalt avstånd är: 16 + 2,5 = ca: 19 km. 8. Tiden = Sträckan / Hastigheten. 9. Tiden = 19 / 95 = 0,2 tim. 10. I minuter blir det: 0,2 x 60 = 12 min. 11. Du vet att det tar 3 min från E4 avfarten till motorstadion. 12. Total tid blir då: 12 + 3 = 15 min. 13. Rätt svar: B.",
+    "explanation_fr": "Bonne réponse: B",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/10/exam.php-filer/172177858.jpg",
     "source": "T3/Taxi porove/kartap/kartp1/10/exam.php.htm",
     "corpus": "manzi"
@@ -3715,8 +3752,8 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/15/exam.php.htm",
-    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/15/exam.php.htm",
+    "explanation_sv": "Rätt svar: B. 1. Du vet att framkörningen är från Ljugarn till kyrkan i Alva. 2. Slå upp Alva i namnregistret. Du hittar den på sidan 65 C4. 3. Beräkna avståndet mellan Ljugarn och Alva. 4. Använd de svarta pilarna. Från Ljugarn till Hemse är det 26 km. 5. Mät med linjal avståndet mellan Hemse till Alva. 6. Det är ca: 1,5 cm. Vilket enligt skalan är ca: 4 km. 7. Avståndet är totalt: 26 + 4 = 30 km. 8. Tiden = Sträckan / Hastigheten. 9. Tiden = 30 / 60 = 0,5 tim. 10. I minuter blir det: 0,5 x 60 = 30 min. 11. Rätt svar: B.",
+    "explanation_fr": "Bonne réponse: B",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/15/exam.php-filer/493614962.jpg",
     "source": "T3/Taxi porove/kartap/kartp1/15/exam.php.htm",
     "corpus": "manzi"
@@ -3744,8 +3781,8 @@
       }
     ],
     "answer": "A",
-    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp1/16/exam.php.htm",
-    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp1/16/exam.php.htm",
+    "explanation_sv": "Rätt svar: A. 1. Slå upp Burgsvik i namnregistret. Du hittar den på sidan 65 B6. 2. Jämför sträckorna genom att använd de svarta pilarna. 3. Alternativ A: 25 + 50 = 75 km 4. Alternativ B: Eftersom Buttle ligger till högre om Hejde vet du att det är längre än alternativ A. 5. Alternativ C: 25 + 22 + 34 = 81 km 6. Alternativ D: 45 + 34 = 79 km. 7. Rätt svar: A.",
+    "explanation_fr": "Bonne réponse: A",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/16/exam.php-filer/210370005.jpg",
     "source": "T3/Taxi porove/kartap/kartp1/16/exam.php.htm",
     "corpus": "manzi"
@@ -3802,8 +3839,8 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt svar: C. Källa: T3/Taxi porove/kartap/kartp1/3/exam.php.htm",
-    "explanation_fr": "Bonne réponse : C. Source : T3/Taxi porove/kartap/kartp1/3/exam.php.htm",
+    "explanation_sv": "Rätt svar: C. 1. Leta efter Tomelilla på sidan 29. Du hittar Tomelilla på sidan 29 D4. 2. Beräkna avståndet mellan Tomelilla och Kivik. 3. Använd de svarta pilarna mellan Tomelilla och Brösarp. Det är 24 km. 4. Använd nu linjalen och mät mellan Brösarp och Kivik. 5. Det är ca: 4 cm. Använd skalan längst ner på sidan 29. Vilket ger att 4 cm = 10 km. 6. Från Tomelilla till Kivik är det då totalt: 24 + 10 = 34 km. 7. Tiden = Sträckan / Hastigheten. 8. Tiden = 34 / 65 = 0,52 tim. 9. I minuter blir det: 0,52 x 60 = 31 min. 10. Rätt svar: C.",
+    "explanation_fr": "Bonne réponse: C",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/3/exam.php-filer/452250714.jpg",
     "source": "T3/Taxi porove/kartap/kartp1/3/exam.php.htm",
     "corpus": "manzi"
@@ -3889,8 +3926,8 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/6/exam.php.htm",
-    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/6/exam.php.htm",
+    "explanation_sv": "Rätt svar: B. 1. Slå upp sidan 54 och leta efter korsningen E6 och Rv 155. 2. Följ riksväg (Rv) 155 till vänster mot vattnet. Då hittar du Lilla Varholmen. 3. Mät med linjalen från korsningen E6/Rv155 och Lilla Varnholmen. 4. Det är ca: 17 cm. 5. Enligt skalan är 1 cm = 1 km. 6. Sträckan blir: 17 km. 7. Tiden = Sträckan / Hastigheten. 8. Tiden = 17 / 60 = 0,28 tim. 9. I minuter blir det: 0,28 x 60 = 17 min. 10. Du vet att klockan är 9:00. Du är därmed i Lilla Varnholmen kl. 9:17. 11. Rätt svar: B.",
+    "explanation_fr": "Bonne réponse: B",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/6/exam.php-filer/029082753.jpg",
     "source": "T3/Taxi porove/kartap/kartp1/6/exam.php.htm",
     "corpus": "manzi"
@@ -3976,8 +4013,8 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp1/9/exam.php.htm",
-    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp1/9/exam.php.htm",
+    "explanation_sv": "Rätt svar: B. 1. Slå upp tätortskartan för Linköping, sidan 180. 2. Leta efter området TANNEFORS med fet stil. 3. Leta efter apoteket som ligger på Nya Tanneforsvägen. Symbolen för apotek hittar du på sidan 11. 4. Leta efter Resecentrum. Du hittar det längst med järnvägen, vid ett ljusgult område. 5. Mät med linjal från Apoteket till Resecentrum. 6. Det är ca: 10 cm. 7. Enligt skalan är 2 cm = 300 meter. Då vet du att 1 cm = 150 meter. 8. Avståndet är då: 10 x 150 = 1 500 meter = 1,5 km 9. Rätt svar: B.",
+    "explanation_fr": "Bonne réponse: B",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp1/9/exam.php-filer/027718601.jpg",
     "source": "T3/Taxi porove/kartap/kartp1/9/exam.php.htm",
     "corpus": "manzi"
@@ -4063,8 +4100,8 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp2/11/exam.php.htm",
-    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp2/11/exam.php.htm",
+    "explanation_sv": "Rätt svar: B. 1. Slå upp Lunnaby i namnregistret. Du hittar den på sidan 39 E3. 2. Använd nu tätortskartan för Växjö och leta reda på Vattentornet i Hovsbergsparken. Leta efter ett grönt område vid området HOV. 3. Mät med linjal från vattentornet till korsningen Ringbergsvägen och Liedbergsgatan. Det är ca: 4 cm = 600 meter = 0,6 km. 4. Slå nu upp sidan 39 och titta noga i Växjö. Där ser du symbolen för torn (= vattentorn). Mät nu från korsningen Ringbergsvägen/Liedbergsgatan och Lunnaby. Det är 2 cm = 5 km. 5. Totalt sträcka är: 5 + 0,6 = 5,6 km. 6. Rätt svar: B.",
+    "explanation_fr": "Bonne réponse: B",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp2/11/exam.php-filer/861729096.jpg",
     "source": "T3/Taxi porove/kartap/kartp2/11/exam.php.htm",
     "corpus": "manzi"
@@ -4237,8 +4274,8 @@
       }
     ],
     "answer": "A",
-    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp2/2/exam.php.htm",
-    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp2/2/exam.php.htm",
+    "explanation_sv": "Rätt svar: A. 1. Slå upp Vinberg i namnregistret. Du hittar den på sidan 36 B2. 2. Slå upp tätortskartan för Halmstad på sidan 174. 3. Leta efter korsningen Slottsgatan / Strandgatan. 4. Beräkna avståndet mellan Slottsgatan / Strandgatan och Vinberg. 5. Använd de svarta pilarna mellan Halmstad till Falkenberg. Det är 40 km. 6. Lägg till avståndet mellan Slottsgatan till E6 och Från E6 till Vinberg. 7. Det är ca: 2,5 cm. Vilket enligt skalan är 6 km. 8. Avståndet totalt blir: 40 + 6 = 46 km. 9. Rätt svar: A.",
+    "explanation_fr": "Bonne réponse: A",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp2/2/exam.php-filer/456263792.jpg",
     "source": "T3/Taxi porove/kartap/kartp2/2/exam.php.htm",
     "corpus": "manzi"
@@ -4324,8 +4361,8 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp2/6/exam.php.htm",
-    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp2/6/exam.php.htm",
+    "explanation_sv": "Rätt svar: B. 1. Slå upp Vallsta i namnregistret. Du hittar den på sidan 118 B3. 2. Om du är osäker på symbolen för flygplats slå upp sidan 11. 3. Tänk på att fråga är framkörningen! 4. Mät med linjal mellan tornet i Ren och flygplatsen i Vallsta. Det är ca: 8 cm. Tänk på att från tornet i Ren måste du köra bilvägen d.v.s. runt sjön inte över sjön! Då blir det 8 cm. 5. Längst ner på sidan 119 ser du på skalan att 1 cm = 2,5 km. 6. Sträckan är då: 8 x 2,5 = 20 km. 7. Rätt svar: B.",
+    "explanation_fr": "Bonne réponse: B",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp2/6/exam.php-filer/712908674.jpg",
     "source": "T3/Taxi porove/kartap/kartp2/6/exam.php.htm",
     "corpus": "manzi"
@@ -4469,8 +4506,8 @@
       }
     ],
     "answer": "A",
-    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp3/10/exam.php.htm",
-    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp3/10/exam.php.htm",
+    "explanation_sv": "Rätt svar: A. 1. Leta reda på Järnvägsstationen. Du hittar den nära Vaxsjösjön. 2. Mät med linjal från Kristina Nilsson Väg 36 till Järnvägsstationen. 3. Det är ca: 11 cm. 4. Enligt skalan är 1 cm = 150 meter. 5. Sträckan blir: 11 x 150 = 1650 meter = 1,65 km. 6. Rätt svar: A.",
+    "explanation_fr": "Bonne réponse: A",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp3/10/exam.php-filer/614436256.jpg",
     "source": "T3/Taxi porove/kartap/kartp3/10/exam.php.htm",
     "corpus": "manzi"
@@ -5281,8 +5318,8 @@
       }
     ],
     "answer": "D",
-    "explanation_sv": "Rätt svar: D. Källa: T3/Taxi porove/kartap/kartp4/8/exam.php.htm",
-    "explanation_fr": "Bonne réponse : D. Source : T3/Taxi porove/kartap/kartp4/8/exam.php.htm",
+    "explanation_sv": "Rätt svar: D. 1. Slå upp sidan 55. 2. Leta efter campingplats vid följande alternativ. 3. I alternativ A, leta efter sjön Aspen. Du hittar den på sidan 55 F2. 4. I alternativ B, leta efter Landvettersjön. Du hittar den på sidan 55 E3. men obs det finns ingen campingplats bara ett vandrarhem! 5. I alternativ C, leta efter Stora Delsjön. Du hittar den på sidan 55 D3. 6. I alternativ D, leta efter Västra Nedsjön. Du hittar den på sidan 53 E4. 7. På sidan 53, mät med linjal från Landvetter flygplats till campingplatsen i Västra Nedsjön. Det är ca: 4 cm = 10 km. 8. Slå upp sidan 55 och leta om någon annan campingplats ligger närmare. Svar nej. 9. Rätt svar: D.",
+    "explanation_fr": "Bonne réponse: D",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp4/8/exam.php-filer/784433889.jpg",
     "source": "T3/Taxi porove/kartap/kartp4/8/exam.php.htm",
     "corpus": "manzi"
@@ -5745,8 +5782,8 @@
       }
     ],
     "answer": "D",
-    "explanation_sv": "Rätt svar: D. Källa: T3/Taxi porove/kartap/kartp5/8/exam.php.htm",
-    "explanation_fr": "Bonne réponse : D. Source : T3/Taxi porove/kartap/kartp5/8/exam.php.htm",
+    "explanation_sv": "Rätt svar: D. 1. Slå upp sidan 55. 2. Leta efter campingplats vid följande alternativ. 3. I alternativ A, leta efter sjön Aspen. Du hittar den på sidan 55 F2. 4. I alternativ B, leta efter Landvettersjön. Du hittar den på sidan 55 E3. men obs det finns ingen campingplats bara ett vandrarhem! 5. I alternativ C, leta efter Stora Delsjön. Du hittar den på sidan 55 D3. 6. I alternativ D, leta efter Västra Nedsjön. Du hittar den på sidan 53 E4. 7. På sidan 53, mät med linjal från Landvetter flygplats till campingplatsen i Västra Nedsjön. Det är ca: 4 cm = 10 km. 8. Slå upp sidan 55 och leta om någon annan campingplats ligger närmare. Svar nej. 9. Rätt svar: D.",
+    "explanation_fr": "Bonne réponse: D",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp5/8/exam.php-filer/784433889.jpg",
     "source": "T3/Taxi porove/kartap/kartp5/8/exam.php.htm",
     "corpus": "manzi"
@@ -5832,8 +5869,8 @@
       }
     ],
     "answer": "A",
-    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp6/10/exam.php.htm",
-    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp6/10/exam.php.htm",
+    "explanation_sv": "Rätt svar: A. 1. Leta reda på Järnvägsstationen. Du hittar den nära Vaxsjösjön. 2. Mät med linjal från Kristina Nilsson Väg 36 till Järnvägsstationen. 3. Det är ca: 11 cm. 4. Enligt skalan är 1 cm = 150 meter. 5. Sträckan blir: 11 x 150 = 1650 meter = 1,65 km. 6. Rätt svar: A.",
+    "explanation_fr": "Bonne réponse: A",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp6/10/exam.php-filer/614436256.jpg",
     "source": "T3/Taxi porove/kartap/kartp6/10/exam.php.htm",
     "corpus": "manzi"
@@ -6035,8 +6072,8 @@
       }
     ],
     "answer": "A",
-    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp6/2/exam.php.htm",
-    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp6/2/exam.php.htm",
+    "explanation_sv": "Rätt svar: A. 1. Slå upp Vinberg i namnregistret. Du hittar den på sidan 36 B2. 2. Slå upp tätortskartan för Halmstad på sidan 174. 3. Leta efter korsningen Slottsgatan / Strandgatan. 4. Beräkna avståndet mellan Slottsgatan / Strandgatan och Vinberg. 5. Använd de svarta pilarna mellan Halmstad till Falkenberg. Det är 40 km. 6. Lägg till avståndet mellan Slottsgatan till E6 och Från E6 till Vinberg. 7. Det är ca: 2,5 cm. Vilket enligt skalan är 6 km. 8. Avståndet totalt blir: 40 + 6 = 46 km. 9. Rätt svar: A.",
+    "explanation_fr": "Bonne réponse: A",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp6/2/exam.php-filer/456263792.jpg",
     "source": "T3/Taxi porove/kartap/kartp6/2/exam.php.htm",
     "corpus": "manzi"
@@ -6267,8 +6304,8 @@
       }
     ],
     "answer": "A",
-    "explanation_sv": "Rätt svar: A. Källa: T3/Taxi porove/kartap/kartp7/10/exam.php.htm",
-    "explanation_fr": "Bonne réponse : A. Source : T3/Taxi porove/kartap/kartp7/10/exam.php.htm",
+    "explanation_sv": "Rätt svar: A. 1. Leta reda på Järnvägsstationen. Du hittar den nära Vaxsjösjön. 2. Mät med linjal från Kristina Nilsson Väg 36 till Järnvägsstationen. 3. Det är ca: 11 cm. 4. Enligt skalan är 1 cm = 150 meter. 5. Sträckan blir: 11 x 150 = 1650 meter = 1,65 km. 6. Rätt svar: A.",
+    "explanation_fr": "Bonne réponse: A",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp7/10/exam.php-filer/614436256.jpg",
     "source": "T3/Taxi porove/kartap/kartp7/10/exam.php.htm",
     "corpus": "manzi"
@@ -6760,8 +6797,8 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt svar: C. Källa: T3/Taxi porove/kartap/kartp8/12/exam.php.htm",
-    "explanation_fr": "Bonne réponse : C. Source : T3/Taxi porove/kartap/kartp8/12/exam.php.htm",
+    "explanation_sv": "Rätt svar: C. 1. Slå upp Åfors i namnregistret, du hittar den på sidan 40 B4. Det finns en annan Åfors men den ligger väldigt långt från Växjö. 2. Använd det svarta pilarna för att få reda på sträckan mellan Växjö och Åfors. Det är 52 km. 3. Mät med linjal från Växjö till flygplatsen. Det är ca: 2 cm = 5 km. 4. Total sträcka blir: 52 + 5 = 57 km. 5. Tiden = Sträckan / Hastigheten. 6. Tiden = 57 / 70 = 0,81 tim. I minuter blir det: 0,81 x 60 = 49 min. 7. Du ska vara på flygplatsen kl. 20:00. Du måste åka kl: 20:00 – 49 min = 19:11. 8. Rätt svar: C.",
+    "explanation_fr": "Bonne réponse: C",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp8/12/exam.php-filer/414735510.jpg",
     "source": "T3/Taxi porove/kartap/kartp8/12/exam.php.htm",
     "corpus": "manzi"
@@ -7050,8 +7087,8 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt svar: B. Källa: T3/Taxi porove/kartap/kartp8/8/exam.php.htm",
-    "explanation_fr": "Bonne réponse : B. Source : T3/Taxi porove/kartap/kartp8/8/exam.php.htm",
+    "explanation_sv": "Rätt svar: B. 1. På sidan 119 ser du att E4 går mellan Söderhamn och Hudiksvall. 2. Sträckan är enligt det svarta pilarna 50 km. 3. Tiden = Sträckan / Hastigheten. 4. Tiden = 50 / 40 = 1,25 tim. 5. I minuter blir det: 1,25 x 60 = 75 min = 1 tim och 15 min. 6. Rätt svar: B",
+    "explanation_fr": "Bonne réponse: B",
     "imageUrl": "/media/T3/Taxi porove/kartap/kartp8/8/exam.php-filer/926290381.jpg",
     "source": "T3/Taxi porove/kartap/kartp8/8/exam.php.htm",
     "corpus": "manzi"
@@ -23850,11 +23887,15 @@
       },
       {
         "letter": "E",
-        "text": "Alla körningar utom färdtjänst körningar F. Alla körningar utom sjuktransport"
+        "text": "Alla körningar utom färdtjänst körningar"
+      },
+      {
+        "letter": "F",
+        "text": "Alla körningar utom sjuktransport"
       }
     ],
     "answer": "D",
-    "explanation_sv": "Rätt svar: D — Alla körningar.",
+    "explanation_sv": "Rätt svar: D",
     "explanation_fr": "Bonne réponse: D — « Alla körningar. »",
     "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-27.jpg",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-1.pdf",
@@ -25119,11 +25160,15 @@
       },
       {
         "letter": "E",
-        "text": "Ja, i alla situationer. F. Ingen av situationer."
+        "text": "Ja, i alla situationer."
+      },
+      {
+        "letter": "F",
+        "text": "Ingen av situationer."
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt svar: C — Ja, i enbart situation C.",
+    "explanation_sv": "Rätt svar: C",
     "explanation_fr": "Bonne réponse: C — « Ja, i enbart situation C. »",
     "imageUrl": "/media/pdf-pages/LAGSTIFNING-2/page-04.jpg",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-2.pdf",
@@ -29323,11 +29368,15 @@
       },
       {
         "letter": "E",
-        "text": "En brant nedförsbacke. F. En brant slänt med risk för ras."
+        "text": "En brant nedförsbacke."
+      },
+      {
+        "letter": "F",
+        "text": "En brant slänt med risk för ras."
       }
     ],
     "answer": "D",
-    "explanation_sv": "Rätt svar: D — En brant uppförsbacke.",
+    "explanation_sv": "Rätt svar: D",
     "explanation_fr": "Bonne réponse: D — « En brant uppförsbacke. »",
     "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-27.jpg",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-7.pdf",
@@ -37670,11 +37719,15 @@
       },
       {
         "letter": "E",
-        "text": "3,0 mm, men endast på yttre hjul F. 3,0mm, på alla hjul"
+        "text": "3,0 mm, men endast på yttre hjul"
+      },
+      {
+        "letter": "F",
+        "text": "3,0mm, på alla hjul"
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt svar: C — 1,6 mm, på alla hjul",
+    "explanation_sv": "Rätt svar: C",
     "explanation_fr": "Bonne réponse: C — « 1,6 mm, på alla hjul »",
     "source": "Desktop/manzi/Säkerhet/S_KERHET-7.pdf",
     "corpus": "manzi"

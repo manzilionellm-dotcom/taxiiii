@@ -3,7 +3,7 @@
 import { sanitizeCaption, stripFakeExamArt, toImageUrl } from "../lib/media/paths.mjs";
 
 const TOPICS = new Set(["lagstiftning", "sakerhet", "karta", "bkort", "agare"]);
-const LETTERS = ["A", "B", "C", "D", "E"];
+const LETTERS = ["A", "B", "C", "D", "E", "F"];
 export const CORPORA = ["research", "manzi", "owner-seed", "owner-official", "owner-import"];
 export const OWNER_CORPORA = ["owner-seed", "owner-official", "owner-import"];
 
@@ -75,7 +75,7 @@ export function splitSvAlts(sv) {
   const stem = parts[0].trim();
   const options = [];
   for (const chunk of parts.slice(1)) {
-    const match = chunk.match(/^\s*([A-E])\.\s*(.+)$/s);
+    const match = chunk.match(/^\s*([A-F])\.\s*(.+)$/s);
     if (match) options.push({ letter: match[1], text: match[2].trim() });
   }
   return { stem, options };
