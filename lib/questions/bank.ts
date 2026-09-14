@@ -2,7 +2,7 @@ import "server-only";
 
 import translations from "@/data/translations.fr.json";
 import type { QuestionRecord, QuestionTranslation, Topic, Track } from "@/lib/types";
-import { trackForTopic } from "@/lib/types";
+import { questionTrack } from "@/lib/types";
 import { questionSchema } from "@/lib/questions/schema";
 import { sortForStudy } from "@/lib/questions/priority";
 import rawQuestions from "@/data/questions.json";
@@ -25,7 +25,7 @@ export const QUESTIONS: QuestionRecord[] = sortForStudy(
 
 export function questionsForTrack(track: Track): QuestionRecord[] {
   return sortForStudy(
-    QUESTIONS.filter((question) => trackForTopic(question.topic) === track),
+    QUESTIONS.filter((question) => questionTrack(question) === track),
   );
 }
 
@@ -41,7 +41,7 @@ export function getFrench(question: QuestionRecord): QuestionTranslation {
   return (
     frMap[question.id] ?? {
       stem:
-        question.corpus === "research"
+        question.corpus === "research" || question.corpus === "owner-seed"
           ? question.explanation_fr
           : "Traduction française à ajouter dans data/translations.fr.json — le texte suédois ci-dessus est la source.",
     }

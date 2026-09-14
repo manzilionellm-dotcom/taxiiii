@@ -1,4 +1,4 @@
-import type { QuestionRecord } from "@/lib/types";
+import { isOwnerQuestion, type QuestionRecord } from "@/lib/types";
 
 const HIGH_FREQ =
   /vilotid|dygnsvila|taxameter|24 mån|heldragen|tidbok|prisräkn|jämförpris|11 timm|åtta timm|8 timm|prisuppgift|700/i;
@@ -23,6 +23,9 @@ export function starterRank(question: QuestionRecord): number {
 }
 
 export function studyPriority(question: QuestionRecord): number {
+  if (isOwnerQuestion(question)) {
+    return question.freq === "high" || HIGH_FREQ.test(haystack(question)) ? 3 : 4;
+  }
   const research = question.corpus === "research";
   const high =
     question.freq === "high" || HIGH_FREQ.test(haystack(question));
@@ -46,7 +49,10 @@ export function sortForStudy(questions: QuestionRecord[]): QuestionRecord[] {
   const head: QuestionRecord[] = [];
   for (const pattern of STARTER_PATTERNS) {
     const index = remaining.findIndex(
-      (question) => studyPriority(question) === 0 && pattern.test(haystack(question)),
+      (question) =>
+        studyPriority(question) === 0 &&
+        !isOwnerQuestion(question) &&
+        pattern.test(haystack(question)),
     );
     if (index !== -1) head.push(...remaining.splice(index, 1));
   }

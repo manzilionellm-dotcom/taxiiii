@@ -26,7 +26,7 @@ export const BRAND = {
     owner: {
       id: "owner" as const,
       label: "Taxi Företag",
-      product: "taxiägare / business",
+      product: "taxitrafiktillstånd / taxiägare",
     },
   },
 } as const;

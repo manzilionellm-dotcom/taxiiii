@@ -20,13 +20,13 @@ export const fr: Dictionary = {
   dashboard: "Tableau de bord",
   onboardingTitle: "Choisis ton parcours",
   onboardingLead:
-    "Deux sections distinctes. Si tu as déjà le B, tu peux n'étudier que le taxi.",
+    "Trois parcours distincts. Si tu as déjà le B, tu peux n'étudier que le taxi — ou Taxi Företag.",
   trackB: BRAND.tracks.b.label,
   trackBDesc: `${BRAND.tracks.b.product} — teoriprov classique.`,
   trackTaxi: BRAND.tracks.taxi.label,
   trackTaxiDesc: `${BRAND.tracks.taxi.product} — législation, sécurité et lecture de carte.`,
   trackOwner: BRAND.tracks.owner.label,
-  trackOwnerDesc: `${BRAND.tracks.owner.product} — à venir.`,
+  trackOwnerDesc: `${BRAND.tracks.owner.product} — permis d'exploiter, véhicules et comptabilité.`,
   comingSoon: "Bientôt",
   bothTracks: `${BRAND.tracks.b.label} + ${BRAND.tracks.taxi.label}`,
   yourName: "Ton prénom (facultatif)",
@@ -81,15 +81,18 @@ export const fr: Dictionary = {
   accuracy: "Justesse",
   dueToday: "À réviser",
   ownerSoon:
-    `Section ${BRAND.tracks.owner.label} (${BRAND.tracks.owner.product}). Contenu à venir.`,
+    `${BRAND.tracks.owner.label} est un parcours à part : permis d'exploiter, véhicules, taximètre et salariés. La progression n'est pas mélangée avec le chauffeur.`,
   resetProgress: "Réinitialiser la progression locale",
   demoNote:
     "Deux corpus compilés : data/research-bank.jsonl (YouTube + apps + exemples publics) et data/questions.jsonl (Manzi). Research d'abord — Manzi ne l'écrase pas.",
   corpusResearch: "research",
   corpusManzi: "manzi",
+  corpusOwner: "exploitant",
   freqHigh: "haute freq.",
   studyOrder:
     "Commence par YouTube/research (vilotid 11/8, taxamètre piège 24 mois, ligne jaune, tidbok, prisräkning), puis Manzi.",
+  studyOrderOwner:
+    "Commence par les devoirs du titulaire (permis d'exploiter, fonds 100/50, traficansvarig), puis taximètre/comptabilité, véhicules, prix et salariés.",
   supportFade: "Aide",
   supportHigh: "Beaucoup d'aide",
   supportLow: "Peu d'aide",
@@ -128,5 +131,6 @@ export const fr: Dictionary = {
     lagstiftning: "Législation",
     sakerhet: "Sécurité",
     karta: "Carte",
+    agare: "Exploitant",
   },
 };

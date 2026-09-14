@@ -63,12 +63,32 @@ const manziCompilable = manzi.filter((record, index) => {
 
 const compiled = JSON.parse(readFileSync(compiledPath, "utf8"));
 const researchCount = compiled.filter((item) => item.corpus === "research").length;
+const ownerCount = compiled.filter((item) => item.corpus === "owner-seed").length;
 const manziCount = compiled.filter((item) => item.corpus === "manzi").length;
 assert(researchCompilable.length >= 20, "too few compilable research QCM");
-assert(researchCount === researchCompilable.length, "compiled dropped research items");
+assert(
+  researchCount + ownerCount === researchCompilable.length,
+  "compiled dropped research or owner-seed items",
+);
 assert(manziCompilable.length >= 10, "too few compilable Manzi QCM");
 assert(manziCount === manziCompilable.length, "compiled dropped Manzi items that had a valid answer key");
-assert(compiled.length === researchCount + manziCount, "compiled length != research + manzi");
+assert(
+  compiled.length === researchCount + ownerCount + manziCount,
+  "compiled length != research + owner-seed + manzi",
+);
+assert(ownerCount >= 15, `owner-seed too small: ${ownerCount}`);
+assert(
+  compiled
+    .filter((item) => item.corpus === "owner-seed")
+    .every((item) => item.topic === "agare" && item.trackHint === "owner"),
+  "owner-seed must be tagged topic=agare trackHint=owner",
+);
+assert(
+  compiled
+    .filter((item) => item.topic === "lagstiftning" || item.topic === "sakerhet" || item.topic === "karta")
+    .every((item) => item.trackHint !== "owner" && item.corpus !== "owner-seed"),
+  "owner-seed must not sit on chauffeur topics",
+);
 assert(
   manziCompilable.every((q) => q.stem_sv && (q.explanation_sv || q.explanation_fr || q.options?.length >= 2)),
   "compilable Manzi missing stem or options",
@@ -76,6 +96,7 @@ assert(
 
 const ordered = sortForStudy(compiled);
 assert(ordered[0].corpus === "research", "study order must start with research");
+assert(ordered[0].corpus !== "owner-seed", "owner seed must not lead the chauffeur study order");
 assert(ordered[0].freq === "high", "first study item should be high-frequency research");
 const head = ordered.slice(0, 12).map((item) => `${item.id} ${item.stem_sv}`).join("\n");
 assert(/heldragen|gul linje/i.test(head), "starter window must include gul heldragen linje");
@@ -100,6 +121,10 @@ assert(
 
 const check = compile({ check: true });
 assert(check.filter((item) => item.corpus === "research").length === researchCount, "check compile dropped research");
+assert(
+  check.filter((item) => item.corpus === "owner-seed").length === ownerCount,
+  "check compile dropped owner-seed",
+);
 
 const readySv = "Bravo, du är redo att göra provet.";
 const readyFr = "Bravo, tu es prêt à passer l'examen.";
@@ -149,7 +174,9 @@ assert(
   "compiled imageUrl must not be media/ without leading slash",
 );
 
-const compiledResearch = compiled.filter((item) => item.corpus === "research");
+const compiledResearch = compiled.filter(
+  (item) => item.corpus === "research" || item.corpus === "owner-seed",
+);
 for (const question of compiledResearch) {
   assert(!looksFrenchExamLeak(question.stem_sv), `French leaked into stem_sv ${question.id}`);
   assert(
@@ -189,6 +216,6 @@ for (const id of bannedFakeQcm) {
 }
 
 console.log(
-  `self-check OK · research ${researchCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,
+  `self-check OK · research ${researchCount} + owner-seed ${ownerCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,
 );
 void require;

@@ -4,7 +4,7 @@ import { useAppState } from "@/components/app-state";
 import { trackLabel } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { emptyState, updateProfile } from "@/lib/progress/store";
-import type { SupportLevel, Track } from "@/lib/types";
+import { TRACKS, type SupportLevel, type Track } from "@/lib/types";
 
 export default function SettingsPage() {
   const { state, setState } = useAppState();
@@ -32,7 +32,7 @@ export default function SettingsPage() {
 
       <section className="card space-y-3">
         <p className="text-sm font-medium text-black">{dict.switchTrack}</p>
-        {(["b", "taxi"] as const).map((track) => (
+        {TRACKS.map((track) => (
           <label key={track} className="flex min-h-11 items-center gap-3 text-black">
             <input
               type="checkbox"
@@ -43,9 +43,6 @@ export default function SettingsPage() {
             {trackLabel(track)}
           </label>
         ))}
-        <p className="text-sm text-[#9a9388]">
-          {trackLabel("owner")} — {dict.comingSoon}
-        </p>
       </section>
 
       <section className="card space-y-3">

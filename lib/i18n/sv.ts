@@ -19,13 +19,13 @@ export const sv = {
   dashboard: "Översikt",
   onboardingTitle: "Välj din väg",
   onboardingLead:
-    "Två helt skilda resor. Har du redan B kan du läsa bara taxi.",
+    "Tre skilda resor. Har du redan B kan du läsa bara taxi — eller Taxi Företag.",
   trackB: BRAND.tracks.b.label,
   trackBDesc: `${BRAND.tracks.b.product} — vanligt teoriprov.`,
   trackTaxi: BRAND.tracks.taxi.label,
   trackTaxiDesc: `${BRAND.tracks.taxi.product} — lagstiftning, säkerhet och karta.`,
   trackOwner: BRAND.tracks.owner.label,
-  trackOwnerDesc: `${BRAND.tracks.owner.product} — kommer senare.`,
+  trackOwnerDesc: `${BRAND.tracks.owner.product} — taxitrafiktillstånd, fordon och redovisning.`,
   comingSoon: "Kommer snart",
   bothTracks: `${BRAND.tracks.b.label} + ${BRAND.tracks.taxi.label}`,
   yourName: "Ditt namn (valfritt)",
@@ -80,15 +80,18 @@ export const sv = {
   accuracy: "Träffsäkerhet",
   dueToday: "Att repetera",
   ownerSoon:
-    `Den här sektionen är förberedd för ${BRAND.tracks.owner.label} (${BRAND.tracks.owner.product}). Inget innehåll än.`,
+    `${BRAND.tracks.owner.label} är en egen bana: taxitrafiktillstånd, fordon, taxameter och anställda förare. Progressen blandas inte med taxiförare.`,
   resetProgress: "Nollställ lokal progress",
   demoNote:
     "Två korpusar kompileras: data/research-bank.jsonl (YouTube + appar + offentliga exempel) och data/questions.jsonl (Manzi). Research först — Manzi droppar den inte.",
   corpusResearch: "research",
   corpusManzi: "manzi",
+  corpusOwner: "ägare",
   freqHigh: "hög",
   studyOrder:
     "Börja med YouTube/research (vilotid 11/8, taxameter 24 mån-fälla, gul heldragen linje, tidbok, prisräkning), sedan Manzi.",
+  studyOrderOwner:
+    "Börja med tillståndshavarens skyldigheter (taxitrafiktillstånd, ekonomi 100/50, trafikansvarig), sedan taxameter/redovisning, fordon, prisinformation och anställda förare.",
   supportFade: "Stöd",
   supportHigh: "Mycket hjälp",
   supportLow: "Lite hjälp",
@@ -127,6 +130,7 @@ export const sv = {
     lagstiftning: "Lagstiftning",
     sakerhet: "Säkerhet",
     karta: "Karta",
+    agare: "Tillståndshavare",
   },
 };
 

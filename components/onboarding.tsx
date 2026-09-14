@@ -5,7 +5,7 @@ import { BrandMark } from "@/components/brand-mark";
 import { TrackCard } from "@/components/track-card";
 import { TrustStrip } from "@/components/trust-strip";
 import { useAppState } from "@/components/app-state";
-import { trackLabel, trackProduct } from "@/lib/branding";
+import { trackLabel } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { updateProfile } from "@/lib/progress/store";
 import type { Track } from "@/lib/types";
@@ -14,7 +14,7 @@ export function Onboarding() {
   const { state, setState } = useAppState();
   const [locale, setLocale] = useState(state.profile.locale);
   const dict = t(locale);
-  const [choice, setChoice] = useState<"b" | "taxi" | "both">("taxi");
+  const [choice, setChoice] = useState<"b" | "taxi" | "owner" | "both">("taxi");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [tos, setTos] = useState(false);
@@ -28,7 +28,11 @@ export function Onboarding() {
         name,
         email,
         tracks,
-        activeTrack: tracks.includes("taxi") ? "taxi" : "b",
+        activeTrack: tracks.includes("taxi")
+          ? "taxi"
+          : tracks.includes("owner")
+            ? "owner"
+            : "b",
         locale,
         fragileMode: fragile,
         supportLevel: fragile ? 3 : 2,
@@ -92,9 +96,9 @@ export function Onboarding() {
         <TrackCard
           icon="owner"
           title={trackLabel("owner")}
-          description={`${trackProduct("owner")} · ${dict.comingSoon}`}
-          muted
-          badge={dict.comingSoon}
+          description={dict.trackOwnerDesc}
+          selected={choice === "owner"}
+          onClick={() => setChoice("owner")}
         />
       </div>
 

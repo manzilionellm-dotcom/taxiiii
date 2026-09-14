@@ -39,9 +39,11 @@ export function QuestionCard({
           {dict.topic[question.topic]}
           {question.corpus === "research"
             ? ` · ${dict.corpusResearch}`
-            : question.corpus === "manzi"
-              ? ` · ${dict.corpusManzi}`
-              : ""}
+            : question.corpus === "owner-seed"
+              ? ` · ${dict.corpusOwner}`
+              : question.corpus === "manzi"
+                ? ` · ${dict.corpusManzi}`
+                : ""}
           {question.freq === "high" ? ` · ${dict.freqHigh}` : ""}
         </span>
         <span className="block truncate text-right text-[10px] tracking-normal text-[#8a8276]">

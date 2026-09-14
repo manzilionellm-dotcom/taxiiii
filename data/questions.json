@@ -39895,5 +39895,1330 @@
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-09.jpg",
     "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
     "corpus": "manzi"
+  },
+  {
+    "id": "rs-owner-prisdekal-inne-ute",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Var ska prisinformationen finnas på ett taxifordon med taxameter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara i nedre vänstra hörnet av vindrutan"
+      },
+      {
+        "letter": "B",
+        "text": "Väl synlig inne i fordonet och på fordonets utsida (höger och vänster sida), varaktigt utförd enligt TSFS 2013:41"
+      },
+      {
+        "letter": "C",
+        "text": "Bara i förarens pärm"
+      },
+      {
+        "letter": "D",
+        "text": "Bara på företagets webbplats"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Samtliga taxifordon ska ha prisdekaler både inne i och utanpå fordonet. Inne: läsbar från varje passagerarplats. Ute: höger och vänster sida. Mallar i TSFS 2013:41. Källa: TSFS 2013:41 6 kap. 1–2 och 7–8 §§; Transportstyrelsen, Prisinformation för taxiföretag. Vanlig fälla: Bara i vindrutan. Källa: TSFS 2013:41 6 kap. 1–2, 7–8 §§+transportstyrelsen/prisinformation",
+    "explanation_fr": "Intérieur et extérieur, durable, selon TSFS 2013:41. Piège fréquent : Bara i vindrutan. Source : TSFS 2013:41 6 kap. 1–2, 7–8 §§+transportstyrelsen/prisinformation",
+    "source": "TSFS 2013:41 6 kap. 1–2, 7–8 §§+transportstyrelsen/prisinformation",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Bara i vindrutan",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-prisuppgift-700",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "När ska en bindande prisuppgift lämnas till beställaren?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Alltid före varje resa"
+      },
+      {
+        "letter": "B",
+        "text": "När jämförpriset överstiger 700 kronor (1,2 procent av prisbasbeloppet, avrundat nedåt till närmaste tiotal kronor); behövs inte vid fast pris"
+      },
+      {
+        "letter": "C",
+        "text": "Bara om kunden begär det"
+      },
+      {
+        "letter": "D",
+        "text": "Aldrig när taxameter används"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Prisuppgift ska lämnas om jämförpriset överstiger 1,2 procent av prisbasbeloppet, avrundat nedåt till närmaste tiotal kronor. Transportstyrelsen anger tröskeln 700 kronor. Prisuppgiften ska ange högsta pris och lämnas när färden beställs. Källa: SFS 2012:211 2 kap. 20–21 §§; Transportstyrelsen, Prisinformation för taxiföretag. Vanlig fälla: Alltid / aldrig vid taxameter. Källa: SFS 2012:211 2 kap. 20–21 §§+transportstyrelsen/prisinformation",
+    "explanation_fr": "Si le jämförpris dépasse 700 kr (1,2 % du PBB). Pas si prix fixe. SFS 2012:211, ch. 2, art. 20–21. Piège fréquent : Alltid / aldrig vid taxameter. Source : SFS 2012:211 2 kap. 20–21 §§+transportstyrelsen/prisinformation",
+    "source": "SFS 2012:211 2 kap. 20–21 §§+transportstyrelsen/prisinformation",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Alltid / aldrig vid taxameter",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-redovisning-vecka",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Hur ofta ska tillståndshavaren överföra taxameteruppgifter till en redovisningscentral?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "En gång per år"
+      },
+      {
+        "letter": "B",
+        "text": "Minst en gång per vecka"
+      },
+      {
+        "letter": "C",
+        "text": "Endast när Transportstyrelsen begär det"
+      },
+      {
+        "letter": "D",
+        "text": "Aldrig om fast pris används"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tillståndshavaren ska överföra taxameteruppgifter från alla anmälda fordon minst en gång per vecka, i obruten följd. Upprepad underlåtenhet kan leda till återkallelse. Källa: SFS 2012:211 2 a kap. 4 § och 4 kap. 2 §; Transportstyrelsen, Redovisningscentraler för taxitrafik. Vanlig fälla: En gång per år / bara vid kontroll. Källa: SFS 2012:211 2 a kap. 4 §+transportstyrelsen/redovisningscentraler-for-taxi",
+    "explanation_fr": "Au moins une fois par semaine. SFS 2012:211, ch. 2 a, art. 4. Piège fréquent : En gång per år / bara vid kontroll. Source : SFS 2012:211 2 a kap. 4 §+transportstyrelsen/redovisningscentraler-for-taxi",
+    "source": "SFS 2012:211 2 a kap. 4 §+transportstyrelsen/redovisningscentraler-for-taxi",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "En gång per år / bara vid kontroll",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-taxameter-plomb-besikt",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad ansvarar tillståndshavaren för när fordonet har taxameter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Att taxametern är av godkänd typ, fungerar, är kontrollerad och plomberad samt besiktas senast ett år efter installation eller senaste besiktning"
+      },
+      {
+        "letter": "B",
+        "text": "Att taxametern besiktas vartannat år tillsammans med fordonet"
+      },
+      {
+        "letter": "C",
+        "text": "Inget, bara föraren ansvarar"
+      },
+      {
+        "letter": "D",
+        "text": "Att taxametern byts ut varje månad"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Fordon får användas i taxitrafik bara med godkänd, fungerande, kontrollerad och plomberad taxameterutrustning (eller särskild utrustning enligt 2 b kap.). Besiktning senast ett år från installation eller senaste besiktning; kontrollrapport ska upprättas. Källa: SFS 2012:238 5 kap. 1 och 3 §§; Transportstyrelsen, Taxameter. Vanlig fälla: Besiktning vartannat år. Källa: SFS 2012:238 5 kap. 1 och 3 §§+transportstyrelsen/taxameter",
+    "explanation_fr": "Type agréé, plombé, contrôlé au plus tard tous les ans. SFS 2012:238, ch. 5, art. 1 et 3. Piège fréquent : Besiktning vartannat år. Source : SFS 2012:238 5 kap. 1 och 3 §§+transportstyrelsen/taxameter",
+    "source": "SFS 2012:238 5 kap. 1 och 3 §§+transportstyrelsen/taxameter",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Besiktning vartannat år",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-taxameter-varje-uppdrag",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Som tillståndshavare, när ska taxametern användas i ett fordon som är utrustat med taxameter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara vid kontantbetalning"
+      },
+      {
+        "letter": "B",
+        "text": "Vid varje köruppdrag"
+      },
+      {
+        "letter": "C",
+        "text": "Bara om kunden begär kvitto"
+      },
+      {
+        "letter": "D",
+        "text": "Bara utanför tätort"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Om fordonet är utrustat med taxameter ska den användas vid varje köruppdrag. Det är tillståndshavarens ansvar att verksamheten följer detta. Källa: Transportstyrelsen, Taxameter. Källa: transportstyrelsen/taxameter",
+    "explanation_fr": "À chaque course. Transportstyrelsen, Taxameter. Source : transportstyrelsen/taxameter",
+    "source": "transportstyrelsen/taxameter",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-utan-taxameter-bc",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad krävs om tillståndshavaren bedriver taxitrafik med ett fordon som saknar taxameterutrustning?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Kommunal dispens räcker"
+      },
+      {
+        "letter": "B",
+        "text": "Fordonet ska anslutas till en tillståndspliktig beställningscentral och ha särskild utrustning för taxifordon"
+      },
+      {
+        "letter": "C",
+        "text": "Inget extra, taxameter är frivillig"
+      },
+      {
+        "letter": "D",
+        "text": "Bara en pappersprislista i vindrutan"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Fordon utan taxameter ska från anmälan för taxitrafik anslutas till en beställningscentral enligt lagen (2014:1020) och ha särskild utrustning för taxifordon. Transportstyrelsen: godkänd taxameter eller särskild utrustning. Källa: SFS 2012:211 2 b kap. 1 §; Transportstyrelsen, Taxameter. Vanlig fälla: Kommunal dispens / frivilligt i glesbygd. Källa: SFS 2012:211 2 b kap. 1 §+transportstyrelsen/taxameter",
+    "explanation_fr": "Centrale agréée + équipement spécial. SFS 2012:211, ch. 2 b, art. 1. Piège fréquent : Kommunal dispens / frivilligt i glesbygd. Source : SFS 2012:211 2 b kap. 1 §+transportstyrelsen/taxameter",
+    "source": "SFS 2012:211 2 b kap. 1 §+transportstyrelsen/taxameter",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Kommunal dispens / frivilligt i glesbygd",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-betalning-bc",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Hur ska betalning ske när taxifordonet saknar taxameter och är anslutet till en beställningscentral?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Direkt till föraren eller tillståndshavaren i bilen"
+      },
+      {
+        "letter": "B",
+        "text": "Till den beställningscentral som tagit emot beställningen; betalning får inte ske genom förarens eller tillståndshavarens medverkan. Fast pris ska anges innan köruppdraget påbörjas"
+      },
+      {
+        "letter": "C",
+        "text": "Valfritt kontant till vem som helst"
+      },
+      {
+        "letter": "D",
+        "text": "Bara via Swish till förarens privata nummer"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Beställningar och betalningar får bara göras till beställningscentralen. Betalningen får inte göras genom förarens eller tillståndshavarens medverkan. Fast pris ska anges innan uppdraget påbörjas. Källa: SFS 2012:211 2 b kap. 3–4 §§. Källa: SFS 2012:211 2 b kap. 3–4 §§",
+    "explanation_fr": "Paiement à la centrale uniquement ; prix fixe avant le départ. SFS 2012:211, ch. 2 b, art. 3–4. Source : SFS 2012:211 2 b kap. 3–4 §§",
+    "source": "SFS 2012:211 2 b kap. 3–4 §§",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-kvitto-erbjuda",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad ska erbjudas kunden efter varje avslutat köruppdrag när taxameter används?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inget, kvitto bara på begäran"
+      },
+      {
+        "letter": "B",
+        "text": "Kvitto från taxameterutrustningen, eller följesedel om beloppet ska faktureras"
+      },
+      {
+        "letter": "C",
+        "text": "Bara muntligt pris"
+      },
+      {
+        "letter": "D",
+        "text": "Bara jämförprisdekalen"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Efter varje avslutat köruppdrag ska kunden erbjudas kvitto, eller följesedel vid faktura, i papper eller elektronisk form som kunden kan ta emot. Kvittot ska visa körd sträcka och tid. Källa: TSFS 2013:41 5 kap. 1 §; Transportstyrelsen, Prisinformation för taxiföretag. Källa: TSFS 2013:41 5 kap. 1 §+transportstyrelsen/prisinformation",
+    "explanation_fr": "Reçu taximètre ou bordereau. TSFS 2013:41, ch. 5, art. 1. Source : TSFS 2013:41 5 kap. 1 §+transportstyrelsen/prisinformation",
+    "source": "TSFS 2013:41 5 kap. 1 §+transportstyrelsen/prisinformation",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-redovisning-obesikt",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad ska tillståndshavaren göra om en taxameter inte har brukats under perioden sedan senaste överföringen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inget, tystnad räcker"
+      },
+      {
+        "letter": "B",
+        "text": "Ge redovisningscentralen besked om detta och om orsaken, senast när uppgifterna skulle ha överförts"
+      },
+      {
+        "letter": "C",
+        "text": "Vänta till nästa årliga besiktning"
+      },
+      {
+        "letter": "D",
+        "text": "Avregistrera fordonet hos Skatteverket"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tillståndshavaren ska ge redovisningscentralen besked om att taxametern inte brukats och om orsaken, senast vid den tidpunkt då uppgifterna skulle ha överförts. Källa: SFS 2012:211 2 a kap. 4 § andra stycket. Källa: SFS 2012:211 2 a kap. 4 §",
+    "explanation_fr": "Informer la centrale et indiquer le motif. SFS 2012:211, ch. 2 a, art. 4. Source : SFS 2012:211 2 a kap. 4 §",
+    "source": "SFS 2012:211 2 a kap. 4 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-redovisning-tradlost",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Hur ska taxameteruppgifter överföras till redovisningscentralen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Med pappersutskrift en gång i månaden"
+      },
+      {
+        "letter": "B",
+        "text": "Digitalt och trådlöst"
+      },
+      {
+        "letter": "C",
+        "text": "Bara via vanlig post"
+      },
+      {
+        "letter": "D",
+        "text": "Bara vid kontrollbesiktning"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Överföring ska ske digitalt och trådlöst. Källa: SFS 2012:211 2 a kap. 3 §. Källa: SFS 2012:211 2 a kap. 3 §",
+    "explanation_fr": "Numérique et sans fil. SFS 2012:211, ch. 2 a, art. 3. Source : SFS 2012:211 2 a kap. 3 §",
+    "source": "SFS 2012:211 2 a kap. 3 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-ag-bevara-12",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Hur länge ska arbetsgivaren bevara anteckningarna om dygnsvila för varje anställd förare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "En vecka"
+      },
+      {
+        "letter": "B",
+        "text": "Tre månader"
+      },
+      {
+        "letter": "C",
+        "text": "Minst tolv månader från den dag anteckningarna gäller"
+      },
+      {
+        "letter": "D",
+        "text": "Sju år"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Arbetsgivaren ska bevara anteckningarna under minst tolv månader från den dag de gäller. Detsamma gäller egenföretagare. Källa: SFS 1994:1297 8 §; Transportstyrelsen, Vilotider för lätta fordon. Vanlig fälla: En vecka / tre månader. Källa: SFS 1994:1297 8 §+transportstyrelsen/vilotider-latta-fordon",
+    "explanation_fr": "Au moins douze mois. SFS 1994:1297, art. 8. Piège fréquent : En vecka / tre månader. Source : SFS 1994:1297 8 §+transportstyrelsen/vilotider-latta-fordon",
+    "source": "SFS 1994:1297 8 §+transportstyrelsen/vilotider-latta-fordon",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "En vecka / tre månader",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-ag-tidbok-kostnadsfritt",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad är arbetsgivarens skyldighet när anställda taxiförare omfattas av vilotidsreglerna?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Föraren ska själv köpa tidbok"
+      },
+      {
+        "letter": "B",
+        "text": "Arbetsgivaren ska utan kostnad tillhandahålla varje förare en tidbok och se till att de föreskrivna anteckningarna görs"
+      },
+      {
+        "letter": "C",
+        "text": "Bara beställningscentralen ansvarar"
+      },
+      {
+        "letter": "D",
+        "text": "Tidbok krävs inte för anställda"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Arbetsgivaren ska utan kostnad tillhandahålla tidbok och se till att föreskrivna anteckningar görs. Transportstyrelsen: ge tidböcker med företagets uppgifter, anteckna utlämning och återlämning, föra förteckning och visa upp på begäran. Källa: SFS 1994:1297 9 §; Transportstyrelsen, Vilotider för lätta fordon. Vanlig fälla: Föraren köper tidboken själv. Källa: SFS 1994:1297 9 §+transportstyrelsen/vilotider-latta-fordon",
+    "explanation_fr": "Fournir le tidbok gratuitement et veiller aux mentions. SFS 1994:1297, art. 9. Piège fréquent : Föraren köper tidboken själv. Source : SFS 1994:1297 9 §+transportstyrelsen/vilotider-latta-fordon",
+    "source": "SFS 1994:1297 9 §+transportstyrelsen/vilotider-latta-fordon",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Föraren köper tidboken själv",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-ag-anteckna-sjalv",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vem ska, utöver föraren, upprätta anteckningar om dygnsvila när föraren är anställd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara föraren"
+      },
+      {
+        "letter": "B",
+        "text": "Motsvarande anteckningar ska även upprättas hos arbetsgivaren"
+      },
+      {
+        "letter": "C",
+        "text": "Bara Skatteverket"
+      },
+      {
+        "letter": "D",
+        "text": "Bara beställningscentralen"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Föraren antecknar i tidboken innan körningen påbörjas. Är föraren anställd ska motsvarande anteckningar även upprättas hos arbetsgivaren. Källa: SFS 1994:1297 5 §. Källa: SFS 1994:1297 5 §",
+    "explanation_fr": "Oui, des notes correspondantes chez l'employeur. SFS 1994:1297, art. 5. Source : SFS 1994:1297 5 §",
+    "source": "SFS 1994:1297 5 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-jamforpris-def",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad är jämförpriset som tillståndshavaren ska använda i prisinformationen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Priset för en mil utan startavgift"
+      },
+      {
+        "letter": "B",
+        "text": "Priset inklusive moms för en 10 kilometer lång transport som varar 15 minuter, inklusive eventuell grundavgift"
+      },
+      {
+        "letter": "C",
+        "text": "Medelpriset för alla körningar under ett dygn"
+      },
+      {
+        "letter": "D",
+        "text": "Fast pris till närmaste flygplats"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Jämförpriset är priset i kronor inklusive mervärdesskatt för en 10 km lång transport som varar 15 minuter, inklusive eventuell grundavgift. Källa: SFS 2012:211 2 kap. 20 §; Transportstyrelsen, Prisinformation för taxiföretag. Vanlig fälla: Valfri sträcka utan moms. Källa: SFS 2012:211 2 kap. 20 §+transportstyrelsen/prisinformation",
+    "explanation_fr": "10 km / 15 min TTC, prise en charge comprise. SFS 2012:211, ch. 2, art. 20. Piège fréquent : Valfri sträcka utan moms. Source : SFS 2012:211 2 kap. 20 §+transportstyrelsen/prisinformation",
+    "source": "SFS 2012:211 2 kap. 20 §+transportstyrelsen/prisinformation",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Valfri sträcka utan moms",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-prisuppgift-spara",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Hur länge ska bevis om lämnade prisuppgifter sparas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara tills körpasset är slut"
+      },
+      {
+        "letter": "B",
+        "text": "De senaste två dygnen i fordonet; alla bevis i sex månader hos tillståndshavaren"
+      },
+      {
+        "letter": "C",
+        "text": "En vecka hos föraren"
+      },
+      {
+        "letter": "D",
+        "text": "Sju år hos Skatteverket"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Bevis avseende de senaste två dygnen ska finnas i fordonet. Bevis ska sparas på ett beständigt sätt i sex månader. Transportstyrelsen: de senaste två dygnen i bilen och sex månader hos tillståndshavaren. Källa: TSFS 2013:41 6 kap. 11–12 §§; Transportstyrelsen, Prisinformation för taxiföretag. Vanlig fälla: Bara tills passet är slut. Källa: TSFS 2013:41 6 kap. 11–12 §§+transportstyrelsen/prisinformation",
+    "explanation_fr": "2 jours dans le véhicule, 6 mois chez l'exploitant. TSFS 2013:41, ch. 6, art. 11–12. Piège fréquent : Bara tills passet är slut. Source : TSFS 2013:41 6 kap. 11–12 §§+transportstyrelsen/prisinformation",
+    "source": "TSFS 2013:41 6 kap. 11–12 §§+transportstyrelsen/prisinformation",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Bara tills passet är slut",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-anlita-utan-tfl",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad gäller om du som tillståndshavare anlitar en förare som saknar taxiförarlegitimation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Det är tillåtet om föraren har körkort B"
+      },
+      {
+        "letter": "B",
+        "text": "Det är otillåtet; tillståndshavaren kan dömas till böter eller fängelse i högst sex månader"
+      },
+      {
+        "letter": "C",
+        "text": "Det är tillåtet under de tre första månaderna"
+      },
+      {
+        "letter": "D",
+        "text": "Det är bara föraren som kan straffas"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Personbil eller lätt lastbil får föras i taxitrafik endast av den som har giltig taxiförarlegitimation (eller tillfällig rätt enligt 2016:145). Tillståndshavare som uppsåtligen eller av oaktsamhet anlitar förare utan sådan behörighet döms till böter eller fängelse i högst sex månader. Källa: SFS 2012:211 3 kap. 1 § och 5 kap. 4 §. Vanlig fälla: Körkort B räcker för anställda. Källa: SFS 2012:211 3 kap. 1 § och 5 kap. 4 §",
+    "explanation_fr": "Interdit ; amende ou prison ≤ 6 mois. SFS 2012:211, ch. 3 art. 1 et ch. 5 art. 4. Piège fréquent : Körkort B räcker för anställda. Source : SFS 2012:211 3 kap. 1 § och 5 kap. 4 §",
+    "source": "SFS 2012:211 3 kap. 1 § och 5 kap. 4 §",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Körkort B räcker för anställda",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-anmal-fordon-forst",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "När ska tillståndshavaren anmäla en personbil eller lätt lastbil som ska användas i taxitrafik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inom tre månader efter första körningen"
+      },
+      {
+        "letter": "B",
+        "text": "Innan fordonet används i taxitrafik — anmälan ska ha kommit in till Transportstyrelsen"
+      },
+      {
+        "letter": "C",
+        "text": "Bara om fordonet är äldre än fem år"
+      },
+      {
+        "letter": "D",
+        "text": "Aldrig om fordonet hyrs"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Innan fordonet får användas i taxitrafik ska tillståndshavaren göra en skriftlig anmälan till Transportstyrelsen. Fordonet får inte användas förrän en anmälan som uppfyller kraven har kommit in. Källa: SFS 2012:238 4 kap. 2 §; Transportstyrelsen, Tillsyn av taxitrafiktillstånd. Vanlig fälla: Köra först, anmäla sen. Källa: SFS 2012:238 4 kap. 2 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "explanation_fr": "Avant toute utilisation. SFS 2012:238, ch. 4, art. 2. Piège fréquent : Köra först, anmäla sen. Source : SFS 2012:238 4 kap. 2 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "source": "SFS 2012:238 4 kap. 2 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Köra först, anmäla sen",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-aterkallelse-anvands-ej",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "När ska ett taxitrafiktillstånd återkallas därför att det inte används?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aldrig, tillståndet vilar utan fordon"
+      },
+      {
+        "letter": "B",
+        "text": "Om det inte används och särskilda skäl inte talar emot återkallelse; inget fordon anmält i taxitrafik ses som att tillståndet inte används"
+      },
+      {
+        "letter": "C",
+        "text": "Först efter tio år utan körning"
+      },
+      {
+        "letter": "D",
+        "text": "Bara om tillståndshavaren begär det"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tillståndet ska återkallas om det inte används och särskilda skäl inte talar emot. Transportstyrelsen: saknas fordon anmält i taxitrafik ses tillståndet som oanvänt. Källa: SFS 2012:211 4 kap. 5 §; Transportstyrelsen, Tillsyn av taxitrafiktillstånd. Vanlig fälla: Tillståndet vilar utan fordon. Källa: SFS 2012:211 4 kap. 5 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "explanation_fr": "Oui, sauf motif particulier ; aucun véhicule déclaré = non-usage. Piège fréquent : Tillståndet vilar utan fordon. Source : SFS 2012:211 4 kap. 5 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "source": "SFS 2012:211 4 kap. 5 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Tillståndet vilar utan fordon",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-aterkallelse-skatt-overforing",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vilket av följande ska leda till att taxitrafiktillståndet återkallas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "En enstaka parkeringsanmärkning"
+      },
+      {
+        "letter": "B",
+        "text": "Väsentligt underlåten betalning av skatter och avgifter, eller upprepad underlåtenhet att överföra taxameteruppgifter"
+      },
+      {
+        "letter": "C",
+        "text": "Att föraren byter arbetspass"
+      },
+      {
+        "letter": "D",
+        "text": "Att jämförpriset höjs"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tillstånd ska återkallas bland annat vid väsentligt underlåten betalning av skatter och avgifter, upprepad underlåtenhet att överföra taxameteruppgifter, allvarliga brott eller åsidosatta villkor. Källa: SFS 2012:211 4 kap. 2 §; Transportstyrelsen, Tillsyn av taxitrafiktillstånd. Källa: SFS 2012:211 4 kap. 2 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "explanation_fr": "Impôts impayés ou défauts répétés de transmission. SFS 2012:211, ch. 4, art. 2. Source : SFS 2012:211 4 kap. 2 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "source": "SFS 2012:211 4 kap. 2 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-fortlopande-ekonomi",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad gäller kravet på ekonomiska resurser efter att taxitrafiktillståndet har meddelats?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Kravet prövas bara vid ansökan"
+      },
+      {
+        "letter": "B",
+        "text": "Tillståndshavaren ska kunna styrka att kravet fortlöpande är uppfyllt"
+      },
+      {
+        "letter": "C",
+        "text": "Kravet upphör efter tre år"
+      },
+      {
+        "letter": "D",
+        "text": "Kravet gäller bara aktiebolag"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Den som innehar taxitrafiktillstånd ska kunna styrka att kravet på ekonomiska resurser fortlöpande uppfylls. Transportstyrelsen kan återkalla tillståndet om bolaget inte kan visa detta. Källa: SFS 2012:211 2 kap. 10 §; Transportstyrelsen, Tillsyn av taxitrafiktillstånd. Vanlig fälla: Bara vid ansökan. Källa: SFS 2012:211 2 kap. 10 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "explanation_fr": "Le titulaire doit pouvoir justifier en continu. SFS 2012:211, ch. 2, art. 10. Piège fréquent : Bara vid ansökan. Source : SFS 2012:211 2 kap. 10 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "source": "SFS 2012:211 2 kap. 10 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Bara vid ansökan",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-giltighet-tills-vidare",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Hur länge gäller ett taxitrafiktillstånd normalt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fem år"
+      },
+      {
+        "letter": "B",
+        "text": "Tio år"
+      },
+      {
+        "letter": "C",
+        "text": "Tills vidare, men det får begränsas till viss tid om det finns särskilda skäl"
+      },
+      {
+        "letter": "D",
+        "text": "Tills fordonet säljs"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Ett taxitrafiktillstånd gäller tills vidare. Om det finns särskilda skäl får det begränsas till en viss tid. Källa: SFS 2012:211 2 kap. 14 §. Vanlig fälla: Fem år / tio år. Källa: SFS 2012:211 2 kap. 14 §",
+    "explanation_fr": "Valable jusqu'à nouvel ordre, sauf motif particulier. SFS 2012:211, ch. 2, art. 14. Piège fréquent : Fem år / tio år. Source : SFS 2012:211 2 kap. 14 §",
+    "source": "SFS 2012:211 2 kap. 14 §",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Fem år / tio år",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-kapital-100-50",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vilket belopp ska sökanden normalt förfoga över i kapital och reserver, om inte särskilda skäl finns?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "50 000 kronor för första fordonet och 25 000 kronor för varje ytterligare fordon"
+      },
+      {
+        "letter": "B",
+        "text": "100 000 kronor oavsett antal fordon"
+      },
+      {
+        "letter": "C",
+        "text": "100 000 kronor för ett fordon och 50 000 kronor för varje därutöver tillkommande fordon"
+      },
+      {
+        "letter": "D",
+        "text": "250 000 kronor för första fordonet"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Minst 100 000 kr för ett fordon och 50 000 kr för varje ytterligare fordon, om inte särskilda skäl finns. Likviditet och soliditet ska främst beaktas. Källa: SFS 2012:211 2 kap. 9 §. Vanlig fälla: 50 000 kr för första fordonet. Källa: SFS 2012:211 2 kap. 9 §",
+    "explanation_fr": "100 000 kr pour le 1er véhicule, 50 000 kr par véhicule suivant. SFS 2012:211, ch. 2, art. 9. Piège fréquent : 50 000 kr för första fordonet. Source : SFS 2012:211 2 kap. 9 §",
+    "source": "SFS 2012:211 2 kap. 9 §",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "50 000 kr för första fordonet",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-lamplighet",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vilka tre krav ska den som söker taxitrafiktillstånd uppfylla för att bedömas lämplig?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Enbart körkort B och F-skatt"
+      },
+      {
+        "letter": "B",
+        "text": "Yrkeskunnande, ekonomiska förhållanden och gott anseende"
+      },
+      {
+        "letter": "C",
+        "text": "Enbart yrkeskunnande och lokalkännedom"
+      },
+      {
+        "letter": "D",
+        "text": "Kommunalt godkännande, försäkring och taxameter"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tillstånd får endast ges till den som med hänsyn till yrkeskunnande, ekonomiska förhållanden och gott anseende bedöms lämplig. Källa: SFS 2012:211 2 kap. 5 §. Vanlig fälla: Bara ekonomi eller bara körkort. Källa: SFS 2012:211 2 kap. 5 §",
+    "explanation_fr": "Compétence professionnelle, situation financière et bonne réputation. SFS 2012:211, ch. 2, art. 5. Piège fréquent : Bara ekonomi eller bara körkort. Source : SFS 2012:211 2 kap. 5 §",
+    "source": "SFS 2012:211 2 kap. 5 §",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Bara ekonomi eller bara körkort",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-provningsmyndighet",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vilken myndighet prövar frågor om taxitrafiktillstånd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trafikverket"
+      },
+      {
+        "letter": "B",
+        "text": "Länsstyrelsen"
+      },
+      {
+        "letter": "C",
+        "text": "Transportstyrelsen"
+      },
+      {
+        "letter": "D",
+        "text": "Kommunen"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Transportstyrelsen är prövningsmyndighet. Källa: SFS 2012:238 2 kap. 1 §. Vanlig fälla: Trafikverket / länsstyrelsen. Källa: SFS 2012:238 2 kap. 1 §",
+    "explanation_fr": "Transportstyrelsen instruit. SFS 2012:238, ch. 2, art. 1. Piège fréquent : Trafikverket / länsstyrelsen. Source : SFS 2012:238 2 kap. 1 §",
+    "source": "SFS 2012:238 2 kap. 1 §",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Trafikverket / länsstyrelsen",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-regbesikt-taxi",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vilket krav gäller för att du som tillståndshavare ska kunna anmäla ett fordon till taxitrafik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fordonet ska vara registreringsbesiktat för taxitrafik"
+      },
+      {
+        "letter": "B",
+        "text": "Det räcker att fordonet har vanlig personbilsregistrering"
+      },
+      {
+        "letter": "C",
+        "text": "Fordonet måste vara yngre än tre år"
+      },
+      {
+        "letter": "D",
+        "text": "Fordonet måste ägas av kommunen"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Du kan bara anmäla ett fordon som är registreringsbesiktat för taxitrafik. Vid anmälan kan gula registreringsskyltar beställas och redovisningscentral anges. Källa: Transportstyrelsen, Fordon i taxitrafik. Källa: transportstyrelsen/fordon-i-taxitrafik",
+    "explanation_fr": "Le véhicule doit avoir passé la réception taxi. Transportstyrelsen, Fordon i taxitrafik. Source : transportstyrelsen/fordon-i-taxitrafik",
+    "source": "transportstyrelsen/fordon-i-taxitrafik",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-tillstand-plikt",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad krävs för att bedriva taxitrafik enligt taxitrafiklagen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ett kommunalt näringstillstånd"
+      },
+      {
+        "letter": "B",
+        "text": "Ett taxitrafiktillstånd"
+      },
+      {
+        "letter": "C",
+        "text": "Enbart taxiförarlegitimation"
+      },
+      {
+        "letter": "D",
+        "text": "Enbart F-skattsedel"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Taxitrafik får bedrivas endast av den som har taxitrafiktillstånd. Källa: SFS 2012:211 2 kap. 1 §. Vanlig fälla: Kommunalt tillstånd räcker. Källa: SFS 2012:211 2 kap. 1 §",
+    "explanation_fr": "Seul le titulaire d'un taxitrafiktillstånd peut exercer. SFS 2012:211, ch. 2, art. 1. Piège fréquent : Kommunalt tillstånd räcker. Source : SFS 2012:211 2 kap. 1 §",
+    "source": "SFS 2012:211 2 kap. 1 §",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Kommunalt tillstånd räcker",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-trafikansvarig-ab",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vem är trafikansvarig i ett aktiebolag som har taxitrafiktillstånd, om det finns en verkställande direktör?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Valfri anställd förare"
+      },
+      {
+        "letter": "B",
+        "text": "Den verkställande direktören"
+      },
+      {
+        "letter": "C",
+        "text": "Revisorn"
+      },
+      {
+        "letter": "D",
+        "text": "Beställningscentralen"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Hos juridiska personer ska det finnas trafikansvariga. I aktiebolag är det VD, om det finns en sådan, annars den styrelseledamot som bolaget har utsett. Källa: SFS 2012:211 2 kap. 3–4 §§. Vanlig fälla: Valfri anställd. Källa: SFS 2012:211 2 kap. 3–4 §§",
+    "explanation_fr": "Le directeur général, sinon un administrateur désigné. SFS 2012:211, ch. 2, art. 3–4. Piège fréquent : Valfri anställd. Source : SFS 2012:211 2 kap. 3–4 §§",
+    "source": "SFS 2012:211 2 kap. 3–4 §§",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "trap": "Valfri anställd",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-trafikforsakring-skylt",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "När får en polisman eller bilinspektör ta hand om den särskilda registreringsskylten för ett taxifordon?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aldrig, skylten är privat egendom"
+      },
+      {
+        "letter": "B",
+        "text": "Bland annat om fordonet saknar föreskriven trafikförsäkring eller om taxameterutrustningen inte uppfyller kraven"
+      },
+      {
+        "letter": "C",
+        "text": "Bara om fordonet är äldre än tio år"
+      },
+      {
+        "letter": "D",
+        "text": "Bara på tillståndshavarens begäran"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Särskild taxiskylt får tas om hand bland annat om fordonet saknar föreskriven trafikförsäkring, om taxameterutrustningen inte uppfyller kraven, vid körförbud, användningsförbud eller olaga användning. Källa: SFS 2012:211 5 kap. 8 §. Källa: SFS 2012:211 5 kap. 8 §",
+    "explanation_fr": "Sans assurance obligatoire ou taximètre non conforme, entre autres. SFS 2012:211, ch. 5, art. 8. Source : SFS 2012:211 5 kap. 8 §",
+    "source": "SFS 2012:211 5 kap. 8 §",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-yrkeskunnande-amnen",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad ska provet i yrkeskunnande för taxitrafiktillstånd främst avse?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara kartläsning och lokalkännedom"
+      },
+      {
+        "letter": "B",
+        "text": "Rättsregler, företagsledning och ekonomisk ledning, tekniska normer och driftsförhållanden samt trafiksäkerhet"
+      },
+      {
+        "letter": "C",
+        "text": "Bara taxameterns knappar"
+      },
+      {
+        "letter": "D",
+        "text": "Bara arbetsmiljö för förare"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Provet ska avse de kunskaper en tillståndshavare bör ha i rättsregler, företagsledning och ekonomisk ledning, tekniska normer och driftsförhållanden samt trafiksäkerhet. Källa: SFS 2012:211 2 kap. 8 §. Källa: SFS 2012:211 2 kap. 8 §",
+    "explanation_fr": "Droit, gestion, normes techniques/exploitation, sécurité routière. SFS 2012:211, ch. 2, art. 8. Source : SFS 2012:211 2 kap. 8 §",
+    "source": "SFS 2012:211 2 kap. 8 §",
+    "corpus": "owner-seed",
+    "freq": "high",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-avanmal-gula",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad ska tillståndshavaren göra när ett anmält fordon inte längre ska användas i taxitrafik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ingenting, skyltarna får sitta kvar"
+      },
+      {
+        "letter": "B",
+        "text": "Avanmäla fordonet till Transportstyrelsen innan det tas i bruk för annan trafik, och återlämna de gula registreringsskyltarna"
+      },
+      {
+        "letter": "C",
+        "text": "Bara ta bort taxametern"
+      },
+      {
+        "letter": "D",
+        "text": "Anmäla till kommunen inom ett år"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tillståndshavaren ska anmäla ändringen till Transportstyrelsen innan fordonet tas i bruk för annan trafik. Gula registreringsskyltar ska återlämnas. Källa: SFS 2012:238 4 kap. 6 §; Transportstyrelsen, Fordon i taxitrafik. Källa: SFS 2012:238 4 kap. 6 §+transportstyrelsen/fordon-i-taxitrafik",
+    "explanation_fr": "Déclarer la sortie et restituer les plaques jaunes. Source : SFS 2012:238 4 kap. 6 §+transportstyrelsen/fordon-i-taxitrafik",
+    "source": "SFS 2012:238 4 kap. 6 §+transportstyrelsen/fordon-i-taxitrafik",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-dodsfall-6-man",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad händer med taxitrafiktillståndet om tillståndshavaren dör eller försätts i konkurs?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tillståndet upphör samma dag"
+      },
+      {
+        "letter": "B",
+        "text": "Tillståndet övergår på dödsboet eller konkursboet och gäller högst sex månader, om inte längre tid medges"
+      },
+      {
+        "letter": "C",
+        "text": "Tillståndet övergår automatiskt på närmaste anhörige utan tidsgräns"
+      },
+      {
+        "letter": "D",
+        "text": "Transportstyrelsen måste meddela nytt tillstånd inom 14 dagar"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Tillståndet övergår på dödsboet eller konkursboet och gäller högst sex månader från dödsfallet eller konkursbeslutet, om inte längre tid medges. Källa: SFS 2012:211 2 kap. 15 §. Vanlig fälla: Tillståndet upphör samma dag. Källa: SFS 2012:211 2 kap. 15 §",
+    "explanation_fr": "Passe à la succession / masse, 6 mois max. SFS 2012:211, ch. 2, art. 15. Piège fréquent : Tillståndet upphör samma dag. Source : SFS 2012:211 2 kap. 15 §",
+    "source": "SFS 2012:211 2 kap. 15 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "trap": "Tillståndet upphör samma dag",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-forestandare-1-man",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Hur snabbt måste en föreståndare anmälas till prövningsmyndigheten efter dödsfall eller konkurs, för att tillståndet inte ska upphöra?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inom en vecka"
+      },
+      {
+        "letter": "B",
+        "text": "Inom en månad"
+      },
+      {
+        "letter": "C",
+        "text": "Inom sex månader"
+      },
+      {
+        "letter": "D",
+        "text": "Ingen anmälan krävs"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Om en föreståndare inte har anmälts inom en månad efter dödsfallet eller konkursbeslutet upphör tillståndet. Föreståndaren ska godkännas enligt lämplighetskraven. Källa: SFS 2012:211 2 kap. 15 §. Källa: SFS 2012:211 2 kap. 15 §",
+    "explanation_fr": "Un mois, sinon le permis expire. SFS 2012:211, ch. 2, art. 15. Source : SFS 2012:211 2 kap. 15 §",
+    "source": "SFS 2012:211 2 kap. 15 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-olaga-taxitrafik",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad kan den dömas till som uppsåtligen bedriver taxitrafik utan tillstånd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara erinran"
+      },
+      {
+        "letter": "B",
+        "text": "Böter eller fängelse i högst ett år för olaga taxitrafik"
+      },
+      {
+        "letter": "C",
+        "text": "Alltid fängelse i lägst två år"
+      },
+      {
+        "letter": "D",
+        "text": "Bara återkallelse av körkort"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Olaga taxitrafik: böter eller fängelse i högst ett år. En tillståndshavare som bryter mot villkor i tillståndet döms till böter. Källa: SFS 2012:211 5 kap. 1 §. Källa: SFS 2012:211 5 kap. 1 §",
+    "explanation_fr": "Amende ou prison ≤ 1 an. SFS 2012:211, ch. 5, art. 1. Source : SFS 2012:211 5 kap. 1 §",
+    "source": "SFS 2012:211 5 kap. 1 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-olamplighet-3-5",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vilken olämplighetstid ska bestämmas när ett taxitrafiktillstånd återkallas på grund av allvarliga missförhållanden eller de omständigheter som anges i 4 kap. 2 §?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Högst tre månader"
+      },
+      {
+        "letter": "B",
+        "text": "Lägst tre och högst fem år"
+      },
+      {
+        "letter": "C",
+        "text": "Tills vidare utan tidsgräns"
+      },
+      {
+        "letter": "D",
+        "text": "Alltid tio år"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Lägst tre och högst fem år. (Vid avslag på grund av bristande gott anseende är tiden i stället lägst sex månader och högst fem år enligt 2 kap. 12 §.) Källa: SFS 2012:211 4 kap. 3 §. Vanlig fälla: Sex månader till fem år (det är vid avslag). Källa: SFS 2012:211 4 kap. 3 §",
+    "explanation_fr": "3 à 5 ans. SFS 2012:211, ch. 4, art. 3. Piège fréquent : Sex månader till fem år (det är vid avslag). Source : SFS 2012:211 4 kap. 3 §",
+    "source": "SFS 2012:211 4 kap. 3 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "trap": "Sex månader till fem år (det är vid avslag)",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-prov-ts-tv",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vem utformar respektive anordnar det skriftliga provet i yrkeskunnande för taxitrafiktillstånd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Kommunen utformar och anordnar"
+      },
+      {
+        "letter": "B",
+        "text": "Transportstyrelsen utformar, Trafikverket anordnar"
+      },
+      {
+        "letter": "C",
+        "text": "Trafikverket utformar, Skatteverket anordnar"
+      },
+      {
+        "letter": "D",
+        "text": "Svenska Taxiförbundet utformar och anordnar"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Transportstyrelsen utformar proven. Trafikverket anordnar dem. Källa: SFS 2012:238 2 kap. 2–3 §§. Vanlig fälla: Kommunen anordnar provet. Källa: SFS 2012:238 2 kap. 2–3 §§",
+    "explanation_fr": "Transportstyrelsen conçoit, Trafikverket organise. SFS 2012:238, ch. 2, art. 2–3. Piège fréquent : Kommunen anordnar provet. Source : SFS 2012:238 2 kap. 2–3 §§",
+    "source": "SFS 2012:238 2 kap. 2–3 §§",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "trap": "Kommunen anordnar provet",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-sanktion-fordon-6000",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vilken sanktionsavgift kan påföras den som inte anmäler eller avanmäler fordon i taxitrafik enligt kraven?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 000 kronor"
+      },
+      {
+        "letter": "B",
+        "text": "6 000 kronor"
+      },
+      {
+        "letter": "C",
+        "text": "50 000 kronor"
+      },
+      {
+        "letter": "D",
+        "text": "Ingen avgift, bara en påminnelse"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Den som inte följer anmälningskravet för fordon ska påföras en sanktionsavgift om 6 000 kronor. Källa: Transportstyrelsen, Tillsyn av taxitrafiktillstånd. Källa: transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "explanation_fr": "6 000 kr. Transportstyrelsen, Tillsyn av taxitrafiktillstånd. Source : transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "source": "transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-sanktion-styrelse-10000",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad kan följa om ett aktiebolag inte anmäler ändringar av styrelse eller aktieägare till Transportstyrelsen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inget, ändringar anmäls bara till Bolagsverket"
+      },
+      {
+        "letter": "B",
+        "text": "Sanktionsavgift på 10 000 kronor"
+      },
+      {
+        "letter": "C",
+        "text": "Automatisk återkallelse samma dag"
+      },
+      {
+        "letter": "D",
+        "text": "Böter enligt brottsbalken"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "I bolagsform ska ändringar av styrelse eller aktieägare anmälas. Om ändringen inte anmäls riskerar företaget sanktionsavgift på 10 000 kronor. Byte av trafikansvarig ska anmälas enligt 2012:238 2 kap. 10 §. Källa: Transportstyrelsen, Tillsyn av taxitrafiktillstånd; SFS 2012:238 2 kap. 10 §. Källa: transportstyrelsen/tillsyn-for-taxitrafiktillstand+SFS 2012:238 2 kap. 10 §",
+    "explanation_fr": "10 000 kr. Transportstyrelsen ; SFS 2012:238, ch. 2, art. 10. Source : transportstyrelsen/tillsyn-for-taxitrafiktillstand+SFS 2012:238 2 kap. 10 §",
+    "source": "transportstyrelsen/tillsyn-for-taxitrafiktillstand+SFS 2012:238 2 kap. 10 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-taxa-ej-andra",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad gäller för hur taxan ska vara uppbyggd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Taxan får höjas fritt mitt under färden"
+      },
+      {
+        "letter": "B",
+        "text": "Priset ska kunna bedömas före färden och beräknas efter körd sträcka och nyttjad tid; grunderna får inte ändras under färden"
+      },
+      {
+        "letter": "C",
+        "text": "Bara startavgift behöver anges"
+      },
+      {
+        "letter": "D",
+        "text": "Taxan bestäms av kommunen"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Taxan ska vara uppbyggd så att priset enkelt kan bedömas före färden och beräknas efter sträcka och tid. Grunderna för prisets bestämmande får inte förändras under färden. Källa: SFS 2012:211 2 kap. 18 §. Källa: SFS 2012:211 2 kap. 18 §",
+    "explanation_fr": "Prix estimable avant, calculable après ; bases inchangées pendant la course. SFS 2012:211, ch. 2, art. 18. Source : SFS 2012:211 2 kap. 18 §",
+    "source": "SFS 2012:211 2 kap. 18 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-tillsyn-ts",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vilken myndighet utövar tillsyn över att tillståndshavare följer taxitrafiklagen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Kommunen"
+      },
+      {
+        "letter": "B",
+        "text": "Transportstyrelsen"
+      },
+      {
+        "letter": "C",
+        "text": "Trafikverket"
+      },
+      {
+        "letter": "D",
+        "text": "Svenska Taxiförbundet"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Transportstyrelsen är tillsynsmyndighet och utövar tillsyn över att tillståndshavare bedriver verksamheten enligt lagen. Källa: SFS 2012:211 4 kap. 16 §; SFS 2012:238 4 kap. 1 §. Källa: SFS 2012:238 4 kap. 1 §+SFS 2012:211 4 kap. 16 §",
+    "explanation_fr": "Transportstyrelsen. SFS 2012:211, ch. 4, art. 16. Source : SFS 2012:238 4 kap. 1 §+SFS 2012:211 4 kap. 16 §",
+    "source": "SFS 2012:238 4 kap. 1 §+SFS 2012:211 4 kap. 16 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-trafikansvarig-hb",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vem är trafikansvarig i ett handelsbolag som har taxitrafiktillstånd?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bara den bolagsman som bolaget utser"
+      },
+      {
+        "letter": "B",
+        "text": "Varje bolagsman"
+      },
+      {
+        "letter": "C",
+        "text": "Bara revisorn"
+      },
+      {
+        "letter": "D",
+        "text": "Kommunen"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "I kommanditbolag och andra handelsbolag är varje bolagsman trafikansvarig. Kommanditdelägare kan undantas om det finns särskilda skäl. Källa: SFS 2012:211 2 kap. 4 §. Vanlig fälla: Bara en utsedd bolagsman. Källa: SFS 2012:211 2 kap. 4 §",
+    "explanation_fr": "Chaque associé. SFS 2012:211, ch. 2, art. 4. Piège fréquent : Bara en utsedd bolagsman. Source : SFS 2012:211 2 kap. 4 §",
+    "source": "SFS 2012:211 2 kap. 4 §",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "trap": "Bara en utsedd bolagsman",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-varning",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Vad kan Transportstyrelsen besluta i stället för återkallelse om missförhållandena inte är så allvarliga?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inget, återkallelse är enda påföljden"
+      },
+      {
+        "letter": "B",
+        "text": "Varning"
+      },
+      {
+        "letter": "C",
+        "text": "Fängelse"
+      },
+      {
+        "letter": "D",
+        "text": "Kommunalt näringsförbud"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Om missförhållandena inte är så allvarliga att tillståndet bör återkallas får varning meddelas. Varningen registreras i vägtrafikregistret. Källa: SFS 2012:211 4 kap. 1 §; Transportstyrelsen, Tillsyn av taxitrafiktillstånd. Källa: SFS 2012:211 4 kap. 1 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "explanation_fr": "Un avertissement. SFS 2012:211, ch. 4, art. 1. Source : SFS 2012:211 4 kap. 1 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "source": "SFS 2012:211 4 kap. 1 §+transportstyrelsen/tillsyn-for-taxitrafiktillstand",
+    "corpus": "owner-seed",
+    "freq": "medium",
+    "type": "qcm"
+  },
+  {
+    "id": "rs-owner-gods-huvudsak",
+    "topic": "agare",
+    "trackHint": "owner",
+    "stem_sv": "Får den som har taxitrafiktillstånd även frakta gods med fordonen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Nej, aldrig"
+      },
+      {
+        "letter": "B",
+        "text": "Ja, under förutsättning att persontransporter utgör den huvudsakliga delen av transportverksamheten"
+      },
+      {
+        "letter": "C",
+        "text": "Ja, utan begränsning"
+      },
+      {
+        "letter": "D",
+        "text": "Bara om kommunen godkänner det"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Ja, med de fordon tillståndet avser, om persontransporter är den huvudsakliga delen. Källa: SFS 2012:211 2 kap. 16 §. Källa: SFS 2012:211 2 kap. 16 §",
+    "explanation_fr": "Oui si le transport de personnes reste l'activité principale. SFS 2012:211, ch. 2, art. 16. Source : SFS 2012:211 2 kap. 16 §",
+    "source": "SFS 2012:211 2 kap. 16 §",
+    "corpus": "owner-seed",
+    "freq": "low",
+    "type": "qcm"
   }
 ]

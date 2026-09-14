@@ -7,7 +7,7 @@ import type { Track } from "@/lib/types";
 export const runtime = "nodejs";
 
 function parseTrack(value: string | null): Track | null {
-  return value === "b" || value === "taxi" ? value : null;
+  return value === "b" || value === "taxi" || value === "owner" ? value : null;
 }
 
 export async function GET(request: Request) {
