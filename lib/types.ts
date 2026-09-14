@@ -25,6 +25,15 @@ export type Corpus = (typeof CORPORA)[number];
 export const OWNER_CORPORA = ["owner-seed", "owner-official", "owner-import"] as const;
 export type OwnerCorpus = (typeof OWNER_CORPORA)[number];
 export type Freq = "high" | "medium" | "low";
+export type VariantForm =
+  | "original"
+  | "sibling"
+  | "paraphrase"
+  | "cloze"
+  | "scenario"
+  | "reverse"
+  | "trap"
+  | "image-first";
 
 export function isOwnerCorpus(value?: string): value is OwnerCorpus {
   return OWNER_CORPORA.includes(value as OwnerCorpus);
@@ -47,6 +56,10 @@ export interface QuestionRecord {
   trap?: string;
   type?: string;
   youtubeId?: string;
+  conceptId?: string;
+  variantOf?: string;
+  form?: VariantForm;
+  imageFirst?: boolean;
 }
 
 export interface QuestionTranslation {
@@ -87,6 +100,9 @@ export interface Attempt {
 export interface SrsCard {
   questionId: string;
   track: Track;
+  conceptId?: string;
+  lastForm?: VariantForm;
+  lastVariantId?: string;
   ease: number;
   interval: number;
   repetitions: number;
@@ -112,6 +128,26 @@ export interface ChatTurn {
   at: string;
 }
 
+export interface LastSession {
+  track: Track;
+  mode: "study" | "exam";
+  topic?: Topic;
+  questionIds: string[];
+  index: number;
+  unfinished: boolean;
+  at: string;
+  missLabel?: string;
+  missTopic?: Topic;
+}
+
+export interface WeakTopic {
+  topic: Topic;
+  track: Track;
+  accuracy: number;
+  attempts: number;
+  due?: number;
+}
+
 export interface AppState {
   version: 1;
   profile: Profile;
@@ -119,6 +155,9 @@ export interface AppState {
   srs: SrsCard[];
   exams: MockExam[];
   chat: ChatTurn[];
+  lastSession?: LastSession;
+  weakTopics?: WeakTopic[];
+  teacherNotes?: string[];
 }
 
 export function isOwnerQuestion(question: {

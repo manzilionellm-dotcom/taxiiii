@@ -49,3 +49,15 @@ export function stripFakeExamArt<T extends { imageUrl?: string; imageCaption?: s
 export function attachAuthenticMedia<T extends { id: string; stem_sv?: string; imageUrl?: string; imageCaption?: string; corpus?: string }>(
   questions: T[],
 ): T[];
+export function isPdfPageImage(url?: string | null): boolean;
+export function questionNeedsExamFigure(question?: {
+  id?: string;
+  stem_sv?: string;
+  imageCaption?: string;
+} | null): boolean;
+export function shouldShowImageBeforeAnswer(question?: {
+  imageUrl?: string;
+  id?: string;
+  stem_sv?: string;
+  imageCaption?: string;
+} | null): boolean;

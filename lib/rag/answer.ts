@@ -1,5 +1,6 @@
 import extras from "@/data/rag-extras.json";
 import { QUESTIONS, getFrench, getQuestion } from "@/lib/questions/bank";
+import { isRealFrenchText } from "@/lib/questions/french-text";
 import { youtubeDocs } from "@/lib/rag/extras";
 import { buildQuestionDocs, searchCorpus, type SearchHit } from "@/lib/rag/search";
 import type { ChatTurn, Locale } from "@/lib/types";
@@ -19,21 +20,34 @@ function allDocs() {
   return [...buildQuestionDocs(QUESTIONS), ...youtubeDocs()];
 }
 
-export function retrieveHits(query: string, history: ChatTurn[]): SearchHit[] {
+export function retrieveHits(query: string, history: ChatTurn[], recentMisses: string[] = []): SearchHit[] {
   const docs = allDocs();
-  const direct = searchCorpus(docs, query, 5);
+  const missHint = recentMisses
+    .map((id) => getQuestion(id))
+    .filter(Boolean)
+    .map((question) => `${question!.id} ${question!.stem_sv}`)
+    .join(" ");
+  const enriched = missHint && /förklara|explique|denna|cette|frågan|question|miss|fel/i.test(query)
+    ? `${query} ${missHint}`
+    : query;
+  const direct = searchCorpus(docs, enriched, 5);
   if (direct.length && direct[0].score >= MIN_SCORE) return direct;
   if (isFollowUp(query) && history.length) {
     const previousUser = [...history].reverse().find((turn) => turn.role === "user")?.content ?? "";
-    const contextual = searchCorpus(docs, `${query} ${previousUser}`, 5);
+    const contextual = searchCorpus(docs, `${query} ${previousUser} ${missHint}`, 5);
     if (contextual.length && contextual[0].score >= MIN_SCORE) return contextual;
   }
   return [];
 }
 
-export function groundedFallback(query: string, locale: Locale, history: ChatTurn[]) {
+export function groundedFallback(
+  query: string,
+  locale: Locale,
+  history: ChatTurn[],
+  recentMisses: string[] = [],
+) {
   const dict = t(locale);
-  const hits = retrieveHits(query, history);
+  const hits = retrieveHits(query, history, recentMisses);
   if (!hits.length) {
     return {
       answer: dict.outOfCorpus,
@@ -42,10 +56,25 @@ export function groundedFallback(query: string, locale: Locale, history: ChatTur
     };
   }
   return {
-    answer: formatHits(hits, locale),
+    answer: formatTeacherHits(hits, locale, query),
     sources: hits.map((hit) => hit.questionId),
     grounded: true,
   };
+}
+
+function formatTeacherHits(hits: SearchHit[], locale: Locale, query: string) {
+  const drill = /förhör|interroge|quiz|5 min|fem min/i.test(query);
+  const primary = formatHits(hits.slice(0, drill ? 3 : 1), locale);
+  if (locale === "fr") {
+    const open = drill
+      ? "On reste cinq minutes, un item à la fois. Lis le suédois d'abord — je t'aide ensuite."
+      : "Avant la solution : qu'est-ce que tu répondrais, en une phrase ?";
+    return `${open}\n\n${primary}`;
+  }
+  const open = drill
+    ? "Vi tar fem minuter, en sak i taget. Läs svenskan först — sen hjälper jag."
+    : "Innan lösningen: vad skulle du svara, med en mening?";
+  return `${open}\n\n${primary}`;
 }
 
 function formatHits(hits: SearchHit[], locale: Locale) {
@@ -65,9 +94,9 @@ function formatHits(hits: SearchHit[], locale: Locale) {
         question.options.find((option) => option.letter === question.answer)?.text ?? "";
       if (locale === "fr") {
         return [
-          `[${question.id}] ${french.stem}`,
+          `[${question.id}] ${isRealFrenchText(french.stem) ? french.stem : question.stem_sv}`,
           `Svar / réponse: ${question.answer}. ${correct}`,
-          question.explanation_fr,
+          isRealFrenchText(question.explanation_fr) ? question.explanation_fr : question.explanation_sv,
           question.imageUrl ? `Bild / image: ${question.imageUrl}` : "",
         ]
           .filter(Boolean)
@@ -90,16 +119,21 @@ export function buildGroundedMessages(
   query: string,
   locale: Locale,
   history: ChatTurn[],
+  recentMisses: string[] = [],
 ) {
-  return { hits: retrieveHits(query, history), ...groundedFallback(query, locale, history) };
+  return {
+    hits: retrieveHits(query, history, recentMisses),
+    ...groundedFallback(query, locale, history, recentMisses),
+  };
 }
 
 export async function answerWithModel(
   query: string,
   locale: Locale,
   history: ChatTurn[],
+  recentMisses: string[] = [],
 ): Promise<{ answer: string; sources: string[]; grounded: boolean }> {
-  const fallback = groundedFallback(query, locale, history);
+  const fallback = groundedFallback(query, locale, history, recentMisses);
   const key = process.env.AI_GATEWAY_API_KEY || process.env.OPENAI_API_KEY;
   if (!key || !fallback.grounded) return fallback;
 
@@ -109,12 +143,14 @@ export async function answerWithModel(
   const model = process.env.AI_MODEL || "openai/gpt-4.1-mini";
 
   const system = [
-    "You are a teoriprov tutor for Swedish license B and taxi.",
-    "Answer ONLY from the CORPUS excerpts. Do not use parametric memory.",
-    "If the corpus does not contain the answer, say you cannot answer from the bank.",
-    "Keep the original Swedish question wording intact when quoting.",
-    "Reply in the user's language (French or Swedish). Be conversational.",
-    "Never invent laws, numbers, or streets that are not in the excerpts.",
+    "You are the in-app teacher for KörkortGO: Enseignant (FR) / Lärare (SV).",
+    "Persona: calm senior Swedish taxi-theory teacher who scaffolds in French. No slang, no cheerleading, no walls of text.",
+    "Answer ONLY from the CORPUS excerpts. Zero hallucination. Do not use parametric memory.",
+    "If the corpus does not contain the answer, reply exactly with the out-of-corpus line: French « Je ne l'ai pas dans le cours — on reste sur le corpus. » or Swedish « Det finns inte i kursen — vi håller oss till korpusen. »",
+    "Pedagogy: Socratic when useful — ask one short recall question first, then explain. Correct hard Swedish words. Keep turns short (5–10 min energy).",
+    "Speak French for meaning and keep Swedish exam wording intact when quoting stems.",
+    "You may walk through a PDF-page / tariff / vilotid / taxameter item that is in the excerpts. Never invent law, numbers, streets, or new Manzi items.",
+    "If the student asks to be quizzed, ask one corpus question at a time and wait.",
     `CORPUS:\n${fallback.answer}`,
   ].join("\n");
 

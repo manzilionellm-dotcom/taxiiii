@@ -24,6 +24,21 @@ export const questionSchema = z
     trap: z.string().optional(),
     type: z.string().optional(),
     youtubeId: z.string().optional(),
+    conceptId: z.string().optional(),
+    variantOf: z.string().optional(),
+    form: z
+      .enum([
+        "original",
+        "sibling",
+        "paraphrase",
+        "cloze",
+        "scenario",
+        "reverse",
+        "trap",
+        "image-first",
+      ])
+      .optional(),
+    imageFirst: z.boolean().optional(),
   })
   .superRefine((value, ctx) => {
     if (!value.options.some((option) => option.letter === value.answer)) {

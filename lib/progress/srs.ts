@@ -6,6 +6,7 @@ export function createCard(questionId: string, track: Track, now = new Date()): 
   return {
     questionId,
     track,
+    conceptId: questionId,
     ease: 2.5,
     interval: 0,
     repetitions: 0,

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo } from "react";
 import { ReadinessWidget } from "@/components/readiness-widget";
+import { TeacherPresence } from "@/components/teacher-presence";
 import { useAppState } from "@/components/app-state";
 import { trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
@@ -61,6 +62,8 @@ export function TrackDashboard({ track }: { track: Track }) {
 
   return (
     <div className="space-y-6">
+      <TeacherPresence track={track} />
+
       <header className="space-y-2">
         <p className="text-xs uppercase tracking-[0.16em] text-[#6b6560]">{dict.dashboard}</p>
         <h1 className="font-serif text-3xl text-black">{trackLabel(track)}</h1>

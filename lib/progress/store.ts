@@ -6,11 +6,15 @@ import type {
   AppState,
   Attempt,
   ChatTurn,
+  LastSession,
   Locale,
   MockExam,
   Profile,
+  SrsCard,
   SupportLevel,
+  Topic,
   Track,
+  WeakTopic,
 } from "@/lib/types";
 
 export const STORAGE_KEY = "korklart.v1";
@@ -35,6 +39,9 @@ export function emptyState(): AppState {
     srs: [],
     exams: [],
     chat: [],
+    lastSession: undefined,
+    weakTopics: [],
+    teacherNotes: [],
   };
 }
 
@@ -48,6 +55,9 @@ export function loadState(): AppState {
     return {
       ...emptyState(),
       ...parsed,
+      lastSession: parsed.lastSession,
+      weakTopics: parsed.weakTopics ?? [],
+      teacherNotes: parsed.teacherNotes ?? [],
       profile: ensureOnboardedTracks({ ...defaultProfile, ...parsed.profile }),
     };
   } catch {
@@ -63,6 +73,10 @@ export function uid() {
   return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
+function cardKey(card: { questionId: string; conceptId?: string; track: Track }) {
+  return `${card.track}:${card.conceptId || card.questionId}`;
+}
+
 export function recordAttempt(
   state: AppState,
   input: {
@@ -71,8 +85,12 @@ export function recordAttempt(
     correct: boolean;
     timed?: boolean;
     mockExamId?: string;
+    conceptId?: string;
+    form?: SrsCard["lastForm"];
+    variantId?: string;
   },
 ): AppState {
+  const conceptId = input.conceptId || input.questionId;
   const attempt: Attempt = {
     id: uid(),
     questionId: input.questionId,
@@ -82,18 +100,41 @@ export function recordAttempt(
     timed: Boolean(input.timed),
     mockExamId: input.mockExamId,
   };
-  const existing = state.srs.find(
-    (card) => card.questionId === input.questionId && card.track === input.track,
-  );
+  const existing = state.srs.find((card) => cardKey(card) === `${input.track}:${conceptId}`);
   const card = existing ?? createCard(input.questionId, input.track);
-  const reviewed = reviewCard(card, input.correct ? 4 : 1);
+  const reviewed = {
+    ...reviewCard({ ...card, conceptId, questionId: input.questionId }, input.correct ? 4 : 1),
+    conceptId,
+    lastForm: input.form || card.lastForm,
+    lastVariantId: input.variantId || card.lastVariantId,
+  };
   const srs = [
-    ...state.srs.filter(
-      (item) => !(item.questionId === input.questionId && item.track === input.track),
-    ),
+    ...state.srs.filter((item) => cardKey(item) !== `${input.track}:${conceptId}`),
     reviewed,
   ];
   return { ...state, attempts: [...state.attempts, attempt], srs };
+}
+
+/** Mark the card due immediately so a miss returns in the next study mix. */
+export function bumpReviewSoon(
+  state: AppState,
+  input: { questionId: string; track: Track; conceptId?: string; form?: SrsCard["lastForm"] },
+): AppState {
+  const conceptId = input.conceptId || input.questionId;
+  const existing = state.srs.find((card) => cardKey(card) === `${input.track}:${conceptId}`);
+  const card = existing ?? createCard(input.questionId, input.track);
+  const next = {
+    ...card,
+    questionId: input.questionId,
+    conceptId,
+    lastForm: input.form || card.lastForm,
+    interval: 1 / (24 * 60),
+    due: new Date().toISOString(),
+  };
+  return {
+    ...state,
+    srs: [...state.srs.filter((item) => cardKey(item) !== `${input.track}:${conceptId}`), next],
+  };
 }
 
 export function finishExam(
@@ -113,6 +154,9 @@ export function finishExam(
   return {
     ...state,
     exams: [...state.exams.filter((item) => item.id !== exam.id), next],
+    lastSession: state.lastSession
+      ? { ...state.lastSession, unfinished: false, at: new Date().toISOString() }
+      : state.lastSession,
   };
 }
 
@@ -130,4 +174,41 @@ export function setLocale(state: AppState, locale: Locale): AppState {
 
 export function setSupport(state: AppState, supportLevel: SupportLevel): AppState {
   return updateProfile(state, { supportLevel });
+}
+
+export function rememberSession(
+  state: AppState,
+  input: {
+    track: Track;
+    mode: LastSession["mode"];
+    questionIds: string[];
+    index?: number;
+    topic?: Topic;
+    unfinished?: boolean;
+    weakTopics?: WeakTopic[];
+    note?: string;
+    missLabel?: string;
+    missTopic?: Topic;
+  },
+): AppState {
+  const lastSession: LastSession = {
+    track: input.track,
+    mode: input.mode,
+    questionIds: input.questionIds,
+    index: input.index ?? 0,
+    topic: input.topic,
+    unfinished: input.unfinished ?? true,
+    at: new Date().toISOString(),
+    missLabel: input.missLabel ?? state.lastSession?.missLabel,
+    missTopic: input.missTopic ?? state.lastSession?.missTopic,
+  };
+  const notes = input.note
+    ? [...(state.teacherNotes ?? []).slice(-11), input.note]
+    : state.teacherNotes;
+  return {
+    ...state,
+    lastSession,
+    weakTopics: input.weakTopics ?? state.weakTopics,
+    teacherNotes: notes,
+  };
 }

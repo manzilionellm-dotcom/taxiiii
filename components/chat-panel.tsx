@@ -7,6 +7,7 @@ import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
 import { appendChat } from "@/lib/progress/store";
 import { ProtectedView } from "@/components/protected-view";
+import { TeacherPresence } from "@/components/teacher-presence";
 import { useQuestionCatalog } from "@/lib/questions/use-catalog";
 import type { ChatTurn } from "@/lib/types";
 
@@ -24,16 +25,21 @@ export function ChatPanel() {
     state.attempts,
     state.exams,
   );
+  const prompts = [dict.teacherPrompt1, dict.teacherPrompt2, dict.teacherPrompt3];
 
-  async function send() {
-    const text = input.trim();
+  async function send(preset?: string) {
+    const text = (preset ?? input).trim();
     if (!text || pending) return;
-    setInput("");
+    if (!preset) setInput("");
     setError(false);
     const user: ChatTurn = { role: "user", content: text, at: new Date().toISOString() };
     setState((prev) => appendChat(prev, [user]));
     setPending(true);
     try {
+      const misses = state.attempts
+        .filter((attempt) => attempt.track === track && !attempt.correct)
+        .slice(-4)
+        .map((attempt) => attempt.questionId);
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -41,6 +47,7 @@ export function ChatPanel() {
           message: text,
           history: state.chat.slice(-8),
           locale: state.profile.locale,
+          recentMisses: misses,
         }),
       });
       if (!response.ok) throw new Error("chat_failed");
@@ -78,18 +85,34 @@ export function ChatPanel() {
     <ProtectedView locale={state.profile.locale}>
     <div className="space-y-4">
       <header className="space-y-2">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8a8276]">
+          {dict.tutor}
+        </p>
         <h1 className="font-serif text-3xl text-black">{dict.chat}</h1>
         <p className="text-[#6b6560]">{dict.chatLead}</p>
         {readiness.ready ? (
           <p className="text-sm font-medium text-[#1f3d2b]">{dict.examReadyChat}</p>
         ) : null}
       </header>
+      <TeacherPresence track={track} compact />
       <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
       <div className="card max-h-[28rem] space-y-3 overflow-y-auto">
         {state.chat.length === 0 ? (
-          <div className="px-2 py-8 text-center">
-            <p className="font-serif text-lg text-black">{dict.chat}</p>
-            <p className="mt-2 text-sm leading-6 text-[#6b6560]">{dict.chatEmpty}</p>
+          <div className="space-y-4 px-1 py-4">
+            <p className="font-serif text-xl text-black">{dict.teacherInvite}</p>
+            <p className="text-sm leading-6 text-[#6b6560]">{dict.chatEmpty}</p>
+            <div className="grid gap-2">
+              {prompts.map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  className="min-h-12 rounded-2xl border border-[#ddd6c8] bg-white px-3.5 py-2.5 text-left text-sm font-medium text-[#1f3d2b] transition hover:border-[#1f3d2b]/40"
+                  onClick={() => void send(prompt)}
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
           </div>
         ) : (
           state.chat.map((turn, index) => (

@@ -8,11 +8,23 @@ import { QuestionCard } from "@/components/question-card";
 import { SessionSkeleton } from "@/components/splash-screen";
 import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
-import { recordAttempt } from "@/lib/progress/store";
+import { TeacherMissNudge } from "@/components/teacher-presence";
+import { bumpReviewSoon, recordAttempt, rememberSession } from "@/lib/progress/store";
 import { isDue } from "@/lib/progress/srs";
 import { fetchSessionQuestions } from "@/lib/questions/client";
+import { missLabelFromText } from "@/lib/teacher/copy.mjs";
 import type { SessionQuestion } from "@/lib/questions/session-types";
-import type { Track } from "@/lib/types";
+import { TOPICS, type Topic, type Track } from "@/lib/types";
+
+function queryFlag(name: string) {
+  if (typeof window === "undefined") return null;
+  return new URLSearchParams(window.location.search).get(name);
+}
+
+function queryTopic(): Topic | undefined {
+  const raw = queryFlag("focus") || queryFlag("topic");
+  return raw && (TOPICS as readonly string[]).includes(raw) ? (raw as Topic) : undefined;
+}
 
 const SESSION_MS = 8 * 60 * 1000;
 
@@ -39,18 +51,44 @@ export function StudySession({ track }: { track: Track }) {
     startedAt.current = null;
     const dueIds = state.srs
       .filter((card) => card.track === track && isDue(card))
-      .map((card) => card.questionId);
+      .map((card) => {
+        const id = card.conceptId || card.questionId;
+        return card.lastForm ? `${id}~${card.lastForm}` : id;
+      });
+    const resumeWanted = queryFlag("resume") === "1";
+    const focusTopic = queryTopic();
+    const resumeIds =
+      resumeWanted &&
+      state.lastSession?.track === track &&
+      state.lastSession.unfinished &&
+      state.lastSession.questionIds?.length
+        ? state.lastSession.questionIds
+        : undefined;
+    const resumeIndex = resumeIds ? state.lastSession?.index ?? 0 : 0;
     void fetchSessionQuestions({
       track,
       mode: "study",
       dueIds,
+      resumeIds,
       fragile: state.profile.fragileMode,
+      topic: resumeIds ? undefined : focusTopic,
     })
       .then((questions) => {
         if (cancelled) return;
         setQueue(questions);
+        setIndex(Math.min(resumeIndex, Math.max(0, questions.length - 1)));
         startedAt.current = Date.now();
         setRemaining(SESSION_MS);
+        setState((prev) =>
+          rememberSession(prev, {
+            track,
+            mode: "study",
+            questionIds: questions.map((item) => item.variantOf || item.id),
+            index: Math.min(resumeIndex, Math.max(0, questions.length - 1)),
+            topic: questions[0]?.topic,
+            unfinished: true,
+          }),
+        );
       })
       .catch(() => {
         if (!cancelled) setFailed(true);
@@ -79,8 +117,8 @@ export function StudySession({ track }: { track: Track }) {
   if (failed) {
     return (
       <EmptyState
-        title={dict.errorTitle}
-        lead={dict.sessionError}
+        title={dict.tutor}
+        lead={dict.teacherSessionError}
         actionLabel={dict.retry}
         onAction={() => setReload((value) => value + 1)}
       />
@@ -88,13 +126,14 @@ export function StudySession({ track }: { track: Track }) {
   }
 
   if (!hydrated || !queue) {
-    return <SessionSkeleton label={dict.loadingSession} />;
+    return <SessionSkeleton label={dict.teacherLoading} />;
   }
 
   if (done || !current) {
     return (
       <EmptyState
         title={dict.sessionDone}
+        lead={dict.teacherSessionLead}
         actionHref={`/${track}`}
         actionLabel={dict.dashboard}
       />
@@ -118,17 +157,59 @@ export function StudySession({ track }: { track: Track }) {
             style={{ width: `${((index + (answered ? 1 : 0)) / queue.length) * 100}%` }}
           />
         </div>
+        <p className="text-sm text-[#6b6560]">{dict.teacherSessionLead}</p>
         {dueCount === 0 ? <p className="text-sm text-[#6b6560]">{dict.noDue}</p> : null}
+        <TeacherMissNudge track={track} />
         <QuestionCard
           key={current.id}
           question={current}
           locale={state.profile.locale}
           fragile={state.profile.fragileMode}
           supportLevel={state.profile.supportLevel}
+          variant="study"
           onAnswer={(_letter, correct) => {
             setAnswered(true);
+            setState((prev) => {
+              let next = recordAttempt(prev, {
+                questionId: current.variantOf || current.id,
+                track,
+                correct,
+                conceptId: current.conceptId || current.variantOf || current.id,
+                form: current.form,
+                variantId: current.id,
+              });
+              if (!correct) {
+                const label = missLabelFromText(
+                  [current.stem_sv, current.trap, current.explanation_sv].join(" "),
+                );
+                next = rememberSession(next, {
+                  track,
+                  mode: "study",
+                  questionIds: queue.map((item) => item.variantOf || item.id),
+                  index,
+                  topic: current.topic,
+                  unfinished: true,
+                  missLabel: label || undefined,
+                  missTopic: current.topic,
+                  note:
+                    label && state.profile.locale === "fr"
+                      ? `On reprend ${label}.`
+                      : label
+                        ? `Vi tar om ${label}.`
+                        : undefined,
+                });
+              }
+              return next;
+            });
+          }}
+          onReviewSoon={() => {
             setState((prev) =>
-              recordAttempt(prev, { questionId: current.id, track, correct }),
+              bumpReviewSoon(prev, {
+                questionId: current.variantOf || current.id,
+                track,
+                conceptId: current.conceptId || current.variantOf || current.id,
+                form: current.form,
+              }),
             );
           }}
         />
@@ -137,9 +218,21 @@ export function StudySession({ track }: { track: Track }) {
             type="button"
             className="btn-primary w-full"
             onClick={() => {
-              if (index + 1 >= queue.length) setDone(true);
+              const nextIndex = index + 1;
+              const finished = nextIndex >= queue.length;
+              setState((prev) =>
+                rememberSession(prev, {
+                  track,
+                  mode: "study",
+                  questionIds: queue.map((item) => item.variantOf || item.id),
+                  index: finished ? index : nextIndex,
+                  topic: queue[finished ? index : nextIndex]?.topic,
+                  unfinished: !finished,
+                }),
+              );
+              if (finished) setDone(true);
               else {
-                setIndex((value) => value + 1);
+                setIndex(nextIndex);
                 setAnswered(false);
               }
             }}
