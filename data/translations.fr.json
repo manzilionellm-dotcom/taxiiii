@@ -453,5 +453,419 @@
   },
   "rs-owner-taxameter-varje-uppdrag": {
     "stem": "Quand l'exploitant doit-il exiger l'usage du taximètre ?"
+  },
+  "rs-off-prov-svenska": {
+    "stem": "Dans quelle langue passe-t-on l'épreuve de compétence taxi ?"
+  },
+  "rs-off-prov-fyra-delprov": {
+    "stem": "Comment l'épreuve d'exploitant est-elle découpée ?"
+  },
+  "rs-off-prov-godkant-poang": {
+    "stem": "Seuil de réussite des épreuves 1 à 3 ?"
+  },
+  "rs-off-prov-tid-45": {
+    "stem": "Durée normale des épreuves 1 à 3 ?"
+  },
+  "rs-off-prov-sex-manader": {
+    "stem": "Dans quel délai valider les quatre épreuves ?"
+  },
+  "rs-off-prov-ej-igen": {
+    "stem": "Peut-on repasser l'épreuve déjà réussie ?"
+  },
+  "rs-off-prov-id-handling": {
+    "stem": "Quelle pièce d'identité est acceptée à l'examen ?"
+  },
+  "rs-off-prov-hinder-sen": {
+    "stem": "Qu'est-ce qui empêche de passer l'épreuve ?"
+  },
+  "rs-off-prov-avbokning-24": {
+    "stem": "Quand la taxe d'examen reste due ?"
+  },
+  "rs-off-tv-utformar-anordnar": {
+    "stem": "Qui conçoit et organise l'épreuve aujourd'hui ?"
+  },
+  "rs-off-avstangning-1-2": {
+    "stem": "Durée d'exclusion en cas de fraude ?"
+  },
+  "rs-off-def-taxitrafik": {
+    "stem": "Définition légale du taxitrafik ?"
+  },
+  "rs-off-ej-taxitrafik-undantag": {
+    "stem": "Quelle course n'est pas du taxitrafik ?"
+  },
+  "rs-off-gott-anseende": {
+    "stem": "Que recouvre la bonne réputation ?"
+  },
+  "rs-off-olamplig-avslag-6-5": {
+    "stem": "Durée d'interdiction après un refus pour réputation ?"
+  },
+  "rs-off-villkor-sarskilda": {
+    "stem": "Peut-on assortir le permis de conditions ?"
+  },
+  "rs-off-jp-provningskrets": {
+    "stem": "Qui est examiné dans une personne morale ?"
+  },
+  "rs-off-ekonomi-beakta": {
+    "stem": "Que regarde-t-on dans la solvabilité ?"
+  },
+  "rs-off-trafikansvarig-ideell": {
+    "stem": "Qui est traficansvarig dans une association ?"
+  },
+  "rs-off-anmal-trafikansvarig-byte": {
+    "stem": "Changement de traficansvarig : que faire ?"
+  },
+  "rs-off-sanktion-10000-forordning": {
+    "stem": "Amende si le changement de responsable n'est pas déclaré ?"
+  },
+  "rs-off-sanktion-6000-forordning": {
+    "stem": "Amende pour véhicule non déclaré / non retiré ?"
+  },
+  "rs-off-sanktion-preskription": {
+    "stem": "Prescription de l'amende administrative ?"
+  },
+  "rs-off-tfl-krav-20": {
+    "stem": "Âge et permis pour la carte professionnelle ?"
+  },
+  "rs-off-tfl-synlig": {
+    "stem": "Où doit être la carte professionnelle ?"
+  },
+  "rs-off-tfl-fornya-10": {
+    "stem": "Renouvellement de la carte professionnelle ?"
+  },
+  "rs-off-tfl-korprov-12": {
+    "stem": "Délais de validité des épreuves chauffeur ?"
+  },
+  "rs-off-olaga-vs-otillaten": {
+    "stem": "Olaga ou otillåten taxitrafik ?"
+  },
+  "rs-off-bestallaransvar": {
+    "stem": "Responsabilité du donneur d'ordre ?"
+  },
+  "rs-off-overklaga-prov-nej": {
+    "stem": "Quelle décision n'est pas susceptible de recours ?"
+  },
+  "rs-off-beslut-omedelbart": {
+    "stem": "Un décision est-elle immédiatement exécutoire ?"
+  },
+  "rs-off-prisuppgift-nar-bestalls": {
+    "stem": "Quand donner le prix plafond et la preuve ?"
+  },
+  "rs-off-jamforpris-gult": {
+    "stem": "Couleurs du jämförpris sur l'étiquette ?"
+  },
+  "rs-off-kontrollrapport-fordon": {
+    "stem": "Où garder le rapport de contrôle du taximètre ?"
+  },
+  "rs-off-taxameter-lagen-upptagen": {
+    "stem": "Position du taximètre pendant la course ?"
+  },
+  "rs-off-ej-bade-taxameter-su": {
+    "stem": "Taximètre et équipement spécial en même temps ?"
+  },
+  "rs-off-swedac-taxameter": {
+    "stem": "Qui réglement le matériel taximètre ?"
+  },
+  "rs-off-rc-definition": {
+    "stem": "Qu'est-ce qu'un redovisningscentral ?"
+  },
+  "rs-off-rc-sju-ar": {
+    "stem": "Durée de conservation à la centrale ?"
+  },
+  "rs-off-rc-ej-ideell": {
+    "stem": "Qui ne peut pas tenir une centrale ?"
+  },
+  "rs-off-bc-ej-tillstand": {
+    "stem": "Une centrale de commandes peut-elle exploiter des taxis ?"
+  },
+  "rs-off-rc-utebliven-ts": {
+    "stem": "À qui signaler les transmissions manquantes ?"
+  },
+  "rs-off-bc-undantag-samhall": {
+    "stem": "Quand le prix fixe via centrale n'est pas exigé ?"
+  },
+  "rs-off-fardtjanst-kansla": {
+    "stem": "Que doit-on connaître sur färdtjänst ?"
+  },
+  "rs-off-utokning-fordon-ekonomi": {
+    "stem": "Agrandir la flotte : quelle preuve ?"
+  },
+  "rs-off-anmalan-efter-tillstand": {
+    "stem": "Quand déclarer le premier véhicule ?"
+  },
+  "rs-off-vagkontroll-polis": {
+    "stem": "Qui contrôle sur route ?"
+  },
+  "rs-off-undantag-5-ar-praktik": {
+    "stem": "Dispense d'épreuve possible ?"
+  },
+  "rs-off-forlangd-tid-65": {
+    "stem": "Temps majoré des épreuves 1 à 3 ?"
+  },
+  "rs-off-testfragor": {
+    "stem": "Que deviennent les questions d'essai ?"
+  },
+  "rs-off-prisinfo-lagen": {
+    "stem": "Quelle autre loi sur les prix s'applique ?"
+  },
+  "rs-off-klampning": {
+    "stem": "Peut-on immobiliser le véhicule ?"
+  },
+  "rs-off-myndighet-anmalan-ts": {
+    "stem": "Signalement inter-autorités ?"
+  },
+  "rs-off-bokforing-naring": {
+    "stem": "Qui doit tenir une comptabilité ?"
+  },
+  "rs-off-rakenskapsar-12": {
+    "stem": "Durée d'un exercice normal ?"
+  },
+  "rs-off-arkiv-7-ar": {
+    "stem": "Durée d'archivage comptable ?"
+  },
+  "rs-off-god-redovisningssed": {
+    "stem": "Qu'est-ce que god redovisningssed ?"
+  },
+  "rs-off-lopande-bokforing": {
+    "stem": "Que doit couvrir la comptabilité courante ?"
+  },
+  "rs-off-arsredovisning-ab": {
+    "stem": "Qui doit publier un årsredovisning ?"
+  },
+  "rs-off-balans-vs-resultat": {
+    "stem": "Bilan ou compte de résultat ?"
+  },
+  "rs-off-likviditetsbudget": {
+    "stem": "Budget de résultat ou de trésorerie ?"
+  },
+  "rs-off-moms-6-person": {
+    "stem": "Quel taux de TVA pour une course taxi ?"
+  },
+  "rs-off-moms-25-normal": {
+    "stem": "Taux normal de TVA ?"
+  },
+  "rs-off-arbetsgivaravgift": {
+    "stem": "Quelles règles fiscales l'exploitant doit-il maîtriser ?"
+  },
+  "rs-off-forman-bil": {
+    "stem": "Quand l'avantage en nature véhicule s'applique-t-il ?"
+  },
+  "rs-off-finansiering": {
+    "stem": "Que faut-il savoir sur le financement ?"
+  },
+  "rs-off-kvalitet-miljo": {
+    "stem": "Systèmes qualité et environnement ?"
+  },
+  "rs-off-forsakring-taxi": {
+    "stem": "Assurances et plaques taxi ?"
+  },
+  "rs-off-marknadsforing": {
+    "stem": "Que faut-il savoir sur le marketing ?"
+  },
+  "rs-off-affarshandelser": {
+    "stem": "Qu'est-ce qu'une affärshändelse ?"
+  },
+  "rs-off-oppningsbalans": {
+    "stem": "Que dresser au début de l'obligation comptable ?"
+  },
+  "rs-off-arsbokslut-tid": {
+    "stem": "Délai pour clôturer l'årsbokslut ?"
+  },
+  "rs-off-bfl-sprak": {
+    "stem": "Langue des pièces comptables ?"
+  },
+  "rs-off-fysisk-juridisk": {
+    "stem": "Que faut-il savoir sur les formes d'entreprise ?"
+  },
+  "rs-off-konkurs-kansla": {
+    "stem": "Pourquoi connaître la faillite ?"
+  },
+  "rs-off-amne-arbetsratt": {
+    "stem": "Quel droit du travail faut-il maîtriser ?"
+  },
+  "rs-off-semester-25": {
+    "stem": "Congés payés légaux ?"
+  },
+  "rs-off-sjuklon-ag": {
+    "stem": "Qui verse le sjuklön ?"
+  },
+  "rs-off-kollektivavtal-kansla": {
+    "stem": "Que signifie un kollektivavtal ?"
+  },
+  "rs-off-upphandling": {
+    "stem": "Que faut-il savoir sur les marchés publics ?"
+  },
+  "rs-off-konkurrens-samverkan": {
+    "stem": "Coopération et droit de la concurrence ?"
+  },
+  "rs-off-avtal-bindande": {
+    "stem": "Que faut-il savoir sur les contrats ?"
+  },
+  "rs-off-ekonomi-handlingar-ts": {
+    "stem": "Fraîcheur des pièces financières ?"
+  },
+  "rs-off-utland-5-ar": {
+    "stem": "Séjour à l'étranger : quelles pièces ?"
+  },
+  "rs-off-planera-transportekonomi": {
+    "stem": "Planification et charge utile ?"
+  },
+  "rs-off-forebyggande-underhall": {
+    "stem": "Entretien et environnement ?"
+  },
+  "rs-off-reg-vs-kontrollbesikt": {
+    "stem": "Réception taxi ou contrôle technique ?"
+  },
+  "rs-off-monsterdjup-sommar": {
+    "stem": "Profondeur minimale en été ?"
+  },
+  "rs-off-vinterdack-latt": {
+    "stem": "Période des pneus hiver pour un taxi léger ?"
+  },
+  "rs-off-monsterdjup-vinter-3": {
+    "stem": "Profondeur des pneus hiver sur un léger ?"
+  },
+  "rs-off-dubbdack-period": {
+    "stem": "Période des pneus à clous ?"
+  },
+  "rs-off-basta-dack-bak": {
+    "stem": "Meilleurs pneus à l'avant ou à l'arrière ?"
+  },
+  "rs-off-farligt-gods": {
+    "stem": "Marchandises dangereuses en taxi ?"
+  },
+  "rs-off-ag-olycka-kunskap": {
+    "stem": "Devoir de l'employeur en cas d'accident ?"
+  },
+  "rs-off-kontrollera-tfl": {
+    "stem": "Contrôle de la carte professionnelle ?"
+  },
+  "rs-off-skriftliga-anvisningar": {
+    "stem": "Consignes écrites de contrôle véhicule ?"
+  },
+  "rs-off-nollvisionen": {
+    "stem": "Que faut-il savoir sur Nollvisionen ?"
+  },
+  "rs-off-hastighet-balte": {
+    "stem": "Vitesse, ceinture et blessures ?"
+  },
+  "rs-off-alkohol-droger": {
+    "stem": "Alcool, drogues, médicaments ?"
+  },
+  "rs-off-trotthet": {
+    "stem": "Pourquoi la fatigue est-elle au programme ?"
+  },
+  "rs-off-vilotid-tillampning": {
+    "stem": "Que doit savoir l'exploitant sur les repos ?"
+  },
+  "rs-off-vila-inte-jour": {
+    "stem": "L'astreinte compte-t-elle comme repos ?"
+  },
+  "rs-off-tidbok-sju-dygn": {
+    "stem": "Combien de jours dans le tidbok ?"
+  },
+  "rs-off-tidbok-medfora": {
+    "stem": "Le tidbok doit-il être dans le véhicule ?"
+  },
+  "rs-off-ag-forteckning-tidbok": {
+    "stem": "Devoirs de l'employeur sur les tidbok ?"
+  },
+  "rs-off-fardskrivare-istallet": {
+    "stem": "Tachygraphe à la place du tidbok ?"
+  },
+  "rs-off-vilotid-galler-taxi": {
+    "stem": "Les règles de repos s'appliquent-elles au taxi ?"
+  },
+  "rs-off-avvikelse-olycka": {
+    "stem": "Dérogation temporaire au repos ?"
+  },
+  "rs-off-ag-penningboter-vila": {
+    "stem": "Sanction de l'employeur sur le tidbok ?"
+  },
+  "rs-off-gula-skyltar-bestall": {
+    "stem": "Que faire lors de l'anmälan du véhicule ?"
+  },
+  "rs-off-fast-pris-i-taxameter": {
+    "stem": "Quand enregistrer un prix fixe ?"
+  },
+  "rs-off-app-samma-regler": {
+    "stem": "Les applis échappent-elles au taximètre ?"
+  },
+  "rs-off-tariff-i-taxameter": {
+    "stem": "Comment exprimer les tarifs ?"
+  },
+  "rs-off-upphandlad-taxa": {
+    "stem": "Tarif issu d'un marché public ?"
+  },
+  "rs-off-skylt-forvaring-vecka": {
+    "stem": "Durée de conservation des plaques saisies ?"
+  },
+  "rs-off-amne-teknik-4": {
+    "stem": "Quels points pneus sont au programme ?"
+  },
+  "rs-off-tungt-vinter-10-nov": {
+    "stem": "Pneus hiver des poids lourds ?"
+  },
+  "rs-off-d4-format": {
+    "stem": "Format de l'épreuve 4 ?"
+  },
+  "rs-off-d4-kontrollprov": {
+    "stem": "L'épreuve 4 est-elle aussi un contrôle ?"
+  },
+  "rs-off-d4-scenario-utebliven": {
+    "stem": "Véhicule à l'arrêt : que transmettre ?"
+  },
+  "rs-off-d4-scenario-dod-forestandare": {
+    "stem": "Décès : que faire sous un mois ?"
+  },
+  "rs-off-d4-scenario-utan-tfl": {
+    "stem": "Recruter sans TFL : risque pour l'exploitant ?"
+  },
+  "rs-off-d4-scenario-utoka-utan-kapital": {
+    "stem": "Deuxième véhicule sans fonds supplémentaires ?"
+  },
+  "rs-off-d4-scenario-bada-utrustningar": {
+    "stem": "Les deux équipements sur le même véhicule ?"
+  },
+  "rs-off-d4-scenario-pris-700": {
+    "stem": "Jämförpris 850 kr : que faire ?"
+  },
+  "rs-off-d4-scenario-betalning-bc": {
+    "stem": "Payer le conducteur sans taximètre ?"
+  },
+  "rs-off-d4-scenario-aterkallelse-skatt": {
+    "stem": "Impôts impayés : quelle suite ?"
+  },
+  "rs-off-d4-scenario-oanvant": {
+    "stem": "Permis sans véhicule déclaré ?"
+  },
+  "rs-off-d4-scenario-vila-analys": {
+    "stem": "7 h de repos suffisent-elles ?"
+  },
+  "rs-off-d4-scenario-byta-vd": {
+    "stem": "Changement de PDG ?"
+  },
+  "rs-off-d4-scenario-overklaga": {
+    "stem": "Comment contester un refus ?"
+  },
+  "rs-off-d4-scenario-rc-val": {
+    "stem": "Quelle centrale de reporting ?"
+  },
+  "rs-off-d4-scenario-kvitto": {
+    "stem": "Le reçu est-il obligatoire ?"
+  },
+  "rs-off-d4-sex-manader-glomt": {
+    "stem": "Premier succès le 1er mars, reste le 2 septembre ?"
+  },
+  "rs-off-d4-handlaggning-ts": {
+    "stem": "Quand l'instruction commence-t-elle ?"
+  },
+  "rs-off-d4-komplettering": {
+    "stem": "Demande de pièces complémentaires ?"
+  },
+  "rs-off-d4-amnen-8": {
+    "stem": "Lien entre la loi et les épreuves ?"
+  },
+  "rs-off-tfl-med-korkort": {
+    "stem": "Quand la carte professionnelle est-elle valable ?"
   }
 }

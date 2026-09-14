@@ -50,7 +50,11 @@ export function QuestionCard({
               ? ` · ${dict.corpusResearch}`
               : question.corpus === "manzi"
                 ? ` · ${dict.corpusManzi}`
-                : ""}
+                : question.corpus === "owner-seed" ||
+                    question.corpus === "owner-official" ||
+                    question.corpus === "owner-import"
+                  ? ` · ${dict.corpusOwner}`
+                  : ""}
             {question.freq === "high" ? ` · ${dict.freqHigh}` : ""}
           </span>
           <span className="block truncate text-right text-[10px] tracking-normal text-[#8a8276]">

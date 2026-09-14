@@ -967,6 +967,194 @@ kpa	kPa
 sverige	Suède
 ägaren	le propriétaire
 ägare	propriétaire
+prov	épreuve
+provdeltagare	candidat
+provdeltagaren	le candidat
+deltagaren	le participant
+delprov	épreuve partielle
+avtal	contrat
+millimeter	millimètre
+redogöra	rendre compte
+bokföringslagen	loi sur la comptabilité
+bokföring	comptabilité
+bokföringen	la comptabilité
+bokföringsskyldighet	obligation comptable
+bokföringsskyldigheten	l’obligation comptable
+innebörd	signification
+innebörden	la signification
+olaga	illicite
+sak	chose
+skriftlig	écrit
+skriftliga	écrits
+språk	langue
+vd	directeur général
+arbetsplats	lieu de travail
+arbetsplatsen	le lieu de travail
+beställare	client
+beställaren	le client
+bolagsverket	registre des sociétés
+erinran	rappel
+genomföra	réaliser
+genomföras	être réalisé
+kollektivavtal	convention collective
+påföra	imposer
+påföras	être imposé
+registreringsbesiktning	réception à l’immatriculation
+respektive	respectivement
+resurs	ressource
+resurser	ressources
+testfråga	question d’essai
+testfrågor	questions d’essai
+tillämpa	appliquer
+anseende	réputation
+balansräkning	bilan
+balansräkningen	le bilan
+handelsbolag	société en nom collectif
+juridisk	juridique
+kapital	capital
+körprov	épreuve de conduite
+otillåten	non autorisé
+provtid	temps d’épreuve
+provtiden	le temps d’épreuve
+prövningsmyndighet	autorité d’instruction
+prövningsmyndigheten	l’autorité d’instruction
+riksfärdtjänst	transport adapté intercommunal
+samtliga	tous
+semesterdag	jour de congé
+semesterdagar	jours de congé
+taxameterutrustning	équipement taximètre
+uppnå	atteindre
+uppnås	être atteint
+uppsåtlig	intentionnel
+uppsåtligen	intentionnellement
+årsbokslut	clôture annuelle
+årsbokslutet	la clôture annuelle
+överföring	transmission
+överföringen	la transmission
+analog	analogique
+analysera	analyser
+anbud	offre
+anhörig	proche
+ansluten	raccordé
+anslutet	raccordé
+anvisning	consigne
+anvisningar	consignes
+app	application
+arbetsmiljö	environnement de travail
+arbetstid	temps de travail
+automatisk	automatique
+avanmäla	retirer la déclaration
+avanmäler	retire la déclaration
+avregistrera	radier
+avse	viser
+avses	est visé
+avslag	refus
+avslå	rejeter
+avslås	est rejeté
+avvikelse	écart
+avvikelser	écarts
+beakta	prendre en compte
+beaktas	être pris en compte
+bedriva	exploiter
+beställa	commander
+beställs	est commandé
+bestämma	déterminer
+bestämmas	être déterminé
+blankett	formulaire
+blanketten	le formulaire
+bälte	ceinture
+dekal	vignette
+därutöver	en outre
+dödsbo	succession
+dödsboet	la succession
+egenskap	propriété
+egenskaper	propriétés
+engelska	anglais
+fakturera	facturer
+faktureras	est facturé
+mervärdesskatt	TVA
+arbetsgivaravgift	cotisation patronale
+egenavgift	cotisation d’indépendant
+förmånsbeskattning	imposition de l’avantage
+resultatbudget	budget de résultat
+likviditetsbudget	budget de trésorerie
+resultaträkning	compte de résultat
+årsredovisning	rapport annuel
+god	bon
+redovisningssed	pratique comptable
+räkenskapsår	exercice
+räkenskapsinformation	information comptable
+verifikation	pièce justificative
+affärshändelse	opération
+öppningsbalansräkning	bilan d’ouverture
+sjuklön	salaire maladie
+föräldraledighet	congé parental
+semesterlagen	loi sur les congés
+anställningsskydd	protection de l’emploi
+rehabilitering	réadaptation
+upphandling	marché public
+förfrågningsunderlag	dossier de consultation
+gruppundantag	exemption de groupe
+taxisamverkan	coopération taxi
+kompanjonsavtal	pacte d’associés
+kompanjonsförsäkring	assurance d’associés
+konkurs	faillite
+föreståndare	gérant
+olämplighetstid	durée d’interdiction
+sanktionsavgift	amende administrative
+penningböter	amende
+klampning	immobilisation
+värdeberäknad	calculé en valeur
+mönsterdjup	profondeur de sculpture
+dubbdäck	pneus à clous
+vinterväglag	conditions hivernales
+vinterdäck	pneus hiver
+kontrollbesiktning	contrôle technique
+nollvisionen	Vision Zéro
+jourtjänst	astreinte
+körpassrapport	rapport de vacation
+följesedel	bordereau
+upptagen	occupé
+stoppad	arrêté
+ledig	libre
+tariff	tarif
+timtaxa	tarif horaire
+kilometertaxa	tarif kilométrique
+jämförpriset	le prix de comparaison
+prisbasbelopp	montant de base
+ideell	idéel
+stiftelse	fondation
+verksamhetsansvarig	responsable d’activité
+tystnadsplikt	secret professionnel
+skolskjuts	transport scolaire
+sjukresa	trajet médical
+färdtjänst	transport adapté
+persontransport	transport de personnes
+persontransporttjänster	services de transport de personnes
+normalskattesats	taux normal
+beskattningsunderlag	assiette
+e-legitimation	identité électronique
+engagemangsbild	relevé d’engagements
+kreditupplysning	renseignement de crédit
+värderingsintyg	certificat d’évaluation
+periodbokslut	situation intermédiaire
+handläggning	instruction
+komplettering	complément
+underrättelse	notification
+förvaltningsrätt	tribunal administratif
+prövningstillstånd	autorisation de pourvoi
+laga	ayant force
+kraft	force
+delgivning	notification
+ackreditering	accréditation
+besiktningsorgan	organisme de contrôle
+kontrollrapport	rapport de contrôle
+plomberad	plombé
+plombering	plombage
+tillsatsanordning	dispositif additionnel
+körpass	vacation
+app-tjänst	service par application
+app-tjänster	services par application
 `;
 
 export const BANK_SEED = parseSeedTable(TABLE);
