@@ -199,11 +199,26 @@ const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
 const manifestFiles = Object.keys(manifest.files || {});
 assert(manifestFiles.length >= 1900, `media manifest too small: ${manifestFiles.length}`);
 assert(manifest.access === "private", "media manifest must mark Blob access private");
+const confirmedPdf = new Set(
+  JSON.parse(readFileSync(new URL("../data/pdf-pages-on-blob.json", import.meta.url), "utf8")),
+);
 const lag1q1 = compiled.find((item) => item.id === "LAGSTIFNING-1-Q1");
 assert(lag1q1?.imageUrl === "/media/pdf-pages/LAGSTIFNING-1/page-01.jpg", "LAGSTIFNING-1-Q1 must use PDF page 01");
 const lag1q4 = compiled.find((item) => item.id === "LAGSTIFNING-1-Q4");
 assert(lag1q4, "LAGSTIFNING-1-Q4 missing");
-assert(!lag1q4.imageUrl, "Q4 must not show a phantom PDF page that is not on Blob");
+const q4Key = "pdf-pages/LAGSTIFNING-1/page-04.jpg";
+if (confirmedPdf.has(q4Key)) {
+  assert(
+    lag1q4.imageUrl === `/media/${q4Key}`,
+    "Q4 opens PDF page 04 once that raster is in the confirmed Blob inventory",
+  );
+} else {
+  assert(!lag1q4.imageUrl, "Q4 must not show a phantom PDF page that is not on Blob");
+  assert(
+    !availableForms(lag1q4, compiled).includes("image-first"),
+    "Q4 must not rotate to image-first without a real raster (that was the gray «Bilden kunde inte visas» box)",
+  );
+}
 assert(lag1q4.stem_sv.includes("08:00"), "Q4 Swedish stem stays verbatim");
 assert(
   lag1q4.stem_sv.includes("kl 08:00 efter en dygnsvila") &&
@@ -211,19 +226,12 @@ assert(
     lag1q4.stem_sv.includes("börja nästa dygnsvila enligt vilotids förordning"),
   "Q4 is the Studera card from Lionel's screenshot (08:00 dygnsvila, 09:00-13:00, nästa dygnsvila)",
 );
-assert(
-  !availableForms(lag1q4, compiled).includes("image-first"),
-  "Q4 must not rotate to image-first without a real raster (that was the gray «Bilden kunde inte visas» box)",
-);
 const filterQ = compiled.find((item) => item.id === "S_KERHET-2-Q4");
 assert(filterQ?.options?.some((option) => option.text === "Bränsleförbrukning för magar."), "Manzi option A stays verbatim");
 const sak7q19 = compiled.find((item) => item.id === "S_KERHET-7-Q19");
 assert(sak7q19, "S_KERHET-7-Q19 missing");
 assert(sak7q19.stem_sv.includes("söndag"), "Q19 Swedish stem must stay verbatim");
 const q19Key = "pdf-pages/S_KERHET-7/page-19.jpg";
-const confirmedPdf = new Set(
-  JSON.parse(readFileSync(new URL("../data/pdf-pages-on-blob.json", import.meta.url), "utf8")),
-);
 if (confirmedPdf.has(q19Key)) {
   assert(sak7q19.imageUrl === `/media/${q19Key}`, "Q19 must use PDF page 19 when that raster is on Blob");
 } else {
