@@ -66,6 +66,18 @@ assert(
   "fill-fr-stems leftovers are hybrid",
 );
 assert(
+  looksHybridFrench(
+    "00 efter une repos journalier. Du gör un uppehåll i arbetet mellan 09:00- 13 epos journalier enligt vilotids förordning et bestämmelser?",
+  ),
+  "Lionel's cropped Q4 FR line is hybrid",
+);
+assert(
+  displayFrench(
+    "00 efter une repos journalier. Du gör un uppehåll i arbetet mellan 09:00- 13 epos journalier enligt vilotids förordning et bestämmelser?",
+  ) === MISSING_FRENCH_STEM,
+  "screenshot FR garbage is not shown",
+);
+assert(
   looksHybridFrench("Que peux följden vara de att du kör avec igensatt luftfilter dans ton taxi?"),
   "igensatt leftover stem is hybrid",
 );

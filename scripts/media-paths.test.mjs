@@ -14,6 +14,7 @@ import {
   parsePdfPageId,
   pdfPageImageUrlFromId,
   sanitizeCaption,
+  shouldShowImageBeforeAnswer,
   toImageUrl,
   toLogicalKey,
 } from "../lib/media/paths.mjs";
@@ -112,6 +113,18 @@ const dropped = attachAuthenticMedia(
 );
 assert(dropped[0].imageUrl === "/media/pdf-pages/LAGSTIFNING-1/page-01.jpg", "confirmed PDF page kept");
 assert(!dropped[1].imageUrl, "unuploaded PDF page imageUrl cleared");
+assert(
+  !shouldShowImageBeforeAnswer({
+    id: "LAGSTIFNING-1-Q4",
+    stem_sv:
+      "Du börjar köra taxi kl 08:00 efter en dygnsvila. Du gör ett uppehåll i arbetet mellan 09:00- 13:00. När måste du sluta köra taxi och börja nästa dygnsvila enligt vilotids förordning och bestämmelser?",
+  }),
+  "Q4 without imageUrl must not mount Tillhörande bild",
+);
+assert(
+  !shouldShowImageBeforeAnswer(dropped[1]),
+  "stripped Q4 phantom must not show the gray broken-image box",
+);
 assert(
   !dropMissingImageUrl(
     { imageUrl: "/media/pdf-pages/LAGSTIFNING-1/page-04.jpg" },

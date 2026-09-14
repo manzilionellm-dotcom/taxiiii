@@ -14,8 +14,13 @@ import {
 import { compile } from "./compile-banks.mjs";
 import { reconstructStem, tokenizeStem } from "../lib/tokenize-stem.mjs";
 import { hasAuthenticImageUrl, isFakeExamSvg, isRasterExt } from "../lib/media/paths.mjs";
-import { looksHybridFrench, looksPlaceholderFrench } from "../lib/questions/french.mjs";
-import { presentConcept } from "../lib/questions/variants.mjs";
+import {
+  frenchFromStore,
+  looksHybridFrench,
+  looksPlaceholderFrench,
+} from "../lib/questions/french.mjs";
+import { displayFrench } from "../lib/questions/review.mjs";
+import { availableForms, presentConcept } from "../lib/questions/variants.mjs";
 
 const require = createRequire(import.meta.url);
 
@@ -200,6 +205,16 @@ const lag1q4 = compiled.find((item) => item.id === "LAGSTIFNING-1-Q4");
 assert(lag1q4, "LAGSTIFNING-1-Q4 missing");
 assert(!lag1q4.imageUrl, "Q4 must not show a phantom PDF page that is not on Blob");
 assert(lag1q4.stem_sv.includes("08:00"), "Q4 Swedish stem stays verbatim");
+assert(
+  lag1q4.stem_sv.includes("kl 08:00 efter en dygnsvila") &&
+    lag1q4.stem_sv.includes("09:00- 13:00") &&
+    lag1q4.stem_sv.includes("börja nästa dygnsvila enligt vilotids förordning"),
+  "Q4 is the Studera card from Lionel's screenshot (08:00 dygnsvila, 09:00-13:00, nästa dygnsvila)",
+);
+assert(
+  !availableForms(lag1q4, compiled).includes("image-first"),
+  "Q4 must not rotate to image-first without a real raster (that was the gray «Bilden kunde inte visas» box)",
+);
 const filterQ = compiled.find((item) => item.id === "S_KERHET-2-Q4");
 assert(filterQ?.options?.some((option) => option.text === "Bränsleförbrukning för magar."), "Manzi option A stays verbatim");
 const sak7q19 = compiled.find((item) => item.id === "S_KERHET-7-Q19");
@@ -230,6 +245,18 @@ const q4Fr = translations["LAGSTIFNING-1-Q4"]?.stem || "";
 assert(q4Fr.includes("08:00"), "Q4 FR keeps the 08:00 clock");
 assert(q4Fr.includes("repos journalier"), "Q4 FR is a real rest-time sentence");
 assert(!looksHybridFrench(q4Fr), "Q4 FR must not be a SV/FR hybrid");
+const lionelHybridFr =
+  "00 efter une repos journalier. Du gör un uppehåll i arbetet mellan 09:00- 13 epos journalier enligt vilotids förordning et bestämmelser?";
+assert(looksHybridFrench(lionelHybridFr), "screenshot blue FR line must be classified as hybrid");
+assert(displayFrench(lionelHybridFr) === "", "screenshot hybrid FR must not render on the card");
+assert(
+  frenchFromStore({ "LAGSTIFNING-1-Q4": { stem: lionelHybridFr } }, lag1q4).stem === "",
+  "hybrid Q4 store entry must be dropped (#14)",
+);
+assert(
+  /après un repos journalier/i.test(frenchFromStore(translations, lag1q4).stem || ""),
+  "live Q4 FR is the clean rest-time sentence, not the screenshot mix",
+);
 const filterFr = translations["S_KERHET-2-Q4"]?.stem || "";
 assert(/filtre à air/i.test(filterFr), "igensatt luftfilter FR is a real sentence");
 assert(!looksHybridFrench(filterFr), "filter FR must not keep Swedish leftovers");
