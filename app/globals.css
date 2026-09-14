@@ -52,7 +52,7 @@ html {
 }
 
 .gloss-word {
-  cursor: pointer;
+  cursor: help;
   border-radius: 3px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;

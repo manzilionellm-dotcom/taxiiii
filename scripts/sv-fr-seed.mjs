@@ -352,7 +352,7 @@ söndag	dimanche
 ersätter	remplace
 medicin	médicament
 anfall	crise
-heldragen	continue
+heldragen	continue (ligne)
 taxitrafik	trafic de taxi
 arbetsgivaren	l’employeur
 fem	cinq
@@ -1635,7 +1635,7 @@ cirkulationsplats	giratoire
 cykelbana	piste cyclable
 vägren	accotement
 mittlinje	ligne médiane
-heldragen	continue
+heldragen	continue (ligne)
 streckad	discontinue
 spärrlinje	ligne de délimitation
 körfält	voie

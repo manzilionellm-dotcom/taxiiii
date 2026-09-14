@@ -50,6 +50,7 @@ export const sv = {
   gloss: "Betydelse",
   glossEmpty: "Finns inte i glossariet än",
   glossClose: "Stäng glossariet",
+  glossHint: "Tryck länge för betydelsen",
   correct: "Rätt",
   incorrect: "Fel",
   explanation: "Förklaring",

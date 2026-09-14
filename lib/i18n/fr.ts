@@ -51,6 +51,7 @@ export const fr: Dictionary = {
   gloss: "Sens",
   glossEmpty: "Pas encore au glossaire",
   glossClose: "Fermer le glossaire",
+  glossHint: "Appui long pour le sens",
   correct: "Juste",
   incorrect: "Faux",
   explanation: "Explication",

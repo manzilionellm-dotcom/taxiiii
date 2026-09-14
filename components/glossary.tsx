@@ -42,6 +42,7 @@ type GlossaryApi = {
   open: (token: string, anchor: HTMLElement | null) => void;
   close: () => void;
   activeToken: string | null;
+  hint: string;
 };
 
 const GlossaryContext = createContext<GlossaryApi | null>(null);
@@ -90,11 +91,12 @@ export function GlossaryProvider({
         left: pos.left,
         above: pos.above,
       };
+      const alreadyOpen = openState?.surface === token;
       setOpenState(next);
       setLive(hit?.fr ? `${next.lemma}: ${hit.fr}` : `${next.lemma}. ${dict.glossEmpty}`);
-      void tickGlossHaptic();
+      if (!alreadyOpen) void tickGlossHaptic();
     },
-    [dict.glossEmpty],
+    [dict.glossEmpty, openState?.surface],
   );
 
   useEffect(() => {
@@ -121,7 +123,9 @@ export function GlossaryProvider({
   }, [close, openState]);
 
   return (
-    <GlossaryContext.Provider value={{ open, close, activeToken: openState?.surface ?? null }}>
+    <GlossaryContext.Provider
+      value={{ open, close, activeToken: openState?.surface ?? null, hint: dict.glossHint }}
+    >
       {children}
       <span className="sr-only" aria-live="polite">
         {live}
@@ -211,13 +215,13 @@ export function GlossableWord({
   text: string;
   variant?: "stem" | "option" | "cloze";
 }) {
-  const { open, activeToken } = useGlossary();
+  const { open, activeToken, hint } = useGlossary();
   const ref = useRef<HTMLSpanElement>(null);
   const timer = useRef<number>(0);
   const start = useRef({ x: 0, y: 0 });
   const fired = useRef(false);
   const moved = useRef(false);
-  const allowTap = variant !== "option";
+  const allowMouseClick = variant !== "option";
 
   const clearHold = () => {
     if (timer.current) window.clearTimeout(timer.current);
@@ -246,6 +250,7 @@ export function GlossableWord({
       role="button"
       tabIndex={0}
       className={`gloss-word gloss-word-${variant}`}
+      aria-label={`${text}. ${hint}`}
       aria-haspopup="true"
       aria-expanded={isOpen}
       onKeyDown={(event) => {
@@ -285,7 +290,12 @@ export function GlossableWord({
           event.stopPropagation();
           return;
         }
-        if (allowTap && !moved.current && event.button === 0) {
+        if (
+          allowMouseClick &&
+          !moved.current &&
+          event.button === 0 &&
+          event.pointerType !== "touch"
+        ) {
           event.preventDefault();
           event.stopPropagation();
           fire();
