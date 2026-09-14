@@ -382,5 +382,30 @@
       "skolskjutsning"
     ],
     "fr": "transport scolaire"
+  },
+  {
+    "sv": "igensatt",
+    "forms": [
+      "igensatt",
+      "igensatta"
+    ],
+    "fr": "encrassé / bouché"
+  },
+  {
+    "sv": "luftfilter",
+    "forms": [
+      "luftfilter",
+      "luftfiltret"
+    ],
+    "fr": "filtre à air"
+  },
+  {
+    "sv": "följden",
+    "forms": [
+      "följd",
+      "följden",
+      "påföljden"
+    ],
+    "fr": "conséquence"
   }
 ]

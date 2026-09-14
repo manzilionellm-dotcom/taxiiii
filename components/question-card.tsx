@@ -72,7 +72,9 @@ export function QuestionCard({
   const figureAlt = sanitizeCaption(question.imageCaption) || dict.examPageCaption;
   const imageFirst = question.form === "image-first" || Boolean(question.imageFirst);
   const showInlineFigure =
-    !answered && (imageFirst || shouldShowImageBeforeAnswer(question));
+    !answered &&
+    hasImageUrl(question.imageUrl) &&
+    (imageFirst || shouldShowImageBeforeAnswer(question));
   const showSolutionFigure = answered && hasImageUrl(question.imageUrl);
   const takeaway = takeawayFor(question);
   const distractors = distractorNote(question);

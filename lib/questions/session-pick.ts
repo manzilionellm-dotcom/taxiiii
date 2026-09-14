@@ -7,7 +7,7 @@ import type { QuestionCatalogItem, SessionQuestion } from "@/lib/questions/sessi
 import { signMediaToken, type ViewerSession } from "@/lib/protect/session";
 import { topicsForTrack, type QuestionRecord, type Topic, type Track } from "@/lib/types";
 import { hasAuthenticImageUrl, sanitizeCaption, toLogicalKey } from "@/lib/media/paths.mjs";
-import { signedMediaPath } from "@/lib/media/store";
+import { mediaKeyAvailable, signedMediaPath } from "@/lib/media/store";
 
 export type { QuestionCatalogItem, SessionQuestion };
 
@@ -17,17 +17,20 @@ export async function protectQuestion(
 ): Promise<SessionQuestion> {
   const key = toLogicalKey(question.imageUrl);
   let imageUrl: string | undefined;
-  if (key && hasAuthenticImageUrl(question.imageUrl)) {
+  if (key && hasAuthenticImageUrl(question.imageUrl) && (await mediaKeyAvailable(key))) {
     const token = await signMediaToken(key, session.id);
     imageUrl = signedMediaPath(key, token.exp, token.sig);
   }
   const imageCaption = question.imageCaption
     ? sanitizeCaption(question.imageCaption)
     : undefined;
+  const imageFirst = Boolean(imageUrl) && (question.form === "image-first" || question.imageFirst);
   return {
     ...question,
     ...(imageUrl ? { imageUrl } : { imageUrl: undefined }),
     ...(imageCaption ? { imageCaption } : { imageCaption: undefined }),
+    imageFirst,
+    form: imageFirst ? question.form : question.form === "image-first" ? "original" : question.form,
     translation: getFrench(question),
     watermark: session.label,
   };

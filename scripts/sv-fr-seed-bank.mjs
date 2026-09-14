@@ -70,6 +70,10 @@ ligga	être couché
 livslängd	durée de vie
 lokalkännedom	connaissance du lieu
 luftfilter	filtre à air
+igensatt	encrassé / bouché
+igensatta	encrassé / bouché
+följd	conséquence
+följden	conséquence
 låsningsfria	antiblocage
 lämplig	approprié
 medvetande	conscience

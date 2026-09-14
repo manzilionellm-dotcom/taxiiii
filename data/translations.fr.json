@@ -176,12 +176,12 @@
     }
   },
   "tx-e20-01": {
-    "stem": "Quelle route européenne relie notamment Stockholm, Örebro et Göteborg ?",
     "options": {
       "A": "E6",
       "B": "E20",
       "C": "E45"
-    }
+    },
+    "stem": "Quelle route européenne relie notamment Stockholm, Örebro et Göteborg ?"
   },
   "tx-arlanda-01": {
     "stem": "Tu dois conduire un client de Stockholm C à Arlanda. Dans quelle direction approximative roules-tu ?",
@@ -201,9 +201,6 @@
   },
   "rs-yt-lag1-gul-linje": {
     "stem": "Que signifie une ligne jaune continue sur le bord du trottoir ?"
-  },
-  "rs-yt-lag1-taxameter-24": {
-    "stem": "Quel délai maximal entre deux contrôles du taximètre ?"
   },
   "rs-yt-lag1-taxameter-nar": {
     "stem": "Quand le taximètre doit-il normalement être contrôlé ?"
@@ -360,9 +357,6 @@
   },
   "rs-owner-dodsfall-6-man": {
     "stem": "Décès ou faillite : que devient le permis ?"
-  },
-  "rs-owner-forestandare-1-man": {
-    "stem": "Délai pour désigner un föreståndare ?"
   },
   "rs-owner-gods-huvudsak": {
     "stem": "Le titulaire peut-il aussi transporter des marchandises ?"
@@ -628,9 +622,6 @@
   "rs-off-lopande-bokforing": {
     "stem": "Que doit couvrir la comptabilité courante ?"
   },
-  "rs-off-arsredovisning-ab": {
-    "stem": "Qui doit publier un årsredovisning ?"
-  },
   "rs-off-balans-vs-resultat": {
     "stem": "Bilan ou compte de résultat ?"
   },
@@ -661,14 +652,8 @@
   "rs-off-marknadsforing": {
     "stem": "Que faut-il savoir sur le marketing ?"
   },
-  "rs-off-affarshandelser": {
-    "stem": "Qu'est-ce qu'une affärshändelse ?"
-  },
   "rs-off-oppningsbalans": {
     "stem": "Que dresser au début de l'obligation comptable ?"
-  },
-  "rs-off-arsbokslut-tid": {
-    "stem": "Délai pour clôturer l'årsbokslut ?"
   },
   "rs-off-bfl-sprak": {
     "stem": "Langue des pièces comptables ?"
@@ -684,9 +669,6 @@
   },
   "rs-off-semester-25": {
     "stem": "Congés payés légaux ?"
-  },
-  "rs-off-sjuklon-ag": {
-    "stem": "Qui verse le sjuklön ?"
   },
   "rs-off-kollektivavtal-kansla": {
     "stem": "Que signifie un kollektivavtal ?"
@@ -889,92 +871,80 @@
   "research-0121": {
     "stem": "Un taxi a une prise en charge de 55 kr, 23 kr/km et 7 kr/min. Le client fait 8 km et le trajet dure 12 minutes. Quel est le prix ?"
   },
-  "kkalk-T-021": {
-    "stem": "Quel regel gäller pour parkering lors de une busshållplats som saknar gul linje?"
-  },
   "kkalk-T-032": {
-    "stem": "Quel minsta avstånd krävs mellan ton bil et une ligne continue quand du parkerar?"
+    "stem": "Quelle distance minimale faut-il entre ta voiture et une ligne continue lorsque tu te gares ?"
   },
   "kkalk-T-037": {
-    "stem": "Du parkerar sur vägrenen intill une ligne continue. quel minsta avstånd krävs mellan ton bil et linjen?"
+    "stem": "Tu te gares sur l'accotement le long d'une ligne continue. Quelle distance minimale faut-il entre ta voiture et la ligne ?"
   },
   "kkalk-T-049": {
-    "stem": "Du parkerar bilen längs une väg avec une ligne continue. quel är cela minsta tillåtna avståndet mellan bilen et linjen?"
+    "stem": "Tu gares la voiture le long d'une route avec une ligne continue. Quelle est la distance minimale autorisée entre la voiture et la ligne ?"
   },
   "kkalk-T-081": {
-    "stem": "Du stannar längs une väg intill une heldragen mittlinje. quel minsta avstånd dois cela vara mellan ton bil et linjen?"
+    "stem": "Tu t'arrêtes le long d'une route près d'une ligne médiane continue. Quelle distance minimale doit-il y avoir entre ta voiture et la ligne ?"
   },
   "kkalk-T-098": {
-    "stem": "Du stannar lors de vägkanten intill une heldragen mittlinje. quel minsta avstånd krävs mellan ton bil et linjen?"
+    "stem": "Tu t'arrêtes au bord de la route près d'une ligne médiane continue. Quelle distance minimale faut-il entre ta voiture et la ligne ?"
   },
   "kkalk-T-109": {
-    "stem": "Du parkerar intill une ligne continue. quel är cela minsta tillåtna avståndet mellan bilen et linjen?"
+    "stem": "Tu te gares près d'une ligne continue. Quelle est la distance minimale autorisée entre la voiture et la ligne ?"
   },
   "kkalk-T-130": {
-    "stem": "Du stannar lors de vägkanten intill une ligne continue. comment brett dois avståndet minst vara mellan ton bil et linjen?"
+    "stem": "Tu t'arrêtes au bord de la route près d'une ligne continue. Quelle largeur minimale doit avoir l'écart entre ta voiture et la ligne ?"
   },
   "kkalk-T-136": {
-    "stem": "Du stannar lors de une väg avec heldragen mittlinje. quel minsta avstånd dois du lämna mellan bilen et linjen?"
+    "stem": "Tu t'arrêtes sur une route avec une ligne médiane continue. Quelle distance minimale dois-tu laisser entre la voiture et la ligne ?"
   },
   "kkalk-T-163": {
-    "stem": "Du vill stanna ou parkera intill une ligne continue. quel är minsta tillåtna avstånd mellan bilen et linjen?"
-  },
-  "kkalk-T-170": {
-    "stem": "Quel avstånd gäller pour parkeringsförbud lors de une busshållplats där gul linje saknas i vägbanan?"
+    "stem": "Tu veux t'arrêter ou te garer près d'une ligne continue. Quelle est la distance minimale autorisée entre la voiture et la ligne ?"
   },
   "kkalk-T-203": {
-    "stem": "Du stannar lors de vägkanten intill une ligne continue. quel minsta avstånd krävs cela mellan ton bil et linjen?"
+    "stem": "Tu t'arrêtes au bord de la route près d'une ligne continue. Quelle distance minimale faut-il entre ta voiture et la ligne ?"
   },
   "kkalk-T-232": {
-    "stem": "Que betyder une heldragen gul linje längs vägkanten?"
+    "stem": "Que signifie une ligne jaune continue le long du bord de la chaussée ?"
   },
   "kkalk-T-289": {
-    "stem": "Du stannar lors de une vägkant bredvid une ligne continue. quel minsta avstånd dois finnas mellan ton bil et linjen?"
+    "stem": "Tu t'arrêtes au bord d'une route à côté d'une ligne continue. Quelle distance minimale doit-il y avoir entre ta voiture et la ligne ?"
   },
   "kkalk-T-300": {
-    "stem": "Quel är minsta avståndet mellan ton parkerade bil et une heldragen mittlinje?"
+    "stem": "Quelle est la distance minimale entre ta voiture garée et une ligne médiane continue ?"
   },
   "LAGSTIFNING-2-Q25": {
-    "stem": "As le droit du köra lors de något tillfälle över un spärr område ou ligne continue?"
+    "stem": "As-tu le droit, à un moment donné, de franchir une zone d'interdiction ou une ligne continue ?"
   },
   "LAGSTIFNING-6-Q20": {
-    "stem": "Que gäller sur la här bilden avec heldragen gul linje?"
+    "stem": "Que s'applique-t-il sur cette image avec une ligne jaune continue ?"
   },
   "LAGSTIFNING-7-Q12": {
-    "stem": "As le droit du avec ton taxi lors de något tillfälle köra över un spärrområde ou une ligne continue sur vägen?"
+    "stem": "As-tu le droit, avec ton taxi, de franchir à un moment donné une zone d'interdiction ou une ligne continue sur la chaussée ?"
   },
   "LAGSTIFNING-1-Q17": {
     "stem": "Quand dois une taximètre besiktigas?"
   },
   "LAGSTIFNING-2-Q15": {
-    "stem": "Qui är skyldig att ta fram körpasskontroll de taximètre si du kör i trafic de taxi?"
+    "stem": "Qui est tenu de présenter le contrôle de vacation du taximètre si tu conduis en trafic de taxi ?"
   },
   "LAGSTIFNING-2-Q9": {
     "stem": "Où doit kontrollrapport de taximètre être conservé?"
   },
-  "LAGSTIFNING-3-Q10": {
-    "stem": "As le droit du reducera priset pour une kund efter un avslutat köruppdrag et taximètre än inställd sur STOPPAD ou KASSA?"
-  },
   "LAGSTIFNING-3-Q21": {
-    "stem": "Du kör et upptäcker att une plombering sur ton taximètre är bruten. que bör du göra?"
+    "stem": "Tu conduis et tu découvres qu'un plombage de ton taximètre est rompu. Que dois-tu faire ?"
   },
   "LAGSTIFNING-3-Q33": {
     "stem": "Où skall du förvara kontroll rapport över taxameters utrustning?"
   },
   "LAGSTIFNING-4-Q23": {
-    "stem": "Quand peux une taxibil användas utan att taximètre är påslagen?"
+    "stem": "Quand un taxi peut-il être utilisé sans que le taximètre soit allumé ?"
   },
   "LAGSTIFNING-4-Q28": {
-    "stem": "Du kör i trafic de taxi et plötsligt blir taximètre trasig. qui är skyldig i detta fall att sluta köra i trafic de taxi?"
+    "stem": "Tu conduis en trafic de taxi et le taximètre tombe en panne. Qui est alors tenu de cesser de conduire en trafic de taxi ?"
   },
   "LAGSTIFNING-4-Q3": {
     "stem": "Quand dois-tu besiktiga ton taximètre?"
   },
-  "LAGSTIFNING-4-Q30": {
-    "stem": "Combien de temps dois högst vara mellan två besiktningar de taximètre?"
-  },
   "LAGSTIFNING-4-Q34": {
-    "stem": "Peux taximètre vara avstängd under något köruppdrag?"
+    "stem": "Le taximètre peut-il être éteint pendant une course ?"
   },
   "LAGSTIFNING-4-Q7": {
     "stem": "Où peux vägkontroll de taximètre ske?"
@@ -983,2311 +953,163 @@
     "stem": "Comment ofta dois taximètre besiktas?"
   },
   "LAGSTIFNING-5-Q7": {
-    "stem": "Alla bilar som används i trafic de taxi dois vara försedda avec une taximètre de godkänd typ. quel märkning de nedanstående alternativ är godkänd?"
+    "stem": "Toutes les voitures utilisées en trafic de taxi doivent être équipées d'un taximètre de type homologué. Quel marquage parmi les alternatives suivantes est homologué ?"
   },
   "LAGSTIFNING-8-Q26": {
-    "stem": "Vilka har rätt att plombera taximètre?"
+    "stem": "Qui a le droit de plomber un taximètre ?"
   },
   "LAGSTIFNING-8-Q7": {
-    "stem": "Du as le droit un köruppdrag avec fast pris. ton taxibolag tillämpar pas externt samplaneringssystem. Quand dois-tu senast registrera cela i taximètre?"
+    "stem": "Tu reçois une course à prix fixe. Ton entreprise de taxi n'applique pas de système externe de co-planification. Quand dois-tu au plus tard l'enregistrer dans le taximètre ?"
   },
   "SAKERHET-1-Q4": {
-    "stem": "Taximètre dois besiktigas under olika tillfällen. Quand dois-tu i normalt fall besiktiga taximètre sur ton taxi?"
+    "stem": "Le taximètre doit être contrôlé à différentes occasions. Quand dois-tu normalement faire contrôler le taximètre de ton taxi ?"
   },
   "kkalk-M-271": {
-    "stem": "Ton körförmåga efter 18 timmar utan sömn motsvarar ungefär quel promillehalt?"
+    "stem": "Après 18 heures sans sommeil, ta capacité de conduite correspond à peu près à quel taux d'alcoolémie ?"
   },
   "LAGSTIFNING-1-Q16": {
-    "stem": "Que dois-tu göra avec temps de repos bok efter la är slut?"
+    "stem": "Que dois-tu faire du livret de temps de repos une fois qu'il est terminé ?"
   },
   "LAGSTIFNING-1-Q24": {
-    "stem": "Du jobbar som anställd i un taxiföretag. qui är skyldig pour anteckningar sur vilotidboken att la är rätt ifylld?"
+    "stem": "Tu travailles comme salarié dans une entreprise de taxi. Qui est responsable que les annotations du livret de temps de repos soient correctement remplies ?"
   },
   "LAGSTIFNING-1-Q4": {
-    "stem": "Du börjar köra taxi kl 08:00 efter une repos journalier. Du gör un uppehåll i arbetet mellan 09:00- 13:00. Quand dois-tu sluta köra taxi et börja nästa repos journalier enligt vilotids förordning et bestämmelser?"
+    "stem": "Tu commences à conduire un taxi à 08:00 après un repos journalier. Tu fais une pause dans le travail entre 09:00 et 13:00. Quand dois-tu cesser de conduire et commencer le prochain repos journalier selon le règlement et les dispositions sur les temps de repos ?"
   },
   "LAGSTIFNING-2-Q2": {
-    "stem": "Du börjar köra kl 19 la 3 september enligt vilotids blad. Quand dois-tu påbörja nästa repos journalier enligt vilotids förordning?"
+    "stem": "Tu commences à conduire à 19 h le 3 septembre selon la feuille de temps de repos. Quand dois-tu commencer le prochain repos journalier selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-2-Q3": {
-    "stem": "Tu dois conduire taxi la 2 augusti depuis kl. 17.00. Combien de timmar as le droit du maximalt köra före nästa viloperiod enligt tidboks bladet så att du pas bryter mot vilotids bestämmelser enligt vilotidsförordning?"
+    "stem": "Tu dois conduire un taxi le 2 août à partir de 17.00. Combien d'heures peux-tu conduire au maximum avant la prochaine période de repos selon la feuille du livret de temps, sans enfreindre le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-2-Q40": {
-    "stem": "Quel de följande transporter omfattas de vilotids bestämmelser pour trafic de taxi enligt vilotids förordning?"
+    "stem": "Lequel des transports suivants est soumis aux dispositions sur les temps de repos pour le trafic de taxi selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-3-Q17": {
-    "stem": "Efter une repos journalier börjar du köra i trafic de taxi kl. 16.00. Du har gjort uppehåll i arbetet mellan kl. 19.00 et kl. 22.00 då du as le droit une långkörning à Stockholm. la tar precis 10 timmar utan paus et lika lång tid tillbaka. Du börjar hemresan depuis Stockholm kl 16:00 comment långt as le droit du jobba pour att ta nästa vila enligt vilotids förordning?"
+    "stem": "Après un repos journalier, tu commences à conduire en taxi à 16.00. Tu as fait une pause entre 19.00 et 22.00, puis tu as une longue course vers Stockholm. Elle dure exactement 10 heures sans pause, et autant pour le retour. Tu commences le retour depuis Stockholm à 16:00. Combien de temps peux-tu encore travailler avant de prendre le prochain repos selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-3-Q19": {
-    "stem": "Efter 11 timmar ledighet kör du taxi une lördag kl 18.00 – 04.00 avec une ny viloperiod kl 20.00–21.00. sur söndagen börjar du köra igen kl 12.00. Quand dois-tu senast påbörja ytterligare viloperiod under söndagen?"
+    "stem": "Après 11 heures de congé, tu conduis un taxi un samedi de 18.00 à 04.00, avec une nouvelle période de repos de 20.00 à 21.00. Le dimanche, tu recommences à 12.00. Quand dois-tu au plus tard commencer une période de repos supplémentaire le dimanche ?"
   },
   "LAGSTIFNING-3-Q20": {
-    "stem": "Du jobbar som taxiförare sur un företag. ton vilotidbok är fulltecknat. que bör du göra avec la?"
+    "stem": "Tu travailles comme chauffeur de taxi dans une entreprise. Ton livret de temps de repos est plein. Que dois-tu en faire ?"
   },
   "LAGSTIFNING-4-Q21": {
-    "stem": "Du har vilat une vecka et du dois jobba igen . comment mycket temps de repos dois du fylla i temps de repos boken efter ledigheten innan du börjar?"
+    "stem": "Tu as reposé une semaine et tu dois reprendre le travail. Combien de temps de repos dois-tu inscrire dans le livret après le congé, avant de commencer ?"
   },
   "LAGSTIFNING-4-Q27": {
-    "stem": "Du har antecknat ton livret de temps / carnet de repos . Enligt lagen så är du skyldig att anteckna de dygn du kör. comment mycket anteckningar är du skyldig att visa upp lors de poliskontroll enligt vilotidsförordningen?"
+    "stem": "Tu as rempli ton livret de temps. Selon la loi, tu dois annoter les jours où tu conduis. Combien d'annotations dois-tu présenter lors d'un contrôle de police selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-4-Q36": {
-    "stem": "Du har påbörjat un vacation / service et du upptäcker att du har glömt ton temps de repos bok. que gäller?"
+    "stem": "Tu as commencé un service et tu découvres que tu as oublié ton livret de temps de repos. Que s'applique-t-il ?"
   },
   "LAGSTIFNING-5-Q17": {
-    "stem": "Under une vecka kör du taxi torsdag, fredag et lördag. lors de varje tillfälle kör du depuis kl 07:00 à 17:00. pour Combien de kalenderdygn dois du göra anteckningar i livret de temps / carnet de repos denna vecka enligt vilotidslag et förordning?"
+    "stem": "Pendant une semaine, tu conduis un taxi le jeudi, le vendredi et le samedi. Chaque fois, tu conduis de 07:00 à 17:00. Pour combien de jours calendaires dois-tu faire des annotations dans le livret de temps cette semaine, selon la loi et le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-5-Q27": {
-    "stem": "Ton vilotidbok är avslutad. qui är skyldig att une anställds i taxiföretag personliga livret de temps / carnet de repos är riktigt ifylld?"
+    "stem": "Ton livret de temps de repos est terminé. Qui est responsable qu'un livret personnel d'un salarié d'une entreprise de taxi soit correctement rempli ?"
   },
   "LAGSTIFNING-5-Q4": {
-    "stem": "Combien de temps är cela maximal arbetstid under 24- timmars period enligt vilotidsförordning?"
+    "stem": "Quelle est la durée maximale de travail pendant une période de 24 heures selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-6-Q31": {
-    "stem": "Efter 11 timmar vila börjar du köra taxi kl 07:00. Du har rast et vilar Kl 11-12 Kl 18-19 Quand dois-tu senaste börja nästa repos journalier enligt vilotidsförordningen?"
+    "stem": "Après 11 heures de repos, tu commences à conduire un taxi à 07:00. Tu as des pauses et tu te reposes de 11 à 12 et de 18 à 19. Quand dois-tu au plus tard commencer le prochain repos journalier selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-6-Q37": {
-    "stem": "Efter 11- timmars ledighet börjar du köra taxi sur måndag mellan kl 15-24 avec une viloperiod mellan 19-20. Du dois börja köra igen sur tisdag morgon kl 08. Quand dois-tu påbörja une ytterligare viloperiod enligt vilotids förordning?"
+    "stem": "Après 11 heures de congé, tu commences à conduire un taxi le lundi entre 15 h et 24 h, avec une période de repos entre 19 h et 20 h. Tu dois recommencer le mardi matin à 08 h. Quand dois-tu commencer une période de repos supplémentaire selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-7-Q10": {
-    "stem": "Tu conduis un taxi et börjar un vacation / service kl. 13:00 la 4 augusti. livret de temps / carnet de repos visar dina temps de repos de senaste dygnen. Quand dois-tu senast börja nästa viloperiod enligt vilotidsförordningen?"
+    "stem": "Tu conduis un taxi et tu commences un service à 13:00 le 4 août. La feuille du livret de temps montre tes temps de repos des derniers jours. Quand dois-tu au plus tard commencer la prochaine période de repos selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-7-Q38": {
-    "stem": "La 30 augusti har du förvärvarbetat mellan kl 07:00 à kl 13:00. Du börjar köra taxi igen kl 18:00. Quand dois-tu sluta köra enligt vilotidsbladet et bestämmelser?"
+    "stem": "Le 30 août, tu as fait un autre travail rémunéré entre 07:00 et 13:00. Tu recommences à conduire un taxi à 18:00. Quand dois-tu cesser de conduire selon la feuille de temps de repos et les dispositions ?"
   },
   "LAGSTIFNING-7-Q4": {
-    "stem": "Du är ledig måndag et tisdag et börjar köra taxi onsdag klockan 07:00. Du gör uppehåll i arbetet mellan 11:00 et 15:00. Quand dois-tu senast sluta köra enligt vilotidsförordningen si du pas gör un nytt uppehåll?"
+    "stem": "Tu es en congé lundi et mardi et tu commences à conduire un taxi mercredi à 07:00. Tu fais une pause entre 11:00 et 15:00. Quand dois-tu au plus tard cesser de conduire selon le règlement sur les temps de repos si tu ne fais pas une nouvelle pause ?"
   },
   "LAGSTIFNING-7-Q6": {
-    "stem": "Quel de följande transporter omfattas de vilotidsbestämmelserna pour vissa vägtransporter inom landet?"
+    "stem": "Lequel des transports suivants est soumis aux dispositions sur les temps de repos pour certains transports routiers à l'intérieur du pays ?"
   },
   "LAGSTIFNING-8-Q1": {
-    "stem": "Du har skrivit fel sur ton temps de repos bok. quel är rätt?"
+    "stem": "Tu as écrit une erreur dans ton livret de temps de repos. Quelle est la bonne façon de procéder ?"
   },
   "LAGSTIFNING-8-Q15": {
-    "stem": "As le droit taxiförare öra tillfälliga avvikelser depuis reglar pour repos journalier?"
+    "stem": "Un chauffeur de taxi peut-il faire des écarts temporaires aux règles du repos journalier ?"
   },
   "LAGSTIFNING-8-Q20": {
-    "stem": "Du har kört taxi depuis kl 05.00 den24september. Kl 11.00 as le droit du besked si un köruppdrag sombörjar kl 11.15 et beräknas sluta kl 15.00. peux du ta köruppdraget avec tanke sur la temps de repos du har haft enligt livret de temps / carnet de repos?"
+    "stem": "Tu as conduit un taxi depuis 05.00 le 24 septembre. À 11.00 on t'annonce une course qui commence à 11.15 et doit se terminer à 15.00. Peux-tu prendre cette course compte tenu du temps de repos que tu as eu selon la feuille du livret de temps ?"
   },
   "LAGSTIFNING-8-Q21": {
-    "stem": "Du slutar köra taxi la 4 oktober kl 4:00. quand peux du senaste börja köra taxi igen enligt vilotidsladet et vilotidsförordningen?"
+    "stem": "Tu cesses de conduire un taxi le 4 octobre à 4:00. Quand peux-tu au plus tard recommencer à conduire selon la feuille de temps de repos et le règlement ?"
   },
   "LAGSTIFNING-8-Q27": {
-    "stem": "Du dois börja köra taxi gen efter två veckors ledighet. comment dois du ange repos journalier i livret de temps / carnet de repos före körningen?"
+    "stem": "Tu dois commencer à conduire un taxi juste après deux semaines de congé. Comment dois-tu indiquer le repos journalier dans le livret de temps avant la conduite ?"
   },
   "LAGSTIFNING-8-Q41": {
-    "stem": "Efter 11 timmar vila börjar du köra taxi kl 07:00. Du tar rast et vilar klockan 09:00 – 12:00. Quand dois-tu sluta köra et börja nästa repos journalier enligt vilotidsförordningen?"
+    "stem": "Après 11 heures de repos, tu commences à conduire un taxi à 07:00. Tu prends une pause et tu te reposes de 09:00 à 12:00. Quand dois-tu cesser de conduire et commencer le prochain repos journalier selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-8-Q59": {
-    "stem": "Du blir stoppad i une poliskontroll la 19 september kl 16.00och visar detta livret de temps / carnet de repos. Är uttagen temps de repos tillräcklig?"
+    "stem": "Tu es arrêté lors d'un contrôle de police le 19 septembre à 16.00 et tu présentes cette feuille du livret de temps. Le temps de repos pris est-il suffisant ?"
   },
   "LAGSTIFNING-1-Q26": {
-    "stem": "Ton vacation / service börjar kl. 07.00 la 30 september. quand du påbörjat ton vacation / service as le droit du besked si une förbeställd långkörning som börjar klockan 17.00 et beräknas ta 7 timmar. Quand dois-tu senast påbörja une ny viloperiod pour att kunna utföra långkörningen enligt livret de temps / carnet de repos?"
+    "stem": "Ton service commence à 07.00 le 30 septembre. Une fois le service commencé, on t'annonce une longue course réservée qui commence à 17.00 et doit durer 7 heures. Quand dois-tu au plus tard commencer une nouvelle période de repos pour pouvoir effectuer cette longue course selon la feuille du livret de temps ?"
   },
   "LAGSTIFNING-8-Q28": {
-    "stem": "Ton personliga livret de temps / carnet de repos är avslutad. Quand dois-tu som anställd taxiförare tidigast återlämna la à ton arbetsgivare?"
+    "stem": "Ton livret de temps personnel est terminé. Quand dois-tu, en tant que chauffeur salarié, le rendre au plus tôt à ton employeur ?"
   },
   "LAGSTIFNING-2-Q16": {
-    "stem": "Que gäller prix de comparaison (10 km / 15 min) i une taxibil?"
+    "stem": "Que s'applique-t-il au prix de comparaison (jämförpris) dans un taxi ?"
   },
   "LAGSTIFNING-2-Q37": {
-    "stem": "Du jobbar som anställd i un taxiföretag som pas använder fasta priser. que gäller cela pour prix de comparaison (10 km / 15 min)?"
+    "stem": "Tu travailles comme salarié dans une entreprise de taxi qui n'utilise pas de prix fixes. Que s'applique-t-il au prix de comparaison ?"
   },
   "S_KERHET-8-Q3": {
-    "stem": "Fyra personer dois åka depuis centrum à flygplatsen une söndagsmorgon kl. 05.30. Sträckan är 5 km. que blir priset pour resan enligt prisinformationens prix de comparaison (10 km / 15 min)?"
-  },
-  "KARTA-KARTP1-Q11": {
-    "stem": "Du är sur väg avec ton kund à Norrköpings flygplats sur E4 i uppdrag 2. lors de Bäckeby frågar dig kunden comment långt kvar cela är à flygplatsen?"
-  },
-  "KARTA-KARTP1-Q12": {
-    "stem": "Quand du sur motorvägen mellan Norrköping et Linköping enligt uppdrag 3 et har 10 km kvar sur motorvägen börjar cela plötsligt att regna. Du dois minska ton fart à hälften. comment mycket längre tid tar ton resa?"
-  },
-  "KARTA-KARTP1-Q13": {
-    "stem": "Comment lång är resan enligt uppdrag 1 ?"
-  },
-  "KARTA-KARTP1-Q14": {
-    "stem": "Combien de temps tar körningen i uppdrag 2?"
-  },
-  "KARTA-KARTP1-Q2": {
-    "stem": "Comment lång körning är cela i uppdrag 2?"
-  },
-  "KARTA-KARTP1-Q4": {
-    "stem": "Quand peux senast påbörja uppdrag 3 si du kör via Simrishamn?"
-  },
-  "KARTA-KARTP1-Q5": {
-    "stem": "Comment lång resväg har du i uppdrag 1?"
-  },
-  "KARTA-KARTP1-Q7": {
-    "stem": "Combien de temps tar resan à Landvetter flygplats depuis att du svänger de depuis E6 à Rv 40?"
-  },
-  "KARTA-KARTP1-Q8": {
-    "stem": "Quand du lämnat de ton kund i uppdrag 3 sur Landvetter flygplats as le droit du une ny kund som frågar si du peux köra honom à närmaste campingplats. Vart ligger la?"
-  },
-  "KARTA-KARTP2-Q1": {
-    "stem": "Comment lång är resan?"
-  },
-  "KARTA-KARTP2-Q10": {
-    "stem": "Comment lång är körningen i uppdrag 1?"
-  },
-  "KARTA-KARTP2-Q12": {
-    "stem": "Quel tid dois du göra hämtningen i uppdrag 3?"
-  },
-  "KARTA-KARTP2-Q13": {
-    "stem": "Quand dois-tu senast lämna Kivik si du skall kunna lämna de sällskapet i uppdrag 1 et ha 10 min à godo?"
-  },
-  "KARTA-KARTP2-Q14": {
-    "stem": "Comment lång körning är cela i uppdrag 2?"
-  },
-  "KARTA-KARTP2-Q15": {
-    "stem": "Sur väg tillbaka depuis uppdrag 2 quand du passerar Tomelilla ringer växeln i Kivik et undrar quand du tidigast peux vara tillbaka i Kivik?"
-  },
-  "KARTA-KARTP2-Q16": {
-    "stem": "Quand peux senast påbörja uppdrag 3 si du kör via Simrishamn?"
-  },
-  "KARTA-KARTP2-Q3": {
-    "stem": "À vänster si Asige kyrka hittar du två stycken markeringar. que står dessa pour?"
-  },
-  "KARTA-KARTP2-Q5": {
-    "stem": "Quel tid kommer barnen att vara lors de skolan? I frågan dois du räkna avec une hastighet sur 55 km/tim avec tanke sur morgontrafiken."
-  },
-  "KARTA-KARTP2-Q7": {
-    "stem": "Comment lång är sjukresan i uppdrag 3 enligt avståndsmarkeringarna sur kartan?"
-  },
-  "KARTA-KARTP2-Q8": {
-    "stem": "Sur E4:an är cela halt väglag quel medför att hastigheten pas är högre än 40 km/tim. comment lång är restiden sur E4:an?"
-  },
-  "KARTA-KARTP2-Q9": {
-    "stem": "Quel tid dois du lämna garaget pour att göra ton första körning. Du dois vara sur plats 3 min innan utsatt tid."
-  },
-  "KARTA-KARTP3-Q1": {
-    "stem": "Comment lång är resan?"
-  },
-  "KARTA-KARTP3-Q11": {
-    "stem": "Comment lång är körningen i uppdrag 2 ?"
-  },
-  "KARTA-KARTP3-Q12": {
-    "stem": "Quel tid dois du göra hämtningen i uppdrag 3?"
-  },
-  "KARTA-KARTP3-Q13": {
-    "stem": "Quand dois-tu senast lämna Kivik si du skall kunna lämna de sällskapet i uppdrag 1 et ha 10 min à godo?"
-  },
-  "KARTA-KARTP3-Q14": {
-    "stem": "Comment lång körning är cela i uppdrag 2?"
-  },
-  "KARTA-KARTP3-Q15": {
-    "stem": "Sur väg tillbaka depuis uppdrag 2 quand du passerar Tomelilla ringer växeln i Kivik et undrar quand du tidigast peux vara tillbaka i Kivik?"
-  },
-  "KARTA-KARTP3-Q16": {
-    "stem": "Quand peux senast påbörja uppdrag 3 si du kör via Simrishamn?"
-  },
-  "KARTA-KARTP3-Q2": {
-    "stem": "I uppdrag 2 kör du ut sur E6 depuis Halmstad lors de Rv 25. comment lång är resan?"
-  },
-  "KARTA-KARTP3-Q3": {
-    "stem": "À vänster si Asige kyrka hittar du två stycken markeringar. que står dessa pour?"
-  },
-  "KARTA-KARTP3-Q5": {
-    "stem": "Quel tid kommer barnen att vara lors de skolan? I frågan dois du räkna avec une hastighet sur 55 km/tim avec tanke sur morgontrafiken."
-  },
-  "KARTA-KARTP3-Q6": {
-    "stem": "Comment lång är framkörningen i uppdrag 2?"
-  },
-  "KARTA-KARTP3-Q7": {
-    "stem": "Comment lång är sjukresan i uppdrag 3 enligt avståndsmarkeringarna sur kartan?"
-  },
-  "KARTA-KARTP3-Q8": {
-    "stem": "Sur E4:an är cela halt väglag quel medför att hastigheten pas är högre än 40 km/tim. comment lång är restiden sur E4:an?"
-  },
-  "KARTA-KARTP3-Q9": {
-    "stem": "Quel tid dois du lämna garaget pour att göra ton första körning. Du dois vara sur plats 3 min innan utsatt tid."
-  },
-  "KARTA-KARTP4-Q1": {
-    "stem": "Quand dois-tu senast lämna Kivik si du skall kunna lämna de sällskapet i uppdrag 1 et ha 10 min à godo?"
-  },
-  "KARTA-KARTP4-Q10": {
-    "stem": "Du svänger ut sur E4 lors de Säby, strax söder si Säby frågar telefonisten Combien de temps du beräknas ha kvar à Mantorps motorstadion i uppdrag 2? depuis avfart E4 à motorstadion peux du räkna avec att cela tar 3 minuter."
-  },
-  "KARTA-KARTP4-Q11": {
-    "stem": "Du är sur väg avec ton kund à Norrköpings flygplats sur E4 i uppdrag 2. lors de Bäckeby frågar dig kunden comment långt kvar cela är à flygplatsen?"
-  },
-  "KARTA-KARTP4-Q12": {
-    "stem": "Quand du sur motorvägen mellan Norrköping et Linköping enligt uppdrag 3 et har 10 km kvar sur motorvägen börjar cela plötsligt att regna. Du dois minska ton fart à hälften. comment mycket längre tid tar ton resa?"
-  },
-  "KARTA-KARTP4-Q13": {
-    "stem": "Comment lång är resan enligt uppdrag 1 ?"
-  },
-  "KARTA-KARTP4-Q14": {
-    "stem": "Combien de temps tar körningen i uppdrag 2?"
-  },
-  "KARTA-KARTP4-Q15": {
-    "stem": "Combien de temps beräknas framkörningen ta à Alva kyrka i uppdrag 3?"
-  },
-  "KARTA-KARTP4-Q16": {
-    "stem": "Quel är la närmaste vägen depuis gästhamnen i Burgsvik à Visby Centrum?"
-  },
-  "KARTA-KARTP4-Q2": {
-    "stem": "Comment lång körning är cela i uppdrag 2?"
-  },
-  "KARTA-KARTP4-Q3": {
-    "stem": "Sur väg tillbaka depuis uppdrag 2 quand du passerar Tomelilla ringer växeln i Kivik et undrar quand du tidigast peux vara tillbaka i Kivik?"
-  },
-  "KARTA-KARTP4-Q4": {
-    "stem": "Quand peux senast påbörja uppdrag 3 si du kör via Simrishamn?"
-  },
-  "KARTA-KARTP4-Q5": {
-    "stem": "Comment lång resväg har du i uppdrag 1?"
-  },
-  "KARTA-KARTP4-Q6": {
-    "stem": "Kl. 9:00 sur väg à Björkö är du i trafikkorsning E6 et Rv 155. quel färja kommer du tidigast kunna ta?"
-  },
-  "KARTA-KARTP4-Q7": {
-    "stem": "Combien de temps tar resan à Landvetter flygplats depuis att du svänger de depuis E6 à Rv 40?"
-  },
-  "KARTA-KARTP4-Q9": {
-    "stem": "Comment lång är framkörningssträckan i uppdrag 1?"
-  },
-  "KARTA-KARTP5-Q1": {
-    "stem": "Quand dois-tu senast lämna Kivik si du skall kunna lämna de sällskapet i uppdrag 1 et ha 10 min à godo?"
-  },
-  "KARTA-KARTP5-Q10": {
-    "stem": "Du svänger ut sur E4 lors de Säby, strax söder si Säby frågar telefonisten Combien de temps du beräknas ha kvar à Mantorps motorstadion i uppdrag 2? depuis avfart E4 à motorstadion peux du räkna avec att cela tar 3 minuter."
-  },
-  "KARTA-KARTP5-Q11": {
-    "stem": "Du är sur väg avec ton kund à Norrköpings flygplats sur E4 i uppdrag 2. lors de Bäckeby frågar dig kunden comment långt kvar cela är à flygplatsen?"
-  },
-  "KARTA-KARTP5-Q12": {
-    "stem": "Quand du sur motorvägen mellan Norrköping et Linköping enligt uppdrag 3 et har 10 km kvar sur motorvägen börjar cela plötsligt att regna. Du dois minska ton fart à hälften. comment mycket längre tid tar ton resa?"
-  },
-  "KARTA-KARTP5-Q13": {
-    "stem": "Comment lång är resan enligt uppdrag 1 ?"
-  },
-  "KARTA-KARTP5-Q14": {
-    "stem": "Combien de temps tar körningen i uppdrag 2?"
-  },
-  "KARTA-KARTP5-Q15": {
-    "stem": "Combien de temps beräknas framkörningen ta à Alva kyrka i uppdrag 3?"
-  },
-  "KARTA-KARTP5-Q16": {
-    "stem": "Quel är la närmaste vägen depuis gästhamnen i Burgsvik à Visby Centrum?"
-  },
-  "KARTA-KARTP5-Q2": {
-    "stem": "Comment lång körning är cela i uppdrag 2?"
-  },
-  "KARTA-KARTP5-Q3": {
-    "stem": "Sur väg tillbaka depuis uppdrag 2 quand du passerar Tomelilla ringer växeln i Kivik et undrar quand du tidigast peux vara tillbaka i Kivik?"
-  },
-  "KARTA-KARTP5-Q4": {
-    "stem": "Quand peux senast påbörja uppdrag 3 si du kör via Simrishamn?"
-  },
-  "KARTA-KARTP5-Q5": {
-    "stem": "Comment lång resväg har du i uppdrag 1?"
-  },
-  "KARTA-KARTP5-Q6": {
-    "stem": "Kl. 9:00 sur väg à Björkö är du i trafikkorsning E6 et Rv 155. quel färja kommer du tidigast kunna ta?"
-  },
-  "KARTA-KARTP5-Q7": {
-    "stem": "Combien de temps tar resan à Landvetter flygplats depuis att du svänger de depuis E6 à Rv 40?"
-  },
-  "KARTA-KARTP5-Q9": {
-    "stem": "Comment lång är framkörningssträckan i uppdrag 1?"
-  },
-  "KARTA-KARTP6-Q1": {
-    "stem": "Comment lång är resan?"
-  },
-  "KARTA-KARTP6-Q11": {
-    "stem": "Comment lång är körningen i uppdrag 2 ?"
-  },
-  "KARTA-KARTP6-Q12": {
-    "stem": "Quel tid dois du göra hämtningen i uppdrag 3?"
-  },
-  "KARTA-KARTP6-Q13": {
-    "stem": "Quand dois-tu senast lämna Kivik si du skall kunna lämna de sällskapet i uppdrag 1 et ha 10 min à godo?"
-  },
-  "KARTA-KARTP6-Q14": {
-    "stem": "Comment lång körning är cela i uppdrag 2?"
-  },
-  "KARTA-KARTP6-Q15": {
-    "stem": "Sur väg tillbaka depuis uppdrag 2 quand du passerar Tomelilla ringer växeln i Kivik et undrar quand du tidigast peux vara tillbaka i Kivik?"
-  },
-  "KARTA-KARTP6-Q16": {
-    "stem": "Quand peux senast påbörja uppdrag 3 si du kör via Simrishamn?"
-  },
-  "KARTA-KARTP6-Q3": {
-    "stem": "À vänster si Asige kyrka hittar du två stycken markeringar. que står dessa pour?"
-  },
-  "KARTA-KARTP6-Q5": {
-    "stem": "Quel tid kommer barnen att vara lors de skolan? I frågan dois du räkna avec une hastighet sur 55 km/tim avec tanke sur morgontrafiken."
-  },
-  "KARTA-KARTP6-Q6": {
-    "stem": "Comment lång är framkörningen i uppdrag 2?"
-  },
-  "KARTA-KARTP6-Q7": {
-    "stem": "Comment lång är sjukresan i uppdrag 3 enligt avståndsmarkeringarna sur kartan?"
-  },
-  "KARTA-KARTP6-Q8": {
-    "stem": "Sur E4:an är cela halt väglag quel medför att hastigheten pas är högre än 40 km/tim. comment lång är restiden sur E4:an?"
-  },
-  "KARTA-KARTP6-Q9": {
-    "stem": "Quel tid dois du lämna garaget pour att göra ton första körning. Du dois vara sur plats 3 min innan utsatt tid."
-  },
-  "KARTA-KARTP7-Q1": {
-    "stem": "Comment lång är resan?"
-  },
-  "KARTA-KARTP7-Q11": {
-    "stem": "Comment lång är körningen i uppdrag 2 ?"
-  },
-  "KARTA-KARTP7-Q12": {
-    "stem": "Quel tid dois du göra hämtningen i uppdrag 3?"
-  },
-  "KARTA-KARTP7-Q13": {
-    "stem": "Quand dois-tu senast lämna Kivik si du skall kunna lämna de sällskapet i uppdrag 1 et ha 10 min à godo?"
-  },
-  "KARTA-KARTP7-Q14": {
-    "stem": "Comment lång körning är cela i uppdrag 2?"
-  },
-  "KARTA-KARTP7-Q15": {
-    "stem": "Sur väg tillbaka depuis uppdrag 2 quand du passerar Tomelilla ringer växeln i Kivik et undrar quand du tidigast peux vara tillbaka i Kivik?"
-  },
-  "KARTA-KARTP7-Q16": {
-    "stem": "Quand peux senast påbörja uppdrag 3 si du kör via Simrishamn?"
-  },
-  "KARTA-KARTP7-Q2": {
-    "stem": "I uppdrag 2 kör du ut sur E6 depuis Halmstad lors de Rv 25. comment lång är resan?"
-  },
-  "KARTA-KARTP7-Q3": {
-    "stem": "À vänster si Asige kyrka hittar du två stycken markeringar. que står dessa pour?"
-  },
-  "KARTA-KARTP7-Q5": {
-    "stem": "Quel tid kommer barnen att vara lors de skolan? I frågan dois du räkna avec une hastighet sur 55 km/tim avec tanke sur morgontrafiken."
-  },
-  "KARTA-KARTP7-Q6": {
-    "stem": "Comment lång är framkörningen i uppdrag 2?"
-  },
-  "KARTA-KARTP7-Q7": {
-    "stem": "Comment lång är sjukresan i uppdrag 3 enligt avståndsmarkeringarna sur kartan?"
-  },
-  "KARTA-KARTP7-Q8": {
-    "stem": "Sur E4:an är cela halt väglag quel medför att hastigheten pas är högre än 40 km/tim. comment lång är restiden sur E4:an?"
-  },
-  "KARTA-KARTP7-Q9": {
-    "stem": "Quel tid dois du lämna garaget pour att göra ton första körning. Du dois vara sur plats 3 min innan utsatt tid."
-  },
-  "KARTA-KARTP8-Q1": {
-    "stem": "Comment lång är resan?"
-  },
-  "KARTA-KARTP8-Q10": {
-    "stem": "Comment lång är körningen i uppdrag 1?"
-  },
-  "KARTA-KARTP8-Q11": {
-    "stem": "Comment lång är körningen i uppdrag 2 ?"
-  },
-  "KARTA-KARTP8-Q13": {
-    "stem": "Quand dois-tu senast lämna Kivik si du skall kunna lämna de sällskapet i uppdrag 1 et ha 10 min à godo?"
-  },
-  "KARTA-KARTP8-Q14": {
-    "stem": "Comment lång körning är cela i uppdrag 2?"
-  },
-  "KARTA-KARTP8-Q15": {
-    "stem": "Sur väg tillbaka depuis uppdrag 2 quand du passerar Tomelilla ringer växeln i Kivik et undrar quand du tidigast peux vara tillbaka i Kivik?"
-  },
-  "KARTA-KARTP8-Q16": {
-    "stem": "Quand peux senast påbörja uppdrag 3 si du kör via Simrishamn?"
-  },
-  "KARTA-KARTP8-Q2": {
-    "stem": "I uppdrag 2 kör du ut sur E6 depuis Halmstad lors de Rv 25. comment lång är resan?"
-  },
-  "KARTA-KARTP8-Q3": {
-    "stem": "À vänster si Asige kyrka hittar du två stycken markeringar. que står dessa pour?"
-  },
-  "KARTA-KARTP8-Q5": {
-    "stem": "Quel tid kommer barnen att vara lors de skolan? I frågan dois du räkna avec une hastighet sur 55 km/tim avec tanke sur morgontrafiken."
-  },
-  "KARTA-KARTP8-Q6": {
-    "stem": "Comment lång är framkörningen i uppdrag 2?"
-  },
-  "KARTA-KARTP8-Q7": {
-    "stem": "Comment lång är sjukresan i uppdrag 3 enligt avståndsmarkeringarna sur kartan?"
-  },
-  "KARTA-KARTP8-Q9": {
-    "stem": "Quel tid dois du lämna garaget pour att göra ton första körning. Du dois vara sur plats 3 min innan utsatt tid."
-  },
-  "kkalk-B-001": {
-    "stem": "Que betyder cela här vägmärket?"
-  },
-  "kkalk-B-002": {
-    "stem": "Du kör sur une huvudled quand une bil närmar sig depuis höger i une korsning. que gäller?"
-  },
-  "kkalk-B-003": {
-    "stem": "Que sänker ton bränsleförbrukning mest?"
-  },
-  "kkalk-B-004": {
-    "stem": "Que händer avec ton reaktionssträcka si du fördubblar farten?"
-  },
-  "kkalk-B-005": {
-    "stem": "Que är minsta tillåtna profondeur des sculptures sur un sommardäck?"
-  },
-  "kkalk-B-006": {
-    "stem": "Du kör avec helljus et möter une bil i une kurva. Quand dois-tu blända de à feux de croisement?"
-  },
-  "kkalk-B-007": {
-    "stem": "Inom quel avstånd depuis une järnvägskorsning är cela parkeringsförbud?"
-  },
-  "kkalk-B-008": {
-    "stem": "Lors de quel temperatur säger lagen att du dois använda motorvärmare?"
-  },
-  "kkalk-B-009": {
-    "stem": "Comment snabbt förbränner kroppen i genomsnitt alkohol?"
-  },
-  "kkalk-E-012": {
-    "stem": "Que händer avec bränsleförbrukningen quand du motorbromsar?"
-  },
-  "kkalk-E-014": {
-    "stem": "Varför är dubbdäck une hälsorisk, särskilt i städer?"
-  },
-  "kkalk-E-015": {
-    "stem": "Du accelererar depuis stillastående et vill spara bränsle genom att hoppa över une växel. comment gör du bäst?"
-  },
-  "kkalk-E-016": {
-    "stem": "Pour miljöns skull, lors de quel temperatur bör du börja använda motorvärmare?"
-  },
-  "kkalk-E-017": {
-    "stem": "Que utmärker infraljud depuis trafik?"
-  },
-  "kkalk-E-020": {
-    "stem": "Du kör i 70 km/h et dois stanna pour un rödljus längre fram. comment agerar du pour att spara mest bränsle?"
-  },
-  "kkalk-E-023": {
-    "stem": "Quel bilavgas är både cancerframkallande et bidrar à att marknära ozon bildas?"
-  },
-  "kkalk-E-024": {
-    "stem": "Cela är -15 °C ute. Combien de temps bör motorvärmaren vara inkopplad pour bästa effekt innan du kör?"
-  },
-  "kkalk-E-026": {
-    "stem": "Pour att köra sparsamt avec une bensinbil, lors de quel varvtal bör du som högst växla upp?"
-  },
-  "kkalk-E-028": {
-    "stem": "Varför dois du undvika att rulla långa sträckor avec nedtryckt koppling?"
-  },
-  "kkalk-E-031": {
-    "stem": "Temperaturen är noll grader. Combien de temps bör motorvärmaren vara inkopplad pour optimal effekt?"
-  },
-  "kkalk-E-035": {
-    "stem": "Varför förbrukar une modern bil inget bränsle lors de motorbromsning?"
-  },
-  "kkalk-E-036": {
-    "stem": "Combien de temps as le droit du vanligtvis ha bilmotorn sur tomgång i une tätort?"
-  },
-  "kkalk-E-037": {
-    "stem": "Combien de temps bör du använda motorvärmaren quand cela är +10 °C ute?"
-  },
-  "kkalk-E-038": {
-    "stem": "Vilka personbilar as le droit köra i la strängaste miljözonen, klass 3?"
-  },
-  "kkalk-E-039": {
-    "stem": "Que är une katalysators huvudsakliga funktion?"
-  },
-  "kkalk-E-042": {
-    "stem": "Lors de quel hastighet bör du lägga i högsta växeln pour att köra sparsamt sur plan väg?"
-  },
-  "kkalk-E-043": {
-    "stem": "Varför är cela bränslesnålt att hoppa över une växel, à exempel depuis tvåan à fyran?"
-  },
-  "kkalk-E-044": {
-    "stem": "Quel är la största miljöfördelen avec un start/stopp-system i stadstrafik?"
-  },
-  "kkalk-E-045": {
-    "stem": "Comment påverkar bilens luftkonditionering (AC) bränsleförbrukningen?"
-  },
-  "kkalk-E-048": {
-    "stem": "Que är la generella effekten de fyrhjulsdrift sur une bils bränsleförbrukning?"
-  },
-  "kkalk-E-049": {
-    "stem": "Lors de quel varvtalsområde är accelerationen mest bränsleeffektiv?"
-  },
-  "kkalk-E-057": {
-    "stem": "Que är la största klimatfördelen avec biobränslen jämfört avec bensin et diesel?"
-  },
-  "kkalk-E-058": {
-    "stem": "Vilka avgasämnen bildar skadligt marknära ozon tillsammans avec solljus?"
-  },
-  "kkalk-E-061": {
-    "stem": "Comment mycket bränsle sparar du ungefär sur att använda motorvärmare lors de une kallstart?"
-  },
-  "kkalk-E-065": {
-    "stem": "Comment bör däcktrycket vara pour lägsta bränsleförbrukning?"
-  },
-  "kkalk-E-069": {
-    "stem": "Comment kör du som mest bränslesnålt uppför une brant backe?"
-  },
-  "kkalk-E-070": {
-    "stem": "Lors de sparsam körning, comment långt bör du köra sur första växeln?"
-  },
-  "kkalk-E-071": {
-    "stem": "Comment påverkar une kallstart sur vintern bränsleförbrukningen de första kilometrarna?"
-  },
-  "kkalk-E-072": {
-    "stem": "Varför är cela bäst pour miljön att tvätta bilen i une biltvätt istället pour hemma sur gatan?"
-  },
-  "kkalk-E-074": {
-    "stem": "Comment påverkas människor et växter de marknära ozon depuis bilars avgaser?"
+    "stem": "Quatre personnes doivent aller du centre-ville à l'aéroport un dimanche matin à 05.30. Le trajet fait 5 km. Quel est le prix selon le prix de comparaison de l'information tarifaire ?"
   },
   "kkalk-E-083": {
     "stem": "Quel skadlig gas bildas quand solljus et bilavgaser reagerar avec varandra?"
   },
-  "kkalk-E-084": {
-    "stem": "Lors de quel varvtal bör du senast växla upp pour att köra bränslesnålt lors de acceleration?"
-  },
-  "kkalk-E-087": {
-    "stem": "Cela är 0 °C ute. Combien de temps bör du använda motorvärmaren pour att pas slösa onödig energi?"
-  },
-  "kkalk-E-090": {
-    "stem": "Vilka personbilar as le droit köra i miljözon klass 3?"
-  },
-  "kkalk-E-094": {
-    "stem": "Que är la största hälsorisken avec att köra avec dubbdäck sur barmark i stan?"
-  },
-  "kkalk-E-095": {
-    "stem": "Temperaturen är -15°C. Combien de temps bör du använda motorvärmaren pour bäst effekt?"
-  },
-  "kkalk-E-097": {
-    "stem": "Vilka personbilar as le droit köra sur gator avec miljözon klass 3?"
-  },
-  "kkalk-E-101": {
-    "stem": "Lors de quel temperatur behöver une katalysator vara pour att fungera effektivt?"
-  },
-  "kkalk-E-102": {
-    "stem": "Que blir bränsleförbrukningen quand du motorbromsar avec une modern bil?"
-  },
-  "kkalk-E-103": {
-    "stem": "Quel är la största miljö- et hälsorisken avec dubbdäck i stadstrafik?"
-  },
-  "kkalk-E-104": {
-    "stem": "Que omvandlar une katalysator främst bilens farliga avgaser à?"
-  },
-  "kkalk-E-105": {
-    "stem": "Cela är -15 °C. pour att vara så effektiv som möjligt, Combien de temps bör motorvärmaren som mest vara inkopplad?"
-  },
-  "kkalk-E-114": {
-    "stem": "Que är bränsleförbrukningen quand du motorbromsar avec une modern bil?"
-  },
-  "kkalk-E-115": {
-    "stem": "Comment påverkas miljön främst de att värma une bil genom tomgångskörning une kall morgon?"
-  },
-  "kkalk-E-118": {
-    "stem": "Cela är -15 °C. Combien de temps bör motorvärmaren vara sur pour optimal effekt?"
-  },
   "kkalk-E-123": {
     "stem": "Que består drivmedlet E85 huvudsakligen de?"
-  },
-  "kkalk-E-125": {
-    "stem": "Cela är -15°C ute. Combien de temps bör motorvärmaren vara igång innan start pour att få bäst effekt?"
-  },
-  "kkalk-E-126": {
-    "stem": "Cela är nollgradigt ute. Combien de temps bör du använda motorvärmaren pour att starta så bränslesnålt som möjligt?"
-  },
-  "kkalk-E-129": {
-    "stem": "Depuis quel hastighet peux du köra sur femmans växel pour att spara bränsle avec une modern manuell bil?"
-  },
-  "kkalk-E-131": {
-    "stem": "Quel högsta varvtal bör du sikta sur lors de uppväxling pour att köra så bränslesnålt som möjligt?"
-  },
-  "kkalk-E-133": {
-    "stem": "Combien de temps as le droit du som mest köra sur tomgång inom un tätbebyggt område?"
-  },
-  "kkalk-E-135": {
-    "stem": "Du vill köra bränslesnålt sur plan väg. Ungefär lors de quel hastighet är cela lämpligt att lägga i femmans växel?"
-  },
-  "kkalk-E-138": {
-    "stem": "Quand renar une bils katalysator avgaserna som allra sämst?"
-  },
-  "kkalk-E-139": {
-    "stem": "Cela är 15 minusgrader. Combien de temps bör motorvärmaren vara inkopplad innan start pour bästa effekt utan onödig elförbrukning?"
   },
   "kkalk-E-141": {
     "stem": "Varför är högaromatiska oljor (HA-oljor) förbjudna i nya däck?"
   },
-  "kkalk-E-155": {
-    "stem": "Lors de quel varvtal bör du växla upp pour att köra så bränslesnålt som möjligt quand du accelererar?"
-  },
-  "kkalk-E-156": {
-    "stem": "Varför är cela bränslesnålt att hoppa över växlar quand du accelererar?"
-  },
-  "kkalk-E-157": {
-    "stem": "Que drar mest extra bränsle pour att svalka bilen quand du kör i 110 km/h?"
-  },
-  "kkalk-E-159": {
-    "stem": "Quel är la största negativa hälsoeffekten de dubbdäck i stadstrafik?"
-  },
-  "kkalk-E-160": {
-    "stem": "Vilka personbilar as le droit köra i la strängaste miljözonen, klass 3?"
-  },
-  "kkalk-E-161": {
-    "stem": "Comment påverkar pour lågt däcktryck bränsleförbrukningen?"
-  },
-  "kkalk-E-162": {
-    "stem": "Vilka tre huvudsakliga föroreningar renar une trevägskatalysator i une bensinbil?"
-  },
-  "kkalk-E-163": {
-    "stem": "Quel är cela bränslesnålaste sättet att minska farten inför un hinder?"
-  },
-  "kkalk-E-166": {
-    "stem": "Du vill motorbromsa pour att sänka bränsleförbrukningen à noll. comment gör du?"
-  },
-  "kkalk-E-167": {
-    "stem": "Cela är nollgradigt ute. Combien de temps bör du som längst använda motorvärmaren pour att pas slösa onödig energi?"
-  },
-  "kkalk-E-169": {
-    "stem": "Combien de temps as le droit du oftast köra sur tomgång i un tätbebyggt område?"
-  },
-  "kkalk-E-173": {
-    "stem": "Comment påverkar bytet depuis vanliga à bredare däck bilens bränsleförbrukning?"
-  },
-  "kkalk-E-201": {
-    "stem": "Comment mycket skulle EU:s koldioxidutsläpp minska årligen si alla bilister använde ecodriving?"
-  },
-  "kkalk-E-204": {
-    "stem": "Varför bör du montera de takboxen quand la pas längre behövs?"
-  },
-  "kkalk-E-205": {
-    "stem": "Under quel period är cela i regel förbjudet att använda dubbdäck?"
-  },
-  "kkalk-E-206": {
-    "stem": "Cela är -10°C ute. Combien de temps bör motorvärmaren vara påslagen innan du startar bilen?"
-  },
-  "kkalk-E-207": {
-    "stem": "Vilka utsläppskrav gäller pour personbilar som kör i miljözon klass 2?"
-  },
-  "kkalk-E-208": {
-    "stem": "Du kör i 90 km/h et vill kyla ner bilen. quel alternativ drar mest bränsle?"
-  },
-  "kkalk-E-209": {
-    "stem": "Comment vet du quand du dois växla upp pour att köra sparsamt, si bilen saknar varvräknare?"
-  },
-  "kkalk-E-210": {
-    "stem": "Varför är cela olämpligt att tvätta bilen hemma sur gatan?"
-  },
-  "kkalk-E-226": {
-    "stem": "Quel kraft påverkar bilens bränsleförbrukning mest i hög fart?"
-  },
-  "kkalk-E-271": {
-    "stem": "Combien de temps bör motorvärmaren vara sur quand cela är noll grader ute?"
-  },
-  "kkalk-E-272": {
-    "stem": "Cela är -15 °C. Combien de temps bör motorvärmaren vara sur pour att ge bäst effekt innan start?"
-  },
-  "kkalk-E-273": {
-    "stem": "Vilka personbilar as le droit köra i la strängaste miljözonen, klass 3?"
-  },
   "kkalk-E-275": {
     "stem": "Quel skadlig gas bildas quand bilavgaser blandas avec starkt solljus?"
-  },
-  "kkalk-E-276": {
-    "stem": "Combien de temps as le droit du oftast ha motorn igång quand bilen står stilla?"
-  },
-  "kkalk-E-277": {
-    "stem": "Du närmar dig un rödljus. comment gör du pour att förbruka så lite bränsle som möjligt?"
-  },
-  "kkalk-E-279": {
-    "stem": "Lors de quel varvtal bör du senast växla upp pour att köra bränslesnålt avec une bensinbil?"
-  },
-  "kkalk-M-008": {
-    "stem": "Du har un intensivt samtal via handsfree quand du kör. comment påverkar cela trafiksäkerheten?"
-  },
-  "kkalk-M-009": {
-    "stem": "Sur quel avstånd upptäcker du une gående avec reflexer quand du kör avec feux de croisement i mörker?"
-  },
-  "kkalk-M-017": {
-    "stem": "Que kännetecknar ton periferiseende?"
-  },
-  "kkalk-M-033": {
-    "stem": "Du kör i mörker avec helljus. Ungefär sur quel avstånd peux du upptäcka une person som bär reflex?"
-  },
-  "kkalk-M-034": {
-    "stem": "Que kallas la lilla del de synfältet där du ser som allra skarpast?"
-  },
-  "kkalk-M-039": {
-    "stem": "Que kallas cela quand hjärnan omedvetet sållar bort information i une stressig trafiksituation?"
-  },
-  "kkalk-M-042": {
-    "stem": "Que menas avec une förares reaktionstid?"
-  },
-  "kkalk-M-043": {
-    "stem": "Que är une skolpatrulls viktigaste uppgift?"
-  },
-  "kkalk-M-050": {
-    "stem": "Quel är minsta godkända synskärpa pour B-permis de conduire, mätt avec båda ögonen tillsammans?"
-  },
-  "kkalk-M-055": {
-    "stem": "Que händer avec ton reaktionstid quand du kör et är väldigt trött?"
-  },
-  "kkalk-M-057": {
-    "stem": "Quel bilskydd passar bäst pour un 5-årigt barn som är 115 cm långt?"
-  },
-  "kkalk-M-065": {
-    "stem": "Du kör i 100 km/h. Ungefär comment lång blir reaktionssträckan si ton reaktionstid är une sekund?"
-  },
-  "kkalk-M-071": {
-    "stem": "Du kör i 40 km/h et tittar bort depuis vägen i två sekunder. comment lång sträcka rullar bilen under la tiden?"
-  },
-  "kkalk-M-072": {
-    "stem": "Unga män är överrepresenterade i olycksstatistiken. que är une vanlig psykologisk förklaring à detta?"
-  },
-  "kkalk-M-080": {
-    "stem": "Att vara vaken i 24 timmar ger une nedsatt körförmåga som motsvarar ungefär quel promillehalt?"
-  },
-  "kkalk-M-086": {
-    "stem": "Depuis quel längd as le droit un barn åka bil utan bälteskudde ou bilbarnstol?"
-  },
-  "kkalk-M-087": {
-    "stem": "Varför är cela livsfarligt att ha une bakåtvänd barnstol framför une aktiv krockkudde?"
-  },
-  "kkalk-M-088": {
-    "stem": "Du kör avec feux de croisement i mörker. quand upptäcker du une fotgängare i mörka kläder utan reflexer?"
-  },
-  "kkalk-M-089": {
-    "stem": "Quel åldersgrupp är mest överrepresenterad i statistiken pour allvarliga olyckor?"
-  },
-  "kkalk-M-090": {
-    "stem": "Quel gräns gäller pour olaglig narkotika i blodet quand du kör bil?"
-  },
-  "kkalk-M-093": {
-    "stem": "Ungefär comment stor andel de de som omkommer i trafiken är skyddade trafikanter?"
-  },
-  "kkalk-M-097": {
-    "stem": "Comment förändras ton upptäcktsavstånd pour une mörkklädd fotgängare quand du byter depuis helljus à feux de croisement?"
-  },
-  "kkalk-M-100": {
-    "stem": "Comment mycket 40 % sprit motsvarar alkoholmängden i une stor starköl (50 cl, 5,2 %)?"
-  },
-  "kkalk-M-101": {
-    "stem": "Du kör i 70 km/h et har une reaktionstid sur une sekund. comment lång blir ton reaktionssträcka?"
-  },
-  "kkalk-M-102": {
-    "stem": "Du är djupt försjunken i un telefonsamtal via handsfree medan du kör. quel är la största risken?"
-  },
-  "kkalk-M-104": {
-    "stem": "Sur quel avstånd upptäcker du une fotgängare avec reflexer si du kör avec helljus i mörker?"
-  },
-  "kkalk-M-105": {
-    "stem": "Lors de quel temperatur brukar bilens varningslampa pour halkrisk tändas?"
-  },
-  "kkalk-M-109": {
-    "stem": "Comment fördelas dödsfallen i trafiken ungefär mellan skyddade et oskyddade trafikanter?"
-  },
-  "kkalk-M-111": {
-    "stem": "Att köra bil efter 24 timmars vakenhet motsvarar ungefär quel promillehalt?"
-  },
-  "kkalk-M-112": {
-    "stem": "Lors de quel längd behöver barn pas längre sitta sur bälteskudde ou i bilbarnstol?"
-  },
-  "kkalk-M-113": {
-    "stem": "Comment färdas un barn som är 120 cm långt säkrast i une personbil?"
-  },
-  "kkalk-M-114": {
-    "stem": "Quel promillehalt i blodet innebär normalt grovt conduite une état d'ivresse?"
-  },
-  "kkalk-M-115": {
-    "stem": "Comment lång är reaktionstiden normalt pour une alert förare som överraskas i trafiken?"
-  },
-  "kkalk-M-118": {
-    "stem": "Comment stor andel de de som omkommer i trafiken är oskyddade trafikanter?"
-  },
-  "kkalk-M-124": {
-    "stem": "La röda oljelampan tänds under färd. comment bör du agera?"
-  },
-  "kkalk-M-128": {
-    "stem": "Du kör i mörker avec helljus. sur quel ungefärligt avstånd upptäcker du une fotgängare avec reflexer?"
-  },
-  "kkalk-M-129": {
-    "stem": "Du kör avec feux de croisement i mörker. sur quel avstånd upptäcker du une fotgängare avec ljusa kläder men utan reflex?"
-  },
-  "kkalk-M-132": {
-    "stem": "Ungefär comment stor andel de de som omkommer i trafiken är personer i bil, buss ou lastbil?"
-  },
-  "kkalk-M-137": {
-    "stem": "Quel åldersgrupp reagerar oftast snabbast i komplexa trafiksituationer?"
-  },
-  "kkalk-M-141": {
-    "stem": "Que kallas cela quand du tittar rakt sur une fara i trafiken men ton hjärna ändå pas uppfattar la?"
-  },
-  "kkalk-M-142": {
-    "stem": "Vilka två trafikantgrupper är mest utsatta pour allvarliga skador i stadstrafik?"
-  },
-  "kkalk-M-144": {
-    "stem": "Sur quel avstånd upptäcker du une fotgängare i mörka kläder utan reflexer quand du kör avec feux de croisement?"
-  },
-  "kkalk-M-151": {
-    "stem": "Comment långt dois un barn minst vara pour att få åka utan bälteskudde?"
-  },
-  "kkalk-M-152": {
-    "stem": "Du kör i 110 km/h et reagerar sur une fara. Ungefär comment långt hinner bilen rulla sur une sekund?"
-  },
-  "kkalk-M-153": {
-    "stem": "Du kör i 70 km/h avec une reaktionstid sur une sekund. comment lång blir ton ungefärliga reaktionssträcka?"
   },
   "kkalk-M-154": {
     "stem": "Que peux påskynda kroppens förbränning de alkohol?"
   },
-  "kkalk-M-159": {
-    "stem": "Upp à quel ålder rekommenderas cela att barn sitter i une bakåtvänd bilbarnstol?"
-  },
-  "kkalk-M-162": {
-    "stem": "Que är un bra exempel sur positivt grupptryck depuis passagerare?"
-  },
-  "kkalk-M-163": {
-    "stem": "Que är minsta kravet sur synskärpa pour un B-permis de conduire?"
-  },
-  "kkalk-M-170": {
-    "stem": "Comment stor andel de alla som omkommer i trafiken är 65 år ou äldre?"
-  },
-  "kkalk-M-171": {
-    "stem": "Quand sur dygnet är ton kropp, enligt la biologiska klockan, som allra tröttast?"
-  },
-  "kkalk-M-201": {
-    "stem": "Comment påverkas ton mörkerseende de att plötsligt bländas i mörker?"
-  },
-  "kkalk-M-204": {
-    "stem": "Quel del de ton syn är specialiserad sur att upptäcka rörelser i utkanten de ton synfält?"
-  },
-  "kkalk-M-208": {
-    "stem": "Un barn under 15 år stjäl une moped et kraschar in i ton parkerade bil. Qui doit ersätta skadan?"
-  },
-  "kkalk-M-210": {
-    "stem": "Quel åldersgrupp har generellt snabbast reaktionstid i komplexa trafiksituationer?"
-  },
-  "kkalk-M-215": {
-    "stem": "Qui bär cela yttersta ansvaret pour ton körförmåga efter att du tagit un nytt läkemedel?"
-  },
-  "kkalk-M-216": {
-    "stem": "Combien de temps varar une mikrosömn?"
-  },
-  "kkalk-M-220": {
-    "stem": "Quel fysisk egenskap hos barn gör cela svårare pour dem att upptäcka annalkande fordon?"
-  },
-  "kkalk-M-265": {
-    "stem": "Quel är ton periferiseendes viktigaste uppgift quand du kör bil?"
-  },
-  "kkalk-M-267": {
-    "stem": "Att vara vaken i 24 timmar påverkar ton körförmåga lika mycket som une viss promillehalt. Ungefär quel?"
-  },
-  "kkalk-M-269": {
-    "stem": "Sur quel avstånd upptäcker du une mörklädd person utan reflexer quand du kör avec feux de croisement i mörker?"
-  },
-  "kkalk-M-272": {
-    "stem": "Förutom sur natten, quand är risken som störst att du blir farligt trött lors de ratten?"
-  },
-  "kkalk-M-274": {
-    "stem": "Combien de temps peux cela ta pour mörkerseendet att helt återställas efter une kraftig bländning?"
-  },
-  "kkalk-M-275": {
-    "stem": "Comment stor del de ton synfält är periferiseende?"
-  },
-  "kkalk-M-280": {
-    "stem": "Que är un exempel sur positivt grupptryck depuis passagerare?"
-  },
-  "kkalk-R-001": {
-    "stem": "Du kör avec feux de croisement i mörker. sur quel avstånd upptäcker du une mörkklädd person utan reflexer?"
-  },
-  "kkalk-R-002": {
-    "stem": "Sur quel avstånd upptäcker du une fotgängare avec ljusa kläder quand du kör avec feux de croisement i mörker?"
-  },
-  "kkalk-R-003": {
-    "stem": "Sur quel avstånd upptäcker du une fotgängare avec reflex quand du kör i mörker avec helljus?"
-  },
-  "kkalk-R-004": {
-    "stem": "Du möter une annan bil i mörker. Vart dois du titta pour att pas bli bländad?"
-  },
-  "kkalk-R-005": {
-    "stem": "Combien de temps peux cela ta pour ton mörkerseende att helt återställas efter une kraftig bländning?"
-  },
-  "kkalk-R-007": {
-    "stem": "Du närmar dig un backkrön i mörker. comment använder du ljusen pour att köra så säkert som möjligt?"
-  },
-  "kkalk-R-009": {
-    "stem": "Quand sur dygnet är risken pour viltolyckor som störst?"
-  },
-  "kkalk-R-010": {
-    "stem": "Du kör sur un rådjur som springer skadat depuis platsen. que är ton plikt enligt lagen?"
-  },
-  "kkalk-R-011": {
-    "stem": "Une älg springer ut framför dig et du hinner pas stanna. comment bör du styra pour att minska skadorna lors de une oundviklig krock?"
-  },
-  "kkalk-R-012": {
-    "stem": "Que varnar svarta plastsäckar sur plogpinnar oftast pour?"
-  },
-  "kkalk-R-013": {
-    "stem": "Du har kört sur un djur. I quel fall dois du i första hand kontakta ägaren istället pour att larma polisen via 112?"
-  },
-  "kkalk-R-014": {
-    "stem": "Varför är vägen som halast precis quand cela börjar regna efter une torr period?"
-  },
-  "kkalk-R-015": {
-    "stem": "Que innebär snömoddsplaning et i quel situation är risken som störst?"
-  },
-  "kkalk-R-017": {
-    "stem": "Ton bil börjar plötsligt vattenplana i hög fart. quel omedelbar reaktion är allra farligast?"
-  },
-  "kkalk-R-018": {
-    "stem": "Comment ökar dödsrisken pour une fotgängare si krockhastigheten höjs depuis 30 km/h à 50 km/h?"
-  },
-  "kkalk-R-019": {
-    "stem": "Du närmar dig une äldre person avec rullator lors de un övergångsställe. Varför bör du vara extra uppmärksam?"
-  },
-  "kkalk-R-022": {
-    "stem": "Du är först fram à une bilolycka sur une landsväg. que är cela allra första du dois göra?"
-  },
-  "kkalk-R-023": {
-    "stem": "Une lastbil avec orange sifferskylt har vält. que är ton viktigaste första åtgärd?"
-  },
-  "kkalk-R-024": {
-    "stem": "Du kommer à une olycksplats där une person är blek, kallsvettig et har snabb puls. comment hjälper du bäst?"
-  },
-  "kkalk-R-026": {
-    "stem": "Que innebär farthypnos?"
-  },
-  "kkalk-R-027": {
-    "stem": "Que innebär fartblindhet?"
-  },
-  "kkalk-R-030": {
-    "stem": "Que innebär låg friktion mellan däck et vägbana?"
-  },
-  "kkalk-R-031": {
-    "stem": "Que är la största risken quand du kör nära bakom une lastbil sur våt vägbana?"
-  },
-  "kkalk-R-034": {
-    "stem": "Du dois svänga höger. quel oskyddad trafikant döljer sig ofta i döda vinkeln sur ton högra sida?"
-  },
-  "kkalk-R-035": {
-    "stem": "Quand dois-tu använda une varningstriangel?"
-  },
-  "kkalk-R-041": {
-    "stem": "Comment mycket längre blir bromssträckan si du fördubblar farten?"
-  },
-  "kkalk-R-042": {
-    "stem": "Une buss blinkar pour att lämna sin hållplats sur une väg där hastighetsgränsen är 50 km/h. comment dois du agera?"
-  },
-  "kkalk-R-043": {
-    "stem": "Du kommer à une olycksplats et hittar une medvetslös förare i bilen. Platsen är säker. que gör du?"
-  },
-  "kkalk-R-044": {
-    "stem": "Varför är cela farligt att ligga tätt bakom une lastbil du tänker köra si?"
-  },
-  "kkalk-R-045": {
-    "stem": "Que innebär aquaplanage?"
-  },
-  "kkalk-R-046": {
-    "stem": "Que kallas cela quand une förare skyller sina egna misstag sur yttre omständigheter, som väglaget ou andra trafikanter?"
-  },
-  "kkalk-R-048": {
-    "stem": "Que innebär defensiv körning?"
-  },
-  "kkalk-R-049": {
-    "stem": "Cela är un par plusgrader et stjärnklart sur kvällen. Varför är risken pour halka extra stor just då?"
-  },
-  "kkalk-R-050": {
-    "stem": "Que är la största risken quand du kör förbi une buss lors de une hållplats?"
-  },
-  "kkalk-R-052": {
-    "stem": "Lors de quel profondeur des sculptures ökar risken pour aquaplanage markant sur une blöt vägbana?"
-  },
-  "kkalk-R-053": {
-    "stem": "Quand är risken pour så kallad sommarhalka som störst?"
-  },
-  "kkalk-R-056": {
-    "stem": "Utetermometern visar +2 grader une stjärnklar natt. où är risken pour plötslig halka störst?"
-  },
-  "kkalk-R-057": {
-    "stem": "Du har kört sur un djur. lors de quel kollision behöver du pas ringa polisen?"
-  },
-  "kkalk-R-059": {
-    "stem": "Une älg kliver ut sur vägen et une krock är oundviklig. comment bör du styra pour att minska skadorna?"
-  },
-  "kkalk-R-060": {
-    "stem": "Quand sur året är risken pour viltolyckor som störst?"
-  },
-  "kkalk-R-061": {
-    "stem": "Comment använder du reflexer pour att synas bäst pour une bilist i mörker?"
-  },
-  "kkalk-R-062": {
-    "stem": "Comment hanterar du helljuset quand du närmar dig un backkrön i mörker?"
-  },
-  "kkalk-R-063": {
-    "stem": "Du möter une lastbil i mörker. quand är cela dags att blända de à feux de croisement?"
-  },
-  "kkalk-R-064": {
-    "stem": "Du kör si une bil sur une landsväg i mörker. quand är cela lämpligast att slå sur helljuset igen?"
-  },
-  "kkalk-R-065": {
-    "stem": "Du kör i mörker et une bil närmar sig depuis une korsande väg. quel är la vanligaste et farligaste felbedömningen?"
-  },
-  "kkalk-R-066": {
-    "stem": "Varför har små barn svårt att avgöra depuis quel håll une bil närmar sig?"
-  },
-  "kkalk-R-067": {
-    "stem": "Une äldre person avec rollator är sur väg över un övergångsställe. comment beter du dig?"
-  },
-  "kkalk-R-068": {
-    "stem": "Quel befogenhet har une skolpatrull att stoppa trafiken lors de un övergångsställe?"
-  },
-  "kkalk-R-069": {
-    "stem": "Du dois svänga höger i une stad. quel allvarlig olycksrisk är svårast att upptäcka enbart avec hjälp de speglarna?"
-  },
-  "kkalk-R-070": {
-    "stem": "Bilen i filen bredvid dig stannar lors de un övergångsställe. Varför dois du också stanna?"
-  },
-  "kkalk-R-071": {
-    "stem": "Du kommer först à une olycksplats. quel är ton absolut första prioritet?"
-  },
-  "kkalk-R-072": {
-    "stem": "Une skadad lors de une olycka är blek et fryser. as le droit du ge personen något att dricka?"
-  },
-  "kkalk-R-073": {
-    "stem": "Du ser une lastbil avec une orange skylt avec svarta siffror. que betyder skylten?"
-  },
-  "kkalk-R-074": {
-    "stem": "Quand inträffar de flesta allvarliga olyckor orsakade de trötthet et alkohol?"
-  },
-  "kkalk-R-075": {
-    "stem": "Vilka tecken sur extrem trötthet betyder att du omedelbart dois stanna bilen?"
-  },
-  "kkalk-R-076": {
-    "stem": "Du kör de motorvägen et upplever att farten är lägre än que mätaren visar. que kallas fenomenet?"
-  },
-  "kkalk-R-078": {
-    "stem": "Du kör i tät dimma et upplever att vägen svänger fast la är rak. que kallas detta fenomen?"
-  },
-  "kkalk-R-079": {
-    "stem": "Förutom alkohol et trötthet, que peux orsaka tunnelseende quand du kör bil?"
-  },
-  "kkalk-R-080": {
-    "stem": "Que kallas cela quand passagerare medvetet pressar une förare att köra mer riskfyllt?"
-  },
-  "kkalk-R-081": {
-    "stem": "Tu dois conduire si une häst avec ryttare. quel agerande är direkt farligt i la här situationen?"
-  },
-  "kkalk-R-082": {
-    "stem": "Ton bil har stannat mellan bommarna sur une järnvägsövergång. que gör du först?"
-  },
-  "kkalk-R-083": {
-    "stem": "Du tvingas stanna sur une mörk väg. Varför är cela viktigt att byta depuis feux de croisement à parkeringsljus?"
-  },
-  "kkalk-R-084": {
-    "stem": "Du kör i mörker et möter une bil i une vänsterkurva. quand bör du blända de helljuset?"
-  },
-  "kkalk-R-085": {
-    "stem": "Un rådjur har precis sprungit över vägen framför dig. quel är la största omedelbara risken?"
-  },
-  "kkalk-R-086": {
-    "stem": "Comment påverkar våt asfalt strålkastarljuset quand du kör i mörker?"
-  },
-  "kkalk-R-087": {
-    "stem": "Du kör i mörker bakom une lastbil. Varför är cela extra farligt att ligga pour nära inpå la?"
-  },
-  "kkalk-R-088": {
-    "stem": "Du kör i mörker avec helljus. sur quel avstånd upptäcker du une gående avec reflex?"
-  },
-  "kkalk-R-090": {
-    "stem": "Du kör långsamt ut depuis une parkeringsficka. as le droit du hålla i mobilen et skriva un sms?"
-  },
-  "kkalk-R-091": {
-    "stem": "Quel skada är vanligast et mest karaktäristisk lors de une påkörning bakifrån?"
-  },
-  "kkalk-R-092": {
-    "stem": "Varför peux moddplaning inträffa lors de une lägre hastighet än aquaplanage?"
-  },
-  "kkalk-R-093": {
-    "stem": "Quel är cela vanligaste första tecknet sur vilt lors de körning i mörker?"
-  },
-  "kkalk-R-094": {
-    "stem": "Une brand avec kraftig rök uppstår i tunneln framför dig. que gör du?"
-  },
-  "kkalk-R-095": {
-    "stem": "Une buss har stannat lors de une hållplats. quel är la största, svårupptäckta faran quand du kör förbi?"
-  },
-  "kkalk-R-096": {
-    "stem": "Que är la främsta innebörden de defensiv körning?"
-  },
-  "kkalk-R-097": {
-    "stem": "Comment använder du tresekundersregeln pour att hålla un säkert avstånd à bilen framför?"
-  },
-  "kkalk-R-098": {
-    "stem": "Comment placerar du bäst bilen lors de kraftigt regn sur une väg avec djupa hjulspår?"
-  },
-  "kkalk-R-099": {
-    "stem": "Sur quel sida de une landsväg utan trottoar dois une fotgängare gå?"
-  },
-  "kkalk-R-100": {
-    "stem": "Du dois svänga höger et korsa une cykelbana. une cyklist som cyklar rakt fram dyker upp samtidigt. que gäller?"
-  },
-  "kkalk-S-023": {
-    "stem": "Un P-förbud har tilläggstavlorna \"10-18\" et \"(10-14)\". as le droit du parkera här une onsdag klockan 16?"
-  },
-  "kkalk-S-024": {
-    "stem": "Une 30-skylt har une tilläggstavla avec tiderna 07-16 samt röda tider 09-12. quel hastighet gäller här une söndag kl 14 si bashastigheten är 50 km/h?"
-  },
-  "kkalk-S-025": {
-    "stem": "Que innebär la runda, blå skylten avec vita pilar i une giratoire?"
-  },
-  "kkalk-S-026": {
-    "stem": "Que är la viktiga skillnaden mellan förbud mot parkering et förbud mot att stanna et parkera?"
-  },
-  "kkalk-S-030": {
-    "stem": "Du kör förbi märket pour agglomération. quel är la nya bashastigheten si inget annat anges?"
-  },
-  "kkalk-S-031": {
-    "stem": "Une tilläggstavla anger tiden \"8–17\" avec svarta siffror. Vilka dagar gäller la angivna regeln?"
-  },
-  "kkalk-S-032": {
-    "stem": "Que betyder une tidsangivelse inom parentes, t.ex. (8-17), sur une tilläggstavla?"
-  },
-  "kkalk-S-034": {
-    "stem": "Que betyder une LGF-skylt baktill sur un fordon?"
-  },
-  "kkalk-S-035": {
-    "stem": "Quel form et färg har un påbudsmärke?"
-  },
-  "kkalk-S-036": {
-    "stem": "Du närmar dig une gata avec skylten 'Förbud mot infart avec fordon'. que betyder cela?"
-  },
-  "kkalk-S-038": {
-    "stem": "Vilka fordon as le droit köra sur une motorväg?"
-  },
-  "kkalk-S-040": {
-    "stem": "Quel färg har panneaux de signalisation som visar vägen à une sevärdhet?"
-  },
-  "kkalk-S-045": {
-    "stem": "Que betyder avståndsmärket avec tre röda streck före une järnvägskorsning?"
-  },
-  "kkalk-S-047": {
-    "stem": "Comment känner du oftast igen un påbudsmärke sur form et färg?"
-  },
-  "kkalk-S-048": {
-    "stem": "Que betyder une tidsangivelse inom parentes sur une tilläggstavla?"
-  },
-  "kkalk-S-049": {
-    "stem": "Que varnar vägmärket avec un staket pour?"
-  },
-  "kkalk-S-050": {
-    "stem": "Que innebär la blå, fyrkantiga skylten avec un vitt M, som ofta finns sur smala vägar?"
-  },
-  "kkalk-S-051": {
-    "stem": "Que innebär vägmärket 'Gågata' pour dig som kör bil?"
-  },
-  "kkalk-S-052": {
-    "stem": "Du kommer à une stoppskylt et korsningen är helt tom. que dois du göra?"
-  },
-  "kkalk-S-053": {
-    "stem": "Quand sur dygnet är risken pour viltolyckor som allra störst?"
-  },
-  "kkalk-S-057": {
-    "stem": "Du kör mot une cykelöverfart. quel regel gäller pour dig?"
-  },
-  "kkalk-S-062": {
-    "stem": "Une tilläggstavla anger une tid inom parentes, t.ex. (9–15). Vilka dagar gäller la?"
-  },
-  "kkalk-S-063": {
-    "stem": "Du har obligation d'arrêt et vägen har une målad stopplinje. Où doit du stanna?"
-  },
-  "kkalk-S-075": {
-    "stem": "Denna blå, runda skylt sitter lors de un hinder sur vägen. que innebär la pour dig?"
-  },
-  "kkalk-S-076": {
-    "stem": "Du kör bil mot une skyltad cykelöverfart. quel regel gäller?"
-  },
-  "kkalk-S-077": {
-    "stem": "Que betyder un kryssmärke avec une extra vinklad underdel lors de une järnvägskorsning?"
-  },
-  "kkalk-S-078": {
-    "stem": "Que innebär tilläggstavlan avec pilar som pekar uppåt et nedåt under un parkeringsmärke?"
-  },
-  "kkalk-S-079": {
-    "stem": "Detta påbudsmärke sitter före une korsning. quel är la vanligaste anledningen à att du dois köra rakt fram?"
-  },
-  "kkalk-S-080": {
-    "stem": "Que innebär varningsmärket avec un tåg sur?"
-  },
-  "kkalk-S-081": {
-    "stem": "Du ser vägmärket pour parkeringsförbud. as le droit du stanna pour att plocka upp une passagerare?"
-  },
-  "kkalk-S-082": {
-    "stem": "Que betyder une grön vägvisare avec vit text?"
-  },
-  "kkalk-S-083": {
-    "stem": "Que s'applique-t-il à dig som förare i un gångfartsområde?"
-  },
-  "kkalk-S-088": {
-    "stem": "Que betyder vägmärket som är une triangel avec spetsen nedåt?"
-  },
   "kkalk-S-092": {
     "stem": "Que betyder vägmarkeringen 'hajtänder'?"
-  },
-  "kkalk-S-094": {
-    "stem": "Une tilläggstavla à un panneaux de signalisation anger tiden (9–14). Vilka dagar gäller tidsangivelsen?"
-  },
-  "kkalk-S-096": {
-    "stem": "Que innebär förbudsmärket pour infart avec fordon?"
-  },
-  "kkalk-S-097": {
-    "stem": "Que är typiskt pour un påbudsmärke?"
-  },
-  "kkalk-S-098": {
-    "stem": "Comment ser de flesta svenska varningsmärken ut?"
-  },
-  "kkalk-S-099": {
-    "stem": "Que är skillnaden mellan förbudsmärket avec un rött streck et cela avec un rött kryss?"
-  },
-  "kkalk-S-100": {
-    "stem": "Que varnar vägmärket avec un tåg pour?"
-  },
-  "kkalk-S-101": {
-    "stem": "Que betyder vägmärket avec un vitt M sur blå botten?"
-  },
-  "kkalk-S-102": {
-    "stem": "Cela är la 14:e et du befinner dig sur une gata avec datumparkering. où är cela förbjudet att parkera?"
-  },
-  "kkalk-S-103": {
-    "stem": "Du närmar dig une stoppskylt lors de une tom korsning. que gäller?"
-  },
-  "kkalk-S-104": {
-    "stem": "Une tilläggstavla pour parkering anger tiden (9–14). Vilka dagar gäller tidsbegränsningen?"
-  },
-  "kkalk-S-105": {
-    "stem": "Que betyder röda tidsangivelser sur une tilläggstavla under un panneaux de signalisation?"
-  },
-  "kkalk-S-107": {
-    "stem": "Comment känner du igen un påbudsmärke?"
-  },
-  "kkalk-S-108": {
-    "stem": "Lors de une smal passage ser du vägmärket avec une röd pil i ton färdriktning. que innebär detta?"
-  },
-  "kkalk-S-109": {
-    "stem": "Du dois parkera sur une gata avec datumparkering. où är cela förbud att parkera natten à la 14:e i månaden?"
-  },
-  "kkalk-S-110": {
-    "stem": "Que varnar vägmärket avec un ånglok pour?"
-  },
-  "kkalk-S-111": {
-    "stem": "Du vill köra in sur une gata skyltad som gågata pour att ta une genväg. Är cela tillåtet?"
-  },
-  "kkalk-S-112": {
-    "stem": "Que är la avgörande skillnaden mellan förbud mot att parkera et förbud mot att stanna?"
-  },
-  "kkalk-S-113": {
-    "stem": "Une vägvisare avec brun bakgrund visar vägen à quel slags mål?"
-  },
-  "kkalk-S-114": {
-    "stem": "Une tilläggstavla visar tiden 8–17 avec svarta siffror. Vilka dagar gäller la?"
-  },
-  "kkalk-S-117": {
-    "stem": "Que varnar vägmärket avec un ånglok pour?"
-  },
-  "kkalk-S-118": {
-    "stem": "Que är skillnaden mellan förbudsmärket avec un streck et cela avec un kryss?"
-  },
-  "kkalk-S-119": {
-    "stem": "Cela är la 13:e et datumparkering gäller. sur quel sida de gatan är cela förbjudet att parkera?"
-  },
-  "kkalk-S-120": {
-    "stem": "Que kännetecknar un påbudsmärke?"
-  },
-  "kkalk-S-123": {
-    "stem": "Comment ser vägmärket pour motorväg ut?"
-  },
-  "kkalk-S-131": {
-    "stem": "Que innebär la här blå, runda skylten avec une vit pil som pekar åt vänster?"
-  },
-  "kkalk-S-133": {
-    "stem": "Du kör sur une smal väg et ser detta märke avec un vitt 'M'. que informerar cela si?"
-  },
-  "kkalk-S-134": {
-    "stem": "Du ser märket pour parkeringsförbud. que är tillåtet här, men förbjudet lors de stoppförbud?"
-  },
-  "kkalk-S-135": {
-    "stem": "Datumparkering gäller et cela är la 15:e i månaden. sur quel sida de gatan är cela förbjudet att parkera?"
-  },
-  "kkalk-S-136": {
-    "stem": "Quel grundregel gäller quand två fordon möts lors de une anvisad mötesplats?"
-  },
-  "kkalk-S-137": {
-    "stem": "Quel bashastighet gäller inom un agglomération, si inget annat skyltas?"
-  },
-  "kkalk-S-138": {
-    "stem": "Une tilläggstavla anger une tid avec röd text. quand gäller la angivelsen?"
-  },
-  "kkalk-S-141": {
-    "stem": "Quel märke varnar pour une järnvägskorsning utan bommar?"
-  },
-  "kkalk-S-142": {
-    "stem": "Du ser un påbudsmärke avec une vit pil sur blå botten. que innebär cela?"
-  },
-  "kkalk-S-143": {
-    "stem": "Une polis dirigerar trafiken et sträcker upp une arm. que innebär tecknet?"
-  },
-  "kkalk-S-159": {
-    "stem": "Que innebär varningsmärket avec un ånglok?"
-  },
-  "kkalk-S-162": {
-    "stem": "Cela är kväll la 15:e et du dois datumparkera över natten. sur quel sida är cela då parkeringsförbud?"
-  },
-  "kkalk-S-164": {
-    "stem": "Comment känner du igen un varningsmärke sur dess form et färg?"
-  },
-  "kkalk-S-165": {
-    "stem": "Que innebär un påbudsmärke som visar une viss körriktning?"
-  },
-  "kkalk-S-166": {
-    "stem": "Du kommer à une smal passage avec un panneaux de signalisation som har une röd et une svart pil. que betyder la röda pilen?"
-  },
-  "kkalk-S-167": {
-    "stem": "Une tilläggstavla visar tiden 8–17 avec svarta siffror utan parentes. Vilka dagar gäller angivelsen?"
-  },
-  "kkalk-S-168": {
-    "stem": "Que betyder une tid inom parentes sur une tilläggstavla, à exempel (8–17)?"
-  },
-  "kkalk-S-169": {
-    "stem": "Un panneaux de signalisation har une tilläggstavla avec une tidsangivelse i röd text. Vilka dagar gäller angivelsen?"
-  },
-  "kkalk-S-170": {
-    "stem": "Klockan har passerat midnatt à la 13:e. sur une gata avec datumparkering, où är cela nu parkeringsförbud?"
-  },
-  "kkalk-S-171": {
-    "stem": "Du närmar dig une korsning avec vägmarkeringen 'hajtänder'. que innebär la?"
-  },
-  "kkalk-S-172": {
-    "stem": "Quel allmän regel gäller pour parkering sur une huvudled?"
-  },
-  "kkalk-S-173": {
-    "stem": "Du ser une vägvisare avec grön bakgrund. quel typ de väg leder la à?"
-  },
-  "kkalk-S-174": {
-    "stem": "Une tilläggstavla anger tiden \"8–17\" avec svarta siffror. Vilka dagar gäller angivelsen?"
-  },
-  "kkalk-S-175": {
-    "stem": "Vilka dagar gäller une tid inom parentes, t.ex. (8-17), sur une tilläggstavla?"
-  },
-  "kkalk-S-177": {
-    "stem": "Klockan är strax efter midnatt la 15:e i månaden sur une gata avec datumparkering. où as le droit du pas parkera?"
-  },
-  "kkalk-S-179": {
-    "stem": "Que är la avgörande skillnaden mellan förbudsmärket avec un kryss et cela avec un enkelt streck?"
-  },
-  "kkalk-S-180": {
-    "stem": "Que kännetecknar un påbudsmärke?"
-  },
-  "kkalk-S-181": {
-    "stem": "Du passerar vägmärket pour agglomération. quel hastighetsgräns gäller si inget annat skyltas?"
-  },
-  "kkalk-S-182": {
-    "stem": "Vägen smalnar de et du ser un märke avec une röd pil i ton färdriktning. que gäller?"
-  },
-  "kkalk-S-201": {
-    "stem": "Que innebär un påbudsmärke, alltså un blått et runt panneaux de signalisation avec une vit symbol?"
-  },
-  "kkalk-S-202": {
-    "stem": "Une grön vägvisare avec vit text visar vägen à une viss typ de väg. quel?"
-  },
-  "kkalk-S-203": {
-    "stem": "Une tilläggstavla anger une tid inom parentes, t.ex. (8–17). Vilka dagar gäller angivelsen?"
-  },
-  "kkalk-S-204": {
-    "stem": "Du ser vägmärket avec un tåg de äldre modell. que innebär cela?"
-  },
-  "kkalk-S-205": {
-    "stem": "Que varnar vägmärket avec un staket pour?"
-  },
-  "kkalk-S-206": {
-    "stem": "Du kör i 70 km/h et passerar märket pour agglomération. quel hastighetsgräns gäller nu, si inget annat anges?"
-  },
-  "kkalk-S-207": {
-    "stem": "Que innebär vägmärket pour mötesplats sur une smal väg?"
-  },
-  "kkalk-S-208": {
-    "stem": "As le droit du stanna pour att släppa de une passagerare där vägmärket pour stoppförbud gäller?"
-  },
-  "kkalk-S-209": {
-    "stem": "Quel typ de mål visar un panneaux de signalisation avec brun bottenfärg?"
-  },
-  "kkalk-S-210": {
-    "stem": "Quel geometrisk form har vägmärket pour obligation de céder le passage?"
-  },
-  "kkalk-S-251": {
-    "stem": "Une tilläggstavla anger une tid avec röda siffror. Vilka dagar gäller regleringen?"
-  },
-  "kkalk-S-252": {
-    "stem": "Une tilläggstavla anger tiden (8–17). que betyder parentesen runt tiden?"
-  },
-  "kkalk-S-253": {
-    "stem": "Que varnar vägmärket avec un ånglok pour?"
-  },
-  "kkalk-S-255": {
-    "stem": "Que innebär un panneaux de signalisation avec un rött kryss?"
-  },
-  "kkalk-S-256": {
-    "stem": "Du ser detta panneaux de signalisation. as le droit du stanna une kort stund pour att lasta ur tunga saker ur bilen?"
-  },
-  "kkalk-S-257": {
-    "stem": "Que betyder vägmärket avec un vitt M sur blå botten sur une smal väg?"
-  },
-  "kkalk-S-258": {
-    "stem": "Que kännetecknar un påbudsmärke?"
-  },
-  "kkalk-S-259": {
-    "stem": "Une vägvisare som pekar mot ton destination har grön färg. quel typ de väg leder la à?"
-  },
-  "kkalk-S-260": {
-    "stem": "Une polis sträcker upp une arm i une korsning. que betyder tecknet?"
-  },
-  "kkalk-S-301": {
-    "stem": "Que betyder röda siffror avec une tidsangivelse sur une tilläggstavla?"
-  },
-  "kkalk-S-303": {
-    "stem": "Datumparkering gäller et datumet är la 15:e. où är cela nu förbjudet att parkera?"
-  },
-  "kkalk-S-304": {
-    "stem": "Que innebär vägmärket avec un kryss, jämfört avec cela som bara har un streck?"
-  },
-  "kkalk-S-307": {
-    "stem": "Que visar une vägvisare avec brun bottenfärg vägen à?"
-  },
-  "kkalk-S-309": {
-    "stem": "Que innebär la här blå, runda skylten avec une vit pil?"
-  },
-  "kkalk-S-310": {
-    "stem": "Que innebär vägmarkeringen avec vita trianglar, så kallade ”hajtänder”?"
-  },
-  "kkalk-T-012": {
-    "stem": "Une bil kommer depuis höger i une oreglerad korsning men stannar helt. que gäller?"
-  },
-  "kkalk-T-016": {
-    "stem": "Du kör sur vägrenen et dois byta tillbaka in i körfältet. que gäller?"
-  },
-  "kkalk-T-023": {
-    "stem": "As le droit du stanna sur un övergångsställe pour att snabbt släppa de une passagerare?"
-  },
-  "kkalk-T-025": {
-    "stem": "Du kör i 82 km/h sur une väg där hastighetsgränsen är 70 km/h. que blir bötesbeloppet?"
-  },
-  "kkalk-T-027": {
-    "stem": "Quel väjningsregel gäller i une korsning utan panneaux de signalisation inne sur une parkeringsplats?"
-  },
-  "kkalk-T-028": {
-    "stem": "Cela är grönt ljus, men sur samma stolpe sitter une väjningspliktsskylt. que gäller?"
-  },
-  "kkalk-T-029": {
-    "stem": "Quel är bashastigheten inom un agglomération?"
-  },
-  "kkalk-T-036": {
-    "stem": "Du dois svänga vänster lors de grönt ljus et möter une bil som kör rakt fram. que gäller?"
-  },
-  "kkalk-T-039": {
-    "stem": "Du klockas pour 93 km/h sur une 70-väg. que blir bötesbeloppet?"
-  },
-  "kkalk-T-040": {
-    "stem": "Du kör ut depuis une bensinmack et une bil närmar sig sur vägen depuis vänster. que gäller?"
-  },
-  "kkalk-T-045": {
-    "stem": "As le droit du köra si une bil precis före une järnvägskorsning som saknar bommar et signaler?"
-  },
-  "kkalk-T-052": {
-    "stem": "Du har grönt ljus i une korsning quand une ambulans avec sirener et blåljus närmar sig depuis sidan. que gäller?"
-  },
-  "kkalk-T-053": {
-    "stem": "Du är i un accelerationsfält pour att köra in sur une motorväg. comment dois du et trafiken sur motorvägen agera?"
-  },
-  "kkalk-T-057": {
-    "stem": "Du kör bil sur une cykelgata. quel är ton viktigaste skyldighet mot cyklister?"
-  },
-  "kkalk-T-058": {
-    "stem": "Du kör mot une cykelöverfart. quel regel gäller?"
-  },
-  "kkalk-T-059": {
-    "stem": "Quel hastighet gäller sur une landsväg utanför agglomération si skyltar saknas?"
-  },
-  "kkalk-T-060": {
-    "stem": "Que är högsta tillåtna hastighet pour une moped klass I?"
-  },
-  "kkalk-T-061": {
-    "stem": "Cela är la 13:e i månaden et klockan är 14:00 i un område avec datumparkering. où parkerar du?"
-  },
-  "kkalk-T-062": {
-    "stem": "As le droit du stanna pour de- et påstigning 5 meter före un övergångsställe?"
-  },
-  "kkalk-T-063": {
-    "stem": "As le droit du stanna sur une huvudled pour att lasta ur gods?"
-  },
-  "kkalk-T-067": {
-    "stem": "Är cela tillåtet att stanna lors de une busshållplats pour att snabbt släppa de une kompis?"
-  },
-  "kkalk-T-068": {
-    "stem": "Du parkerar klockan 14:15 där P-skiva krävs. quel tid dois du ange sur skivan?"
-  },
-  "kkalk-T-069": {
-    "stem": "Une bil har fått motorstopp sur motorvägen. as le droit du bogsera bort la avec ton bil?"
-  },
-  "kkalk-T-071": {
-    "stem": "Du blir stående avec bilen sur vägrenen sur une 80-väg. comment långt bakom bilen dois du placera varningstriangeln?"
-  },
-  "kkalk-T-073": {
-    "stem": "Du dois svänga vänster et trafikljuset visar une grön pil. que innebär cela?"
-  },
-  "kkalk-T-075": {
-    "stem": "Une brandbil avec blåljus et sirener närmar sig bakifrån. Du är sur väg att köra in i une korsning avec grönt ljus. que gör du?"
-  },
-  "kkalk-T-078": {
-    "stem": "Du kör bil mot une cykelöverfart et ser une cyklist som är sur väg ut. que gäller?"
-  },
-  "kkalk-T-079": {
-    "stem": "Quel bashastighet gäller inom un agglomération, si inget annat är skyltat?"
-  },
-  "kkalk-T-086": {
-    "stem": "Que gäller quand du dois stanna ou parkera lors de un övergångsställe?"
-  },
-  "kkalk-T-089": {
-    "stem": "Du kör sur une huvudled. as le droit du stanna pour att släppa de une passagerare?"
-  },
-  "kkalk-T-093": {
-    "stem": "Tu dois conduire ut ur une rondell. quel regel gäller pour att ge tecken?"
-  },
-  "kkalk-T-095": {
-    "stem": "Du kör sur une landsväg utanför agglomération där hastighetsskyltar saknas. quel är högsta tillåtna hastighet?"
-  },
-  "kkalk-T-096": {
-    "stem": "Vilka regler gäller pour parkering lors de une busshållplats, si inga gula linjer finns målade?"
-  },
-  "kkalk-T-099": {
-    "stem": "Comment nära une intersection är cela tillåtet att parkera?"
-  },
-  "kkalk-T-102": {
-    "stem": "Du kör sur une huvudled et blir trött. as le droit du stanna i vägrenen pour att sova une stund?"
-  },
-  "kkalk-T-103": {
-    "stem": "Une fotgängare dois just korsa gatan lors de un övergångsställe quand une ambulans avec sirener närmar sig bakifrån. comment agerar du?"
-  },
-  "kkalk-T-104": {
-    "stem": "Quel minsta avstånd à une järnvägskorsning gäller pour parkeringsförbud?"
-  },
-  "kkalk-T-105": {
-    "stem": "Du ligger bakom une traktor. as le droit du köra si la precis före un obevakat övergångsställe?"
-  },
-  "kkalk-T-108": {
-    "stem": "Du dois parkera lors de une busshållplats. Inom quel område är cela förbjudet?"
-  },
-  "kkalk-T-110": {
-    "stem": "Du kör i 88 km/h sur une 70-väg. que blir böterna pour ton fortkörning?"
-  },
-  "kkalk-T-112": {
-    "stem": "Quel är högsta tillåtna hastighet i un gångfartsområde?"
-  },
-  "kkalk-T-116": {
-    "stem": "Quel minsta avstånd dois du hålla före un övergångsställe quand du parkerar?"
-  },
-  "kkalk-T-120": {
-    "stem": "Une buss blinkar pour att köra ut depuis une hållplats sur une 50-väg. que är ton skyldighet?"
-  },
-  "kkalk-T-124": {
-    "stem": "Que är högsta tillåtna hastighet quand du bogserar une annan bil avec bogserlina?"
-  },
-  "kkalk-T-129": {
-    "stem": "Comment nära une järnvägskorsning är cela förbjudet att stanna et parkera?"
-  },
-  "kkalk-T-131": {
-    "stem": "Du kör sur une huvudled. as le droit du stanna lors de kanten pour att släppa de une passagerare?"
-  },
-  "kkalk-T-137": {
-    "stem": "Quel bashastighet gäller sur une landsväg utanför agglomération si skyltning saknas?"
-  },
-  "kkalk-T-138": {
-    "stem": "Du har precis kört förbi un övergångsställe. as le droit du parkera direkt efter cela?"
-  },
-  "kkalk-T-141": {
-    "stem": "Du uppmäts köra 83 km/h sur une 70-väg. que blir bötesbeloppet?"
-  },
-  "kkalk-T-142": {
-    "stem": "Quel förbud att stanna et parkera gäller lors de une busshållplats utan vägmarkering?"
-  },
-  "kkalk-T-145": {
-    "stem": "Quel minsta avstånd dois du hålla quand du stannar ou parkerar lors de une järnvägskorsning?"
-  },
-  "kkalk-T-155": {
-    "stem": "Que är böterna pour att köra bil mot rött ljus?"
-  },
-  "kkalk-T-156": {
-    "stem": "Quel är la högsta tillåtna hastigheten sur une cykelgata?"
-  },
-  "kkalk-T-157": {
-    "stem": "Du kör mot une cykelöverfart et ser une cyklist som är sur väg ut. que gäller?"
-  },
-  "kkalk-T-158": {
-    "stem": "Du kör in sur un gångfartsområde. où as le droit du parkera?"
-  },
-  "kkalk-T-159": {
-    "stem": "Du dois parkera lors de une järnvägskorsning. quel minsta avstånd à korsningen dois du hålla?"
-  },
-  "kkalk-T-160": {
-    "stem": "Où as le droit du parkera i förhållande à un obevakat övergångsställe?"
-  },
-  "kkalk-T-161": {
-    "stem": "Que är bashastigheten sur une landsväg utanför agglomération?"
-  },
-  "kkalk-T-164": {
-    "stem": "Un utryckningsfordon närmar sig avec sirener et blåljus. Du har grönt. que gäller?"
-  },
-  "kkalk-T-165": {
-    "stem": "Que blir böterna si du kör 82 km/h sur une 70-väg?"
-  },
-  "kkalk-T-166": {
-    "stem": "Du kör i 82 km/h sur une 70-väg. que blir böterna pour fortkörningen?"
-  },
-  "kkalk-T-167": {
-    "stem": "Que är bötesbeloppet pour att köra mot rött ljus?"
-  },
-  "kkalk-T-169": {
-    "stem": "Quel minsta avstånd dois du hålla à une järnvägskorsning quand du parkerar?"
-  },
-  "kkalk-T-172": {
-    "stem": "Où as le droit du parkera ton fordon i un gångfartsområde?"
-  },
-  "kkalk-T-173": {
-    "stem": "Du kör ut depuis un tätbebyggt område. quel är la högsta tillåtna hastigheten si ingen ny skylt finns?"
-  },
-  "kkalk-T-174": {
-    "stem": "Du är sur une motorväg avec 110 km/h-gräns. as le droit du köra si bilen i mittfilen genom att använda högerfilen?"
-  },
-  "kkalk-T-201": {
-    "stem": "Du dois parkera lors de une plankorsning. quel minsta avstånd dois du hålla à korsningen?"
-  },
-  "kkalk-T-202": {
-    "stem": "Quel stoppförbud gäller lors de une busshållplats som endast är utmärkt avec une skylt?"
-  },
-  "kkalk-T-204": {
-    "stem": "Quel är högsta tillåtna hastighet sur une cykelgata?"
-  },
-  "kkalk-T-205": {
-    "stem": "Du kör bil sur une cykelgata et kommer ikapp une cyklist. que gäller?"
-  },
-  "kkalk-T-206": {
-    "stem": "Du fångas de une fartkamera i 62 km/h sur une 50-väg. que blir bötesbeloppet?"
-  },
-  "kkalk-T-207": {
-    "stem": "Que är bötesbeloppet si du pas stannar lors de une stoppskylt?"
-  },
-  "kkalk-T-208": {
-    "stem": "Vilka fordon dois du ovillkorligen lämna fri väg pour quand de använder sina larmsignaler?"
-  },
-  "kkalk-T-210": {
-    "stem": "Du har missat ton avfart sur motorvägen. comment dois du agera?"
-  },
-  "kkalk-T-231": {
-    "stem": "Où är cela parkeringsförbud lors de une busshållplats som enbart är utmärkt avec une skylt?"
-  },
-  "kkalk-T-233": {
-    "stem": "Que är högsta tillåtna hastighet quand du bogserar une personbil avec bogserlina?"
-  },
-  "kkalk-T-234": {
-    "stem": "Sur quel sida dois du normalt köra si une spårvagn?"
-  },
-  "kkalk-T-235": {
-    "stem": "Du kör i la inre filen i une rondell et vill byta à la yttre. dois du blinka?"
-  },
-  "kkalk-T-236": {
-    "stem": "Du kör i 50 km/h sur une huvudled quand une buss blinkar pour att lämna une hållplats. que gäller?"
-  },
-  "kkalk-T-237": {
-    "stem": "Cela är la 12:e i månaden et datumparkering gäller. où är cela förbjudet att parkera?"
-  },
-  "kkalk-T-240": {
-    "stem": "Une cyklist korsar vägen genom att cykla sur un obevakat övergångsställe. qui har obligation de céder le passage?"
-  },
-  "kkalk-T-283": {
-    "stem": "Du dois parkera lors de une järnvägskorsning. quel är cela minsta tillåtna avståndet à korsningen?"
-  },
-  "kkalk-T-285": {
-    "stem": "Quel område runt une busshållplatsskylt är cela förbjudet att stanna ou parkera i?"
-  },
-  "kkalk-T-286": {
-    "stem": "Du kör i 83 km/h sur une 70-väg et fotas de une fartkamera. que blir bötesbeloppet?"
   },
   "kkalk-T-290": {
     "stem": "Que är bashastigheten utanför agglomération si hastighetsskyltar saknas?"
   },
-  "kkalk-T-292": {
-    "stem": "Quel område runt une busshållplatsskylt är cela förbjudet att parkera?"
-  },
-  "kkalk-T-293": {
-    "stem": "As le droit du parkera ton bil precis efter un övergångsställe?"
-  },
-  "kkalk-T-295": {
-    "stem": "Quand as-tu le droit köra si un annat fordon sur höger sida?"
-  },
-  "kkalk-T-296": {
-    "stem": "Du står först lors de rött ljus quand une ambulans avec påslagna sirener närmar sig bakifrån. que gör du?"
-  },
-  "kkalk-T-298": {
-    "stem": "Que innebär la så kallade blixtlåsprincipen?"
-  },
-  "kkalk-T-299": {
-    "stem": "Du blir fotad de une fartkamera quand du kör 83 km/h sur une 70-väg. que blir böterna?"
-  },
-  "kkalk-V-011": {
-    "stem": "Ton bil har une totalvikt sur 2400 kg. quel släp as le droit du dra avec B-permis de conduire?"
-  },
-  "kkalk-V-014": {
-    "stem": "Quel belysning är pas un lagkrav sur une personbil?"
-  },
-  "kkalk-V-015": {
-    "stem": "Comment mycket spelrum är lagom pour une drivrem quand du trycker sur la?"
-  },
-  "kkalk-V-017": {
-    "stem": "Ton bromspedal känns fjädrande et sjunker långsamt quand du trycker sur la. que är la troligaste orsaken?"
-  },
-  "kkalk-V-019": {
-    "stem": "Comment testar du att parkeringsbromsen har tillräcklig bromsverkan?"
-  },
-  "kkalk-V-020": {
-    "stem": "Que gäller alltid pour une släpvagn som räknas som lätt et som du as le droit dra avec B-permis de conduire?"
-  },
-  "kkalk-V-021": {
-    "stem": "Une personbil är sex år gammal. Combien de temps as le droit cela som mest gå mellan två kontrollbesiktningar?"
-  },
-  "kkalk-V-022": {
-    "stem": "Quel försäkring ersätter skador sur ton egen bil efter une singelolycka?"
-  },
-  "kkalk-V-026": {
-    "stem": "Quel är la lägsta försäkringsnivån som normalt täcker inbrott et une sönderslagen bilruta?"
-  },
-  "kkalk-V-027": {
-    "stem": "Que är högsta tillåtna sammanlagda totalvikt pour bil et släp avec B96-catégorie de permis?"
-  },
-  "kkalk-V-028": {
-    "stem": "Ton bil har fått körförbud. Quand as-tu le droit köra la?"
-  },
-  "kkalk-V-029": {
-    "stem": "Du kör i 70 km/h sur torr asfalt. comment lång blir bromssträckan ungefär?"
-  },
-  "kkalk-V-030": {
-    "stem": "Que är une normal reaktionstid i trafiken pour une alert förare?"
-  },
-  "kkalk-V-031": {
-    "stem": "Du kör i 90 km/h. Ungefär comment lång blir ton reaktionssträcka under une sekund?"
-  },
-  "kkalk-V-032": {
-    "stem": "Que kontrollerar du quand du rycker snabbt et hårt i ceinture de sécurité?"
-  },
-  "kkalk-V-033": {
-    "stem": "Que utmärker une traktor a gällande skylt et konstruktiv hastighet?"
-  },
-  "kkalk-V-038": {
-    "stem": "Quel är la högsta tillåtna sammanlagda totalvikten pour bil et släp avec un vanligt B-permis de conduire?"
-  },
-  "kkalk-V-039": {
-    "stem": "Du backar sur un träd avec ton bil. quel försäkring ersätter skadorna sur ton egen bil?"
-  },
-  "kkalk-V-040": {
-    "stem": "Quand dois une helt ny personbil kontrollbesiktas pour allra första gången?"
-  },
-  "kkalk-V-041": {
-    "stem": "Ton bils eCall-system varnar pour fel. que gäller lors de besiktning depuis et avec 2026?"
-  },
-  "kkalk-V-044": {
-    "stem": "Du kör i 70 km/h. comment lång är ton ungefärliga reaktionssträcka?"
-  },
-  "kkalk-V-047": {
-    "stem": "Sikten försämras kraftigt de regn i dagsljus. quel belysning dois du använda?"
-  },
-  "kkalk-V-048": {
-    "stem": "Ton bil börjar vattenplana. quel handling är farligast?"
-  },
-  "kkalk-V-049": {
-    "stem": "Que kallas bilens aktuella vikt avec förare, passagerare et last?"
-  },
-  "kkalk-V-051": {
-    "stem": "Comment förändras bromssträckan si väglaget ändras depuis torr asfalt à is?"
-  },
-  "kkalk-V-052": {
-    "stem": "Du kör i 90 km/h sur torr vägbana et behöver panikbromsa. comment lång blir stoppsträckan ungefär?"
-  },
-  "kkalk-V-057": {
-    "stem": "Comment mycket as le droit du max lasta sur biltaket si du pas känner à la exakta viktgränsen?"
-  },
-  "kkalk-V-058": {
-    "stem": "Que är maxhastigheten pour une bil avec bromsad släpvagn sur une motorväg?"
-  },
-  "kkalk-V-070": {
-    "stem": "Under quel period är dubbdäck alltid tillåtna, oavsett väglag?"
-  },
-  "kkalk-V-071": {
-    "stem": "Quel säkerhetsutrustning är un lagkrav att ha avec i bilen?"
-  },
-  "kkalk-V-072": {
-    "stem": "Vätskenivån i un äldre bilbatteri är pour låg. Que dois-tu fylla sur avec?"
-  },
-  "kkalk-V-073": {
-    "stem": "Bromsvätskenivån har sjunkit à MIN-strecket. que peux vara une orsak?"
-  },
-  "kkalk-V-074": {
-    "stem": "Du tvärnitar et bromspedalen börjar vibrera kraftigt. que är cela viktigaste du gör nu?"
-  },
-  "kkalk-V-075": {
-    "stem": "Motorn stängs de under färd et styrservon slutar fungera. comment påverkas styrningen?"
-  },
-  "kkalk-V-077": {
-    "stem": "Que innebär LGF-skylten som sitter baktill sur exempelvis A-traktorer?"
-  },
-  "kkalk-V-078": {
-    "stem": "Quand dois une ny personbil besiktas pour allra första gången?"
-  },
-  "kkalk-V-079": {
-    "stem": "Que är högsta tillåtna hastighet quand du kör avec un nödhjul?"
-  },
-  "kkalk-V-080": {
-    "stem": "Du kör i 90 km/h sur torr väg. comment lång blir bromssträckan ungefär lors de une tvärbromsning?"
-  },
-  "kkalk-V-081": {
-    "stem": "Du kör i 50 km/h. comment långt rullar bilen sur une sekunds reaktionstid?"
-  },
-  "kkalk-V-082": {
-    "stem": "Quel är la högsta sammanlagda totalvikten pour bil et släp avec un B96-permis de conduire?"
-  },
-  "kkalk-V-083": {
-    "stem": "Bromspedalen är stum, men sjunker quand du startar motorn avec pedalen nedtryckt. quel funktion har du just kontrollerat?"
-  },
-  "kkalk-V-084": {
-    "stem": "Que är minsta tillåtna profondeur des sculptures pour sommardäck?"
-  },
-  "kkalk-V-085": {
-    "stem": "Quand dois-tu använda vinterdäck si cela är vinterväglag?"
-  },
   "kkalk-V-087": {
     "stem": "Que är kultryck?"
-  },
-  "kkalk-V-088": {
-    "stem": "Ton bils eCall-lampa lyser rött sur besiktningen efter 2025. que blir konsekvensen?"
-  },
-  "kkalk-V-090": {
-    "stem": "Du kör i 100 km/h sur torr asfalt et tvärbromsar. Ungefär comment lång blir bromssträckan?"
-  },
-  "kkalk-V-093": {
-    "stem": "Que är la största risken avec un pour lågt kultryck sur släpet?"
   },
   "kkalk-V-094": {
     "stem": "Ton bil har totalvikten 2200 kg. as le droit du avec B-permis de conduire dra une husvagn avec totalvikten 1200 kg?"
   },
-  "kkalk-V-095": {
-    "stem": "Quel skada ersätter la obligatoriska trafikförsäkringen aldrig?"
-  },
   "kkalk-V-096": {
     "stem": "Comment funktionstestar du enklast bilens styrservo?"
-  },
-  "kkalk-V-098": {
-    "stem": "Ton bil är sex år gammal et nybesiktad. Inom Combien de temps dois du besikta la nästa gång?"
-  },
-  "kkalk-V-099": {
-    "stem": "Bromspedalen känns svampig et sjunker onormalt djupt quand du trycker. que är la troligaste orsaken?"
-  },
-  "kkalk-V-100": {
-    "stem": "Du kör i 50 km/h sur torr väg. comment lång blir bromssträckan ungefär enligt snabbformeln?"
-  },
-  "kkalk-V-101": {
-    "stem": "Du kör i 90 km/h sur torr väg et dois panikbromsa. comment lång blir bromssträckan ungefär?"
-  },
-  "kkalk-V-102": {
-    "stem": "Comment förändras bilens bromssträcka si du tredubblar hastigheten?"
-  },
-  "kkalk-V-103": {
-    "stem": "Ton bils eCall-lampa lyser. que innebär cela pour besiktningen depuis et avec 2026?"
-  },
-  "kkalk-V-104": {
-    "stem": "Du har utökad B-catégorie de permis (B96). quel är la högsta sammanlagda totalvikten pour bil et släp?"
-  },
-  "kkalk-V-105": {
-    "stem": "Que kallas bilens nuvarande vikt, inklusive förare, passagerare et last?"
-  },
-  "kkalk-V-106": {
-    "stem": "Bromspedalen känns svampig et sjunker quand du trycker ner la. que är la troligaste orsaken?"
-  },
-  "kkalk-V-108": {
-    "stem": "Ton bil har dubbdäck. Vilka däck dois ton släpvagn ha lors de vinterväglag?"
-  },
-  "kkalk-V-109": {
-    "stem": "Du kör in i un träd avec une passagerare. que ersätter ton obligatoriska trafikförsäkring?"
   },
   "kkalk-V-110": {
     "stem": "Ton bils eCall-lampa varnar pour fel. que blir konsekvensen lors de kontrollbesiktningen?"
   },
-  "kkalk-V-111": {
-    "stem": "Avec utökat B-permis de conduire (B96) as le droit du köra tyngre fordonskombinationer. quel är la högsta sammanlagda totalvikten pour bil et släp?"
-  },
-  "kkalk-V-113": {
-    "stem": "Ton nya bil har vagnskadegaranti. quel försäkring behövs pour att få un skydd som motsvarar une helförsäkring?"
-  },
-  "kkalk-V-115": {
-    "stem": "La röda varningslampan pour oljetryck tänds medan du kör. que är ton viktigaste skyldighet att göra omedelbart?"
-  },
-  "kkalk-V-116": {
-    "stem": "Motorns temperaturvarningslampa börjar lysa rött. que är cela första du dois göra?"
-  },
-  "kkalk-V-117": {
-    "stem": "Du kör i 50 km/h et cela tar une sekund pour dig att reagera. Ungefär comment lång blir då reaktionssträckan?"
-  },
-  "kkalk-V-118": {
-    "stem": "Du kör i 50 km/h sur torr asfalt et tvärbromsar. comment lång blir bromssträckan ungefär?"
-  },
-  "kkalk-V-119": {
-    "stem": "Que är minsta tillåtna profondeur des sculptures pour vinterdäck lors de vinterväglag?"
-  },
-  "kkalk-V-120": {
-    "stem": "Quand dois une ny personbil senast besiktas pour allra första gången?"
-  },
-  "kkalk-V-121": {
-    "stem": "Du har orsakat une singelolycka et skadat ton egen bil. quel försäkring täcker reparationskostnaden?"
-  },
-  "kkalk-V-125": {
-    "stem": "Que är minsta tillåtna profondeur des sculptures pour vinterdäck lors de vinterväglag?"
-  },
   "kkalk-V-127": {
     "stem": "Que betyder begreppet kultryck?"
-  },
-  "kkalk-V-128": {
-    "stem": "Que är max sammanlagd totalvikt pour bil et släp si du har un vanligt B-permis de conduire?"
-  },
-  "kkalk-V-129": {
-    "stem": "Vilka fordon dois ha une LGF-skylt baktill?"
-  },
-  "kkalk-V-130": {
-    "stem": "Que är la högsta sammanlagda totalvikten pour bil et släp avec catégorie de permis B96?"
-  },
-  "kkalk-V-131": {
-    "stem": "Que är la högsta totalvikten un släp as le droit ha pour att alltid klassas som lätt?"
-  },
-  "kkalk-V-132": {
-    "stem": "Du tar BE-permis de conduire idag. quel är la högsta tillåtna totalvikten pour själva släpvagnen?"
-  },
-  "kkalk-V-133": {
-    "stem": "ECall-lampan i ton bil lyser under besiktningen. que gäller enligt de nya reglerna depuis 2026?"
-  },
-  "kkalk-V-135": {
-    "stem": "Ton personbil är sju år gammal. quand dois la senast kontrollbesiktigas?"
-  },
-  "kkalk-V-136": {
-    "stem": "Quel försäkring ersätter skador sur ton egen bil efter une singelolycka?"
-  },
-  "kkalk-V-137": {
-    "stem": "Du kör sur grannens staket avec ton bil. que ersätter ton obligatoriska trafikförsäkring?"
-  },
-  "kkalk-V-138": {
-    "stem": "Du kör i 90 km/h sur torr asfalt. Ungefär comment lång blir ton bromssträcka?"
-  },
-  "kkalk-V-139": {
-    "stem": "Du kör i 110 km/h. Ungefär comment lång blir ton reaktionssträcka sur une sekund?"
-  },
-  "kkalk-V-140": {
-    "stem": "Du skadas som passagerare i une bilolycka. quel försäkring ersätter dina personskador?"
-  },
-  "kkalk-V-142": {
-    "stem": "Quand dois une ny personbil kontrollbesiktas pour allra första gången?"
-  },
-  "kkalk-V-143": {
-    "stem": "Comment ofta dois une åtta år gammal personbil senast kontrollbesiktas?"
-  },
-  "kkalk-V-144": {
-    "stem": "Du kör i 90 km/h. Combien de meter hinner bilen färdas under une sekunds reaktionstid?"
-  },
-  "kkalk-V-145": {
-    "stem": "Du kör i 70 km/h sur torr väg et dois tvärnita. comment lång blir la ungefärliga bromssträckan?"
-  },
-  "kkalk-V-146": {
-    "stem": "Du dubblar ton fart. comment påverkas bilens bromssträcka?"
-  },
-  "kkalk-V-147": {
-    "stem": "Que definierar une släpvagn som du alltid as le droit dra avec B-permis de conduire?"
-  },
-  "kkalk-V-148": {
-    "stem": "Que är la högsta sammanlagda totalvikten pour bil et släp avec utökad B-catégorie de permis (B96)?"
-  },
-  "kkalk-V-151": {
-    "stem": "Quel är la högsta sammanlagda totalvikten pour bil et un tungt släp som du as le droit köra avec B-permis de conduire?"
-  },
-  "kkalk-V-152": {
-    "stem": "Que är la högsta tillåtna sammanlagda totalvikten pour bil et släp si du har utökad B-catégorie de permis (B96)?"
-  },
-  "kkalk-V-153": {
-    "stem": "Du kör i 70 km/h sur torrt väglag. comment lång blir bromssträckan ungefär?"
-  },
-  "kkalk-V-154": {
-    "stem": "Quand dois-tu använda vinterdäck si cela är vinterväglag?"
   },
   "kkalk-V-155": {
     "stem": "Que är minsta tillåtna profondeur des sculptures sur sommardäck?"
   },
-  "kkalk-V-158": {
-    "stem": "Ton bil är sex år gammal. comment ofta dois la kontrollbesiktigas?"
-  },
-  "kkalk-V-159": {
-    "stem": "Quel försäkring är obligatorisk pour ton bil, et que ersätter la si du kör sur grannens staket?"
-  },
-  "kkalk-V-160": {
-    "stem": "Quand dois une ny personbil kontrollbesiktas pour allra första gången?"
-  },
   "kkalk-V-161": {
     "stem": "Quand blir une personbil permanent befriad depuis kontrollbesiktning?"
   },
-  "kkalk-V-162": {
-    "stem": "Du har utökad B-catégorie de permis (B96). quel är la högsta tillåtna sammanlagda totalvikten pour ton bil et ton släp?"
-  },
-  "kkalk-V-163": {
-    "stem": "Que i avgassystemet har som huvuduppgift att omvandla giftiga avgaser à mindre skadliga ämnen?"
-  },
-  "kkalk-V-164": {
-    "stem": "Quel ekonomisk påföljd as le droit une ägare à une oförsäkrad bil?"
-  },
-  "kkalk-V-165": {
-    "stem": "Quel högsta hastighet as le droit un fordon avec LGF-skylt vara konstruerat pour?"
-  },
-  "kkalk-V-166": {
-    "stem": "Quel vätska används i bilens kylarsystem pour att förhindra frostskador?"
-  },
-  "kkalk-V-167": {
-    "stem": "Vätskenivån i ton bilbatteri är pour låg et behöver fyllas sur. quel vätska dois du använda?"
-  },
-  "kkalk-V-168": {
-    "stem": "Que menas avec kultryck quand du kör avec släpvagn?"
-  },
-  "kkalk-V-169": {
-    "stem": "Du gör une säkerhetskontroll et testar fotbromsen. comment dois pedalen kännas quand du trycker ner la hårt?"
-  },
-  "kkalk-V-201": {
-    "stem": "Comment beräknar du enklast ton ungefärliga reaktionssträcka i meter?"
-  },
-  "kkalk-V-202": {
-    "stem": "Comment lång är bromssträckan i 70 km/h lors de bra väglag, enligt teorins överslagsräkning?"
-  },
-  "kkalk-V-203": {
-    "stem": "Comment påverkas bromssträckan si du tredubblar ton hastighet?"
-  },
   "kkalk-V-204": {
     "stem": "Ton bil har une totalvikt sur 2300 kg. as le droit du avec B-permis de conduire dra une husvagn avec totalvikten 1300 kg?"
-  },
-  "kkalk-V-205": {
-    "stem": "Que är la högsta sammanlagda totalvikten pour bil et släp si du har un B96-permis de conduire?"
-  },
-  "kkalk-V-206": {
-    "stem": "Ton bil har fått körförbud pour att besiktningen uteblivit. as le droit du köra la?"
-  },
-  "kkalk-V-207": {
-    "stem": "La röda oljelampan tänds medan du kör. que dois du göra?"
-  },
-  "kkalk-V-208": {
-    "stem": "Varför avråder Elsäkerhetsverket depuis att regelbundet ladda elbilen i un vanligt vägguttag?"
-  },
-  "kkalk-V-209": {
-    "stem": "Du backar sur une parkerad bil et orsakar skador. que täcker ton trafikförsäkring?"
-  },
-  "kkalk-V-210": {
-    "stem": "Quand peux une bil bli permanent befriad depuis kontrollbesiktning?"
-  },
-  "kkalk-V-241": {
-    "stem": "Comment förändras une bils bromssträcka sur blöt asfalt jämfört avec torr?"
-  },
-  "kkalk-V-242": {
-    "stem": "Que är la största faran avec att placera tung last längst bak i une släpvagn?"
-  },
-  "kkalk-V-243": {
-    "stem": "Que händer si du äger une påställd bil men saknar trafikförsäkring?"
-  },
-  "kkalk-V-244": {
-    "stem": "Varför är cela avgörande att använda spolarvätska sur vintern?"
-  },
-  "kkalk-V-245": {
-    "stem": "Que s'applique-t-il à bilens eCall-system (SOS-knapp) lors de besiktning, enligt de nya reglerna depuis 2026?"
-  },
-  "kkalk-V-246": {
-    "stem": "Quand dois une helt ny personbil kontrollbesiktas pour första gången?"
-  },
-  "kkalk-V-247": {
-    "stem": "Quel är cela minsta tillåtna profondeur des sculptures pour un sommardäck?"
-  },
-  "kkalk-V-248": {
-    "stem": "Quel minsta profondeur des sculptures dois dina vinterdäck ha quand cela är vinterväglag?"
-  },
-  "kkalk-V-249": {
-    "stem": "As le droit du köra avec både dimljus et feux de croisement tända samtidigt i mörker?"
-  },
-  "kkalk-V-250": {
-    "stem": "Comment kontrollerar du att bilens bromsservo fungerar?"
-  },
-  "kkalk-V-291": {
-    "stem": "Que händer sur besiktningen si ton bils eCall-varningslampa lyser rött?"
-  },
-  "kkalk-V-292": {
-    "stem": "Quel är la högsta tillåtna totalvikten pour att une släpvagn alltid dois klassas som lätt?"
-  },
-  "kkalk-V-293": {
-    "stem": "Quel är la högsta sammanlagda totalvikten pour bil et släp si du har B96-permis de conduire?"
-  },
-  "kkalk-V-294": {
-    "stem": "Que är la största begränsningen avec la obligatoriska trafikförsäkringen, si du själv orsakar une olycka?"
-  },
-  "kkalk-V-296": {
-    "stem": "Du kör i 50 km/h sur torr vägbana. comment lång blir bromssträckan ungefär?"
-  },
-  "kkalk-V-297": {
-    "stem": "Du kör i 90 km/h. Ungefär comment lång blir ton reaktionssträcka si reaktionstiden är une sekund?"
-  },
-  "kkalk-V-298": {
-    "stem": "Que är minsta tillåtna profondeur des sculptures pour vinterdäck lors de vinterväglag?"
-  },
-  "kkalk-V-299": {
-    "stem": "Que är minsta tillåtna profondeur des sculptures pour sommardäck?"
-  },
-  "kkalk-V-300": {
-    "stem": "Under quel period är cela i regel förbjudet att använda dubbdäck?"
-  },
-  "kkalk-V-301": {
-    "stem": "Du tvärbromsar depuis 50 km/h sur torr, asfalterad väg. Ungefär comment lång blir själva bromssträckan?"
-  },
-  "kkalk-V-303": {
-    "stem": "Quel är minsta tillåtna profondeur des sculptures sur sommardäck?"
-  },
-  "kkalk-V-304": {
-    "stem": "Que är minsta tillåtna profondeur des sculptures pour vinterdäck quand cela är vinterväglag?"
-  },
-  "kkalk-V-305": {
-    "stem": "Quand dois une ny personbil senast besiktas pour allra första gången?"
-  },
-  "kkalk-V-306": {
-    "stem": "Quel försäkring ersätter plåtskadorna sur ton egen bil si du kör de vägen?"
-  },
-  "kkalk-V-307": {
-    "stem": "Quand räknas un släpfordon alltid som lätt?"
-  },
-  "kkalk-V-310": {
-    "stem": "Comment peux du enkelt kontrollera att styrservon fungerar?"
-  },
-  "LAGSTIFNING-1-Q1": {
-    "stem": "Körfältet avec vägmärket sur bilden är avsett pour bussar. Finns cela andra fordon som as le droit köra här?"
-  },
-  "LAGSTIFNING-1-Q10": {
-    "stem": "Vilka två dokument som du dois ha avec dig quand kör i trafic de taxi?"
-  },
-  "LAGSTIFNING-1-Q11": {
-    "stem": "As le droit du stanna sur busshållplatsen sur bilden pour att lasta gods sur?"
-  },
-  "LAGSTIFNING-1-Q12": {
-    "stem": "Du kör une taxi trafiken. que gäller dig sur bilden?"
-  },
-  "LAGSTIFNING-1-Q13": {
-    "stem": "Du kommer fram à giratoire sur bilden. Du dois à höger. Har du obligation de céder le passage mot fordonen inne i giratoire?"
-  },
-  "LAGSTIFNING-1-Q14": {
-    "stem": "As le droit du köra fortare än hastighetsbegränsningen i något tillfälle de följande?"
-  },
-  "LAGSTIFNING-1-Q15": {
-    "stem": "Quel de alternativen nedan anses som yrkesmässigtrafik ?"
-  },
-  "LAGSTIFNING-1-Q18": {
-    "stem": "Quand dois une taxilegitimation efter utfärdandet renouvellement?"
-  },
-  "LAGSTIFNING-1-Q19": {
-    "stem": "Du dois börja un nytt vacation / service. Que dois-tu fylla i innan du börjar passet?"
-  },
-  "LAGSTIFNING-1-Q2": {
-    "stem": "Vilka as le droit pas passera märket sur bilden?"
-  },
-  "LAGSTIFNING-1-Q20": {
-    "stem": "Du har une kund som du dois släppa lors de tegelhuset sur höger sidan. as le droit du göra cela?"
-  },
-  "LAGSTIFNING-1-Q21": {
-    "stem": "Du dois svänga höger sur bilderna. sur quel bild dois gångtrafikanter där du korsar vägen har grönt ljus samtidigt quand du kör?"
-  },
-  "LAGSTIFNING-1-Q22": {
-    "stem": "Comment dois du placera ton taxilegitimation?"
-  },
-  "LAGSTIFNING-1-Q25": {
-    "stem": "Que krävs pour att köra avec taxiförarelegitimation?"
-  },
-  "LAGSTIFNING-1-Q27": {
-    "stem": "Efter quel tillfälle dois une förare skriva ut un kvitto ou följesedel?"
-  },
-  "LAGSTIFNING-1-Q28": {
-    "stem": "Quel ou vilka dörrar dois vara låst inifrån pour passagerare si ton taxi används pour transport scolaire?"
-  },
-  "LAGSTIFNING-1-Q29": {
-    "stem": "Du kör sur une väg där hastigheten är begränsad à 50 km/tim. Bussen har just stannat lors de busshållplatsen. Du dois fortsätta rakt fram. comment dois du göra?"
-  },
-  "LAGSTIFNING-1-Q3": {
-    "stem": "Du kommer fram à une korsning där du har obligation de céder le passage. comment dois andra fordon i korsningen vara säkra sur att du dois iaktta obligation de céder le passage?"
-  },
-  "LAGSTIFNING-1-Q30": {
-    "stem": "Du kör sur denna väg avec 50 km/tim hastighet. comment dois du bete dig i denna situation?"
-  },
-  "LAGSTIFNING-1-Q31": {
-    "stem": "Du kör i 50 km/tim hastighet et as le droit möte avec une bil. Bilen framför kör sakta. Que dois-tu först göra i denna situation pour att undvika une kollision?"
-  },
-  "LAGSTIFNING-1-Q32": {
-    "stem": "Du as le droit une körning avec ton taxi. quand du kommer fram à adressen där du dois hämta kunder ser du fem passagerare som väntar. ton bil är inrättad pour fyra personer. Que dois-tu göra?"
-  },
-  "LAGSTIFNING-1-Q33": {
-    "stem": "I quel bild dois du lämna företräde åt bilen som kommer depuis höger?"
-  },
-  "LAGSTIFNING-1-Q34": {
-    "stem": "Comment mycket är hastigheten si Tu dois conduire i une gångfarts område?"
-  },
-  "LAGSTIFNING-1-Q35": {
-    "stem": "As le droit du köra in avec ton taxibil här?"
-  },
-  "LAGSTIFNING-1-Q36": {
-    "stem": "Du har kommit à la här korsningen, du dois fortsätta rakt fram. qui har obligation de céder le passage?"
-  },
-  "LAGSTIFNING-1-Q37": {
-    "stem": "Que innebär une bils bruttovikt?"
-  },
-  "LAGSTIFNING-1-Q38": {
-    "stem": "Du dois stanna sur une gata där cela är mörkt et saknar belysning. Du dois vänta sur kunden som dröjer. quel ljus dois du använda?"
-  },
-  "LAGSTIFNING-1-Q39": {
-    "stem": "Une kund betalar resekostnaden kontant. Är du skyldig pour si du dois skriva ut un kvitto ou följesedel?"
-  },
-  "LAGSTIFNING-1-Q40": {
-    "stem": "Du dois svänga höger i korsningen sur bilden. comment dois du uppträda i denna situation?"
-  },
-  "LAGSTIFNING-1-Q5": {
-    "stem": "Du hade une körning i une fastighet. Nu dois du ut depuis fastigheten et är tvungen att korsa une gång- et cykelbana. Har du obligation de céder le passage mot någon?"
-  },
-  "LAGSTIFNING-1-Q6": {
-    "stem": "Cela är une vanlig måndag et även dagen efter är une helgfri dag. que innebär vägmärkeskombinationen?"
-  },
-  "LAGSTIFNING-1-Q7": {
-    "stem": "Quel de nedanstående pas räknas som personbil?"
-  },
-  "LAGSTIFNING-1-Q8": {
-    "stem": "Du dois byta körfält. Du kontrollerar trafiken i vänster körfält et ger tecken. Que dois-tu göra sedan?"
-  },
-  "LAGSTIFNING-1-Q9": {
-    "stem": "Vilka uppgifter dois une information tarifaire alltid innehålla?"
-  },
-  "LAGSTIFNING-2-Q1": {
-    "stem": "Quand as-tu le droit stanna ou parkera i 15 minuter enligt följande panneaux de signalisation?"
-  },
-  "LAGSTIFNING-2-Q10": {
-    "stem": "Du dois byta körfält. que gäller tecken avec körriktningsvisaren?"
-  },
-  "LAGSTIFNING-2-Q12": {
-    "stem": "Du as le droit une körning avec två kunder à un hotell som ligger lors de gatan sur bilden. as le droit du köra in sur gågatan?"
-  },
-  "LAGSTIFNING-2-Q13": {
-    "stem": "As le droit du lov att använda cykelbana si Tu conduis un taxi?"
-  },
-  "LAGSTIFNING-2-Q14": {
-    "stem": "Une poliskontroll begär kopia de körpassrapport sur de senaste dygnen som taxibilen kört i trafic de taxi. Combien de kopior de körpassrapport dois du få fram?"
-  },
-  "LAGSTIFNING-2-Q17": {
-    "stem": "Que innebär vägmärket?"
-  },
-  "LAGSTIFNING-2-Q18": {
-    "stem": "Du är anställd i un taxiföretag. Du as le droit une körning avec une buss avec 10 sittplatser. as le droit du ta körningen?"
-  },
-  "LAGSTIFNING-2-Q19": {
-    "stem": "Du dois ha une skolskjutskörning. Quand dois-tu ha blinklyktornas skolskjutsskylt tända sur?"
   },
   "LAGSTIFNING-2-Q20": {
     "stem": "Quand dois-tu erbjuda kunden un kvitto?"
@@ -3295,182 +1117,17 @@
   "LAGSTIFNING-2-Q21": {
     "stem": "Que är orsaken à påkörningar bakifrån?"
   },
-  "LAGSTIFNING-2-Q22": {
-    "stem": "Du kör sur motorväg et polisen hinner ifatt dig et ger signal att du dois stanna. comment dois du göra?"
-  },
-  "LAGSTIFNING-2-Q23": {
-    "stem": "Du kommer fram à korsningen sur bilden. comment bör du uppträda?"
-  },
   "LAGSTIFNING-2-Q24": {
     "stem": "Que anger la gula linjemarkeringen?"
-  },
-  "LAGSTIFNING-2-Q26": {
-    "stem": "Quel ljuskombination as le droit du använda i dagtid?"
-  },
-  "LAGSTIFNING-2-Q27": {
-    "stem": "Où peux du pas stanna et släppa passagerare?"
-  },
-  "LAGSTIFNING-2-Q28": {
-    "stem": "Du as le droit une handikappad kvinna som är 20 åring som är rullstolburen. Hon vägrar ta sur sig ceinture de sécurité under körningen. comment dois du uppträda?"
-  },
-  "LAGSTIFNING-2-Q29": {
-    "stem": "Qui har rätt att köra taxi?"
-  },
-  "LAGSTIFNING-2-Q30": {
-    "stem": "Que innebär totalvikt?"
-  },
-  "LAGSTIFNING-2-Q31": {
-    "stem": "Comment mycket as le droit dygnetsvila vara under 24 -timmers viloperiod?"
-  },
-  "LAGSTIFNING-2-Q32": {
-    "stem": "Du dois fortsätta rakt fram sur i korsningen, trafikljusen är ur funktion. Que dois-tu göra?"
-  },
-  "LAGSTIFNING-2-Q33": {
-    "stem": "Du dois svänga vänster i korsningen sur bilden. comment dois du uppträda?"
-  },
-  "LAGSTIFNING-2-Q35": {
-    "stem": "As le droit föraren i cela silver färgade bilen köra si som sur bilden?"
-  },
-  "LAGSTIFNING-2-Q36": {
-    "stem": "Que innebär cela avec defensiv körning?"
-  },
-  "LAGSTIFNING-2-Q38": {
-    "stem": "La första bilen har stannat lors de stoplinjen i korsningen. dois föraren i la andra bilen stanna une gång à innan han ou hon kör ut sur la korsande vägen?"
-  },
-  "LAGSTIFNING-2-Q39": {
-    "stem": "Quel de följande peux pas räknas som taxi?"
-  },
-  "LAGSTIFNING-2-Q4": {
-    "stem": "Gäller cela règle de la priorité à droite i någon de situationer sur bilderna de följande?"
-  },
-  "LAGSTIFNING-2-Q5": {
-    "stem": "Du dois fortsätta rakt fram i korsningar. I quel de situationerna nedan gäller cela règle de la priorité à droite?"
-  },
-  "LAGSTIFNING-2-Q6": {
-    "stem": "I quel bild dois du stanna oavsett cela kommer att finnas trafik ou pas i korsningen?"
-  },
-  "LAGSTIFNING-2-Q7": {
-    "stem": "Du har tappat taxiförarelegitimation. à quel myndighet dois du anmäla detta?"
-  },
-  "LAGSTIFNING-2-Q8": {
-    "stem": "Sur Combien de år dois taxiförarelegitimationen efter utfärdandet minst renouvellement?"
-  },
-  "LAGSTIFNING-3-Q1": {
-    "stem": "Que innebär begreppet personbil?"
   },
   "LAGSTIFNING-3-Q11": {
     "stem": "Qu'est-ce qui est juste concernant l'information tarifaire de ton taxi si tu roules au tarif au compteur (summatariff) ?"
   },
-  "LAGSTIFNING-3-Q12": {
-    "stem": "Du har fått une körning onsdag kl 12:00 som är une vardag som pas helgdag. as le droit du stanna pour att lämna de une kund?"
-  },
-  "LAGSTIFNING-3-Q13": {
-    "stem": "Du kommer fram à une vägfärja avec une kund. Där cela är lång kö. Har du förtur à färjan?"
-  },
-  "LAGSTIFNING-3-Q14": {
-    "stem": "Du har kommit à korsningen sur bilden et du tänker fortsätta rakt fram. comment dois du uppträda?"
-  },
-  "LAGSTIFNING-3-Q15": {
-    "stem": "Du kör sur motorväg et upptäcker att du precis missat avfarten som du skulle svänga de. comment bör du göra?"
-  },
-  "LAGSTIFNING-3-Q16": {
-    "stem": "Du kör avec 70 km/tim hastighet i situationen sur bilden. Que dois-tu göra säkrast?"
-  },
-  "LAGSTIFNING-3-Q2": {
-    "stem": "Que innebär maximilast?"
-  },
   "LAGSTIFNING-3-Q22": {
     "stem": "Quel funktion har la gul blinkande sken sur bilden?"
   },
-  "LAGSTIFNING-3-Q23": {
-    "stem": "Si un taxitrafiktillstånds havare anlitar une taxiförare som saknar taxiförarelegitimation. que är cela strängaste straffet som titulaire de l'autorisation peux få?"
-  },
-  "LAGSTIFNING-3-Q24": {
-    "stem": "Vilka fordon as le droit pas passera vägmärket?"
-  },
-  "LAGSTIFNING-3-Q25": {
-    "stem": "Du närmar dig une korsning där règle de la priorité à droite gäller. à vilka fordon dois du lämna företräde ou har du obligation de céder le passage mot?"
-  },
-  "LAGSTIFNING-3-Q26": {
-    "stem": "Du är klar avec taxiprov. as le droit du köra taxi?"
-  },
-  "LAGSTIFNING-3-Q27": {
-    "stem": "Du har tappat bort ton taxiförarelegitimation. et du har ansökt si une ny legitimation. as le droit du köra i väntan sur un provisorisk ou ny legitimation?"
-  },
-  "LAGSTIFNING-3-Q28": {
-    "stem": "Du dois stanna et vänta sur une viss antal passagerare. lors de quel skylt är cela tillåtet att stanna 10 minuter pour att vänta sur une kund?"
-  },
-  "LAGSTIFNING-3-Q29": {
-    "stem": "Que innebär cela inringade vägmärket?"
-  },
-  "LAGSTIFNING-3-Q3": {
-    "stem": "Du dois svänga vänster sur bilderna. Har du obligation de céder le passage i någon de bilderna mot la mötande bilen?"
-  },
-  "LAGSTIFNING-3-Q30": {
-    "stem": "Que innebär detta märke?"
-  },
-  "LAGSTIFNING-3-Q31": {
-    "stem": "Du kör une taxi et du har une transport scolaire. ton taxi är utrustad avec genomlyst lykta. quand dois la tändas sur?"
-  },
   "LAGSTIFNING-3-Q32": {
     "stem": "Vilka fordon peux köras i trafic de taxi utom personbil?"
-  },
-  "LAGSTIFNING-3-Q34": {
-    "stem": "Du har kommit à la här gatan sur bilden. as le droit köra in här?"
-  },
-  "LAGSTIFNING-3-Q35": {
-    "stem": "Vilka ljus dois pas användas tillsammans lors de färd?"
-  },
-  "LAGSTIFNING-3-Q36": {
-    "stem": "Du kör i la här vägen. Que dois-tu göra?"
-  },
-  "LAGSTIFNING-3-Q38": {
-    "stem": "Du dois svänga vänster i korsningen. comment bör du uppträda?"
-  },
-  "LAGSTIFNING-3-Q39": {
-    "stem": "Du as le droit une körning avec une mamma avec tvåårigt barn. De har pas särskildutrustning pour barnet. as le droit barnet lov att åka avec?"
-  },
-  "LAGSTIFNING-3-Q4": {
-    "stem": "Du dois svänga höger i korsningen sur bilden. Har du obligation de céder le passage mot de gående?"
-  },
-  "LAGSTIFNING-3-Q40": {
-    "stem": "Att köra bil i trafiken dois vara sur un betryggande sätt. une person har druckit alkohol, une uttröttad person som kört hela natten et une person har ätit receptbelagd medicin depuis läkare. Är cela någon de personer ovan as le droit pas köra bil?"
-  },
-  "LAGSTIFNING-3-Q5": {
-    "stem": "Du dois svänga höger i korsningen sur bilden. Har du obligation de céder le passage mot cyklisten?"
-  },
-  "LAGSTIFNING-3-Q6": {
-    "stem": "Cela är 9 mars enligt bild A. Du dois parkera bilen enligt bild B. Vägen är pas huvudled et saknar parkeringsanvisningar. as le droit du parkera?"
-  },
-  "LAGSTIFNING-3-Q7": {
-    "stem": "Sur visst antal år dois taxilegitimationen renouvellement. Combien de?"
-  },
-  "LAGSTIFNING-3-Q8": {
-    "stem": "Du har fått une körning då är du tvungen att stanna lors de une intersection pour att hämta passagerare. sur comment långt avstånd dois du stanna?"
-  },
-  "LAGSTIFNING-3-Q9": {
-    "stem": "As le droit du stanna sur une markerad busshållplats utan att hindra linjetrafik?"
-  },
-  "LAGSTIFNING-4-Q1": {
-    "stem": "Du kör la här vägen, comment dois du uppträda?"
-  },
-  "LAGSTIFNING-4-Q10": {
-    "stem": "Du dois à vänster sur bilden. qui har obligation de céder le passage?"
-  },
-  "LAGSTIFNING-4-Q11": {
-    "stem": "Vilka personer brukar gå över sur övergångstället, enligt tilläggstavlan?"
-  },
-  "LAGSTIFNING-4-Q12": {
-    "stem": "Sur quel de de här bildarna dois du lämna företräda à höger?"
-  },
-  "LAGSTIFNING-4-Q13": {
-    "stem": "Qui peux köra taxi?"
-  },
-  "LAGSTIFNING-4-Q14": {
-    "stem": "Vilka två uppgifter som alltid dois finnas sur un taxikvitto?"
-  },
-  "LAGSTIFNING-4-Q15": {
-    "stem": "Stopplinjen saknas i la här situationen. Où doit du stanna?"
   },
   "LAGSTIFNING-4-Q16": {
     "stem": "Qui peux parkera i une parkeringsruta avec dessa panneaux de signalisation?"
@@ -3478,53 +1135,11 @@
   "LAGSTIFNING-4-Q17": {
     "stem": "Que betyder polismannens tecken?"
   },
-  "LAGSTIFNING-4-Q18": {
-    "stem": "Quel fordon as le droit framföras si föraren har körkortsbehörighet *B***?"
-  },
-  "LAGSTIFNING-4-Q19": {
-    "stem": "Dygnets vila under 24-timmarsperiod peux delas upp à olika delar. quel är cela bästa delning?"
-  },
-  "LAGSTIFNING-4-Q2": {
-    "stem": "Du peux få ton taxilegitimation återkallad si du begår un brott. sur Combien de år blir la minst återkallad?"
-  },
-  "LAGSTIFNING-4-Q20": {
-    "stem": "Combien de köruppdrag dois une kopia de kvitto ou följesedel uppvisas sur begäran de polisen?"
-  },
   "LAGSTIFNING-4-Q22": {
     "stem": "Quel tarif n'est pas autorisé pour un particulier comme client ?"
   },
-  "LAGSTIFNING-4-Q24": {
-    "stem": "Tu conduis un taxi avec une personbil avec tillkopplat släpvagn Släpvagnen total vikt är 750 kg. quel högsta körkortsbehörighet behöver du pour att köra fordonskombinationen?"
-  },
   "LAGSTIFNING-4-Q25": {
     "stem": "Vilka fordon peux användas i yrkestrafik?"
-  },
-  "LAGSTIFNING-4-Q26": {
-    "stem": "Vilka fordon as le droit du köra i yrkesmässig trafic de taxi enligt svensk förordning?"
-  },
-  "LAGSTIFNING-4-Q29": {
-    "stem": "Du peux få ton taxilegitimation återkallad si du begått un brott. sur Combien de år blir la högst återkallad?"
-  },
-  "LAGSTIFNING-4-Q31": {
-    "stem": "Du kommer à une trafikolycka, cela är flera personer som blöder, quel skydd dois du använda?"
-  },
-  "LAGSTIFNING-4-Q32": {
-    "stem": "Du har fått punktering i un däck et du où tvungen att använda cela tillfälliga originella (nödhjul) reservdäcket. comment mycket as le droit du köra avec la?"
-  },
-  "LAGSTIFNING-4-Q33": {
-    "stem": "As le droit du lämna de passagerare sur vägen där detta märke finns uppsatt?"
-  },
-  "LAGSTIFNING-4-Q35": {
-    "stem": "Qui doit dömas si un taxiföretag saknar taxitillstånd?"
-  },
-  "LAGSTIFNING-4-Q37": {
-    "stem": "Vilka fordon as le droit du köra som taxi?"
-  },
-  "LAGSTIFNING-4-Q38": {
-    "stem": "Du tänker köra si lastbilen sur bilden i samband avec mötande trafik. as le droit du överskrida mittlinje?"
-  },
-  "LAGSTIFNING-4-Q39": {
-    "stem": "Quel vikt förändras si du tar upp une passagerare i ton taxibil?"
   },
   "LAGSTIFNING-4-Q4": {
     "stem": "Qu'est-ce qui est juste concernant le tarif à prix fixe dans ton taxi ?"
@@ -3532,929 +1147,56 @@
   "LAGSTIFNING-4-Q40": {
     "stem": "As le droit du stanna lors de une parkerad bil som bilen sur bilden?"
   },
-  "LAGSTIFNING-4-Q5": {
-    "stem": "Quel alternativ anger två uppgifter som alltid dois finnas i un taxi kvitto?"
-  },
-  "LAGSTIFNING-4-Q8": {
-    "stem": "Qui har ansvaret att barnen under 15 år dois använda skyddsutrustningar et bilbälte?"
-  },
-  "LAGSTIFNING-4-Q9": {
-    "stem": "Tu dois conduire une kund une kort sträcka. dois du använda bilbältet?"
-  },
-  "LAGSTIFNING-5-Q1": {
-    "stem": "Quel belysning dois du använda i situationen sur bilden?"
-  },
-  "LAGSTIFNING-5-Q10": {
-    "stem": "Que är la normala återkallelsetiden pour un trafiktillstånd?"
-  },
-  "LAGSTIFNING-5-Q11": {
-    "stem": "As le droit du stanna lors de une busshållplats pour att lasta de gods si cela pas finns une buss i närheten?"
-  },
-  "LAGSTIFNING-5-Q13": {
-    "stem": "Quel de följande behöver pas finnas avec i körpassrapporten?"
-  },
-  "LAGSTIFNING-5-Q14": {
-    "stem": "Quel tid är cela tillåtet att parkera utan avgift?"
-  },
-  "LAGSTIFNING-5-Q15": {
-    "stem": "Vilka tre uppgifter peux du erhålla depuis un registreringsbevis?"
-  },
-  "LAGSTIFNING-5-Q16": {
-    "stem": "Comment gammal dois une person minst vara pour att få köra taxi?"
-  },
-  "LAGSTIFNING-5-Q18": {
-    "stem": "Tu dois conduire 4 passagerare som väger 75 kg varje person. comment mycket bagage peux du lasta avec hänsyn à registreringsbeviset?"
-  },
-  "LAGSTIFNING-5-Q19": {
-    "stem": "Quel de nedanstående körkortsbehörighet krävs pour att chauffören dois kunna utföra une körning avec 12 passagerare?"
-  },
   "LAGSTIFNING-5-Q20": {
     "stem": "Que är sant si tung lastbil?"
-  },
-  "LAGSTIFNING-5-Q21": {
-    "stem": "Ton fordon väger 4,5 ton. quel minsta körkortsbehörighet behöver du pour att köra fordonet?"
-  },
-  "LAGSTIFNING-5-Q22": {
-    "stem": "Är cela tillåtet att använda feux de croisement et dimljus samtidigt?"
-  },
-  "LAGSTIFNING-5-Q23": {
-    "stem": "Quel påstående är riktigt angående körfälts vägvisning sur bilden?"
-  },
-  "LAGSTIFNING-5-Q24": {
-    "stem": "Du kommer strax ikapp fordonet du ser sur bilden. que bör du tänka sur innan du kör si?"
-  },
-  "LAGSTIFNING-5-Q25": {
-    "stem": "Quand är cela förbjudet att köra si un annat fordon?"
-  },
-  "LAGSTIFNING-5-Q26": {
-    "stem": "Quel påstående si vägren är riktigt?"
-  },
-  "LAGSTIFNING-5-Q28": {
-    "stem": "Qui är skyldig att bilen lors de transport scolaire har rätt utrustning?"
-  },
-  "LAGSTIFNING-5-Q29": {
-    "stem": "Tu dois conduire rakt fram i korsningen. que gäller?"
-  },
-  "LAGSTIFNING-5-Q3": {
-    "stem": "Vilka fordon as le droit användas lors de yrkesmässigtrafik? A . Motorcykel et personbil."
   },
   "LAGSTIFNING-5-Q30": {
     "stem": "As le droit du stanna ou parkera sur une cykelbana si Tu conduis un taxi?"
   },
-  "LAGSTIFNING-5-Q31": {
-    "stem": "Une kund har bråttom à flygplatsen, han kräver att Tu dois conduire fortare än hastighetsbegränsning pour att hinna avec flyget. comment dois du göra?"
-  },
-  "LAGSTIFNING-5-Q32": {
-    "stem": "Bilarna sur bilderna kommer fram à trevägskorsning. Är cela tillåtet att köra si i någon de situationerna?"
-  },
   "LAGSTIFNING-5-Q33": {
     "stem": "Que menas avec trafic de taxi?"
-  },
-  "LAGSTIFNING-5-Q34": {
-    "stem": "Ton avsikt är att svänga vänster i korsningen, men de misstag hamnar i höger körfält. comment dois du bete dig?"
-  },
-  "LAGSTIFNING-5-Q35": {
-    "stem": "Du kör une bil avec vinter däck som är odubbade. as le droit du passera märket sur bilden?"
-  },
-  "LAGSTIFNING-5-Q36": {
-    "stem": "Tu dois conduire in sur une väg där detta panneaux de signalisation finns uppsatts i que gäller där?"
-  },
-  "LAGSTIFNING-5-Q37": {
-    "stem": "Ton kund vill bli körd à Bäckvägen 14. Är cela tillåtet att köra in avec ton taxi?"
-  },
-  "LAGSTIFNING-5-Q38": {
-    "stem": "Quel körfält väljer du sur bilden pour att åka à sjukhus?"
-  },
-  "LAGSTIFNING-5-Q39": {
-    "stem": "Du kör i trafic de taxi et kommer fram à une vägfärja där andra fordon väntar i kö. Har du förtur à färjan?"
-  },
-  "LAGSTIFNING-5-Q40": {
-    "stem": "As le droit du köra taxi si du har tappat ton taxiförarelegitimation, que gäller?"
-  },
-  "LAGSTIFNING-5-Q5": {
-    "stem": "Quel påstående är sant?"
-  },
-  "LAGSTIFNING-5-Q6": {
-    "stem": "Quel straff riskerar du si carte professionnelle de taxi pas är uppsatt sur un föreskrivet sätt?"
-  },
-  "LAGSTIFNING-5-Q8": {
-    "stem": "Que bör i första hand avgöra comment fort du kör quand du passerar järnvägskorningen sur bilden?"
-  },
-  "LAGSTIFNING-5-Q9": {
-    "stem": "À quel myndighet dois ansökan si taxitillstånd pour taxi skickas?"
   },
   "LAGSTIFNING-6-Q1": {
     "stem": "Où peux troligast detta märke sur bilen finnas?"
   },
-  "LAGSTIFNING-6-Q10": {
-    "stem": "Vilka as le droit du köra si du har taxilegitimation förutom personbilar?"
-  },
-  "LAGSTIFNING-6-Q11": {
-    "stem": "Quand är cela förbjudet att parkera?"
-  },
-  "LAGSTIFNING-6-Q12": {
-    "stem": "Du kör i une väg et du ser vita et gula linjer i ton del de körbanan. que innebär cela pour dig?"
-  },
-  "LAGSTIFNING-6-Q13": {
-    "stem": "Under mörker et nedsatt sikt använder polisen une röd lykta avec rött sken pour att cela dois vara väl synlig. comment dois du göra quand polisen visar detta tecken?"
-  },
   "LAGSTIFNING-6-Q14": {
     "stem": "Comment dois man ta fram un fordon maximilast?"
-  },
-  "LAGSTIFNING-6-Q15": {
-    "stem": "Tu dois conduire rakt fram mot Centrum i giratoire framför dig sur bilden. dois du ge tecken avec körriktningsvisare?"
-  },
-  "LAGSTIFNING-6-Q16": {
-    "stem": "As le droit du stanna ou parkera sur une cykelbana pour att släppa de ou ta upp passagerare?"
-  },
-  "LAGSTIFNING-6-Q17": {
-    "stem": "Quel de följande påståenden är riktigt?"
-  },
-  "LAGSTIFNING-6-Q18": {
-    "stem": "Du stannar pour att vänta sur une kund som sur bilder. Är cela tillåtet?"
-  },
-  "LAGSTIFNING-6-Q19": {
-    "stem": "Quand gäller hastighetsbegränsningen 50 km/tim?"
-  },
-  "LAGSTIFNING-6-Q2": {
-    "stem": "Cela är lördag et klockan är 08.00. Du dois strax svänga à höger. as le droit du använda körfältet som är markerad avec A?"
-  },
-  "LAGSTIFNING-6-Q21": {
-    "stem": "As le droit du köra här avec ton taxi i cela här fältet?"
-  },
-  "LAGSTIFNING-6-Q22": {
-    "stem": "Du dois ortsätta rakt fram i korsningen comment kör du sur säkraste sätt si cyklisten sur bilden?"
-  },
-  "LAGSTIFNING-6-Q23": {
-    "stem": "Ton avsikt är att köra rakt fram sur bilden. Du har de misstag hamnat i cela vänstra körfältet. comment dois du göra?"
-  },
-  "LAGSTIFNING-6-Q24": {
-    "stem": "Tu dois conduire in sur une väg depuis une parkeringsplats. Mot vilka fordon har du obligation de céder le passage?"
-  },
-  "LAGSTIFNING-6-Q25": {
-    "stem": "Ton kund bor inne sur gatan längre fram. as le droit du lämna de kunden sur vägen?"
-  },
-  "LAGSTIFNING-6-Q26": {
-    "stem": "Du kör ton taxi et du blev stoppad de polis. Han vill ha kopior de körpassrapportar. Combien de vacation / service Körpassrapportar dois du visa upp?"
-  },
-  "LAGSTIFNING-6-Q3": {
-    "stem": "Du har last i bilen som väger 250 kg. Combien de personer peux du ha avec dig i bilen avec hänsyn à registreringsbeviset? si varje passagerare väger mellan 70-80 kg ?"
-  },
-  "LAGSTIFNING-6-Q32": {
-    "stem": "Du hinner ifatt bilen fram pour dig et upptäcker att du kör avsevärt mycket snabbare än que la gör. comment dois du göra?"
   },
   "LAGSTIFNING-6-Q34": {
     "stem": "Bilen är parkerad. Är bilen parkerad rätt i någon de situationerna?"
   },
-  "LAGSTIFNING-6-Q35": {
-    "stem": "Tu dois conduire in sur vägen sur bilden. Du har une kund som du dois hämta une vardag et kl 13:00. as le droit du köra rakt fram?"
-  },
-  "LAGSTIFNING-6-Q36": {
-    "stem": "Quel körfält dois du välja si du dois à parkeringen sur Hamngatan?"
-  },
-  "LAGSTIFNING-6-Q38": {
-    "stem": "Är cela tillåtet att förhindra någon depuis att köra si dig?"
-  },
-  "LAGSTIFNING-6-Q39": {
-    "stem": "As le droit du köra in sur gatan sur bilden avec ton taxi?"
-  },
-  "LAGSTIFNING-6-Q4": {
-    "stem": "Du dois à vänster. Behöver du ge tecken à vänster avec körriktningsvisare?"
-  },
-  "LAGSTIFNING-6-Q40": {
-    "stem": "Har du obligation de céder le passage i någon de situationerna mot trafiken depuis höger?"
-  },
-  "LAGSTIFNING-6-Q5": {
-    "stem": "Du dois à förskolan längre fram sur vägen Vilka barn rör sig ofta sur vägen enligt tilläggstavlan?"
-  },
-  "LAGSTIFNING-6-Q6": {
-    "stem": "Que innebär skyltarna sur bilden?"
-  },
-  "LAGSTIFNING-6-Q8": {
-    "stem": "Du dois à höger, Que dois-tu göra?"
-  },
-  "LAGSTIFNING-6-Q9": {
-    "stem": "Que är rätt angående cela här märket?"
-  },
-  "LAGSTIFNING-7-Q1": {
-    "stem": "Du kör sur une gata där hastighetsbegränsningen är 50 km/tim. quel högsta tillåtna hastighet gäller quand du passerar vägmärket sur bilden?"
-  },
-  "LAGSTIFNING-7-Q11": {
-    "stem": "Tu dois conduire rakt fram i korsningen. cela finns ingen gående i närheten. Où doit du stanna?"
-  },
-  "LAGSTIFNING-7-Q13": {
-    "stem": "Du råkar avec ton taxi köra sur une parkerad personbil. Personbilföraren är pas anträffbar. que dois du göra enligt lag?"
-  },
-  "LAGSTIFNING-7-Q15": {
-    "stem": "Du dois svänga à höger i korsningen. Gående tänker korsa gatan et hon har grönt ljus samtidigt som du. comment dois du bete dig?"
-  },
-  "LAGSTIFNING-7-Q16": {
-    "stem": "Du kommer fram à giratoire sur bilden. Du dois à höger. Har du obligation de céder le passage mot la silverfärgade bilen inne i giratoire?"
-  },
-  "LAGSTIFNING-7-Q17": {
-    "stem": "Tu conduis un taxi une Volvo V70 enligt registreringsbeviset. Dina kunders bagage väger 320 kg. Combien de passagerare as le droit du ta avec dig si de i genomsnitt väger 70 kg?"
-  },
-  "LAGSTIFNING-7-Q18": {
-    "stem": "Que peux cela här märket finnas?"
-  },
-  "LAGSTIFNING-7-Q19": {
-    "stem": "I quel bild har du obligation de céder le passage mot höger?"
-  },
-  "LAGSTIFNING-7-Q2": {
-    "stem": "Du kör i trafic de taxi. quel de följande handlingar dois du ha avec dig i bilen?"
-  },
-  "LAGSTIFNING-7-Q20": {
-    "stem": "Du avser svänga à vänster sur bilden. comment dois du uppträda?"
-  },
   "LAGSTIFNING-7-Q21": {
     "stem": "As le droit du stanna sur bilden?"
-  },
-  "LAGSTIFNING-7-Q22": {
-    "stem": "As le droit du stanna sur une busshållplats et vänta sur une passagerare, där cela pas finns une buss som kör i linjetrafik i närheten."
-  },
-  "LAGSTIFNING-7-Q23": {
-    "stem": "Tu dois conduire ut depuis une giratoire et dois korsa une cykelpassage et övergångställe Har du obligation de céder le passage mot någon de de oskyddade trafikanterna?"
-  },
-  "LAGSTIFNING-7-Q24": {
-    "stem": "Varningsskylten varnar pour djur sur ou lors de vägen. quand börjar la farligaste sträckan?"
-  },
-  "LAGSTIFNING-7-Q25": {
-    "stem": "Tu dois conduire in sur motorvägen depuis påfarten sur bilden. comment dois du göra?"
-  },
-  "LAGSTIFNING-7-Q26": {
-    "stem": "Du kör une lätt lastbil avec tillkopplat lätt släpvagn. as le droit du passera vägmärket sur bilden?"
-  },
-  "LAGSTIFNING-7-Q27": {
-    "stem": "Que varnar vägmärket pour?"
-  },
-  "LAGSTIFNING-7-Q28": {
-    "stem": "Du as le droit une person avec två barn. cela första barnets längd är 135 cm et la andra är 125 cm. Où doit barnen sitta säkrast si bilen är inkopplade avec krockkudde fram?"
   },
   "LAGSTIFNING-7-Q29": {
     "stem": "Que är rätt angående vägen sur bilden?"
   },
-  "LAGSTIFNING-7-Q3": {
-    "stem": "Du dois skjutsa une 20- årig rullstolsburen kvinna dans ton taxi. Kvinnan vill pas använda bilbälte. comment dois du göra?"
-  },
-  "LAGSTIFNING-7-Q32": {
-    "stem": "Que gäller si du vill fortsätta rakt fram i situationen sur bilden?"
-  },
-  "LAGSTIFNING-7-Q33": {
-    "stem": "Si du tar upp une passagerare. quel vikt dois ändras?"
-  },
-  "LAGSTIFNING-7-Q34": {
-    "stem": "Du dois parkera la 12 som är une fredag så att du stannar kvar så länge som möjligt. Où doit du parkera bilen et Combien de temps max as le droit du parkera?"
-  },
-  "LAGSTIFNING-7-Q35": {
-    "stem": "Quel två vägmarkeringar kombineras avec cykelöverfart?"
-  },
-  "LAGSTIFNING-7-Q36": {
-    "stem": "Une taxiförare stannar pour att knappa in une adress i sin Navigator GPS. dois föraren blinka ut à vänster innan han kör ut depuis kanten?"
-  },
-  "LAGSTIFNING-7-Q37": {
-    "stem": "As le droit du stanna omedelbart efter vägmärket sur bilden pour att ringa un samtal à beställningscentralen?"
-  },
-  "LAGSTIFNING-7-Q39": {
-    "stem": "Du har kört ut sur vägrenen pour att underlätta une omkörning pour une annan bil. que gäller mellan dig et övriga fordon si du dois tillbaka dit?"
-  },
-  "LAGSTIFNING-7-Q40": {
-    "stem": "Du dois hjälpa une kollega att bogsera hans taxibil à une verkstad. Behöver ni använda varningsblinkers?"
-  },
-  "LAGSTIFNING-7-Q5": {
-    "stem": "Une taxiförare förlorar helt synen sur un öga permanent et carte professionnelle de taxi blir återkallat. peux föraren få tillbaka sin carte professionnelle de taxi?"
-  },
-  "LAGSTIFNING-7-Q7": {
-    "stem": "Tu dois conduire in sur motorvägen depuis accelerationsfältet. où är cela viktigast att du tittar?"
-  },
-  "LAGSTIFNING-7-Q8": {
-    "stem": "Du dois hämta une kund som bor sur une gata där cela här vägmärket finns uppsatt. ton taxibil är utrustad avec vinterdäck utan dubbar. as le droit du köra in sur gatan?"
-  },
-  "LAGSTIFNING-7-Q9": {
-    "stem": "Du as le droit une körning avec une kund som har une stor blombukett avec sig. pour att buketten pas dois gå sönder vill hon ha la i knät i framsätet. as le droit hon ha cela?"
-  },
-  "LAGSTIFNING-8-Q10": {
-    "stem": "Du ser att cela är une polisbil kör bakom dig. I rutan visar tecken sur växelvis blå et rött. Que dois-tu göra?"
-  },
-  "LAGSTIFNING-8-Q11": {
-    "stem": "Ton avsikt är att fortsätta rakt fram i korsningen, men de misstag hamnar i höger körfält. comment dois du bete dig?"
-  },
-  "LAGSTIFNING-8-Q12": {
-    "stem": "Quand är cela förbjudet att parkera enligt vägmärkeskombinationen sur bilden?"
-  },
-  "LAGSTIFNING-8-Q13": {
-    "stem": "Du accelererar i un accelerationsfältoch ger tecken avec körriktningsvisare. Du ser une bil i vänster ytterbackspegel une bil som börjat köra in sur motorvägen före dig. comment dois du göra?"
-  },
-  "LAGSTIFNING-8-Q14": {
-    "stem": "Hr du obligation de céder le passage mot trafiken depuis vänster sur bilden?"
-  },
   "LAGSTIFNING-8-Q16": {
     "stem": "Que menas avec Maximilasten?"
-  },
-  "LAGSTIFNING-8-Q17": {
-    "stem": "Du dois à vänster sur bilden. comment dois du göra ?"
-  },
-  "LAGSTIFNING-8-Q19": {
-    "stem": "Du dois svänga à höger i giratoire sur bilden. comment dois du göra i situationen sur bilden?"
-  },
-  "LAGSTIFNING-8-Q2": {
-    "stem": "Du dois hämta une kund som bor sur une gata där cela här vägmärket finns uppsatt. ton taxibil är utrustad avec dubbdäck. as le droit du köra in sur gatan?"
-  },
-  "LAGSTIFNING-8-Q22": {
-    "stem": "Tu dois conduire budtransport à Norrköping avec tillkopplat släpvagn. Hastighetsbegränsningen är 100 km/tim sur vägen. quel körfält dois du välja?"
   },
   "LAGSTIFNING-8-Q23": {
     "stem": "Är taxin felparkerad i någon de situationerna sur bilden?"
   },
-  "LAGSTIFNING-8-Q24": {
-    "stem": "Du dois svänga à höger in sur vägen. Du ser att la grå bilen kör si une annan bil. comment dois du göra i situationen sur bilden?"
-  },
-  "LAGSTIFNING-8-Q25": {
-    "stem": "Comment dois du uppträda si utryckningssignalen blinker avec rött ljus?"
-  },
-  "LAGSTIFNING-8-Q29": {
-    "stem": "Du ser i backspegel une polisbil avec påslaget blåljus. Que dois-tu göra?"
-  },
-  "LAGSTIFNING-8-Q3": {
-    "stem": "Du närmar dig une intersection. que gäller korsningen sur bilden?"
-  },
-  "LAGSTIFNING-8-Q30": {
-    "stem": "Du dois vända avec hjälp de fickan sur höger sidan de vägen. dois du ge tecken avec körriktningsvisare quand du vänder?"
-  },
-  "LAGSTIFNING-8-Q31": {
-    "stem": "Du kör i trafic de taxi une personbil avec tillkopplat släpvagn. Släpets totalvikt är 750 kg. quel catégorie de permis dois du minst ha?"
-  },
-  "LAGSTIFNING-8-Q32": {
-    "stem": "Qui doit straffas si un barn under 15 år pas använder bilbälte ou särskild skyddutrustning lors de transport scolaire?"
-  },
-  "LAGSTIFNING-8-Q33": {
-    "stem": "Du dois skjutsa une mamma avec sitt barn som är tvåårigt. cela finns ingen utrustning à barnet. as le droit barnet lov att åka avec dans ton taxi?"
-  },
-  "LAGSTIFNING-8-Q34": {
-    "stem": "Quel är rätt angående information tarifaire sur ton taxibil?"
-  },
-  "LAGSTIFNING-8-Q35": {
-    "stem": "Bussen tänker lämna busshållplatsen et ger tecken à vänster. Är du skyldig i någon de situationerna att lämna bussen företräde?"
-  },
-  "LAGSTIFNING-8-Q36": {
-    "stem": "Du dois svänga à höger, que gäller?"
-  },
-  "LAGSTIFNING-8-Q37": {
-    "stem": "Ton kund bor lors de la här gatan. as le droit du köra in avec ton taxi pour att lämna de kund lors de bostaden?"
-  },
-  "LAGSTIFNING-8-Q39": {
-    "stem": "Quand är cela parkerings förbud enligt vägmärkena?"
-  },
-  "LAGSTIFNING-8-Q4": {
-    "stem": "Du dois à vänster i korsningen sur bilden där du har obligation de céder le passage. la vita bilen kör sur höger sidan i cela högre körfältet. as le droit du svänga vänster i la här situationen?"
-  },
-  "LAGSTIFNING-8-Q40": {
-    "stem": "Du upptäcker att du har kört fel et du dois backa runt gathörn pour att vända. que gäller dig et andra trafikanter i la situationen?"
-  },
-  "LAGSTIFNING-8-Q42": {
-    "stem": "Du dois fortsätta rakt fram i korsningen. que gäller?"
-  },
   "LAGSTIFNING-8-Q43": {
     "stem": "Qui ou vilka har ansvaret si utrustningar i skolskjutstaxi?"
-  },
-  "LAGSTIFNING-8-Q44": {
-    "stem": "Du dois ha une körning avec transport scolaire avec une buss pour passagerare avec 10 sitt platser. quel catégorie de permis dois du ha?"
-  },
-  "LAGSTIFNING-8-Q45": {
-    "stem": "Du dois ha une kund avec fast pris. ton företag använder pas samplaneringssystem. Quand dois-tu räkna kostnaden pour resan?"
-  },
-  "LAGSTIFNING-8-Q46": {
-    "stem": "As le droit du stanna avec ton taxi sur une markerad busshållplats si cela pas finns bussar i linjetrafik i närheten?"
-  },
-  "LAGSTIFNING-8-Q47": {
-    "stem": "I vissa situationer dois du hålla tillräckligt låg fart pour att olycksrisken är stor. Vilka två bilder visar bäst sådana situationer?"
-  },
-  "LAGSTIFNING-8-Q48": {
-    "stem": "Du har slutat ton vacation / service avec ton taxi. sur vägen hem dois du handla i affären. Är cela tillåtet att parkera i någon de de tre parkeringsplatserna som tilläggstavlan anger?"
-  },
-  "LAGSTIFNING-8-Q49": {
-    "stem": "Du kommer fram à une olycksplats där räddningstjänsten où först sur plats et ställt varningsanordnings sur bilden. quel alternativ är rätt?"
-  },
-  "LAGSTIFNING-8-Q5": {
-    "stem": "Du dois parkera ton taxibil sur une parkering där de här vägmärkena finns uppsatta. Är parkeringen avgiftsfri?"
-  },
-  "LAGSTIFNING-8-Q50": {
-    "stem": "Du har kunder avec dig i bilen et du dois ta avfarten à höger depuis motorvägen sur bilden. comment dois du göra cela sur un mjukt sätt?"
   },
   "LAGSTIFNING-8-Q52": {
     "stem": "Comment dois du bete dig si du ser une polisman som la sur bilden?"
   },
-  "LAGSTIFNING-8-Q54": {
-    "stem": "As le droit du vända sur motorvägen genom luckan sur bilden?"
-  },
-  "LAGSTIFNING-8-Q55": {
-    "stem": "Du dois svänga à vänster i korsningen sur bilden. Har du obligation de céder le passage mot mötande bilen?"
-  },
-  "LAGSTIFNING-8-Q56": {
-    "stem": "Du avser köra rakt fram i la här korsningen sur bilden men du har kommit fel i cela här körfältet, comment dois du göra?"
-  },
-  "LAGSTIFNING-8-Q57": {
-    "stem": "Que dois-tu vara mest uppmärksam sur i situationen sur bilden?"
-  },
-  "LAGSTIFNING-8-Q58": {
-    "stem": "Tu dois conduire ut depuis un garage. Har du obligation de céder le passage mot någon?"
-  },
-  "LAGSTIFNING-8-Q6": {
-    "stem": "Körfälten sur bilden löper samman à un körfält. que gäller i situationen sur bilden?"
-  },
-  "LAGSTIFNING-8-Q60": {
-    "stem": "Du har slutat di vacation / service et du dois parkera ton taxibil sur une plats som har vägmärkeskommbinationen sur bilden. que innebär vägmärkes kommbinationen?"
-  },
-  "LAGSTIFNING-8-Q61": {
-    "stem": "Du dois svänga ll höger sur bilden. que innebär trafiksignalen pour dig?"
-  },
-  "LAGSTIFNING-8-Q62": {
-    "stem": "Du kör sur une väg som har Bild A panneaux de signalisation. Du dois svänga à vänster sur bild B. Où doit du placera ton bil?"
-  },
-  "LAGSTIFNING-8-Q63": {
-    "stem": "Que innebär polismantecknet si polismannen vi ar avec handen upp et ner som sur bilden?"
-  },
-  "LAGSTIFNING-8-Q64": {
-    "stem": "Du dois stanna pour att lämna de une passagerare sur bilden, comment dois du uppträda?"
-  },
-  "LAGSTIFNING-8-Q8": {
-    "stem": "Qui har ansvaret pour barn som är under 15 år i transport scolaire använder bilbälte?"
-  },
-  "LAGSTIFNING-8-Q9": {
-    "stem": "Du har lämnat de une kund sur une fastighet sur gatan sur bilden et nu dois du köra ut. Har du obligation de céder le passage?"
-  },
-  "S_KERHET-2-Q1": {
-    "stem": "Lors de quel sjukdom peux une personen normalt äta ou dricka?"
-  },
-  "S_KERHET-2-Q10": {
-    "stem": "Que bör du pas göra quand du lyfter?"
-  },
   "S_KERHET-2-Q11": {
     "stem": "Quel sjukdom beskrivs de texten i bilden?"
-  },
-  "S_KERHET-2-Q12": {
-    "stem": "Spelar cela pour roll si du använder mineral olja ou heltsyntetiskt olja à ton bilmotor?"
-  },
-  "S_KERHET-2-Q13": {
-    "stem": "Du gör une säkerhetskontroll sur ton personbil et upptäcker att nivån i behållaren à bromsvätska är låg. que bör du göra?"
-  },
-  "S_KERHET-2-Q14": {
-    "stem": "Que bör une förare göra pour att nollvisionens mål uppnås?"
   },
   "S_KERHET-2-Q15": {
     "stem": "Varför bör du pas använda mobiltelefonen lors de bilkörning?"
   },
-  "S_KERHET-2-Q16": {
-    "stem": "Quel förare grupp som har svårt att hinna överblicka trafiken i korsningen?"
-  },
-  "S_KERHET-2-Q17": {
-    "stem": "Du kommer först avec ton bil à une trafikolycka där finns cela bilar som inblandade. que bör du göra först?"
-  },
-  "S_KERHET-2-Q18": {
-    "stem": "Du kommer fram à une trafikolycka där finns cela une person som fryser. Hon ser blek et kallsvettig ut. comment dois du hjälpa personen?"
-  },
-  "S_KERHET-2-Q19": {
-    "stem": "Que dois-tu hålla mest uppmärksamheten sur bilden?"
-  },
-  "S_KERHET-2-Q2": {
-    "stem": "Quel typ de olyckor orsakar une förare som är trött?"
-  },
-  "S_KERHET-2-Q20": {
-    "stem": "Du har une kund avec dig i taxibilen som är berusad et bete sig argt et hotfull. comment dois du göra?"
-  },
-  "S_KERHET-2-Q21": {
-    "stem": "Quel alternativ är rätt que cela gäller luften i däcken?"
-  },
-  "S_KERHET-2-Q22": {
-    "stem": "Du har une kund avec dig i taxibilen som är drog påverkad hotfull. comment bör du göra?"
-  },
-  "S_KERHET-2-Q23": {
-    "stem": "Du ser spärren sur une de bakdörren sur bilden pour barnsäkerhetslåset. comment fungerar la quand la är aktiverat?"
-  },
-  "S_KERHET-2-Q24": {
-    "stem": "Quel däck de nedanstående peux du använda utan fara?"
-  },
-  "S_KERHET-2-Q25": {
-    "stem": "Du har kopplat två axligt lätt släpfordon à ton bil. Du kör sur halt väglag une dag i mars et ton bil har dubbdäck. Bilen väger 1800 kg som är totalvikt. dois släpet även ha dubbdäck?"
-  },
-  "S_KERHET-2-Q26": {
-    "stem": "Du har une kund avec dig i bilen som börjar andas tungt et du hör att andningen försvårad. que peux la troliga orsaken vara?"
-  },
-  "S_KERHET-2-Q27": {
-    "stem": "Tu conduis un taxi. quel längd dois kunden vara pour att sitta i un framsäte si ton bil är utrustad avec airbag?"
-  },
-  "S_KERHET-2-Q28": {
-    "stem": "Que dois-tu göra pour att cela är kostsamma pour att minska reparationer inför vintern?"
-  },
-  "S_KERHET-2-Q3": {
-    "stem": "Du har fått un köruppdrag avec une kund som plötsligt faller ihop et as le droit kramper. quel är la troliga orsaken?"
-  },
-  "S_KERHET-2-Q30": {
-    "stem": "Que är riktigt si katalysator i une bensindriven fordon?"
-  },
-  "S_KERHET-2-Q31": {
-    "stem": "Comment påverkas koldioxidutsläppen miljöeffekten quand du minskar bränsleförbrukning?"
-  },
-  "S_KERHET-2-Q32": {
-    "stem": "Ton batteri vätskenivå är pour låg. quel vätska dois du fylla sur?"
-  },
-  "S_KERHET-2-Q33": {
-    "stem": "Du har un köruppdrag. Du kommer fram à kunden et ser att kunden är une synskadad. comment dois du göra?"
-  },
-  "S_KERHET-2-Q34": {
-    "stem": "Que menas avec demenstillstånd?"
-  },
-  "S_KERHET-2-Q35": {
-    "stem": "Sur quel de de här tecknen dois du lossna pour att frigöra rollatorn innan du lyfter in la?"
-  },
-  "S_KERHET-2-Q36": {
-    "stem": "Cela är många som dör varje år pour att de dricker alkohol et kör i trafiken. Combien de i procent är dödsolyckor under alkohol påverkning varje år?"
-  },
-  "S_KERHET-2-Q37": {
-    "stem": "Du kommer à une trafikolycka, cela är flera personer som blöder, quel skydd dois du använda?"
-  },
-  "S_KERHET-2-Q38": {
-    "stem": "Que dois-tu tänka sur här?"
-  },
-  "S_KERHET-2-Q39": {
-    "stem": "Du har fått punktering i un däck et du où tvungen att använda cela tillfälliga originella (nödhjul) reservdäcket. comment mycket as le droit du köra avec la?"
-  },
   "S_KERHET-2-Q4": {
-    "stem": "Que peux följden vara de att du kör avec igensatt luftfilter dans ton taxi?"
-  },
-  "S_KERHET-2-Q40": {
-    "stem": "Under quel tid sur året dois du använda vinterdäck, et cela är lag sur användande de vinterdäck si pas vinterväglag råder?"
-  },
-  "S_KERHET-2-Q5": {
-    "stem": "Du kör une personbil de årsmodell 2008 et du tänker byta däcken. Du tänker byta däck dimensionen mot une annan dimension. as le droit du välja quel dimension du vill?"
-  },
-  "S_KERHET-2-Q6": {
-    "stem": "Du har une bil som är utrustad avec däck som är märkta avec (M & S) pour mud an sno. que innebär märkningen?"
-  },
-  "S_KERHET-2-Q7": {
-    "stem": "Du ser i backspegel att du dois bli påkörd bakifrån. que bör du göra så att du pas as le droit nackskador?"
-  },
-  "S_KERHET-2-Q8": {
-    "stem": "Du har köpt une ”doftgran” et placerat la i ton taxibil. peux la orsaka allergi et hälsobesvär pour kunder?"
-  },
-  "S_KERHET-2-Q9": {
-    "stem": "Du kör une taxibil et Tu dois conduire ton hund à veterinären. peux cela påverka nästa kund?"
-  },
-  "S_KERHET-3-Q1": {
-    "stem": "Une person dois köra taxi sur une fredagsmorgon kl 10:00. Resan tar 30 minuter et 10 km. comment mycket kommer resan att kosta enligt information tarifaire?"
-  },
-  "S_KERHET-3-Q10": {
-    "stem": "Du kör sur la här vägen sur bilden et få plötsligt punktering sur vänstra framhjulet. Du dois stanna sur vägrenen pour att byta däcket. que är största risken här?"
-  },
-  "S_KERHET-3-Q11": {
-    "stem": "Combien de temps före resan dois du starta motorvärmare si temperaturen är - 15 grader kallt så att motorn blir uppvärmd?"
-  },
-  "S_KERHET-3-Q12": {
-    "stem": "Quel gas som går ut depuis bilen som bidrar à växthuseffekten?"
-  },
-  "S_KERHET-3-Q14": {
-    "stem": "Que har une person avec cerebralpares (CP) pour kännetecken?"
-  },
-  "S_KERHET-3-Q15": {
-    "stem": "Que innebär denna symbol?"
-  },
-  "S_KERHET-3-Q16": {
-    "stem": "Du as le droit une person som har la här symbolen i ytter plagg. quel sjukdom lider han de?"
-  },
-  "S_KERHET-3-Q17": {
-    "stem": "Du röker utanför bilen et du blåser pas i bilen, påverkar cela nästa passagerare?"
-  },
-  "S_KERHET-3-Q18": {
-    "stem": "À quel grupp tillhör sjukdomen schizofreni?"
-  },
-  "S_KERHET-3-Q2": {
-    "stem": "Que är starkaste miljöskälet à att du köper regummerade däck à ton bil, jämfört avec däck som pas är regummerade?"
-  },
-  "S_KERHET-3-Q20": {
-    "stem": "Que dois-tu vara försiktig et uppmärksam pour i la här situationen?"
-  },
-  "S_KERHET-3-Q21": {
-    "stem": "Här är hastigheten 30 km/h et du kör 30 km/h, comment dois du bete dig?"
-  },
-  "S_KERHET-3-Q23": {
-    "stem": "Du tar une körning et une de dina kollegor har blivit svartsjuk sur dig et du blir irriterad. Påverkar cela nästa körning?"
-  },
-  "S_KERHET-3-Q27": {
-    "stem": "Du har lastat bilen mycket så att la är tung lastad. comment peux bilen bete sig?"
-  },
-  "S_KERHET-3-Q28": {
-    "stem": "Si la här lampan lyser i instrument panel où bör la första åtgärden vara?"
-  },
-  "S_KERHET-3-Q29": {
-    "stem": "Quel påstående är riktigt angående katalysator? A . Katalysator fungerar effektivt quand du kör avec töm bensin tank innan du fyller i."
+    "stem": "Quelle peut être la conséquence de conduire avec un filtre à air encrassé dans ton taxi ?"
   },
   "S_KERHET-3-Q3": {
     "stem": "Varför bör du pas ha takboxen si du pas använder cela?"
   },
-  "S_KERHET-3-Q30": {
-    "stem": "Du kör i une långresa et du känner dig trött. que bör du göra som är mest effektivt pour att minska risken pour så kallad mikrosömn?"
-  },
-  "S_KERHET-3-Q31": {
-    "stem": "Que har une person pour sjukdom si personen lider de psykisk störning?"
-  },
-  "S_KERHET-3-Q32": {
-    "stem": "Une läkare har skrivit ut une receptbelagd medicin à dig. Qui est responsable att du som äter medicinen bete dig säker i trafiken?"
-  },
-  "S_KERHET-3-Q33": {
-    "stem": "Quel märke markerar une person som har Epilepsi sjukdom?"
-  },
-  "S_KERHET-3-Q34": {
-    "stem": "Comment peux du veta att bromsservosystemet fungerar?"
-  },
-  "S_KERHET-3-Q36": {
-    "stem": "Peux ton körsätt påverka bensinförbrukning?"
-  },
-  "S_KERHET-3-Q37": {
-    "stem": "Att köra bil i trafiken dois vara sur un betryggande sätt. une person har druckit alkohol, une uttröttad person som kört hela natten et une person har ätit receptbelagd medicin depuis läkare. Är cela någon de personer ovan as le droit pas köra bil?"
-  },
-  "S_KERHET-3-Q38": {
-    "stem": "Du as le droit une kund avec ledsagare. comment dois du göra?"
-  },
-  "S_KERHET-3-Q39": {
-    "stem": "Tu dois conduire une rullstol buren dans ton taxi. dois du använda bältet?"
-  },
   "S_KERHET-3-Q4": {
     "stem": "Spelar cela någon roll si du använder breda lågprofildäck ou smala standarddäck?"
-  },
-  "S_KERHET-3-Q40": {
-    "stem": "Que dois-tu göra pour att minska kostsamma kostnader pour reparationer inför vintern?"
-  },
-  "S_KERHET-3-Q5": {
-    "stem": "Du har köpt två nya däck i stället pour dina slitna däck. Que dois-tu göra avec de slitna däcken?"
-  },
-  "S_KERHET-3-Q6": {
-    "stem": "Quel märke markerar une person som har neurologisk sjukdom?"
-  },
-  "S_KERHET-3-Q7": {
-    "stem": "Du hör metall skrapande ljud quand du bromsar. peux du vidta någon åtgärd?"
-  },
-  "S_KERHET-3-Q8": {
-    "stem": "Comment mycket krafter peux une människa utsättas pour lors de frontalkrock mellan två likvärdiga fordon lors de 70 km/tim hastighet?"
-  },
-  "S_KERHET-3-Q9": {
-    "stem": "Du har une kund i bilen som plötsligt as le droit svårt att andas. Personen bär symbolen sur bilden. comment bör du bete dig?"
-  },
-  "S_KERHET-4-Q1": {
-    "stem": "Lors de kontroll de bromshydrauliska system sur ton bil, upptäcker du att bromsen sjunker sakta ned mot golvet. que peux troliga orsaken vara?"
-  },
-  "S_KERHET-4-Q10": {
-    "stem": "Quel de följande förslag är rätt pour att slippa dyra reparationer kostnader?"
-  },
-  "S_KERHET-4-Q11": {
-    "stem": "Du har une nedsatt rörelsehindrad kund som har Parkinson sjukdom som har bagage avec sig. Du dois à un hotel som du pas as le droit köra in sur gatan à entre. quel är rätt que cela gäller bagage?"
-  },
-  "S_KERHET-4-Q12": {
-    "stem": "Ton taxi är utrustad avec navigationssystem. que stör mest chauffören que cela gäller typ de navigationssystem (G.P.S)?"
-  },
-  "S_KERHET-4-Q13": {
-    "stem": "Quand as-tu le droit berätta si nåt hade hänt i bilen under körning?"
-  },
-  "S_KERHET-4-Q14": {
-    "stem": "Comment märker du att un bromsrör i två kretsbromssystem har gått sönder, bortsett ifrån att varningslampan lyser?"
-  },
-  "S_KERHET-4-Q15": {
-    "stem": "Du upptäcker att broms effekten är fördröjd et förstår att cela beror sur att bromsbeläggen är fuktiga. que bör du göra?"
-  },
-  "S_KERHET-4-Q16": {
-    "stem": "Combien de dör varje år sur grund de att någon har kört fortare än gällande hastighetsbegränsningen?"
-  },
-  "S_KERHET-4-Q17": {
-    "stem": "Gör cela någon skillnad si du kör avec tackräcket sur bilen ur bränslebesparande et miljö synpunkt?"
-  },
-  "S_KERHET-4-Q18": {
-    "stem": "Quel typ de olyckor orsakas lors de användande de mobiltelefonen?"
-  },
-  "S_KERHET-4-Q19": {
-    "stem": "Du kommer à une trafikolycka. comment skall du hjälpa une person som blöder kraftigt i benet?"
-  },
-  "S_KERHET-4-Q2": {
-    "stem": "Du har bytt motoroljan sur ton bil. que skall du göra avec la gamla motor olja?"
-  },
-  "S_KERHET-4-Q20": {
-    "stem": "Quel är rätt angående koldioxid utsläppen de bilen?"
-  },
-  "S_KERHET-4-Q22": {
-    "stem": "Varför dois du hålla taxibilen ren?"
-  },
-  "S_KERHET-4-Q23": {
-    "stem": "Halvsidig förlamning, känselnedsättning, talrubbningar et synrubbningar. quel sjukdom har de här symtomen?"
-  },
-  "S_KERHET-4-Q24": {
-    "stem": "Du kör ut depuis une fastighet et känner skakning sur ratten. Du stannar et kontrollerar däcken et upptäcker att un framdäck är ojämn slitet. que peux troliga orsaken vara?"
-  },
-  "S_KERHET-4-Q25": {
-    "stem": "Quel vätska dois lors de behov fyllas sur bilbatteriet et à quel nivå?"
-  },
-  "S_KERHET-4-Q26": {
-    "stem": "Du har information tarifaire sur bilden . Du kör une kund sur une vardag kl 07:00. Resan tog 30 min et 20 km. comment mycket blir priset pour resan?"
-  },
-  "S_KERHET-4-Q27": {
-    "stem": "Du kör une bil i mars månad avec vinter däck som är odubbade. que är cela minsta tillåtna mönster djup du dois ha sur dina däck?"
-  },
-  "S_KERHET-4-Q28": {
-    "stem": "Que har une person som håller sur att få hjärtinfarkt?"
-  },
-  "S_KERHET-4-Q29": {
-    "stem": "Du dois lyfta un tungt föremål. comment dois du göra cela?"
-  },
-  "S_KERHET-4-Q3": {
-    "stem": "Quel vätska dois du fylla sur i la här behållaren som visas sur bilden??"
-  },
-  "S_KERHET-4-Q30": {
-    "stem": "Que innebär la här symbolen?"
-  },
-  "S_KERHET-4-Q31": {
-    "stem": "Une passagerare åker in dans ton taxi et har sur sig detta märke, que peux detta innebära?"
-  },
-  "S_KERHET-4-Q32": {
-    "stem": "Que innebär vidstående ID-bricka?"
-  },
-  "S_KERHET-4-Q33": {
-    "stem": "Du har une person avec dig i bilen som har märket sur bilden i ytter plagg, que innebär detta?"
-  },
-  "S_KERHET-4-Q34": {
-    "stem": "Du har une kund som har symbolen sur bilden runt halsen. Vilka symtom som peux sjukdomen ge?"
-  },
-  "S_KERHET-4-Q35": {
-    "stem": "Comment mycket dör årligen i trafiken alkoholpåverkade?"
-  },
-  "S_KERHET-4-Q36": {
-    "stem": "Combien de människor har årligen blivit dödade i trafiken de senaste fem åren?"
-  },
-  "S_KERHET-4-Q37": {
-    "stem": "Under quel tid sur dygnet är risken störst pour trötthet?"
-  },
-  "S_KERHET-4-Q38": {
-    "stem": "Du använder une medicin som du pas vet si la är trafikfarlig. Du känner dig dock yr de medicinen. peux du dömas pour conduite une état d'ivresse si du trots detta kör bil?"
-  },
-  "S_KERHET-4-Q39": {
-    "stem": "Une kund dans ton taxi har fått astma anfall avec hosta et andningssvårighet. comment dois du hjälpa kunden?"
-  },
-  "S_KERHET-4-Q4": {
-    "stem": "Quand är risken störst att man råkar ut bli trött \"sömnig\"?"
-  },
-  "S_KERHET-4-Q5": {
-    "stem": "Quel påstående speglar bäst grundtanken i \"Nollvisionen\"?"
-  },
-  "S_KERHET-4-Q7": {
-    "stem": "Du kör sur motorväg et känner skakning sur ratten. comment dois du hålla däckens livslängd?"
-  },
-  "S_KERHET-4-Q8": {
-    "stem": "Du är inblandad i une trafikolycka där personer blivit skadade. Du har ingen skuld à olyckan. dois du ändå stanna et hjälpa à de skadade?"
-  },
-  "S_KERHET-4-Q9": {
-    "stem": "Quel förnybart bränsle som finns blandat i all bensin i Sverige idag?"
-  },
-  "S_KERHET-5-Q1": {
-    "stem": "Une kund som dois avec dig sur une lång resa et han behöver sin rullator att gå avec. comment dois du göra pour att hjälpa kunden?"
-  },
-  "S_KERHET-5-Q10": {
-    "stem": "Tu conduis un taxi som är registrerad 2008 et du dois byta à vinter däck. Dagen efter bytet känner du vibrationer et hör oljud de un hjul sur bilen. que peux troliga orsaken vara?"
-  },
-  "S_KERHET-5-Q11": {
-    "stem": "Du kontrollerar motoroljan et upptäcker att la är gråvitt. que peux troligaste orsaken vara?"
-  },
-  "S_KERHET-5-Q12": {
-    "stem": "Du känner skakning sur ratten under körningen. quel är orsaken?"
-  },
-  "S_KERHET-5-Q13": {
-    "stem": "Comment dois nollvisionen uppnås?"
-  },
-  "S_KERHET-5-Q14": {
-    "stem": "Quel är la vanligaste olyckstypen lors de sväng à vänster depuis större landsväg?"
-  },
-  "S_KERHET-5-Q15": {
-    "stem": "Comment dois du lastsäkra gods dans ton taxi?"
-  },
-  "S_KERHET-5-Q16": {
-    "stem": "Quel de följande påverkar mest bilkörning lors de aquaplanage?"
-  },
-  "S_KERHET-5-Q17": {
-    "stem": "Quel påverkar mest däckslitage?"
-  },
-  "S_KERHET-5-Q2": {
-    "stem": "Combien de varje år betraktas dö i olyckor i trafiken som någon inblandad har varit alkoholpåverkad?"
-  },
-  "S_KERHET-5-Q21": {
-    "stem": "Varför dois une person som är kortare än 140 cm sitta i baksätet i bilen samt alla skyddsutrustningar?"
-  },
-  "S_KERHET-5-Q22": {
-    "stem": "Du har ätit medicin et du vet pas si la peux orsaka une olycka sur vägen. Que dois-tu göra enligt följande?"
-  },
-  "S_KERHET-5-Q23": {
-    "stem": "Comment mycket sparar vi liv ou minskar dödligheten årligen si vi alla alltid använder bilbälte?"
-  },
-  "S_KERHET-5-Q24": {
-    "stem": "Du har bromsat kraftigt et du kände pulserande et hörde mekaniskt ljud i bromspedalen . que beror cela sur?"
-  },
-  "S_KERHET-5-Q25": {
-    "stem": "Du har un barn som är 6år. quel utrusning dois du använda à barnet?"
-  },
-  "S_KERHET-5-Q26": {
-    "stem": "Du as le droit une kund avec barn som är 17 månader. De har pas utrusning pour barnet et du dois pas använda stödet. quel utrusning som passar?"
-  },
-  "S_KERHET-5-Q27": {
-    "stem": "Si la här lampan lyser under ton instrumentpanel, que peux felet vara?"
-  },
-  "S_KERHET-5-Q28": {
-    "stem": "Une kund avec sitt barn har avec sig bilbarnstol. comment dois du göra pour att hjälpa kunden?"
-  },
-  "S_KERHET-5-Q29": {
-    "stem": "Comment kontrollerar man sur bästa sätt att styrservon fungerar?"
-  },
-  "S_KERHET-5-Q3": {
-    "stem": "Que är sant que gäller farliga ämnen som finns i bilarnas avgasar?"
-  },
-  "S_KERHET-5-Q30": {
-    "stem": "Quel påstående är rätt angående styrservo?"
-  },
-  "S_KERHET-5-Q31": {
-    "stem": "Quel påstående är rätt si aquaplanage?"
-  },
-  "S_KERHET-5-Q32": {
-    "stem": "Du kör avec radiala däck. comment påverkar luften däcken?"
-  },
-  "S_KERHET-5-Q33": {
-    "stem": "Du kör une bil som är 2008 årsmodell i mars månad. Du har odubbade däck sur ton bil et du dois koppla une släpvagn. Vilka däck dois du använda à släpet?"
-  },
-  "S_KERHET-5-Q36": {
-    "stem": "Du kör rullstolsbuss et as le droit une färdtjänst körning avec une rullstolburen person. comment dois du göra?"
-  },
-  "S_KERHET-5-Q37": {
-    "stem": "Si denna lampa lyser i instrumentpanel, que peux la troliga orsaken vara?"
-  },
-  "S_KERHET-5-Q38": {
-    "stem": "Que innebär cela att une bil är utrustad avec un tvåkrets bromssystem?"
-  },
-  "S_KERHET-5-Q39": {
-    "stem": "Du kör sur landsväg et krockar avec un viltsvin. comment dois du uppträda?"
-  },
-  "S_KERHET-5-Q4": {
-    "stem": "Du kör une bil i une januaridag. Bilens totalvikt är 2000 kg et avsedd avec dubbdäck. Du dois koppla un släp à ton bil. dois släpet ha dubbdäck som du dois koppla à ton bil?"
-  },
-  "S_KERHET-5-Q40": {
-    "stem": "Du kommer fram à une trafikolycksplats, där une motorcyklist är inblandad. dois du ta de hjälmen?"
-  },
-  "S_KERHET-5-Q5": {
-    "stem": "Du as le droit un köruppdrag avec une person som är kraftigt alkoholpåverkad men sur gott humör. comment bör du göra?"
-  },
-  "S_KERHET-5-Q6": {
-    "stem": "Du har une kund i bilen som plötsligt blir blek, kallsvettig, darrig et irriterad. que peux troligaste orsaken vara?"
-  },
-  "S_KERHET-5-Q7": {
-    "stem": "Över quel utetemperatur bör la elektroniska motorvärmaren pas användas?"
-  },
-  "S_KERHET-5-Q8": {
-    "stem": "Que förlänger ton reaktionstid quand du kör bil?"
-  },
-  "S_KERHET-5-Q9": {
-    "stem": "Du as le droit une kund som har symbolen sur bilden runt halsen. Plötsligt as le droit kunden ont i armarna et rygg. que bör du omedelbart göra?"
-  },
-  "S_KERHET-6-Q1": {
-    "stem": "Cela är halt väglag et du kör une framdriven bil. que händer si du dois svänga?"
-  },
-  "S_KERHET-6-Q10": {
-    "stem": "Du dois svänga vänster i korsningen sur bilden. comment dois du uppträda?"
-  },
-  "S_KERHET-6-Q11": {
-    "stem": "Quel längd de människor sitter säkert i framsätet si krockkudde är inkopplad i ton bil?"
-  },
-  "S_KERHET-6-Q12": {
-    "stem": "Tu dois conduire två personer une tisdag morgon kl 05. Resan tar 5 km et 10 minuter. comment mycket dois bli kostnaden sur resan?"
-  },
-  "S_KERHET-6-Q13": {
-    "stem": "Quel sjukdom ou skada kännetecknas de synrubbning et hörselrubbning, talsvårighet et känselnedsättning et ibland psykisk utvecklingsstörning?"
-  },
-  "S_KERHET-6-Q14": {
-    "stem": "Du kör taxin et as le droit getingstick intill un öga. Ögat svullnar igen et blir röd et du peux pas se i ögat. as le droit du fortsätta köra?"
-  },
-  "S_KERHET-6-Q15": {
-    "stem": "Du kör taxin et bilen drar snett. que peux la troliga orsaken vara?"
-  },
-  "S_KERHET-6-Q16": {
-    "stem": "Que dois-tu tänka sur quand du dois använda startkablar?"
-  },
-  "S_KERHET-6-Q18": {
-    "stem": "Du kör ton taxi une dag i mars, et du dois koppla une lätt släpvagn à la. ton bil har totalvikt sur 1800 kg. Bilen är utrustad avec odubbade vinter däck. Vilka däck gäller pour släpvagnen?"
-  },
-  "S_KERHET-6-Q19": {
-    "stem": "Förarens körsätt, bilens köregenskaper et andra faktorer påverkar bränsleförbrukning. quel de nedanstående minskar mest bränsleförbrukning?"
-  },
-  "S_KERHET-6-Q2": {
-    "stem": "Du as le droit une kund som har vitt käpp. que tyder cela sur?"
-  },
-  "S_KERHET-6-Q20": {
-    "stem": "Comment märker du att servon à bromsarna pas fungerar?"
-  },
-  "S_KERHET-6-Q21": {
-    "stem": "Bilen är utrustad avec låsningsfria bromsar ABS. comment vet du att la fungerar?"
-  },
-  "S_KERHET-6-Q22": {
-    "stem": "Que innebär demens?"
   },
   "S_KERHET-6-Q23": {
     "stem": "Tu conduis un taxi et tu auras trois personnes à l'arrière. Tes pneus sont en 195/65 R15. Quelle pression dois-tu avoir dans les pneus arrière selon le tableau ?"
@@ -4462,101 +1204,11 @@
   "S_KERHET-6-Q24": {
     "stem": "Quel tarif dois-tu utiliser pour une course le mardi à 14 h 00 ?"
   },
-  "S_KERHET-6-Q25": {
-    "stem": "Tu dois conduire två kunder måndag kl 11. Resan tar 20 km et 25 minuter. comment mycket blir kostnaden sur resan?"
-  },
-  "S_KERHET-6-Q26": {
-    "stem": "Du dois vänta sur två kunder i 58 minuter. comment mycket kommer cela att kosta?"
-  },
-  "S_KERHET-6-Q27": {
-    "stem": "Synen är un viktigt sinne i bilkörning. si du förlorar synen sur un öga, quand peux du köra taxi igen?"
-  },
-  "S_KERHET-6-Q28": {
-    "stem": "Comment peux du upptäcka att cela är un läckage i bromssystemet?"
-  },
-  "S_KERHET-6-Q29": {
-    "stem": "Que är la troliga orsaken si cela fjädrar under foten quand du bromsar?"
-  },
-  "S_KERHET-6-Q3": {
-    "stem": "Quel alternativ beskriver bäst mogna personers egenskaper som förare pour att uppnå Nollvision?"
-  },
-  "S_KERHET-6-Q30": {
-    "stem": "Quand as-tu le droit använda dubbdäck si vinter väglag kräver cela?"
-  },
-  "S_KERHET-6-Q31": {
-    "stem": "Du närmar dig une korsning sur landsväg et dois svänga vänster. quel mötande fordon är cela svårast att bedöma hastigheten sur?"
-  },
-  "S_KERHET-6-Q32": {
-    "stem": "Que dois du först vara beredd sur quand du passerar förbi une buss som står stilla?"
-  },
-  "S_KERHET-6-Q33": {
-    "stem": "Du kommer fram à un övergångsställe där cela finns une blind avec vitt käpp som vill gå över gatan depuis övergångsstället. comment dois du hjälpa personen?"
-  },
-  "S_KERHET-6-Q34": {
-    "stem": "Comment dois du hjälpa une synskadad kund?"
-  },
-  "S_KERHET-6-Q35": {
-    "stem": "Du är sur väg à une kund. sur vägen dit så ringer une telefonist et säger att du kommer att vänta sur personen depuis kl 14:15 à kl 14:51. comment mycket kommer vätetiden att kosta kunden?"
-  },
-  "S_KERHET-6-Q36": {
-    "stem": "Du dois lasta ton bil i bagaget. Du har lagt hela lastvikten fram i bagaget. comment mycket dois du lasta sur sidorna?"
-  },
-  "S_KERHET-6-Q37": {
-    "stem": "Under körning upptäcker du att denna symbol tänds sur instrumentpanelen. Que dois-tu göra?"
-  },
-  "S_KERHET-6-Q38": {
-    "stem": "Quel symbol innebär Alzheimers?"
-  },
-  "S_KERHET-6-Q39": {
-    "stem": "Ton bil har une läcka i avgassystemet. que innebär cela pour risk?"
-  },
-  "S_KERHET-6-Q4": {
-    "stem": "Du dois placera last, lågt et längst fram i bagageutrymmet. Räcker cela ur säkerhetens synpunkt?"
-  },
-  "S_KERHET-6-Q40": {
-    "stem": "Quand börjar katalysatorn fungerar mest effektivt?"
-  },
-  "S_KERHET-6-Q5": {
-    "stem": "Vilka kännetecken as le droit une person som har insulinkänning?"
-  },
-  "S_KERHET-6-Q6": {
-    "stem": "Que kännetecknar une person som håller sur att få stroke?"
-  },
   "S_KERHET-6-Q7": {
     "stem": "Si du har lastat tungt i bagaget, påverkar cela bilens egenskapar lors de körning i kurvor?"
   },
-  "S_KERHET-6-Q8": {
-    "stem": "Peux une alkoholpåverkad bilförare bli straffad pour conduite une état d'ivresse si han ou hon har mindre än 0,2 promille alkohol i blodet?"
-  },
   "S_KERHET-6-Q9": {
     "stem": "Comment dois du starta un trasigt batteri sur une bil avec statkablar?"
-  },
-  "S_KERHET-7-Q1": {
-    "stem": "Que dois-tu tänka sur först i situationen sur bilden?"
-  },
-  "S_KERHET-7-Q10": {
-    "stem": "Quel vätska dois du fylla sur i la här behållaren som visas sur bilden?"
-  },
-  "S_KERHET-7-Q11": {
-    "stem": "Lors de quel situation är cela krav sur användning de bilbältet i samband medgodstransport?"
-  },
-  "S_KERHET-7-Q12": {
-    "stem": "Quel påstående si ABS-bromsar är riktigt?"
-  },
-  "S_KERHET-7-Q14": {
-    "stem": "Que bör du göra et une avsvimmande kund i bilen vaktar pas quand du tilltalar ou ruskar honom varsamt?"
-  },
-  "S_KERHET-7-Q15": {
-    "stem": "Que innebär cela si varningslampa tänds?"
-  },
-  "S_KERHET-7-Q16": {
-    "stem": "Que är cela pour skillnad mellan skivbromsar et trumbromsar?"
-  },
-  "S_KERHET-7-Q17": {
-    "stem": "Du har fått une körning under påsken avec två personer. Körningen börjar depuis Växjö centralstation à färjestaden i Karlskrona. Resan tog 1 timmar et 55 minuter et är 125 km lång. comment mycket kommer resan att kosta enligt information tarifaire?"
-  },
-  "S_KERHET-7-Q18": {
-    "stem": "Du har fått une körning sur måndag kl 07:30 avec två personer. Körningen börjar depuis Arlanda flygplats à Örebro centralstation. Resan tog 2 timmar et 15 minuter et är 201 km lång. comment mycket kommer resan att kosta enligt information tarifaire?"
   },
   "S_KERHET-7-Q19": {
     "stem": "Tu dois transporter 1 à 3 personnes un dimanche. Quel tarif dois-tu utiliser ?"
@@ -4564,260 +1216,20 @@
   "S_KERHET-7-Q20": {
     "stem": "Tu conduis un taxi et tu auras trois personnes à l'arrière. Tes pneus sont en 225/45 R17. Quelle pression dois-tu avoir dans les pneus arrière selon le tableau ?"
   },
-  "S_KERHET-7-Q2009": {
-    "stem": "Quel minsta profondeur des sculptures dois du ha sur däcken si cela kräver sommar väglag?"
-  },
-  "S_KERHET-7-Q21": {
-    "stem": "Que händer si du fyller sur luft i un varmt däck?"
-  },
-  "S_KERHET-7-Q22": {
-    "stem": "Du kolliderar avec un viltsvin. que är du skyldig att göra?"
-  },
-  "S_KERHET-7-Q23": {
-    "stem": "Comment påverkas avgasutsläpp si du har lite luft i däcken?"
-  },
-  "S_KERHET-7-Q24": {
-    "stem": "As le droit barn under 3 år färdas i une taxibil utan särskild skyddsutrustning?"
-  },
-  "S_KERHET-7-Q25": {
-    "stem": "Où sur bilden dois du fylla sur Kylarvätska?"
-  },
-  "S_KERHET-7-Q26": {
-    "stem": "Du har une vuxen passagerare som sitter obältad i baksätet ton bil. Combien de gånger större än kroppsvikten blir passagerarens krockvikt si du fronttalkrockar avec une tung lastbil i ca 50 km/ h?"
-  },
-  "S_KERHET-7-Q27": {
-    "stem": "Du har une kund som tar sig pour bröstet, har svårt att andas et blir kallsvettig et matt. que bör du göra först?"
-  },
-  "S_KERHET-7-Q28": {
-    "stem": "Du kör färdtjänstbuss. comment dois une rullstol vara förankrad under färden?"
-  },
-  "S_KERHET-7-Q29": {
-    "stem": "Du har fått une körning sur påsken kl 16:00 avec fyra personer. Resan tog 1 timme et 10 minuter et är 65 km lång. comment mycket kommer resan att kosta enligt information tarifaire?"
-  },
   "S_KERHET-7-Q3": {
     "stem": "Tu conduis un taxi et tu auras une charge à l'arrière. Tes pneus sont en 195/65 R15. Quelle pression dois-tu avoir selon le tableau ?"
-  },
-  "S_KERHET-7-Q30": {
-    "stem": "Où sur bilden dois man kontrollera bromsvätskan?"
-  },
-  "S_KERHET-7-Q31": {
-    "stem": "Du har fått une körning sur torsdag kl 20:45 avec två personer. Resan börjar depuis Växjö à Sturup flygplats. Resan tog 3 timmar et är 210 km lång. comment mycket kommer resan att kosta enligt information tarifaire?"
-  },
-  "S_KERHET-7-Q32": {
-    "stem": "Du har fått une körning sur onsdag kl 10:00 avec une person. Resan börjar depuis Sturup flygplats à Sahlgrenska sjukhus. Resan tog 3 timmar et 10 minuter et är 297 km lång. comment mycket kommer resan att kosta enligt information tarifaire?"
-  },
-  "S_KERHET-7-Q33": {
-    "stem": "Du dois lasta rullatorn sur bilden dans ton taxi. quel bokstav markerar la spärr som dois frigöras quand du dois fälla ihop rullatorn?"
-  },
-  "S_KERHET-7-Q35": {
-    "stem": "Som taxiförare kör du oregelbundna arbetstider. quand är cela särskilt viktigt att pas ha stora mängder mat?"
-  },
-  "S_KERHET-7-Q36": {
-    "stem": "Quand du lämnar v une kund så kör du sur un panneaux de signalisation. que bör du göra?"
-  },
-  "S_KERHET-7-Q37": {
-    "stem": "Du kör ton taxi bil et lampan sur bilden lyser under körning. Du stannar et kontrollerar motorns oljenivån et mäter avec stickan et ser att nivån som cela dois. que bör du göra?"
-  },
-  "S_KERHET-7-Q38": {
-    "stem": "Tu dois conduire avec ton taxibil depuis Malmö à Kastrupflygplats la 31 mars. dois du ha vinter däck?"
-  },
-  "S_KERHET-7-Q39": {
-    "stem": "Ton ordinarie läkare skriver un recept à dig avec medicin som innehåller narkotika klassat ämne. peux du bli dömd pour conduite une état d'ivresse si du ätit medicinen si du blir stoppad de polisen?"
-  },
-  "S_KERHET-7-Q4": {
-    "stem": "Si du kör une bil avec låsningsfria bromsar (A.B.S). comment påverkas risken pour sladd i jämförelse avec une bil utan A.B.S?"
-  },
-  "S_KERHET-7-Q40": {
-    "stem": "Sur quel framför allt dois du rikta uppmärksamheten sur quand du kör sur dagen lors de körning i skoltid bredvid une skola?"
-  },
-  "S_KERHET-7-Q5": {
-    "stem": "Du as le droit une kund avec barn som är under 3 år. De har pas utrusning pour barnet et du dois pas använda stödet. quel utrusning som passar?"
-  },
-  "S_KERHET-7-Q6": {
-    "stem": "Du kör une bil avec (A.B.S) . que händer si du bromsar kraftigt?"
-  },
-  "S_KERHET-7-Q7": {
-    "stem": "Du dois använda bilbarnstol bakåtvänd framåt. Que dois-tu se à innan du monterar la?"
-  },
-  "S_KERHET-7-Q8": {
-    "stem": "Que krävs pour att du dois använda vinter däck som är odubbade under mars månaden?"
-  },
-  "S_KERHET-7-Q9": {
-    "stem": "Du är tvungen att parkera, du har fått punktering precis före un backkrön, sur väg som har 70 km/tim hastighet. Behöver du använda varningstriangel?"
-  },
-  "S_KERHET-8-Q1": {
-    "stem": "Comment dois du lastsäkra gods i ton taxibil?"
-  },
-  "S_KERHET-8-Q10": {
-    "stem": "Ton taxi är inkopplad avec krockkudde fram. Où doit du lägga bilbarnstol?"
-  },
-  "S_KERHET-8-Q11": {
-    "stem": "Du as le droit une person avec 120 cm lång. Où doit han sitta säkrast si bilen är inkopplade avec krockkudde?"
-  },
-  "S_KERHET-8-Q12": {
-    "stem": "Comment påverkas i allmänhet une förare som använder mobiltelefon under körning?"
-  },
-  "S_KERHET-8-Q13": {
-    "stem": "Une kund är alkoholpåverkad et beter sig hotfull. que bör du göra?"
-  },
-  "S_KERHET-8-Q14": {
-    "stem": "Que dois-tu göra avec un bilbattari som har slutat fungera?"
-  },
-  "S_KERHET-8-Q15": {
-    "stem": "Quel är la viktigaste anledningen à att man pas dois lägga une medvetslös person sur rygg?"
-  },
-  "S_KERHET-8-Q16": {
-    "stem": "À quel de dessa personer är cela olämpligt att ge något att äta ou dricka?"
-  },
-  "S_KERHET-8-Q17": {
-    "stem": "Varningslampan sur bild A tänds quand du kör. où sur bild B dois du fylla sur vätskan?"
   },
   "S_KERHET-8-Q18": {
     "stem": "Tu conduis un taxi. Tes pneus sont en 205/55 R16. Quelle pression dois-tu avoir dans les pneus avant selon le tableau ?"
   },
-  "S_KERHET-8-Q19": {
-    "stem": "Två personer dois åka taxi une måndag kl 07:00. Resan beräknas ta ca 10 min et är 5 km lång. comment mycket kommer resan att kosta dig enligt information tarifaire?"
-  },
   "S_KERHET-8-Q2": {
     "stem": "Vilka däck är ur miljösynpunkt som är bästa däck du peux köpa?"
   },
-  "S_KERHET-8-Q20": {
-    "stem": "Du kör i 30 km/tim. comment bör du agera i situationen sur bilden?"
-  },
-  "S_KERHET-8-Q21": {
-    "stem": "Du råkar ut pour une frontalkrock avec ton bil. Bilen har krockkuddan. Har cela någon betydelse si du använder bilbälte i la här situationen?"
-  },
-  "S_KERHET-8-Q22": {
-    "stem": "Du har fått une körning sur nyår avec två person. Resan börjar depuis Landvetter flygplats à Centralen i Linköping. Resan tog 2 timmar et 30 minuter et är 232 km lång. comment mycket kommer resan att kosta enligt information tarifaire?"
-  },
-  "S_KERHET-8-Q23": {
-    "stem": "Du har fått une körning sur tisdag kl 09:00 avec två personer. Resan börjar depuis Universitet i Uppsala à Helsingborg. Resan tog 3 timmar et 5 minuter et är 266 km lång. comment mycket kommer resan att kosta enligt information tarifaire?"
-  },
-  "S_KERHET-8-Q24": {
-    "stem": "Tu conduis un taxi et as le droit une beställning som börjar kl 07:30. sur vägen dit så ringer kunden et säger att han kommer att vara försenad et ber dig att vänta sur honom. Han kommer kl 08:15. comment mycket kommer cela att kosta fram à dess?"
-  },
-  "S_KERHET-8-Q25": {
-    "stem": "Du har fyra kunder avec dig i bilen et du misstänker att cela tränger in kolmonoxid i bilen depuis avgassystem. Que dois-tu göra?"
-  },
-  "S_KERHET-8-Q26": {
-    "stem": "Du kör i un område där barn leker. que är cela du dois tänka sur si barn i allmenhet?"
-  },
-  "S_KERHET-8-Q27": {
-    "stem": "Att sitta sur rätt sätt har stor betydelse pour dig som taxiförare. peux ton körställning påverka ton hälsa pour att köra säker i trafiken?"
-  },
-  "S_KERHET-8-Q28": {
-    "stem": "Du förlorar synen permenant sur un öga. Transportstyrelse återkallar ton permis de conduire et taxilegitimation. peux du få tillbaka ton permis de conduire pour catégorie de permis B?"
-  },
-  "S_KERHET-8-Q29": {
-    "stem": "Du kör une personbil. as le droit du köra avec dubbdäck i september månad?"
-  },
-  "S_KERHET-8-Q30": {
-    "stem": "Une taxiförare har just fått besked si att une närstående à honom blivit svårt sjuk. peux cela påverka hans körförmåga?"
-  },
-  "S_KERHET-8-Q31": {
-    "stem": "Quel fördelen är cela avec une bältestol jämfört avec une bälteskudde som skyddsutrustning pour barn?"
-  },
-  "S_KERHET-8-Q32": {
-    "stem": "Quel alternative beskriver bäst comment du kontrollerar att bromsservon sur ton taxi fungerar som la dois?"
-  },
-  "S_KERHET-8-Q33": {
-    "stem": "Du tar une rökpaus utanför ton taxi. peux cela påverka ton nästa kunds hälsa?"
-  },
-  "S_KERHET-8-Q34": {
-    "stem": "Du vet att ton passagerare sur une lång sjukresa är diabetiker. I början de resan blir an allt mer lågmåld et verkar vara sur väg att förlora medvetandet. que bör du göra först?"
-  },
-  "S_KERHET-8-Q35": {
-    "stem": "Vilka är de vanligaste problemen pour une person som har reumatism?"
-  },
-  "S_KERHET-8-Q36": {
-    "stem": "Vilka symtom peux vara tecken sur att une person avec diabetes börjar få insulinkänning?"
-  },
-  "S_KERHET-8-Q37": {
-    "stem": "Du har fått punktering et monterat un nödhjul. quel alternativ är riktigt?"
-  },
-  "S_KERHET-8-Q38": {
-    "stem": "Bussen har stannat lors de une hållplats et Tu dois conduire rakt fram i situationen sur bilden. que bör du först vara beredd sur?"
-  },
   "S_KERHET-8-Q39": {
-    "stem": "Que peux bli följden de att placera tung last baktill i bilen?"
-  },
-  "S_KERHET-8-Q4": {
-    "stem": "Nya bilar använder (RME) som kommer ur raps. Vilka fördelar har cela jämfört avec diesel?"
-  },
-  "S_KERHET-8-Q40": {
-    "stem": "Que peux pour låg kultryck innebära quand du kör avec tillkopplad släpvagn?"
-  },
-  "S_KERHET-8-Q41": {
-    "stem": "Ton bil de årsmodell 2005 är utrustad avec bränsleinsprutning. avec quel de följande körsätt peux du spara mest bränsle?"
-  },
-  "S_KERHET-8-Q42": {
-    "stem": "Quel märke markerar une person som har Alzheimer sjukdom?"
-  },
-  "S_KERHET-8-Q43": {
-    "stem": "Du har un läckage i avgasrörsystemet, kolmonoxid tränger in i bilen. comment peux du upptäcka cela?"
-  },
-  "S_KERHET-8-Q44": {
-    "stem": "Du har kunder avec dig i taxibilen et dois stanna lors de une obligation d'arrêt. comment dois du stanna mjukt?"
-  },
-  "S_KERHET-8-Q45": {
-    "stem": "Gör cela någon skillnad pour miljön comment tung lastad bilen är?"
-  },
-  "S_KERHET-8-Q46": {
-    "stem": "Que leder à att bilen blir överstyrd?"
-  },
-  "S_KERHET-8-Q47": {
-    "stem": "Du tar medicin som peux vara trafikfarlig. Varför bör du då pas köra bil?"
-  },
-  "S_KERHET-8-Q48": {
-    "stem": "Du dois lastsäkra gods i ton taxibil. comment mycket dois lastsäkring tåla åt sidorna?"
-  },
-  "S_KERHET-8-Q49": {
-    "stem": "Quel fördel har ABS bromsar jämfört avec bromsar utan ABS?"
-  },
-  "S_KERHET-8-Q5": {
-    "stem": "Ton bil är utrustad avec styrservo. Under une säkerhetskontroll upptäcker du att cela är pour lite hydraulisk vätska i behållaren. comment dois du göra?"
-  },
-  "S_KERHET-8-Q50": {
-    "stem": "Du dois starta une kall motor i une bil som har katalysator. quand börjar katalysatorn fungerar?"
-  },
-  "S_KERHET-8-Q51": {
-    "stem": "Combien de temps innan resan dois du sätta sur motorvärmaren quand cela är O grader?"
-  },
-  "S_KERHET-8-Q52": {
-    "stem": "Ton bil har xenonstrålkastare. que är risken avec de?"
-  },
-  "S_KERHET-8-Q53": {
-    "stem": "Que är risken si du startar ton taxi avec startkablar?"
+    "stem": "Quelle peut être la conséquence de placer une charge lourde à l'arrière de la voiture ?"
   },
   "S_KERHET-8-Q54": {
     "stem": "Quel uppgift har servon i bilens hydrauliska bromssystem?"
-  },
-  "S_KERHET-8-Q55": {
-    "stem": "Du kontrollerar styrservosystemet sur ton taxibil avec vridning sur ratten. Hjulen reagerar pas omedelbart. que peux troligaste orsaken vara?"
-  },
-  "S_KERHET-8-Q56": {
-    "stem": "Comment dois du hjälpa une kund som har Parkinson sjukdom?"
-  },
-  "S_KERHET-8-Q57": {
-    "stem": "Varför dois du hålla taxibilen ren invändigt?"
-  },
-  "S_KERHET-8-Q58": {
-    "stem": "Que händer si du har un lågt lufttryck i däcken än cela rekommenderad?"
-  },
-  "S_KERHET-8-Q59": {
-    "stem": "Du har stannat pour une synskadad lors de övergångställe pour att gå över gatan. comment dois du uppträda?"
-  },
-  "S_KERHET-8-Q6": {
-    "stem": "Que händer si du lastar ton husvagn så att cela blir lågt kultryck?"
-  },
-  "S_KERHET-8-Q60": {
-    "stem": "Du upptäcker att motor temperaturen är hög. que är la troliga orsaken?"
-  },
-  "S_KERHET-8-Q61": {
-    "stem": "Où är risken störst att une person råkar ut pour trafik olyckan sur grund de trötthet?"
-  },
-  "S_KERHET-8-Q62": {
-    "stem": "Quel mönster djup dois du sur däcken si cela är juli månad?"
   },
   "S_KERHET-8-Q63": {
     "stem": "As le droit du flytta une bil lors de olyckan si bilen varit inblandad i olyckan?"
@@ -4825,62 +1237,8 @@
   "S_KERHET-8-Q64": {
     "stem": "Que står i centrum de Nollvision i trafiken?"
   },
-  "S_KERHET-8-Q65": {
-    "stem": "Du dois utföra konstgjord andning à une sjuk person. comment dois du veta att luften kommer in i lungorna?"
-  },
-  "S_KERHET-8-Q7": {
-    "stem": "Que händer si du lastar ton husvagn så att cela blir högt kultryck?"
-  },
-  "S_KERHET-8-Q8": {
-    "stem": "Du är bland de första som kommer fram à une trafikolycksplats. Där une person blöder kraftigt i benet et lämnar honom ligga ned. que bör du göra sedan?"
-  },
-  "S_KERHET-8-Q9": {
-    "stem": "Du kör une bil som är 2009 årsmodell la 31 mars. quel profondeur des sculptures dois du ha sur däcken?"
-  },
-  "S_KERHET-9-Q1": {
-    "stem": "Ton bil de årsmodell 2005 är utrustad avec bränsleinsprutning. avec quel de följande körsätt peux du spara mest bränsle?"
-  },
-  "S_KERHET-9-Q10": {
-    "stem": "Du dois starta une kall motor i une bil som har katalysator. quand börjar katalysatorn fungerar?"
-  },
-  "S_KERHET-9-Q11": {
-    "stem": "Combien de temps innan resan dois du sätta sur motorvärmaren quand cela är O grader?"
-  },
-  "S_KERHET-9-Q12": {
-    "stem": "Ton bil har xenonstrålkastare. que är risken avec de?"
-  },
-  "S_KERHET-9-Q13": {
-    "stem": "Que är risken si du startar ton taxi avec startkablar?"
-  },
   "S_KERHET-9-Q14": {
     "stem": "Quel uppgift har servon i bilens hydrauliska bromssystem?"
-  },
-  "S_KERHET-9-Q15": {
-    "stem": "Du kontrollerar styrservosystemet sur ton taxibil avec vridning sur ratten. Hjulen reagerar pas omedelbart. que peux troligaste orsaken vara?"
-  },
-  "S_KERHET-9-Q16": {
-    "stem": "Comment dois du hjälpa une kund som har Parkinson sjukdom?"
-  },
-  "S_KERHET-9-Q17": {
-    "stem": "Varför dois du hålla taxibilen ren invändigt?"
-  },
-  "S_KERHET-9-Q18": {
-    "stem": "Que händer si du har un lågt lufttryck i däcken än cela rekommenderad?"
-  },
-  "S_KERHET-9-Q19": {
-    "stem": "Du har stannat pour une synskadad lors de övergångställe pour att gå över gatan. comment dois du uppträda?"
-  },
-  "S_KERHET-9-Q2": {
-    "stem": "Quel märke markerar une person som har Alzheimer sjukdom?"
-  },
-  "S_KERHET-9-Q20": {
-    "stem": "Du upptäcker att motor temperaturen är hög. que är la troliga orsaken?"
-  },
-  "S_KERHET-9-Q21": {
-    "stem": "Où är risken störst att une person råkar ut pour trafik olyckan sur grund de trötthet?"
-  },
-  "S_KERHET-9-Q22": {
-    "stem": "Quel mönster djup dois du sur däcken si cela är juli månad?"
   },
   "S_KERHET-9-Q23": {
     "stem": "As le droit du flytta une bil lors de olyckan si bilen varit inblandad i olyckan?"
@@ -4888,139 +1246,31 @@
   "S_KERHET-9-Q24": {
     "stem": "Que står i centrum de Nollvision i trafiken?"
   },
-  "S_KERHET-9-Q25": {
-    "stem": "Du dois utföra konstgjord andning à une sjuk person. comment dois du veta att luften kommer in i lungorna?"
-  },
-  "S_KERHET-9-Q26": {
-    "stem": "Du använder bränsle (RME) som urvinns de raps. que har la pour fördelar i jämförelse à diesel?"
-  },
-  "S_KERHET-9-Q27": {
-    "stem": "Quand as-tu le droit använda dubbdäck si vinterväglag råder ou bli vinter?"
-  },
-  "S_KERHET-9-Q28": {
-    "stem": "Quel de bilderna används bilbältet bäst pour att skydda lors de une trafikolycka?"
-  },
-  "S_KERHET-9-Q3": {
-    "stem": "Du har un läckage i avgasrörsystemet, kolmonoxid tränger in i bilen. comment peux du upptäcka cela?"
-  },
-  "S_KERHET-9-Q4": {
-    "stem": "Du har kunder avec dig i taxibilen et dois stanna lors de une obligation d'arrêt. comment dois du stanna mjukt?"
-  },
-  "S_KERHET-9-Q5": {
-    "stem": "Gör cela någon skillnad pour miljön comment tung lastad bilen är?"
-  },
-  "S_KERHET-9-Q6": {
-    "stem": "Que leder à att bilen blir överstyrd?"
-  },
-  "S_KERHET-9-Q7": {
-    "stem": "Du tar medicin som peux vara trafikfarlig. Varför bör du då pas köra bil?"
-  },
-  "S_KERHET-9-Q8": {
-    "stem": "Du dois lastsäkra gods i ton taxibil. comment mycket dois lastsäkring tåla åt sidorna?"
-  },
-  "S_KERHET-9-Q9": {
-    "stem": "Quel fördel har ABS bromsar jämfört avec bromsar utan ABS?"
-  },
-  "SAKERHET-1-Q10": {
-    "stem": "Une kund avec dig i bilen plötsligt blir omtöcknad et har diabetes. que bör du göra i första hand?"
-  },
-  "SAKERHET-1-Q11": {
-    "stem": "Que är la troliga orsaken pour une kund som as le droit plötsligt molande värk i bröst som går ut à armar. quel alternativ är rätt?"
-  },
-  "SAKERHET-1-Q12": {
-    "stem": "Du har une person dans ton taxi som har diabetes. Han blir plötsligt blek, kallsvettig et irriterad. que bör du göra?"
-  },
-  "SAKERHET-1-Q13": {
-    "stem": "Que är symtomen pour une person som har demenssjukdom?"
-  },
-  "SAKERHET-1-Q14": {
-    "stem": "Varför har man sänkt hastigheten depuis 50 km/tim à 30 km/tim i vissa tätorter?"
-  },
-  "SAKERHET-1-Q15": {
-    "stem": "Du kommer fram à une olycksplats där finns cela une person som är blek et kallsvettig. Bör du ge personen något att dricka?"
-  },
-  "SAKERHET-1-Q16": {
-    "stem": "Bilföraren sur bilden dois svänga höger. comment dois han uppträda sur un säkert sätt?"
-  },
-  "SAKERHET-1-Q17": {
-    "stem": "Quel sjukdom innebär texten sur bilden?"
-  },
-  "SAKERHET-1-Q19": {
-    "stem": "Cela är höst et börjar använda motorvärmare. lors de quel temperatur löner cela sig ur miljö et bränslebesparande synpunktatt använda motorvärmare?"
-  },
-  "SAKERHET-1-Q20": {
-    "stem": "Que bör du göra pour att påverka miljöeffekten lors de kall start?"
-  },
-  "SAKERHET-1-Q21": {
-    "stem": "Bilen går snett (la drar à höger) kraftigt quand du kör, et däcket är ojämn slitet som sur bilen . que beror cela sur?"
-  },
-  "SAKERHET-1-Q22": {
-    "stem": "Que dois du först vara beredd sur i la här situationen?"
-  },
-  "SAKERHET-1-Q23": {
-    "stem": "Quel lyftteknik bör du använda si du dois lyfta un tungt föremål?"
-  },
-  "SAKERHET-1-Q24": {
-    "stem": "Du as le droit une kund som har gravt hörselskadad. Que dois-tu göra pour att få personen förstå que du säger?"
-  },
-  "SAKERHET-1-Q25": {
-    "stem": "Que har une person avec ledgångsreumatism pour kännetecken?"
-  },
-  "SAKERHET-1-Q28": {
-    "stem": "Du dois sur une lång resa som startar kl 22:00 et slutar kl 03:00. quand är risken störst att råka ut pour une trafikolycka sur grund de trötthet?"
-  },
-  "SAKERHET-1-Q29": {
-    "stem": "Du har une bil som har krockkudde i förareplats et passagerare plats fram. quel alternativ är rätt?"
-  },
-  "SAKERHET-1-Q3": {
-    "stem": "Du kör manuell växlad bil. comment dois du göra ur miljösynpunkt pour att minska bränsleförbrukning?"
-  },
-  "SAKERHET-1-Q30": {
-    "stem": "Quel är cela normalt effektivaste utrustning i bilen som skyddar passagerare mot frontalkrock?"
-  },
-  "SAKERHET-1-Q31": {
-    "stem": "Varför dois bromsvätskan bytas ut avec jämna mellan år?"
-  },
-  "SAKERHET-1-Q32": {
-    "stem": "La här lampan tänds i instrumentpanel under körning. quand du kontrollerar bromsvätskan ser du att la ligger sur mindre än minimum. que bör du göra?"
-  },
-  "SAKERHET-1-Q33": {
-    "stem": "Que innebär lampan sur bilden?"
-  },
-  "SAKERHET-1-Q34": {
-    "stem": "Du dois lasta une cykel i ton bil men du har pas plats à la inne i bilen. comment dois du placera cykeln i bilen ur miljösynpunkt et bränslebesparande?"
-  },
-  "SAKERHET-1-Q35": {
-    "stem": "Quand dois-tu bytabilbarnstol mottill exempelbilbälteskudde?"
-  },
-  "SAKERHET-1-Q36": {
-    "stem": "Une förare som talar i mobiltelefon har sämre reaktionsförmåga än vanligt. Reaktionstiden i normalt fall är 1 sekund. Att använda mobilen lors de körning avec 70 km/tim gör att reaktionstiden blir 2 sekunder. comment mycket är reaktionssträckan lors de 70km/tim?"
-  },
-  "SAKERHET-1-Q37": {
-    "stem": "Que dois-tu se à quand du dois kontrollera luften i däcken som rekommenderas?"
-  },
-  "SAKERHET-1-Q38": {
-    "stem": "Du dois tvätta ton bil men du har pas tillgång à tvätthall. Où doit du tvätta bilen pour att skada miljön så lite som möjligt?"
-  },
-  "SAKERHET-1-Q39": {
-    "stem": "Cela är 1 februari. Du dois koppla une släpvagn à ton taxibil. ton bil är utrustad avec dubbdäck. Vilka däck dois du ha sur släpet?"
-  },
-  "SAKERHET-1-Q40": {
-    "stem": "Vi vet att förare peux drabbas de sömnstörningar et trötthet som påverkar trafiksäkerheten. que är sant?"
-  },
-  "SAKERHET-1-Q5": {
-    "stem": "Varför har barn svårt att bete sig trafiksäkert?"
-  },
-  "SAKERHET-1-Q6": {
-    "stem": "Du dois placera last i bagageutrymme, comment dois du göra cela?"
-  },
   "SAKERHET-1-Q7": {
     "stem": "Que händer si du lastar tung last bak i bilen?"
   },
-  "SAKERHET-1-Q8": {
-    "stem": "Lors de quel ålder börjar barn normalt bete sig trafiksäkert?"
+  "LAGSTIFNING-3-Q10": {
+    "stem": "As-tu le droit de réduire le prix pour un client après une course terminée, lorsque le taximètre est sur STOPPAD ou KASSA ?"
   },
-  "SAKERHET-1-Q9": {
-    "stem": "Du ser däcket sur bilden att cela är ojämn slitet, que peux la troliga orsaken vara?"
+  "LAGSTIFNING-4-Q30": {
+    "stem": "Quel est l'intervalle maximal entre deux contrôles du taximètre ?"
+  },
+  "rs-yt-lag1-taxameter-24": {
+    "stem": "Quel est l'intervalle maximal entre deux contrôles d'un taximètre ?"
+  },
+  "rs-off-arsredovisning-ab": {
+    "stem": "Qui doit publier un rapport annuel ?"
+  },
+  "rs-off-arsbokslut-tid": {
+    "stem": "Quel est le délai pour clôturer les comptes annuels ?"
+  },
+  "rs-off-sjuklon-ag": {
+    "stem": "Qui verse l'indemnité maladie ?"
+  },
+  "rs-owner-forestandare-1-man": {
+    "stem": "Quel délai pour désigner un gérant ?"
+  },
+  "rs-off-affarshandelser": {
+    "stem": "Qu'est-ce qu'une opération comptable ?"
   }
 }

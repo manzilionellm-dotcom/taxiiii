@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T06:52:59.834Z",
+  "generatedAt": "2026-09-14T08:04:21.339Z",
   "imagesDir": null,
   "questionsTotal": 1900,
   "researchCount": 50,
@@ -45,9 +45,9 @@
   ],
   "manziJsonl": 1668,
   "skippedIncomplete": 279,
-  "questionsWithImageUrl": 748,
+  "questionsWithImageUrl": 199,
   "rastersCopied": 0,
-  "questionsLinkedToFile": 748,
+  "questionsLinkedToFile": 199,
   "questionsMissingFile": 0,
   "manifestFiles": 2637,
   "gulLinje": null,

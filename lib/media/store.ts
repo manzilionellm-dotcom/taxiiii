@@ -1,6 +1,12 @@
 import { readFile, stat } from "node:fs/promises";
 import { resolve } from "node:path";
-import { blobRefForManifest, contentTypeFor, isSafeMediaKey, toLogicalKey } from "@/lib/media/paths.mjs";
+import {
+  blobRefForManifest,
+  contentTypeFor,
+  isSafeMediaKey,
+  mediaKeyIsPresent,
+  toLogicalKey,
+} from "@/lib/media/paths.mjs";
 
 type ManifestFile = {
   pathname: string;
@@ -15,6 +21,7 @@ type Manifest = {
 };
 
 let manifestCache: Manifest | null = null;
+let confirmedPdfCache: Set<string> | null = null;
 
 function mediaRoot() {
   return resolve(process.cwd(), "content/media");
@@ -29,6 +36,40 @@ export async function loadManifest(): Promise<Manifest> {
     manifestCache = { version: 1, files: {} };
   }
   return manifestCache;
+}
+
+export async function loadConfirmedPdfPages(): Promise<Set<string>> {
+  if (confirmedPdfCache) return confirmedPdfCache;
+  try {
+    const raw = await readFile(resolve(process.cwd(), "data/pdf-pages-on-blob.json"), "utf8");
+    const keys = JSON.parse(raw) as string[];
+    confirmedPdfCache = new Set(Array.isArray(keys) ? keys : []);
+  } catch {
+    confirmedPdfCache = new Set();
+  }
+  return confirmedPdfCache;
+}
+
+export async function localMediaExists(key: string) {
+  const logical = toLogicalKey(key);
+  if (!logical || !isSafeMediaKey(logical)) return false;
+  const dest = resolve(mediaRoot(), logical);
+  if (!dest.startsWith(mediaRoot())) return false;
+  try {
+    const info = await stat(dest);
+    return info.isFile();
+  } catch {
+    return false;
+  }
+}
+
+export async function mediaKeyAvailable(key: string) {
+  const logical = toLogicalKey(key);
+  if (!logical) return false;
+  if (await localMediaExists(logical)) return true;
+  const entry = (await loadManifest()).files[logical];
+  const confirmedKeys = await loadConfirmedPdfPages();
+  return mediaKeyIsPresent(logical, entry, { confirmedKeys });
 }
 
 export async function readLocalMedia(key: string) {
@@ -50,6 +91,8 @@ async function readBlobMedia(key: string) {
   const logical = toLogicalKey(key);
   if (!logical) return null;
   const entry = (await loadManifest()).files[logical];
+  const confirmedKeys = await loadConfirmedPdfPages();
+  if (!mediaKeyIsPresent(logical, entry, { confirmedKeys })) return null;
   const blobRef = blobRefForManifest(entry);
   if (!blobRef || !process.env.BLOB_READ_WRITE_TOKEN) return null;
   try {

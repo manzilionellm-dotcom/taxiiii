@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-14T06:54:17.462Z",
+  "generatedAt": "2026-09-14T08:04:21.613Z",
   "questions": 1900,
-  "translations": 248,
+  "translations": 383,
   "uniqueBankTokens": 5780,
-  "uniqueHits": 3797,
-  "uniqueMisses": 1983,
+  "uniqueHits": 3799,
+  "uniqueMisses": 1981,
   "uniqueCoveragePct": 65.7,
   "occurrenceTotal": 55148,
-  "occurrenceHits": 53061,
+  "occurrenceHits": 53063,
   "occurrenceCoveragePct": 96.2,
   "allUniqueBankTokens": 7074,
   "allUniqueCoveragePct": 56.7,
-  "lexiconEntries": 4271,
+  "lexiconEntries": 4275,
   "missSample": [
     {
       "sv": "kap",

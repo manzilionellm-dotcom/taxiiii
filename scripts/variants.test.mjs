@@ -8,7 +8,7 @@ import {
   scenarioStem,
 } from "../lib/questions/variants.mjs";
 import { displayFrench, distractorNote, takeawayFor } from "../lib/questions/review.mjs";
-import { MISSING_FRENCH_STEM, looksPlaceholderFrench } from "../lib/questions/french.mjs";
+import { MISSING_FRENCH_STEM, looksHybridFrench, looksPlaceholderFrench } from "../lib/questions/french.mjs";
 
 function assert(cond, message) {
   if (!cond) throw new Error(message);
@@ -59,5 +59,33 @@ assert(distractorNote(q19)?.sv.includes("Tariff 1"), "trap becomes why-others");
 assert(looksPlaceholderFrench("Traduction française à ajouter dans data/translations.fr.json"));
 assert(displayFrench("Traduction française à ajouter dans data/x") === MISSING_FRENCH_STEM);
 assert(!looksPlaceholderFrench("Tu dois transporter 1 à 3 personnes un dimanche."));
+assert(
+  looksHybridFrench(
+    "Du börjar köra taxi kl 08:00 efter une repos journalier. Du gör un uppehåll i arbetet.",
+  ),
+  "fill-fr-stems leftovers are hybrid",
+);
+assert(
+  looksHybridFrench(
+    "00 efter une repos journalier. Du gör un uppehåll i arbetet mellan 09:00- 13 epos journalier enligt vilotids förordning et bestämmelser?",
+  ),
+  "Lionel's cropped Q4 FR line is hybrid",
+);
+assert(
+  displayFrench(
+    "00 efter une repos journalier. Du gör un uppehåll i arbetet mellan 09:00- 13 epos journalier enligt vilotids förordning et bestämmelser?",
+  ) === MISSING_FRENCH_STEM,
+  "screenshot FR garbage is not shown",
+);
+assert(
+  looksHybridFrench("Que peux följden vara de att du kör avec igensatt luftfilter dans ton taxi?"),
+  "igensatt leftover stem is hybrid",
+);
+assert(!looksHybridFrench("Quelle peut être la conséquence de conduire avec un filtre à air encrassé dans ton taxi ?"));
+assert(!looksHybridFrench("Que dois-tu noter dans le tidbok avant de commencer un service en taxi ?"));
+assert(
+  displayFrench("Que peux följden vara de att du kör avec igensatt luftfilter dans ton taxi?") ===
+    MISSING_FRENCH_STEM,
+);
 
 console.log("variants.test OK");
