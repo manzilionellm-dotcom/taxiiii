@@ -4,9 +4,9 @@ import type { ReactNode } from "react";
 import type { Locale } from "@/lib/types";
 
 /**
- * Web study/exam wrapper. The focus-loss overlay (« Innehållet är dolt ») is
- * disabled — taxiiii.vercel.app is a prototype. Native FLAG_SECURE anti-screenshot
- * lives on the Android APK (follow-up), not here.
+ * Web study/exam wrapper. No hide-on-blur overlay — taxiiii.vercel.app is a
+ * prototype and must stay usable when the window loses focus. Native FLAG_SECURE
+ * anti-screenshot lives on the Android APK only.
  */
 export function ProtectedView({
   children,

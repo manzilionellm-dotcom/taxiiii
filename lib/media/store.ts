@@ -69,7 +69,10 @@ export async function mediaKeyAvailable(key: string) {
   if (await localMediaExists(logical)) return true;
   const entry = (await loadManifest()).files[logical];
   const confirmedKeys = await loadConfirmedPdfPages();
-  return mediaKeyIsPresent(logical, entry, { confirmedKeys });
+  if (!mediaKeyIsPresent(logical, entry, { confirmedKeys })) return false;
+  // Private Blob `get()` needs the store token. Without it, a signed URL
+  // still 404s and the client paints the gray « Bilden kunde inte visas » box.
+  return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
 }
 
 export async function readLocalMedia(key: string) {

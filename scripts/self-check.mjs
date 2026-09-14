@@ -230,6 +230,20 @@ if (confirmedPdf.has(q19Key)) {
   assert(!sak7q19.imageUrl, "Q19 must not show a phantom page-19 that is not on Blob");
 }
 
+const flowerQ = compiled.find((item) => item.id === "LAGSTIFNING-7-Q9");
+assert(flowerQ, "LAGSTIFNING-7-Q9 (bukett / allergi) missing");
+assert(
+  flowerQ.stem_sv.includes("stor blombukett") &&
+    flowerQ.options.some((option) => option.text.includes("bagageutrymmet på grund av risk för allergi")),
+  "flower/allergy Manzi Swedish stays verbatim",
+);
+const flowerKey = "pdf-pages/LAGSTIFNING-7/page-09.jpg";
+if (confirmedPdf.has(flowerKey)) {
+  assert(flowerQ.imageUrl === `/media/${flowerKey}`, "flower Q9 exam page opens when Blob has page-09");
+} else {
+  assert(!flowerQ.imageUrl, "flower Q9 must omit phantom Examenssida — page-09 is not in the confirmed Blob inventory");
+}
+
 const translations = JSON.parse(readFileSync(new URL("../data/translations.fr.json", import.meta.url), "utf8"));
 assert(translations["S_KERHET-7-Q19"]?.stem, "Q19 French stem missing");
 assert(!looksPlaceholderFrench(translations["S_KERHET-7-Q19"].stem), "Q19 FR must not be a placeholder");
@@ -474,12 +488,20 @@ assert(
 );
 assert(
   !protectedViewSrc.includes("contentHidden"),
-  "ProtectedView must not show the Innehållet är dolt overlay",
+  "ProtectedView must not show a hide-on-blur overlay",
 );
 assert(
   !protectedViewSrc.includes("addEventListener"),
   "web ProtectedView must not attach capture/focus listeners",
 );
+
+const svI18n = readFileSync(new URL("../lib/i18n/sv.ts", import.meta.url), "utf8");
+const frI18n = readFileSync(new URL("../lib/i18n/fr.ts", import.meta.url), "utf8");
+assert(!svI18n.includes("Innehållet är dolt"), "sv i18n must not ship hide-on-blur overlay title");
+assert(!svI18n.includes("Jag är tillbaka"), "sv i18n must not ship overlay resume CTA");
+assert(!svI18n.includes("Vi döljer frågan när fönstret tappar fokus"), "sv i18n must not claim hide-on-blur");
+assert(!frI18n.includes("Contenu masqué"), "fr i18n must not ship overlay title");
+assert(!/"contentHidden"/.test(svI18n) && !/"resumeExam"/.test(svI18n), "overlay i18n keys must be deleted");
 
 console.log(
   `self-check OK · research ${researchCount} + owner-seed ${ownerCount} + owner-official ${ownerOfficialCount} + owner-import ${ownerImportCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,

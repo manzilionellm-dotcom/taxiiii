@@ -19,11 +19,16 @@ function ExamFigure({
   question,
   alt,
   unavailableLabel,
+  onUnavailable,
 }: {
   question: SessionQuestion;
   alt: string;
   unavailableLabel: string;
+  onUnavailable?: () => void;
 }) {
+  const [ready, setReady] = useState(false);
+  const [failed, setFailed] = useState(false);
+  if (failed) return null;
   return (
     <figure className="exam-figure overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
       <div className="flex min-h-40 items-center justify-center overflow-auto px-2 pt-3">
@@ -32,9 +37,17 @@ function ExamFigure({
           alt={alt}
           watermark={question.watermark}
           unavailableLabel={unavailableLabel}
+          omitOnError
+          onReady={() => setReady(true)}
+          onError={() => {
+            setFailed(true);
+            onUnavailable?.();
+          }}
         />
       </div>
-      <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">{alt}</figcaption>
+      {ready ? (
+        <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">{alt}</figcaption>
+      ) : null}
     </figure>
   );
 }
@@ -64,6 +77,7 @@ export function QuestionCard({
   const [showFr, setShowFr] = useState(supportLevel >= 2);
   const [lightbox, setLightbox] = useState(false);
   const [reviewQueued, setReviewQueued] = useState(false);
+  const [imageFailed, setImageFailed] = useState(false);
 
   const answered = picked !== null;
   const correct = picked === question.answer;
@@ -73,13 +87,19 @@ export function QuestionCard({
   const imageFirst = question.form === "image-first" || Boolean(question.imageFirst);
   const showInlineFigure =
     !answered &&
+    !imageFailed &&
     hasImageUrl(question.imageUrl) &&
     (imageFirst || shouldShowImageBeforeAnswer(question));
-  const showSolutionFigure = answered && hasImageUrl(question.imageUrl);
+  const showSolutionFigure = answered && hasImageUrl(question.imageUrl) && !imageFailed;
   const takeaway = takeawayFor(question);
   const distractors = distractorNote(question);
   const stemFr = displayFrench(french.stem);
   const explanationFr = displayFrench(question.explanation_fr);
+
+  function markImageUnavailable() {
+    setImageFailed(true);
+    setLightbox(false);
+  }
 
   function select(letter: SessionQuestion["answer"]) {
     if (disabled || answered) return;
@@ -110,7 +130,12 @@ export function QuestionCard({
         </header>
 
         {imageFirst && showInlineFigure ? (
-          <ExamFigure question={question} alt={figureAlt} unavailableLabel={dict.imageUnavailable} />
+          <ExamFigure
+            question={question}
+            alt={figureAlt}
+            unavailableLabel={dict.imageUnavailable}
+            onUnavailable={markImageUnavailable}
+          />
         ) : null}
 
         <ClozeText
@@ -136,7 +161,12 @@ export function QuestionCard({
         ) : null}
 
         {!imageFirst && showInlineFigure ? (
-          <ExamFigure question={question} alt={figureAlt} unavailableLabel={dict.imageUnavailable} />
+          <ExamFigure
+            question={question}
+            alt={figureAlt}
+            unavailableLabel={dict.imageUnavailable}
+            onUnavailable={markImageUnavailable}
+          />
         ) : null}
 
         <ul className="space-y-2.5 pb-2">
@@ -258,6 +288,7 @@ export function QuestionCard({
                     question={question}
                     alt={figureAlt}
                     unavailableLabel={dict.imageUnavailable}
+                    onUnavailable={markImageUnavailable}
                   />
                   <button type="button" className="btn-secondary w-full" onClick={() => setLightbox(true)}>
                     {dict.viewExamPage}
@@ -282,10 +313,15 @@ export function QuestionCard({
           </section>
         ) : null}
 
-        {lightbox && hasImageUrl(question.imageUrl) ? (
+        {lightbox && hasImageUrl(question.imageUrl) && !imageFailed ? (
           <div className="exam-lightbox" role="dialog" aria-modal="true" aria-label={dict.examPageCaption}>
             <div className="exam-lightbox-sheet">
-              <ExamFigure question={question} alt={figureAlt} unavailableLabel={dict.imageUnavailable} />
+              <ExamFigure
+                question={question}
+                alt={figureAlt}
+                unavailableLabel={dict.imageUnavailable}
+                onUnavailable={markImageUnavailable}
+              />
               <button type="button" className="btn-primary w-full" onClick={() => setLightbox(false)}>
                 {dict.closeExamPage}
               </button>

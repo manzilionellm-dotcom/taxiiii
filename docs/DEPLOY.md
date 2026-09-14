@@ -15,7 +15,7 @@ In the Vercel dashboard (team **manzi's projects**):
    - `AI_MODEL` (optional)
    - `DATABASE_URL` only after you provision Postgres
    - `SESSION_SECRET` (required in production — signs cookies + media URLs)
-   - `BLOB_READ_WRITE_TOKEN` (Vercel Blob store `store_VmgBARxpqkgZrT73` — required so `/api/media` can read the private 2637-file manifest)
+   - `BLOB_READ_WRITE_TOKEN` (Vercel Blob store `store_VmgBARxpqkgZrT73` — **required** so `/api/media` can read private rasters). If this env var is missing on Production, exam PDF pages 404 and must not be shown as a gray « Examenssida » box. After setting it, run `npm run media:inventory-pdf` so `data/pdf-pages-on-blob.json` lists objects that actually exist (do not invent images).
 
 The app builds and runs **without** a database. Progress is stored in the browser. Questions are loaded **per session** from `/api/questions` (the compiled bank stays on the server). The Android APK is a Capacitor WebView pointed at this host — see [ANDROID.md](ANDROID.md).
 

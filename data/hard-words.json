@@ -159,7 +159,9 @@
     "sv": "dygnsvila",
     "forms": [
       "dygnsvila",
-      "dygnsvilan"
+      "dygnsvilan",
+      "dygnetsvila",
+      "dygnvilan"
     ],
     "fr": "repos journalier"
   },
@@ -387,9 +389,10 @@
     "sv": "igensatt",
     "forms": [
       "igensatt",
-      "igensatta"
+      "igensatta",
+      "igensättning"
     ],
-    "fr": "encrassé / bouché"
+    "fr": "bouché / encrassé"
   },
   {
     "sv": "luftfilter",
@@ -407,5 +410,107 @@
       "påföljden"
     ],
     "fr": "conséquence"
+  },
+  {
+    "sv": "grovsopanläggning",
+    "forms": [
+      "grovsopanläggning",
+      "grovsopanläggningen"
+    ],
+    "fr": "déchetterie / centre de déchets"
+  },
+  {
+    "sv": "accelerationsfält",
+    "forms": [
+      "accelerationsfält",
+      "accelerationsfältet"
+    ],
+    "fr": "voie d'accélération"
+  },
+  {
+    "sv": "andningssvårighet",
+    "forms": [
+      "andningssvårighet",
+      "andningssvårigheter"
+    ],
+    "fr": "difficulté respiratoire"
+  },
+  {
+    "sv": "antifrysvätska",
+    "forms": [
+      "antifrysvätska",
+      "antifrysvätskan"
+    ],
+    "fr": "antigel"
+  },
+  {
+    "sv": "antisladdsystem",
+    "forms": [
+      "antisladdsystem",
+      "antisladdsystemet"
+    ],
+    "fr": "antipatinage (ESP)"
+  },
+  {
+    "sv": "avgassystem",
+    "forms": [
+      "avgassystem",
+      "avgassystemet"
+    ],
+    "fr": "système d'échappement"
+  },
+  {
+    "sv": "bagageutrymme",
+    "forms": [
+      "bagageutrymme",
+      "bagageutrymmet"
+    ],
+    "fr": "coffre"
+  },
+  {
+    "sv": "barnsäkerhetslås",
+    "forms": [
+      "barnsäkerhetslås",
+      "barnsäkerhetslåset"
+    ],
+    "fr": "sécurité enfant"
+  },
+  {
+    "sv": "brytpunktstariff",
+    "forms": [
+      "brytpunktstariff",
+      "brytpunktstariffen"
+    ],
+    "fr": "tarif au point de rupture"
+  },
+  {
+    "sv": "busshållsplats",
+    "forms": [
+      "busshållsplats",
+      "busshållplats",
+      "busshållplatsskylt"
+    ],
+    "fr": "arrêt de bus"
+  },
+  {
+    "sv": "bältesträckare",
+    "forms": [
+      "bältesträckare"
+    ],
+    "fr": "prétensionneur de ceinture"
+  },
+  {
+    "sv": "cerebralpares",
+    "forms": [
+      "cerebralpares"
+    ],
+    "fr": "infirmité motrice cérébrale"
+  },
+  {
+    "sv": "överbevakning",
+    "forms": [
+      "överbevakning"
+    ],
+    "fr": "surveillance excessive"
   }
 ]

@@ -20,6 +20,7 @@ import {
 } from "../lib/media/paths.mjs";
 import { letterFromAnswer, mapFreq, mapTopic, stemKey } from "./research-normalize.mjs";
 import { importMediaTree, resolveImageFile, indexImageTree } from "./import-media.mjs";
+import { inventoryPdfPages } from "./inventory-pdf-blob.mjs";
 
 function assert(cond, message) {
   if (!cond) throw new Error(message);
@@ -134,6 +135,21 @@ assert(
   "dropMissingImageUrl strips phantom url",
 );
 
+const flowerDropped = attachAuthenticMedia(
+  [
+    {
+      id: "LAGSTIFNING-7-Q9",
+      stem_sv:
+        "Du får en körning med en kund som har en stor blombukett med sig. För att buketten inte ska gå sönder vill hon ha den i knät i framsätet. Får hon ha det?",
+    },
+  ],
+  { confirmedKeys: confirmed, files: {} },
+);
+assert(
+  !flowerDropped[0].imageUrl,
+  "flower/allergy Q9 must not mount Examenssida when page-09 is not on Blob",
+);
+
 assert(sanitizeCaption("Gul heldragen linje · trottoarkant") === "Gul heldragen linje trottoarkant", "middle-dot caption");
 assert(sanitizeCaption("Gul heldragen linje ♦ trottoarkant") === "Gul heldragen linje trottoarkant", "diamond caption");
 assert(sanitizeCaption("pÃ¥ trottoarkanten").includes("på"), `mojibake å: ${sanitizeCaption("pÃ¥ trottoarkanten")}`);
@@ -218,6 +234,15 @@ try {
   assert(report.questionsMissingFile === 1, "one missing file");
 } finally {
   rmSync(dir, { recursive: true, force: true });
+}
+
+const inventory = await inventoryPdfPages({ write: false });
+if (!process.env.BLOB_READ_WRITE_TOKEN) {
+  assert(inventory.tokenPresent === false, "inventory sees missing token");
+  assert(
+    /BLOB_READ_WRITE_TOKEN/.test(inventory.blocker || ""),
+    "missing Blob token is a documented blocker — do not invent exam rasters",
+  );
 }
 
 console.log("media-paths.test OK");

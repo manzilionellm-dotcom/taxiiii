@@ -144,10 +144,8 @@ export const sv = {
   yourEmail: "E-post (valfritt, vattenstämpel)",
   captureWarning:
     "Flera avbrott / möjliga skärmfångster på kort tid. Omfördelning av bankinnehåll är förbjuden.",
-  contentHidden: "Innehållet är dolt",
-  resumeExam: "Jag är tillbaka — fortsätt provet",
   protectionNote:
-    "Ingen webbapp kan stoppa skärmbilder på operativsystemnivå. Vi döljer frågan när fönstret tappar fokus.",
+    "Ingen webbapp kan stoppa skärmbilder på operativsystemnivå. Android-appen blockerar skärmbilder med FLAG_SECURE.",
   errorTitle: "Något gick fel",
   errorLead: "Försök igen. Din lokala progress är kvar.",
   errorRetry: "Försök igen",
