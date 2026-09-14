@@ -4,6 +4,39 @@ import { sanitizeCaption, stripFakeExamArt, toImageUrl } from "../lib/media/path
 
 const TOPICS = new Set(["lagstiftning", "sakerhet", "karta", "bkort", "agare"]);
 const LETTERS = ["A", "B", "C", "D", "E"];
+export const CORPORA = ["research", "manzi", "owner-seed", "owner-official", "owner-import"];
+export const OWNER_CORPORA = ["owner-seed", "owner-official", "owner-import"];
+
+const EXPLANATION_SV_KEYS = [
+  "explanation_sv",
+  "explanation",
+  "förklaring",
+  "forklaring",
+  "facit",
+  "facit_sv",
+  "lösning",
+  "losning",
+  "lösningstext",
+  "kommentar",
+  "boktext",
+  "rationale",
+  "text_sv",
+];
+const EXPLANATION_FR_KEYS = [
+  "explanation_fr",
+  "explication",
+  "explication_fr",
+  "facit_fr",
+  "text_fr",
+];
+
+export function knownCorpus(value) {
+  return CORPORA.includes(value) ? value : undefined;
+}
+
+export function isOwnerCorpus(value) {
+  return OWNER_CORPORA.includes(value);
+}
 
 /** Coordinator drop uses finer topics than the four exam tracks. */
 export const TOPIC_ALIASES = {
@@ -153,9 +186,25 @@ function cleanOptions(options) {
     .filter(Boolean);
 }
 
-function fallbackExplanation(record, lang, trap) {
-  const existing = lang === "sv" ? record.explanation_sv : record.explanation_fr;
-  if (typeof existing === "string" && existing.trim()) return existing.trim();
+function firstExplanationField(record, keys) {
+  if (!record || typeof record !== "object") return "";
+  for (const key of keys) {
+    const value = record[key];
+    if (typeof value === "string" && value.trim()) return value;
+  }
+  return "";
+}
+
+/**
+ * Keep incoming explanations verbatim (book-length text included).
+ * Never truncate, rewrite, or replace a non-empty dump field with a short fallback.
+ */
+export function pickExplanation(record, lang, trap) {
+  const existing = firstExplanationField(
+    record,
+    lang === "sv" ? EXPLANATION_SV_KEYS : EXPLANATION_FR_KEYS,
+  );
+  if (existing) return existing;
   const note = lang === "sv" ? record.note_sv : record.note_fr;
   const svTrap = lang === "sv" ? examSafeTrap(trap) : coerceTrap(trap);
   if (typeof note === "string" && note.trim()) {
@@ -163,7 +212,7 @@ function fallbackExplanation(record, lang, trap) {
       lang === "sv"
         ? [svTrap ? `Vanlig fälla: ${svTrap}.` : "", record.source ? `Källa: ${record.source}` : ""]
         : [svTrap ? `Piège fréquent : ${svTrap}.` : "", record.source ? `Source : ${record.source}` : ""];
-    return [note.trim(), ...extra].filter(Boolean).join(" ");
+    return [note, ...extra].filter(Boolean).join(" ");
   }
   if (lang === "sv") {
     return [
@@ -202,6 +251,10 @@ export function coordinatorToResearchSource(record) {
     ...(record.answer != null && record.answer !== "" ? { answer: record.answer } : {}),
     ...(record.explanation_sv ? { explanation_sv: record.explanation_sv } : {}),
     ...(record.explanation_fr ? { explanation_fr: record.explanation_fr } : {}),
+    ...(record.explanation ? { explanation: record.explanation } : {}),
+    ...(record.förklaring ? { förklaring: record.förklaring } : {}),
+    ...(record.forklaring ? { forklaring: record.forklaring } : {}),
+    ...(record.facit ? { facit: record.facit } : {}),
     ...(record.fr ? { fr: record.fr } : {}),
     ...(record.note_sv ? { note_sv: record.note_sv } : {}),
     ...(record.note_fr ? { note_fr: record.note_fr } : {}),
@@ -273,13 +326,13 @@ export function normalizeResearchRecord(record, index) {
     return emptyResult([`${prefix}: skipped — answer ${answer} not among options`]);
   }
   const id = record.id || `rs-${index + 1}`;
-  const explanation_sv = fallbackExplanation(record, "sv", trap);
-  const explanation_fr = fallbackExplanation(record, "fr", trap);
+  const explanation_sv = pickExplanation(record, "sv", trap);
+  const explanation_fr = pickExplanation(record, "fr", trap);
   const freq = mapFreq(record.freq);
   const ownerTagged =
     record.trackHint === "owner" ||
     record.topic === "agare" ||
-    record.corpus === "owner-seed" ||
+    isOwnerCorpus(record.corpus) ||
     topic === "agare";
   const question = {
     id,
@@ -291,7 +344,7 @@ export function normalizeResearchRecord(record, index) {
     explanation_sv,
     explanation_fr,
     source: record.source || "research",
-    corpus: ownerTagged ? "owner-seed" : "research",
+    corpus: knownCorpus(record.corpus) || (ownerTagged ? "owner-seed" : "research"),
     ...(freq ? { freq } : {}),
     ...(trap ? { trap } : {}),
     ...(record.type ? { type: record.type } : {}),
@@ -347,7 +400,7 @@ export function normalizeManziRecord(record, index) {
   }
   const freq = mapFreq(record.freq);
   const ownerTagged =
-    record.trackHint === "owner" || topic === "agare" || record.corpus === "owner-seed";
+    record.trackHint === "owner" || topic === "agare" || isOwnerCorpus(record.corpus);
   const question = {
     id: record.id,
     topic,
@@ -355,14 +408,16 @@ export function normalizeManziRecord(record, index) {
     stem_sv: record.stem_sv,
     options,
     answer,
-    explanation_sv: fallbackExplanation({ ...record, answer }, "sv", trap),
-    explanation_fr: fallbackExplanation({ ...record, answer }, "fr", trap),
+    explanation_sv: pickExplanation({ ...record, answer }, "sv", trap),
+    explanation_fr: pickExplanation({ ...record, answer }, "fr", trap),
     ...(toImageUrl(record.imageUrl) ? { imageUrl: toImageUrl(record.imageUrl) } : {}),
     ...(record.imageCaption || record.caption
       ? { imageCaption: sanitizeCaption(record.imageCaption || record.caption) }
       : {}),
     source: record.source || (researchOwned ? "research" : "manzi"),
-    corpus: ownerTagged ? "owner-seed" : researchOwned ? "research" : record.corpus || "manzi",
+    corpus:
+      knownCorpus(record.corpus) ||
+      (ownerTagged ? "owner-seed" : researchOwned ? "research" : "manzi"),
     ...(freq ? { freq } : {}),
     ...(trap ? { trap } : {}),
     ...(record.type ? { type: record.type } : {}),
@@ -397,7 +452,7 @@ export function isOwnerQuestion(question) {
   return (
     question?.trackHint === "owner" ||
     question?.topic === "agare" ||
-    question?.corpus === "owner-seed"
+    isOwnerCorpus(question?.corpus)
   );
 }
 

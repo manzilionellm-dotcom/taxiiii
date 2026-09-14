@@ -156,9 +156,11 @@ export function QuestionCard({
             <p className="text-sm font-semibold text-black">
               {correct ? dict.correct : dict.incorrect} · {dict.explanation}
             </p>
-            <p className="mt-2 text-[0.98rem] leading-7 text-black">{question.explanation_sv}</p>
+            <p className="mt-2 whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
+              {question.explanation_sv}
+            </p>
             {supportLevel > 0 ? (
-              <p className="mt-2 text-[0.95rem] leading-7 text-[#1d4ed8]">
+              <p className="mt-2 whitespace-pre-wrap text-[0.95rem] leading-7 text-[#1d4ed8]">
                 {question.explanation_fr}
               </p>
             ) : null}

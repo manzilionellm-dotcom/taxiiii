@@ -2,10 +2,12 @@ import { readFileSync, existsSync } from "node:fs";
 import { createRequire } from "node:module";
 import {
   parseJsonl,
+  isOwnerCorpus,
   isResearchShape,
   looksFrenchExamLeak,
   normalizeManziRecord,
   normalizeResearchRecord,
+  pickExplanation,
   sortForStudy,
 } from "./research-normalize.mjs";
 import { compile } from "./compile-banks.mjs";
@@ -64,6 +66,8 @@ const manziCompilable = manzi.filter((record, index) => {
 const compiled = JSON.parse(readFileSync(compiledPath, "utf8"));
 const researchCount = compiled.filter((item) => item.corpus === "research").length;
 const ownerCount = compiled.filter((item) => item.corpus === "owner-seed").length;
+const ownerOfficialCount = compiled.filter((item) => item.corpus === "owner-official").length;
+const ownerImportCount = compiled.filter((item) => item.corpus === "owner-import").length;
 const manziCount = compiled.filter((item) => item.corpus === "manzi").length;
 assert(researchCompilable.length >= 20, "too few compilable research QCM");
 assert(
@@ -73,8 +77,8 @@ assert(
 assert(manziCompilable.length >= 10, "too few compilable Manzi QCM");
 assert(manziCount === manziCompilable.length, "compiled dropped Manzi items that had a valid answer key");
 assert(
-  compiled.length === researchCount + ownerCount + manziCount,
-  "compiled length != research + owner-seed + manzi",
+  compiled.length === researchCount + ownerCount + ownerOfficialCount + ownerImportCount + manziCount,
+  "compiled length != research + owner corpora + manzi",
 );
 assert(ownerCount >= 15, `owner-seed too small: ${ownerCount}`);
 assert(
@@ -175,7 +179,7 @@ assert(
 );
 
 const compiledResearch = compiled.filter(
-  (item) => item.corpus === "research" || item.corpus === "owner-seed",
+  (item) => item.corpus === "research" || isOwnerCorpus(item.corpus),
 );
 for (const question of compiledResearch) {
   assert(!looksFrenchExamLeak(question.stem_sv), `French leaked into stem_sv ${question.id}`);
@@ -215,7 +219,51 @@ for (const id of bannedFakeQcm) {
   );
 }
 
+const bookSv = [
+  "Bokförklaring stycke 1: taxitrafiktillstånd prövas av Transportstyrelsen.",
+  "",
+  "Stycke 2: yrkeskunnande omfattar rättsregler, ekonomi, drift och fallstudier.",
+  "",
+  "Stycke 3: den här texten får inte kortas eller ersättas vid import.",
+].join("\n");
+const bookFr = "Explication longue à conserver mot pour mot, comme un livre.";
+const imported = normalizeManziRecord(
+  {
+    id: "pc-owner-book-keep",
+    topic: "agare",
+    trackHint: "owner",
+    corpus: "owner-import",
+    stem_sv: "Vilken myndighet prövar taxitrafiktillstånd i denna importrad?",
+    options: [
+      { letter: "A", text: "Transportstyrelsen" },
+      { letter: "B", text: "Kommunen" },
+    ],
+    answer: "A",
+    explanation_sv: bookSv,
+    explanation_fr: bookFr,
+    type: "delprov-1",
+    source: "lionel-pc-dump",
+  },
+  0,
+);
+assert(imported.question, "owner-import fixture must compile");
+assert(imported.question.corpus === "owner-import", "PC dump corpus must stay owner-import");
+assert(imported.question.explanation_sv === bookSv, "must keep full SV explanation verbatim");
+assert(imported.question.explanation_fr === bookFr, "must keep full FR explanation verbatim");
+assert(imported.question.type === "delprov-1", "delprov type hint must pass through");
+
+const altField = pickExplanation(
+  { forklaring: bookSv, note_sv: "kort anteckning som inte får ersätta facit" },
+  "sv",
+  "",
+);
+assert(altField === bookSv, "forklaring/facit aliases must win over generated fallback");
+assert(
+  !compiled.some((item) => item.id === "pc-owner-book-keep"),
+  "import fixture must not leak into the compiled bank",
+);
+
 console.log(
-  `self-check OK · research ${researchCount} + owner-seed ${ownerCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,
+  `self-check OK · research ${researchCount} + owner-seed ${ownerCount} + owner-official ${ownerOfficialCount} + owner-import ${ownerImportCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,
 );
 void require;
