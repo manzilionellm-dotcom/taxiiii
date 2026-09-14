@@ -11,6 +11,7 @@ import {
   isManziShape,
   isOwnerCorpus,
   isResearchShape,
+  knownCorpus,
   normalizeManziRecord,
   normalizeResearchRecord,
   parseJsonl,
@@ -38,6 +39,35 @@ function readJsonl(rel) {
   const file = join(root, rel);
   if (!existsSync(file)) return { records: [], issues: [] };
   return parseJsonl(readFileSync(file, "utf8"));
+}
+
+function readImportDir() {
+  const dir = join(root, "data/imports");
+  if (!existsSync(dir)) return { records: [], issues: [], files: [] };
+  const records = [];
+  const issues = [];
+  const files = [];
+  for (const name of readdirSync(dir).sort()) {
+    if (!name.endsWith(".jsonl") && !name.endsWith(".ndjson")) continue;
+    files.push(name);
+    const parsed = parseJsonl(readFileSync(join(dir, name), "utf8"));
+    issues.push(...parsed.issues.map((issue) => `${name}: ${issue}`));
+    records.push(...parsed.records);
+  }
+  return { records, issues, files };
+}
+
+function shapeImportRecord(record) {
+  const trackHint =
+    record.trackHint ||
+    (record.track === "owner" || record.track === "taxi" || record.track === "b"
+      ? record.track
+      : undefined);
+  return {
+    ...record,
+    ...(trackHint ? { trackHint } : {}),
+    corpus: knownCorpus(record.corpus) || "owner-import",
+  };
 }
 
 function writeResearchSeed() {
@@ -84,8 +114,9 @@ function mergeVocab() {
 export function compile({ check = false, images = null } = {}) {
   writeResearchSeed();
   const researchFile = readJsonl("data/research-bank.jsonl");
+  const importFile = readImportDir();
   const manziFile = readJsonl("data/questions.jsonl");
-  const issues = [...researchFile.issues, ...manziFile.issues];
+  const issues = [...researchFile.issues, ...importFile.issues, ...manziFile.issues];
   const warnings = [];
   const questions = [];
   const translations = {};
@@ -123,6 +154,14 @@ export function compile({ check = false, images = null } = {}) {
       ? normalizeResearchRecord(record, index)
       : normalizeManziRecord({ ...record, corpus: record.corpus || "research" }, index);
     take(result, { duplicateMessage: `duplicate id ${record.id} (kept first / research)` });
+  });
+
+  importFile.records.forEach((record, index) => {
+    const shaped = shapeImportRecord(record);
+    const result = isResearchShape(shaped)
+      ? normalizeResearchRecord(shaped, index)
+      : normalizeManziRecord(shaped, index);
+    take(result, { duplicateMessage: `import id ${record.id} skipped — already compiled` });
   });
 
   manziFile.records.forEach((record, index) => {
@@ -176,7 +215,7 @@ export function compile({ check = false, images = null } = {}) {
 
   if (check) {
     console.log(
-      `OK compile ${ordered.length} (research ${researchCount} + owner-seed ${ownerSeedCount} + owner-official ${ownerOfficialCount} + owner-import ${ownerImportCount} + manzi ${manziCount})`,
+      `OK compile ${ordered.length} (research ${researchCount} + owner-seed ${ownerSeedCount} + owner-official ${ownerOfficialCount} + owner-import ${ownerImportCount} + manzi ${manziCount}; imports ${importFile.records.length} from ${importFile.files.length} files)`,
     );
     return ordered;
   }
@@ -209,6 +248,8 @@ export function compile({ check = false, images = null } = {}) {
           ownerImportCount,
           manziCount,
           researchJsonl: researchFile.records.length,
+          importJsonl: importFile.records.length,
+          importFiles: importFile.files,
           manziJsonl: manziFile.records.length,
           skippedIncomplete: warnings.length,
           questionsWithImageUrl: withUrl.length,

@@ -97,6 +97,7 @@ Import rules for that dump:
 - Keep the incoming `corpus` when it is `owner-seed`, `owner-official`, `owner-import`, `research`, or `manzi`. New owner dumps should use `corpus: "owner-import"` so the existing 42 `owner-seed` QCMs stay untouched.
 - Optional delprov hint: `type: "delprov-1"` … `delprov-4` (TSFS 2021:118).
 - Append only. Do not delete or rewrite Manzi or the owner-seed rows.
+- Drop files under `data/imports/*.jsonl` (for example the 301-line Taxi Ägare EXE bank). The compiler reads that folder after `research-bank.jsonl` and before Manzi, dedupes by `id`, maps `options[].text_sv` → `text`, and maps `track: "owner"` → `trackHint`. Missing `explanation_fr` becomes a one-line facit translation (`Bonne réponse : …`), never invented law.
 
 ## Manzi schema
 

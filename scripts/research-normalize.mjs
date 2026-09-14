@@ -38,6 +38,10 @@ export function isOwnerCorpus(value) {
   return OWNER_CORPORA.includes(value);
 }
 
+export function ownerTrackHint(record) {
+  return record?.trackHint === "owner" || record?.track === "owner";
+}
+
 /** Coordinator drop uses finer topics than the four exam tracks. */
 export const TOPIC_ALIASES = {
   vilotid: "lagstiftning",
@@ -180,7 +184,10 @@ function cleanOptions(options) {
       }
       if (!option || typeof option !== "object") return null;
       const letter = LETTERS.includes(option.letter) ? option.letter : LETTERS[index];
-      const text = typeof option.text === "string" ? option.text.trim() : "";
+      const text =
+        (typeof option.text === "string" && option.text.trim()) ||
+        (typeof option.text_sv === "string" && option.text_sv.trim()) ||
+        "";
       return letter && text ? { letter, text } : null;
     })
     .filter(Boolean);
@@ -199,6 +206,20 @@ function firstExplanationField(record, keys) {
  * Keep incoming explanations verbatim (book-length text included).
  * Never truncate, rewrite, or replace a non-empty dump field with a short fallback.
  */
+/** Translate a facit line only — never invent a legal commentary. */
+export function briefFacitFr(explanation_sv, answer, source) {
+  const letter = LETTERS.includes(answer) ? answer : "";
+  const rest = String(explanation_sv || "")
+    .trim()
+    .replace(/^rätt\s+svar:\s*/i, "")
+    .trim();
+  if (rest) return `Bonne réponse : ${rest}`;
+  if (letter) {
+    return source ? `Bonne réponse : ${letter}. Source : ${source}` : `Bonne réponse : ${letter}.`;
+  }
+  return source ? `Source : ${source}` : "Bonne réponse selon le facit.";
+}
+
 export function pickExplanation(record, lang, trap) {
   const existing = firstExplanationField(
     record,
@@ -330,7 +351,7 @@ export function normalizeResearchRecord(record, index) {
   const explanation_fr = pickExplanation(record, "fr", trap);
   const freq = mapFreq(record.freq);
   const ownerTagged =
-    record.trackHint === "owner" ||
+    ownerTrackHint(record) ||
     record.topic === "agare" ||
     isOwnerCorpus(record.corpus) ||
     topic === "agare";
@@ -400,7 +421,14 @@ export function normalizeManziRecord(record, index) {
   }
   const freq = mapFreq(record.freq);
   const ownerTagged =
-    record.trackHint === "owner" || topic === "agare" || isOwnerCorpus(record.corpus);
+    ownerTrackHint(record) || topic === "agare" || isOwnerCorpus(record.corpus);
+  const explanation_sv = pickExplanation({ ...record, answer }, "sv", trap);
+  const incomingFr = firstExplanationField(record, EXPLANATION_FR_KEYS);
+  const explanation_fr =
+    incomingFr ||
+    (isOwnerCorpus(record.corpus) || ownerTagged
+      ? briefFacitFr(explanation_sv, answer, record.source)
+      : pickExplanation({ ...record, answer }, "fr", trap));
   const question = {
     id: record.id,
     topic,
@@ -408,8 +436,8 @@ export function normalizeManziRecord(record, index) {
     stem_sv: record.stem_sv,
     options,
     answer,
-    explanation_sv: pickExplanation({ ...record, answer }, "sv", trap),
-    explanation_fr: pickExplanation({ ...record, answer }, "fr", trap),
+    explanation_sv,
+    explanation_fr,
     ...(toImageUrl(record.imageUrl) ? { imageUrl: toImageUrl(record.imageUrl) } : {}),
     ...(record.imageCaption || record.caption
       ? { imageCaption: sanitizeCaption(record.imageCaption || record.caption) }
