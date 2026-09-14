@@ -57,3 +57,12 @@ android/.idea/
 *.apk
 *.aab
 !releases/*.apk
+
+# Play upload signing — never commit keystores or passwords
+/secrets/*
+!/secrets/README.md
+/dist/
+*.jks
+*.keystore
+*.p12
+keystore.properties

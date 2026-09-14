@@ -1,12 +1,16 @@
-# KörkortGO APK
+# KörkortGO by MZ — Android artifacts
 
-**Id:** `se.mz.korkortgo` · **Label:** KörkortGO · **by MZ** · 3.9 MB debug-signed.
+**Id:** `se.mz.korkortgo` · **Label:** KörkortGO by MZ · slogan **Förstå teorin. Klara provet.**
 
-The `taxiiii` repo is private — raw GitHub URLs 404 unless you are logged in.
+Play Console wants the **AAB**, not this folder’s old debug APK.
 
-**Public download:** https://gofile.io/d/N86Btgvw
+| Artifact | Where (not committed) |
+|---|---|
+| Play upload AAB | `dist/play/KorkortGO-by-MZ-1.0.0.aab` |
+| Sideload release APK | `dist/play/KorkortGO-by-MZ-1.0.0.apk` |
+| Gradle AAB | `android/app/build/outputs/bundle/release/app-release.aab` |
+| Gradle APK | `android/app/build/outputs/apk/release/app-release.apk` |
 
-Logged-in owner: [blob Download](https://github.com/manzilionellm-dotcom/taxiiii/blob/cursor/swedish-teoriprov-app-7481/releases/KorkortGO-by-MZ-debug.apk).  
-Cursor artifact: https://cursor.com/agents/bc-5e3e7990-e148-4fbc-94c3-bb56f6697481 (`KorkortGO-by-MZ-debug.apk`).
+Rebuild: `npm run aab`. Signing note (gitignored): `secrets/PLAY-SIGNING.note.md`. Steps: [docs/PLAY-CONSOLE.md](../docs/PLAY-CONSOLE.md).
 
-Enable **Install unknown apps**, open the APK, install. See [docs/ANDROID.md](../docs/ANDROID.md).
+The debug APK `KorkortGO-by-MZ-debug.apk` is only for an old sideload test (debug key). Uninstall it before installing the release-signed APK or the Play build.

@@ -7,20 +7,40 @@ const src = readFileSync(join(root, "lib/branding.ts"), "utf8");
 const appId = src.match(/appId:\s*"([^"]+)"/)?.[1];
 if (!appId) throw new Error("native.appId missing from lib/branding.ts");
 
+const displayName =
+  src.match(/displayName:\s*"([^"]+)"/)?.[1] ??
+  src.match(/appName:\s*"([^"]+)"/)?.[1] ??
+  "KörkortGO by MZ";
+
 const rel = appId.replace(/\./g, "/");
 const javaFile = join(root, "android/app/src/main/java", rel, "MainActivity.java");
 const ktFile = join(root, "android/app/src/main/java", rel, "MainActivity.kt");
 
 const javaSource = `package ${appId};
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.WindowManager;
 import com.getcapacitor.BridgeActivity;
 
+/**
+ * Play Store shell for KörkortGO by MZ.
+ *
+ * Anti-screenshot is native {@link WindowManager.LayoutParams#FLAG_SECURE} on this
+ * window (screenshots, screen capture, Recents thumbnail, lock-screen preview,
+ * multi-window). Do not rely on web blur / focus-hide for this.
+ */
 public class MainActivity extends BridgeActivity {
   @Override
   public void onCreate(Bundle savedInstanceState) {
+    applySecureFlag();
     super.onCreate(savedInstanceState);
+    applySecureFlag();
+  }
+
+  @Override
+  public void onStart() {
+    super.onStart();
     applySecureFlag();
   }
 
@@ -30,24 +50,46 @@ public class MainActivity extends BridgeActivity {
     applySecureFlag();
   }
 
+  @Override
+  public void onAttachedToWindow() {
+    super.onAttachedToWindow();
+    applySecureFlag();
+  }
+
+  @Override
+  public void onWindowFocusChanged(boolean hasFocus) {
+    super.onWindowFocusChanged(hasFocus);
+    applySecureFlag();
+  }
+
   private void applySecureFlag() {
-    getWindow().setFlags(
-      WindowManager.LayoutParams.FLAG_SECURE,
-      WindowManager.LayoutParams.FLAG_SECURE
-    );
+    if (getWindow() == null) {
+      return;
+    }
+    getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+      setRecentsScreenshotEnabled(false);
+    }
   }
 }
 `;
 
 const ktSource = `package ${appId}
 
+import android.os.Build
 import android.os.Bundle
 import android.view.WindowManager
 import com.getcapacitor.BridgeActivity
 
 class MainActivity : BridgeActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
+    applySecureFlag()
     super.onCreate(savedInstanceState)
+    applySecureFlag()
+  }
+
+  override fun onStart() {
+    super.onStart()
     applySecureFlag()
   }
 
@@ -56,11 +98,22 @@ class MainActivity : BridgeActivity() {
     applySecureFlag()
   }
 
+  override fun onAttachedToWindow() {
+    super.onAttachedToWindow()
+    applySecureFlag()
+  }
+
+  override fun onWindowFocusChanged(hasFocus: Boolean) {
+    super.onWindowFocusChanged(hasFocus)
+    applySecureFlag()
+  }
+
   private fun applySecureFlag() {
-    window.setFlags(
-      WindowManager.LayoutParams.FLAG_SECURE,
-      WindowManager.LayoutParams.FLAG_SECURE
-    )
+    val window = window ?: return
+    window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+      setRecentsScreenshotEnabled(false)
+    }
   }
 }
 `;
@@ -69,21 +122,21 @@ if (existsSync(ktFile)) {
   writeFileSync(ktFile, ktSource);
   console.log("patched", ktFile);
 } else {
+  mkdirSync(dirname(javaFile), { recursive: true });
   writeFileSync(javaFile, javaSource);
   console.log("wrote", javaFile);
 }
 
 const stringsFile = join(root, "android/app/src/main/res/values/strings.xml");
 if (existsSync(stringsFile)) {
-  const appName = src.match(/appName:\s*"([^"]+)"/)?.[1] ?? "KörkortGO";
   let xml = readFileSync(stringsFile, "utf8");
   xml = xml.replace(
     /<string name="app_name">[^<]*<\/string>/,
-    `<string name="app_name">${appName}</string>`,
+    `<string name="app_name">${displayName}</string>`,
   );
   xml = xml.replace(
     /<string name="title_activity_main">[^<]*<\/string>/,
-    `<string name="title_activity_main">${appName}</string>`,
+    `<string name="title_activity_main">${displayName}</string>`,
   );
   writeFileSync(stringsFile, xml);
 }
