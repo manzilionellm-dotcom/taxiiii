@@ -4,17 +4,17 @@ Visible brand is **KörkortGO** (`by MZ`). Slogan: **Förstå teorin. Klara prov
 
 All of those strings live in **[`lib/branding.ts`](lib/branding.ts)** — change them there, not in UI screens. Repo / npm / Vercel project name can stay `taxiiii`.
 
-Professional Swedish teoriprov prep for **Körkort** (permis B) and **Taxi** (taxiförarlegitimation). Bilingual SV + FR. Linked Vercel project: `manzis-projects-3add5703/taxiiii`.
+Professional Swedish teoriprov prep for **Körkort** (permis B), **Taxi** (taxiförarlegitimation) and **Taxi Företag** (taxitrafiktillstånd / taxiägare). Bilingual SV + FR. Linked Vercel project: `manzis-projects-3add5703/taxiiii`.
 
 This is not a toy landing page. It is a working vertical slice:
 
-- Separate **Körkort** and **Taxi** journeys, scores, and stats
+- Separate **Körkort**, **Taxi** and **Taxi Företag** journeys, scores, and stats
 - Question screen: Swedish **black**, French **blue**, hard words **bold red** + cloze
 - Taxi **Calcul** (körekonomi, trip price, distance/time, dygnsvila)
 - **IA** chat grounded on the question corpus (refuses out-of-bank answers)
 - Readiness score; at **≥ 95%** shows « Bravo, tu es prêt à passer l'examen. » / « Bravo, du är redo att göra provet. »
 - SRS 5–10 min sessions, interleaving, fragile-profile mode
-- **Taxi Företag** (taxiägare / business) nav item is **coming soon**
+- **Taxi Företag** (`/owner`) — taxitrafiktillstånd seed (public Transportstyrelsen / SFS), own progress keys
 
 ## Content rule
 

@@ -1,19 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { ReadinessWidget } from "@/components/readiness-widget";
 import { useAppState } from "@/components/app-state";
 import { trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
 import { isDue } from "@/lib/progress/srs";
+import { updateProfile } from "@/lib/progress/store";
 import { useQuestionCatalog } from "@/lib/questions/use-catalog";
 import { topicsForTrack, type Track } from "@/lib/types";
 
 export function TrackDashboard({ track }: { track: Track }) {
-  const { state } = useAppState();
+  const { state, setState } = useAppState();
   const dict = t(state.profile.locale);
+
+  useEffect(() => {
+    const alreadyTracked = state.profile.tracks.includes(track);
+    if (alreadyTracked && state.profile.activeTrack === track) return;
+    setState(
+      updateProfile(state, {
+        tracks: alreadyTracked ? state.profile.tracks : [...state.profile.tracks, track],
+        activeTrack: track,
+      }),
+    );
+  }, [setState, state, track]);
   const { catalog } = useQuestionCatalog(track);
   const readiness = useMemo(
     () => computeReadiness(track, catalog, state.attempts, state.exams),
@@ -53,7 +65,9 @@ export function TrackDashboard({ track }: { track: Track }) {
         <p className="text-xs uppercase tracking-[0.16em] text-[#6b6560]">{dict.dashboard}</p>
         <h1 className="font-serif text-3xl text-black">{trackLabel(track)}</h1>
         <p className="max-w-xl text-[#6b6560]">{trackProduct(track)}</p>
-        <p className="max-w-xl text-sm text-[#6b6560]">{dict.studyOrder}</p>
+        <p className="max-w-xl text-sm text-[#6b6560]">
+          {track === "owner" ? dict.studyOrderOwner : dict.studyOrder}
+        </p>
         <p className="text-xs leading-5 text-[#8a8276]">{dict.demoNote}</p>
       </header>
 

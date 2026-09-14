@@ -10,6 +10,7 @@ export const questionSchema = z
   .object({
     id: z.string().min(1),
     topic: z.enum(TOPICS),
+    trackHint: z.enum(["b", "taxi", "owner"]).optional(),
     stem_sv: z.string().min(1),
     options: z.array(optionSchema).min(2),
     answer: z.enum(["A", "B", "C", "D", "E"]),
@@ -18,7 +19,7 @@ export const questionSchema = z
     imageUrl: z.string().optional(),
     imageCaption: z.string().optional(),
     source: z.string().optional(),
-    corpus: z.enum(["research", "manzi"]).optional(),
+    corpus: z.enum(["research", "manzi", "owner-seed"]).optional(),
     freq: z.enum(["high", "medium", "low"]).optional(),
     trap: z.string().optional(),
     type: z.string().optional(),

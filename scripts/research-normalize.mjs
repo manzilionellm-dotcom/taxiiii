@@ -2,7 +2,7 @@
 
 import { sanitizeCaption, stripFakeExamArt, toImageUrl } from "../lib/media/paths.mjs";
 
-const TOPICS = new Set(["lagstiftning", "sakerhet", "karta", "bkort"]);
+const TOPICS = new Set(["lagstiftning", "sakerhet", "karta", "bkort", "agare"]);
 const LETTERS = ["A", "B", "C", "D", "E"];
 
 /** Coordinator drop uses finer topics than the four exam tracks. */
@@ -12,6 +12,10 @@ export const TOPIC_ALIASES = {
   vagskyltar: "sakerhet",
   bemotande: "sakerhet",
   fordonskannedom: "sakerhet",
+  foretag: "agare",
+  taxiagare: "agare",
+  owner: "agare",
+  tillstand: "agare",
 };
 
 export function parseJsonl(text) {
@@ -202,6 +206,8 @@ export function coordinatorToResearchSource(record) {
     ...(record.note_sv ? { note_sv: record.note_sv } : {}),
     ...(record.note_fr ? { note_fr: record.note_fr } : {}),
     source: record.source || "research",
+    ...(record.trackHint ? { trackHint: record.trackHint } : {}),
+    ...(record.corpus ? { corpus: record.corpus } : {}),
     ...(record.type ? { type: record.type } : {}),
     ...(mapFreq(record.freq) ? { freq: mapFreq(record.freq) } : {}),
     ...(coerceTrap(record.trap) ? { trap: coerceTrap(record.trap) } : {}),
@@ -242,7 +248,7 @@ export function normalizeResearchRecord(record, index) {
   }
   const topic = mapTopic(record.topic);
   if (record.topic && !topic) {
-    issues.push(`${prefix}: topic must be lagstiftning|sakerhet|karta|bkort`);
+    issues.push(`${prefix}: topic must be lagstiftning|sakerhet|karta|bkort|agare`);
   }
   const { stem, options: embedded } = splitSvAlts(record.sv);
   const options = embedded.length ? embedded : cleanOptions(record.options);
@@ -270,16 +276,22 @@ export function normalizeResearchRecord(record, index) {
   const explanation_sv = fallbackExplanation(record, "sv", trap);
   const explanation_fr = fallbackExplanation(record, "fr", trap);
   const freq = mapFreq(record.freq);
+  const ownerTagged =
+    record.trackHint === "owner" ||
+    record.topic === "agare" ||
+    record.corpus === "owner-seed" ||
+    topic === "agare";
   const question = {
     id,
-    topic: topic || "lagstiftning",
+    topic: topic || (ownerTagged ? "agare" : "lagstiftning"),
+    ...(ownerTagged ? { trackHint: "owner" } : {}),
     stem_sv: stem,
     options,
     answer,
     explanation_sv,
     explanation_fr,
     source: record.source || "research",
-    corpus: "research",
+    corpus: ownerTagged ? "owner-seed" : "research",
     ...(freq ? { freq } : {}),
     ...(trap ? { trap } : {}),
     ...(record.type ? { type: record.type } : {}),
@@ -326,7 +338,7 @@ export function normalizeManziRecord(record, index) {
   }
   const topic = mapTopic(record.topic);
   if (!topic) {
-    issues.push(`${prefix}: topic must be lagstiftning|sakerhet|karta|bkort`);
+    issues.push(`${prefix}: topic must be lagstiftning|sakerhet|karta|bkort|agare`);
     return { issues, warnings, question: null };
   }
   let trap = researchOwned ? examSafeTrap(record.trap) : coerceTrap(record.trap);
@@ -334,9 +346,12 @@ export function normalizeManziRecord(record, index) {
     warnings.push(`${prefix}: dropped French/coaching trap`);
   }
   const freq = mapFreq(record.freq);
+  const ownerTagged =
+    record.trackHint === "owner" || topic === "agare" || record.corpus === "owner-seed";
   const question = {
     id: record.id,
     topic,
+    ...(ownerTagged ? { trackHint: "owner" } : {}),
     stem_sv: record.stem_sv,
     options,
     answer,
@@ -347,7 +362,7 @@ export function normalizeManziRecord(record, index) {
       ? { imageCaption: sanitizeCaption(record.imageCaption || record.caption) }
       : {}),
     source: record.source || (researchOwned ? "research" : "manzi"),
-    corpus: researchOwned ? "research" : record.corpus || "manzi",
+    corpus: ownerTagged ? "owner-seed" : researchOwned ? "research" : record.corpus || "manzi",
     ...(freq ? { freq } : {}),
     ...(trap ? { trap } : {}),
     ...(record.type ? { type: record.type } : {}),
@@ -378,7 +393,18 @@ export function starterRank(question) {
   return index === -1 ? STARTER_PATTERNS.length : index;
 }
 
+export function isOwnerQuestion(question) {
+  return (
+    question?.trackHint === "owner" ||
+    question?.topic === "agare" ||
+    question?.corpus === "owner-seed"
+  );
+}
+
 export function studyPriority(question) {
+  if (isOwnerQuestion(question)) {
+    return question.freq === "high" || HIGH_FREQ.test(haystack(question)) ? 3 : 4;
+  }
   const research = question.corpus === "research";
   const high = question.freq === "high" || HIGH_FREQ.test(haystack(question));
   if (research && high) return 0;
@@ -401,7 +427,10 @@ export function sortForStudy(questions) {
   const head = [];
   for (const pattern of STARTER_PATTERNS) {
     const index = remaining.findIndex(
-      (question) => studyPriority(question) === 0 && pattern.test(haystack(question)),
+      (question) =>
+        studyPriority(question) === 0 &&
+        !isOwnerQuestion(question) &&
+        pattern.test(haystack(question)),
     );
     if (index !== -1) head.push(...remaining.splice(index, 1));
   }

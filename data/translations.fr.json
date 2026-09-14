@@ -327,5 +327,131 @@
   },
   "rs-taxikortet-demo-vila": {
     "stem": "La phrase officielle sur les 11 heures est-elle exacte ?"
+  },
+  "rs-owner-tillstand-plikt": {
+    "stem": "Que faut-il pour exercer le taxi selon la loi ?"
+  },
+  "rs-owner-provningsmyndighet": {
+    "stem": "Quelle autorité instruit le permis d'exploiter ?"
+  },
+  "rs-owner-lamplighet": {
+    "stem": "Quels trois critères d'aptitude ?"
+  },
+  "rs-owner-kapital-100-50": {
+    "stem": "Quels fonds propres minimaux ?"
+  },
+  "rs-owner-fortlopande-ekonomi": {
+    "stem": "Les ressources financières sont-elles contrôlées ensuite ?"
+  },
+  "rs-owner-trafikansvarig-ab": {
+    "stem": "Qui est traficansvarig dans une SA ?"
+  },
+  "rs-owner-trafikansvarig-hb": {
+    "stem": "Qui est traficansvarig dans une société en nom collectif ?"
+  },
+  "rs-owner-yrkeskunnande-amnen": {
+    "stem": "Que couvre l'épreuve de compétence du titulaire ?"
+  },
+  "rs-owner-prov-ts-tv": {
+    "stem": "Qui conçoit et qui organise l'épreuve ?"
+  },
+  "rs-owner-giltighet-tills-vidare": {
+    "stem": "Quelle est la durée du permis d'exploiter ?"
+  },
+  "rs-owner-dodsfall-6-man": {
+    "stem": "Décès ou faillite : que devient le permis ?"
+  },
+  "rs-owner-forestandare-1-man": {
+    "stem": "Délai pour désigner un föreståndare ?"
+  },
+  "rs-owner-gods-huvudsak": {
+    "stem": "Le titulaire peut-il aussi transporter des marchandises ?"
+  },
+  "rs-owner-jamforpris-def": {
+    "stem": "Définition du jämförpris pour l'exploitant ?"
+  },
+  "rs-owner-prisuppgift-700": {
+    "stem": "Quand donner un prix maximum contraignant ?"
+  },
+  "rs-owner-prisuppgift-spara": {
+    "stem": "Combien de temps conserver les preuves de prix ?"
+  },
+  "rs-owner-prisdekal-inne-ute": {
+    "stem": "Où afficher les tarifs ?"
+  },
+  "rs-owner-taxa-ej-andra": {
+    "stem": "Comment construire le tarif ?"
+  },
+  "rs-owner-redovisning-vecka": {
+    "stem": "Fréquence d'envoi au redovisningscentral ?"
+  },
+  "rs-owner-redovisning-tradlost": {
+    "stem": "Comment transmettre les données taximètre ?"
+  },
+  "rs-owner-redovisning-obesikt": {
+    "stem": "Taximètre inutilisé : que faire ?"
+  },
+  "rs-owner-utan-taxameter-bc": {
+    "stem": "Sans taximètre : que faut-il ?"
+  },
+  "rs-owner-betalning-bc": {
+    "stem": "Paiement sans taximètre ?"
+  },
+  "rs-owner-anmal-fordon-forst": {
+    "stem": "Quand déclarer le véhicule ?"
+  },
+  "rs-owner-regbesikt-taxi": {
+    "stem": "Quelle condition pour déclarer un véhicule ?"
+  },
+  "rs-owner-avanmal-gula": {
+    "stem": "Fin d'usage taxi : que faire ?"
+  },
+  "rs-owner-sanktion-fordon-6000": {
+    "stem": "Quelle amende administrative pour un véhicule non déclaré ?"
+  },
+  "rs-owner-sanktion-styrelse-10000": {
+    "stem": "Changement de conseil non déclaré ?"
+  },
+  "rs-owner-aterkallelse-anvands-ej": {
+    "stem": "Permis inutilisé : retrait ?"
+  },
+  "rs-owner-aterkallelse-skatt-overforing": {
+    "stem": "Quels manquements entraînent le retrait ?"
+  },
+  "rs-owner-olamplighet-3-5": {
+    "stem": "Durée d'interdiction après retrait ?"
+  },
+  "rs-owner-varning": {
+    "stem": "Alternative au retrait ?"
+  },
+  "rs-owner-anlita-utan-tfl": {
+    "stem": "Recruter sans carte professionnelle ?"
+  },
+  "rs-owner-olaga-taxitrafik": {
+    "stem": "Sanction de l'exploitation sans permis ?"
+  },
+  "rs-owner-taxameter-plomb-besikt": {
+    "stem": "Devoirs de l'exploitant sur le taximètre ?"
+  },
+  "rs-owner-kvitto-erbjuda": {
+    "stem": "Quel justificatif après la course ?"
+  },
+  "rs-owner-trafikforsakring-skylt": {
+    "stem": "Quand peut-on retirer les plaques taxi ?"
+  },
+  "rs-owner-ag-tidbok-kostnadsfritt": {
+    "stem": "Devoir de l'employeur concernant le tidbok ?"
+  },
+  "rs-owner-ag-bevara-12": {
+    "stem": "Durée de conservation des notes de repos ?"
+  },
+  "rs-owner-ag-anteckna-sjalv": {
+    "stem": "L'employeur doit-il aussi noter le repos ?"
+  },
+  "rs-owner-tillsyn-ts": {
+    "stem": "Qui contrôle les exploitants ?"
+  },
+  "rs-owner-taxameter-varje-uppdrag": {
+    "stem": "Quand l'exploitant doit-il exiger l'usage du taximètre ?"
   }
 }

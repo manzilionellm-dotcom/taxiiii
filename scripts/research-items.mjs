@@ -1,6 +1,8 @@
 /** Lionel's research corpus seed (YouTube + public apps + official law). `sv` stays verbatim. */
 
-export const RESEARCH_ITEMS = [
+import { OWNER_ITEMS } from "./owner-items.mjs";
+
+const CHAUFFEUR_RESEARCH_ITEMS = [
   {
     id: "rs-yt-lag1-gul-linje",
     topic: "lagstiftning",
@@ -553,3 +555,5 @@ export const RESEARCH_ITEMS = [
     note_fr: "Oui, texte officiel.",
   },
 ];
+
+export const RESEARCH_ITEMS = [...CHAUFFEUR_RESEARCH_ITEMS, ...OWNER_ITEMS];

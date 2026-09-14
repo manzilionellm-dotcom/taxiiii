@@ -1,7 +1,7 @@
-export const TOPICS = ["lagstiftning", "sakerhet", "karta", "bkort"] as const;
+export const TOPICS = ["lagstiftning", "sakerhet", "karta", "bkort", "agare"] as const;
 export type Topic = (typeof TOPICS)[number];
 
-export const TRACKS = ["b", "taxi"] as const;
+export const TRACKS = ["b", "taxi", "owner"] as const;
 export type Track = (typeof TRACKS)[number];
 
 export const LOCALES = ["sv", "fr"] as const;
@@ -14,12 +14,13 @@ export interface QuestionOption {
   text: string;
 }
 
-export type Corpus = "research" | "manzi";
+export type Corpus = "research" | "manzi" | "owner-seed";
 export type Freq = "high" | "medium" | "low";
 
 export interface QuestionRecord {
   id: string;
   topic: Topic;
+  trackHint?: Track;
   stem_sv: string;
   options: QuestionOption[];
   answer: OptionLetter;
@@ -107,10 +108,35 @@ export interface AppState {
   chat: ChatTurn[];
 }
 
+export function isOwnerQuestion(question: {
+  topic?: Topic | string;
+  trackHint?: Track | string;
+  corpus?: Corpus | string;
+}): boolean {
+  return (
+    question.trackHint === "owner" ||
+    question.topic === "agare" ||
+    question.corpus === "owner-seed"
+  );
+}
+
 export function trackForTopic(topic: Topic): Track {
-  return topic === "bkort" ? "b" : "taxi";
+  if (topic === "bkort") return "b";
+  if (topic === "agare") return "owner";
+  return "taxi";
+}
+
+export function questionTrack(question: {
+  topic: Topic;
+  trackHint?: Track;
+  corpus?: Corpus;
+}): Track {
+  if (isOwnerQuestion(question)) return "owner";
+  return trackForTopic(question.topic);
 }
 
 export function topicsForTrack(track: Track): Topic[] {
-  return track === "b" ? ["bkort"] : ["lagstiftning", "sakerhet", "karta"];
+  if (track === "b") return ["bkort"];
+  if (track === "owner") return ["agare"];
+  return ["lagstiftning", "sakerhet", "karta"];
 }

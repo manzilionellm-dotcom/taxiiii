@@ -12,7 +12,7 @@ Product and topic map from the apps and sites used to seed `data/research-bank.j
 | TaxiKortet blog / demo | Same official vilotid wording as Transportstyrelsen | lagstiftning |
 | [taxi-prov.se vilotid](https://test.taxi-prov.se/vilotid) | Worked 6,5+6,5 h fail example | lagstiftning |
 | Trafikverket taxiförarlegitimation | Two delprov, 50 min, 34/46 | lagstiftning |
-| Transportstyrelsen + SFS 1994:1297, 2012:211, 2012:238, TSFS 2021:119 | Verbatim legal facts | all taxi |
+| Transportstyrelsen + SFS 1994:1297, 2012:211, 2012:238, TSFS 2013:41, TSFS 2021:119 | Verbatim legal facts | all taxi + Taxi Företag |
 
 **Teori Taxi / TaxiKortet / TaxiTeori** all drill the same high-frequency traps: 24-month taxameter, 8 h “enough” rest, tidbok timing, yellow kerb line, prisräkning. KörkortGO starts study there, then Manzi.
 

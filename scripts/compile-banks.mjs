@@ -100,13 +100,18 @@ export function compile({ check = false, images = null } = {}) {
     }
     const stem = stemKey(result.question.stem_sv);
     const researchCopy =
-      result.question.corpus === "research" || String(result.question.id).startsWith("research-");
+      result.question.corpus === "research" ||
+      result.question.corpus === "owner-seed" ||
+      String(result.question.id).startsWith("research-") ||
+      String(result.question.id).startsWith("rs-");
     if (stem && seenStems.has(stem) && researchCopy) {
       warnings.push(`duplicate stem ${result.question.id} (kept first / research)`);
       return;
     }
     seen.add(result.question.id);
-    if (stem && result.question.corpus === "research") seenStems.add(stem);
+    if (stem && (result.question.corpus === "research" || result.question.corpus === "owner-seed")) {
+      seenStems.add(stem);
+    }
     questions.push(result.question);
     if (result.translation) translations[result.question.id] = result.translation;
   }
@@ -151,7 +156,8 @@ export function compile({ check = false, images = null } = {}) {
 
   const ordered = sortForStudy(authentic);
   const researchCount = ordered.filter((item) => item.corpus === "research").length;
-  const manziCount = ordered.filter((item) => item.corpus !== "research").length;
+  const ownerCount = ordered.filter((item) => item.corpus === "owner-seed").length;
+  const manziCount = ordered.filter((item) => item.corpus === "manzi").length;
 
   if (researchFile.records.length && researchCount === 0) {
     fail("research-bank.jsonl is present but compiled 0 research items — research must not be dropped");
@@ -164,7 +170,9 @@ export function compile({ check = false, images = null } = {}) {
   }
 
   if (check) {
-    console.log(`OK compile ${ordered.length} (research ${researchCount} + manzi ${manziCount})`);
+    console.log(
+      `OK compile ${ordered.length} (research ${researchCount} + owner-seed ${ownerCount} + manzi ${manziCount})`,
+    );
     return ordered;
   }
 
@@ -190,6 +198,7 @@ export function compile({ check = false, images = null } = {}) {
           imagesDir: null,
           questionsTotal: ordered.length,
           researchCount,
+          ownerCount,
           manziCount,
           researchJsonl: researchFile.records.length,
           manziJsonl: manziFile.records.length,
@@ -239,7 +248,7 @@ export function compile({ check = false, images = null } = {}) {
   writeFileSync(join(root, "data/rag-extras.json"), `${JSON.stringify(ragExtras, null, 2)}\n`);
 
   console.log(
-    `Compiled ${ordered.length} questions → data/questions.json (research ${researchCount} first, manzi ${manziCount}). Vocab merged ${vocab.length}. YouTube extras ${extras.length}.`,
+    `Compiled ${ordered.length} questions → data/questions.json (research ${researchCount} first, owner-seed ${ownerCount}, manzi ${manziCount}). Vocab merged ${vocab.length}. YouTube extras ${extras.length}.`,
   );
   console.log("Research was not dropped. Swedish research `sv` / Manzi stems copied verbatim.");
   return ordered;

@@ -74,6 +74,8 @@ Normalize on import:
 
 Until the full ~193-line file is dropped, the repo ships a **high-frequency seed** (YouTube 11/8, taxameter 24 mån, gul linje, tidbok, prisräkning, plus official SFS/Trafikverket). Replace `data/research-bank.jsonl` with the full mined file — do not merge it into Manzi’s JSONL.
 
+**Taxi Företag** items live in the same research JSONL with `topic: agare`, `trackHint: owner`, `corpus: owner-seed` (`scripts/owner-items.mjs`). They compile into `data/questions.json` but `questionsForTrack('owner')` keeps them out of chauffeur B/taxi study order. Do not invent Manzi owner stems.
+
 ## Manzi schema
 
 Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `explanation_fr`, optional `imageUrl` (Manzi path `media/T3/…/exam.php-filer/NNN.jpg` or `/media/pdf-pages/…/page-NN.jpg`), optional `imageCaption`, `source`. `imageUrl` is normalized to `/media/<logical-key>` and must point at a real raster. Decorative SVGs are stripped.
@@ -83,6 +85,8 @@ Unchanged: `id`, `topic`, `stem_sv`, `options`, `answer`, `explanation_sv`, `exp
 1. Research + `freq: high` (vilotid 11/8, taxameter 12 vs 24 mån, gul heldragen linje, tidbok, prisräkning)
 2. Other research
 3. Manzi
+
+Owner-track study is a separate list: tillstånd / ekonomi / taxameter-redovisning / fordon / pris / anställda.
 
 ## RAG
 

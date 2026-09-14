@@ -60,14 +60,14 @@ export default function HomePage() {
             description={trackProduct(item)}
           />
         ))}
-        <TrackCard
-          href="/owner"
-          icon="owner"
-          title={trackLabel("owner")}
-          description={`${dict.comingSoon} — ${trackProduct("owner")}`}
-          muted
-          badge={dict.comingSoon}
-        />
+        {!state.profile.tracks.includes("owner") ? (
+          <TrackCard
+            href="/owner"
+            icon="owner"
+            title={trackLabel("owner")}
+            description={trackProduct("owner")}
+          />
+        ) : null}
         <TrackCard
           href="/chat"
           icon="chat"
