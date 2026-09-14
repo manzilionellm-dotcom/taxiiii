@@ -1,0 +1,252 @@
+{
+  "kkalk-R-062": {
+    "stem": "Comment gérer les feux de route à l'approche d'un sommet de côte dans l'obscurité ?",
+    "options": {
+      "A": "Je garde les feux de route pour voir le plus loin possible.",
+      "B": "Je passe en feux de croisement juste avant d'atteindre le sommet.",
+      "C": "Je fais des appels de phares pour prévenir un éventuel véhicule en face.",
+      "D": "J'attends de voir la voiture qui arrive avant de baisser les feux."
+    },
+    "explanation": "Passer en feux de croisement avant le sommet évite d'éblouir le trafic opposé. Cela te fait aussi repérer plus tôt la lueur de ses phares sur le ciel sombre."
+  },
+  "kkalk-R-063": {
+    "stem": "Tu croises un camion dans l'obscurité. Quand faut-il repasser en feux de croisement ?",
+    "options": {
+      "A": "Quand le faisceau de tes feux de route rencontre celui du camion.",
+      "B": "Quand tu distingues nettement ses feux de gabarit sur le toit.",
+      "C": "Quand le chauffeur du camion fait un appel de phares.",
+      "D": "Quand tu commences toi-même à être légèrement ébloui par ses feux."
+    },
+    "explanation": "Le chauffeur d'un camion est assis beaucoup plus haut et se trouve donc ébloui plus tôt qu'un automobiliste. Ses feux de gabarit sur le toit sont un bon repère pour baisser les tiens."
+  },
+  "kkalk-R-064": {
+    "stem": "Tu dépasses une voiture sur une route de campagne dans l'obscurité. Quand est-il le plus indiqué de rallumer les feux de route ?",
+    "options": {
+      "A": "Quand tu entames ton changement de voie vers la gauche.",
+      "B": "Quand tu arrives à hauteur de la voiture dépassée.",
+      "C": "Quand tu vois toute la voiture dépassée dans ton rétroviseur.",
+      "D": "Quand tu es complètement revenu dans la voie de droite."
+    },
+    "explanation": "Rallume les feux de route quand tu es à hauteur de la voiture dépassée. Tu n'éblouis alors pas l'autre conducteur et tu obtiens en même temps la meilleure visibilité vers l'avant."
+  },
+  "kkalk-R-065": {
+    "stem": "Tu roules dans l'obscurité et une voiture approche par une route transversale. Quelle est l'erreur d'appréciation la plus fréquente et la plus dangereuse ?",
+    "options": {
+      "A": "Croire la voiture plus loin et plus lente qu'elle ne l'est réellement.",
+      "B": "Croire la voiture plus près et plus rapide qu'elle ne l'est réellement.",
+      "C": "Croire que la voiture s'arrêtera avant l'intersection.",
+      "D": "Croire qu'il s'agit d'un camion et non d'une voiture."
+    },
+    "explanation": "Dans l'obscurité, les points de repère disparaissent, ce qui empêche le cerveau de juger les distances et les vitesses. On croit donc facilement un véhicule plus éloigné et plus lent qu'il ne l'est."
+  },
+  "kkalk-R-066": {
+    "stem": "Pourquoi un jeune enfant a-t-il du mal à déterminer de quel côté une voiture approche ?",
+    "options": {
+      "A": "Sa vision périphérique est moins bonne que celle d'un adulte.",
+      "B": "Sa capacité à situer la direction d'un son n'est pas développée.",
+      "C": "Il distingue mal le bruit d'un moteur des autres bruits.",
+      "D": "Il croit que toutes les voitures roulent lentement près de lui."
+    },
+    "explanation": "L'audition du jeune enfant n'est pas assez développée pour localiser un son. Il entend qu'une voiture arrive mais ne peut pas déterminer de quel côté."
+  },
+  "kkalk-R-067": {
+    "stem": "Une personne âgée avec un déambulateur traverse un passage piéton. Comment te comportes-tu ?",
+    "options": {
+      "A": "Tu donnes un bref coup d'avertisseur pour signaler ta présence.",
+      "B": "Tu ralentis, tu t'arrêtes avec une bonne marge et tu attends calmement.",
+      "C": "Tu gardes la même vitesse, la personne étant déjà à mi-parcours.",
+      "D": "Tu passes prudemment derrière elle, pour ne pas créer de stress."
+    },
+    "explanation": "Un piéton âgé peut se déplacer lentement et de façon imprévisible. S'arrêter avec une bonne marge et attendre patiemment réduit le stress et le risque d'accident pour tous."
+  },
+  "kkalk-R-068": {
+    "stem": "Quel pouvoir une patrouille scolaire a-t-elle pour arrêter la circulation à un passage piéton ?",
+    "options": {
+      "A": "Elle peut arrêter la circulation si des enfants traversent.",
+      "B": "Le même qu'un policier, mais sans pouvoir verbaliser.",
+      "C": "Le même qu'un agent de circulation sur un chantier routier.",
+      "D": "Elle n'a aucun pouvoir d'arrêter la circulation."
+    },
+    "explanation": "Une patrouille scolaire n'a aucun pouvoir juridique d'arrêter ni de diriger les véhicules. Sa mission est de faire traverser les enfants seulement quand la voie est sûre."
+  },
+  "kkalk-R-069": {
+    "stem": "Tu vas tourner à droite en ville. Quel risque grave d'accident est le plus difficile à détecter avec les seuls rétroviseurs ?",
+    "options": {
+      "A": "Le véhicule derrière toi est trop près.",
+      "B": "Un cycliste ou un cyclomotoriste se trouve sur ta droite.",
+      "C": "Une voiture te dépasse par la voie de gauche.",
+      "D": "Des piétons traversent la rue dans laquelle tu vas tourner."
+    },
+    "explanation": "Un cycliste ou un cyclomotoriste sur ta droite peut se trouver dans l'angle mort et devenir invisible dans les rétroviseurs. Regarde donc toujours par-dessus l'épaule droite avant de tourner."
+  },
+  "kkalk-R-070": {
+    "stem": "La voiture de la voie voisine s'arrête à un passage piéton. Pourquoi dois-tu t'arrêter aussi ?",
+    "options": {
+      "A": "Cette voiture peut masquer un piéton auquel tu dois céder le passage.",
+      "B": "Parce que l'autre conducteur peut être en panne et avoir besoin d'aide.",
+      "C": "Pour ne pas mettre la pression au conducteur qui s'est arrêté.",
+      "D": "Pour pouvoir redémarrer en même temps selon le principe de la fermeture éclair."
+    },
+    "explanation": "La voiture arrêtée crée un angle mort et peut dissimuler un piéton. La dépasser est l'une des situations les plus dangereuses aux passages piétons."
+  },
+  "kkalk-R-071": {
+    "stem": "Tu arrives le premier sur un accident. Quelle est ta toute première priorité ?",
+    "options": {
+      "A": "Prendre la mesure de la situation et avertir les autres usagers.",
+      "B": "Appeler le 112 et indiquer ta position.",
+      "C": "Vérifier si quelqu'un a cessé de respirer.",
+      "D": "Arrêter d'éventuelles hémorragies importantes."
+    },
+    "explanation": "Ta sécurité et celle des autres passent avant tout. Avertir autrui empêche l'accident de s'aggraver et permet de porter secours en sûreté."
+  },
+  "kkalk-R-072": {
+    "stem": "Un blessé d'un accident est pâle et a froid. As-tu le droit de lui donner à boire ?",
+    "options": {
+      "A": "Oui, si la personne est consciente et peut boire seule.",
+      "B": "Non, en raison du risque de vomissements et d'étouffement.",
+      "C": "Oui, une boisson chaude et sucrée combat le choc et l'hypothermie.",
+      "D": "Non, cela pourrait aggraver d'éventuelles hémorragies internes."
+    },
+    "explanation": "Ne donne jamais à manger ni à boire à un blessé susceptible d'être en état de choc. Le risque de vomissements est important et peut conduire à l'étouffement."
+  },
+  "kkalk-R-073": {
+    "stem": "Tu vois un camion portant une plaque orange à chiffres noirs. Que signifie cette plaque ?",
+    "options": {
+      "A": "Le chargement est une marchandise dangereuse, ce qui exige une grande prudence.",
+      "B": "Le véhicule est un véhicule lent.",
+      "C": "Le chargement est exceptionnellement long et large.",
+      "D": "Le véhicule sert à l'apprentissage de la conduite."
+    },
+    "explanation": "Une plaque orange à chiffres (plaque ADR) indique que le transport contient des marchandises dangereuses, qui peuvent être explosives, inflammables ou toxiques."
+  },
+  "kkalk-R-074": {
+    "stem": "Quand se produit la majorité des accidents graves causés par la fatigue et l'alcool ?",
+    "options": {
+      "A": "Tôt le matin, à l'heure de pointe.",
+      "B": "En fin d'après-midi, après le travail.",
+      "C": "Tard dans la nuit, le week-end.",
+      "D": "Tôt le lundi matin."
+    },
+    "explanation": "Le risque d'accident est maximal les nuits de week-end, quand la fatigue se combine souvent à l'alcool, à l'obscurité et à des vitesses élevées."
+  },
+  "kkalk-R-075": {
+    "stem": "Quels signes de fatigue extrême imposent d'arrêter la voiture immédiatement ?",
+    "options": {
+      "A": "Tu commences à bâiller et tu te sens globalement peu concentré.",
+      "B": "Tu t'agaces des autres usagers et des bruits dans la voiture.",
+      "C": "Tu as froid alors que le chauffage est allumé.",
+      "D": "Tes paupières sont lourdes et ta conduite devient saccadée."
+    },
+    "explanation": "Des mouvements de volant saccadés signalent un micro-sommeil : tu t'es déjà endormi par brefs instants. Continuer à conduire est mortellement dangereux."
+  },
+  "kkalk-R-076": {
+    "stem": "Tu quittes l'autoroute et tu as l'impression de rouler moins vite que ne l'indique le compteur. Comment appelle-t-on ce phénomène ?",
+    "options": {
+      "A": "La vision en tunnel",
+      "B": "L'accoutumance à la vitesse",
+      "C": "La torpeur de réaction",
+      "D": "L'adaptation de vitesse"
+    },
+    "explanation": "Le cerveau s'habitue à la vitesse élevée. Une vitesse plus basse est alors ressentie comme plus lente qu'elle ne l'est réellement."
+  },
+  "kkalk-R-078": {
+    "stem": "Tu roules dans un brouillard épais et tu as l'impression que la route tourne alors qu'elle est droite. Comment appelle-t-on ce phénomène ?",
+    "options": {
+      "A": "La vision sélective",
+      "B": "Une illusion d'optique",
+      "C": "La perception adaptative",
+      "D": "La perte de vision périphérique"
+    },
+    "explanation": "Par mauvaise visibilité comme dans le brouillard, le cerveau peut mal interpréter les impressions visuelles et se construire une image fausse de la route. Cela s'appelle une illusion d'optique."
+  },
+  "kkalk-R-079": {
+    "stem": "En dehors de l'alcool et de la fatigue, qu'est-ce qui peut provoquer une vision en tunnel au volant ?",
+    "options": {
+      "A": "Un fort contre-jour.",
+      "B": "Une vitesse élevée.",
+      "C": "Un chantier routier.",
+      "D": "Un passager qui parle."
+    },
+    "explanation": "Plus la vitesse est élevée, plus ton champ visuel se rétrécit. Le cerveau écarte l'information venue des côtés pour pouvoir se concentrer droit devant."
+  },
+  "kkalk-R-080": {
+    "stem": "Comment appelle-t-on le fait que des passagers poussent sciemment un conducteur à conduire plus dangereusement ?",
+    "options": {
+      "A": "La pression de performance",
+      "B": "L'acceptation sociale",
+      "C": "La pression de groupe négative",
+      "D": "La dissonance cognitive"
+    },
+    "explanation": "La pression de groupe négative est une pression collective qui amène un individu à agir de façon destructrice ou contraire à sa volonté. C'est un facteur d'accident fréquent chez les jeunes conducteurs."
+  },
+  "kkalk-R-081": {
+    "stem": "Tu vas dépasser un cheval monté. Quel comportement est franchement dangereux dans cette situation ?",
+    "options": {
+      "A": "Garder un très grand écart latéral.",
+      "B": "Chercher le contact visuel avec le cavalier avant de dépasser.",
+      "C": "Klaxonner pour attirer l'attention du cavalier.",
+      "D": "Ralentir et passer particulièrement lentement."
+    },
+    "explanation": "Un bruit fort et soudain, comme un coup d'avertisseur, peut effrayer le cheval. Un animal effrayé peut paniquer et réagir de façon imprévisible, ce qui crée une situation mortellement dangereuse."
+  },
+  "kkalk-R-082": {
+    "stem": "Ta voiture est immobilisée entre les barrières d'un passage à niveau. Que fais-tu en premier ?",
+    "options": {
+      "A": "Passer la première et utiliser le démarreur pour forcer la barrière.",
+      "B": "Quitter immédiatement la voiture et te mettre en sécurité.",
+      "C": "Appeler le 112 et demander l'arrêt du train.",
+      "D": "Allumer les feux de détresse pour avertir le train."
+    },
+    "explanation": "Essaie d'abord de dégager la voiture de la voie. En engageant un rapport bas, tu peux faire avancer la voiture par à-coups avec le démarreur et forcer la barrière."
+  },
+  "kkalk-R-083": {
+    "stem": "Tu es contraint de t'arrêter sur une route sombre. Pourquoi est-il important de passer des feux de croisement aux feux de position ?",
+    "options": {
+      "A": "Pour ne pas éblouir les autres conducteurs qui approchent de ta voiture.",
+      "B": "Pour économiser la batterie de la voiture.",
+      "C": "Parce que la loi interdit d'associer feux de croisement et feux de détresse.",
+      "D": "Parce que les feux de détresse se voient moins bien quand les feux de croisement sont allumés."
+    },
+    "explanation": "Des feux de croisement allumés sur une voiture immobile risquent d'éblouir les autres usagers. Ils ont alors du mal à juger la position de ta voiture et la distance qui les en sépare."
+  },
+  "kkalk-R-084": {
+    "stem": "Tu roules dans l'obscurité et tu croises une voiture dans un virage à gauche. Quand faut-il baisser les feux de route ?",
+    "options": {
+      "A": "Dès que je devine la lumière de l'autre voiture.",
+      "B": "Un peu plus tard que lors d'un croisement en ligne droite.",
+      "C": "Juste au moment où nos voitures sont côte à côte.",
+      "D": "Quand le conducteur qui arrive a lui-même baissé ses feux."
+    },
+    "explanation": "Dans un virage à gauche, tes feux de route éclairent le terrain sur la droite. Tu peux donc les garder un peu plus longtemps sans éblouir le conducteur que tu croises."
+  },
+  "kkalk-R-085": {
+    "stem": "Un chevreuil vient de traverser la route devant toi. Quel est le principal risque immédiat ?",
+    "options": {
+      "A": "Que le chevreuil fasse soudain demi-tour et revienne.",
+      "B": "Que d'autres animaux suivent le premier chevreuil.",
+      "C": "Que le véhicule derrière toi ne puisse pas t'éviter à temps.",
+      "D": "Que tu fasses un écart réflexe et sortes de la route."
+    },
+    "explanation": "Le chevreuil vit en groupe. Si un animal traverse la route, il est très probable que d'autres suivent, souvent juste derrière le premier."
+  },
+  "kkalk-R-086": {
+    "stem": "Quel effet une chaussée mouillée a-t-elle sur la lumière de tes phares quand tu roules de nuit ?",
+    "options": {
+      "A": "La lumière rebondit loin de la voiture et la visibilité devient beaucoup plus courte.",
+      "B": "La lumière est renvoyée vers le haut et éblouit davantage le trafic opposé.",
+      "C": "La lumière est renvoyée vers toi et dégrade ta vision nocturne.",
+      "D": "L'asphalte absorbe la lumière, ce qui rend la route plus difficile à voir."
+    },
+    "explanation": "Une chaussée mouillée agit comme un miroir et renvoie la lumière vers l'avant, loin de tes yeux. Cela raccourcit considérablement ta distance de visibilité."
+  },
+  "kkalk-R-087": {
+    "stem": "Tu roules de nuit derrière un camion. Pourquoi est-il particulièrement dangereux de le suivre de trop près ?",
+    "options": {
+      "A": "Le camion masque la route plus loin, que tes feux de route auraient éclairée.",
+      "B": "La hauteur de sa cabine t'empêche de voir les panneaux d'avertissement en bord de route.",
+      "C": "Tes propres phares se reflètent dans sa remorque et peuvent t'éblouir.",
+      "D": "Ses nombreux feux de gabarit rendent difficile l'appréciation correcte des distances."
+    },
+    "explanation": "Quand tu suis de près, tu dois rouler en feux de croisement. Le camion masque alors la partie de la route que tes feux de route auraient éclairée, ce qui raccourcit fortement ta visibilité."
+  }
+}

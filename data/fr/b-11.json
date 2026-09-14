@@ -1,0 +1,252 @@
+{
+  "kkalk-S-047": {
+    "stem": "Comment reconnaît-on le plus souvent un panneau d'obligation à sa forme et à sa couleur ?",
+    "options": {
+      "A": "Il est rond, à fond bleu et symbole blanc.",
+      "B": "Il est triangulaire, à bord rouge et fond jaune.",
+      "C": "Il est rond, à bord rouge et fond jaune.",
+      "D": "Il est carré, à texte blanc et fond vert."
+    },
+    "explanation": "Les panneaux d'obligation indiquent ce que tu dois faire, par exemple circuler dans une direction donnée. Ils sont ronds, à fond bleu, avec un symbole blanc à l'intérieur."
+  },
+  "kkalk-S-048": {
+    "stem": "Que signifie un horaire entre parenthèses sur un panonceau ?",
+    "options": {
+      "A": "La règle vaut les jours ouvrables, sauf la veille d'un jour férié.",
+      "B": "La règle vaut les samedis et la veille d'un jour férié.",
+      "C": "La règle vaut les dimanches et les jours fériés.",
+      "D": "La règle est une recommandation, juridiquement non contraignante."
+    },
+    "explanation": "Un horaire entre parenthèses signale que la règle vaut le samedi ainsi que la veille d'un dimanche ou d'un jour férié. Les chiffres noirs sans parenthèses visent les jours ouvrables, les chiffres rouges les jours fériés."
+  },
+  "kkalk-S-049": {
+    "stem": "Contre quoi le panneau représentant une barrière avertit-il ?",
+    "options": {
+      "A": "Un passage à niveau sans barrières.",
+      "B": "Un passage à niveau avec barrières.",
+      "C": "Une traversée de voie de tramway.",
+      "D": "Une zone clôturée contre le gibier."
+    },
+    "explanation": "Le panneau avertit d'un passage à niveau muni de barrières. L'avertissement pour un passage sans barrières porte, lui, un symbole de locomotive."
+  },
+  "kkalk-S-050": {
+    "stem": "Que signifie le panneau carré bleu portant un M blanc, fréquent sur les routes étroites ?",
+    "options": {
+      "A": "La sortie d'autoroute la plus proche.",
+      "B": "L'endroit est une zone de retournement pour les poids lourds.",
+      "C": "La route est élargie pour permettre aux véhicules de se croiser.",
+      "D": "Un stationnement réservé aux motos."
+    },
+    "explanation": "Le panneau signale une aire de croisement. Cet élargissement ponctuel sur une route par ailleurs étroite permet à deux véhicules de se croiser en sécurité."
+  },
+  "kkalk-S-051": {
+    "stem": "Que signifie le panneau « rue piétonne » pour toi qui conduis une voiture ?",
+    "options": {
+      "A": "Tu peux rouler à l'allure du pas au plus et stationner à l'emplacement indiqué.",
+      "B": "La circulation générale est interdite, mais certains transports peuvent se faire à l'allure du pas.",
+      "C": "Tu dois céder le passage aux piétons, mais tu peux rouler à 30 km/h.",
+      "D": "Les piétons doivent céder le passage aux véhicules lors des chargements et déchargements."
+    },
+    "explanation": "Dans une rue piétonne, la circulation des véhicules est en principe interdite. Quand une exception s'applique, pour une livraison par exemple, tu dois rouler à l'allure du pas et céder le passage aux piétons."
+  },
+  "kkalk-S-052": {
+    "stem": "Tu arrives à un panneau stop et l'intersection est totalement vide. Que dois-tu faire ?",
+    "options": {
+      "A": "Marquer un arrêt complet avant de repartir.",
+      "B": "Ralentir jusqu'à l'allure du pas puis passer.",
+      "C": "Passer prudemment si la visibilité est bonne des deux côtés.",
+      "D": "Traiter le panneau comme un céder-le-passage."
+    },
+    "explanation": "L'obligation d'arrêt impose toujours un arrêt complet, qu'il y ait ou non d'autres usagers. Ralentir ne suffit pas."
+  },
+  "kkalk-S-053": {
+    "stem": "À quel moment de la journée le risque de collision avec un animal sauvage est-il le plus élevé ?",
+    "options": {
+      "A": "En milieu de journée, quand la lumière est la meilleure.",
+      "B": "À l'aube et au crépuscule.",
+      "C": "Vers minuit, quand l'obscurité est la plus profonde.",
+      "D": "En fin de soirée, avec un trafic modéré."
+    },
+    "explanation": "La plupart des collisions avec la faune se produisent quand les animaux sont les plus actifs, c'est-à-dire à l'aube et au crépuscule. La lumière de ces moments rend aussi les animaux plus difficiles à repérer à temps."
+  },
+  "kkalk-S-057": {
+    "stem": "Tu approches d'une traversée cyclable prioritaire. Quelle règle s'applique à toi ?",
+    "options": {
+      "A": "Celui qui arrive le premier à la traversée passe d'abord.",
+      "B": "Tu as la priorité, mais tu dois ralentir par courtoisie.",
+      "C": "Tu dois céder le passage aux cyclistes engagés ou sur le point de s'engager.",
+      "D": "Le cycliste doit te céder le passage si ta vitesse dépasse 30 km/h."
+    },
+    "explanation": "À une traversée cyclable prioritaire, tu dois céder le passage aux cyclistes et aux conducteurs de cyclomoteur de classe II engagés ou sur le point de s'y engager."
+  },
+  "kkalk-S-062": {
+    "stem": "Un panonceau indique un horaire entre parenthèses, par exemple (9-15). Quels jours s'applique-t-il ?",
+    "options": {
+      "A": "Les jours ouvrables (du lundi au vendredi)",
+      "B": "Le samedi et la veille d'un jour férié",
+      "C": "Les dimanches et les jours fériés",
+      "D": "Tous les jours de la semaine"
+    },
+    "explanation": "Un horaire entre parenthèses vaut le samedi ainsi que le jour ouvrable précédant un jour férié. Les chiffres noirs sans parenthèses valent les jours ouvrables ordinaires et les chiffres rouges les dimanches et jours fériés."
+  },
+  "kkalk-S-063": {
+    "stem": "Tu es soumis à l'obligation d'arrêt et la route porte une ligne d'arrêt peinte. Où dois-tu t'arrêter ?",
+    "options": {
+      "A": "Les roues avant posées au milieu de la ligne.",
+      "B": "Juste avant la ligne d'arrêt.",
+      "C": "À la hauteur du panneau stop.",
+      "D": "Là où la visibilité est la meilleure, même après la ligne."
+    },
+    "explanation": "Une ligne d'arrêt indique exactement où t'arrêter. Immobilise toujours l'avant du véhicule juste avant la ligne."
+  },
+  "kkalk-S-075": {
+    "stem": "Ce panneau rond bleu est placé devant un obstacle sur la route. Que signifie-t-il pour toi ?",
+    "options": {
+      "A": "Il est recommandé de passer du côté indiqué par la flèche.",
+      "B": "La route prioritaire tourne dans le sens de la flèche.",
+      "C": "Tu dois passer du côté indiqué par la flèche.",
+      "D": "Tu entres dans une rue à sens unique."
+    },
+    "explanation": "Ce panneau est un panneau d'obligation. Il signifie que tu es tenu de passer du côté de l'obstacle indiqué par la flèche."
+  },
+  "kkalk-S-076": {
+    "stem": "Tu approches en voiture d'une traversée cyclable signalée. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu dois céder le passage aux cyclistes engagés ou sur le point de s'engager.",
+      "B": "Les cyclistes doivent te céder le passage, puisqu'il s'agit d'un passage cyclable.",
+      "C": "Tu entres dans une rue cyclable et tu dois adapter ta vitesse en conséquence.",
+      "D": "Le panneau avertit de la présence de cyclistes, mais personne n'a de priorité particulière."
+    },
+    "explanation": "À une traversée cyclable prioritaire, l'automobiliste doit toujours céder le passage aux cyclistes et aux conducteurs de cyclomoteur de classe II. Ralentis et sois prêt à t'arrêter."
+  },
+  "kkalk-S-077": {
+    "stem": "Que signifie une croix de Saint-André dotée d'une partie inférieure supplémentaire inclinée, à un passage à niveau ?",
+    "options": {
+      "A": "Que le passage compte deux voies ferrées ou plus.",
+      "B": "Que des trains circulent dans les deux sens sur la voie.",
+      "C": "Que le passage n'a ni barrières ni signal lumineux.",
+      "D": "Que les trains roulent ici à une vitesse particulièrement élevée."
+    },
+    "explanation": "Une croix dotée d'une partie inférieure signifie que le passage compte au moins deux voies. Un train peut en cacher un autre sur la seconde voie."
+  },
+  "kkalk-S-078": {
+    "stem": "Que signifie le panonceau à flèches pointant vers le haut et vers le bas sous un panneau de stationnement ?",
+    "options": {
+      "A": "Que la portion où la règle s'applique commence ici.",
+      "B": "Que la portion où la règle s'applique se termine ici.",
+      "C": "Que la règle vaut des deux côtés de la route.",
+      "D": "Que la règle vaut avant et après le panneau."
+    },
+    "explanation": "Ces flèches (T11, étendue) montrent où la règle s'applique. Des flèches vers le haut et vers le bas signifient qu'elle vaut de part et d'autre du panneau, le long de la route."
+  },
+  "kkalk-S-079": {
+    "stem": "Ce panneau d'obligation est placé avant une intersection. Quelle est la raison la plus fréquente pour laquelle tu dois continuer tout droit ?",
+    "options": {
+      "A": "La route est prioritaire et tu as la priorité.",
+      "B": "La voie mène à une entrée d'autoroute.",
+      "C": "Les rues latérales sont à sens unique et l'accès depuis ton côté est interdit.",
+      "D": "L'intersection est accidentogène et la visibilité y est masquée."
+    },
+    "explanation": "L'obligation te contraint à continuer tout droit. Elle sert souvent à t'empêcher de circuler à contresens dans les rues à sens unique qui débouchent là."
+  },
+  "kkalk-S-080": {
+    "stem": "Que signifie le panneau d'avertissement représentant une locomotive ?",
+    "options": {
+      "A": "Un passage à niveau avec barrières.",
+      "B": "Un passage à niveau sans barrières.",
+      "C": "Une intersection traversée par des tramways.",
+      "D": "Un lieu de déraillement et d'entretien ferroviaire."
+    },
+    "explanation": "Le panneau avertit spécifiquement d'un passage à niveau dépourvu de barrières. Les passages munis de barrières portent un panneau représentant une barrière."
+  },
+  "kkalk-S-081": {
+    "stem": "Tu vois le panneau d'interdiction de stationner. As-tu le droit de t'arrêter pour prendre un passager ?",
+    "options": {
+      "A": "Non, le panneau interdit toute forme d'arrêt.",
+      "B": "Oui, car l'arrêt pour la montée ou la descente est autorisé.",
+      "C": "Non, tu peux seulement t'arrêter pour charger ou décharger des marchandises.",
+      "D": "Oui, mais seulement en allumant les feux de détresse pendant ce temps."
+    },
+    "explanation": "Le panneau signale une interdiction de stationner. L'arrêt est permis pour laisser quelqu'un monter ou descendre, ou pour charger et décharger, mais pas pour stationner."
+  },
+  "kkalk-S-082": {
+    "stem": "Que signifie un panneau de direction vert à texte blanc ?",
+    "options": {
+      "A": "L'itinéraire vers la destination passe par une autoroute ou une voie express.",
+      "B": "La destination est un site touristique ou une zone de tourisme.",
+      "C": "La route est une route publique, mais pas une autoroute.",
+      "D": "Le panneau concerne une route privée ou un équipement local."
+    },
+    "explanation": "Les panneaux de direction verts indiquent que l'itinéraire vers la destination passe par une autoroute ou une voie express. Le bleu sert aux routes publiques et le brun aux sites touristiques."
+  },
+  "kkalk-S-083": {
+    "stem": "Que s'applique-t-il à toi, conducteur, dans une zone de rencontre ?",
+    "options": {
+      "A": "La vitesse maximale autorisée est de 20 km/h.",
+      "B": "Tu dois céder le passage à tous les piétons.",
+      "C": "Tu ne peux t'arrêter que pour la montée et la descente.",
+      "D": "Le stationnement est interdit partout dans la zone."
+    },
+    "explanation": "Dans une zone de rencontre, la conduite s'adapte entièrement aux piétons. Cela signifie rouler à l'allure du pas et toujours leur céder le passage."
+  },
+  "kkalk-S-088": {
+    "stem": "Que signifie le panneau en forme de triangle pointe vers le bas ?",
+    "options": {
+      "A": "Route prioritaire",
+      "B": "Obligation d'arrêt",
+      "C": "Avertissement d'obstacle",
+      "D": "Céder le passage"
+    },
+    "explanation": "Le panneau impose de céder le passage. Sa forme unique, pointe vers le bas, permet de le reconnaître même couvert de neige."
+  },
+  "kkalk-S-092": {
+    "stem": "Que signifie le marquage au sol en « dents de requin » ?",
+    "options": {
+      "A": "Une ligne d'arrêt",
+      "B": "Une ligne de cédez-le-passage",
+      "C": "Une ligne d'avertissement",
+      "D": "Le marquage d'un ralentisseur"
+    },
+    "explanation": "Ce marquage est une ligne de cédez-le-passage (M14) et indique où t'arrêter au plus tard pour laisser la priorité. Il complète souvent le panneau de cédez-le-passage."
+  },
+  "kkalk-S-094": {
+    "stem": "Un panonceau sous un panneau indique l'horaire (9-14). Quels jours cet horaire s'applique-t-il ?",
+    "options": {
+      "A": "Les jours ouvrables, sauf la veille d'un jour férié.",
+      "B": "Le dimanche et les jours fériés.",
+      "C": "Le samedi, ainsi que la veille d'un jour férié.",
+      "D": "Seulement les jours pairs du mois."
+    },
+    "explanation": "Les horaires entre parenthèses valent le samedi (ou la veille d'un jour férié). Les horaires sans parenthèses valent les jours ouvrables et les chiffres rouges les dimanches et jours fériés."
+  },
+  "kkalk-S-096": {
+    "stem": "Que signifie le panneau d'interdiction d'accès aux véhicules ?",
+    "options": {
+      "A": "Tu n'as pas le droit d'entrer dans la rue, mais des véhicules peuvent en sortir.",
+      "B": "Toute circulation de véhicules est interdite dans les deux sens.",
+      "C": "L'accès n'est autorisé qu'aux véhicules de transport en commun.",
+      "D": "La rue est fermée, mais l'accès aux propriétés riveraines est autorisé."
+    },
+    "explanation": "Le panneau interdit l'accès. Il est le plus souvent placé au bout d'une rue à sens unique, où la circulation est autorisée en sortie."
+  },
+  "kkalk-S-097": {
+    "stem": "Qu'est-ce qui caractérise un panneau d'obligation ?",
+    "options": {
+      "A": "Il est triangulaire à bord rouge.",
+      "B": "Il est rond à fond bleu.",
+      "C": "Il est rond à bord rouge.",
+      "D": "Il est carré à fond vert."
+    },
+    "explanation": "Les panneaux d'obligation sont ronds, à fond bleu et symbole blanc. Ils indiquent ce que tu dois faire, par exemple circuler dans une direction donnée."
+  },
+  "kkalk-S-098": {
+    "stem": "À quoi ressemblent la plupart des panneaux d'avertissement suédois ?",
+    "options": {
+      "A": "Ronds, à fond bleu et symbole blanc.",
+      "B": "Triangulaires, à fond jaune et bord rouge.",
+      "C": "Ronds, à fond blanc et bord rouge.",
+      "D": "Carrés, à fond orange et texte noir."
+    },
+    "explanation": "Les panneaux d'avertissement suédois sont triangulaires, à bord rouge et fond jaune, afin d'être vus le mieux possible, y compris de loin."
+  }
+}

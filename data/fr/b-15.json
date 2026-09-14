@@ -1,0 +1,252 @@
+{
+  "kkalk-T-016": {
+    "stem": "Tu roules sur l'accotement et tu veux revenir dans la voie de circulation. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu dois céder le passage à tout le trafic de la voie.",
+      "B": "C'est une adaptation mutuelle, le principe de la fermeture éclair.",
+      "C": "Celui qui roule le plus vite a la priorité.",
+      "D": "Tu as la priorité si tu ne forces personne à freiner."
+    },
+    "explanation": "Quand tu t'insères sur la chaussée depuis l'accotement, la règle de sortie s'applique. Cela signifie que tu dois céder le passage à tout le trafic de la chaussée."
+  },
+  "kkalk-T-021": {
+    "stem": "Quelle règle s'applique au stationnement près d'un arrêt de bus dépourvu de ligne jaune ?",
+    "options": {
+      "A": "Interdiction de stationner 20 mètres avant le panneau et 5 mètres après.",
+      "B": "Interdiction de stationner 5 mètres avant le panneau et 20 mètres après.",
+      "C": "Interdiction de s'arrêter 20 mètres avant le panneau et 5 mètres après.",
+      "D": "Interdiction de stationner 15 mètres avant et 15 mètres après le panneau."
+    },
+    "explanation": "La règle permet au bus d'entrer plus facilement dans l'arrêt puis de se réinsérer souplement dans la circulation."
+  },
+  "kkalk-T-023": {
+    "stem": "As-tu le droit de t'arrêter sur un passage piéton pour déposer rapidement un passager ?",
+    "options": {
+      "A": "Oui, si cela peut se faire en sûreté et sans gêner personne.",
+      "B": "Oui, car l'arrêt est permis mais pas le stationnement.",
+      "C": "Non, il est interdit à la fois de s'y arrêter et d'y stationner.",
+      "D": "Non, sauf si tu allumes les feux de détresse pour prévenir les autres."
+    },
+    "explanation": "L'arrêt est interdit sur un passage piéton. Un véhicule qui s'y immobilise masque la visibilité et peut créer des situations dangereuses pour les piétons."
+  },
+  "kkalk-T-025": {
+    "stem": "Tu roules à 82 km/h sur une route limitée à 70 km/h. À combien s'élève l'amende ?",
+    "options": {
+      "A": "1 500 kr",
+      "B": "2 000 kr",
+      "C": "2 400 kr",
+      "D": "2 800 kr"
+    },
+    "explanation": "Rouler de 11 à 15 km/h au-dessus de la limite sur une route limitée à plus de 50 km/h coûte 2 000 couronnes d'amende."
+  },
+  "kkalk-T-027": {
+    "stem": "Quelle règle de priorité s'applique à une intersection sans panneaux, à l'intérieur d'un parc de stationnement ?",
+    "options": {
+      "A": "La règle de sortie.",
+      "B": "La priorité à droite.",
+      "C": "Celui qui circule sur la chaussée la plus large a la priorité.",
+      "D": "L'entente mutuelle et le contact visuel décident."
+    },
+    "explanation": "La priorité à droite s'applique aussi là où des voies de circulation se croisent dans un parc de stationnement, tant qu'aucun panneau n'indique autre chose."
+  },
+  "kkalk-T-028": {
+    "stem": "Le feu est vert, mais un panneau de cédez-le-passage est fixé sur le même poteau. Quelle règle s'applique ?",
+    "options": {
+      "A": "Le panneau prime sur le signal lumineux.",
+      "B": "Le signal lumineux prime sur le panneau.",
+      "C": "La priorité à droite s'applique, les règles étant contradictoires.",
+      "D": "Tu dois t'arrêter et attendre le jaune pour être sûr."
+    },
+    "explanation": "Les signaux lumineux ont une priorité supérieure à celle des panneaux. Quand le feu fonctionne, c'est lui que tu dois suivre, pas le panneau."
+  },
+  "kkalk-T-029": {
+    "stem": "Quelle est la vitesse de base en zone agglomérée ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "40 km/h",
+      "C": "50 km/h",
+      "D": "70 km/h"
+    },
+    "explanation": "La vitesse de base en zone agglomérée est de 50 km/h. Si une autre vitesse s'applique, elle doit être indiquée par un panneau."
+  },
+  "kkalk-T-032": {
+    "stem": "Quelle distance minimale faut-il entre ta voiture et une ligne continue lorsque tu te gares ?",
+    "options": {
+      "A": "1,5 mètre.",
+      "B": "2,0 mètres.",
+      "C": "3,0 mètres.",
+      "D": "Aucune règle de ce type n'existe."
+    },
+    "explanation": "La distance doit être de 3 mètres au minimum pour que le trafic qui passe ne soit pas contraint de franchir la ligne. La règle garantit assez de place aux autres."
+  },
+  "kkalk-T-036": {
+    "stem": "Tu vas tourner à gauche au feu vert et tu croises une voiture qui va tout droit. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu dois céder le passage à la voiture venant en face.",
+      "B": "La voiture venant en face doit te céder le passage puisque tu tournes.",
+      "C": "La priorité à droite détermine qui passe d'abord.",
+      "D": "Le feu vert signifie voie libre et tu peux passer aussitôt."
+    },
+    "explanation": "En tournant à gauche, tu dois céder le passage à tout le trafic venant en face. La règle vaut aussi quand tu as le feu vert."
+  },
+  "kkalk-T-037": {
+    "stem": "Tu te gares sur l'accotement le long d'une ligne continue. Quelle distance minimale faut-il entre ta voiture et la ligne ?",
+    "options": {
+      "A": "1,5 mètre.",
+      "B": "2,0 mètres.",
+      "C": "3,0 mètres.",
+      "D": "Aucune règle de distance de ce type n'existe."
+    },
+    "explanation": "La distance entre ton véhicule stationné et une ligne continue doit être de 3 mètres au minimum. Les autres usagers peuvent ainsi passer sans être contraints de franchir la ligne continue."
+  },
+  "kkalk-T-039": {
+    "stem": "Tu es contrôlé à 93 km/h sur une route limitée à 70. À combien s'élève l'amende ?",
+    "options": {
+      "A": "2 000 kr",
+      "B": "2 400 kr",
+      "C": "2 800 kr",
+      "D": "3 200 kr"
+    },
+    "explanation": "Les amendes pour excès de vitesse sont réparties par paliers. Rouler de 21 à 25 km/h au-dessus de la limite sur une route limitée à plus de 50 km/h coûte 2 800 couronnes."
+  },
+  "kkalk-T-040": {
+    "stem": "Tu sors d'une station-service et une voiture approche sur la route, venant de la gauche. Quelle règle s'applique ?",
+    "options": {
+      "A": "La voiture venant de la gauche doit te céder le passage, par la priorité à droite.",
+      "B": "Tu dois céder le passage à cette voiture, la règle de sortie s'appliquant.",
+      "C": "Celui de vous deux qui atteint la sortie le premier passe d'abord.",
+      "D": "Vous devez passer à tour de rôle selon le principe de la fermeture éclair."
+    },
+    "explanation": "La règle de sortie s'applique quand tu t'insères sur une route depuis une station-service. Cette règle prime sur la priorité à droite et t'oblige à attendre."
+  },
+  "kkalk-T-045": {
+    "stem": "As-tu le droit de dépasser une voiture juste avant un passage à niveau dépourvu de barrières et de signaux ?",
+    "options": {
+      "A": "Oui, si la visibilité le long de la voie ferrée est totalement dégagée.",
+      "B": "Oui, si tu ne dépasses pas la limitation de vitesse.",
+      "C": "Non, il est interdit de dépasser un véhicule à plusieurs essieux.",
+      "D": "Non, tout dépassement y est interdit, sans exception."
+    },
+    "explanation": "Juste avant et dans un passage à niveau non gardé, il est interdit de dépasser un véhicule à plusieurs essieux, une voiture par exemple. Le véhicule dépassé peut masquer un train qui approche."
+  },
+  "kkalk-T-049": {
+    "stem": "Tu gares la voiture le long d'une route avec une ligne continue. Quelle est la distance minimale autorisée entre la voiture et la ligne ?",
+    "options": {
+      "A": "2,0 mètres",
+      "B": "2,5 mètres",
+      "C": "3,0 mètres",
+      "D": "Aucune mesure fixe, du moment que les véhicules peuvent passer."
+    },
+    "explanation": "La distance doit être de 3 mètres au minimum. Les autres véhicules peuvent ainsi te dépasser en sûreté sans devoir franchir la ligne continue."
+  },
+  "kkalk-T-052": {
+    "stem": "Tu as le feu vert à une intersection quand une ambulance, sirènes et gyrophares en marche, approche par le côté. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu continues à vitesse réduite, puisque tu as le feu vert.",
+      "B": "L'ambulance doit attendre son tour, puisqu'elle a le feu rouge.",
+      "C": "Tu dois dégager le passage, même si cela implique de t'arrêter.",
+      "D": "Celui qui est arrivé le premier à l'intersection a la priorité."
+    },
+    "explanation": "Un véhicule d'intervention avec ses avertisseurs en marche a toujours la priorité. Tu es tenu de dégager le passage, quel que soit le feu ou le panneau qui te concerne."
+  },
+  "kkalk-T-053": {
+    "stem": "Tu es dans une voie d'accélération pour t'insérer sur une autoroute. Comment devez-vous agir, toi et le trafic de l'autoroute ?",
+    "options": {
+      "A": "Vous devez coopérer et adapter votre conduite pour que l'insertion soit souple et sûre.",
+      "B": "Je dois céder le passage à tout le trafic de l'autoroute.",
+      "C": "Le trafic de l'autoroute doit me céder le passage et changer de voie si possible.",
+      "D": "La priorité à droite s'applique, les véhicules de l'autoroute doivent donc ralentir pour moi."
+    },
+    "explanation": "La règle est celle de la coopération mutuelle. Tu dois adapter ta vitesse pour trouver un créneau, et le trafic de l'autoroute doit te faciliter la tâche si c'est possible."
+  },
+  "kkalk-T-057": {
+    "stem": "Tu conduis dans une rue cyclable. Quelle est ton obligation la plus importante envers les cyclistes ?",
+    "options": {
+      "A": "Adapter entièrement ta vitesse à la leur.",
+      "B": "Tenir une vitesse de 30 km/h au maximum.",
+      "C": "Céder le passage aux cyclistes venant de la droite.",
+      "D": "Garder toujours un écart latéral de 1,5 mètre au moins."
+    },
+    "explanation": "Dans une rue cyclable, les règles s'appliquent aux conditions des cyclistes. Tu dois adapter ta vitesse à la leur, même si cela implique de rouler bien en dessous de 30 km/h."
+  },
+  "kkalk-T-058": {
+    "stem": "Tu approches d'une traversée cyclable prioritaire. Quelle règle s'applique ?",
+    "options": {
+      "A": "Le cycliste doit te céder le passage.",
+      "B": "Tu dois céder le passage au cycliste.",
+      "C": "Celui qui atteint la traversée le premier a la priorité.",
+      "D": "La priorité à droite s'applique, comme dans une intersection ordinaire."
+    },
+    "explanation": "À une traversée cyclable prioritaire, l'automobiliste doit céder le passage aux cyclistes et aux conducteurs de cyclomoteur de classe II qui s'y engagent ou s'y trouvent déjà."
+  },
+  "kkalk-T-059": {
+    "stem": "Quelle vitesse s'applique sur une route de campagne hors zone agglomérée en l'absence de panneaux ?",
+    "options": {
+      "A": "50 km/h",
+      "B": "70 km/h",
+      "C": "80 km/h",
+      "D": "90 km/h"
+    },
+    "explanation": "Le principe est que la vitesse de base hors zone agglomérée est de 70 km/h. Elle s'applique tant qu'aucun panneau n'indique autre chose."
+  },
+  "kkalk-T-060": {
+    "stem": "Quelle est la vitesse maximale autorisée pour un cyclomoteur de classe I ?",
+    "options": {
+      "A": "25 km/h",
+      "B": "30 km/h",
+      "C": "45 km/h",
+      "D": "50 km/h"
+    },
+    "explanation": "Un cyclomoteur de classe I (cyclomoteur européen) est conçu pour rouler à 45 km/h au maximum, et ne peut pas aller plus vite. La classe II a, elle, une vitesse maximale de 25 km/h."
+  },
+  "kkalk-T-061": {
+    "stem": "Nous sommes le 13 du mois, il est 14 heures, dans une zone à stationnement alterné par date. Où te gares-tu ?",
+    "options": {
+      "A": "Du côté des numéros pairs.",
+      "B": "Du côté des numéros impairs.",
+      "C": "Du côté de ton choix, l'interdiction ne valant que de 0 à 6 heures.",
+      "D": "Le stationnement est interdit des deux côtés jusqu'à minuit."
+    },
+    "explanation": "À une date impaire (le 13), le stationnement est interdit du côté des numéros impairs. Tu dois donc te garer du côté des numéros pairs."
+  },
+  "kkalk-T-062": {
+    "stem": "As-tu le droit de t'arrêter pour la montée et la descente 5 mètres avant un passage piéton ?",
+    "options": {
+      "A": "Oui, puisqu'il s'agit seulement de déposer un passager.",
+      "B": "Oui, si cela se fait sans gêner ni déranger les autres usagers.",
+      "C": "Non, l'interdiction porte sur 10 mètres avant et après le passage.",
+      "D": "Non, il est interdit de s'arrêter ou de stationner dans les 10 mètres qui précèdent."
+    },
+    "explanation": "L'interdiction existe pour ne pas masquer la visibilité des autres conducteurs. Un véhicule arrêté juste avant un passage piéton peut dissimuler des piétons qui vont traverser."
+  },
+  "kkalk-T-063": {
+    "stem": "As-tu le droit de t'arrêter sur une route prioritaire pour décharger des marchandises ?",
+    "options": {
+      "A": "Non, l'arrêt est interdit sur une route prioritaire.",
+      "B": "Oui, l'arrêt pour charger ou décharger est autorisé.",
+      "C": "Oui, mais seulement en allumant les feux de détresse.",
+      "D": "Non, tu dois d'abord quitter la route prioritaire."
+    },
+    "explanation": "Sur une route prioritaire s'applique une interdiction de stationner, non une interdiction de s'arrêter. S'arrêter pour charger ou décharger ne compte pas comme du stationnement et reste donc autorisé."
+  },
+  "kkalk-T-067": {
+    "stem": "Est-il permis de s'arrêter à un arrêt de bus pour déposer rapidement un ami ?",
+    "options": {
+      "A": "Oui, à condition de ne pas gêner ni déranger le bus.",
+      "B": "Non, l'arrêt est toujours interdit à un arrêt de bus.",
+      "C": "Non, tu dois t'arrêter au moins 20 mètres avant le panneau d'arrêt.",
+      "D": "Oui, si l'arrêt ne dure pas plus de quelques minutes."
+    },
+    "explanation": "Il est interdit de stationner 20 mètres avant et 5 mètres après un panneau d'arrêt. Tu peux toutefois t'arrêter pour la montée ou la descente, tant que tu ne gênes pas le bus."
+  },
+  "kkalk-T-068": {
+    "stem": "Tu te gares à 14 h 15 là où un disque de stationnement est exigé. Quelle heure faut-il inscrire sur le disque ?",
+    "options": {
+      "A": "14 h 00",
+      "B": "14 h 15",
+      "C": "14 h 30",
+      "D": "15 h 00"
+    },
+    "explanation": "Tu dois régler le disque sur l'heure pleine ou la demi-heure suivant immédiatement ton arrivée. Comme tu te gares à 14 h 15, l'heure correcte à indiquer est 14 h 30."
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "kkalk-E-042": {
+    "stem": "À quelle vitesse faut-il engager le rapport le plus haut pour rouler économiquement sur route plate ?",
+    "options": {
+      "A": "Autour de 30 km/h",
+      "B": "Autour de 50 km/h",
+      "C": "Autour de 70 km/h",
+      "D": "Autour de 90 km/h"
+    },
+    "explanation": "Les moteurs modernes ont du couple même à bas régime. Rouler sur le rapport le plus haut possible le plus tôt possible abaisse le régime moteur, ce qui réduit la consommation."
+  },
+  "kkalk-E-043": {
+    "stem": "Pourquoi sauter un rapport, par exemple de la deuxième à la quatrième, est-il économe en carburant ?",
+    "options": {
+      "A": "L'accélération est plus forte avec moins de gaz.",
+      "B": "Le moteur atteint plus vite un bas régime où il est le plus efficace.",
+      "C": "La boîte s'use moins, chaque rapport étant utilisé moins longtemps.",
+      "D": "L'énergie cinétique de la voiture est mieux exploitée."
+    },
+    "explanation": "Sauter des rapports raccourcit le temps d'accélération à haut régime. Le moteur redescend donc plus vite vers un régime de travail plus bas et plus économe."
+  },
+  "kkalk-E-044": {
+    "stem": "Quel est le principal avantage écologique d'un système stop-and-start en ville ?",
+    "options": {
+      "A": "Il réduit la consommation et les rejets à l'arrêt.",
+      "B": "Il récupère l'énergie cinétique au freinage.",
+      "C": "Il optimise la température du moteur pour moins de rejets.",
+      "D": "Il refroidit le moteur plus vite après la conduite."
+    },
+    "explanation": "Le système coupe automatiquement le moteur lorsque la voiture est immobile, ce qui supprime des rejets inutiles et abaisse la consommation."
+  },
+  "kkalk-E-045": {
+    "stem": "Comment la climatisation de la voiture influence-t-elle la consommation ?",
+    "options": {
+      "A": "La consommation augmente, car la climatisation charge le moteur.",
+      "B": "La consommation baisse, car le moteur est mieux refroidi.",
+      "C": "La consommation ne change pas, la climatisation étant alimentée par la batterie seule.",
+      "D": "La consommation augmente uniquement à vitesse élevée."
+    },
+    "explanation": "La climatisation est entraînée par un compresseur qui charge le moteur. Cela augmente la consommation de la voiture de 5 à 10 %."
+  },
+  "kkalk-E-048": {
+    "stem": "Quel est l'effet général des quatre roues motrices sur la consommation d'une voiture ?",
+    "options": {
+      "A": "La consommation augmente à cause du poids et des frottements plus élevés.",
+      "B": "La consommation baisse grâce à une répartition plus régulière de la puissance.",
+      "C": "La consommation ne change pas en conduite normale.",
+      "D": "La consommation augmente seulement sur chaussée glissante."
+    },
+    "explanation": "Les quatre roues motrices ajoutent des organes mécaniques, ce qui alourdit la voiture et augmente ses frottements internes. La consommation monte donc inévitablement."
+  },
+  "kkalk-E-049": {
+    "stem": "Dans quelle plage de régime l'accélération est-elle la plus économe en carburant ?",
+    "options": {
+      "A": "1000 à 1500 tr/min",
+      "B": "1500 à 2500 tr/min",
+      "C": "2500 à 3500 tr/min",
+      "D": "3500 à 4500 tr/min"
+    },
+    "explanation": "Tu économises le plus de carburant en accélérant franchement puis en montant tôt les rapports, généralement autour de 2000 à 2500 tr/min sur une voiture moderne."
+  },
+  "kkalk-E-057": {
+    "stem": "Quel est le principal avantage climatique des biocarburants par rapport à l'essence et au diesel ?",
+    "options": {
+      "A": "Ils abaissent toujours la consommation du véhicule.",
+      "B": "Ils sont totalement exempts de gaz d'échappement nocifs.",
+      "C": "Ils n'ajoutent aucun dioxyde de carbone net à l'atmosphère.",
+      "D": "Ils sont plus simples et moins chers à produire."
+    },
+    "explanation": "Les biocarburants sont fabriqués à partir de plantes qui ont absorbé du dioxyde de carbone dans l'air. Leur bilan net est donc nul, contrairement aux carburants fossiles."
+  },
+  "kkalk-E-058": {
+    "stem": "Quels composants des gaz d'échappement forment de l'ozone nocif près du sol sous l'action du soleil ?",
+    "options": {
+      "A": "Les hydrocarbures et les oxydes d'azote",
+      "B": "Le dioxyde de carbone et la vapeur d'eau",
+      "C": "Le monoxyde de carbone et les particules de suie",
+      "D": "Le dioxyde de soufre et l'ammoniac"
+    },
+    "explanation": "L'ozone de basse altitude se forme lorsque la lumière du soleil frappe des gaz d'échappement contenant des hydrocarbures imbrûlés et des oxydes d'azote."
+  },
+  "kkalk-E-061": {
+    "stem": "Environ combien de carburant économises-tu en utilisant le préchauffage moteur lors d'un démarrage à froid ?",
+    "options": {
+      "A": "Environ 1 décilitre.",
+      "B": "Environ 3 décilitres.",
+      "C": "Quelques centilitres, le gain est marginal.",
+      "D": "Rien, le gain porte sur l'usure du moteur."
+    },
+    "explanation": "Un moteur démarré à chaud a moins de frottements internes et consomme moins. L'économie est d'environ 1 décilitre, et les rejets nocifs diminuent en même temps."
+  },
+  "kkalk-E-065": {
+    "stem": "Quelle pression des pneus donne la consommation la plus basse ?",
+    "options": {
+      "A": "Exactement la pression de base recommandée pour la voiture.",
+      "B": "Un peu plus que la recommandation, comme pour la pleine charge.",
+      "C": "Un peu moins que la recommandation, pour augmenter l'adhérence.",
+      "D": "Toujours la pression maximale inscrite sur le pneu."
+    },
+    "explanation": "Une pression plus élevée réduit la résistance au roulement du pneu, donc la consommation. La pression recommandée pour la pleine charge est un bon repère."
+  },
+  "kkalk-E-069": {
+    "stem": "Comment monter une côte raide en consommant le moins possible ?",
+    "options": {
+      "A": "Rétrograder tôt et rouler à un régime élevé et régulier.",
+      "B": "Prendre de l'élan juste avant la côte pour garder un rapport haut.",
+      "C": "Garder un gaz constant et rétrograder dès que le moteur faiblit.",
+      "D": "Lâcher l'accélérateur et rouler en roue libre avant de réaccélérer."
+    },
+    "explanation": "Prendre de l'élan avant la côte exploite l'énergie cinétique de la voiture. Cela t'aide à rester plus longtemps sur un rapport haut et économe."
+  },
+  "kkalk-E-070": {
+    "stem": "En conduite économe, sur quelle distance faut-il rouler en première ?",
+    "options": {
+      "A": "Jusqu'à 25 km/h.",
+      "B": "Au moins 20 mètres, pour ne pas abîmer l'embrayage.",
+      "C": "Deux longueurs de voiture au maximum (environ 10 mètres).",
+      "D": "Jusqu'à ce que le moteur atteigne sa température de travail."
+    },
+    "explanation": "La première n'est qu'un rapport de démarrage destiné à mettre la voiture en mouvement. Utilise-la sur la distance la plus courte possible pour économiser du carburant."
+  },
+  "kkalk-E-071": {
+    "stem": "Comment un démarrage à froid en hiver influence-t-il la consommation sur les premiers kilomètres ?",
+    "options": {
+      "A": "Elle ne change pas, surtout sur les voitures modernes.",
+      "B": "Elle baisse un peu, l'air froid étant plus riche en oxygène.",
+      "C": "Elle peut plus que doubler.",
+      "D": "Elle augmente à peine, de 10 % environ."
+    },
+    "explanation": "Un moteur froid a besoin d'un mélange beaucoup plus riche pour fonctionner. L'huile épaisse crée en plus de forts frottements internes, ce qui fait monter la consommation."
+  },
+  "kkalk-E-072": {
+    "stem": "Pourquoi vaut-il mieux pour l'environnement laver la voiture dans une station de lavage plutôt que devant chez soi dans la rue ?",
+    "options": {
+      "A": "La consommation d'eau est moindre, car la station réutilise une partie de l'eau.",
+      "B": "La loi interdit de salir l'espace public avec de l'eau de lavage.",
+      "C": "L'eau sale chargée d'huile et de métaux lourds est traitée au lieu de partir non traitée dans la nature.",
+      "D": "Les stations modernes n'emploient que des produits écolabellisés et totalement biodégradables."
+    },
+    "explanation": "L'eau sale de la voiture contient de l'huile, des particules de pneu et des métaux lourds. Les stations de lavage disposent d'un traitement avec séparateur d'hydrocarbures qui empêche ces poisons d'atteindre les cours d'eau."
+  },
+  "kkalk-E-074": {
+    "stem": "Comment l'ozone de basse altitude issu des gaz d'échappement agit-il sur les personnes et les plantes ?",
+    "options": {
+      "A": "Il agresse les voies respiratoires et freine la croissance des plantes.",
+      "B": "Il neutralise les pluies acides et réduit l'acidification.",
+      "C": "Il aide à refermer le trou de la couche d'ozone.",
+      "D": "Il fixe les métaux lourds et dépollue les sols."
+    },
+    "explanation": "L'ozone de basse altitude se forme lorsque la lumière du soleil frappe les gaz d'échappement. Ce gaz agresse les voies respiratoires humaines et freine la croissance des plantes."
+  },
+  "kkalk-E-083": {
+    "stem": "Quel gaz nocif se forme lorsque la lumière du soleil et les gaz d'échappement réagissent entre eux ?",
+    "options": {
+      "A": "Le dioxyde de carbone",
+      "B": "Le fréon",
+      "C": "L'ozone de basse altitude",
+      "D": "Le dioxyde de soufre"
+    },
+    "explanation": "L'ozone de basse altitude se forme lorsque la lumière du soleil frappe les gaz d'échappement des voitures. Ce gaz est nocif pour les personnes comme pour les plantes."
+  },
+  "kkalk-E-084": {
+    "stem": "À quel régime faut-il au plus tard monter un rapport pour accélérer en consommant peu ?",
+    "options": {
+      "A": "Autour de 1 500 tr/min",
+      "B": "Autour de 2 500 tr/min",
+      "C": "Autour de 3 500 tr/min",
+      "D": "Autour de 4 500 tr/min"
+    },
+    "explanation": "Pour rouler économiquement, il faut monter le rapport avant que le moteur atteigne 2 500 tr/min sur une voiture à essence. Un régime plus élevé fait nettement monter la consommation."
+  },
+  "kkalk-E-087": {
+    "stem": "Il fait 0 °C dehors. Combien de temps utiliser le préchauffage moteur sans gaspiller d'énergie ?",
+    "options": {
+      "A": "Environ 30 minutes.",
+      "B": "Environ 1 heure.",
+      "C": "Environ 1 heure 30.",
+      "D": "Environ 2 heures."
+    },
+    "explanation": "Par zéro degré, une heure suffit. Au-delà, tu gaspilles de l'énergie sans obtenir d'effet supplémentaire perceptible."
+  },
+  "kkalk-E-090": {
+    "stem": "Quelles voitures particulières peuvent circuler dans une zone à faibles émissions de classe 3 ?",
+    "options": {
+      "A": "Les voitures électriques et tous les types d'hybrides rechargeables.",
+      "B": "Toutes les voitures particulières répondant à la norme Euro 6.",
+      "C": "Seulement les électriques, les véhicules à pile à combustible et les voitures au gaz Euro 6.",
+      "D": "Toutes les voitures particulières, la zone ne visant que les poids lourds."
+    },
+    "explanation": "La zone de classe 3 applique les règles les plus strictes. Les voitures essence, diesel et hybrides rechargeables y sont interdites, quel que soit leur âge ou leur norme."
+  },
+  "kkalk-E-094": {
+    "stem": "Quel est le principal risque sanitaire lié à l'usage de pneus cloutés sur chaussée sèche en ville ?",
+    "options": {
+      "A": "Ils augmentent la consommation de la voiture.",
+      "B": "Le bruit des pneus peut gêner le voisinage.",
+      "C": "Ils arrachent à l'asphalte des particules dangereuses pour la santé.",
+      "D": "L'adhérence se dégrade, ce qui accroît le risque d'accident."
+    },
+    "explanation": "Les clous arrachent de fines particules (PM10) à l'asphalte. Ces particules polluent l'air et sont nocives à respirer, un problème majeur dans les villes."
+  },
+  "kkalk-E-095": {
+    "stem": "La température est de -15 °C. Combien de temps utiliser le préchauffage moteur pour le meilleur effet ?",
+    "options": {
+      "A": "Environ 30 minutes.",
+      "B": "Environ 1 heure.",
+      "C": "Environ 1 heure 30.",
+      "D": "Environ 3 heures."
+    },
+    "explanation": "À -15 °C, une heure et demie est une durée adaptée. Au-delà, l'énergie est gaspillée sans que le moteur devienne plus chaud."
+  },
+  "kkalk-E-097": {
+    "stem": "Quelles voitures particulières peuvent rouler dans les rues classées zone à faibles émissions de classe 3 ?",
+    "options": {
+      "A": "Toutes les voitures classées Euro 6, quel que soit le carburant.",
+      "B": "Toutes les hybrides rechargeables et les voitures capables de rouler en électrique.",
+      "C": "Seulement les voitures mues par l'électricité, l'hydrogène ou le gaz (Euro 6).",
+      "D": "Seulement les riverains et les professionnels munis d'une autorisation spéciale."
+    },
+    "explanation": "La zone de classe 3 est la plus sévère et n'admet que les véhicules les plus propres. Les voitures essence et diesel, y compris les hybrides rechargeables neuves, y sont interdites."
+  },
+  "kkalk-E-101": {
+    "stem": "Quelle température un pot catalytique doit-il atteindre pour fonctionner efficacement ?",
+    "options": {
+      "A": "100 à 200 °C",
+      "B": "250 à 350 °C",
+      "C": "400 à 600 °C",
+      "D": "750 à 900 °C"
+    },
+    "explanation": "Le pot catalytique a besoin d'une forte chaleur pour amorcer les réactions chimiques qui épurent les gaz d'échappement. Son rendement est maximal entre 400 et 600 °C."
+  },
+  "kkalk-E-102": {
+    "stem": "Quelle est la consommation lorsque tu utilises le frein moteur sur une voiture moderne ?",
+    "options": {
+      "A": "Elle est identique à celle du ralenti.",
+      "B": "Elle baisse de moitié environ.",
+      "C": "Elle est nulle.",
+      "D": "Elle augmente à peine, à cause des frottements."
+    },
+    "explanation": "Lors du frein moteur, le calculateur coupe totalement l'alimentation en carburant. C'est l'énergie cinétique de la voiture qui entraîne le moteur, pas le carburant."
+  },
+  "kkalk-E-103": {
+    "stem": "Quel est le principal risque sanitaire et environnemental des pneus cloutés dans la circulation urbaine ?",
+    "options": {
+      "A": "Des rejets accrus de dioxyde de carbone dus à une résistance au roulement plus forte.",
+      "B": "Un bruit susceptible de gêner les riverains.",
+      "C": "Le rejet de métaux toxiques provenant des clous.",
+      "D": "Des particules respirables arrachées à l'asphalte."
+    },
+    "explanation": "Les clous arrachent de fines particules (PM10) à la chaussée. Elles sont nocives à respirer et constituent la première raison des interdictions de pneus cloutés."
+  }
+}

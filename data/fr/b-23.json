@@ -1,0 +1,252 @@
+{
+  "kkalk-V-154": {
+    "stem": "Quand es-tu obligé d'utiliser des pneus hiver en conditions hivernales ?",
+    "options": {
+      "A": "Du 1er octobre au 15 avril",
+      "B": "Du 1er novembre au 31 mars",
+      "C": "Du 1er décembre au 31 mars",
+      "D": "Du 1er décembre au 15 avril"
+    },
+    "explanation": "La loi exige des pneus hiver du 1er décembre au 31 mars en conditions hivernales, c'est-à-dire en présence de neige, de glace, de neige fondante ou de givre sur une partie de la chaussée."
+  },
+  "kkalk-V-155": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée sur un pneu été ?",
+    "options": {
+      "A": "1,0 mm",
+      "B": "1,6 mm",
+      "C": "3,0 mm",
+      "D": "4,0 mm"
+    },
+    "explanation": "La loi exige au minimum 1,6 mm de profondeur de sculpture sur un pneu été. Pour une bonne adhérence sur route mouillée, 3 mm au moins sont toutefois recommandés."
+  },
+  "kkalk-V-158": {
+    "stem": "Ta voiture a six ans. À quelle fréquence doit-elle repasser le contrôle technique ?",
+    "options": {
+      "A": "12 mois au plus tard après le précédent.",
+      "B": "14 mois au plus tard après le précédent.",
+      "C": "24 mois au plus tard après le précédent.",
+      "D": "36 mois au plus tard après le précédent."
+    },
+    "explanation": "Une voiture de plus de cinq ans doit repasser le contrôle au plus tard 14 mois après le précédent contrôle favorable."
+  },
+  "kkalk-V-159": {
+    "stem": "Quelle assurance est obligatoire pour ta voiture, et qu'indemnise-t-elle si tu percutes la clôture du voisin ?",
+    "options": {
+      "A": "L'assurance tous risques. Elle indemnise les dégâts de ta voiture comme ceux de la clôture.",
+      "B": "L'assurance intermédiaire. Elle n'indemnise que les dégâts de ta propre voiture en cas de collision.",
+      "C": "L'assurance responsabilité civile. Elle indemnise les dégâts de la clôture, mais pas ceux de ta voiture.",
+      "D": "L'assurance habitation. Elle indemnise la clôture puisque le dommage a eu lieu sur un terrain privé."
+    },
+    "explanation": "L'assurance responsabilité civile est la seule assurance automobile obligatoire. Elle couvre les dommages que tu causes à autrui et à ses biens, mais jamais les dégâts sur ton propre véhicule."
+  },
+  "kkalk-V-160": {
+    "stem": "Quand une voiture particulière neuve doit-elle passer son tout premier contrôle technique ?",
+    "options": {
+      "A": "14 mois au plus tard après sa mise en circulation.",
+      "B": "24 mois au plus tard après sa mise en circulation.",
+      "C": "36 mois au plus tard après sa mise en circulation.",
+      "D": "60 mois au plus tard après sa mise en circulation."
+    },
+    "explanation": "Une voiture neuve doit passer son premier contrôle au plus tard 36 mois (3 ans) après sa mise en circulation. Le deuxième contrôle a lieu 24 mois (2 ans) plus tard au plus tard."
+  },
+  "kkalk-V-161": {
+    "stem": "Quand une voiture particulière est-elle définitivement dispensée de contrôle technique ?",
+    "options": {
+      "A": "À 30 ans, si elle est immatriculée comme véhicule de collection.",
+      "B": "À 50 ans, à condition d'avoir un contrôle favorable de moins de deux ans.",
+      "C": "À 40 ans, comme pour les motos.",
+      "D": "Jamais, toutes les voitures en circulation doivent passer le contrôle régulièrement."
+    },
+    "explanation": "Une voiture particulière de 50 ans ou plus est dispensée de contrôle. Cela vaut si elle dispose d'un contrôle technique favorable et valide obtenu au cours des deux dernières années."
+  },
+  "kkalk-V-162": {
+    "stem": "Tu as le permis B étendu (B96). Quel est le poids total autorisé cumulé maximal de ta voiture et de ta remorque ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 250 kg",
+      "C": "5 000 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec le permis B étendu (B96), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. Un attelage plus lourd encore exige le permis BE."
+  },
+  "kkalk-V-163": {
+    "stem": "Quel élément de la ligne d'échappement a pour mission principale de transformer les gaz toxiques en substances moins nocives ?",
+    "options": {
+      "A": "Le silencieux",
+      "B": "Le pot catalytique",
+      "C": "La sonde lambda",
+      "D": "Le filtre à particules"
+    },
+    "explanation": "Le pot catalytique utilise des métaux précieux et une forte chaleur pour transformer les gaz les plus toxiques en eau et en dioxyde de carbone. C'est l'organe d'épuration le plus important de la voiture."
+  },
+  "kkalk-V-164": {
+    "stem": "Quelle sanction financière encourt le propriétaire d'une voiture non assurée ?",
+    "options": {
+      "A": "Une amende lors d'un contrôle de police.",
+      "B": "Une redevance mensuelle de l'agence des transports.",
+      "C": "Une redevance journalière élevée de l'association des assureurs automobiles.",
+      "D": "Une interdiction de circuler jusqu'à la souscription d'une assurance."
+    },
+    "explanation": "Tu dois payer une redevance pour chaque jour où la voiture n'est pas assurée. Cette redevance est bien plus élevée qu'une prime d'assurance ordinaire et elle est prélevée par l'association des assureurs."
+  },
+  "kkalk-V-165": {
+    "stem": "Pour quelle vitesse maximale un véhicule portant un panneau de véhicule lent peut-il être conçu ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "40 km/h",
+      "C": "45 km/h",
+      "D": "50 km/h"
+    },
+    "explanation": "Un véhicule portant un panneau de véhicule lent est conçu pour une vitesse de 45 km/h au maximum. Les voiturettes, les tracteurs agricoles et certains engins automoteurs en sont des exemples."
+  },
+  "kkalk-V-166": {
+    "stem": "Quel liquide est employé dans le circuit de refroidissement pour éviter les dégâts du gel ?",
+    "options": {
+      "A": "Le liquide lave-glace",
+      "B": "Le liquide de frein",
+      "C": "Le glycol",
+      "D": "L'huile moteur"
+    },
+    "explanation": "Le glycol abaisse le point de congélation du liquide de refroidissement et protège aussi le circuit contre la corrosion."
+  },
+  "kkalk-V-167": {
+    "stem": "Le niveau de liquide de la batterie de ta voiture est trop bas et doit être complété. Quel liquide faut-il utiliser ?",
+    "options": {
+      "A": "De l'eau distillée ou déminéralisée.",
+      "B": "De l'acide de batterie concentré.",
+      "C": "De l'eau du robinet ordinaire.",
+      "D": "Du liquide de refroidissement (glycol)."
+    },
+    "explanation": "Seule l'eau de la batterie s'évapore pendant la charge, pas l'acide. Tu dois donc compléter avec de l'eau distillée ou déminéralisée pour rétablir le niveau."
+  },
+  "kkalk-V-168": {
+    "stem": "Qu'entend-on par charge sur la boule d'attelage quand tu roules avec une remorque ?",
+    "options": {
+      "A": "La force avec laquelle la remorque appuie vers le bas sur la boule d'attelage.",
+      "B": "La pression cumulée des pneus de la remorque sur la chaussée.",
+      "C": "Le poids cumulé maximal autorisé pour la remorque.",
+      "D": "La force nécessaire pour immobiliser complètement la remorque."
+    },
+    "explanation": "La charge sur la boule est le poids que le dispositif d'attelage de la remorque exerce sur la boule de la voiture. Une charge correcte est décisive pour la stabilité de l'ensemble."
+  },
+  "kkalk-V-169": {
+    "stem": "Tu fais un contrôle de sécurité et tu testes le frein de service. Quelle sensation la pédale doit-elle donner quand tu appuies fermement ?",
+    "options": {
+      "A": "Elle doit être ferme et s'arrêter à une position fixe.",
+      "B": "Elle doit descendre lentement et souplement vers le plancher.",
+      "C": "Elle doit céder et donner une sensation élastique.",
+      "D": "Elle doit offrir une légère résistance jusqu'au plancher."
+    },
+    "explanation": "Une pédale ferme qui s'arrête à une position fixe montre que le circuit de freinage est étanche. Une pédale élastique ou qui s'enfonce signale de l'air ou une fuite dans le circuit."
+  },
+  "kkalk-V-201": {
+    "stem": "Comment calculer le plus simplement ta distance de réaction approximative en mètres ?",
+    "options": {
+      "A": "Retirer le zéro de la vitesse et multiplier par 3.",
+      "B": "Retirer le zéro de la vitesse et multiplier le nombre par lui-même.",
+      "C": "Diviser la vitesse en km/h par 10.",
+      "D": "Diviser la vitesse en km/h par pi (environ 3,14)."
+    },
+    "explanation": "La règle empirique consiste à retirer le zéro de la vitesse et à multiplier par 3. À 50 km/h, la distance de réaction est donc d'environ 15 mètres (5 x 3)."
+  },
+  "kkalk-V-202": {
+    "stem": "Quelle est la distance de freinage à 70 km/h par bonnes conditions, selon le calcul approché de la théorie ?",
+    "options": {
+      "A": "21 mètres",
+      "B": "25 mètres",
+      "C": "46 mètres",
+      "D": "49 mètres"
+    },
+    "explanation": "Retire le zéro de la vitesse, multiplie le chiffre par lui-même et divise par deux. Le calcul donne (7 x 7) divisé par 2, soit 24,5 mètres."
+  },
+  "kkalk-V-203": {
+    "stem": "Quel est l'effet sur la distance de freinage si tu triples ta vitesse ?",
+    "options": {
+      "A": "Elle devient trois fois plus longue.",
+      "B": "Elle devient six fois plus longue.",
+      "C": "Elle devient neuf fois plus longue.",
+      "D": "Elle devient douze fois plus longue."
+    },
+    "explanation": "La distance de freinage croît avec le carré de la vitesse. Tripler la vitesse la rend donc neuf fois (3 x 3) plus longue."
+  },
+  "kkalk-V-204": {
+    "stem": "Ta voiture a un poids total autorisé de 2300 kg. Avec un permis B, peux-tu tirer une caravane de 1300 kg de poids total autorisé ?",
+    "options": {
+      "A": "Oui, car le poids total autorisé de la voiture est sous 3500 kg.",
+      "B": "Oui, car le poids total autorisé de la remorque est inférieur à celui de la voiture.",
+      "C": "Non, car le poids total autorisé cumulé dépasse 3500 kg.",
+      "D": "Non, car la remorque pèse plus de 750 kg."
+    },
+    "explanation": "Avec un permis B, le poids total autorisé cumulé de la voiture et de la remorque ne peut pas dépasser 3500 kg. Ici, il atteint 3600 kg (2300 plus 1300)."
+  },
+  "kkalk-V-205": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque si tu as un permis B96 ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 250 kg",
+      "C": "5 000 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec le permis B étendu (B96), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. C'est 750 kg de plus qu'avec un permis B ordinaire."
+  },
+  "kkalk-V-206": {
+    "stem": "Ta voiture est interdite de circuler faute de contrôle technique. As-tu le droit de la conduire ?",
+    "options": {
+      "A": "Oui, si tu veux seulement la déplacer vers une autre place de stationnement.",
+      "B": "Non, elle doit sans exception être transportée par une dépanneuse.",
+      "C": "Oui, par le chemin le plus court et adapté vers un garage ou un centre de contrôle.",
+      "D": "Oui, si le trajet se fait sur des routes limitées à 50 km/h au plus."
+    },
+    "explanation": "Tu peux conduire une voiture interdite de circuler, mais seulement par le chemin le plus court et le plus adapté vers un garage pour réparation ou directement vers un centre de contrôle technique."
+  },
+  "kkalk-V-207": {
+    "stem": "Le témoin rouge de pression d'huile s'allume en roulant. Que dois-tu faire ?",
+    "options": {
+      "A": "T'arrêter sans délai dans un endroit sûr et couper le moteur.",
+      "B": "Rouler jusqu'au garage le plus proche pour vérifier l'huile.",
+      "C": "Prendre rendez-vous pour une révision et une vidange.",
+      "D": "Ralentir et rentrer prudemment à la maison."
+    },
+    "explanation": "Un témoin rouge signale toujours une panne grave. Tu dois t'arrêter immédiatement pour éviter la destruction coûteuse du moteur par perte de pression d'huile."
+  },
+  "kkalk-V-208": {
+    "stem": "Pourquoi l'autorité de sécurité électrique déconseille-t-elle de recharger régulièrement une voiture électrique sur une prise murale ordinaire ?",
+    "options": {
+      "A": "Cela peut abîmer la batterie de la voiture à la longue.",
+      "B": "C'est illégal sans autorisation particulière de la commune.",
+      "C": "Cela use inutilement l'installation électrique du bâtiment.",
+      "D": "Une forte charge prolongée peut faire surchauffer la prise et provoquer un incendie."
+    },
+    "explanation": "Une prise domestique ordinaire n'est pas conçue pour la charge élevée et continue que représente la recharge d'une voiture électrique, ce qui crée un risque sérieux de surchauffe et d'incendie."
+  },
+  "kkalk-V-209": {
+    "stem": "Tu recules dans une voiture stationnée et causes des dégâts. Que couvre ton assurance responsabilité civile ?",
+    "options": {
+      "A": "Les dégâts de l'autre voiture et d'éventuels dommages corporels.",
+      "B": "Seulement les dégâts de ta propre voiture.",
+      "C": "Rien, puisque tu es responsable de l'accident.",
+      "D": "Les dégâts de ta voiture comme ceux de l'autre."
+    },
+    "explanation": "L'assurance responsabilité civile couvre les dommages corporels et matériels que tu causes avec ton véhicule. Elle ne couvre en revanche jamais les dégâts sur ton propre véhicule."
+  },
+  "kkalk-V-210": {
+    "stem": "Quand une voiture peut-elle être définitivement dispensée de contrôle technique ?",
+    "options": {
+      "A": "À 30 ans, si son état d'origine est attesté.",
+      "B": "À 50 ans, à condition d'avoir réussi un contrôle au cours des deux dernières années.",
+      "C": "À 50 ans, quel que soit son état ou son historique de contrôles.",
+      "D": "Jamais, toutes les voitures immatriculées doivent passer le contrôle régulièrement."
+    },
+    "explanation": "Une voiture de 50 ans ou plus est dispensée de contrôle. L'exigence d'un contrôle favorable récent garantit que le véhicule est en état de circuler en sécurité."
+  },
+  "kkalk-V-241": {
+    "stem": "Comment évolue la distance de freinage d'une voiture sur asphalte mouillé par rapport à l'asphalte sec ?",
+    "options": {
+      "A": "Elle ne change pas si la voiture a l'ABS.",
+      "B": "Elle devient environ deux fois plus longue.",
+      "C": "Elle s'allonge un peu, mais des pneus neufs compensent presque totalement.",
+      "D": "Elle peut raccourcir, l'eau refroidissant les pneus."
+    },
+    "explanation": "L'eau sur la chaussée réduit fortement l'adhérence des pneus, ce qui rend la distance de freinage environ deux fois plus longue."
+  }
+}

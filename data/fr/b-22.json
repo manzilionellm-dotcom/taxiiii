@@ -1,0 +1,252 @@
+{
+  "kkalk-V-121": {
+    "stem": "Tu as causé un accident sans tiers et endommagé ta propre voiture. Quelle assurance couvre le coût de la réparation ?",
+    "options": {
+      "A": "L'assurance responsabilité civile",
+      "B": "L'assurance intermédiaire",
+      "C": "L'assurance tous risques",
+      "D": "L'assurance protection juridique"
+    },
+    "explanation": "L'assurance tous risques comprend la garantie dommages au véhicule, qui indemnise les dégâts sur ton propre véhicule quand tu es responsable. La responsabilité civile ne couvre que les dommages causés à autrui."
+  },
+  "kkalk-V-125": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée pour un pneu hiver en conditions hivernales ?",
+    "options": {
+      "A": "1,6 mm",
+      "B": "3,0 mm",
+      "C": "4,0 mm",
+      "D": "5,0 mm"
+    },
+    "explanation": "L'exigence légale minimale pour un pneu hiver en conditions hivernales est de 3,0 mm. L'exigence correspondante pour un pneu été est de 1,6 mm."
+  },
+  "kkalk-V-127": {
+    "stem": "Que signifie la notion de charge sur la boule d'attelage ?",
+    "options": {
+      "A": "Le poids maximal que la voiture peut tirer.",
+      "B": "La charge exercée sur l'essieu de la remorque.",
+      "C": "Le poids avec lequel la tête d'attelage de la remorque appuie sur la boule de la voiture.",
+      "D": "Le poids cumulé du chargement de la remorque."
+    },
+    "explanation": "La charge sur la boule est le poids avec lequel la remorque repose sur le dispositif d'attelage de la voiture. Une charge correcte est décisive pour une bonne tenue de route."
+  },
+  "kkalk-V-128": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque si tu as un permis B ordinaire ?",
+    "options": {
+      "A": "2 500 kg",
+      "B": "3 500 kg",
+      "C": "4 250 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec un permis B ordinaire, le poids total autorisé cumulé de la voiture et de la remorque ne peut pas dépasser 3 500 kg. Au-delà, le permis B étendu (B96) ou le permis BE est requis."
+  },
+  "kkalk-V-129": {
+    "stem": "Quels véhicules doivent porter un panneau de véhicule lent à l'arrière ?",
+    "options": {
+      "A": "Les tracteurs, les engins automoteurs et les voiturettes.",
+      "B": "Les véhicules de plus de 260 cm de large.",
+      "C": "Les camions transportant des marchandises dangereuses.",
+      "D": "Toutes les voitures attelées à une remorque."
+    },
+    "explanation": "Le panneau de véhicule lent est obligatoire sur les véhicules conçus pour une vitesse maximale de 45 km/h ou moins, afin d'avertir les autres usagers."
+  },
+  "kkalk-V-130": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque avec la mention B96 ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 250 kg",
+      "C": "5 000 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec le permis B étendu (B96), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. Pour un permis B ordinaire, la limite est de 3 500 kg."
+  },
+  "kkalk-V-131": {
+    "stem": "Quel poids total autorisé maximal une remorque peut-elle avoir pour être toujours classée comme légère ?",
+    "options": {
+      "A": "500 kg de poids total autorisé",
+      "B": "750 kg de poids total autorisé",
+      "C": "1000 kg de poids total autorisé",
+      "D": "750 kg de poids à vide"
+    },
+    "explanation": "Une remorque dont le poids total autorisé ne dépasse pas 750 kg est toujours définie comme légère. Tu peux en tirer une avec un permis B, à condition que la voiture soit homologuée pour cela."
+  },
+  "kkalk-V-132": {
+    "stem": "Tu passes le permis BE aujourd'hui. Quel est le poids total autorisé maximal de la remorque elle-même ?",
+    "options": {
+      "A": "4 250 kg.",
+      "B": "7 000 kg.",
+      "C": "Illimité, du moment que la voiture est homologuée pour ce poids.",
+      "D": "3 500 kg."
+    },
+    "explanation": "Pour les permis BE délivrés après le 19 janvier 2013, le poids total autorisé maximal de la remorque est de 3 500 kg. Avec le véhicule tracteur, le total cumulé peut atteindre 7 000 kg au maximum."
+  },
+  "kkalk-V-133": {
+    "stem": "Le témoin eCall de ta voiture est allumé pendant le contrôle technique. Que prévoient les nouvelles règles à partir de 2026 ?",
+    "options": {
+      "A": "Ce n'est plus une exigence et cela n'affecte pas le résultat.",
+      "B": "Tu reçois une injonction de repasser le contrôle.",
+      "C": "Tu reçois une interdiction immédiate de circuler.",
+      "D": "C'est noté au procès-verbal avec obligation de suivi."
+    },
+    "explanation": "L'exigence d'un eCall fonctionnel est supprimée au contrôle technique parce que les réseaux 2G et 3G ferment, ce qui vaudrait sinon une remarque inutile à de nombreuses voitures."
+  },
+  "kkalk-V-135": {
+    "stem": "Ta voiture particulière a sept ans. Quand doit-elle au plus tard repasser le contrôle technique ?",
+    "options": {
+      "A": "12 mois au plus tard après le dernier contrôle favorable.",
+      "B": "24 mois au plus tard après le dernier contrôle favorable.",
+      "C": "14 mois au plus tard après le dernier contrôle favorable.",
+      "D": "Pendant une période fixe chaque année, déterminée par le dernier chiffre de la plaque."
+    },
+    "explanation": "Une voiture de plus de cinq ans doit repasser le contrôle au plus tard 14 mois après le précédent contrôle favorable. La règle liée au dernier chiffre de la plaque a été supprimée."
+  },
+  "kkalk-V-136": {
+    "stem": "Quelle assurance indemnise les dégâts sur ta propre voiture après un accident sans tiers ?",
+    "options": {
+      "A": "L'assurance responsabilité civile",
+      "B": "L'assurance intermédiaire",
+      "C": "L'assurance tous risques",
+      "D": "L'assurance accidents corporels"
+    },
+    "explanation": "Seule l'assurance tous risques couvre les dégâts sur ta propre voiture lors d'un accident sans tiers. Elle comprend la garantie dommages au véhicule, absente des autres formules."
+  },
+  "kkalk-V-137": {
+    "stem": "Tu percutes la clôture du voisin avec ta voiture. Qu'indemnise ton assurance responsabilité civile obligatoire ?",
+    "options": {
+      "A": "Les dégâts sur ta propre voiture.",
+      "B": "Les dégâts sur la clôture.",
+      "C": "Tous les dommages corporels et matériels.",
+      "D": "Rien, puisque tu es responsable."
+    },
+    "explanation": "L'assurance responsabilité civile indemnise tous les dommages corporels et tous les dégâts aux biens d'autrui. Elle ne couvre en revanche jamais les dégâts sur ton propre véhicule."
+  },
+  "kkalk-V-138": {
+    "stem": "Tu roules à 90 km/h sur asphalte sec. Quelle est approximativement ta distance de freinage ?",
+    "options": {
+      "A": "Environ 27 mètres",
+      "B": "Environ 41 mètres",
+      "C": "Environ 68 mètres",
+      "D": "Environ 81 mètres"
+    },
+    "explanation": "Applique la formule de la distance de freinage : (vitesse divisée par 10) au carré, divisé par 2. Cela donne (9 x 9) divisé par 2, soit 40,5 mètres."
+  },
+  "kkalk-V-139": {
+    "stem": "Tu roules à 110 km/h. Quelle est approximativement ta distance de réaction en une seconde ?",
+    "options": {
+      "A": "Environ 11 mètres",
+      "B": "Environ 33 mètres",
+      "C": "Environ 48 mètres",
+      "D": "Environ 81 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique consiste à prendre la vitesse, retirer le dernier chiffre et multiplier par trois. Cela donne la distance de réaction en mètres (11 x 3, soit 33)."
+  },
+  "kkalk-V-140": {
+    "stem": "Tu es blessé comme passager dans un accident de voiture. Quelle assurance indemnise tes dommages corporels ?",
+    "options": {
+      "A": "L'assurance responsabilité civile de la voiture",
+      "B": "Ton assurance accidents corporels privée",
+      "C": "La garantie dommages au véhicule de la voiture",
+      "D": "Seulement l'assurance tous risques de la voiture"
+    },
+    "explanation": "L'assurance responsabilité civile est obligatoire et couvre tous les dommages corporels du conducteur comme des passagers. La garantie dommages au véhicule ne concerne que les dégâts sur la voiture elle-même."
+  },
+  "kkalk-V-142": {
+    "stem": "Quand une voiture particulière neuve doit-elle passer son tout premier contrôle technique ?",
+    "options": {
+      "A": "12 mois au plus tard après le mois de sa mise en circulation.",
+      "B": "24 mois au plus tard après le mois de sa mise en circulation.",
+      "C": "36 mois au plus tard après le mois de sa mise en circulation.",
+      "D": "48 mois au plus tard après le mois de sa mise en circulation."
+    },
+    "explanation": "Une voiture neuve doit passer son premier contrôle au plus tard 36 mois après sa mise en circulation. Le deuxième contrôle doit avoir lieu 24 mois plus tard au plus tard."
+  },
+  "kkalk-V-143": {
+    "stem": "À quelle fréquence une voiture particulière de huit ans doit-elle au plus tard repasser le contrôle technique ?",
+    "options": {
+      "A": "12 mois au plus tard après le précédent.",
+      "B": "14 mois au plus tard après le précédent.",
+      "C": "24 mois au plus tard après le précédent.",
+      "D": "36 mois au plus tard après le précédent."
+    },
+    "explanation": "Les voitures de plus de cinq ans doivent repasser le contrôle au plus tard 14 mois après le précédent contrôle favorable. Cela te laisse une fenêtre souple de deux mois pour prendre rendez-vous."
+  },
+  "kkalk-V-144": {
+    "stem": "Tu roules à 90 km/h. Combien de mètres la voiture parcourt-elle pendant une seconde de réaction ?",
+    "options": {
+      "A": "9 mètres",
+      "B": "25 mètres",
+      "C": "27 mètres",
+      "D": "36 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique simple pour la distance de réaction consiste à prendre la vitesse, retirer le dernier zéro et multiplier par trois. Le calcul donne alors 9 x 3, soit 27 mètres."
+  },
+  "kkalk-V-145": {
+    "stem": "Tu roules à 70 km/h sur route sèche et tu dois freiner en urgence. Quelle est la distance de freinage approximative ?",
+    "options": {
+      "A": "21 mètres",
+      "B": "24,5 mètres",
+      "C": "45,5 mètres",
+      "D": "49 mètres"
+    },
+    "explanation": "La formule de la distance de freinage sur chaussée sèche est (vitesse divisée par 10) au carré, divisé par 2. Le calcul donne 49 divisé par 2, soit 24,5 mètres."
+  },
+  "kkalk-V-146": {
+    "stem": "Tu doubles ta vitesse. Quel est l'effet sur la distance de freinage de la voiture ?",
+    "options": {
+      "A": "Elle devient deux fois plus longue.",
+      "B": "Elle devient trois fois plus longue.",
+      "C": "Elle devient quatre fois plus longue.",
+      "D": "Elle est réduite de moitié."
+    },
+    "explanation": "La distance de freinage croît avec le carré de la vitesse. Doubler la vitesse la multiplie donc par quatre (2 au carré)."
+  },
+  "kkalk-V-147": {
+    "stem": "Qu'est-ce qui définit une remorque que tu peux toujours tirer avec un permis B ?",
+    "options": {
+      "A": "Son poids total autorisé est de 750 kg au plus.",
+      "B": "Son poids brut est inférieur à celui de la voiture.",
+      "C": "Elle n'est pas freinée.",
+      "D": "Le poids total autorisé cumulé de la voiture et de la remorque est sous 3 500 kg."
+    },
+    "explanation": "Une remorque dont le poids total autorisé ne dépasse pas 750 kg est toujours classée comme légère. Tu peux toujours en tirer une avec un permis B, à condition que la voiture soit homologuée pour ce poids."
+  },
+  "kkalk-V-148": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque avec le permis B étendu (B96) ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 250 kg",
+      "C": "5 000 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec le permis B étendu (B96), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. Pour un permis B ordinaire, la limite est de 3 500 kg."
+  },
+  "kkalk-V-151": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et d'une remorque lourde que tu peux conduire avec un permis B ?",
+    "options": {
+      "A": "2 500 kg",
+      "B": "3 500 kg",
+      "C": "4 250 kg",
+      "D": "5 000 kg"
+    },
+    "explanation": "Avec un permis B ordinaire, le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 3 500 kg au maximum. Un attelage plus lourd exige le permis B étendu (B96)."
+  },
+  "kkalk-V-152": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque si tu as le permis B étendu (B96) ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 250 kg",
+      "C": "4 500 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec le permis B étendu (B96), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. La limite du permis B ordinaire est de 3 500 kg."
+  },
+  "kkalk-V-153": {
+    "stem": "Tu roules à 70 km/h sur chaussée sèche. Quelle est approximativement la distance de freinage ?",
+    "options": {
+      "A": "21 mètres",
+      "B": "25 mètres",
+      "C": "49 mètres",
+      "D": "70 mètres"
+    },
+    "explanation": "La formule de la distance de freinage est (vitesse divisée par 10) au carré, divisé par 2. Le calcul pour 70 km/h donne (7 x 7) divisé par 2, soit 24,5 mètres."
+  }
+}

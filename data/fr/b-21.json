@@ -1,0 +1,252 @@
+{
+  "kkalk-V-090": {
+    "stem": "Tu roules à 100 km/h sur asphalte sec et tu freines en urgence. Quelle est approximativement la distance de freinage ?",
+    "options": {
+      "A": "Environ 30 mètres",
+      "B": "Environ 50 mètres",
+      "C": "Environ 80 mètres",
+      "D": "Environ 100 mètres"
+    },
+    "explanation": "La distance de freinage d'une voiture depuis 100 km/h sur asphalte sec est d'environ 50 mètres. C'est une valeur approchée fondée sur la physique, pour des conditions normales."
+  },
+  "kkalk-V-093": {
+    "stem": "Quel est le principal risque d'une charge trop faible sur la boule d'attelage de la remorque ?",
+    "options": {
+      "A": "L'attelage devient instable et risque de se mettre à louvoyer.",
+      "B": "La voiture devient lourde de l'arrière et difficile à diriger.",
+      "C": "Les freins de la remorque risquent de surchauffer en roulant.",
+      "D": "La boule et son support peuvent s'user rapidement."
+    },
+    "explanation": "Une charge trop faible soulève l'arrière de la voiture, ce qui réduit l'appui sur les roues arrière. L'adhérence baisse et l'attelage devient dangereusement instable."
+  },
+  "kkalk-V-094": {
+    "stem": "Ta voiture a un poids total autorisé de 2200 kg. Avec un permis B, peux-tu tirer une caravane de 1200 kg de poids total autorisé ?",
+    "options": {
+      "A": "Oui, car le poids total autorisé cumulé reste sous 3500 kg.",
+      "B": "Non, un attelage de plus de 3500 kg exige le permis BE.",
+      "C": "Non, la remorque pesant plus de 750 kg, le permis B étendu (B96) est requis.",
+      "D": "Oui, mais seulement si le poids brut réel de la remorque ne dépasse pas celui de la voiture."
+    },
+    "explanation": "Avec un permis B ordinaire, le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 3500 kg au maximum. Ici, la somme est de 3400 kg."
+  },
+  "kkalk-V-095": {
+    "stem": "Quel dommage l'assurance responsabilité civile obligatoire n'indemnise-t-elle jamais ?",
+    "options": {
+      "A": "Les dommages corporels de tes passagers.",
+      "B": "Les dégâts causés au véhicule d'autrui.",
+      "C": "Les dégâts sur ta propre voiture si tu es responsable de l'accident.",
+      "D": "Les dommages corporels d'un piéton que tu as heurté."
+    },
+    "explanation": "L'assurance responsabilité civile couvre les dommages que tu causes à autrui et à ses biens. Elle n'indemnise jamais les dégâts sur ton propre véhicule si tu es responsable."
+  },
+  "kkalk-V-096": {
+    "stem": "Comment tester le plus simplement le fonctionnement de la direction assistée ?",
+    "options": {
+      "A": "Tourner le volant moteur coupé, démarrer le moteur et sentir le volant devenir beaucoup plus léger.",
+      "B": "Vérifier que le témoin de l'assistance s'allume puis s'éteint au démarrage de la voiture.",
+      "C": "Rouler à faible vitesse et sentir le volant revenir automatiquement en position droite.",
+      "D": "S'assurer que le niveau d'huile de direction dans le compartiment moteur est entre les repères minimum et maximum."
+    },
+    "explanation": "La direction assistée ne fonctionne que moteur tournant. La différence de résistance du volant juste au démarrage est donc une preuve nette que l'assistance fonctionne."
+  },
+  "kkalk-V-098": {
+    "stem": "Ta voiture a six ans et vient de passer le contrôle technique. Dans quel délai dois-tu la présenter la fois suivante ?",
+    "options": {
+      "A": "Dans les 12 mois",
+      "B": "Dans les 24 mois",
+      "C": "Dans les 36 mois",
+      "D": "Dans les 14 mois"
+    },
+    "explanation": "Après les deux premiers contrôles, une voiture doit être présentée au plus tard 14 mois après le précédent contrôle technique complet."
+  },
+  "kkalk-V-099": {
+    "stem": "La pédale de frein est spongieuse et s'enfonce anormalement profond quand tu appuies. Quelle en est la cause la plus probable ?",
+    "options": {
+      "A": "L'assistance de freinage de la voiture a cessé de fonctionner.",
+      "B": "De l'air est entré dans le circuit de freinage.",
+      "C": "Les garnitures de frein sont totalement usées.",
+      "D": "Le frein de stationnement est bloqué par le gel."
+    },
+    "explanation": "L'air se comprime, contrairement au liquide de frein. La pédale devient spongieuse et l'efficacité du freinage se dégrade fortement, voire disparaît."
+  },
+  "kkalk-V-100": {
+    "stem": "Tu roules à 50 km/h sur route sèche. Quelle est approximativement la distance de freinage selon la formule rapide ?",
+    "options": {
+      "A": "10 mètres",
+      "B": "15 mètres",
+      "C": "25 mètres",
+      "D": "5 mètres"
+    },
+    "explanation": "La formule est (vitesse divisée par 10) au carré, multiplié par 0,4. Cela donne (5 x 5) fois 0,4, soit 10 mètres."
+  },
+  "kkalk-V-101": {
+    "stem": "Tu roules à 90 km/h sur route sèche et tu dois freiner en urgence. Quelle est approximativement la distance de freinage ?",
+    "options": {
+      "A": "27 mètres",
+      "B": "40 mètres",
+      "C": "67 mètres",
+      "D": "81 mètres"
+    },
+    "explanation": "La règle empirique consiste à diviser la vitesse par dix, multiplier le résultat par lui-même puis diviser par deux. (90 divisé par 10) au carré, divisé par 2, donne environ 40 mètres."
+  },
+  "kkalk-V-102": {
+    "stem": "Comment évolue la distance de freinage si tu triples la vitesse ?",
+    "options": {
+      "A": "Elle devient trois fois plus longue.",
+      "B": "Elle devient six fois plus longue.",
+      "C": "Elle devient neuf fois plus longue.",
+      "D": "Elle change à peine."
+    },
+    "explanation": "La distance de freinage croît avec le carré de la vitesse. Tripler la vitesse donne donc une distance de freinage neuf fois (3 x 3) plus longue."
+  },
+  "kkalk-V-103": {
+    "stem": "Le témoin eCall de ta voiture est allumé. Qu'est-ce que cela implique au contrôle technique à partir de 2026 ?",
+    "options": {
+      "A": "La voiture est immédiatement interdite de circuler et doit être remorquée.",
+      "B": "Tu dois réparer le défaut et repasser un contrôle complémentaire.",
+      "C": "C'est noté comme un défaut, mais la voiture est malgré tout acceptée.",
+      "D": "Le contrôle est interrompu jusqu'à la réparation du système."
+    },
+    "explanation": "Comme les réseaux 2G et 3G sont mis hors service, l'exigence d'un système eCall fonctionnel a été supprimée. Le défaut est noté mais la voiture est acceptée sans obligation de réparation."
+  },
+  "kkalk-V-104": {
+    "stem": "Tu as le permis B étendu (B96). Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 000 kg",
+      "C": "4 250 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec le permis B étendu (B96), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. La limite du permis B ordinaire est de 3 500 kg."
+  },
+  "kkalk-V-105": {
+    "stem": "Comment appelle-t-on le poids actuel de la voiture, conducteur, passagers et chargement compris ?",
+    "options": {
+      "A": "Le poids à vide en ordre de marche",
+      "B": "Le poids total autorisé",
+      "C": "La charge utile",
+      "D": "Le poids brut"
+    },
+    "explanation": "Le poids brut est le poids réel à un moment donné. Le poids total autorisé est, lui, le poids maximal admis pour la voiture selon sa carte grise."
+  },
+  "kkalk-V-106": {
+    "stem": "La pédale de frein est spongieuse et s'enfonce quand tu appuies dessus. Quelle en est la cause la plus probable ?",
+    "options": {
+      "A": "Les disques de frein sont voilés.",
+      "B": "Les garnitures de frein sont usées.",
+      "C": "De l'air est entré dans le circuit de freinage.",
+      "D": "Le niveau de liquide de frein est trop bas."
+    },
+    "explanation": "Le circuit de freinage repose sur la pression d'un liquide. Contrairement à un liquide, l'air se comprime, ce qui rend la pédale molle et élastique."
+  },
+  "kkalk-V-108": {
+    "stem": "Ta voiture est équipée de pneus cloutés. Quels pneus ta remorque doit-elle avoir en conditions hivernales ?",
+    "options": {
+      "A": "La remorque doit avoir des pneus hiver non cloutés.",
+      "B": "La remorque peut avoir des pneus hiver cloutés ou non cloutés.",
+      "C": "La remorque doit aussi avoir des pneus cloutés.",
+      "D": "La remorque n'a pas besoin de pneus hiver."
+    },
+    "explanation": "Si la voiture a des pneus cloutés, la remorque doit en avoir aussi en conditions hivernales. Le but est de réduire le risque de mise en portefeuille, où la remorque dérape et vient se replier contre la voiture."
+  },
+  "kkalk-V-109": {
+    "stem": "Tu percutes un arbre avec un passager à bord. Qu'indemnise ton assurance responsabilité civile obligatoire ?",
+    "options": {
+      "A": "Les dommages corporels du passager, mais pas les dégâts de ta voiture.",
+      "B": "À la fois les dommages corporels du passager et les dégâts de ta voiture.",
+      "C": "Les dégâts de la voiture, mais pas les dommages corporels du passager.",
+      "D": "Aucun dommage, puisque tu as causé l'accident toi-même."
+    },
+    "explanation": "L'assurance responsabilité civile indemnise tous les dommages corporels, y compris ceux du responsable. Elle n'indemnise en revanche pas les dégâts sur ton propre véhicule dans un accident sans tiers."
+  },
+  "kkalk-V-110": {
+    "stem": "Le témoin eCall de ta voiture signale un défaut. Quelle en est la conséquence au contrôle technique ?",
+    "options": {
+      "A": "La voiture est refusée avec obligation de repasser le contrôle.",
+      "B": "La voiture est acceptée sans remarque.",
+      "C": "La voiture est interdite de circuler en attendant la réparation.",
+      "D": "Tu dois mettre le système à niveau en 4G ou 5G."
+    },
+    "explanation": "Comme les réseaux 2G et 3G sont mis hors service, l'exigence d'un eCall fonctionnel a été supprimée. Un témoin allumé pour ce système n'est donc pas une remarque."
+  },
+  "kkalk-V-111": {
+    "stem": "Le permis B étendu (B96) permet de conduire des attelages plus lourds. Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque ?",
+    "options": {
+      "A": "4 000 kg",
+      "B": "4 250 kg",
+      "C": "5 000 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec le permis B étendu (B96), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. Un attelage encore plus lourd exige le permis BE."
+  },
+  "kkalk-V-113": {
+    "stem": "Ta voiture neuve bénéficie de la garantie carrosserie du constructeur. Quelle assurance faut-il pour obtenir une protection équivalente à une assurance tous risques ?",
+    "options": {
+      "A": "La seule assurance responsabilité civile",
+      "B": "L'assurance intermédiaire",
+      "C": "L'assurance tous risques",
+      "D": "Une assurance complémentaire particulière"
+    },
+    "explanation": "La garantie carrosserie du constructeur couvre les dégâts sur la voiture elle-même. Une assurance intermédiaire suffit donc pour obtenir une protection équivalente à une assurance tous risques."
+  },
+  "kkalk-V-115": {
+    "stem": "Le témoin rouge de pression d'huile s'allume en roulant. Quelle est ton obligation la plus importante, immédiatement ?",
+    "options": {
+      "A": "T'arrêter sans délai dans un endroit sûr et couper le moteur.",
+      "B": "Ralentir et rouler directement au garage le plus proche.",
+      "C": "Continuer normalement et vérifier l'huile au prochain plein.",
+      "D": "Rétrograder pour voir si le témoin s'éteint de lui-même."
+    },
+    "explanation": "Un témoin rouge de pression d'huile est critique. Continuer à rouler, même sur une courte distance, peut détruire complètement le moteur."
+  },
+  "kkalk-V-116": {
+    "stem": "Le témoin de température du moteur s'allume en rouge. Quelle est la première chose à faire ?",
+    "options": {
+      "A": "T'arrêter au plus vite dans un endroit sûr et couper le moteur.",
+      "B": "Ralentir et rester attentif au risque de glissance.",
+      "C": "Couper la climatisation pour réduire la charge du moteur.",
+      "D": "Rouler directement au garage le plus proche pour un contrôle."
+    },
+    "explanation": "Un témoin de température rouge signifie que le moteur surchauffe. Tu dois t'arrêter immédiatement pour éviter des dégâts moteur graves et coûteux."
+  },
+  "kkalk-V-117": {
+    "stem": "Tu roules à 50 km/h et il te faut une seconde pour réagir. Quelle est alors approximativement la distance de réaction ?",
+    "options": {
+      "A": "Environ 5 mètres",
+      "B": "Environ 15 mètres",
+      "C": "Environ 25 mètres",
+      "D": "Environ 40 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique simple consiste à prendre la vitesse, retirer le zéro et multiplier par 3. Soit 5 x 3, c'est-à-dire 15 mètres."
+  },
+  "kkalk-V-118": {
+    "stem": "Tu roules à 50 km/h sur asphalte sec et tu freines en urgence. Quelle est approximativement la distance de freinage ?",
+    "options": {
+      "A": "5 mètres",
+      "B": "12 mètres",
+      "C": "25 mètres",
+      "D": "50 mètres"
+    },
+    "explanation": "Le moyen mnémotechnique de la distance de freinage sur asphalte sec est (vitesse divisée par 10) au carré, divisé par 2. Cela donne (5 x 5) divisé par 2, soit 12,5 mètres, ce qui se rapproche le plus de 12 mètres."
+  },
+  "kkalk-V-119": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée pour un pneu hiver en conditions hivernales ?",
+    "options": {
+      "A": "1,6 mm",
+      "B": "3,0 mm",
+      "C": "4,0 mm",
+      "D": "5,0 mm"
+    },
+    "explanation": "La loi exige au minimum 3,0 mm de profondeur de sculpture sur un pneu hiver en conditions hivernales, pour que le pneu accroche assez dans la neige et la neige fondante."
+  },
+  "kkalk-V-120": {
+    "stem": "Quand une voiture particulière neuve doit-elle au plus tard passer son tout premier contrôle technique ?",
+    "options": {
+      "A": "14 mois au plus tard après sa mise en circulation.",
+      "B": "24 mois au plus tard après sa mise en circulation.",
+      "C": "36 mois au plus tard après sa mise en circulation.",
+      "D": "Quand elle a parcouru 50 000 km."
+    },
+    "explanation": "Une voiture neuve doit passer son premier contrôle au plus tard 36 mois (3 ans) après le mois de sa mise en circulation."
+  }
+}

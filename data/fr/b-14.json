@@ -1,0 +1,252 @@
+{
+  "kkalk-S-202": {
+    "stem": "Un panneau de direction vert à texte blanc indique le chemin vers un certain type de route. Lequel ?",
+    "options": {
+      "A": "Une route publique hors agglomération.",
+      "B": "Une autoroute ou une voie express.",
+      "C": "Des destinations touristiques et des sites remarquables.",
+      "D": "Des destinations locales dans une agglomération."
+    },
+    "explanation": "Les panneaux de direction verts servent à indiquer le chemin vers une autoroute ou une voie express. Les panneaux bleus mènent aux routes publiques et les bruns aux destinations touristiques."
+  },
+  "kkalk-S-203": {
+    "stem": "Un panonceau indique un horaire entre parenthèses, par exemple (8-17). Quels jours cette indication s'applique-t-elle ?",
+    "options": {
+      "A": "Les jours ouvrables, sauf la veille d'un jour férié.",
+      "B": "Le samedi et la veille d'un jour férié.",
+      "C": "Le dimanche et les jours fériés.",
+      "D": "Tous les jours de la semaine."
+    },
+    "explanation": "Un horaire entre parenthèses vaut la veille d'un dimanche ou d'un jour férié. Cela comprend les samedis ainsi que les veilles de fête comme celle de la Saint-Jean."
+  },
+  "kkalk-S-204": {
+    "stem": "Tu vois le panneau représentant un train de modèle ancien. Que signifie-t-il ?",
+    "options": {
+      "A": "Un passage à niveau avec barrières.",
+      "B": "Un passage à niveau sans barrières.",
+      "C": "Une traversée de voie de tramway.",
+      "D": "Un passage à niveau à plusieurs voies."
+    },
+    "explanation": "Le panneau avertit d'un passage à niveau dépourvu de barrières. Pour un passage muni de barrières, c'est le panneau représentant une barrière qui est utilisé."
+  },
+  "kkalk-S-205": {
+    "stem": "Contre quoi le panneau représentant une barrière avertit-il ?",
+    "options": {
+      "A": "Un passage à niveau avec barrières.",
+      "B": "Un passage à niveau sans barrières.",
+      "C": "Une clôture à gibier le long de la route.",
+      "D": "Une route fermée plus loin."
+    },
+    "explanation": "Le symbole de la barrière avertit d'un passage à niveau muni de barrières. Le panneau d'un passage sans barrières porte, lui, l'image d'une locomotive."
+  },
+  "kkalk-S-206": {
+    "stem": "Tu roules à 70 km/h et tu dépasses le panneau d'entrée en zone agglomérée. Quelle limitation s'applique désormais, si rien d'autre n'est indiqué ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "40 km/h",
+      "C": "50 km/h",
+      "D": "70 km/h"
+    },
+    "explanation": "La vitesse de base en zone agglomérée est de 50 km/h. Elle s'applique automatiquement tant qu'aucun autre panneau n'indique une vitesse particulière."
+  },
+  "kkalk-S-207": {
+    "stem": "Que signifie le panneau d'aire de croisement sur une route étroite ?",
+    "options": {
+      "A": "Un emplacement destiné à permettre aux véhicules de se croiser.",
+      "B": "Un emplacement où tu peux t'arrêter ou stationner temporairement.",
+      "C": "Une zone de retournement pour changer de sens de marche.",
+      "D": "L'obligation de céder le passage au véhicule arrivé le premier."
+    },
+    "explanation": "L'aire de croisement est un élargissement de la route prévu précisément pour permettre à deux véhicules de se croiser. S'y arrêter ou y stationner pour un autre motif est interdit."
+  },
+  "kkalk-S-208": {
+    "stem": "As-tu le droit de t'arrêter pour laisser descendre un passager là où le panneau d'interdiction de s'arrêter s'applique ?",
+    "options": {
+      "A": "Oui, si l'arrêt est très court.",
+      "B": "Oui, si tu allumes les feux de détresse.",
+      "C": "Non, tout arrêt volontaire est interdit.",
+      "D": "Non, mais le déchargement de marchandises est autorisé."
+    },
+    "explanation": "L'interdiction de s'arrêter signifie que tu ne peux pas t'immobiliser volontairement, pas même un instant. Tu ne peux t'arrêter que si la circulation l'exige, dans un bouchon par exemple."
+  },
+  "kkalk-S-209": {
+    "stem": "Quel type de destination indique un panneau à fond brun ?",
+    "options": {
+      "A": "Un établissement de service, comme un garage.",
+      "B": "Un établissement public, comme une école.",
+      "C": "Un site remarquable ou une destination touristique.",
+      "D": "Une zone industrielle ou une zone de chargement."
+    },
+    "explanation": "Les panneaux de direction bruns guident les usagers vers des destinations touristiques et des sites remarquables, comme des points de vue, des réserves naturelles ou des vestiges anciens."
+  },
+  "kkalk-S-210": {
+    "stem": "Quelle forme géométrique a le panneau de cédez-le-passage ?",
+    "options": {
+      "A": "Un triangle pointe vers le haut.",
+      "B": "Un triangle pointe vers le bas.",
+      "C": "Un octogone vertical.",
+      "D": "Un carré tourné de 45 degrés."
+    },
+    "explanation": "Sa forme unique permet de reconnaître le panneau même vu de dos ou couvert de neige."
+  },
+  "kkalk-S-251": {
+    "stem": "Un panonceau indique un horaire en chiffres rouges. Quels jours la réglementation s'applique-t-elle ?",
+    "options": {
+      "A": "Le dimanche et les autres jours fériés (jours rouges).",
+      "B": "Le samedi et la veille d'un jour férié.",
+      "C": "Les jours ouvrables, sauf la veille d'un jour férié.",
+      "D": "Tous les jours, 24 heures sur 24."
+    },
+    "explanation": "Des chiffres rouges sur un panonceau signifient que l'indication vaut les dimanches et les jours fériés. Les chiffres noirs sans parenthèses valent les jours ouvrables."
+  },
+  "kkalk-S-252": {
+    "stem": "Un panonceau indique l'horaire (8-17). Que signifient les parenthèses autour de l'horaire ?",
+    "options": {
+      "A": "Que l'horaire vaut les jours ouvrables, sauf la veille d'un jour férié.",
+      "B": "Que l'horaire vaut les dimanches et les jours fériés.",
+      "C": "Que l'horaire vaut la veille d'un dimanche ou d'un jour férié.",
+      "D": "Que l'indication est une recommandation."
+    },
+    "explanation": "Des parenthèses autour d'un horaire signifient qu'il vaut la veille d'un dimanche ou d'un jour férié (le plus souvent le samedi). Les horaires sans parenthèses valent les jours ouvrables."
+  },
+  "kkalk-S-253": {
+    "stem": "Contre quoi le panneau représentant une locomotive à vapeur avertit-il ?",
+    "options": {
+      "A": "Un passage à niveau sans barrières.",
+      "B": "Un passage à niveau avec barrières.",
+      "C": "Une traversée de voie de tramway.",
+      "D": "Un passage à niveau à plusieurs voies."
+    },
+    "explanation": "Le panneau avertit d'un passage à niveau dépourvu de barrières. Pour les passages munis de barrières, c'est le panneau au symbole de barrière qui est employé."
+  },
+  "kkalk-S-255": {
+    "stem": "Que signifie un panneau portant une croix rouge ?",
+    "options": {
+      "A": "Interdiction de stationner, mais tu peux t'arrêter pour déposer quelqu'un.",
+      "B": "Interdiction de stationner les dates impaires.",
+      "C": "Interdiction de s'arrêter et de stationner.",
+      "D": "Interdiction de stationner plus de 24 heures d'affilée."
+    },
+    "explanation": "Le panneau interdit à la fois l'arrêt et le stationnement. Un arrêt bref, pour déposer un passager par exemple, n'est permis que sous une interdiction de stationner (le panneau à une barre)."
+  },
+  "kkalk-S-256": {
+    "stem": "Tu vois ce panneau. As-tu le droit de t'arrêter un court instant pour décharger des objets lourds de la voiture ?",
+    "options": {
+      "A": "Oui, du moment que cela se fait sans interruption, cela compte comme un arrêt.",
+      "B": "Non, le panneau interdit tout arrêt.",
+      "C": "Oui, mais seulement avec les feux de détresse allumés.",
+      "D": "Non, seule la montée ou la descente de passagers est autorisée."
+    },
+    "explanation": "Le panneau interdit de stationner, mais s'arrêter pour charger ou décharger des marchandises est autorisé. Cela ne doit toutefois pas durer inutilement longtemps."
+  },
+  "kkalk-S-257": {
+    "stem": "Que signifie le panneau portant un M blanc sur fond bleu sur une route étroite ?",
+    "options": {
+      "A": "Un garage pour véhicules à moteur.",
+      "B": "Une aire de croisement.",
+      "C": "Un musée.",
+      "D": "Un stationnement pour personnes handicapées."
+    },
+    "explanation": "Le panneau signale une aire de croisement, là où la route est temporairement élargie. Il est interdit de s'y arrêter et d'y stationner."
+  },
+  "kkalk-S-258": {
+    "stem": "Qu'est-ce qui caractérise un panneau d'obligation ?",
+    "options": {
+      "A": "Il est rond, à fond bleu, et impose une obligation.",
+      "B": "Il est rond, à bord rouge, et impose une interdiction.",
+      "C": "Il est triangulaire et avertit d'un danger.",
+      "D": "Il est carré et donne une information ou une recommandation."
+    },
+    "explanation": "Les panneaux d'obligation sont ronds, à fond bleu, et indiquent ce que tu dois faire, par exemple circuler dans une direction donnée."
+  },
+  "kkalk-S-259": {
+    "stem": "Un panneau de direction pointant vers ta destination est de couleur verte. Vers quel type de route mène-t-il ?",
+    "options": {
+      "A": "Une route publique, mais pas une autoroute ni une voie express.",
+      "B": "Une autoroute ou une voie express.",
+      "C": "Une route touristique recommandée.",
+      "D": "Une déviation temporaire pour un chantier routier."
+    },
+    "explanation": "Un panneau de direction vert signifie que la destination s'atteint par une autoroute ou une voie express. Le bleu est utilisé pour les autres routes publiques."
+  },
+  "kkalk-S-260": {
+    "stem": "Un policier lève un bras dans une intersection. Que signifie ce geste ?",
+    "options": {
+      "A": "Arrêt pour tous les véhicules qui entrent dans l'intersection.",
+      "B": "Arrêt pour le trafic latéral, mais voie libre tout droit.",
+      "C": "Descendre un rapport et ralentir.",
+      "D": "Seuls les poids lourds doivent attendre de nouvelles indications."
+    },
+    "explanation": "Un bras levé signifie arrêt pour tous ceux qui approchent de l'intersection. Les véhicules déjà engagés doivent la dégager."
+  },
+  "kkalk-S-301": {
+    "stem": "Que signifient des chiffres rouges accompagnant un horaire sur un panonceau ?",
+    "options": {
+      "A": "L'horaire vaut les dimanches et les jours fériés.",
+      "B": "L'horaire vaut les jours ouvrables, sauf la veille d'un jour férié.",
+      "C": "L'horaire vaut les samedis et la veille d'un jour férié.",
+      "D": "L'horaire est une recommandation, pas une obligation."
+    },
+    "explanation": "Des chiffres rouges signifient que l'indication vaut le dimanche et les jours fériés officiels. Pense aux jours marqués en rouge dans le calendrier."
+  },
+  "kkalk-S-303": {
+    "stem": "Le stationnement alterné par date s'applique et nous sommes le 15. Où est-il désormais interdit de stationner ?",
+    "options": {
+      "A": "Du côté de la rue portant les numéros pairs.",
+      "B": "Du côté de la rue portant les numéros impairs.",
+      "C": "Des deux côtés de la rue.",
+      "D": "L'interdiction ne vaut que les jours ouvrables."
+    },
+    "explanation": "Un moyen mnémotechnique : date impaire, interdiction du côté impair. Le 15 étant une date impaire, il est interdit de stationner du côté des numéros impairs."
+  },
+  "kkalk-S-304": {
+    "stem": "Que signifie le panneau à croix, comparé à celui qui ne porte qu'une barre ?",
+    "options": {
+      "A": "Tu peux t'arrêter pour déposer quelqu'un, mais pas stationner.",
+      "B": "Tu ne peux même pas t'arrêter pour charger ou décharger des marchandises.",
+      "C": "L'interdiction ne vaut que les jours ouvrables entre 8 et 18 heures.",
+      "D": "L'interdiction ne vaut que pour les professionnels et les véhicules commerciaux."
+    },
+    "explanation": "Le panneau à croix signifie interdiction de s'arrêter. Contrairement à l'interdiction de stationner, tu ne peux même pas t'arrêter pour la montée, la descente ou le chargement."
+  },
+  "kkalk-S-307": {
+    "stem": "Vers quoi un panneau de direction à fond brun indique-t-il le chemin ?",
+    "options": {
+      "A": "Une destination touristique ou un site remarquable.",
+      "B": "Une autoroute ou une voie express.",
+      "C": "Un établissement de service, un garage par exemple.",
+      "D": "Une destination locale dans une agglomération."
+    },
+    "explanation": "La couleur brune sur les panneaux de localisation indique le chemin vers les destinations touristiques, les sites remarquables et les zones de loisirs. Le vert mène aux autoroutes et le bleu aux villes et localités."
+  },
+  "kkalk-S-309": {
+    "stem": "Que signifie ce panneau rond bleu portant une flèche blanche ?",
+    "options": {
+      "A": "La route est à sens unique dans le sens de la flèche.",
+      "B": "Il t'est recommandé de circuler dans le sens de la flèche.",
+      "C": "Tu dois circuler dans le sens indiqué par la flèche.",
+      "D": "Tu peux choisir un autre chemin si tu l'indiques."
+    },
+    "explanation": "Un panneau d'obligation est contraignant. Tu dois suivre l'indication qu'il donne, ici circuler dans le sens de la flèche."
+  },
+  "kkalk-S-310": {
+    "stem": "Que signifie le marquage à triangles blancs, appelé « dents de requin » ?",
+    "options": {
+      "A": "Tu dois céder le passage et t'arrêter au besoin avant la ligne.",
+      "B": "L'obligation d'arrêt s'applique et tu dois t'immobiliser complètement à la ligne.",
+      "C": "Le marquage avertit d'un ralentisseur à venir sur la route.",
+      "D": "Le changement de voie est interdit à partir de ce marquage."
+    },
+    "explanation": "Ce marquage s'appelle ligne de cédez-le-passage et confirme que tu dois laisser la priorité. Arrête-toi avant la ligne si c'est nécessaire pour céder le passage."
+  },
+  "kkalk-T-012": {
+    "stem": "Une voiture arrive par la droite dans une intersection non réglementée, mais elle s'arrête complètement. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu dois attendre, car la voiture à ta droite a toujours la priorité.",
+      "B": "La voiture de droite doit attendre, puisqu'elle s'est arrêtée et bloque la voie.",
+      "C": "La priorité à droite ne s'applique pas, la voiture n'approchant plus de l'intersection.",
+      "D": "Le conducteur qui fait le premier un appel de phares passe d'abord."
+    },
+    "explanation": "La priorité à droite vise le trafic qui approche par la droite. Quand un véhicule s'arrête complètement, il cesse juridiquement d'approcher et la règle ne s'applique plus."
+  }
+}
