@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-14T18:45:43.022Z",
+  "generatedAt": "2026-09-14T20:09:15.341Z",
   "imagesDir": null,
-  "questionsTotal": 1900,
+  "questionsTotal": 1919,
   "researchCount": 50,
   "ownerCount": 472,
   "ownerSeedCount": 42,
   "ownerOfficialCount": 138,
   "ownerImportCount": 292,
-  "manziCount": 1378,
+  "manziCount": 1397,
   "researchJsonl": 403,
   "importJsonl": 301,
   "importFiles": [
@@ -44,12 +44,12 @@
     "agare-mini-31.jsonl"
   ],
   "manziJsonl": 1668,
-  "skippedIncomplete": 279,
-  "questionsWithImageUrl": 746,
+  "skippedIncomplete": 260,
+  "questionsWithImageUrl": 796,
   "rastersCopied": 0,
-  "questionsLinkedToFile": 746,
+  "questionsLinkedToFile": 796,
   "questionsMissingFile": 0,
-  "manifestFiles": 2637,
+  "manifestFiles": 2884,
   "gulLinje": null,
   "coordinator": {
     "questions": "/workspace/taxiprov/manzi/questions-merged.jsonl",

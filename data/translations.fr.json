@@ -6951,6 +6951,9 @@
   "rs-yt-prisresa-jamfor": {
     "stem": "Qu'est-ce que le jämförpris ?"
   },
+  "S_KERHET-1-Q4": {
+    "stem": "Le taximètre doit être contrôlé à différentes occasions. Quand dois-tu normalement faire contrôler le taximètre de ton taxi ?"
+  },
   "S_KERHET-2-Q11": {
     "stem": "Quel sjukdom beskrivs de texten i bilden?"
   },
@@ -6989,9 +6992,6 @@
   },
   "S_KERHET-9-Q23": {
     "stem": "As le droit du flytta une bil lors de olyckan si bilen varit inblandad i olyckan?"
-  },
-  "SAKERHET-1-Q4": {
-    "stem": "Le taximètre doit être contrôlé à différentes occasions. Quand dois-tu normalement faire contrôler le taximètre de ton taxi ?"
   },
   "tx-arlanda-01": {
     "stem": "Tu dois conduire un client de Stockholm C à Arlanda. Dans quelle direction approximative roules-tu ?",
