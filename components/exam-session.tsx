@@ -10,9 +10,12 @@ import { SessionSkeleton } from "@/components/splash-screen";
 import { useAppState } from "@/components/app-state";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
-import { finishExam, recordAttempt, uid } from "@/lib/progress/store";
+import { TeacherMissNudge } from "@/components/teacher-presence";
+import { finishExam, recordAttempt, rememberSession, uid } from "@/lib/progress/store";
 import { fetchSessionQuestions } from "@/lib/questions/client";
 import { useQuestionCatalog } from "@/lib/questions/use-catalog";
+import { missLabelFromText } from "@/lib/teacher/copy.mjs";
+import { computeTeacherPresence } from "@/lib/teacher/presence";
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { MockExam, Track } from "@/lib/types";
 
@@ -51,6 +54,16 @@ export function ExamSession({ track }: { track: Track }) {
         setQueue(questions);
         startedAt.current = Date.now();
         setRemaining(EXAM_MS);
+        setState((prev) =>
+          rememberSession(prev, {
+            track,
+            mode: "exam",
+            questionIds: questions.map((item) => item.id),
+            index: 0,
+            topic: questions[0]?.topic,
+            unfinished: true,
+          }),
+        );
       })
       .catch(() => {
         if (!cancelled) setFailed(true);
@@ -87,8 +100,8 @@ export function ExamSession({ track }: { track: Track }) {
   if (failed) {
     return (
       <EmptyState
-        title={dict.errorTitle}
-        lead={dict.sessionError}
+        title={dict.tutor}
+        lead={dict.teacherSessionError}
         actionLabel={dict.retry}
         onAction={() => setReload((value) => value + 1)}
       />
@@ -96,20 +109,29 @@ export function ExamSession({ track }: { track: Track }) {
   }
 
   if (!hydrated || !queue) {
-    return <SessionSkeleton label={dict.loadingSession} />;
+    return <SessionSkeleton label={dict.teacherLoading} />;
   }
 
   if (done || !current) {
+    const teacher = computeTeacherPresence(state, catalog, track, state.profile.locale);
     return (
       <div className="space-y-4">
         <div className="card space-y-2 px-6 py-8 text-center">
-          <h1 className="font-serif text-2xl text-black">{dict.examDone}</h1>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8a8276]">
+            {dict.tutor}
+          </p>
+          <h1 className="font-serif text-2xl text-black">{dict.teacherExamDone}</h1>
           <p className="font-serif text-4xl tabular-nums text-[#1f3d2b]">
             {correctCount}/{queue.length}
           </p>
+          <p className="text-sm leading-6 text-[#1f3d2b]">{dict.teacherExamDoneLead}</p>
+          <p className="text-sm text-[#6b6560]">{teacher.greeting}</p>
         </div>
         <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
-        <Link href={`/${track}`} className="btn-primary inline-flex w-full">
+        <Link href={teacher.correctHref} className="btn-primary inline-flex w-full">
+          {dict.teacherCorrectThis}
+        </Link>
+        <Link href={`/${track}`} className="btn-secondary inline-flex w-full">
           {dict.dashboard}
         </Link>
       </div>
@@ -133,24 +155,41 @@ export function ExamSession({ track }: { track: Track }) {
             style={{ width: `${((index + (answered ? 1 : 0)) / queue.length) * 100}%` }}
           />
         </div>
+        <p className="text-sm text-[#6b6560]">{dict.teacherExamLead}</p>
+        {answered ? <TeacherMissNudge track={track} /> : null}
         <QuestionCard
           key={current.id}
           question={current}
           locale={state.profile.locale}
           fragile={false}
           supportLevel={state.profile.fragileMode ? 2 : 1}
+          variant="exam"
           onAnswer={(_letter, correct) => {
             setAnswered(true);
             if (correct) setCorrectCount((value) => value + 1);
-            setState((prev) =>
-              recordAttempt(prev, {
+            setState((prev) => {
+              let next = recordAttempt(prev, {
                 questionId: current.id,
                 track,
                 correct,
                 timed: true,
                 mockExamId: exam.id,
-              }),
-            );
+              });
+              const label = missLabelFromText(
+                [current.stem_sv, current.trap, current.explanation_sv].join(" "),
+              );
+              next = rememberSession(next, {
+                track,
+                mode: "exam",
+                questionIds: queue.map((item) => item.id),
+                index,
+                topic: current.topic,
+                unfinished: true,
+                missLabel: correct ? next.lastSession?.missLabel : label || undefined,
+                missTopic: correct ? next.lastSession?.missTopic : current.topic,
+              });
+              return next;
+            });
           }}
         />
         {answered ? (
@@ -158,9 +197,21 @@ export function ExamSession({ track }: { track: Track }) {
             type="button"
             className="btn-primary w-full"
             onClick={() => {
-              if (index + 1 >= queue.length) setDone(true);
+              const nextIndex = index + 1;
+              const finished = nextIndex >= queue.length;
+              setState((prev) =>
+                rememberSession(prev, {
+                  track,
+                  mode: "exam",
+                  questionIds: queue.map((item) => item.id),
+                  index: finished ? index : nextIndex,
+                  topic: queue[finished ? index : nextIndex]?.topic,
+                  unfinished: !finished,
+                }),
+              );
+              if (finished) setDone(true);
               else {
-                setIndex((value) => value + 1);
+                setIndex(nextIndex);
                 setAnswered(false);
               }
             }}

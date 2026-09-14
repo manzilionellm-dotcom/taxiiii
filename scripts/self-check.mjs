@@ -14,6 +14,8 @@ import {
 import { compile } from "./compile-banks.mjs";
 import { reconstructStem, tokenizeStem } from "../lib/tokenize-stem.mjs";
 import { hasAuthenticImageUrl, isFakeExamSvg, isRasterExt } from "../lib/media/paths.mjs";
+import { looksPlaceholderFrench } from "../lib/questions/french.mjs";
+import { presentConcept } from "../lib/questions/variants.mjs";
 
 const require = createRequire(import.meta.url);
 
@@ -196,6 +198,35 @@ const lag1q1 = compiled.find((item) => item.id === "LAGSTIFNING-1-Q1");
 assert(lag1q1?.imageUrl === "/media/pdf-pages/LAGSTIFNING-1/page-01.jpg", "LAGSTIFNING-1-Q1 must use PDF page 01");
 const sak7q19 = compiled.find((item) => item.id === "S_KERHET-7-Q19");
 assert(sak7q19?.imageUrl === "/media/pdf-pages/S_KERHET-7/page-19.jpg", "S_KERHET-7-Q19 must use PDF page 19");
+assert(sak7q19.stem_sv.includes("söndag"), "Q19 Swedish stem must stay verbatim");
+
+const translations = JSON.parse(readFileSync(new URL("../data/translations.fr.json", import.meta.url), "utf8"));
+assert(translations["S_KERHET-7-Q19"]?.stem, "Q19 French stem missing");
+assert(!looksPlaceholderFrench(translations["S_KERHET-7-Q19"].stem), "Q19 FR must not be a placeholder");
+assert(
+  translations["S_KERHET-7-Q19"].stem.includes("dimanche"),
+  "Q19 FR stem is the real Sunday-tariff sentence",
+);
+assert(
+  !JSON.stringify(translations).includes("translations.fr.json"),
+  "FR store must not mention the file path",
+);
+const realFrStems = Object.values(translations).filter(
+  (item) => item?.stem && !looksPlaceholderFrench(item.stem),
+).length;
+assert(realFrStems >= 1385, `expected ≥1385 real FR stems, got ${realFrStems}`);
+
+const variant = presentConcept(sak7q19, compiled, "original");
+assert(variant.answer === sak7q19.answer, "variant keeps Q19 answer");
+assert(variant.form !== "original", "missed concept returns in another form");
+
+const svCopy = readFileSync(new URL("../lib/i18n/sv.ts", import.meta.url), "utf8");
+const frCopy = readFileSync(new URL("../lib/i18n/fr.ts", import.meta.url), "utf8");
+assert(svCopy.includes("Lärare") && frCopy.includes("Enseignant"), "teacher persona in UI copy");
+assert(
+  frCopy.includes("Je ne l'ai pas dans le cours") || frCopy.includes("on reste sur le corpus"),
+  "corpus-only teacher refusal",
+);
 const kkalk021 = compiled.find((item) => item.id === "kkalk-T-021");
 assert(kkalk021, "kkalk-T-021 must remain in the bank");
 assert(!kkalk021.imageUrl, "kkalk-T-021 must stay unlinked (no Manzi raster)");

@@ -25,6 +25,7 @@ import {
 } from "../lib/media/paths.mjs";
 import { importMediaTree } from "./import-media.mjs";
 import { buildLexicon } from "./build-lexicon.mjs";
+import { ingestLawWatch } from "./ingest-law-watch.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -305,7 +306,14 @@ export function compile({ check = false, images = null } = {}) {
 }
 
 function parseArgs(argv) {
-  const args = { check: false, images: null, manzi: null, research: null, coordinator: false };
+  const args = {
+    check: false,
+    images: null,
+    manzi: null,
+    research: null,
+    coordinator: false,
+    lawWatch: null,
+  };
   const rest = [...argv];
   while (rest.length) {
     const token = rest.shift();
@@ -314,6 +322,7 @@ function parseArgs(argv) {
     else if (token === "--images") args.images = rest.shift();
     else if (token === "--manzi") args.manzi = rest.shift();
     else if (token === "--research") args.research = rest.shift();
+    else if (token === "--law-watch") args.lawWatch = rest.shift() || "data/law-watch/latest.jsonl";
   }
   if (args.coordinator) {
     args.manzi = args.manzi || COORDINATOR_MANZI_JSONL;
@@ -333,8 +342,16 @@ function main() {
   if (args.research) {
     const from = resolve(args.research);
     if (!existsSync(from)) fail(`research file not found: ${from}`);
+    if (from.includes("law-watch")) {
+      fail(
+        "Refusing --research on a law-watch file (it would replace the research bank). Use --law-watch or npm run import:law-watch.",
+      );
+    }
     copyFileSync(from, join(root, "data/research-bank.jsonl"));
     console.log(`Copied research → data/research-bank.jsonl (Manzi untouched)`);
+  }
+  if (args.lawWatch) {
+    ingestLawWatch(resolve(args.lawWatch));
   }
   let images = args.images ? resolve(args.images) : null;
   if (images && !existsSync(images)) fail(`Images dir not found: ${images}`);

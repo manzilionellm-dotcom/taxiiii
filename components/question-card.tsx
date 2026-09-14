@@ -5,11 +5,39 @@ import { ClozeText } from "@/components/cloze-text";
 import { GlossableText, GlossaryProvider } from "@/components/glossary";
 import { ProtectedImage } from "@/components/protected-image";
 import { t } from "@/lib/i18n";
-import { hasImageUrl } from "@/lib/tokenize-stem.mjs";
-import { sanitizeCaption } from "@/lib/media/paths.mjs";
+import { displayFrench, distractorNote, takeawayFor } from "@/lib/questions/review.mjs";
 import { isRealFrenchText } from "@/lib/questions/french-text";
+import {
+  hasImageUrl,
+  sanitizeCaption,
+  shouldShowImageBeforeAnswer,
+} from "@/lib/media/paths.mjs";
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { Locale, SupportLevel } from "@/lib/types";
+
+function ExamFigure({
+  question,
+  alt,
+  unavailableLabel,
+}: {
+  question: SessionQuestion;
+  alt: string;
+  unavailableLabel: string;
+}) {
+  return (
+    <figure className="exam-figure overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
+      <div className="flex min-h-40 items-center justify-center overflow-auto px-2 pt-3">
+        <ProtectedImage
+          src={question.imageUrl!}
+          alt={alt}
+          watermark={question.watermark}
+          unavailableLabel={unavailableLabel}
+        />
+      </div>
+      <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">{alt}</figcaption>
+    </figure>
+  );
+}
 
 export function QuestionCard({
   question,
@@ -17,22 +45,39 @@ export function QuestionCard({
   fragile,
   supportLevel,
   onAnswer,
+  onReviewSoon,
   disabled,
+  variant = "study",
 }: {
   question: SessionQuestion;
   locale: Locale;
   fragile: boolean;
   supportLevel: SupportLevel;
   onAnswer?: (letter: SessionQuestion["answer"], correct: boolean) => void;
+  onReviewSoon?: () => void;
   disabled?: boolean;
+  variant?: "study" | "exam";
 }) {
   const dict = t(locale);
   const french = question.translation;
   const [picked, setPicked] = useState<string | null>(null);
   const [showFr, setShowFr] = useState(supportLevel >= 2);
+  const [lightbox, setLightbox] = useState(false);
+  const [reviewQueued, setReviewQueued] = useState(false);
 
   const answered = picked !== null;
   const correct = picked === question.answer;
+  const compact = variant === "exam";
+  const showFrNow = answered || showFr || supportLevel >= 3;
+  const figureAlt = sanitizeCaption(question.imageCaption) || dict.examPageCaption;
+  const imageFirst = question.form === "image-first" || Boolean(question.imageFirst);
+  const showInlineFigure =
+    !answered && (imageFirst || shouldShowImageBeforeAnswer(question));
+  const showSolutionFigure = answered && hasImageUrl(question.imageUrl);
+  const takeaway = takeawayFor(question);
+  const distractors = distractorNote(question);
+  const stemFr = displayFrench(french.stem);
+  const explanationFr = displayFrench(question.explanation_fr);
 
   function select(letter: SessionQuestion["answer"]) {
     if (disabled || answered) return;
@@ -62,6 +107,10 @@ export function QuestionCard({
           </span>
         </header>
 
+        {imageFirst && showInlineFigure ? (
+          <ExamFigure question={question} alt={figureAlt} unavailableLabel={dict.imageUnavailable} />
+        ) : null}
+
         <ClozeText
           stem={question.stem_sv}
           locale={locale}
@@ -70,9 +119,9 @@ export function QuestionCard({
           revealAll={answered}
         />
 
-        {isRealFrenchText(french.stem) ? (
-          showFr || supportLevel >= 3 ? (
-            <p className="question-fr text-[1.02rem] leading-7">{french.stem}</p>
+        {isRealFrenchText(stemFr) ? (
+          showFrNow ? (
+            <p className="question-fr text-[1.02rem] leading-7">{stemFr}</p>
           ) : (
             <button
               type="button"
@@ -84,20 +133,8 @@ export function QuestionCard({
           )
         ) : null}
 
-        {hasImageUrl(question.imageUrl) ? (
-          <figure className="overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
-            <div className="flex min-h-40 items-center justify-center overflow-auto px-2 pt-3">
-              <ProtectedImage
-                src={question.imageUrl!}
-                alt={sanitizeCaption(question.imageCaption) || dict.imageCaption}
-                watermark={question.watermark}
-                unavailableLabel={dict.imageUnavailable}
-              />
-            </div>
-            <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">
-              {sanitizeCaption(question.imageCaption) || dict.imageCaption}
-            </figcaption>
-          </figure>
+        {!imageFirst && showInlineFigure ? (
+          <ExamFigure question={question} alt={figureAlt} unavailableLabel={dict.imageUnavailable} />
         ) : null}
 
         <ul className="space-y-2.5 pb-2">
@@ -160,18 +197,97 @@ export function QuestionCard({
         </ul>
 
         {answered ? (
-          <div className="rounded-xl bg-[#f3eee4] px-4 py-3.5">
-            <p className="text-sm font-semibold text-black">
-              {correct ? dict.correct : dict.incorrect} · {dict.explanation}
-            </p>
-            <p className="mt-2 whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
-              {question.explanation_sv}
-            </p>
-            {supportLevel > 0 && isRealFrenchText(question.explanation_fr) ? (
-              <p className="mt-2 whitespace-pre-wrap text-[0.95rem] leading-7 text-[#1d4ed8]">
-                {question.explanation_fr}
+          <section className="solution-panel" aria-live="polite">
+            <header className="flex items-baseline justify-between gap-3">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#6b6560]">
+                {dict.solution}
               </p>
+              <p className={`text-sm font-semibold ${correct ? "text-emerald-800" : "text-red-800"}`}>
+                {correct ? dict.correct : dict.incorrect}
+              </p>
+            </header>
+
+            <div className="space-y-1.5">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                {dict.takeaway}
+              </p>
+              <p className="text-[1.02rem] leading-7 text-black">{takeaway.sv}</p>
+              {supportLevel > 0 && isRealFrenchText(takeaway.fr) ? (
+                <p className="question-fr text-[0.98rem] leading-7">{takeaway.fr}</p>
+              ) : null}
+            </div>
+
+            {compact ? null : (
+              <div className="space-y-1.5">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                  {dict.whyCorrect} · {question.answer}
+                </p>
+                <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
+                  {question.explanation_sv}
+                </p>
+                {supportLevel > 0 && isRealFrenchText(explanationFr) ? (
+                  <p className="question-fr whitespace-pre-wrap text-[0.95rem] leading-7">
+                    {explanationFr}
+                  </p>
+                ) : null}
+              </div>
+            )}
+
+            {!compact && distractors ? (
+              <div className="space-y-1.5">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                  {dict.whyOthersWrong}
+                </p>
+                <p className="text-[0.98rem] leading-7 text-black">{distractors.sv}</p>
+                {supportLevel > 0 && isRealFrenchText(distractors.fr) ? (
+                  <p className="question-fr text-[0.95rem] leading-7">{distractors.fr}</p>
+                ) : null}
+              </div>
             ) : null}
+
+            {showSolutionFigure ? (
+              compact ? (
+                <button type="button" className="btn-secondary w-full" onClick={() => setLightbox(true)}>
+                  {dict.viewExamPage}
+                </button>
+              ) : (
+                <div className="space-y-3">
+                  <ExamFigure
+                    question={question}
+                    alt={figureAlt}
+                    unavailableLabel={dict.imageUnavailable}
+                  />
+                  <button type="button" className="btn-secondary w-full" onClick={() => setLightbox(true)}>
+                    {dict.viewExamPage}
+                  </button>
+                </div>
+              )
+            ) : null}
+
+            {!compact && !correct && onReviewSoon ? (
+              <button
+                type="button"
+                className="btn-secondary w-full"
+                disabled={reviewQueued}
+                onClick={() => {
+                  onReviewSoon();
+                  setReviewQueued(true);
+                }}
+              >
+                {reviewQueued ? dict.reviewSoonDone : dict.reviewSoon}
+              </button>
+            ) : null}
+          </section>
+        ) : null}
+
+        {lightbox && hasImageUrl(question.imageUrl) ? (
+          <div className="exam-lightbox" role="dialog" aria-modal="true" aria-label={dict.examPageCaption}>
+            <div className="exam-lightbox-sheet">
+              <ExamFigure question={question} alt={figureAlt} unavailableLabel={dict.imageUnavailable} />
+              <button type="button" className="btn-primary w-full" onClick={() => setLightbox(false)}>
+                {dict.closeExamPage}
+              </button>
+            </div>
           </div>
         ) : null}
       </article>

@@ -10,6 +10,9 @@ export function SplashScreen() {
       <BrandMark className="text-3xl text-[var(--forest)]" />
       <p className="mt-4 max-w-xs font-serif text-xl leading-snug text-black">{BRAND.slogan}</p>
       <p className="mt-2 max-w-xs text-sm text-[var(--muted)]">{BRAND.keyMessage}</p>
+      <p className="mt-5 max-w-xs text-sm leading-6 text-[#1f3d2b]">
+        Läraren är här. / L&apos;enseignant est là.
+      </p>
       <div className="mt-10 flex gap-1.5" aria-hidden>
         <span className="skeleton h-1.5 w-8 rounded-full" />
         <span className="skeleton h-1.5 w-8 rounded-full" />

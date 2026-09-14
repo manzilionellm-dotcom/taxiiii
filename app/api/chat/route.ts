@@ -15,15 +15,19 @@ export async function POST(request: Request) {
     message?: string;
     history?: ChatTurn[];
     locale?: Locale;
+    recentMisses?: string[];
   };
   const message = body.message?.trim() ?? "";
   const locale = body.locale === "sv" ? "sv" : "fr";
   const history = Array.isArray(body.history) ? body.history : [];
+  const recentMisses = Array.isArray(body.recentMisses)
+    ? body.recentMisses.filter((id) => typeof id === "string").slice(0, 6)
+    : [];
   if (!message) {
-    return Response.json(groundedFallback("", locale, history), {
+    return Response.json(groundedFallback("", locale, history, recentMisses), {
       headers: withPrivateHeaders(undefined, setCookie),
     });
   }
-  const result = await answerWithModel(message, locale, history);
+  const result = await answerWithModel(message, locale, history, recentMisses);
   return Response.json(result, { headers: withPrivateHeaders(undefined, setCookie) });
 }

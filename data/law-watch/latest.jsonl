@@ -1,0 +1,3 @@
+# Draft taxi / körkort QCM from the bi-daily law watch. Humans merge into the research bank.
+# Schema matches research items (see docs/LAW-WATCH.md). Do not invent law in the client.
+# npm run import:law-watch

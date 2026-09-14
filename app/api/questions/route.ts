@@ -1,13 +1,17 @@
-import { catalogForTrack, pickExam, pickStudy, protectQuestion } from "@/lib/questions/session-pick";
+import { catalogForTrack, pickExam, pickResume, pickStudy, protectQuestion } from "@/lib/questions/session-pick";
 import { clientKey, limitedJson, rateLimit } from "@/lib/protect/rate-limit";
 import { withPrivateHeaders } from "@/lib/protect/http";
 import { ensureSession } from "@/lib/protect/session";
-import type { Track } from "@/lib/types";
+import { TOPICS, type Topic, type Track } from "@/lib/types";
 
 export const runtime = "nodejs";
 
 function parseTrack(value: string | null): Track | null {
   return value === "b" || value === "taxi" || value === "owner" ? value : null;
+}
+
+function parseTopic(value: string | null): Topic | null {
+  return value && (TOPICS as readonly string[]).includes(value) ? (value as Topic) : null;
 }
 
 export async function GET(request: Request) {
@@ -41,16 +45,32 @@ export async function GET(request: Request) {
     );
   }
 
-  const due = new Set(
-    (url.searchParams.get("due") ?? "")
-      .split(",")
-      .map((id) => id.trim())
-      .filter(Boolean),
-  );
+  const dueTokens = (url.searchParams.get("due") ?? "")
+    .split(",")
+    .map((id) => id.trim())
+    .filter(Boolean);
+  const due = new Set(dueTokens);
+  const dueForms: Record<string, string> = {};
+  for (const token of dueTokens) {
+    const [id, form] = token.split("~");
+    if (id && form) dueForms[id] = form;
+  }
+  const resumeIds = (url.searchParams.get("resume") ?? "")
+    .split(",")
+    .map((id) => id.trim())
+    .filter(Boolean);
   const picked =
     mode === "exam"
       ? pickExam(track)
-      : pickStudy(track, due, url.searchParams.get("fragile") === "1");
+      : resumeIds.length
+        ? pickResume(track, resumeIds, dueForms)
+        : pickStudy(
+            track,
+            due,
+            url.searchParams.get("fragile") === "1",
+            dueForms,
+            parseTopic(url.searchParams.get("topic") || url.searchParams.get("focus")),
+          );
   const questions = await Promise.all(picked.map((item) => protectQuestion(item, session)));
 
   return Response.json(

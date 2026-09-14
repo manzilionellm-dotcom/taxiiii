@@ -1,10 +1,11 @@
 import "server-only";
 
-import { getFrench, questionsForTrack } from "@/lib/questions/bank";
+import { getFrench, interleave, questionsForTrack } from "@/lib/questions/bank";
 import { studyPriority } from "@/lib/questions/priority";
+import { conceptIdFor, presentConcept } from "@/lib/questions/variants.mjs";
 import type { QuestionCatalogItem, SessionQuestion } from "@/lib/questions/session-types";
 import { signMediaToken, type ViewerSession } from "@/lib/protect/session";
-import { topicsForTrack, type QuestionRecord, type Track } from "@/lib/types";
+import { topicsForTrack, type QuestionRecord, type Topic, type Track } from "@/lib/types";
 import { hasAuthenticImageUrl, sanitizeCaption, toLogicalKey } from "@/lib/media/paths.mjs";
 import { signedMediaPath } from "@/lib/media/store";
 
@@ -46,13 +47,61 @@ export function topicTotals(track: Track) {
   }));
 }
 
-export function pickStudy(track: Track, dueIds: Set<string>, fragile: boolean) {
-  const bank = [...questionsForTrack(track)].sort((a, b) => {
-    const dueDelta = Number(dueIds.has(b.id)) - Number(dueIds.has(a.id));
-    if (dueDelta !== 0) return dueDelta;
-    return studyPriority(a) - studyPriority(b);
-  });
-  return bank.slice(0, fragile ? 6 : 10);
+export function parseDueToken(token: string): { id: string; lastForm?: string } {
+  const [id, lastForm] = String(token || "")
+    .split("~")
+    .map((part) => part.trim());
+  return { id, lastForm: lastForm || undefined };
+}
+
+export function pickStudy(
+  track: Track,
+  dueIds: Set<string>,
+  fragile: boolean,
+  dueForms: Record<string, string> = {},
+  focusTopic?: Topic | null,
+) {
+  const bank = questionsForTrack(track);
+  const byId = new Map(bank.map((question) => [question.id, question]));
+  const seen = new Set<string>();
+  const dueItems: QuestionRecord[] = [];
+  for (const raw of dueIds) {
+    const { id, lastForm: tokenForm } = parseDueToken(raw);
+    if (!id) continue;
+    const seed = byId.get(id) || bank.find((question) => conceptIdFor(question) === id);
+    if (!seed) continue;
+    const concept = conceptIdFor(seed);
+    if (seen.has(concept)) continue;
+    seen.add(concept);
+    dueItems.push(presentConcept(seed, bank, tokenForm || dueForms[id] || dueForms[concept]));
+  }
+  const rest = bank
+    .filter((question) => !seen.has(conceptIdFor(question)))
+    .sort((a, b) => {
+      if (focusTopic) {
+        const af = a.topic === focusTopic ? 0 : 1;
+        const bf = b.topic === focusTopic ? 0 : 1;
+        if (af !== bf) return af - bf;
+      }
+      return studyPriority(a) - studyPriority(b);
+    });
+  const dueFocused = focusTopic ? dueItems.filter((item) => item.topic === focusTopic) : dueItems;
+  const dueOther = focusTopic ? dueItems.filter((item) => item.topic !== focusTopic) : [];
+  const mixed = interleave([...dueFocused, ...rest, ...dueOther]);
+  return mixed.slice(0, fragile ? 6 : 10);
+}
+
+export function pickResume(track: Track, ids: string[], dueForms: Record<string, string> = {}) {
+  const bank = questionsForTrack(track);
+  const byId = new Map(bank.map((question) => [question.id, question]));
+  const result: QuestionRecord[] = [];
+  for (const raw of ids) {
+    const { id, lastForm } = parseDueToken(raw);
+    const seed = byId.get(id) || bank.find((question) => conceptIdFor(question) === id);
+    if (!seed) continue;
+    result.push(presentConcept(seed, bank, lastForm || dueForms[id]));
+  }
+  return result;
 }
 
 export function pickExam(track: Track) {

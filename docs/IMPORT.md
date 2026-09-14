@@ -45,6 +45,10 @@ See [MEDIA.md](MEDIA.md) for the image pipeline. Never invent SVG drawings for e
 
 Swedish in research `sv` and Manzi `stem_sv` is copied **word for word**.
 
+## Law watch (merge-only)
+
+Bi-daily Grok Bot drafts belong in `data/law-watch/latest.jsonl`. Merge with `npm run import:law-watch` (or `npm run import -- --law-watch`). **Do not** `--research` that file — it would replace the research bank. See [LAW-WATCH.md](LAW-WATCH.md).
+
 The Android APK does not bundle the bank. After Vercel is live it loads questions from `/api/questions` on `native.serverUrl`. Drop the full JSONL here, compile, deploy — the APK picks up the new bank without a Play rebuild if you use the remote WebView host.
 
 ## Research schema

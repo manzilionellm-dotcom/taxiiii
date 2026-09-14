@@ -1,4 +1,4 @@
-import type { QuestionRecord, QuestionTranslation, Topic } from "@/lib/types";
+import type { QuestionRecord, QuestionTranslation, Topic, VariantForm } from "@/lib/types";
 
 export interface QuestionCatalogItem {
   id: string;
@@ -8,4 +8,8 @@ export interface QuestionCatalogItem {
 export interface SessionQuestion extends QuestionRecord {
   translation: QuestionTranslation;
   watermark: string;
+  conceptId?: string;
+  variantOf?: string;
+  form?: VariantForm;
+  imageFirst?: boolean;
 }

@@ -1,6 +1,6 @@
 import { ensureClientSession } from "@/lib/protect/client-session";
 import type { QuestionCatalogItem, SessionQuestion } from "@/lib/questions/session-types";
-import type { Track } from "@/lib/types";
+import type { Topic, Track } from "@/lib/types";
 
 export type { QuestionCatalogItem, SessionQuestion };
 
@@ -19,7 +19,9 @@ export async function fetchSessionQuestions(input: {
   track: Track;
   mode: "study" | "exam";
   dueIds?: string[];
+  resumeIds?: string[];
   fragile?: boolean;
+  topic?: Topic;
 }): Promise<SessionQuestion[]> {
   const params = new URLSearchParams({
     mode: input.mode,
@@ -27,6 +29,8 @@ export async function fetchSessionQuestions(input: {
   });
   if (input.fragile) params.set("fragile", "1");
   if (input.dueIds?.length) params.set("due", input.dueIds.join(","));
+  if (input.resumeIds?.length) params.set("resume", input.resumeIds.join(","));
+  if (input.topic) params.set("topic", input.topic);
   await ensureClientSession();
   const response = await fetch(`/api/questions?${params}`, {
     cache: "no-store",

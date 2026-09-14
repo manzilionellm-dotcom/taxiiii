@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { Onboarding } from "@/components/onboarding";
 import { ReadinessWidget } from "@/components/readiness-widget";
+import { TeacherPresence } from "@/components/teacher-presence";
 import { TrackCard } from "@/components/track-card";
 import { TrustStrip } from "@/components/trust-strip";
 import { useAppState } from "@/components/app-state";
-import { BrandMark } from "@/components/brand-mark";
 import { trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
@@ -30,15 +30,8 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6">
-      <header className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.16em] text-[#6b6560]">
-          {state.profile.name || <BrandMark compact />}
-        </p>
-        <h1 className="font-serif text-3xl leading-tight text-black">{trackLabel(track)}</h1>
-        <p className="max-w-xl text-lg leading-7 text-[#6b6560]">{dict.tagline}</p>
-        <p className="max-w-xl text-sm text-[#6b6560]">{dict.keyMessage}</p>
-        <TrustStrip locale={state.profile.locale} />
-      </header>
+      <TeacherPresence track={track} />
+      <TrustStrip locale={state.profile.locale} />
 
       <div className="grid gap-3">
         <Link href={`/${track}/study`} className="btn-primary">
