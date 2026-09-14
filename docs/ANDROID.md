@@ -13,7 +13,7 @@ Anti-screenshot is native **`FLAG_SECURE`** on `MainActivity` (plus Recents scre
 | versionName | `1.0.0` |
 | minSdk | **23** |
 | compileSdk / targetSdk | **35** |
-| Permissions | `INTERNET` only |
+| Permissions | `INTERNET`, `VIBRATE` (haptics plugin) |
 | WebView URL | `https://taxiiii.vercel.app` (`CAPACITOR_SERVER_URL` override) |
 
 Full Play Console steps: [PLAY-CONSOLE.md](PLAY-CONSOLE.md).

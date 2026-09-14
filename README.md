@@ -93,7 +93,7 @@ Play-ready Capacitor wrapper (app id `se.mz.korkortgo`, launcher **KörkortGO by
 **Lionel — upload to Play Console:**
 
 1. Download `KorkortGO-by-MZ-1.0.0.aab` from this agent’s artifacts (or rebuild with `npm run aab`).
-2. Follow **[docs/PLAY-CONSOLE.md](docs/PLAY-CONSOLE.md)** (package name, versionCode `1` / versionName `1.0.0`, minSdk 23, targetSdk 35, permission `INTERNET` only).
+2. Follow **[docs/PLAY-CONSOLE.md](docs/PLAY-CONSOLE.md)** (package name, versionCode `1` / versionName `1.0.0`, minSdk 23, targetSdk 35, permissions `INTERNET` + `VIBRATE`).
 3. Store the **upload keystore + passwords** from the gitignored `secrets/PLAY-SIGNING.note.md` in a password manager. Never commit them.
 
 Sideload test APK: `dist/play/KorkortGO-by-MZ-1.0.0.apk`. Rebuild: `npm run aab` (JDK 17+ and Android SDK). Details: [docs/ANDROID.md](docs/ANDROID.md).

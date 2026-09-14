@@ -49,13 +49,14 @@ Bump `versionCode` (and usually `versionName`) in `android/app/build.gradle` for
 
 ## Permissions
 
-Declared in `android/app/src/main/AndroidManifest.xml`:
+Declared in the merged release manifest:
 
 | Permission | Why |
 |---|---|
 | `android.permission.INTERNET` | Load `https://taxiiii.vercel.app` in the WebView |
+| `android.permission.VIBRATE` | Existing long-press glossary haptics (`@capacitor/haptics`) |
 
-No camera, storage, location, or notifications. Keep it that way unless a native plugin truly needs more.
+AndroidX also declares an app-private `DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` (not a user-facing grant). No camera, storage, location, or notifications.
 
 ## FLAG_SECURE
 
