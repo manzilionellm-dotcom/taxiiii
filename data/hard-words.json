@@ -107,7 +107,10 @@
     "sv": "taxameter",
     "forms": [
       "taxameter",
-      "taxametern"
+      "taxametern",
+      "taxameterns",
+      "taxameteruppgifter",
+      "taxameterkravet"
     ],
     "fr": "taximètre"
   },
@@ -115,7 +118,9 @@
     "sv": "plomberad",
     "forms": [
       "plomberad",
-      "plomberade"
+      "plomberade",
+      "plombering",
+      "plomberingsrapport"
     ],
     "fr": "plombé(e)"
   },

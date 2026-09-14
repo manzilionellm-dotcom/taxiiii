@@ -1,0 +1,335 @@
+{
+  "generatedAt": "2026-09-14T05:19:31.046Z",
+  "questions": 1470,
+  "translations": 110,
+  "uniqueBankTokens": 5187,
+  "uniqueHits": 3486,
+  "uniqueMisses": 1701,
+  "uniqueCoveragePct": 67.2,
+  "occurrenceTotal": 50445,
+  "occurrenceHits": 48731,
+  "occurrenceCoveragePct": 96.6,
+  "lexiconEntries": 3748,
+  "missSample": [
+    {
+      "sv": "cp",
+      "count": 3
+    },
+    {
+      "sv": "bc",
+      "count": 2
+    },
+    {
+      "sv": "busshållplatsskylt",
+      "count": 2
+    },
+    {
+      "sv": "co",
+      "count": 2
+    },
+    {
+      "sv": "grovsopanläggning",
+      "count": 2
+    },
+    {
+      "sv": "plagg",
+      "count": 2
+    },
+    {
+      "sv": "raps",
+      "count": 2
+    },
+    {
+      "sv": "rme",
+      "count": 2
+    },
+    {
+      "sv": "turas",
+      "count": 2
+    },
+    {
+      "sv": "uppnås",
+      "count": 2
+    },
+    {
+      "sv": "årigt",
+      "count": 2
+    },
+    {
+      "sv": "överbevakning",
+      "count": 2
+    },
+    {
+      "sv": "a-traktorförare",
+      "count": 1
+    },
+    {
+      "sv": "absolut",
+      "count": 1
+    },
+    {
+      "sv": "accelerationsfält",
+      "count": 1
+    },
+    {
+      "sv": "accelerationsfältet",
+      "count": 1
+    },
+    {
+      "sv": "accelerationsfältoch",
+      "count": 1
+    },
+    {
+      "sv": "acceptans",
+      "count": 1
+    },
+    {
+      "sv": "adaptiv",
+      "count": 1
+    },
+    {
+      "sv": "advokat",
+      "count": 1
+    },
+    {
+      "sv": "aerodynamik",
+      "count": 1
+    },
+    {
+      "sv": "affären",
+      "count": 1
+    },
+    {
+      "sv": "aktieägare",
+      "count": 1
+    },
+    {
+      "sv": "aktiveras",
+      "count": 1
+    },
+    {
+      "sv": "aktiviteten",
+      "count": 1
+    },
+    {
+      "sv": "alkoholmängden",
+      "count": 1
+    },
+    {
+      "sv": "allmenhet",
+      "count": 1
+    },
+    {
+      "sv": "alvarliga",
+      "count": 1
+    },
+    {
+      "sv": "am",
+      "count": 1
+    },
+    {
+      "sv": "ambivalent",
+      "count": 1
+    },
+    {
+      "sv": "ambulanspersonal",
+      "count": 1
+    },
+    {
+      "sv": "analog",
+      "count": 1
+    },
+    {
+      "sv": "andetag",
+      "count": 1
+    },
+    {
+      "sv": "andningssvårighet",
+      "count": 1
+    },
+    {
+      "sv": "andningssvårigheter",
+      "count": 1
+    },
+    {
+      "sv": "angivet",
+      "count": 1
+    },
+    {
+      "sv": "angivna",
+      "count": 1
+    },
+    {
+      "sv": "anhörig",
+      "count": 1
+    },
+    {
+      "sv": "anhörige",
+      "count": 1
+    },
+    {
+      "sv": "annalkande",
+      "count": 1
+    },
+    {
+      "sv": "anseende",
+      "count": 1
+    },
+    {
+      "sv": "anses",
+      "count": 1
+    },
+    {
+      "sv": "anslutas",
+      "count": 1
+    },
+    {
+      "sv": "ansluten",
+      "count": 1
+    },
+    {
+      "sv": "anslutet",
+      "count": 1
+    },
+    {
+      "sv": "ansträngd",
+      "count": 1
+    },
+    {
+      "sv": "ansvarig",
+      "count": 1
+    },
+    {
+      "sv": "antiblock",
+      "count": 1
+    },
+    {
+      "sv": "antifrysvätska",
+      "count": 1
+    },
+    {
+      "sv": "antisladdsystem",
+      "count": 1
+    },
+    {
+      "sv": "anträffbar",
+      "count": 1
+    },
+    {
+      "sv": "antända",
+      "count": 1
+    },
+    {
+      "sv": "anvisning",
+      "count": 1
+    },
+    {
+      "sv": "anvisningar",
+      "count": 1
+    },
+    {
+      "sv": "anvisningsmärke",
+      "count": 1
+    },
+    {
+      "sv": "använde",
+      "count": 1
+    },
+    {
+      "sv": "apotekets",
+      "count": 1
+    },
+    {
+      "sv": "apotekspersonalen",
+      "count": 1
+    },
+    {
+      "sv": "ar",
+      "count": 1
+    },
+    {
+      "sv": "arbeta",
+      "count": 1
+    },
+    {
+      "sv": "arbetar",
+      "count": 1
+    },
+    {
+      "sv": "arbetsmiljö",
+      "count": 1
+    },
+    {
+      "sv": "arbetsområde",
+      "count": 1
+    },
+    {
+      "sv": "arbetsplatsen",
+      "count": 1
+    },
+    {
+      "sv": "arbetstid",
+      "count": 1
+    },
+    {
+      "sv": "arbetstider",
+      "count": 1
+    },
+    {
+      "sv": "arbetsuppgifter",
+      "count": 1
+    },
+    {
+      "sv": "argt",
+      "count": 1
+    },
+    {
+      "sv": "aspen",
+      "count": 1
+    },
+    {
+      "sv": "atmosfären",
+      "count": 1
+    },
+    {
+      "sv": "automatisk",
+      "count": 1
+    },
+    {
+      "sv": "avanmäla",
+      "count": 1
+    },
+    {
+      "sv": "avanmäler",
+      "count": 1
+    },
+    {
+      "sv": "avbryta",
+      "count": 1
+    },
+    {
+      "sv": "avbryter",
+      "count": 1
+    },
+    {
+      "sv": "avbryts",
+      "count": 1
+    },
+    {
+      "sv": "avgassystem",
+      "count": 1
+    },
+    {
+      "sv": "avgasutläppen",
+      "count": 1
+    },
+    {
+      "sv": "avgasämnen",
+      "count": 1
+    },
+    {
+      "sv": "avger",
+      "count": 1
+    }
+  ]
+}
