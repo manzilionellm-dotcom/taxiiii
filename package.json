@@ -12,6 +12,7 @@
     "import:research": "node scripts/compile-banks.mjs --research",
     "import:coordinator": "node scripts/compile-banks.mjs --coordinator",
     "media:import": "node scripts/import-media.mjs",
+    "media:link-pdf-pages": "node scripts/link-pdf-pages.mjs",
     "media:upload": "node scripts/upload-media-blob.mjs",
     "seed": "node scripts/compile-banks.mjs",
     "check:corpus": "node scripts/self-check.mjs",

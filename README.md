@@ -67,8 +67,8 @@ Without a key, `/api/chat` still answers from the corpus using scripted search.
 |---|---|
 | `data/research-bank.jsonl` | Research corpus (YouTube + apps + public law) |
 | `data/questions.jsonl` | Manzi QCM (never overwrites research) |
-| `data/pdf-page-links.json` | 93 Lagstiftning/Säkerhet «på bilden» → PDF page rasters |
-| `data/media-manifest.json` | Private Blob keys (~2086) |
+| `data/pdf-page-links.json` | LAGSTIFNING/S_KERHET QCM → PDF page rasters (question N = page N) |
+| `data/media-manifest.json` | Private Blob keys (~2637) |
 | `data/questions.json` | Compiled merge — research first |
 | `data/vocab/` | Cloze sessions 01–05-friday-mini |
 | `data/youtube-links.json` + `youtube-transcripts/` | Calcul + RAG |

@@ -165,6 +165,13 @@ const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
 const manifestFiles = Object.keys(manifest.files || {});
 assert(manifestFiles.length >= 1900, `media manifest too small: ${manifestFiles.length}`);
 assert(manifest.access === "private", "media manifest must mark Blob access private");
+const lag1q1 = compiled.find((item) => item.id === "LAGSTIFNING-1-Q1");
+assert(lag1q1?.imageUrl === "/media/pdf-pages/LAGSTIFNING-1/page-01.jpg", "LAGSTIFNING-1-Q1 must use PDF page 01");
+const sak7q19 = compiled.find((item) => item.id === "S_KERHET-7-Q19");
+assert(sak7q19?.imageUrl === "/media/pdf-pages/S_KERHET-7/page-19.jpg", "S_KERHET-7-Q19 must use PDF page 19");
+const kkalk021 = compiled.find((item) => item.id === "kkalk-T-021");
+assert(kkalk021, "kkalk-T-021 must remain in the bank");
+assert(!kkalk021.imageUrl, "kkalk-T-021 must stay unlinked (no Manzi raster)");
 assert(
   compiled.filter((item) => item.imageUrl).every((item) => item.imageUrl.startsWith("/media/")),
   "compiled imageUrl must be /media/<logical-key>",

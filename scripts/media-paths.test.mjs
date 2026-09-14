@@ -9,6 +9,8 @@ import {
   hasAuthenticImageUrl,
   isFakeExamSvg,
   isSafeMediaKey,
+  parsePdfPageId,
+  pdfPageImageUrlFromId,
   sanitizeCaption,
   toImageUrl,
   toLogicalKey,
@@ -64,6 +66,32 @@ assert(
   "url wins when both are present",
 );
 assert(!blobRefForManifest({}), "empty manifest entry has no blob ref");
+
+assert(
+  pdfPageImageUrlFromId("LAGSTIFNING-1-Q1") === "/media/pdf-pages/LAGSTIFNING-1/page-01.jpg",
+  "LAGSTIFNING-1-Q1 page-01",
+);
+assert(
+  pdfPageImageUrlFromId("S_KERHET-7-Q19") === "/media/pdf-pages/S_KERHET-7/page-19.jpg",
+  "S_KERHET-7-Q19 page-19",
+);
+assert(!pdfPageImageUrlFromId("S_KERHET-7-Q2009"), "typo Q2009 stays unlinked");
+assert(!pdfPageImageUrlFromId("kkalk-T-021"), "kkalk public stems stay unlinked");
+assert(!pdfPageImageUrlFromId("SAKERHET-1-Q3"), "SAKERHET spelling is not auto-mapped");
+assert(parsePdfPageId("LAGSTIFNING-8-Q64")?.logicalKey === "pdf-pages/LAGSTIFNING-8/page-64.jpg", "book 8 page 64");
+
+const pdfAttached = attachAuthenticMedia([
+  { id: "LAGSTIFNING-1-Q1", stem_sv: "på bilden" },
+  { id: "S_KERHET-7-Q19", stem_sv: "Vad visar bilden?" },
+  { id: "S_KERHET-7-Q2009", stem_sv: "mönsterdjup" },
+  { id: "kkalk-T-021", stem_sv: "busshållplats som saknar gul linje" },
+  { id: "KARTA-1-Q1", stem_sv: "karta", imageUrl: "media/T3/karta/exam.php-filer/1.jpg" },
+]);
+assert(pdfAttached[0].imageUrl === "/media/pdf-pages/LAGSTIFNING-1/page-01.jpg", "compile attaches LAGSTIFNING page");
+assert(pdfAttached[1].imageUrl === "/media/pdf-pages/S_KERHET-7/page-19.jpg", "compile attaches S_KERHET page");
+assert(!pdfAttached[2].imageUrl, "Q2009 not attached");
+assert(!pdfAttached[3].imageUrl, "kkalk not attached");
+assert(pdfAttached[4].imageUrl === "/media/T3/karta/exam.php-filer/1.jpg", "existing HTM karta url kept");
 
 assert(sanitizeCaption("Gul heldragen linje · trottoarkant") === "Gul heldragen linje trottoarkant", "middle-dot caption");
 assert(sanitizeCaption("Gul heldragen linje ♦ trottoarkant") === "Gul heldragen linje trottoarkant", "diamond caption");
