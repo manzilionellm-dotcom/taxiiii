@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-14T22:44:55.521Z",
+  "generatedAt": "2026-09-14T22:50:26.265Z",
   "imagesDir": null,
-  "questionsTotal": 1947,
-  "researchCount": 62,
+  "questionsTotal": 1940,
+  "researchCount": 55,
   "ownerCount": 472,
   "ownerSeedCount": 42,
   "ownerOfficialCount": 138,
@@ -34,5 +34,5 @@
   "beforeMainManziCount": 1378,
   "beforeMainSkippedIncomplete": 279,
   "deltaManziVsMain": 35,
-  "note": "manzi-100c: compiled after npm-equivalent manzi:apply on coordinator jsonl. H7 offline; box copies dug (htm questionkeys). No new inventable BKORT/korkortA/Kvibille-Q4 facit. Live bank was stuck at 1378 because apply patches never recompiled into questions.json."
+  "note": "manzi-100c bank-delta applied onto questions.json (complements closed #23; lands compiled bank past 1378→1413)"
 }
