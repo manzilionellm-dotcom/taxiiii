@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import { PRIVATE_CACHE, SECURITY_HEADERS } from "./lib/protect/constants";
 
 const nextConfig: NextConfig = {
+  transpilePackages: ["@capacitor/haptics", "@capacitor/core"],
   async headers() {
     return [
       {

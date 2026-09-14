@@ -49,6 +49,8 @@ export const fr: Dictionary = {
   next: "Suivant",
   typeWord: "Écris le mot",
   gloss: "Sens",
+  glossEmpty: "Pas encore au glossaire",
+  glossClose: "Fermer le glossaire",
   correct: "Juste",
   incorrect: "Faux",
   explanation: "Explication",

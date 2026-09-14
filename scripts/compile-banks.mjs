@@ -23,6 +23,7 @@ import {
   attachAuthenticMedia,
 } from "../lib/media/paths.mjs";
 import { importMediaTree } from "./import-media.mjs";
+import { buildLexicon } from "./build-lexicon.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -247,8 +248,9 @@ export function compile({ check = false, images = null } = {}) {
   }
   writeFileSync(join(root, "data/rag-extras.json"), `${JSON.stringify(ragExtras, null, 2)}\n`);
 
+  const lexicon = buildLexicon({ silent: true });
   console.log(
-    `Compiled ${ordered.length} questions → data/questions.json (research ${researchCount} first, owner-seed ${ownerCount}, manzi ${manziCount}). Vocab merged ${vocab.length}. YouTube extras ${extras.length}.`,
+    `Compiled ${ordered.length} questions → data/questions.json (research ${researchCount} first, owner-seed ${ownerCount}, manzi ${manziCount}). Vocab merged ${vocab.length}. YouTube extras ${extras.length}. Gloss ${lexicon.uniqueHits}/${lexicon.uniqueBankTokens} (${lexicon.uniqueCoveragePct}%).`,
   );
   console.log("Research was not dropped. Swedish research `sv` / Manzi stems copied verbatim.");
   return ordered;

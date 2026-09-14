@@ -48,6 +48,8 @@ export const sv = {
   next: "Nästa",
   typeWord: "Skriv ordet",
   gloss: "Betydelse",
+  glossEmpty: "Finns inte i glossariet än",
+  glossClose: "Stäng glossariet",
   correct: "Rätt",
   incorrect: "Fel",
   explanation: "Förklaring",
