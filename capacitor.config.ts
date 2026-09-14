@@ -15,6 +15,14 @@ const config: CapacitorConfig = {
   },
   android: {
     allowMixedContent: false,
+    /**
+     * targetSdk 35 forces edge-to-edge on Android 15+, and an Android WebView
+     * reports env(safe-area-inset-*) for display cutouts only — never for the
+     * status bar or the navigation bar. With the Capacitor default ("disable")
+     * the header and the bottom nav therefore sat under the system bars.
+     * "auto" lets Capacitor inset the WebView by the real system-bar insets.
+     */
+    adjustMarginsForEdgeToEdge: "auto",
   },
   plugins: {
     SplashScreen: {
