@@ -11,6 +11,7 @@ import { trackLabel, trackProduct } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { computeReadiness } from "@/lib/progress/readiness";
 import { useQuestionCatalog } from "@/lib/questions/use-catalog";
+import { TRACKS } from "@/lib/types";
 
 export default function HomePage() {
   const { state, hydrated } = useAppState();
@@ -51,7 +52,7 @@ export default function HomePage() {
       <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
 
       <div className="grid gap-3 sm:grid-cols-2">
-        {state.profile.tracks.map((item) => (
+        {TRACKS.map((item) => (
           <TrackCard
             key={item}
             href={`/${item}`}
@@ -60,14 +61,6 @@ export default function HomePage() {
             description={trackProduct(item)}
           />
         ))}
-        {!state.profile.tracks.includes("owner") ? (
-          <TrackCard
-            href="/owner"
-            icon="owner"
-            title={trackLabel("owner")}
-            description={trackProduct("owner")}
-          />
-        ) : null}
         <TrackCard
           href="/chat"
           icon="chat"

@@ -18,7 +18,7 @@ import { SplashScreen } from "@/components/splash-screen";
 import { trackLabel } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { updateProfile } from "@/lib/progress/store";
-import type { Locale, Track } from "@/lib/types";
+import { TRACKS, type Locale, type Track } from "@/lib/types";
 
 const NAV = [
   { href: "/", key: "home" as const, Icon: HomeIcon },
@@ -41,7 +41,14 @@ export function AppShell({ children }: { children: ReactNode }) {
   }
 
   function setTrack(next: Track) {
-    setState(updateProfile(state, { activeTrack: next }));
+    setState(
+      updateProfile(state, {
+        activeTrack: next,
+        tracks: state.profile.tracks.includes(next)
+          ? state.profile.tracks
+          : [...state.profile.tracks, next],
+      }),
+    );
   }
 
   useEffect(() => {
@@ -60,22 +67,20 @@ export function AppShell({ children }: { children: ReactNode }) {
             <BrandMark compact glyph />
           </Link>
           <div className="flex items-center gap-2">
-            {state.profile.tracks.length > 1 ? (
-              <div className="flex rounded-full border border-[#ddd6c8] bg-white p-0.5 text-[10px] sm:text-xs">
-                {state.profile.tracks.map((item) => (
-                  <button
-                    key={item}
-                    type="button"
-                    onClick={() => setTrack(item)}
-                    className={`rounded-full px-2.5 py-1 font-medium sm:px-3 ${
-                      track === item ? "bg-[#1f3d2b] text-white" : "text-[#1f3d2b]"
-                    }`}
-                  >
-                    {trackLabel(item)}
-                  </button>
-                ))}
-              </div>
-            ) : null}
+            <div className="flex rounded-full border border-[#ddd6c8] bg-white p-0.5 text-[10px] sm:text-xs">
+              {TRACKS.map((item) => (
+                <button
+                  key={item}
+                  type="button"
+                  onClick={() => setTrack(item)}
+                  className={`rounded-full px-2.5 py-1 font-medium sm:px-3 ${
+                    track === item ? "bg-[#1f3d2b] text-white" : "text-[#1f3d2b]"
+                  }`}
+                >
+                  {trackLabel(item)}
+                </button>
+              ))}
+            </div>
             <div className="flex rounded-full border border-[#ddd6c8] bg-white text-[10px] sm:text-xs">
               {(["sv", "fr"] as const).map((locale) => (
                 <button

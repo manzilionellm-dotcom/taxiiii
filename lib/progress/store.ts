@@ -1,6 +1,7 @@
 "use client";
 
 import { createCard, reviewCard } from "@/lib/progress/srs";
+import { ensureOnboardedTracks } from "@/lib/progress/tracks";
 import type {
   AppState,
   Attempt,
@@ -47,7 +48,7 @@ export function loadState(): AppState {
     return {
       ...emptyState(),
       ...parsed,
-      profile: { ...defaultProfile, ...parsed.profile },
+      profile: ensureOnboardedTracks({ ...defaultProfile, ...parsed.profile }),
     };
   } catch {
     return emptyState();

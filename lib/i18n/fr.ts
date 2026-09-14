@@ -28,7 +28,8 @@ export const fr: Dictionary = {
   trackOwner: BRAND.tracks.owner.label,
   trackOwnerDesc: `${BRAND.tracks.owner.product} — permis d'exploiter, véhicules et comptabilité.`,
   comingSoon: "Bientôt",
-  bothTracks: `${BRAND.tracks.b.label} + ${BRAND.tracks.taxi.label}`,
+  bothTracks: `${BRAND.tracks.b.label} + ${BRAND.tracks.taxi.label} + ${BRAND.tracks.owner.label}`,
+  bothTracksDesc: `${BRAND.tracks.b.product}, ${BRAND.tracks.taxi.product} et ${BRAND.tracks.owner.product}.`,
   yourName: "Ton prénom (facultatif)",
   fragileMode: "Profil fragile",
   fragileHint:
