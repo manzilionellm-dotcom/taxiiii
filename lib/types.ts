@@ -7,7 +7,8 @@ export type Track = (typeof TRACKS)[number];
 export const LOCALES = ["sv", "fr"] as const;
 export type Locale = (typeof LOCALES)[number];
 
-export type OptionLetter = "A" | "B" | "C" | "D" | "E";
+export const OPTION_LETTERS = ["A", "B", "C", "D", "E", "F"] as const;
+export type OptionLetter = (typeof OPTION_LETTERS)[number];
 
 export interface QuestionOption {
   letter: OptionLetter;

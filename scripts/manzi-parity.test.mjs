@@ -234,6 +234,14 @@ for (const r of recovered) {
  * kkalk-S-088 answers «D» (Väjningsplikt) — the letter refers to a lost option
  * order, so importing options and keeping it would teach the wrong sign.
  */
+const q6 = compiled.find((q) => q.id === "LAGSTIFNING-4-Q6");
+assert(q6, "LAGSTIFNING-4-Q6 must be in the compiled bank (PDF facit F / SWEDAC)");
+assert(q6.answer === "F", `LAGSTIFNING-4-Q6 answer must be F, got ${JSON.stringify(q6.answer)}`);
+assert(
+  (q6.options || []).some((o) => o.letter === "F" && /SWEDAC/i.test(String(o.text || ""))),
+  "LAGSTIFNING-4-Q6 option F must be SWEDAC",
+);
+
 const bkortClassic = compiled.filter((q) => /^bkort-classic-/.test(String(q.id)));
 assert(
   !bkortClassic.length,

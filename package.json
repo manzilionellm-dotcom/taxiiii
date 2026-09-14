@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run import && next build",
+    "build": "node scripts/maybe-import.mjs && next build",
     "start": "next start",
     "lint": "eslint",
     "manzi:apply": "node scripts/recover-htm-bkort-facit.mjs && node scripts/apply-manzi-100-delta.mjs && node scripts/gen-pdf-links-patch.mjs && node scripts/apply-manzi-100-media-keys.mjs",
