@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 /** Apply Manzi 100% fixes onto data/questions.jsonl (+ optional media-manifest patch). */
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const renamePath = join(root, "data/sakerhet-rename-map.json");
-const fixesPath = join(root, "data/manzi-100-content-fixes.json");
-const deltaPath = join(root, "data/manzi-100-delta.json");
-const target = join(root, "data/questions.jsonl");
-const manifestPath = join(root, "data/media-manifest.json");
-const manifestPatchPath = join(root, "data/media-manifest-pdf-patch.json");
+const dataDir = join(root, "data");
+const renamePath = join(dataDir, "sakerhet-rename-map.json");
+const fixesPath = join(dataDir, "manzi-100-content-fixes.json");
+const deltaPath = join(dataDir, "manzi-100-delta.json");
+const target = join(dataDir, "questions.jsonl");
+const manifestPath = join(dataDir, "media-manifest.json");
+const manifestPatchPath = join(dataDir, "media-manifest-pdf-patch.json");
 
 function renameSakerhet(id) {
   return typeof id === "string" && id.startsWith("SAKERHET-")
@@ -18,10 +19,22 @@ function renameSakerhet(id) {
     : id;
 }
 
+function loadFixes() {
+  if (existsSync(fixesPath)) return JSON.parse(readFileSync(fixesPath, "utf8"));
+  const parts = readdirSync(dataDir)
+    .filter((n) => /^manzi-100-content-fixes\.part\d+\.json$/.test(n))
+    .sort();
+  if (parts.length) {
+    const all = [];
+    for (const n of parts) all.push(...JSON.parse(readFileSync(join(dataDir, n), "utf8")));
+    return all;
+  }
+  if (existsSync(deltaPath)) return JSON.parse(readFileSync(deltaPath, "utf8"));
+  return [];
+}
+
 const renameMap = existsSync(renamePath) ? JSON.parse(readFileSync(renamePath, "utf8")) : {};
-let fixes = [];
-if (existsSync(fixesPath)) fixes = JSON.parse(readFileSync(fixesPath, "utf8"));
-else if (existsSync(deltaPath)) fixes = JSON.parse(readFileSync(deltaPath, "utf8"));
+const fixes = loadFixes();
 const byId = new Map(fixes.map((row) => [row.id, row]));
 for (const [oldId, newId] of Object.entries(renameMap)) byId.set(oldId, byId.get(newId) || { id: newId });
 
@@ -59,7 +72,7 @@ for (const row of fixes) {
   }
 }
 writeFileSync(target, out.join("\n") + "\n");
-console.log(`apply-manzi-100: questions.jsonl → ${out.length} rows (touched ${replaced})`);
+console.log(`apply-manzi-100: questions.jsonl → ${out.length} rows (touched ${replaced}, fixes ${fixes.length})`);
 
 if (existsSync(manifestPatchPath) && existsSync(manifestPath)) {
   const mm = JSON.parse(readFileSync(manifestPath, "utf8"));
