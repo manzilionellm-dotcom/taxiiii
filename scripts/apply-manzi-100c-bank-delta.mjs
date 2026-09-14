@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-/** Apply manzi-100c bank-delta (mono or .part0+.part1) onto data/questions.json. */
+/** Apply manzi-100c bank-delta (mono, gzipped-b64 parts, or .partN.json) onto data/questions.json. */
 import { existsSync, readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { gunzipSync } from "node:zlib";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -9,8 +10,20 @@ const dataDir = join(root, "data");
 const qPath = join(dataDir, "questions.json");
 const reportPath = join(dataDir, "media-report.json");
 const mono = join(dataDir, "manzi-100c-bank-delta.json");
+const partsList = join(dataDir, "manzi-100c-bank-delta.json.gz.b64.parts");
+
+function landGzippedMono() {
+  if (existsSync(mono)) return;
+  if (!existsSync(partsList)) return;
+  const parts = readFileSync(partsList, "utf8").split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
+  const b64 = parts.map((p) => readFileSync(join(root, p), "utf8").trim()).join("");
+  const buf = gunzipSync(Buffer.from(b64, "base64"));
+  writeFileSync(mono, buf);
+  console.log(`apply-manzi-100c-bank-delta: landed mono from gzip (${buf.length} bytes)`);
+}
 
 function loadDelta() {
+  landGzippedMono();
   if (existsSync(mono)) return JSON.parse(readFileSync(mono, "utf8"));
   const parts = readdirSync(dataDir)
     .filter((n) => /^manzi-100c-bank-delta\.part\d+\.json$/.test(n))
