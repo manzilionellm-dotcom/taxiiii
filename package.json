@@ -26,13 +26,15 @@
     "test:french": "node scripts/french-coverage.test.mjs",
     "test:layout": "node scripts/mobile-layout.test.mjs",
     "fr:apply": "node scripts/apply-fr.mjs",
-    "test": "node scripts/self-check.mjs && node scripts/media-paths.test.mjs && node scripts/glossary.test.mjs && node scripts/tracks-migration.test.mjs && node scripts/variants.test.mjs && node scripts/teacher-presence.test.mjs && node scripts/law-watch.test.mjs && node scripts/no-focus-overlay.test.mjs && node scripts/french-coverage.test.mjs && node scripts/mobile-layout.test.mjs",
+    "test": "node scripts/self-check.mjs && node scripts/media-paths.test.mjs && node scripts/glossary.test.mjs && node scripts/tracks-migration.test.mjs && node scripts/variants.test.mjs && node scripts/teacher-presence.test.mjs && node scripts/law-watch.test.mjs && node scripts/no-focus-overlay.test.mjs && node scripts/french-coverage.test.mjs && node scripts/mobile-layout.test.mjs && node scripts/manzi-parity.test.mjs",
     "native:www": "node scripts/write-native-www.mjs",
     "native:icon": "node scripts/make-app-icon.mjs",
     "cap:sync": "npm run native:www && cap sync android && node scripts/patch-android.mjs",
     "apk": "node scripts/build-apk.mjs",
     "aab": "node scripts/build-release.mjs",
-    "keystore": "node scripts/create-upload-keystore.mjs"
+    "keystore": "node scripts/create-upload-keystore.mjs",
+    "test:parity": "node scripts/manzi-parity.test.mjs",
+    "fix:parity": "node scripts/fix-manzi-parity.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^7.4.4",

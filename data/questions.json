@@ -2489,7 +2489,7 @@
     "corpus": "manzi"
   },
   {
-    "id": "SAKERHET-1-Q4",
+    "id": "S_KERHET-1-Q4",
     "topic": "sakerhet",
     "stem_sv": "Taxameter måste besiktigas under olika tillfällen. När ska du i normalt fall besiktiga taxametern på din taxi?",
     "options": [
@@ -2514,7 +2514,8 @@
     "explanation_sv": "Rätt svar: C — När mätningen av vägsträckan ändras med mer än 5 procent.",
     "explanation_fr": "Bonne réponse: C — « När mätningen av vägsträckan ändras med mer än 5 procent. » (mots-clés: taximètre)",
     "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-04.jpg"
   },
   {
     "id": "kkalk-M-271",
@@ -25193,7 +25194,7 @@
       },
       {
         "letter": "D",
-        "text": "Ja, i alla situationer. A B C"
+        "text": "Ja, i alla situationer."
       }
     ],
     "answer": "C",
@@ -27950,7 +27951,7 @@
       },
       {
         "letter": "E",
-        "text": "Körpassrapporten för senaste sju dygn. 27.Du ska på en skolskjuts resa . Vilken dörr måste se till att den är låst inifrån?"
+        "text": "Körpassrapporten för senaste sju dygn."
       }
     ],
     "answer": "D",
@@ -29390,7 +29391,7 @@
       },
       {
         "letter": "D",
-        "text": "Jag kör inte till vänster och väntar på mötande bilen därefter svänger jag, eftersom jag har väjningsplikt 18.Du kommer fram till korsningen på bilden och du ska till vänster. Hur ska du uppträda?"
+        "text": "Jag kör inte till vänster och väntar på mötande bilen därefter svänger jag, eftersom jag har väjningsplikt"
       }
     ],
     "answer": "A",
@@ -30087,7 +30088,7 @@
       },
       {
         "letter": "E",
-        "text": "Bild B och Bild D A B C"
+        "text": "Bild B och Bild D"
       }
     ],
     "answer": "E",
@@ -30223,6 +30224,35 @@
     "explanation_sv": "Rätt svar: A — Stopp bara för dig",
     "explanation_fr": "Bonne réponse: A — « Stopp bara för dig »",
     "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-52.jpg",
+    "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-8.pdf",
+    "corpus": "manzi"
+  },
+  {
+    "id": "LAGSTIFNING-8-Q53",
+    "topic": "lagstiftning",
+    "stem_sv": "Du tänker parkera tisdag kl 15:00, och denna dag är inte en helgdag. När ska du senaste hämta bilen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tisdag kl 16:00"
+      },
+      {
+        "letter": "B",
+        "text": "Tisdag kl 24:00"
+      },
+      {
+        "letter": "C",
+        "text": "Onsdag Kl 10:00"
+      },
+      {
+        "letter": "D",
+        "text": "Onsdag Kl 17:00 2 tim 8‐16"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C",
+    "explanation_fr": "Bonne réponse: C (mots-clés: stationner)",
+    "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-53.jpg",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-8.pdf",
     "corpus": "manzi"
   },
@@ -30565,6 +30595,972 @@
     "explanation_fr": "Bonne réponse: D — « Ja, båda mot fordon från höger och vänster » (mots-clés: obligation de céder le passage)",
     "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-09.jpg",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-8.pdf",
+    "corpus": "manzi"
+  },
+  {
+    "id": "S_KERHET-1-Q10",
+    "topic": "sakerhet",
+    "stem_sv": "En kund med dig i bilen plötsligt blir omtöcknad och har diabetes. Vad bör du göra i första hand?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Köra direkt till sjukhus."
+      },
+      {
+        "letter": "B",
+        "text": "Ge personen varm dricka."
+      },
+      {
+        "letter": "C",
+        "text": "Ge något söt att äta."
+      },
+      {
+        "letter": "D",
+        "text": "Utföra helmichs manöver."
+      },
+      {
+        "letter": "E",
+        "text": "Lägga personen i sidoläge."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Ge något söt att äta.",
+    "explanation_fr": "Bonne réponse: C — « Ge något söt att äta. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-10.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q11",
+    "topic": "sakerhet",
+    "stem_sv": "Vad är den troliga orsaken för en kund som får plötsligt molande värk i bröst som går ut till armar. Vilket alternativ är rätt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Personen har fått astma anfall."
+      },
+      {
+        "letter": "B",
+        "text": "Personen har fått epilepsiskt anfall."
+      },
+      {
+        "letter": "C",
+        "text": "Personen har fått en hjärtinfarkt."
+      },
+      {
+        "letter": "D",
+        "text": "Personen har andningssvårigheter."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Personen har fått en hjärtinfarkt.",
+    "explanation_fr": "Bonne réponse: C — « Personen har fått en hjärtinfarkt. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-11.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q12",
+    "topic": "sakerhet",
+    "stem_sv": "Du har en person i din taxi som har diabetes. Han blir plötsligt blek, kallsvettig och irriterad. Vad bör du göra?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Se till att personen får i sig sitt insulin."
+      },
+      {
+        "letter": "B",
+        "text": "Du kör direkt till sjukhus."
+      },
+      {
+        "letter": "C",
+        "text": "Se till att personen får något sött."
+      },
+      {
+        "letter": "D",
+        "text": "Personen har satt något i halsen."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Se till att personen får något sött.",
+    "explanation_fr": "Bonne réponse: C — « Se till att personen får något sött. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-12.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q13",
+    "topic": "sakerhet",
+    "stem_sv": "Vad är symtomen för en person som har demenssjukdom?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Personen kan vara astma sjuka och har svårt att andas."
+      },
+      {
+        "letter": "B",
+        "text": "Personen kan vara förvirrad och har svårt att minnas."
+      },
+      {
+        "letter": "C",
+        "text": "Personen kan vara diabetiker och blodet har svårt att levra sig."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Personen kan vara förvirrad och har svårt att minnas.",
+    "explanation_fr": "Bonne réponse: B — « Personen kan vara förvirrad och har svårt att minnas. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-13.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q14",
+    "topic": "sakerhet",
+    "stem_sv": "Varför har man sänkt hastigheten från 50 km/tim till 30 km/tim i vissa tätorter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Att kolmanoxidutsläppen kan minska."
+      },
+      {
+        "letter": "B",
+        "text": "Att koldioxidutsläppen kan minska."
+      },
+      {
+        "letter": "C",
+        "text": "Att svåra olyckor kan minska."
+      },
+      {
+        "letter": "D",
+        "text": "Att bullernivå kan minska och inte påverka nära boende."
+      },
+      {
+        "letter": "E",
+        "text": "Att vägslitage kan minska."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Att svåra olyckor kan minska.",
+    "explanation_fr": "Bonne réponse: C — « Att svåra olyckor kan minska. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-14.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q15",
+    "topic": "sakerhet",
+    "stem_sv": "Du kommer fram till en olycksplats där finns det en person som är blek och kallsvettig. Bör du ge personen något att dricka?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ja, men bara om han fryser."
+      },
+      {
+        "letter": "B",
+        "text": "Ja, gärna att ge något varmt som gör personen lugn."
+      },
+      {
+        "letter": "C",
+        "text": "Ja, gärna bara om han klagar om han är törstig."
+      },
+      {
+        "letter": "D",
+        "text": "Nej."
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D — Nej.",
+    "explanation_fr": "Bonne réponse: D — « Nej. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-15.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q16",
+    "topic": "sakerhet",
+    "stem_sv": "Bilföraren på bilden ska svänga höger. Hur ska han uppträda på ett säkert sätt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Han måste lämna gående företräde även om gående har rött ljus."
+      },
+      {
+        "letter": "B",
+        "text": "Han ska köra med låg hastighet och vara beredd att gående kan gå ut i gatan, trotts de har rött ljus."
+      },
+      {
+        "letter": "C",
+        "text": "Han måste inte lämna företräde åt gående, men ändå måste han göra det."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Han ska köra med låg hastighet och vara beredd att gående kan gå ut i gatan, trotts de har rött ljus.",
+    "explanation_fr": "Bonne réponse: B — « Han ska köra med låg hastighet och vara beredd att gående kan gå ut i gatan, trotts de har rött ljus. »",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-16.jpg",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi"
+  },
+  {
+    "id": "S_KERHET-1-Q17",
+    "topic": "sakerhet",
+    "stem_sv": "Vilken sjukdom innebär texten på bilden?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Afasi."
+      },
+      {
+        "letter": "B",
+        "text": "Epilepsi."
+      },
+      {
+        "letter": "C",
+        "text": "Schizofreni."
+      },
+      {
+        "letter": "D",
+        "text": "Psykos."
+      },
+      {
+        "letter": "E",
+        "text": "Fobi."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A — Afasi.",
+    "explanation_fr": "Bonne réponse: A — « Afasi. »",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-17.jpg",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi"
+  },
+  {
+    "id": "S_KERHET-1-Q19",
+    "topic": "sakerhet",
+    "stem_sv": "Det är höst och börjar använda motorvärmare. Vid vilken temperatur löner det sig ur miljö och bränslebesparande synpunktatt använda motorvärmare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vid ca -10˚"
+      },
+      {
+        "letter": "B",
+        "text": "Vid ca -5˚"
+      },
+      {
+        "letter": "C",
+        "text": "Vid ca 0˚"
+      },
+      {
+        "letter": "D",
+        "text": "Vid ca +10˚"
+      },
+      {
+        "letter": "E",
+        "text": "Vad ca +15˚"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D — Vid ca +10˚",
+    "explanation_fr": "Bonne réponse: D — « Vid ca +10˚ »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-19.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q20",
+    "topic": "sakerhet",
+    "stem_sv": "Vad bör du göra för att påverka miljöeffekten vid kall start?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Du låter motorn går i tomgång en minut innan körning."
+      },
+      {
+        "letter": "B",
+        "text": "Du låter motorn går med högt varvtal två minuter innan körning."
+      },
+      {
+        "letter": "C",
+        "text": "Du väntar tills motorn blir varm innan körning."
+      },
+      {
+        "letter": "D",
+        "text": "Du kör direkt utan att belasta motorn hårt."
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D — Du kör direkt utan att belasta motorn hårt.",
+    "explanation_fr": "Bonne réponse: D — « Du kör direkt utan att belasta motorn hårt. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-20.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q21",
+    "topic": "sakerhet",
+    "stem_sv": "Bilen går snett (den drar till höger) kraftigt när du kör, och däcket är ojämn slitet som på bilen . Vad beror det på?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Obalans i framhjul."
+      },
+      {
+        "letter": "B",
+        "text": "Obalans i bakhjul."
+      },
+      {
+        "letter": "C",
+        "text": "Fram vagninställning har rubbats. (Felaktig hjulinställning)"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Fram vagninställning har rubbats. (Felaktig hjulinställning)",
+    "explanation_fr": "Bonne réponse: C — « Fram vagninställning har rubbats. (Felaktig hjulinställning) »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-21.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q22",
+    "topic": "sakerhet",
+    "stem_sv": "Vad måste du först vara beredd på i den här situationen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fordon som kommer ut från höger efter övergångsstället."
+      },
+      {
+        "letter": "B",
+        "text": "Gående som går ut framför bussen."
+      },
+      {
+        "letter": "C",
+        "text": "Gående som går ut på övergångsstället."
+      },
+      {
+        "letter": "D",
+        "text": "Bussen kan plötsligt blinka ut och börjar köra."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Gående som går ut framför bussen.",
+    "explanation_fr": "Bonne réponse: B — « Gående som går ut framför bussen. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-22.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q23",
+    "topic": "sakerhet",
+    "stem_sv": "Vilken lyftteknik bör du använda om du ska lyfta ett tungt föremål?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jag lyfter med rak rygg och godset lång ifrån mig."
+      },
+      {
+        "letter": "B",
+        "text": "Jag lyfter med böjd rygg och godset nära mig."
+      },
+      {
+        "letter": "C",
+        "text": "Jag lyfter med rak rygg och godset nära mig."
+      },
+      {
+        "letter": "D",
+        "text": "Jag lyfter med böjd rygg och godset lång ifrån mig."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Jag lyfter med rak rygg och godset nära mig.",
+    "explanation_fr": "Bonne réponse: C — « Jag lyfter med rak rygg och godset nära mig. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-23.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q24",
+    "topic": "sakerhet",
+    "stem_sv": "Du får en kund som har gravt hörselskadad. Vad ska du göra för att få personen förstå vad du säger?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prata så långsamt som möjligt."
+      },
+      {
+        "letter": "B",
+        "text": "Prata så högt som möjligt nära öronen eller hörapparaten."
+      },
+      {
+        "letter": "C",
+        "text": "Försöker få ögonkontakter med honom så att mina munrörelser syns."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Försöker få ögonkontakter med honom så att mina munrörelser syns.",
+    "explanation_fr": "Bonne réponse: C — « Försöker få ögonkontakter med honom så att mina munrörelser syns. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-24.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q25",
+    "topic": "sakerhet",
+    "stem_sv": "Vad har en person med ledgångsreumatism för kännetecken?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Minskad rörelse i lederna."
+      },
+      {
+        "letter": "B",
+        "text": "Skakar."
+      },
+      {
+        "letter": "C",
+        "text": "Aggressiv."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A — Minskad rörelse i lederna.",
+    "explanation_fr": "Bonne réponse: A — « Minskad rörelse i lederna. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-25.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q28",
+    "topic": "sakerhet",
+    "stem_sv": "Du ska på en lång resa som startar kl 22:00 och slutar kl 03:00. När är risken störst att råka ut för en trafikolycka på grund av trötthet?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Under halva resetid."
+      },
+      {
+        "letter": "B",
+        "text": "Under resans första timme."
+      },
+      {
+        "letter": "C",
+        "text": "Under resans sista timme."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Under resans sista timme.",
+    "explanation_fr": "Bonne réponse: C — « Under resans sista timme. » (mots-clés: fatigue)",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-28.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q29",
+    "topic": "sakerhet",
+    "stem_sv": "Du har en bil som har krockkudde i förareplats och passagerare plats fram. Vilket alternativ är rätt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jag ska sitta så nära krockkudden som möjligt."
+      },
+      {
+        "letter": "B",
+        "text": "Krockkudde kan ersätta bilbältet i vissa fall."
+      },
+      {
+        "letter": "C",
+        "text": "Om bilbarnstol ska montera fram måste det vara framåtvänd."
+      },
+      {
+        "letter": "D",
+        "text": "Om ett barn som är kortare än 135 cm ska sitta bak."
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D — Om ett barn som är kortare än 135 cm ska sitta bak.",
+    "explanation_fr": "Bonne réponse: D — « Om ett barn som är kortare än 135 cm ska sitta bak. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-29.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q3",
+    "topic": "sakerhet",
+    "stem_sv": "Du kör manuell växlad bil. Hur ska du göra ur miljösynpunkt för att minska bränsleförbrukning?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Växla upp sent och köra på så låg växel som möjligt."
+      },
+      {
+        "letter": "B",
+        "text": "Växla upp tidigt och köra på så hög växel som möjligt."
+      },
+      {
+        "letter": "C",
+        "text": "Motorbromsa så lite som möjligt."
+      },
+      {
+        "letter": "D",
+        "text": "Köra med 4:an växel under 50 hastigheter."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Växla upp tidigt och köra på så hög växel som möjligt.",
+    "explanation_fr": "Bonne réponse: B — « Växla upp tidigt och köra på så hög växel som möjligt. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-03.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q30",
+    "topic": "sakerhet",
+    "stem_sv": "Vilken är det normalt effektivaste utrustning i bilen som skyddar passagerare mot frontalkrock?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Antisladdsystem."
+      },
+      {
+        "letter": "B",
+        "text": "Låsningsfria bromsar."
+      },
+      {
+        "letter": "C",
+        "text": "Bilbälte."
+      },
+      {
+        "letter": "D",
+        "text": "Krockkudde."
+      },
+      {
+        "letter": "E",
+        "text": "Nackstöd."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Bilbälte.",
+    "explanation_fr": "Bonne réponse: C — « Bilbälte. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-30.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q31",
+    "topic": "sakerhet",
+    "stem_sv": "Varför ska bromsvätskan bytas ut med jämna mellan år?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Den drar till sig luft."
+      },
+      {
+        "letter": "B",
+        "text": "Den drar till sig kväve."
+      },
+      {
+        "letter": "C",
+        "text": "Den drar till sig vatten."
+      },
+      {
+        "letter": "D",
+        "text": "Den drar till sig smuts."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Den drar till sig vatten.",
+    "explanation_fr": "Bonne réponse: C — « Den drar till sig vatten. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-31.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q32",
+    "topic": "sakerhet",
+    "stem_sv": "Den här lampan tänds i instrumentpanel under körning. När du kontrollerar bromsvätskan ser du att den ligger på mindre än minimum. Vad bör du göra?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Med hjälp av parkeringsbromsen till närmaste verkstad."
+      },
+      {
+        "letter": "B",
+        "text": "Köra sakta till närmaste verkstad."
+      },
+      {
+        "letter": "C",
+        "text": "Jag bogserar bilen."
+      },
+      {
+        "letter": "D",
+        "text": "Jag bärgar bilen till närmaste verkstad."
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D — Jag bärgar bilen till närmaste verkstad.",
+    "explanation_fr": "Bonne réponse: D — « Jag bärgar bilen till närmaste verkstad. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-32.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q33",
+    "topic": "sakerhet",
+    "stem_sv": "Vad innebär lampan på bilden?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Låg spolarvätska nivå."
+      },
+      {
+        "letter": "B",
+        "text": "Hög motortemperatur."
+      },
+      {
+        "letter": "C",
+        "text": "Låg oljetryck."
+      },
+      {
+        "letter": "D",
+        "text": "Låg bromsvätska nivå."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Hög motortemperatur.",
+    "explanation_fr": "Bonne réponse: B — « Hög motortemperatur. »",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-33.jpg",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi"
+  },
+  {
+    "id": "S_KERHET-1-Q34",
+    "topic": "sakerhet",
+    "stem_sv": "Du ska lasta en cykel i din bil men du har inte plats till den inne i bilen. Hur ska du placera cykeln i bilen ur miljösynpunkt och bränslebesparande?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Att låta cykeln ligga med en cykelbehållare på taket."
+      },
+      {
+        "letter": "B",
+        "text": "Att låta cykeln stå med särskild cykelbehållare på taket."
+      },
+      {
+        "letter": "C",
+        "text": "Att hänga på cykeln i en cykelbehållare bak på bilen."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Att hänga på cykeln i en cykelbehållare bak på bilen.",
+    "explanation_fr": "Bonne réponse: C — « Att hänga på cykeln i en cykelbehållare bak på bilen. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-34.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q35",
+    "topic": "sakerhet",
+    "stem_sv": "När ska du bytabilbarnstol mottill exempelbilbälteskudde?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "När barnet väger 15 kg."
+      },
+      {
+        "letter": "B",
+        "text": "När barnet är 3 år."
+      },
+      {
+        "letter": "C",
+        "text": "När barnets huvud är i höjd med bilbarnstolen över kant."
+      },
+      {
+        "letter": "D",
+        "text": "När barnets huvud ska sitta säkert."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — När barnets huvud är i höjd med bilbarnstolen över kant.",
+    "explanation_fr": "Bonne réponse: C — « När barnets huvud är i höjd med bilbarnstolen över kant. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-35.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q36",
+    "topic": "sakerhet",
+    "stem_sv": "En förare som talar i mobiltelefon har sämre reaktionsförmåga än vanligt. Reaktionstiden i normalt fall är 1 sekund. Att använda mobilen vid körning med 70 km/tim gör att reaktionstiden blir 2 sekunder. Hur mycket är reaktionssträckan vid 70km/tim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "25 m."
+      },
+      {
+        "letter": "B",
+        "text": "39 m."
+      },
+      {
+        "letter": "C",
+        "text": "50 m."
+      },
+      {
+        "letter": "D",
+        "text": "62 m."
+      },
+      {
+        "letter": "E",
+        "text": "90 m."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — 39 m.",
+    "explanation_fr": "Bonne réponse: B — « 39 m. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-36.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q37",
+    "topic": "sakerhet",
+    "stem_sv": "Vad ska du se till när du ska kontrollera luften i däcken som rekommenderas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bilen är olastad."
+      },
+      {
+        "letter": "B",
+        "text": "Däcken är varma."
+      },
+      {
+        "letter": "C",
+        "text": "Däcken är kalla."
+      },
+      {
+        "letter": "D",
+        "text": "Bilen utan last eller passagerare."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Däcken är kalla.",
+    "explanation_fr": "Bonne réponse: C — « Däcken är kalla. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-37.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q38",
+    "topic": "sakerhet",
+    "stem_sv": "Du ska tvätta din bil men du har inte tillgång till tvätthall. Var ska du tvätta bilen för att skada miljön så lite som möjligt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "En asfalterad gata."
+      },
+      {
+        "letter": "B",
+        "text": "En cementerad yta."
+      },
+      {
+        "letter": "C",
+        "text": "En grusplan."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — En grusplan.",
+    "explanation_fr": "Bonne réponse: C — « En grusplan. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-38.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q39",
+    "topic": "sakerhet",
+    "stem_sv": "Det är 1 februari. Du ska koppla en släpvagn till din taxibil. Din bil är utrustad med dubbdäck. Vilka däck måste du ha på släpet?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dubbade eller odubbade däck."
+      },
+      {
+        "letter": "B",
+        "text": "Enbart vinterdäck."
+      },
+      {
+        "letter": "C",
+        "text": "Enbart dubbdäck."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Enbart dubbdäck.",
+    "explanation_fr": "Bonne réponse: C — « Enbart dubbdäck. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-39.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q40",
+    "topic": "sakerhet",
+    "stem_sv": "Vi vet att förare kan drabbas av sömnstörningar och trötthet som påverkar trafiksäkerheten. Vad är sant?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Problemet drabbar över 45 årsålder som är män."
+      },
+      {
+        "letter": "B",
+        "text": "Problemet drabbar över 45 årsålder oavsett kön."
+      },
+      {
+        "letter": "C",
+        "text": "Problemet drabbar över 45 årsålder som är kvinnor."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Problemet drabbar över 45 årsålder oavsett kön.",
+    "explanation_fr": "Bonne réponse: B — « Problemet drabbar över 45 årsålder oavsett kön. » (mots-clés: fatigue)",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-40.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q5",
+    "topic": "sakerhet",
+    "stem_sv": "Varför har barn svårt att bete sig trafiksäkert?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "För att de är korta, impulsiva och inte har full utvecklad syn."
+      },
+      {
+        "letter": "B",
+        "text": "För att de är impulsiva och inte har full utvecklad hörsel."
+      },
+      {
+        "letter": "C",
+        "text": "För att de är korta och inte har full utvecklade hörsel och syn."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A — För att de är korta, impulsiva och inte har full utvecklad syn.",
+    "explanation_fr": "Bonne réponse: A — « För att de är korta, impulsiva och inte har full utvecklad syn. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-05.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q6",
+    "topic": "sakerhet",
+    "stem_sv": "Du ska placera last i bagageutrymme, hur ska du göra det?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Långt fram och lågt."
+      },
+      {
+        "letter": "B",
+        "text": "Långt fram och högt."
+      },
+      {
+        "letter": "C",
+        "text": "Långt bak och lågt."
+      },
+      {
+        "letter": "D",
+        "text": "Långt bak och högt."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A — Långt fram och lågt.",
+    "explanation_fr": "Bonne réponse: A — « Långt fram och lågt. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-06.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q7",
+    "topic": "sakerhet",
+    "stem_sv": "Vad händer om du lastar tung last bak i bilen?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hjulinställning ändras."
+      },
+      {
+        "letter": "B",
+        "text": "Bilens köregenskaper förändras."
+      },
+      {
+        "letter": "C",
+        "text": "Bromssträckan blir kortare."
+      },
+      {
+        "letter": "D",
+        "text": "Framdäcken slits mer på utsidan."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Bilens köregenskaper förändras.",
+    "explanation_fr": "Bonne réponse: B — « Bilens köregenskaper förändras. »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-07.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q8",
+    "topic": "sakerhet",
+    "stem_sv": "Vid vilken ålder börjar barn normalt bete sig trafiksäkert?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "7"
+      },
+      {
+        "letter": "B",
+        "text": "9"
+      },
+      {
+        "letter": "C",
+        "text": "12"
+      },
+      {
+        "letter": "D",
+        "text": "14"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — 12",
+    "explanation_fr": "Bonne réponse: C — « 12 »",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-08.jpg"
+  },
+  {
+    "id": "S_KERHET-1-Q9",
+    "topic": "sakerhet",
+    "stem_sv": "Du ser däcket på bilden att det är ojämn slitet, vad kan den troliga orsaken vara?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Däcket har körts med lite luft."
+      },
+      {
+        "letter": "B",
+        "text": "Däcket har körts med mycket luft."
+      },
+      {
+        "letter": "C",
+        "text": "Obalans."
+      },
+      {
+        "letter": "D",
+        "text": "Fel hjulinställning."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A — Däcket har körts med lite luft.",
+    "explanation_fr": "Bonne réponse: A — « Däcket har körts med lite luft. »",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-09.jpg",
+    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
     "corpus": "manzi"
   },
   {
@@ -31166,7 +32162,7 @@
       },
       {
         "letter": "D",
-        "text": "Kontrollera spolarvätskanivå. 29. Varför ska bromsvätskan regelbundet bytas som rekommenderas?"
+        "text": "Kontrollera spolarvätskanivå."
       }
     ],
     "answer": "A",
@@ -31949,7 +32945,7 @@
       },
       {
         "letter": "D",
-        "text": "M c sjukdomar 19. En bil bakom dig börjar köra om dig och plötsligt krockar med en mötande bil, ska du stanna?"
+        "text": "M c sjukdomar"
       }
     ],
     "answer": "C",
@@ -32297,7 +33293,7 @@
       },
       {
         "letter": "D",
-        "text": "Märket D. A B C"
+        "text": "Märket D."
       }
     ],
     "answer": "A",
@@ -37913,7 +38909,7 @@
       },
       {
         "letter": "D",
-        "text": "Märket D. FRÅGA Samer"
+        "text": "Märket D."
       }
     ],
     "answer": "C",
@@ -39505,942 +40501,6 @@
     "explanation_fr": "Bonne réponse: B — « Risken för sladd blir mindre med ABS »",
     "imageUrl": "/media/pdf-pages/S_KERHET-9/page-09.jpg",
     "source": "Desktop/manzi/Säkerhet/S_KERHET-9.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q10",
-    "topic": "sakerhet",
-    "stem_sv": "En kund med dig i bilen plötsligt blir omtöcknad och har diabetes. Vad bör du göra i första hand?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Köra direkt till sjukhus."
-      },
-      {
-        "letter": "B",
-        "text": "Ge personen varm dricka."
-      },
-      {
-        "letter": "C",
-        "text": "Ge något söt att äta."
-      },
-      {
-        "letter": "D",
-        "text": "Utföra helmichs manöver."
-      },
-      {
-        "letter": "E",
-        "text": "Lägga personen i sidoläge."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Ge något söt att äta.",
-    "explanation_fr": "Bonne réponse: C — « Ge något söt att äta. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q11",
-    "topic": "sakerhet",
-    "stem_sv": "Vad är den troliga orsaken för en kund som får plötsligt molande värk i bröst som går ut till armar. Vilket alternativ är rätt?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Personen har fått astma anfall."
-      },
-      {
-        "letter": "B",
-        "text": "Personen har fått epilepsiskt anfall."
-      },
-      {
-        "letter": "C",
-        "text": "Personen har fått en hjärtinfarkt."
-      },
-      {
-        "letter": "D",
-        "text": "Personen har andningssvårigheter."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Personen har fått en hjärtinfarkt.",
-    "explanation_fr": "Bonne réponse: C — « Personen har fått en hjärtinfarkt. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q12",
-    "topic": "sakerhet",
-    "stem_sv": "Du har en person i din taxi som har diabetes. Han blir plötsligt blek, kallsvettig och irriterad. Vad bör du göra?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Se till att personen får i sig sitt insulin."
-      },
-      {
-        "letter": "B",
-        "text": "Du kör direkt till sjukhus."
-      },
-      {
-        "letter": "C",
-        "text": "Se till att personen får något sött."
-      },
-      {
-        "letter": "D",
-        "text": "Personen har satt något i halsen."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Se till att personen får något sött.",
-    "explanation_fr": "Bonne réponse: C — « Se till att personen får något sött. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q13",
-    "topic": "sakerhet",
-    "stem_sv": "Vad är symtomen för en person som har demenssjukdom?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Personen kan vara astma sjuka och har svårt att andas."
-      },
-      {
-        "letter": "B",
-        "text": "Personen kan vara förvirrad och har svårt att minnas."
-      },
-      {
-        "letter": "C",
-        "text": "Personen kan vara diabetiker och blodet har svårt att levra sig."
-      }
-    ],
-    "answer": "B",
-    "explanation_sv": "Rätt svar: B — Personen kan vara förvirrad och har svårt att minnas.",
-    "explanation_fr": "Bonne réponse: B — « Personen kan vara förvirrad och har svårt att minnas. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q14",
-    "topic": "sakerhet",
-    "stem_sv": "Varför har man sänkt hastigheten från 50 km/tim till 30 km/tim i vissa tätorter?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Att kolmanoxidutsläppen kan minska."
-      },
-      {
-        "letter": "B",
-        "text": "Att koldioxidutsläppen kan minska."
-      },
-      {
-        "letter": "C",
-        "text": "Att svåra olyckor kan minska."
-      },
-      {
-        "letter": "D",
-        "text": "Att bullernivå kan minska och inte påverka nära boende."
-      },
-      {
-        "letter": "E",
-        "text": "Att vägslitage kan minska."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Att svåra olyckor kan minska.",
-    "explanation_fr": "Bonne réponse: C — « Att svåra olyckor kan minska. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q15",
-    "topic": "sakerhet",
-    "stem_sv": "Du kommer fram till en olycksplats där finns det en person som är blek och kallsvettig. Bör du ge personen något att dricka?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Ja, men bara om han fryser."
-      },
-      {
-        "letter": "B",
-        "text": "Ja, gärna att ge något varmt som gör personen lugn."
-      },
-      {
-        "letter": "C",
-        "text": "Ja, gärna bara om han klagar om han är törstig."
-      },
-      {
-        "letter": "D",
-        "text": "Nej."
-      }
-    ],
-    "answer": "D",
-    "explanation_sv": "Rätt svar: D — Nej.",
-    "explanation_fr": "Bonne réponse: D — « Nej. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q16",
-    "topic": "sakerhet",
-    "stem_sv": "Bilföraren på bilden ska svänga höger. Hur ska han uppträda på ett säkert sätt?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Han måste lämna gående företräde även om gående har rött ljus."
-      },
-      {
-        "letter": "B",
-        "text": "Han ska köra med låg hastighet och vara beredd att gående kan gå ut i gatan, trotts de har rött ljus."
-      },
-      {
-        "letter": "C",
-        "text": "Han måste inte lämna företräde åt gående, men ändå måste han göra det."
-      }
-    ],
-    "answer": "B",
-    "explanation_sv": "Rätt svar: B — Han ska köra med låg hastighet och vara beredd att gående kan gå ut i gatan, trotts de har rött ljus.",
-    "explanation_fr": "Bonne réponse: B — « Han ska köra med låg hastighet och vara beredd att gående kan gå ut i gatan, trotts de har rött ljus. »",
-    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-16.jpg",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q17",
-    "topic": "sakerhet",
-    "stem_sv": "Vilken sjukdom innebär texten på bilden?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Afasi."
-      },
-      {
-        "letter": "B",
-        "text": "Epilepsi."
-      },
-      {
-        "letter": "C",
-        "text": "Schizofreni."
-      },
-      {
-        "letter": "D",
-        "text": "Psykos."
-      },
-      {
-        "letter": "E",
-        "text": "Fobi. 18.Vad ska du göra för att minska bränsleförbrukning?"
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Rätt svar: A — Afasi.",
-    "explanation_fr": "Bonne réponse: A — « Afasi. »",
-    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-17.jpg",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q19",
-    "topic": "sakerhet",
-    "stem_sv": "Det är höst och börjar använda motorvärmare. Vid vilken temperatur löner det sig ur miljö och bränslebesparande synpunktatt använda motorvärmare?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Vid ca -10˚"
-      },
-      {
-        "letter": "B",
-        "text": "Vid ca -5˚"
-      },
-      {
-        "letter": "C",
-        "text": "Vid ca 0˚"
-      },
-      {
-        "letter": "D",
-        "text": "Vid ca +10˚"
-      },
-      {
-        "letter": "E",
-        "text": "Vad ca +15˚"
-      }
-    ],
-    "answer": "D",
-    "explanation_sv": "Rätt svar: D — Vid ca +10˚",
-    "explanation_fr": "Bonne réponse: D — « Vid ca +10˚ »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q20",
-    "topic": "sakerhet",
-    "stem_sv": "Vad bör du göra för att påverka miljöeffekten vid kall start?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Du låter motorn går i tomgång en minut innan körning."
-      },
-      {
-        "letter": "B",
-        "text": "Du låter motorn går med högt varvtal två minuter innan körning."
-      },
-      {
-        "letter": "C",
-        "text": "Du väntar tills motorn blir varm innan körning."
-      },
-      {
-        "letter": "D",
-        "text": "Du kör direkt utan att belasta motorn hårt."
-      }
-    ],
-    "answer": "D",
-    "explanation_sv": "Rätt svar: D — Du kör direkt utan att belasta motorn hårt.",
-    "explanation_fr": "Bonne réponse: D — « Du kör direkt utan att belasta motorn hårt. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q21",
-    "topic": "sakerhet",
-    "stem_sv": "Bilen går snett (den drar till höger) kraftigt när du kör, och däcket är ojämn slitet som på bilen . Vad beror det på?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Obalans i framhjul."
-      },
-      {
-        "letter": "B",
-        "text": "Obalans i bakhjul."
-      },
-      {
-        "letter": "C",
-        "text": "Fram vagninställning har rubbats. (Felaktig hjulinställning)"
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Fram vagninställning har rubbats. (Felaktig hjulinställning)",
-    "explanation_fr": "Bonne réponse: C — « Fram vagninställning har rubbats. (Felaktig hjulinställning) »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q22",
-    "topic": "sakerhet",
-    "stem_sv": "Vad måste du först vara beredd på i den här situationen?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Fordon som kommer ut från höger efter övergångsstället."
-      },
-      {
-        "letter": "B",
-        "text": "Gående som går ut framför bussen."
-      },
-      {
-        "letter": "C",
-        "text": "Gående som går ut på övergångsstället."
-      },
-      {
-        "letter": "D",
-        "text": "Bussen kan plötsligt blinka ut och börjar köra."
-      }
-    ],
-    "answer": "B",
-    "explanation_sv": "Rätt svar: B — Gående som går ut framför bussen.",
-    "explanation_fr": "Bonne réponse: B — « Gående som går ut framför bussen. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q23",
-    "topic": "sakerhet",
-    "stem_sv": "Vilken lyftteknik bör du använda om du ska lyfta ett tungt föremål?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Jag lyfter med rak rygg och godset lång ifrån mig."
-      },
-      {
-        "letter": "B",
-        "text": "Jag lyfter med böjd rygg och godset nära mig."
-      },
-      {
-        "letter": "C",
-        "text": "Jag lyfter med rak rygg och godset nära mig."
-      },
-      {
-        "letter": "D",
-        "text": "Jag lyfter med böjd rygg och godset lång ifrån mig."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Jag lyfter med rak rygg och godset nära mig.",
-    "explanation_fr": "Bonne réponse: C — « Jag lyfter med rak rygg och godset nära mig. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q24",
-    "topic": "sakerhet",
-    "stem_sv": "Du får en kund som har gravt hörselskadad. Vad ska du göra för att få personen förstå vad du säger?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Prata så långsamt som möjligt."
-      },
-      {
-        "letter": "B",
-        "text": "Prata så högt som möjligt nära öronen eller hörapparaten."
-      },
-      {
-        "letter": "C",
-        "text": "Försöker få ögonkontakter med honom så att mina munrörelser syns."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Försöker få ögonkontakter med honom så att mina munrörelser syns.",
-    "explanation_fr": "Bonne réponse: C — « Försöker få ögonkontakter med honom så att mina munrörelser syns. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q25",
-    "topic": "sakerhet",
-    "stem_sv": "Vad har en person med ledgångsreumatism för kännetecken?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Minskad rörelse i lederna."
-      },
-      {
-        "letter": "B",
-        "text": "Skakar."
-      },
-      {
-        "letter": "C",
-        "text": "Aggressiv."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Rätt svar: A — Minskad rörelse i lederna.",
-    "explanation_fr": "Bonne réponse: A — « Minskad rörelse i lederna. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q28",
-    "topic": "sakerhet",
-    "stem_sv": "Du ska på en lång resa som startar kl 22:00 och slutar kl 03:00. När är risken störst att råka ut för en trafikolycka på grund av trötthet?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Under halva resetid."
-      },
-      {
-        "letter": "B",
-        "text": "Under resans första timme."
-      },
-      {
-        "letter": "C",
-        "text": "Under resans sista timme."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Under resans sista timme.",
-    "explanation_fr": "Bonne réponse: C — « Under resans sista timme. » (mots-clés: fatigue)",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q29",
-    "topic": "sakerhet",
-    "stem_sv": "Du har en bil som har krockkudde i förareplats och passagerare plats fram. Vilket alternativ är rätt?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Jag ska sitta så nära krockkudden som möjligt."
-      },
-      {
-        "letter": "B",
-        "text": "Krockkudde kan ersätta bilbältet i vissa fall."
-      },
-      {
-        "letter": "C",
-        "text": "Om bilbarnstol ska montera fram måste det vara framåtvänd."
-      },
-      {
-        "letter": "D",
-        "text": "Om ett barn som är kortare än 135 cm ska sitta bak."
-      }
-    ],
-    "answer": "D",
-    "explanation_sv": "Rätt svar: D — Om ett barn som är kortare än 135 cm ska sitta bak.",
-    "explanation_fr": "Bonne réponse: D — « Om ett barn som är kortare än 135 cm ska sitta bak. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q3",
-    "topic": "sakerhet",
-    "stem_sv": "Du kör manuell växlad bil. Hur ska du göra ur miljösynpunkt för att minska bränsleförbrukning?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Växla upp sent och köra på så låg växel som möjligt."
-      },
-      {
-        "letter": "B",
-        "text": "Växla upp tidigt och köra på så hög växel som möjligt."
-      },
-      {
-        "letter": "C",
-        "text": "Motorbromsa så lite som möjligt."
-      },
-      {
-        "letter": "D",
-        "text": "Köra med 4:an växel under 50 hastigheter."
-      }
-    ],
-    "answer": "B",
-    "explanation_sv": "Rätt svar: B — Växla upp tidigt och köra på så hög växel som möjligt.",
-    "explanation_fr": "Bonne réponse: B — « Växla upp tidigt och köra på så hög växel som möjligt. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q30",
-    "topic": "sakerhet",
-    "stem_sv": "Vilken är det normalt effektivaste utrustning i bilen som skyddar passagerare mot frontalkrock?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Antisladdsystem."
-      },
-      {
-        "letter": "B",
-        "text": "Låsningsfria bromsar."
-      },
-      {
-        "letter": "C",
-        "text": "Bilbälte."
-      },
-      {
-        "letter": "D",
-        "text": "Krockkudde."
-      },
-      {
-        "letter": "E",
-        "text": "Nackstöd."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Bilbälte.",
-    "explanation_fr": "Bonne réponse: C — « Bilbälte. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q31",
-    "topic": "sakerhet",
-    "stem_sv": "Varför ska bromsvätskan bytas ut med jämna mellan år?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Den drar till sig luft."
-      },
-      {
-        "letter": "B",
-        "text": "Den drar till sig kväve."
-      },
-      {
-        "letter": "C",
-        "text": "Den drar till sig vatten."
-      },
-      {
-        "letter": "D",
-        "text": "Den drar till sig smuts."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Den drar till sig vatten.",
-    "explanation_fr": "Bonne réponse: C — « Den drar till sig vatten. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q32",
-    "topic": "sakerhet",
-    "stem_sv": "Den här lampan tänds i instrumentpanel under körning. När du kontrollerar bromsvätskan ser du att den ligger på mindre än minimum. Vad bör du göra?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Med hjälp av parkeringsbromsen till närmaste verkstad."
-      },
-      {
-        "letter": "B",
-        "text": "Köra sakta till närmaste verkstad."
-      },
-      {
-        "letter": "C",
-        "text": "Jag bogserar bilen."
-      },
-      {
-        "letter": "D",
-        "text": "Jag bärgar bilen till närmaste verkstad."
-      }
-    ],
-    "answer": "D",
-    "explanation_sv": "Rätt svar: D — Jag bärgar bilen till närmaste verkstad.",
-    "explanation_fr": "Bonne réponse: D — « Jag bärgar bilen till närmaste verkstad. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q33",
-    "topic": "sakerhet",
-    "stem_sv": "Vad innebär lampan på bilden?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Låg spolarvätska nivå."
-      },
-      {
-        "letter": "B",
-        "text": "Hög motortemperatur."
-      },
-      {
-        "letter": "C",
-        "text": "Låg oljetryck."
-      },
-      {
-        "letter": "D",
-        "text": "Låg bromsvätska nivå."
-      }
-    ],
-    "answer": "B",
-    "explanation_sv": "Rätt svar: B — Hög motortemperatur.",
-    "explanation_fr": "Bonne réponse: B — « Hög motortemperatur. »",
-    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-33.jpg",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q34",
-    "topic": "sakerhet",
-    "stem_sv": "Du ska lasta en cykel i din bil men du har inte plats till den inne i bilen. Hur ska du placera cykeln i bilen ur miljösynpunkt och bränslebesparande?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Att låta cykeln ligga med en cykelbehållare på taket."
-      },
-      {
-        "letter": "B",
-        "text": "Att låta cykeln stå med särskild cykelbehållare på taket."
-      },
-      {
-        "letter": "C",
-        "text": "Att hänga på cykeln i en cykelbehållare bak på bilen."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Att hänga på cykeln i en cykelbehållare bak på bilen.",
-    "explanation_fr": "Bonne réponse: C — « Att hänga på cykeln i en cykelbehållare bak på bilen. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q35",
-    "topic": "sakerhet",
-    "stem_sv": "När ska du bytabilbarnstol mottill exempelbilbälteskudde?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "När barnet väger 15 kg."
-      },
-      {
-        "letter": "B",
-        "text": "När barnet är 3 år."
-      },
-      {
-        "letter": "C",
-        "text": "När barnets huvud är i höjd med bilbarnstolen över kant."
-      },
-      {
-        "letter": "D",
-        "text": "När barnets huvud ska sitta säkert."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — När barnets huvud är i höjd med bilbarnstolen över kant.",
-    "explanation_fr": "Bonne réponse: C — « När barnets huvud är i höjd med bilbarnstolen över kant. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q36",
-    "topic": "sakerhet",
-    "stem_sv": "En förare som talar i mobiltelefon har sämre reaktionsförmåga än vanligt. Reaktionstiden i normalt fall är 1 sekund. Att använda mobilen vid körning med 70 km/tim gör att reaktionstiden blir 2 sekunder. Hur mycket är reaktionssträckan vid 70km/tim?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "25 m."
-      },
-      {
-        "letter": "B",
-        "text": "39 m."
-      },
-      {
-        "letter": "C",
-        "text": "50 m."
-      },
-      {
-        "letter": "D",
-        "text": "62 m."
-      },
-      {
-        "letter": "E",
-        "text": "90 m."
-      }
-    ],
-    "answer": "B",
-    "explanation_sv": "Rätt svar: B — 39 m.",
-    "explanation_fr": "Bonne réponse: B — « 39 m. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q37",
-    "topic": "sakerhet",
-    "stem_sv": "Vad ska du se till när du ska kontrollera luften i däcken som rekommenderas?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Bilen är olastad."
-      },
-      {
-        "letter": "B",
-        "text": "Däcken är varma."
-      },
-      {
-        "letter": "C",
-        "text": "Däcken är kalla."
-      },
-      {
-        "letter": "D",
-        "text": "Bilen utan last eller passagerare."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Däcken är kalla.",
-    "explanation_fr": "Bonne réponse: C — « Däcken är kalla. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q38",
-    "topic": "sakerhet",
-    "stem_sv": "Du ska tvätta din bil men du har inte tillgång till tvätthall. Var ska du tvätta bilen för att skada miljön så lite som möjligt?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "En asfalterad gata."
-      },
-      {
-        "letter": "B",
-        "text": "En cementerad yta."
-      },
-      {
-        "letter": "C",
-        "text": "En grusplan."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — En grusplan.",
-    "explanation_fr": "Bonne réponse: C — « En grusplan. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q39",
-    "topic": "sakerhet",
-    "stem_sv": "Det är 1 februari. Du ska koppla en släpvagn till din taxibil. Din bil är utrustad med dubbdäck. Vilka däck måste du ha på släpet?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Dubbade eller odubbade däck."
-      },
-      {
-        "letter": "B",
-        "text": "Enbart vinterdäck."
-      },
-      {
-        "letter": "C",
-        "text": "Enbart dubbdäck."
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — Enbart dubbdäck.",
-    "explanation_fr": "Bonne réponse: C — « Enbart dubbdäck. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q40",
-    "topic": "sakerhet",
-    "stem_sv": "Vi vet att förare kan drabbas av sömnstörningar och trötthet som påverkar trafiksäkerheten. Vad är sant?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Problemet drabbar över 45 årsålder som är män."
-      },
-      {
-        "letter": "B",
-        "text": "Problemet drabbar över 45 årsålder oavsett kön."
-      },
-      {
-        "letter": "C",
-        "text": "Problemet drabbar över 45 årsålder som är kvinnor."
-      }
-    ],
-    "answer": "B",
-    "explanation_sv": "Rätt svar: B — Problemet drabbar över 45 årsålder oavsett kön.",
-    "explanation_fr": "Bonne réponse: B — « Problemet drabbar över 45 årsålder oavsett kön. » (mots-clés: fatigue)",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q5",
-    "topic": "sakerhet",
-    "stem_sv": "Varför har barn svårt att bete sig trafiksäkert?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "För att de är korta, impulsiva och inte har full utvecklad syn."
-      },
-      {
-        "letter": "B",
-        "text": "För att de är impulsiva och inte har full utvecklad hörsel."
-      },
-      {
-        "letter": "C",
-        "text": "För att de är korta och inte har full utvecklade hörsel och syn."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Rätt svar: A — För att de är korta, impulsiva och inte har full utvecklad syn.",
-    "explanation_fr": "Bonne réponse: A — « För att de är korta, impulsiva och inte har full utvecklad syn. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q6",
-    "topic": "sakerhet",
-    "stem_sv": "Du ska placera last i bagageutrymme, hur ska du göra det?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Långt fram och lågt."
-      },
-      {
-        "letter": "B",
-        "text": "Långt fram och högt."
-      },
-      {
-        "letter": "C",
-        "text": "Långt bak och lågt."
-      },
-      {
-        "letter": "D",
-        "text": "Långt bak och högt."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Rätt svar: A — Långt fram och lågt.",
-    "explanation_fr": "Bonne réponse: A — « Långt fram och lågt. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q7",
-    "topic": "sakerhet",
-    "stem_sv": "Vad händer om du lastar tung last bak i bilen?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Hjulinställning ändras."
-      },
-      {
-        "letter": "B",
-        "text": "Bilens köregenskaper förändras."
-      },
-      {
-        "letter": "C",
-        "text": "Bromssträckan blir kortare."
-      },
-      {
-        "letter": "D",
-        "text": "Framdäcken slits mer på utsidan."
-      }
-    ],
-    "answer": "B",
-    "explanation_sv": "Rätt svar: B — Bilens köregenskaper förändras.",
-    "explanation_fr": "Bonne réponse: B — « Bilens köregenskaper förändras. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q8",
-    "topic": "sakerhet",
-    "stem_sv": "Vid vilken ålder börjar barn normalt bete sig trafiksäkert?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "7"
-      },
-      {
-        "letter": "B",
-        "text": "9"
-      },
-      {
-        "letter": "C",
-        "text": "12"
-      },
-      {
-        "letter": "D",
-        "text": "14"
-      }
-    ],
-    "answer": "C",
-    "explanation_sv": "Rätt svar: C — 12",
-    "explanation_fr": "Bonne réponse: C — « 12 »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
-  },
-  {
-    "id": "SAKERHET-1-Q9",
-    "topic": "sakerhet",
-    "stem_sv": "Du ser däcket på bilden att det är ojämn slitet, vad kan den troliga orsaken vara?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Däcket har körts med lite luft."
-      },
-      {
-        "letter": "B",
-        "text": "Däcket har körts med mycket luft."
-      },
-      {
-        "letter": "C",
-        "text": "Obalans."
-      },
-      {
-        "letter": "D",
-        "text": "Fel hjulinställning."
-      }
-    ],
-    "answer": "A",
-    "explanation_sv": "Rätt svar: A — Däcket har körts med lite luft.",
-    "explanation_fr": "Bonne réponse: A — « Däcket har körts med lite luft. »",
-    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-09.jpg",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
     "corpus": "manzi"
   },
   {
