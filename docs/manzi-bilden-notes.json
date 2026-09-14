@@ -1,0 +1,32 @@
+[
+  {
+    "id": "research-0016",
+    "stem": "Vilket påstående är riktigt om tariffen fast pris vid taxikörning?",
+    "imageUrl": null,
+    "note": "No matching raster found on box/Blob mapping; left without imageUrl."
+  },
+  {
+    "id": "research-0044",
+    "stem": "Du ska hämta en passagerare. Får du stanna som taxin på bilden?",
+    "imageUrl": null,
+    "note": "No matching raster found on box/Blob mapping; left without imageUrl."
+  },
+  {
+    "id": "research-0072",
+    "stem": "Bussen har stannat vid en hållplats och du ska köra rakt fram i situationen på bilden. Vilket kan bli det första olyckstillbud som du ska beredd på?",
+    "imageUrl": null,
+    "note": "No matching raster found on box/Blob mapping; left without imageUrl."
+  },
+  {
+    "id": "research-0075",
+    "stem": "Du ska lasta rollatorn på bilden i din taxi vilken bokstav markerar den spärr som måste frigöras när du ska falla i hop rollatorn?",
+    "imageUrl": null,
+    "note": "No matching raster found on box/Blob mapping; left without imageUrl."
+  },
+  {
+    "id": "research-0090",
+    "stem": "Bilden visar spärren till barnsäkerhetslåset på bilens ena bakdörr. Hur fungerar låset när det är aktiverat?",
+    "imageUrl": null,
+    "note": "No matching raster found on box/Blob mapping; left without imageUrl."
+  }
+]
