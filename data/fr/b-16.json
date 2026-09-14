@@ -1,0 +1,252 @@
+{
+  "kkalk-T-069": {
+    "stem": "Une voiture est tombée en panne sur l'autoroute. As-tu le droit de la remorquer avec ta voiture ?",
+    "options": {
+      "A": "Oui, mais seulement sur l'accotement et jusqu'à la prochaine sortie.",
+      "B": "Oui, si je roule à 30 km/h au plus avec les feux de détresse allumés.",
+      "C": "Non, seules les dépanneuses peuvent remorquer sur autoroute.",
+      "D": "Non, l'interdiction porte sur la sangle mais pas sur la barre de remorquage."
+    },
+    "explanation": "Seuls les dépanneurs professionnels peuvent remorquer sur autoroute, en raison du risque d'accident élevé. Le remorquage doit se faire sur l'accotement jusqu'à la sortie appropriée la plus proche."
+  },
+  "kkalk-T-071": {
+    "stem": "Ta voiture reste immobilisée sur l'accotement d'une route limitée à 80. À quelle distance derrière la voiture faut-il placer le triangle de présignalisation ?",
+    "options": {
+      "A": "Environ 25 mètres.",
+      "B": "50 à 100 mètres.",
+      "C": "150 mètres au moins.",
+      "D": "Il est inutile si les feux de détresse sont allumés."
+    },
+    "explanation": "Sur les routes limitées à plus de 50 km/h, la distance doit être de 50 à 100 mètres pour laisser aux autres conducteurs le temps de ralentir et de s'écarter."
+  },
+  "kkalk-T-073": {
+    "stem": "Tu vas tourner à gauche et le feu affiche une flèche verte. Qu'est-ce que cela signifie ?",
+    "options": {
+      "A": "Tu as la voie libre, car tout le trafic transversal et venant en face est au rouge.",
+      "B": "Tu dois céder le passage au trafic venant en face qui va tout droit ou tourne à droite.",
+      "C": "Tu dois céder le passage aux piétons et aux cyclistes qui traversent la rue où tu tournes.",
+      "D": "Tu peux passer mais tu dois ralentir et faire preuve d'égards particuliers."
+    },
+    "explanation": "Une flèche verte signifie que ton mouvement est protégé. Tout le trafic susceptible de croiser ta trajectoire, piétons et cyclistes compris, a le feu rouge."
+  },
+  "kkalk-T-075": {
+    "stem": "Un camion de pompiers, gyrophares et sirènes en marche, approche par l'arrière. Tu t'engages dans une intersection au feu vert. Que fais-tu ?",
+    "options": {
+      "A": "Je passe, puisque j'ai le feu vert et le droit de passage.",
+      "B": "Je m'arrête sur place pour ne pas être dans le chemin.",
+      "C": "Je m'arrête avant l'intersection pour dégager le passage.",
+      "D": "Je franchis vite l'intersection pour que le camion puisse passer."
+    },
+    "explanation": "Tu dois toujours dégager le passage à un véhicule d'intervention. Cette obligation prime sur toutes les autres règles, feu vert compris."
+  },
+  "kkalk-T-078": {
+    "stem": "Tu approches en voiture d'une traversée cyclable prioritaire et tu vois un cycliste sur le point de s'y engager. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu dois céder le passage au cycliste.",
+      "B": "Le cycliste doit céder le passage si tu roules à plus de 30 km/h.",
+      "C": "La priorité à droite s'applique si le cycliste arrive par la droite.",
+      "D": "Celui qui atteint la traversée le premier a la priorité."
+    },
+    "explanation": "À une traversée cyclable prioritaire non réglementée, le conducteur doit céder le passage aux cyclistes engagés ou sur le point de s'y engager."
+  },
+  "kkalk-T-079": {
+    "stem": "Quelle vitesse de base s'applique en zone agglomérée, si aucun panneau n'indique autre chose ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "40 km/h",
+      "C": "50 km/h",
+      "D": "70 km/h"
+    },
+    "explanation": "La vitesse de base en zone agglomérée est de 50 km/h. Hors agglomération, la vitesse de base est de 70 km/h."
+  },
+  "kkalk-T-081": {
+    "stem": "Tu t'arrêtes le long d'une route près d'une ligne médiane continue. Quelle distance minimale doit-il y avoir entre ta voiture et la ligne ?",
+    "options": {
+      "A": "1,5 mètre.",
+      "B": "2,5 mètres.",
+      "C": "3,0 mètres.",
+      "D": "Il est toujours interdit de s'y arrêter."
+    },
+    "explanation": "Tu ne peux pas t'arrêter ni stationner de façon à contraindre les autres à franchir une ligne continue. Le passage libre doit donc mesurer au moins 3 mètres de large."
+  },
+  "kkalk-T-086": {
+    "stem": "Que s'applique-t-il quand tu veux t'arrêter ou stationner près d'un passage piéton ?",
+    "options": {
+      "A": "C'est interdit sur le passage et 10 mètres avant.",
+      "B": "C'est interdit sur le passage et 10 mètres après.",
+      "C": "C'est interdit 10 mètres avant et 10 mètres après.",
+      "D": "C'est interdit 5 mètres avant et 5 mètres après."
+    },
+    "explanation": "L'interdiction existe pour que tu ne masques pas la visibilité des autres conducteurs. Juste après le passage, l'arrêt est en revanche autorisé."
+  },
+  "kkalk-T-089": {
+    "stem": "Tu roules sur une route prioritaire. As-tu le droit de t'arrêter pour déposer un passager ?",
+    "options": {
+      "A": "Oui, car seul le stationnement est interdit.",
+      "B": "Non, l'arrêt et le stationnement y sont toujours interdits.",
+      "C": "Oui, mais seulement en allumant les feux de détresse.",
+      "D": "Non, l'interdiction ne vaut que hors zone agglomérée."
+    },
+    "explanation": "Sur une route prioritaire s'applique une interdiction de stationner, mais pas une interdiction de s'arrêter. L'arrêt pour la montée ou la descente est donc autorisé."
+  },
+  "kkalk-T-093": {
+    "stem": "Tu vas sortir d'un carrefour à sens giratoire. Quelle règle s'applique à la signalisation de ton intention ?",
+    "options": {
+      "A": "Tu dois mettre le clignotant à droite.",
+      "B": "Tu dois mettre le clignotant à gauche.",
+      "C": "Tu ne dois signaler que si tu changes de voie.",
+      "D": "Tu n'as pas du tout à signaler."
+    },
+    "explanation": "Tu dois toujours mettre le clignotant à droite avant de quitter un giratoire, car cela compte comme un changement de direction."
+  },
+  "kkalk-T-095": {
+    "stem": "Tu roules sur une route de campagne hors zone agglomérée, sans panneau de vitesse. Quelle est la vitesse maximale autorisée ?",
+    "options": {
+      "A": "50 km/h",
+      "B": "70 km/h",
+      "C": "90 km/h",
+      "D": "110 km/h"
+    },
+    "explanation": "Sauf indication contraire, la vitesse de base hors zone agglomérée est de 70 km/h. En zone agglomérée, la vitesse correspondante est de 50 km/h."
+  },
+  "kkalk-T-096": {
+    "stem": "Quelles règles s'appliquent au stationnement près d'un arrêt de bus quand aucune ligne jaune n'est peinte ?",
+    "options": {
+      "A": "Le stationnement est interdit 20 mètres avant et 5 mètres après le panneau d'arrêt.",
+      "B": "Le stationnement est interdit 5 mètres avant et 20 mètres après le panneau d'arrêt.",
+      "C": "Le stationnement est interdit 10 mètres avant et 10 mètres après le panneau d'arrêt.",
+      "D": "Le stationnement est interdit 15 mètres avant et 5 mètres après le panneau d'arrêt."
+    },
+    "explanation": "La règle donne au bus assez de place pour entrer et sortir de l'arrêt en sûreté."
+  },
+  "kkalk-T-098": {
+    "stem": "Tu t'arrêtes au bord de la route près d'une ligne médiane continue. Quelle distance minimale faut-il entre ta voiture et la ligne ?",
+    "options": {
+      "A": "2,0 mètres",
+      "B": "2,5 mètres",
+      "C": "3,0 mètres",
+      "D": "3,5 mètres"
+    },
+    "explanation": "Les autres véhicules doivent pouvoir te dépasser sans franchir la ligne de séparation. Un espace libre de 3 mètres au moins est donc exigé entre ta voiture et la ligne."
+  },
+  "kkalk-T-099": {
+    "stem": "À quelle distance d'une intersection le stationnement est-il autorisé ?",
+    "options": {
+      "A": "5 mètres",
+      "B": "10 mètres",
+      "C": "20 mètres",
+      "D": "30 mètres"
+    },
+    "explanation": "Tu dois stationner à 10 mètres au moins d'une intersection afin de laisser aux autres conducteurs une visibilité dégagée et assez de place."
+  },
+  "kkalk-T-102": {
+    "stem": "Tu roules sur une route prioritaire et la fatigue te gagne. As-tu le droit de t'arrêter sur l'accotement pour dormir un moment ?",
+    "options": {
+      "A": "Oui, si j'allume les feux de détresse.",
+      "B": "Oui, c'est autorisé pour lutter contre la fatigue.",
+      "C": "Non, car cela compte comme un stationnement interdit.",
+      "D": "Non, sauf la nuit, quand le trafic est plus faible."
+    },
+    "explanation": "S'arrêter pour dormir compte comme du stationnement. Sur une route prioritaire, le stationnement est interdit afin que la circulation reste fluide et sûre, sauf indication contraire des panneaux."
+  },
+  "kkalk-T-103": {
+    "stem": "Un piéton va traverser la rue à un passage piéton quand une ambulance toutes sirènes approche par l'arrière. Comment agis-tu ?",
+    "options": {
+      "A": "Je m'arrête pour le piéton, qui a toujours la priorité aux passages protégés.",
+      "B": "Je dégage le passage pour l'ambulance, même s'il faut franchir prudemment le passage piéton.",
+      "C": "Je m'arrête immédiatement avant le passage et je bloque la voie jusqu'à ce que le piéton ait traversé.",
+      "D": "J'accélère vivement au-delà du passage pour m'écarter avant que l'ambulance me rattrape."
+    },
+    "explanation": "Ton obligation de dégager le passage à un véhicule d'intervention prime sur ton obligation de céder le passage aux piétons. Déplace la voiture pour que l'ambulance puisse passer en sûreté."
+  },
+  "kkalk-T-104": {
+    "stem": "Quelle distance minimale par rapport à un passage à niveau l'interdiction de stationner couvre-t-elle ?",
+    "options": {
+      "A": "10 mètres.",
+      "B": "20 mètres.",
+      "C": "30 mètres.",
+      "D": "30 mètres, et l'arrêt est également interdit."
+    },
+    "explanation": "L'interdiction de stationner vaut sur 30 mètres à partir d'un passage à niveau. Tu peux t'arrêter, pour la montée ou la descente par exemple, tant que tu n'es pas dans le passage lui-même."
+  },
+  "kkalk-T-105": {
+    "stem": "Tu suis un tracteur. As-tu le droit de le dépasser juste avant un passage piéton non réglementé ?",
+    "options": {
+      "A": "Oui, si la visibilité est bonne et la voie libre.",
+      "B": "Oui, puisque le tracteur est un véhicule lent.",
+      "C": "Oui, du moment que je ne dépasse pas la limitation de vitesse.",
+      "D": "Non, c'est interdit."
+    },
+    "explanation": "L'interdiction de dépassement existe parce que le véhicule dépassé peut masquer des piétons que tu n'aurais alors pas le temps de repérer."
+  },
+  "kkalk-T-108": {
+    "stem": "Tu veux stationner près d'un arrêt de bus. Sur quelle zone est-ce interdit ?",
+    "options": {
+      "A": "20 mètres avant et 5 mètres après le panneau d'arrêt.",
+      "B": "15 mètres avant et 15 mètres après le panneau d'arrêt.",
+      "C": "20 mètres avant et 20 mètres après le panneau d'arrêt.",
+      "D": "5 mètres avant et 20 mètres après le panneau d'arrêt."
+    },
+    "explanation": "L'interdiction donne au bus assez de place pour entrer et sortir de l'arrêt. Il faut plus de place en amont, pour son mouvement d'approche."
+  },
+  "kkalk-T-109": {
+    "stem": "Tu te gares près d'une ligne continue. Quelle est la distance minimale autorisée entre la voiture et la ligne ?",
+    "options": {
+      "A": "1 mètre",
+      "B": "2 mètres",
+      "C": "3 mètres",
+      "D": "Aucune exigence de distance n'existe."
+    },
+    "explanation": "La distance doit être de 3 mètres au minimum pour que les autres véhicules puissent te dépasser en sûreté sans devoir franchir la ligne de séparation continue."
+  },
+  "kkalk-T-110": {
+    "stem": "Tu roules à 88 km/h sur une route limitée à 70. À combien s'élève l'amende pour ton excès de vitesse ?",
+    "options": {
+      "A": "1 500 kr",
+      "B": "2 000 kr",
+      "C": "2 400 kr",
+      "D": "2 800 kr"
+    },
+    "explanation": "L'amende pour un excès de 16 à 20 km/h sur une route limitée à plus de 50 km/h est de 2 400 couronnes."
+  },
+  "kkalk-T-112": {
+    "stem": "Quelle est la vitesse maximale autorisée dans une zone de rencontre ?",
+    "options": {
+      "A": "L'allure du pas.",
+      "B": "10 km/h.",
+      "C": "20 km/h.",
+      "D": "30 km/h."
+    },
+    "explanation": "Dans une zone de rencontre, tu ne peux pas rouler plus vite qu'à l'allure du pas, soit environ 5 à 7 km/h. Tu dois en outre toujours céder le passage aux piétons."
+  },
+  "kkalk-T-116": {
+    "stem": "Quelle distance minimale dois-tu respecter avant un passage piéton lorsque tu stationnes ?",
+    "options": {
+      "A": "5 mètres",
+      "B": "10 mètres",
+      "C": "20 mètres",
+      "D": "30 mètres"
+    },
+    "explanation": "Il est interdit de s'arrêter ou de stationner dans les 10 mètres qui précèdent un passage piéton. La règle existe pour que les véhicules ne masquent pas la visibilité des autres conducteurs."
+  },
+  "kkalk-T-120": {
+    "stem": "Un bus met son clignotant pour quitter un arrêt sur une route limitée à 50. Quelle est ton obligation ?",
+    "options": {
+      "A": "Attendre et voir ce que fait le conducteur du bus.",
+      "B": "Continuer à la même vitesse, puisque j'ai la priorité.",
+      "C": "Ralentir et laisser passer le bus.",
+      "D": "Ne ralentir que si la limitation est de 30 km/h ou moins."
+    },
+    "explanation": "Tu dois céder le passage à un bus qui signale son départ d'un arrêt si la vitesse autorisée sur la route est de 50 km/h ou moins."
+  },
+  "kkalk-T-124": {
+    "stem": "Quelle est la vitesse maximale autorisée quand tu remorques une autre voiture avec une sangle ?",
+    "options": {
+      "A": "20 km/h",
+      "B": "30 km/h",
+      "C": "45 km/h",
+      "D": "50 km/h"
+    },
+    "explanation": "La vitesse maximale autorisée pour un remorquage à la sangle est de 30 km/h. La raison est que l'assistance de freinage et de direction de la voiture remorquée peut être hors service."
+  }
+}

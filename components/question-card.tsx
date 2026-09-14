@@ -91,10 +91,14 @@ export function QuestionCard({
     hasImageUrl(question.imageUrl) &&
     (imageFirst || shouldShowImageBeforeAnswer(question));
   const showSolutionFigure = answered && hasImageUrl(question.imageUrl) && !imageFailed;
-  const takeaway = takeawayFor(question);
-  const distractors = distractorNote(question);
   const stemFr = displayFrench(french.stem);
-  const explanationFr = displayFrench(question.explanation_fr);
+  /** Curated FR wins; a question's own explanation_fr is the fallback. */
+  const explanationFr = displayFrench(french.explanation || question.explanation_fr);
+  const takeaway = takeawayFor(question, explanationFr);
+  const distractors = distractorNote(question);
+  const hasFrench =
+    isRealFrenchText(stemFr) ||
+    question.options.some((option) => isRealFrenchText(french.options?.[option.letter]));
 
   function markImageUnavailable() {
     setImageFailed(true);
@@ -146,18 +150,19 @@ export function QuestionCard({
           revealAll={answered}
         />
 
-        {isRealFrenchText(stemFr) ? (
-          showFrNow ? (
-            <p className="question-fr text-[1.02rem] leading-7">{stemFr}</p>
-          ) : (
-            <button
-              type="button"
-              className="min-h-11 text-left text-sm font-medium text-[#1d4ed8]"
-              onClick={() => setShowFr(true)}
-            >
-              {dict.showTranslation}
-            </button>
-          )
+        {showFrNow && isRealFrenchText(stemFr) ? (
+          <p className="question-fr text-[1.02rem] leading-7">{stemFr}</p>
+        ) : null}
+
+        {/* Offer the toggle whenever any French exists, not only for the stem. */}
+        {!showFrNow && hasFrench ? (
+          <button
+            type="button"
+            className="min-h-11 text-left text-sm font-medium text-[#1d4ed8]"
+            onClick={() => setShowFr(true)}
+          >
+            {dict.showTranslation}
+          </button>
         ) : null}
 
         {!imageFirst && showInlineFigure ? (

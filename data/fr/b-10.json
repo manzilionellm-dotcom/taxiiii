@@ -1,0 +1,252 @@
+{
+  "kkalk-R-088": {
+    "stem": "Tu roules de nuit en feux de route. À quelle distance repères-tu un piéton portant un réflecteur ?",
+    "options": {
+      "A": "Environ 25 mètres.",
+      "B": "Environ 125 mètres.",
+      "C": "Environ 150 mètres.",
+      "D": "Environ 450 mètres."
+    },
+    "explanation": "En feux de route, tu peux repérer une personne portant un réflecteur à 400 ou 450 mètres. La même personne sans réflecteur n'apparaît qu'à environ 150 mètres."
+  },
+  "kkalk-R-090": {
+    "stem": "Tu sors lentement d'une place de stationnement. As-tu le droit de tenir ton téléphone en main pour écrire un message ?",
+    "options": {
+      "A": "Oui, puisque la voiture roule très lentement.",
+      "B": "Oui, si aucun autre usager n'est à proximité.",
+      "C": "Non, c'est autorisé seulement dans un bouchon.",
+      "D": "Non, tu n'as pas le droit de tenir ton téléphone en conduisant."
+    },
+    "explanation": "L'interdiction de tenir un appareil de communication en main s'applique à toute conduite d'un véhicule à moteur. La vitesse et l'environnement n'y changent rien."
+  },
+  "kkalk-R-091": {
+    "stem": "Quelle blessure est la plus fréquente et la plus caractéristique lors d'un choc par l'arrière ?",
+    "options": {
+      "A": "Des blessures aux genoux contre le tableau de bord.",
+      "B": "Des brûlures et des contusions dues à l'airbag.",
+      "C": "Des blessures aux poignets à cause du volant.",
+      "D": "Un coup du lapin à la nuque."
+    },
+    "explanation": "Lors d'un choc par l'arrière, ton corps est projeté vers l'avant très vite. La tête ne suit pas, ce qui crée dans la nuque un mouvement de fouet pouvant causer de graves lésions."
+  },
+  "kkalk-R-092": {
+    "stem": "Pourquoi l'aquaplanage sur neige fondante peut-il survenir à une vitesse plus basse que l'aquaplanage sur eau ?",
+    "options": {
+      "A": "La neige fondante est plus lourde que l'eau, donc plus difficile à chasser pour les pneus.",
+      "B": "La neige se tasse dans les sculptures et rend la surface de contact totalement lisse.",
+      "C": "La température basse rend la gomme des pneus dure et raide.",
+      "D": "Le sel de la route se mêle à la neige et crée une pellicule encore plus glissante."
+    },
+    "explanation": "La neige fondante est plus dense et plus visqueuse que l'eau. Le pneu n'a donc pas le temps de la chasser, ce qui provoque le phénomène de planage dès les basses vitesses."
+  },
+  "kkalk-R-093": {
+    "stem": "Quel est le premier signe le plus fréquent de la présence de gibier quand tu roules de nuit ?",
+    "options": {
+      "A": "Des yeux qui renvoient la lumière des phares.",
+      "B": "Des ombres qui bougent vite en bord de route.",
+      "C": "Des cris d'alerte audibles venant de la forêt.",
+      "D": "Des traces de sabots fraîches sur la chaussée."
+    },
+    "explanation": "Beaucoup d'animaux ont dans l'œil une couche réfléchissante qui brille fortement quand la lumière l'atteint. C'est souvent le premier signe et le plus net."
+  },
+  "kkalk-R-094": {
+    "stem": "Un incendie dégageant une fumée épaisse se déclare dans le tunnel devant toi. Que fais-tu ?",
+    "options": {
+      "A": "Couper le moteur, laisser la clé en place et évacuer par une sortie de secours.",
+      "B": "Faire demi-tour et rouler contre la circulation pour ressortir vite.",
+      "C": "S'arrêter, verrouiller la voiture et prendre ses objets de valeur avant d'évacuer.",
+      "D": "Allumer les feux de détresse et attendre les secours dans la voiture."
+    },
+    "explanation": "La fumée d'incendie dans un tunnel est extrêmement toxique. Tu dois évacuer immédiatement. La clé doit rester en place pour que les secours puissent déplacer ta voiture."
+  },
+  "kkalk-R-095": {
+    "stem": "Un autobus s'est arrêté à un arrêt. Quel est le danger principal, difficile à repérer, quand tu le dépasses ?",
+    "options": {
+      "A": "L'autobus quitte son arrêt de façon inattendue.",
+      "B": "Des enfants qui descendent surgissent devant l'autobus.",
+      "C": "Des automobilistes agacés derrière toi tentent un dépassement risqué.",
+      "D": "Un passager laisse tomber un objet qui roule sur la chaussée."
+    },
+    "explanation": "L'autobus masque totalement la visibilité. Des piétons, les enfants surtout, peuvent surgir brusquement sur la chaussée et tu n'as presque aucune chance de t'arrêter à temps."
+  },
+  "kkalk-R-096": {
+    "stem": "Quel est le sens principal de la conduite défensive ?",
+    "options": {
+      "A": "Faire toujours valoir son droit et tenir un rythme élevé dans la circulation.",
+      "B": "Rouler toujours plus lentement que le reste du trafic, par sécurité.",
+      "C": "Planifier sa conduite, éviter les risques et garder de bonnes marges de sécurité.",
+      "D": "Compter sur le fait que les autres conducteurs respectent toujours toutes les règles."
+    },
+    "explanation": "Un conducteur défensif planifie sa conduite pour éviter les dangers et garde toujours de bonnes marges, au lieu de se contenter de réagir aux situations."
+  },
+  "kkalk-R-097": {
+    "stem": "Comment utiliser la règle des trois secondes pour garder une distance sûre avec la voiture qui précède ?",
+    "options": {
+      "A": "Quand la voiture devant passe un repère, tu dois mettre au moins trois secondes pour atteindre le même repère.",
+      "B": "Tu adaptes ta vitesse pour pouvoir t'arrêter en trois secondes si la voiture devant freine.",
+      "C": "Tu gardes une distance de trois longueurs de voiture par tranche de 10 km/h.",
+      "D": "Ta distance d'arrêt totale ne doit pas dépasser trois fois la longueur de la voiture."
+    },
+    "explanation": "La règle te donne une marge de temps suffisante pour réagir et freiner à temps dans de bonnes conditions météo."
+  },
+  "kkalk-R-098": {
+    "stem": "Comment placer au mieux la voiture sous une forte pluie sur une route aux ornières profondes ?",
+    "options": {
+      "A": "Au milieu de la voie, là où se trouvent habituellement les ornières.",
+      "B": "Légèrement décalé sur le côté, pour que les roues ne suivent pas les ornières.",
+      "C": "Aussi près que possible de la ligne médiane, sans la franchir.",
+      "D": "Aussi près que possible de l'accotement, sans rouler dessus."
+    },
+    "explanation": "L'eau s'accumule dans les ornières, ce qui accroît le risque d'aquaplanage. En plaçant les roues à côté des ornières, tu conserves une meilleure adhérence."
+  },
+  "kkalk-R-099": {
+    "stem": "De quel côté d'une route de campagne sans trottoir un piéton doit-il marcher ?",
+    "options": {
+      "A": "Sur la droite, dans le même sens que la circulation.",
+      "B": "Sur la gauche, face à la circulation.",
+      "C": "Peu importe, du moment qu'il est bien visible.",
+      "D": "Du côté où il y a le plus de place sur le moment."
+    },
+    "explanation": "Le piéton doit emprunter le côté gauche afin de voir les véhicules qui arrivent et de pouvoir s'écarter. Conducteur et piéton ont ainsi tous deux plus de chances d'éviter un accident."
+  },
+  "kkalk-R-100": {
+    "stem": "Tu vas tourner à droite et franchir une piste cyclable. Un cycliste qui continue tout droit surgit au même moment. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu dois céder le passage au cycliste.",
+      "B": "Le cycliste doit te céder le passage.",
+      "C": "Celui qui circule sur la route prioritaire passe d'abord.",
+      "D": "Celui qui est arrivé le premier à l'intersection passe d'abord."
+    },
+    "explanation": "Selon la règle du changement de direction, celui qui tourne doit céder le passage à la circulation de la voie qu'il traverse. Tu dois donc laisser passer le cycliste."
+  },
+  "kkalk-S-023": {
+    "stem": "Une interdiction de stationner porte les panonceaux « 10-18 » et « (10-14) ». As-tu le droit de stationner ici un mercredi à 16 heures ?",
+    "options": {
+      "A": "Oui, l'interdiction ne vaut que la veille d'un jour férié.",
+      "B": "Oui, l'interdiction a cessé à 14 heures.",
+      "C": "Non, le stationnement est interdit jusqu'à 18 heures.",
+      "D": "Non, l'interdiction vaut 24 heures sur 24 les jours ouvrables."
+    },
+    "explanation": "Les chiffres sans parenthèses indiquent les horaires des jours ouvrables (hors veille de jour férié). Un mercredi à 16 heures se situe dans la plage interdite de 10 à 18 heures."
+  },
+  "kkalk-S-024": {
+    "stem": "Un panneau 30 porte un panonceau avec les horaires 07-16 ainsi que des horaires rouges 09-12. Quelle vitesse s'applique ici un dimanche à 14 heures si la vitesse de base est de 50 km/h ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "40 km/h",
+      "C": "50 km/h",
+      "D": "60 km/h"
+    },
+    "explanation": "Les chiffres rouges indiquent les horaires du dimanche et des jours fériés. La limite de 30 vaut alors de 9 à 12 heures. Comme il est 14 heures, tu sors de cette plage et la vitesse de base de la route s'applique."
+  },
+  "kkalk-S-025": {
+    "stem": "Que signifie le panneau rond bleu à flèches blanches dans un carrefour à sens giratoire ?",
+    "options": {
+      "A": "C'est un panneau d'obligation, que tu dois suivre.",
+      "B": "C'est un panneau d'indication, qui recommande un itinéraire.",
+      "C": "C'est un panneau d'avertissement, qui signale une intersection dangereuse.",
+      "D": "C'est un panneau d'interdiction, qui interdit de tourner à gauche."
+    },
+    "explanation": "Les panneaux ronds à fond bleu sont des panneaux d'obligation. Ils imposent un comportement, en l'occurrence de circuler dans le sens indiqué par les flèches."
+  },
+  "kkalk-S-026": {
+    "stem": "Quelle est la différence importante entre l'interdiction de stationner et l'interdiction de s'arrêter et de stationner ?",
+    "options": {
+      "A": "L'interdiction d'arrêt ne vaut que les jours ouvrables, l'interdiction de stationnement tous les jours.",
+      "B": "L'interdiction de stationner autorise de courts arrêts, par exemple pour laisser monter ou descendre.",
+      "C": "L'interdiction de stationner autorise la montée et la descente, mais pas le chargement de marchandises.",
+      "D": "L'interdiction de stationner autorise un arrêt de cinq minutes, l'interdiction d'arrêt une minute."
+    },
+    "explanation": "L'interdiction de stationner (C35) te permet de t'arrêter pour charger ou décharger, ou pour prendre et déposer des passagers. L'interdiction de s'arrêter (C39) proscrit tout cela."
+  },
+  "kkalk-S-030": {
+    "stem": "Tu dépasses le panneau d'entrée en zone agglomérée. Quelle est la nouvelle vitesse de base si rien d'autre n'est indiqué ?",
+    "options": {
+      "A": "40 km/h",
+      "B": "50 km/h",
+      "C": "60 km/h",
+      "D": "70 km/h"
+    },
+    "explanation": "En zone agglomérée, la vitesse de base est toujours de 50 km/h, sauf si un autre panneau indique une vitesse différente."
+  },
+  "kkalk-S-031": {
+    "stem": "Un panonceau indique l'horaire « 8-17 » en chiffres noirs. Quels jours la règle indiquée s'applique-t-elle ?",
+    "options": {
+      "A": "Les jours ouvrables, sauf la veille d'un dimanche ou d'un jour férié.",
+      "B": "Les samedis et la veille d'un jour férié.",
+      "C": "Les dimanches et les jours fériés.",
+      "D": "Tous les jours de la semaine."
+    },
+    "explanation": "Des chiffres noirs sans parenthèses sur un panonceau valent les jours ouvrables, mais pas la veille d'un dimanche ni d'un jour férié."
+  },
+  "kkalk-S-032": {
+    "stem": "Que signifie un horaire entre parenthèses, par exemple (8-17), sur un panonceau ?",
+    "options": {
+      "A": "L'horaire vaut tous les jours ouvrables, mais pas le samedi.",
+      "B": "L'horaire ne vaut que les dimanches et jours fériés.",
+      "C": "L'horaire vaut la veille d'un dimanche ou d'un jour férié.",
+      "D": "L'horaire est une recommandation, pas une règle contraignante."
+    },
+    "explanation": "Un horaire entre parenthèses signale que la règle s'applique la veille d'un dimanche ou d'un jour férié, le plus souvent le samedi. Les chiffres en rouge valent les dimanches et jours fériés."
+  },
+  "kkalk-S-034": {
+    "stem": "Que signifie le panneau de véhicule lent à l'arrière d'un véhicule ?",
+    "options": {
+      "A": "Le véhicule sert à l'apprentissage de la conduite.",
+      "B": "Le conducteur signale une panne technique momentanée.",
+      "C": "Le véhicule est conçu pour une vitesse de 45 km/h au maximum.",
+      "D": "Le véhicule est interdit de circuler et se trouve en remorquage."
+    },
+    "explanation": "Ce panneau distingue un véhicule lent. Il doit figurer sur tout véhicule dont la vitesse maximale par construction est de 45 km/h ou moins, comme les tracteurs légers."
+  },
+  "kkalk-S-035": {
+    "stem": "Quelle forme et quelle couleur a un panneau d'obligation ?",
+    "options": {
+      "A": "Rond à fond bleu et symbole blanc.",
+      "B": "Rond à bord rouge et symbole noir.",
+      "C": "Triangulaire à bord rouge et symbole noir.",
+      "D": "Carré posé sur la pointe, à fond jaune."
+    },
+    "explanation": "Les panneaux d'obligation sont ronds, à fond bleu et symboles blancs. Ils indiquent ce que tu dois faire, par exemple circuler dans une direction donnée."
+  },
+  "kkalk-S-036": {
+    "stem": "Tu approches d'une rue portant le panneau « Accès interdit aux véhicules ». Qu'est-ce que cela signifie ?",
+    "options": {
+      "A": "L'interdiction ne vaut que pour les véhicules à moteur.",
+      "B": "Tu n'as pas le droit d'y entrer, mais des véhicules peuvent en sortir.",
+      "C": "La rue est fermée à la circulation dans les deux sens.",
+      "D": "Seuls les véhicules munis d'une autorisation spéciale peuvent y entrer."
+    },
+    "explanation": "Le panneau interdit l'accès, souvent parce que la rue est à sens unique. Tu peux donc croiser des véhicules qui en sortent."
+  },
+  "kkalk-S-038": {
+    "stem": "Quels véhicules ont le droit de circuler sur autoroute ?",
+    "options": {
+      "A": "Les véhicules à moteur (cyclomoteurs exclus) conçus pour une vitesse de 40 km/h au moins.",
+      "B": "Tous les véhicules à moteur, cyclomoteurs de classe I compris.",
+      "C": "Seulement les voitures et les camions dont la vitesse de pointe dépasse 100 km/h.",
+      "D": "Tous les véhicules capables de tenir une vitesse de 70 km/h au moins."
+    },
+    "explanation": "Sur autoroute, seuls les véhicules à moteur peuvent circuler, à l'exclusion des cyclomoteurs. Le véhicule doit en outre être conçu pour rouler à 40 km/h au moins."
+  },
+  "kkalk-S-040": {
+    "stem": "De quelle couleur sont les panneaux indiquant le chemin vers un site touristique ?",
+    "options": {
+      "A": "Bleus",
+      "B": "Verts",
+      "C": "Jaunes",
+      "D": "Bruns"
+    },
+    "explanation": "Les panneaux menant à un site touristique, un château ou un parc animalier par exemple, portent toujours un texte blanc sur fond brun afin de se distinguer facilement."
+  },
+  "kkalk-S-045": {
+    "stem": "Que signifie la balise à trois traits rouges avant un passage à niveau ?",
+    "options": {
+      "A": "Tu es le plus loin du passage.",
+      "B": "Tu es à distance intermédiaire du passage.",
+      "C": "Le passage est immédiatement devant toi.",
+      "D": "Le passage compte trois voies ferrées ou plus."
+    },
+    "explanation": "La balise à trois traits est placée le plus loin du passage à niveau. Le nombre de traits diminue à mesure que tu t'en approches."
+  }
+}

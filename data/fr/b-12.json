@@ -1,0 +1,252 @@
+{
+  "kkalk-S-099": {
+    "stem": "Quelle est la différence entre le panneau d'interdiction à une barre rouge et celui à une croix rouge ?",
+    "options": {
+      "A": "La barre ne vaut que les jours ouvrables, la croix vaut tous les jours.",
+      "B": "La barre interdit de faire demi-tour, la croix interdit l'arrêt.",
+      "C": "Avec la barre tu peux t'arrêter pour charger et décharger, pas avec la croix.",
+      "D": "La barre vise les voitures, la croix vise les poids lourds."
+    },
+    "explanation": "Une barre signifie interdiction de stationner, mais l'arrêt pour charger ou décharger reste permis. Une croix signifie interdiction de s'arrêter, ce qui proscrit toute immobilisation sauf quand la circulation l'exige."
+  },
+  "kkalk-S-100": {
+    "stem": "Contre quoi le panneau représentant une locomotive avertit-il ?",
+    "options": {
+      "A": "Un passage à niveau à barrières complètes ou partielles.",
+      "B": "Un passage à niveau sans barrières.",
+      "C": "Une traversée de voie de tramway.",
+      "D": "Une traversée de trains touristiques lents."
+    },
+    "explanation": "Le panneau avertit d'un passage à niveau dépourvu de barrières. Le panneau d'un passage muni de barrières représente en revanche une barrière."
+  },
+  "kkalk-S-101": {
+    "stem": "Que signifie le panneau portant un M blanc sur fond bleu ?",
+    "options": {
+      "A": "La route comporte une aire de croisement élargie.",
+      "B": "Une section de contrôle de vitesse moyenne commence.",
+      "C": "Un réglage manuel de la circulation peut avoir lieu plus loin.",
+      "D": "Tu approches d'un musée ou d'un monument."
+    },
+    "explanation": "Le panneau signale une aire de croisement, un élargissement de la route permettant à deux véhicules de se croiser en sûreté sur une section étroite."
+  },
+  "kkalk-S-102": {
+    "stem": "Nous sommes le 14 et tu te trouves dans une rue soumise au stationnement alterné par date. Où le stationnement est-il interdit ?",
+    "options": {
+      "A": "Du côté de la rue portant les numéros impairs.",
+      "B": "Du côté de la rue portant les numéros pairs.",
+      "C": "Des deux côtés de la rue.",
+      "D": "Du côté gauche dans le sens de la marche."
+    },
+    "explanation": "En stationnement alterné par date, l'interdiction vaut du côté des numéros pairs les jours de date paire. Le 14 est une date paire."
+  },
+  "kkalk-S-103": {
+    "stem": "Tu approches d'un panneau stop à une intersection déserte. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu peux passer lentement sans t'arrêter si aucun véhicule n'est visible.",
+      "B": "De nuit, les mêmes règles qu'un cédez-le-passage s'appliquent.",
+      "C": "Tu dois toujours marquer un arrêt complet avant de repartir.",
+      "D": "Tu ne dois t'arrêter que s'il y a une ligne d'arrêt peinte."
+    },
+    "explanation": "L'obligation d'arrêt impose d'immobiliser complètement le véhicule avant d'entrer dans l'intersection. Cette exigence est absolue, quelle que soit l'heure ou la densité du trafic."
+  },
+  "kkalk-S-104": {
+    "stem": "Un panonceau de stationnement indique l'horaire (9-14). Quels jours la limitation s'applique-t-elle ?",
+    "options": {
+      "A": "Le samedi et la veille d'un jour férié.",
+      "B": "Du lundi au vendredi.",
+      "C": "Le dimanche et les jours fériés.",
+      "D": "Tous les jours de la semaine."
+    },
+    "explanation": "Un horaire entre parenthèses sur un panonceau vaut la veille d'un dimanche ou d'un jour férié, ce qui inclut les samedis. Les horaires sans parenthèses valent les jours ouvrables."
+  },
+  "kkalk-S-105": {
+    "stem": "Que signifient des horaires en rouge sur un panonceau placé sous un panneau ?",
+    "options": {
+      "A": "La règle vaut tous les jours ouvrables sauf le samedi.",
+      "B": "La règle vaut la veille d'un dimanche ou d'un jour férié.",
+      "C": "La règle vaut le dimanche et les jours fériés officiels.",
+      "D": "La règle n'est qu'une recommandation."
+    },
+    "explanation": "Un texte rouge sur un panonceau signifie que l'indication vaut le dimanche et les jours fériés officiels, les « jours rouges » du calendrier suédois."
+  },
+  "kkalk-S-107": {
+    "stem": "Comment reconnais-tu un panneau d'obligation ?",
+    "options": {
+      "A": "Il est rond, à fond bleu et symbole blanc.",
+      "B": "Il est triangulaire à bord rouge.",
+      "C": "Il est rond, à bord rouge et fond jaune.",
+      "D": "Il est octogonal à fond rouge."
+    },
+    "explanation": "Les panneaux d'obligation, qui indiquent ce que tu dois faire, sont toujours ronds, à fond bleu et symbole blanc. La direction obligatoire en est un exemple."
+  },
+  "kkalk-S-108": {
+    "stem": "À un passage étroit, tu vois le panneau portant une flèche rouge dans ton sens de marche. Qu'est-ce que cela signifie ?",
+    "options": {
+      "A": "Tu dois céder le passage au trafic venant en face.",
+      "B": "Le trafic venant en face doit te céder le passage.",
+      "C": "Tu dois toujours marquer un arrêt complet avant le passage.",
+      "D": "Celui qui arrive le premier au passage passe d'abord."
+    },
+    "explanation": "Ce panneau signifie « cédez le passage au trafic venant en face ». La flèche rouge indique que c'est ton sens de marche qui doit attendre et laisser passer au besoin."
+  },
+  "kkalk-S-109": {
+    "stem": "Tu veux stationner dans une rue soumise au stationnement alterné par date. De quel côté est-ce interdit dans la nuit du 14 du mois ?",
+    "options": {
+      "A": "Du côté des numéros pairs.",
+      "B": "Du côté des numéros impairs.",
+      "C": "Des deux côtés de la rue.",
+      "D": "C'est autorisé des deux côtés."
+    },
+    "explanation": "La règle du stationnement alterné veut que, aux dates paires, l'interdiction vaille du côté des numéros pairs. La nuit du 14 compte comme le 14."
+  },
+  "kkalk-S-110": {
+    "stem": "Contre quoi le panneau représentant une locomotive à vapeur avertit-il ?",
+    "options": {
+      "A": "Un passage à niveau avec barrières.",
+      "B": "Un passage à niveau sans barrières.",
+      "C": "Un passage à niveau à plusieurs voies.",
+      "D": "Une voie ferrée à caténaire électrique."
+    },
+    "explanation": "Le panneau avertit d'un passage à niveau non gardé, sans barrières. Un passage muni de barrières porte un panneau d'avertissement représentant une barrière."
+  },
+  "kkalk-S-111": {
+    "stem": "Tu veux emprunter une rue signalée comme rue piétonne pour prendre un raccourci. Est-ce autorisé ?",
+    "options": {
+      "A": "Oui, du moment que tu roules à l'allure du pas et cèdes le passage aux piétons.",
+      "B": "Non, tu ne peux y circuler que pour certains motifs, comme une livraison ou un transport sanitaire.",
+      "C": "Oui, c'est autorisé de nuit, quand aucun commerce n'est ouvert.",
+      "D": "Non, car toute circulation motorisée y est interdite sans exception."
+    },
+    "explanation": "Le transit par une rue piétonne est interdit. Certains motifs, livraisons ou transports sanitaires, en sont exemptés, mais doivent alors se faire à l'allure du pas en cédant le passage aux piétons."
+  },
+  "kkalk-S-112": {
+    "stem": "Quelle est la différence décisive entre l'interdiction de stationner et l'interdiction de s'arrêter ?",
+    "options": {
+      "A": "L'interdiction de stationner vaut les jours ouvrables, l'interdiction d'arrêt tous les jours.",
+      "B": "L'interdiction de stationner autorise un court arrêt pour la montée ou la descente, ce que l'interdiction d'arrêt ne permet pas.",
+      "C": "L'interdiction de stationner vise les poids lourds, l'interdiction d'arrêt les véhicules légers.",
+      "D": "Sous interdiction de stationner le conducteur ne peut jamais quitter la voiture, ce qui est permis sous interdiction d'arrêt."
+    },
+    "explanation": "Sous interdiction de stationner, tu peux t'arrêter pour la montée, la descente et le chargement. Sous interdiction de s'arrêter, toute forme d'arrêt est proscrite, quel qu'en soit le motif."
+  },
+  "kkalk-S-113": {
+    "stem": "Un panneau de direction à fond brun indique le chemin vers quel type de destination ?",
+    "options": {
+      "A": "Une adresse précise dans une agglomération.",
+      "B": "Une zone industrielle ou commerciale.",
+      "C": "Un équipement de service public.",
+      "D": "Une destination touristique ou un site remarquable."
+    },
+    "explanation": "Un fond brun sur un panneau de direction signifie qu'il mène à une destination d'intérêt touristique, un site remarquable ou une zone de loisirs par exemple."
+  },
+  "kkalk-S-114": {
+    "stem": "Un panonceau indique l'horaire 8-17 en chiffres noirs. Quels jours s'applique-t-il ?",
+    "options": {
+      "A": "Les jours ouvrables, sauf la veille d'un dimanche ou d'un jour férié.",
+      "B": "Tous les jours ouvrables, du lundi au vendredi.",
+      "C": "Seulement les samedis et la veille d'un jour férié.",
+      "D": "Tous les jours de la semaine."
+    },
+    "explanation": "Des chiffres noirs sans parenthèses indiquent l'horaire des jours ouvrables, hors veille de dimanche ou de jour férié. Les horaires entre parenthèses visent, eux, la veille d'un dimanche ou d'un jour férié."
+  },
+  "kkalk-S-117": {
+    "stem": "Contre quoi le panneau représentant une locomotive à vapeur avertit-il ?",
+    "options": {
+      "A": "Un passage à niveau avec barrières.",
+      "B": "Un passage où ne circulent que des trains historiques.",
+      "C": "Un passage à niveau sans barrières.",
+      "D": "Une traversée de voie de tramway."
+    },
+    "explanation": "Le panneau avertit d'un passage à niveau dépourvu de barrières. Celui d'un passage avec barrières représente une barrière et celui d'une voie de tramway représente un tramway."
+  },
+  "kkalk-S-118": {
+    "stem": "Quelle est la différence entre le panneau d'interdiction à une barre et celui à une croix ?",
+    "options": {
+      "A": "La barre interdit seulement de stationner, la croix interdit aussi de s'arrêter.",
+      "B": "La barre vaut les dates impaires et la croix les dates paires.",
+      "C": "La barre est une recommandation, la croix une interdiction juridiquement contraignante.",
+      "D": "La barre vise les voitures particulières, la croix les professionnels."
+    },
+    "explanation": "Une barre (interdiction de stationner) te permet de t'arrêter pour charger ou déposer un passager. Une croix (interdiction de s'arrêter) proscrit toute immobilisation, sauf par exemple dans un bouchon."
+  },
+  "kkalk-S-119": {
+    "stem": "Nous sommes le 13 et le stationnement alterné par date s'applique. De quel côté de la rue le stationnement est-il interdit ?",
+    "options": {
+      "A": "Du côté des numéros impairs.",
+      "B": "Du côté des numéros pairs.",
+      "C": "Des deux côtés jusqu'à minuit.",
+      "D": "Cela dépend s'il s'agit d'un jour ouvrable ou d'un jour de fête."
+    },
+    "explanation": "La règle est simple : une date impaire signifie interdiction de stationner du côté des numéros impairs. Le but est de faciliter le déneigement, par exemple."
+  },
+  "kkalk-S-120": {
+    "stem": "Qu'est-ce qui caractérise un panneau d'obligation ?",
+    "options": {
+      "A": "Ils sont ronds et bleus, avec un symbole blanc.",
+      "B": "Ils sont triangulaires et jaunes, avec un liseré rouge.",
+      "C": "Ils sont rectangulaires et verts, avec un texte blanc.",
+      "D": "Ils sont octogonaux et rouges, avec un texte blanc."
+    },
+    "explanation": "Les panneaux d'obligation sont ronds, à fond bleu, avec un symbole ou une flèche blanche. Ils indiquent ce que tu es contraint de faire."
+  },
+  "kkalk-S-123": {
+    "stem": "À quoi ressemble le panneau d'autoroute ?",
+    "options": {
+      "A": "Rond et bleu, avec une flèche blanche.",
+      "B": "Jaune et triangulaire, avec un bord rouge.",
+      "C": "Vert et rectangulaire, avec un symbole de route blanc.",
+      "D": "Rouge et octogonal, avec un texte blanc."
+    },
+    "explanation": "Le panneau d'autoroute est un panneau d'indication rectangulaire à fond vert. Le symbole représente une autoroute franchie par un pont."
+  },
+  "kkalk-S-131": {
+    "stem": "Que signifie ce panneau rond bleu portant une flèche blanche pointant vers la gauche ?",
+    "options": {
+      "A": "Tu dois tourner à gauche.",
+      "B": "La rue est à sens unique vers la gauche.",
+      "C": "Il t'est recommandé de choisir la voie de gauche.",
+      "D": "Tu dois céder le passage au trafic venant de la gauche."
+    },
+    "explanation": "Les panneaux ronds bleus à symbole blanc sont des panneaux d'obligation. Tu es tenu de suivre l'indication de la flèche."
+  },
+  "kkalk-S-133": {
+    "stem": "Tu roules sur une route étroite et tu vois ce panneau portant un M blanc. De quoi t'informe-t-il ?",
+    "options": {
+      "A": "D'un raccordement proche vers une autoroute.",
+      "B": "D'une aire de croisement où tu peux laisser passer un véhicule venant en face.",
+      "C": "D'un stationnement réservé aux motos.",
+      "D": "D'un garage où tu peux obtenir une aide mécanique."
+    },
+    "explanation": "Ce panneau indique une aire de croisement. Sur les routes étroites, elles permettent aux véhicules de se croiser en sécurité."
+  },
+  "kkalk-S-134": {
+    "stem": "Tu vois le panneau d'interdiction de stationner. Qu'est-ce qui est permis ici mais interdit sous une interdiction de s'arrêter ?",
+    "options": {
+      "A": "S'arrêter pour laisser descendre un passager.",
+      "B": "Attendre dans la voiture, moteur allumé.",
+      "C": "Stationner dix minutes pour une course rapide.",
+      "D": "Quitter la voiture pour poster une lettre."
+    },
+    "explanation": "L'interdiction de stationner autorise de courts arrêts pour la montée, la descente et le chargement. Sous interdiction de s'arrêter, toute forme d'arrêt est interdite, sauf quand la circulation l'exige."
+  },
+  "kkalk-S-135": {
+    "stem": "Le stationnement alterné par date s'applique et nous sommes le 15 du mois. De quel côté de la rue le stationnement est-il interdit ?",
+    "options": {
+      "A": "Du côté de la rue portant les numéros pairs.",
+      "B": "Du côté de la rue portant les numéros impairs.",
+      "C": "Des deux côtés, puisque la date est impaire.",
+      "D": "Du côté où se trouve le panneau de stationnement alterné."
+    },
+    "explanation": "Le moyen mnémotechnique est le suivant : une date impaire signifie interdiction de stationner du côté des numéros impairs. L'interdiction vaut le plus souvent la nuit."
+  },
+  "kkalk-S-136": {
+    "stem": "Quelle règle de base s'applique quand deux véhicules se rencontrent à une aire de croisement signalée ?",
+    "options": {
+      "A": "Celui qui a l'aire de croisement à sa droite doit céder le passage.",
+      "B": "Celui qui arrive le premier à l'aire doit s'arrêter et attendre.",
+      "C": "Le véhicule le plus léger et le plus maniable doit céder le passage.",
+      "D": "Celui dont le côté de la route est bloqué par un obstacle doit céder le passage."
+    },
+    "explanation": "Le conducteur qui arrive le premier à une aire de croisement doit s'y arrêter pour laisser passer le véhicule venant en face."
+  }
+}

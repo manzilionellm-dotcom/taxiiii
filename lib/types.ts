@@ -65,6 +65,8 @@ export interface QuestionRecord {
 export interface QuestionTranslation {
   stem: string;
   options?: Partial<Record<OptionLetter, string>>;
+  /** French LÖSNING text. Curated FR wins over a question's own explanation_fr. */
+  explanation?: string;
 }
 
 export interface HardWord {

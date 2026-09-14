@@ -1,0 +1,252 @@
+{
+  "kkalk-E-169": {
+    "stem": "Combien de temps peux-tu le plus souvent laisser tourner le moteur au ralenti dans une zone agglomérée ?",
+    "options": {
+      "A": "1 minute au maximum.",
+      "B": "2 minutes au maximum.",
+      "C": "5 minutes au maximum.",
+      "D": "Jusqu'à ce que le moteur soit chaud."
+    },
+    "explanation": "La plupart des communes appliquent une règle locale limitant le ralenti à 1 minute, afin de réduire le bruit et les gaz d'échappement. Vérifie toujours la règle locale."
+  },
+  "kkalk-E-173": {
+    "stem": "Comment le passage de pneus ordinaires à des pneus plus larges influence-t-il la consommation ?",
+    "options": {
+      "A": "Elle augmente, à cause d'une résistance au roulement plus forte.",
+      "B": "Elle baisse, grâce à une meilleure aérodynamique.",
+      "C": "Elle change seulement au-delà de 90 km/h.",
+      "D": "Elle reste identique si la pression est correcte."
+    },
+    "explanation": "Des pneus larges donnent une résistance au roulement et une résistance à l'air plus fortes. Le moteur doit travailler plus dur, ce qui fait monter la consommation."
+  },
+  "kkalk-E-201": {
+    "stem": "De combien les rejets européens de dioxyde de carbone baisseraient-ils chaque année si tous les automobilistes pratiquaient l'éco-conduite ?",
+    "options": {
+      "A": "Environ 5 millions de tonnes.",
+      "B": "Environ 15 millions de tonnes.",
+      "C": "Environ 50 millions de tonnes.",
+      "D": "Environ 100 millions de tonnes."
+    },
+    "explanation": "Si tous les automobilistes de l'Union européenne pratiquaient systématiquement l'éco-conduite, les rejets baisseraient d'environ 50 millions de tonnes de dioxyde de carbone par an."
+  },
+  "kkalk-E-204": {
+    "stem": "Pourquoi faut-il démonter le coffre de toit dès qu'il ne sert plus ?",
+    "options": {
+      "A": "Le poids supplémentaire use inutilement les pneus.",
+      "B": "Il augmente la résistance à l'air, donc la consommation.",
+      "C": "Il dégrade le comportement de la voiture à vitesse élevée.",
+      "D": "Il peut masquer la visibilité des autres usagers."
+    },
+    "explanation": "Un coffre de toit crée une forte résistance à l'air qui augmente la consommation de la voiture. Démonte-le donc toujours juste après le voyage."
+  },
+  "kkalk-E-205": {
+    "stem": "Pendant quelle période l'usage des pneus cloutés est-il en règle générale interdit ?",
+    "options": {
+      "A": "Du 1er octobre au 15 avril",
+      "B": "Du 1er décembre au 31 mars",
+      "C": "Du 16 avril au 30 septembre",
+      "D": "Du 1er mai au 31 août"
+    },
+    "explanation": "L'interdiction court du 16 avril au 30 septembre, pour limiter l'usure des chaussées et les particules nocives. Une exception existe si les conditions hivernales sont présentes ou attendues."
+  },
+  "kkalk-E-206": {
+    "stem": "Il fait -10 °C dehors. Combien de temps laisser le préchauffage moteur branché avant de démarrer la voiture ?",
+    "options": {
+      "A": "30 minutes",
+      "B": "60 minutes",
+      "C": "90 minutes",
+      "D": "3 heures"
+    },
+    "explanation": "À -10 °C, 90 minutes est une durée appropriée. Moins longtemps donne un effet plus faible, plus longtemps consomme inutilement du courant."
+  },
+  "kkalk-E-207": {
+    "stem": "Quelles exigences d'émission s'appliquent aux voitures particulières circulant dans une zone à faibles émissions de classe 2 ?",
+    "options": {
+      "A": "L'essence et le diesel doivent tous deux répondre à Euro 5.",
+      "B": "L'essence doit répondre à Euro 6 et le diesel à Euro 5.",
+      "C": "L'essence et le diesel doivent tous deux répondre à Euro 6.",
+      "D": "L'essence doit répondre à Euro 5 et le diesel à Euro 6."
+    },
+    "explanation": "Les exigences sont plus dures pour le diesel. Une voiture à essence doit répondre à la norme Euro 5, tandis qu'un diesel doit satisfaire à la norme Euro 6, plus sévère."
+  },
+  "kkalk-E-208": {
+    "stem": "Tu roules à 90 km/h et tu veux rafraîchir la voiture. Quelle solution consomme le plus ?",
+    "options": {
+      "A": "Rouler avec toutes les vitres latérales ouvertes.",
+      "B": "Utiliser la climatisation.",
+      "C": "Utiliser seulement le ventilateur d'habitacle.",
+      "D": "Ouvrir complètement le toit ouvrant."
+    },
+    "explanation": "À vitesse élevée, des fenêtres ouvertes créent une forte résistance à l'air qui force le moteur à travailler plus dur. Cela consomme plus que la climatisation."
+  },
+  "kkalk-E-209": {
+    "stem": "Comment savoir quand passer le rapport supérieur pour rouler économiquement si la voiture n'a pas de compte-tours ?",
+    "options": {
+      "A": "Passer les rapports à des vitesses fixées d'avance.",
+      "B": "Sentir les vibrations dans la pédale d'accélérateur.",
+      "C": "Écouter le moteur et passer le rapport quand son bruit devient forcé.",
+      "D": "Pousser l'accélération au maximum sur chaque rapport."
+    },
+    "explanation": "Pour consommer peu, il faut garder un régime bas. Écoute le moteur : un bruit forcé signale un régime élevé, donc le moment de monter un rapport."
+  },
+  "kkalk-E-210": {
+    "stem": "Pourquoi laver sa voiture devant chez soi dans la rue est-il déconseillé ?",
+    "options": {
+      "A": "Cela consomme beaucoup plus d'eau propre qu'une station de lavage.",
+      "B": "L'eau sale part non traitée vers les lacs et la mer par les bouches d'eaux pluviales.",
+      "C": "Les détergents puissants peuvent abîmer et décolorer l'asphalte.",
+      "D": "Les pneus et la peinture de la voiture risquent d'être attaqués par les produits."
+    },
+    "explanation": "L'eau de la rue rejoint la nature directement par les bouches d'eaux pluviales, sans traitement. Les polluants de la voiture nuisent donc à la faune et à la flore."
+  },
+  "kkalk-E-226": {
+    "stem": "Quelle force pèse le plus sur la consommation de la voiture à vitesse élevée ?",
+    "options": {
+      "A": "La résistance au roulement",
+      "B": "La rotation des pneus",
+      "C": "La résistance à l'air",
+      "D": "Le poids total de la voiture"
+    },
+    "explanation": "La résistance à l'air croît avec le carré de la vitesse. À vitesse élevée, elle devient de loin la force la plus importante à vaincre pour le moteur."
+  },
+  "kkalk-E-271": {
+    "stem": "Combien de temps laisser le préchauffage moteur branché quand il fait zéro degré dehors ?",
+    "options": {
+      "A": "Environ 30 minutes",
+      "B": "Environ 60 minutes",
+      "C": "Environ 90 minutes",
+      "D": "Environ 120 minutes"
+    },
+    "explanation": "Par zéro degré, une heure suffit. Au-delà, il n'y a aucun effet supplémentaire, seulement du courant consommé pour rien."
+  },
+  "kkalk-E-272": {
+    "stem": "Il fait -15 °C. Combien de temps laisser le préchauffage moteur branché pour le meilleur effet avant le départ ?",
+    "options": {
+      "A": "Environ 30 minutes.",
+      "B": "Environ 60 minutes.",
+      "C": "Environ 90 minutes.",
+      "D": "Environ 3 heures."
+    },
+    "explanation": "À -15 °C, une heure et demie est une durée bien calibrée pour le préchauffage moteur. Au-delà, le gain est marginal et l'électricité gaspillée."
+  },
+  "kkalk-E-273": {
+    "stem": "Quelles voitures particulières peuvent circuler dans la zone à faibles émissions la plus stricte, la classe 3 ?",
+    "options": {
+      "A": "Les voitures électriques, les véhicules à pile à combustible et les voitures au gaz (Euro 6).",
+      "B": "Toutes les voitures répondant à la norme Euro 6.",
+      "C": "Seulement les voitures électriques et les hybrides rechargeables.",
+      "D": "Les voitures essence et diesel produites après 2022."
+    },
+    "explanation": "La zone de classe 3 n'admet que les véhicules les plus propres. Les voitures essence et diesel, la plupart des hybrides comprises, y sont donc interdites."
+  },
+  "kkalk-E-275": {
+    "stem": "Quel gaz nocif se forme lorsque les gaz d'échappement se mêlent à un fort ensoleillement ?",
+    "options": {
+      "A": "Le monoxyde de carbone",
+      "B": "L'oxyde d'azote",
+      "C": "L'ozone de basse altitude",
+      "D": "Le dioxyde de soufre"
+    },
+    "explanation": "L'ozone de basse altitude se forme lorsque les oxydes d'azote et les hydrocarbures des gaz d'échappement réagissent avec la lumière du soleil. Ce gaz est nocif pour les personnes comme pour la végétation."
+  },
+  "kkalk-E-276": {
+    "stem": "Combien de temps peux-tu le plus souvent laisser le moteur tourner quand la voiture est immobile ?",
+    "options": {
+      "A": "30 secondes au maximum.",
+      "B": "1 minute au maximum.",
+      "C": "3 minutes au maximum.",
+      "D": "5 minutes au maximum."
+    },
+    "explanation": "La plupart des communes appliquent une règle d'une minute pour le ralenti, afin de réduire le bruit et les rejets dans les zones habitées."
+  },
+  "kkalk-E-277": {
+    "stem": "Tu approches d'un feu rouge. Comment procéder pour consommer le moins de carburant possible ?",
+    "options": {
+      "A": "Je débraye et je roule jusqu'au feu au point mort.",
+      "B": "Je rétrograde tôt pour obtenir un frein moteur plus fort.",
+      "C": "Je lâche l'accélérateur et je freine au moteur sur le rapport le plus haut possible.",
+      "D": "Je garde ma vitesse et je freine tard et fort."
+    },
+    "explanation": "En frein moteur, l'alimentation en carburant est totalement coupée et la consommation est nulle. Pour freiner au moteur le plus longtemps possible, reste sur un rapport haut."
+  },
+  "kkalk-E-279": {
+    "stem": "À quel régime faut-il au plus tard passer le rapport supérieur pour rouler économiquement avec une voiture à essence ?",
+    "options": {
+      "A": "1500 tr/min",
+      "B": "2500 tr/min",
+      "C": "3500 tr/min",
+      "D": "4500 tr/min"
+    },
+    "explanation": "Pour rouler économiquement, il faut accélérer assez vivement et monter les rapports tôt. Sur une voiture à essence, le plus efficace est de passer le rapport à 2500 tr/min au plus tard."
+  },
+  "kkalk-M-008": {
+    "stem": "Tu as une conversation intense en kit mains libres au volant. Quel est l'effet sur la sécurité routière ?",
+    "options": {
+      "A": "Elle est inchangée, les deux mains restant sur le volant.",
+      "B": "Le cerveau est distrait par la conversation, ce qui accroît fortement le risque d'accident.",
+      "C": "C'est plus sûr que de parler avec un passager dans la voiture.",
+      "D": "La capacité de réaction est aiguisée par l'activité mentale."
+    },
+    "explanation": "Même en mains libres, la conversation prélève de la capacité mentale sur la conduite. Tu réagis plus lentement et tu manques plus facilement des événements importants."
+  },
+  "kkalk-M-009": {
+    "stem": "À quelle distance repères-tu un piéton portant des réflecteurs quand tu roules en feux de croisement dans l'obscurité ?",
+    "options": {
+      "A": "Environ 25 mètres",
+      "B": "Environ 60 mètres",
+      "C": "Environ 125 mètres",
+      "D": "Environ 450 mètres"
+    },
+    "explanation": "En feux de croisement, tu vois une personne portant des réflecteurs à environ 125 mètres. Une personne en vêtements sombres sans réflecteur n'apparaît qu'à 20 ou 30 mètres."
+  },
+  "kkalk-M-017": {
+    "stem": "Qu'est-ce qui caractérise ta vision périphérique ?",
+    "options": {
+      "A": "Elle est nette et sert à lire les panneaux de loin.",
+      "B": "Elle représente environ la moitié du champ visuel et aide à juger les distances.",
+      "C": "Elle représente presque tout le champ visuel et est spécialisée dans la détection des mouvements.",
+      "D": "C'est un autre nom pour l'angle mort en arrière du véhicule."
+    },
+    "explanation": "La vision périphérique représente 98 à 99 % du champ visuel. Elle n'est pas nette mais repère vite les mouvements, ce qui est décisif pour détecter un danger à temps."
+  },
+  "kkalk-M-033": {
+    "stem": "Tu roules de nuit en feux de route. À quelle distance environ peux-tu repérer une personne portant un réflecteur ?",
+    "options": {
+      "A": "Environ 60 mètres",
+      "B": "Environ 125 mètres",
+      "C": "Environ 250 mètres",
+      "D": "Environ 450 mètres"
+    },
+    "explanation": "En feux de route, un réflecteur peut se voir à 400 ou 450 mètres. La même personne avec réflecteur ne serait visible qu'à environ 125 mètres en feux de croisement."
+  },
+  "kkalk-M-034": {
+    "stem": "Comment appelle-t-on la petite partie du champ visuel où tu vois le plus net ?",
+    "options": {
+      "A": "La vision périphérique",
+      "B": "La vision en tunnel",
+      "C": "La vision directe",
+      "D": "La vision nocturne"
+    },
+    "explanation": "La vision directe est la petite portion (1 à 2 %) du champ visuel où tu vois net. Elle te permet de fixer les détails et de lire les panneaux."
+  },
+  "kkalk-M-039": {
+    "stem": "Comment appelle-t-on le tri inconscient d'informations que fait le cerveau dans une situation de circulation stressante ?",
+    "options": {
+      "A": "La vision en tunnel",
+      "B": "La vision directe",
+      "C": "La perception sélective",
+      "D": "La vision périphérique"
+    },
+    "explanation": "Le cerveau ne peut pas traiter toute l'information de la circulation. Il opère alors un tri inconscient de ce qu'il juge le plus important sur l'instant."
+  },
+  "kkalk-M-042": {
+    "stem": "Qu'entend-on par le temps de réaction d'un conducteur ?",
+    "options": {
+      "A": "Le temps entre le moment où tu vois un danger et celui où tu commences à freiner.",
+      "B": "Le temps que met la voiture à s'arrêter depuis le début du freinage.",
+      "C": "Le temps entre le moment où tu vois un danger et l'arrêt complet de la voiture.",
+      "D": "Le temps que mettent les freins à atteindre leur pleine puissance."
+    },
+    "explanation": "Le temps de réaction est le temps qu'il faut au cerveau pour percevoir un danger et déclencher une action, comme porter le pied sur le frein."
+  }
+}

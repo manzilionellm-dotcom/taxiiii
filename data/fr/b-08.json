@@ -1,0 +1,252 @@
+{
+  "kkalk-R-022": {
+    "stem": "Tu arrives le premier sur un accident de la route sur une route de campagne. Que dois-tu faire en tout premier ?",
+    "options": {
+      "A": "Alerter le 112 et attendre les secours.",
+      "B": "Donner les premiers soins aux blessés les plus graves.",
+      "C": "Avertir les autres usagers et sécuriser les lieux.",
+      "D": "Sortir les blessés des véhicules accidentés."
+    },
+    "explanation": "Ta première mesure est toujours de sécuriser les lieux pour éviter de nouveaux accidents. Seulement ensuite viennent l'appel au 112 et l'aide aux blessés."
+  },
+  "kkalk-R-023": {
+    "stem": "Un camion portant une plaque orange à chiffres s'est renversé. Quelle est ta première mesure la plus importante ?",
+    "options": {
+      "A": "Courir immédiatement aider le conducteur à sortir de la cabine.",
+      "B": "Placer un triangle de présignalisation pour avertir les autres usagers.",
+      "C": "Rester à bonne distance et alerter le 112 avec les indications de la plaque.",
+      "D": "Chercher le numéro du transporteur pour l'informer de l'accident."
+    },
+    "explanation": "Une plaque orange à chiffres signale des marchandises dangereuses. En raison du risque d'explosion ou d'intoxication, ta priorité est de rester à distance et d'alerter le 112."
+  },
+  "kkalk-R-024": {
+    "stem": "Tu arrives sur un accident où une personne est pâle, en sueur froide et a le pouls rapide. Comment l'aider au mieux ?",
+    "options": {
+      "A": "Lui donner une boisson chaude.",
+      "B": "La placer en position latérale de sécurité.",
+      "C": "L'aider à s'asseoir et à respirer profondément.",
+      "D": "La garder au chaud et l'allonger avec les jambes surélevées."
+    },
+    "explanation": "En état de choc, l'organisme donne priorité au flux sanguin vers les organes vitaux. Surélever les jambes et réchauffer la personne aide à stabiliser son état."
+  },
+  "kkalk-R-026": {
+    "stem": "Qu'est-ce que l'hypnose de la route ?",
+    "options": {
+      "A": "Tu perçois la vitesse comme plus basse qu'elle ne l'est réellement.",
+      "B": "Ton champ visuel se rétrécit et tu ne vois plus que droit devant.",
+      "C": "Tu deviens mentalement absent et tu perds ta concentration en conduite monotone.",
+      "D": "Tu fixes un objet sur la route et tu oublies ton environnement."
+    },
+    "explanation": "L'hypnose de la route est un dangereux état d'absence mentale qui peut apparaître en conduite monotone, par exemple sur une longue autoroute rectiligne."
+  },
+  "kkalk-R-027": {
+    "stem": "Qu'est-ce que l'accoutumance à la vitesse ?",
+    "options": {
+      "A": "Tu perçois ta vitesse comme plus basse qu'elle ne l'est après avoir roulé vite.",
+      "B": "Ta vision baisse dans l'obscurité aux vitesses élevées.",
+      "C": "Tu fixes inconsciemment ton regard trop près de la voiture au lieu de loin devant.",
+      "D": "Tu as du mal à juger la distance qui te sépare du véhicule devant toi."
+    },
+    "explanation": "L'accoutumance à la vitesse apparaît après avoir roulé vite. Le cerveau s'habitue, ce qui te fait sous-estimer ta vitesse réelle au moment de ralentir."
+  },
+  "kkalk-R-030": {
+    "stem": "Qu'implique une faible adhérence entre les pneus et la chaussée ?",
+    "options": {
+      "A": "L'adhérence baisse, ce qui allonge la distance de freinage et accroît le risque de dérapage.",
+      "B": "La consommation baisse, la résistance au roulement étant plus faible.",
+      "C": "Les sculptures des pneus s'usent plus vite que la normale.",
+      "D": "La direction assistée fonctionne moins bien et la voiture semble plus dure à braquer."
+    },
+    "explanation": "Une faible adhérence signifie une mauvaise accroche. La distance de freinage s'allonge donc et le risque de dérapage augmente, surtout sur chaussée glissante."
+  },
+  "kkalk-R-031": {
+    "stem": "Quel est le principal risque quand tu roules juste derrière un camion sur chaussée mouillée ?",
+    "options": {
+      "A": "La visibilité est fortement masquée par les projections d'eau de ses pneus.",
+      "B": "Le risque d'aquaplanage augmente, le camion comprimant l'eau.",
+      "C": "Les feux stop du camion se voient moins bien à cause des reflets dans l'eau.",
+      "D": "La chaussée devient plus glissante par les pertes d'huile du camion."
+    },
+    "explanation": "Les grands pneus d'un camion projettent d'énormes quantités d'eau sale qui peuvent couvrir tout ton pare-brise en un instant et supprimer totalement la visibilité."
+  },
+  "kkalk-R-034": {
+    "stem": "Tu vas tourner à droite. Quel usager vulnérable se cache souvent dans ton angle mort de droite ?",
+    "options": {
+      "A": "Un cycliste ou un cyclomotoriste.",
+      "B": "Un piéton en train de traverser la rue.",
+      "C": "Une voiture qui va continuer tout droit.",
+      "D": "Un enfant qui joue sur le trottoir."
+    },
+    "explanation": "Vélos et cyclomoteurs sont étroits et se retrouvent facilement dans l'angle mort. Regarde toujours par-dessus l'épaule avant de tourner à droite pour les repérer."
+  },
+  "kkalk-R-035": {
+    "stem": "Quand dois-tu utiliser un triangle de présignalisation ?",
+    "options": {
+      "A": "Là où ton véhicule est devenu un obstacle ou un danger.",
+      "B": "Sur toutes les routes où la vitesse autorisée dépasse 70 km/h.",
+      "C": "Toujours en cas de panne, où que le véhicule soit arrêté.",
+      "D": "Seulement dans l'obscurité ou par visibilité réduite."
+    },
+    "explanation": "Tu dois poser le triangle si ton véhicule est arrêté de telle façon qu'il constitue un obstacle ou un danger pour autrui. Place-le 50 à 100 mètres derrière le véhicule."
+  },
+  "kkalk-R-041": {
+    "stem": "De combien la distance de freinage s'allonge-t-elle si tu doubles la vitesse ?",
+    "options": {
+      "A": "Elle est deux fois plus longue.",
+      "B": "Elle est trois fois plus longue.",
+      "C": "Elle est quatre fois plus longue.",
+      "D": "Elle est cinq fois plus longue."
+    },
+    "explanation": "La distance de freinage croît avec le carré de la vitesse. Une vitesse doublée donne donc une distance de freinage quatre fois (2 x 2) plus longue."
+  },
+  "kkalk-R-042": {
+    "stem": "Un autobus met son clignotant pour quitter son arrêt sur une route limitée à 50 km/h. Comment dois-tu agir ?",
+    "options": {
+      "A": "Tu dois ralentir et, si besoin, t'arrêter pour l'autobus.",
+      "B": "Tu gardes ta vitesse, c'est à l'autobus de céder le passage.",
+      "C": "Tu changes de voie pour faciliter les choses pour lui comme pour toi.",
+      "D": "Tu donnes un bref coup d'avertisseur pour signaler ta présence puis tu continues."
+    },
+    "explanation": "Si la vitesse autorisée est de 50 km/h ou moins, tu dois ralentir et céder le passage à l'autobus lorsqu'il signale son départ d'un arrêt."
+  },
+  "kkalk-R-043": {
+    "stem": "Tu arrives sur un accident et tu trouves un conducteur inconscient dans la voiture. Le lieu est sûr. Que fais-tu ?",
+    "options": {
+      "A": "Je laisse la personne en place et je contrôle sa respiration.",
+      "B": "Je sors immédiatement la personne de la voiture.",
+      "C": "Je recherche des hémorragies à arrêter.",
+      "D": "J'essaie de donner de l'eau ou une autre boisson à la personne."
+    },
+    "explanation": "Ne déplace jamais une personne inconsciente sans nécessité absolue, un incendie par exemple. Donne plutôt priorité à la libération des voies aériennes et au contrôle de la respiration."
+  },
+  "kkalk-R-044": {
+    "stem": "Pourquoi est-il dangereux de coller un camion que tu as l'intention de dépasser ?",
+    "options": {
+      "A": "Tu ne vois pas correctement le trafic venant en face.",
+      "B": "Le risque de gravillons projetés par ses pneus augmente.",
+      "C": "Le camion peut avoir à freiner fort et sans prévenir.",
+      "D": "Le sillage aérodynamique derrière lui peut déstabiliser ta voiture."
+    },
+    "explanation": "Un dépassement sûr exige une visibilité dégagée vers l'avant. Garde tes distances pour pouvoir voir au-delà du camion et juger si la voie opposée est libre."
+  },
+  "kkalk-R-045": {
+    "stem": "Qu'est-ce que l'aquaplanage ?",
+    "options": {
+      "A": "L'adhérence des pneus baisse momentanément sur une chaussée mouillée par la pluie.",
+      "B": "Les freins fonctionnent moins bien après avoir été mouillés par la pluie.",
+      "C": "Les pneus perdent le contact avec la route et glissent sur l'eau.",
+      "D": "La voiture dérape à cause d'une pluie verglaçante qui gèle sur la route."
+    },
+    "explanation": "L'aquaplanage survient quand le pneu ne parvient plus à chasser l'eau et glisse sur elle. Tu perds alors totalement la direction et le freinage."
+  },
+  "kkalk-R-046": {
+    "stem": "Comment appelle-t-on le fait, pour un conducteur, d'attribuer ses propres fautes à des circonstances extérieures comme l'état de la route ou les autres usagers ?",
+    "options": {
+      "A": "La dissonance cognitive",
+      "B": "La formation réactionnelle",
+      "C": "La projection",
+      "D": "La justification"
+    },
+    "explanation": "Rejeter la faute sur des facteurs extérieurs s'appelle la justification. Cela t'empêche d'apprendre de tes erreurs et de devenir un conducteur plus sûr."
+  },
+  "kkalk-R-048": {
+    "stem": "Qu'est-ce que la conduite défensive ?",
+    "options": {
+      "A": "Tu fais toujours valoir ton droit dans la circulation pour faciliter le flux.",
+      "B": "Tu roules nettement plus lentement que le reste du trafic pour une sécurité maximale.",
+      "C": "Tu planifies ta conduite, tu gardes de bonnes marges et tu anticipes les fautes d'autrui.",
+      "D": "Tu comptes sur la connaissance des règles par les autres et tu te concentres sur ta propre conduite."
+    },
+    "explanation": "La conduite défensive consiste à conduire en anticipant, avec de bonnes marges de sécurité, et à s'adapter activement pour éviter les risques créés par autrui."
+  },
+  "kkalk-R-049": {
+    "stem": "Il fait quelques degrés au-dessus de zéro et le ciel est étoilé le soir. Pourquoi le risque de glissance est-il alors particulièrement élevé ?",
+    "options": {
+      "A": "La route peut geler bien que l'air soit au-dessus de zéro.",
+      "B": "Les pneus adhèrent moins bien parce que l'asphalte froid est plus dur.",
+      "C": "Une chaussée mouillée et une forte lumière d'étoiles peuvent éblouir.",
+      "D": "L'air froid contient moins d'oxygène, ce qui réduit ta capacité de réaction."
+    },
+    "explanation": "Un ciel dégagé fait que la chaussée devient vite plus froide que l'air. L'humidité présente peut alors geler en une pellicule de glace invisible, le verglas noir."
+  },
+  "kkalk-R-050": {
+    "stem": "Quel est le principal risque quand tu dépasses un autobus arrêté à un arrêt ?",
+    "options": {
+      "A": "Que des piétons surgissent sur la chaussée, masqués par l'autobus.",
+      "B": "Que l'autobus quitte soudain son arrêt.",
+      "C": "Que des enfants jouent sur le trottoir à côté de l'autobus.",
+      "D": "Que le conducteur de l'autobus ne te voie pas dans son angle mort."
+    },
+    "explanation": "L'autobus masque la visibilité et des piétons peuvent surgir juste devant lui. Ralentis toujours et sois prêt à freiner dans cette situation dangereuse."
+  },
+  "kkalk-R-052": {
+    "stem": "À partir de quelle profondeur de sculpture le risque d'aquaplanage augmente-t-il nettement sur chaussée mouillée ?",
+    "options": {
+      "A": "Sous 1,6 mm.",
+      "B": "Sous 3,0 mm.",
+      "C": "Sous 5,0 mm.",
+      "D": "Sous 0,8 mm."
+    },
+    "explanation": "La loi exige 1,6 mm sur un pneu été, mais le risque d'aquaplanage augmente déjà fortement dès que la profondeur de sculpture descend sous 3 mm."
+  },
+  "kkalk-R-053": {
+    "stem": "Quand le risque de glissance estivale est-il le plus élevé ?",
+    "options": {
+      "A": "Pendant les heures les plus chaudes d'une journée ensoleillée.",
+      "B": "Quand il commence à pleuvoir après une longue sécheresse.",
+      "C": "Après plusieurs heures de pluie continue.",
+      "D": "Lors d'une averse soudaine et inattendue."
+    },
+    "explanation": "Les résidus d'huile et la saleté de la chaussée forment avec les premières gouttes une pellicule très glissante. Après un moment, cette glissance est lavée."
+  },
+  "kkalk-R-056": {
+    "stem": "Le thermomètre extérieur indique +2 degrés par nuit étoilée. Où le risque de glissance soudaine est-il le plus élevé ?",
+    "options": {
+      "A": "Sur un pont ou un viaduc.",
+      "B": "À la sortie d'un long tunnel.",
+      "C": "Sur une route à l'asphalte neuf et sombre.",
+      "D": "Sur une route prioritaire très fréquentée."
+    },
+    "explanation": "Un pont est refroidi par l'air par le dessous comme par le dessus. La chaussée peut donc geler même si la température de l'air reste positive."
+  },
+  "kkalk-R-057": {
+    "stem": "Tu as heurté un animal. Pour quelle collision n'as-tu PAS à appeler la police ?",
+    "options": {
+      "A": "Une collision avec un chevreuil.",
+      "B": "Une collision avec une loutre.",
+      "C": "Une collision avec un sanglier.",
+      "D": "Une collision avec un blaireau."
+    },
+    "explanation": "Tu dois déclarer les collisions avec le grand gibier, mais pas avec de petits animaux comme le blaireau, le renard ou le lièvre. L'obligation de déclaration vise notamment l'élan, le chevreuil, la loutre et le sanglier."
+  },
+  "kkalk-R-059": {
+    "stem": "Un élan s'avance sur la route et le choc est inévitable. Comment orienter la voiture pour limiter les dégâts ?",
+    "options": {
+      "A": "Vers l'arrière de l'élan.",
+      "B": "Droit sur l'élan, pour un impact maîtrisé.",
+      "C": "Devant l'élan, là où il se dirige.",
+      "D": "Dans le fossé, pour éviter l'élan totalement."
+    },
+    "explanation": "Vise l'arrière de l'élan. L'animal a plus de chances de s'écarter à temps et tu évites de recevoir son lourd avant-train dans le pare-brise."
+  },
+  "kkalk-R-060": {
+    "stem": "À quelle période de l'année le risque de collision avec un animal sauvage est-il le plus élevé ?",
+    "options": {
+      "A": "Au printemps, quand les animaux et leurs petits sont les plus actifs.",
+      "B": "Au cœur de l'été, à cause du trafic dense des vacances.",
+      "C": "En automne, avec la chasse, le rut et l'obscurité croissante.",
+      "D": "En hiver, quand la neige pousse les animaux sur les routes déneigées."
+    },
+    "explanation": "Le plus grand nombre de collisions avec la faune se produit en automne. Cela tient à la saison de chasse, au rut des animaux et à la tombée du jour plus précoce."
+  },
+  "kkalk-R-061": {
+    "stem": "Comment porter des réflecteurs pour être vu au mieux par un automobiliste dans l'obscurité ?",
+    "options": {
+      "A": "Les fixer haut, sur le bonnet et les épaules.",
+      "B": "Les laisser pendre bas et en mouvement, à hauteur de genou par exemple.",
+      "C": "Les fixer de façon statique sur le dos, sur un sac à dos par exemple.",
+      "D": "Porter un large bandeau attaché autour de la taille."
+    },
+    "explanation": "Les feux de croisement d'une voiture sont orientés vers le bas. Des réflecteurs placés bas et en mouvement reçoivent donc la lumière plus tôt et accrochent le mieux le regard du conducteur."
+  }
+}

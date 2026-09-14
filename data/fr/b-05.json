@@ -1,0 +1,252 @@
+{
+  "kkalk-M-043": {
+    "stem": "Quelle est la mission la plus importante d'une patrouille scolaire ?",
+    "options": {
+      "A": "Arrêter tous les véhicules avec son fanion.",
+      "B": "Aider les enfants à traverser lorsque la voie est libre.",
+      "C": "Inviter les conducteurs à ralentir.",
+      "D": "Signaler les excès de vitesse à la police."
+    },
+    "explanation": "Une patrouille scolaire n'a pas le droit d'arrêter ni de régler la circulation. Sa mission est de trouver un créneau sûr pour faire traverser les enfants."
+  },
+  "kkalk-M-050": {
+    "stem": "Quelle est l'acuité visuelle minimale admise pour le permis B, mesurée avec les deux yeux ensemble ?",
+    "options": {
+      "A": "0,4",
+      "B": "0,5",
+      "C": "0,8",
+      "D": "1,0"
+    },
+    "explanation": "Le seuil pour le permis B est une acuité visuelle d'au moins 0,5. Si des lunettes ou des lentilles sont nécessaires pour l'atteindre, cela devient une mention obligatoire sur le permis."
+  },
+  "kkalk-M-055": {
+    "stem": "Qu'arrive-t-il à ton temps de réaction lorsque tu conduis en étant très fatigué ?",
+    "options": {
+      "A": "Il s'allonge nettement.",
+      "B": "Il raccourcit, parce que tu te concentres davantage.",
+      "C": "Il ne change qu'à peine, contrairement à la vision nocturne.",
+      "D": "Il devient irrégulier, parfois plus court et parfois plus long."
+    },
+    "explanation": "La fatigue ralentit le cerveau. Il faut donc plus de temps pour percevoir un danger et parvenir à y réagir."
+  },
+  "kkalk-M-057": {
+    "stem": "Quel dispositif de retenue convient le mieux à un enfant de 5 ans mesurant 115 cm ?",
+    "options": {
+      "A": "Une coque pour nourrisson.",
+      "B": "Un siège enfant dos à la route.",
+      "C": "Un siège rehausseur ou un coussin rehausseur.",
+      "D": "La ceinture de sécurité de la voiture seule."
+    },
+    "explanation": "L'enfant doit utiliser un siège ou un coussin rehausseur à partir de 4 ou 5 ans environ, jusqu'à 135 cm. Le dispositif garantit que la ceinture passe au bon endroit."
+  },
+  "kkalk-M-065": {
+    "stem": "Tu roules à 100 km/h. Quelle est approximativement la distance de réaction si ton temps de réaction est d'une seconde ?",
+    "options": {
+      "A": "Environ 10 mètres",
+      "B": "Environ 18 mètres",
+      "C": "Environ 28 mètres",
+      "D": "Environ 50 mètres"
+    },
+    "explanation": "Une règle simple consiste à multiplier par trois la dizaine de la vitesse (10 x 3 = 30). La distance exacte à 100 km/h est de 27,8 mètres."
+  },
+  "kkalk-M-071": {
+    "stem": "Tu roules à 40 km/h et tu détournes le regard de la route pendant deux secondes. Quelle distance la voiture parcourt-elle pendant ce temps ?",
+    "options": {
+      "A": "Environ 11 mètres",
+      "B": "Environ 22 mètres",
+      "C": "Environ 31 mètres",
+      "D": "Environ 40 mètres"
+    },
+    "explanation": "À 40 km/h, la voiture avance d'environ 11 mètres par seconde. Si ton regard quitte la route pendant deux secondes, elle parcourt donc 22 mètres."
+  },
+  "kkalk-M-072": {
+    "stem": "Les jeunes hommes sont surreprésentés dans les statistiques d'accidents. Quelle est une explication psychologique fréquente ?",
+    "options": {
+      "A": "Leur capacité de réaction est plus lente que la moyenne.",
+      "B": "Ils ont une confiance irréaliste dans leurs propres aptitudes au volant.",
+      "C": "Leur vision nocturne est moins bonne que celle des conducteurs expérimentés.",
+      "D": "Ils prennent moins de risques quand ils ont des passagers."
+    },
+    "explanation": "Beaucoup de jeunes conducteurs, les hommes en particulier, se croient meilleurs qu'ils ne le sont réellement. Cette surestimation les pousse à prendre des risques inutiles."
+  },
+  "kkalk-M-080": {
+    "stem": "Rester éveillé 24 heures dégrade l'aptitude à conduire autant qu'environ quel taux d'alcool ?",
+    "options": {
+      "A": "0,2 gramme par litre",
+      "B": "0,5 gramme par litre",
+      "C": "0,8 gramme par litre",
+      "D": "1,0 gramme par litre"
+    },
+    "explanation": "Rester éveillé une journée entière abaisse ta capacité de réaction et tes performances autant qu'un taux de 1,0 gramme d'alcool par litre de sang."
+  },
+  "kkalk-M-086": {
+    "stem": "À partir de quelle taille un enfant peut-il voyager sans coussin rehausseur ni siège enfant ?",
+    "options": {
+      "A": "125 cm",
+      "B": "135 cm",
+      "C": "145 cm",
+      "D": "150 cm"
+    },
+    "explanation": "La loi oblige tout enfant mesurant moins de 135 cm à utiliser un dispositif de retenue particulier, un coussin rehausseur par exemple. Sans lui, la ceinture passe mal et peut devenir dangereuse."
+  },
+  "kkalk-M-087": {
+    "stem": "Pourquoi un siège enfant dos à la route devant un airbag actif est-il mortellement dangereux ?",
+    "options": {
+      "A": "L'airbag déclenché projette le siège vers l'arrière avec une force violente.",
+      "B": "Le siège enfant peut empêcher l'airbag de se déployer correctement.",
+      "C": "Ce n'est dangereux que si la voiture n'a pas d'airbags latéraux.",
+      "D": "La loi l'autorise si le siège est d'un modèle homologué particulier."
+    },
+    "explanation": "Un airbag qui se déploie frappe le siège enfant avec une force explosive, ce qui peut infliger à l'enfant des blessures mortelles. L'airbag doit toujours être désactivé."
+  },
+  "kkalk-M-088": {
+    "stem": "Tu roules en feux de croisement dans l'obscurité. Quand repères-tu un piéton en vêtements sombres sans réflecteur ?",
+    "options": {
+      "A": "À environ 25 mètres.",
+      "B": "À environ 60 mètres.",
+      "C": "À environ 125 mètres.",
+      "D": "À environ 300 mètres."
+    },
+    "explanation": "Un piéton en vêtements sombres et sans réflecteur n'apparaît qu'à environ 25 mètres en feux de croisement. Cela laisse au conducteur un temps de réaction extrêmement court."
+  },
+  "kkalk-M-089": {
+    "stem": "Quelle tranche d'âge est la plus surreprésentée dans les statistiques d'accidents graves ?",
+    "options": {
+      "A": "18 à 24 ans",
+      "B": "45 à 55 ans",
+      "C": "65 à 74 ans",
+      "D": "75 ans et plus"
+    },
+    "explanation": "Les jeunes conducteurs sont fortement surreprésentés dans les statistiques d'accidents. Cela tient souvent à une combinaison d'inexpérience, de prise de risque et de surestimation de soi."
+  },
+  "kkalk-M-090": {
+    "stem": "Quel seuil s'applique aux stupéfiants illicites dans le sang lorsque tu conduis ?",
+    "options": {
+      "A": "Le même que pour l'alcool, soit 0,2 gramme par litre.",
+      "B": "Tolérance zéro. La plus petite quantité décelable est punissable.",
+      "C": "Aucun seuil fixe, la police évalue ton aptitude à conduire.",
+      "D": "Le même que pour la conduite sous l'emprise aggravée, soit 1,0 gramme par litre."
+    },
+    "explanation": "La Suède applique la tolérance zéro aux stupéfiants illicites au volant. Contrairement à l'alcool, toute quantité décelable dans le sang est punissable, quel que soit ton état."
+  },
+  "kkalk-M-093": {
+    "stem": "Quelle part environ des personnes tuées sur la route sont des usagers protégés ?",
+    "options": {
+      "A": "Environ 25 %",
+      "B": "Environ 45 %",
+      "C": "Environ 55 %",
+      "D": "Environ 75 %"
+    },
+    "explanation": "Les décès se répartissent presque à parts égales entre usagers protégés (en voiture par exemple) et usagers vulnérables. Les usagers protégés forment le plus souvent une courte majorité."
+  },
+  "kkalk-M-097": {
+    "stem": "Comment évolue ta distance de détection d'un piéton vêtu de sombre quand tu passes des feux de route aux feux de croisement ?",
+    "options": {
+      "A": "Elle chute d'environ 150 mètres à 25 mètres.",
+      "B": "Elle chute d'environ 450 mètres à 125 mètres.",
+      "C": "Elle chute d'environ 120 mètres à 60 mètres.",
+      "D": "Elle est presque identique, autour de 50 mètres dans les deux cas."
+    },
+    "explanation": "En feux de croisement, un piéton vêtu de sombre n'apparaît qu'à environ 25 mètres. En feux de route, tu l'aurais repéré dès 150 mètres."
+  },
+  "kkalk-M-100": {
+    "stem": "Quelle quantité de spiritueux à 40 % correspond à l'alcool contenu dans une grande bière forte (50 cl à 5,2 %) ?",
+    "options": {
+      "A": "Environ 4 cl",
+      "B": "Environ 7 cl",
+      "C": "Environ 10 cl",
+      "D": "Environ 13 cl"
+    },
+    "explanation": "Une grande bière forte (50 cl à 5,2 %) contient 2,6 cl d'alcool pur. La même quantité d'alcool se trouve dans un peu moins de 7 cl de spiritueux à 40 %."
+  },
+  "kkalk-M-101": {
+    "stem": "Tu roules à 70 km/h avec un temps de réaction d'une seconde. Quelle est ta distance de réaction ?",
+    "options": {
+      "A": "Environ 7 mètres",
+      "B": "Environ 14 mètres",
+      "C": "Environ 21 mètres",
+      "D": "Environ 49 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique simple consiste à retirer le zéro de la vitesse puis à multiplier par trois. Cela donne la distance de réaction en mètres après une seconde (7 x 3 = 21)."
+  },
+  "kkalk-M-102": {
+    "stem": "Tu es profondément absorbé par un appel en kit mains libres au volant. Quel est le risque principal ?",
+    "options": {
+      "A": "La capacité à tenir une trajectoire droite dans la voie se dégrade.",
+      "B": "Le cerveau est si occupé qu'il filtre des dangers pourtant évidents sur la route.",
+      "C": "L'audition baisse et tu risques de manquer des signaux d'avertissement.",
+      "D": "La conduite manuelle de la voiture devient saccadée et incertaine."
+    },
+    "explanation": "Quand le cerveau est saturé par une conversation engageante, il peut ne pas traiter une information pourtant parfaitement visible. Ce phénomène s'appelle la cécité d'inattention."
+  },
+  "kkalk-M-104": {
+    "stem": "À quelle distance repères-tu un piéton portant des réflecteurs si tu roules en feux de route dans l'obscurité ?",
+    "options": {
+      "A": "Environ 125 mètres",
+      "B": "Environ 450 mètres",
+      "C": "Environ 300 mètres",
+      "D": "Environ 60 mètres"
+    },
+    "explanation": "En feux de route, tu peux voir une personne portant des réflecteurs à environ 450 mètres. En feux de croisement, le chiffre correspondant n'est que d'environ 125 mètres."
+  },
+  "kkalk-M-105": {
+    "stem": "À quelle température le témoin d'alerte de risque de verglas s'allume-t-il habituellement ?",
+    "options": {
+      "A": "Autour de +4 °C.",
+      "B": "À exactement 0 °C.",
+      "C": "Autour de -4 °C.",
+      "D": "Quand la voiture détecte de la glace sur la route."
+    },
+    "explanation": "Le témoin s'allume souvent dès +4 °C, car la chaussée peut être plus froide que l'air. Le risque de glissance existe donc malgré des températures positives."
+  },
+  "kkalk-M-109": {
+    "stem": "Comment les décès de la circulation se répartissent-ils approximativement entre usagers protégés et usagers vulnérables ?",
+    "options": {
+      "A": "Environ 70 % de protégés et 30 % de vulnérables.",
+      "B": "Environ 55 % de protégés et 45 % de vulnérables.",
+      "C": "Environ 45 % de protégés et 55 % de vulnérables.",
+      "D": "Environ 30 % de protégés et 70 % de vulnérables."
+    },
+    "explanation": "Grâce à des voitures plus sûres, les décès parmi les usagers protégés ont baissé. Les usagers vulnérables forment donc désormais la majorité des personnes tuées sur la route."
+  },
+  "kkalk-M-111": {
+    "stem": "Conduire après 24 heures d'éveil correspond approximativement à quel taux d'alcool ?",
+    "options": {
+      "A": "0,2 gramme par litre",
+      "B": "0,5 gramme par litre",
+      "C": "0,8 gramme par litre",
+      "D": "1,0 gramme par litre"
+    },
+    "explanation": "Après une journée sans sommeil, ta capacité de réaction et ton jugement sont aussi dégradés qu'avec 1,0 gramme d'alcool par litre de sang. C'est le seuil de la conduite sous l'emprise aggravée."
+  },
+  "kkalk-M-112": {
+    "stem": "À partir de quelle taille un enfant n'a-t-il plus besoin d'un coussin rehausseur ni d'un siège enfant ?",
+    "options": {
+      "A": "125 cm",
+      "B": "135 cm",
+      "C": "140 cm",
+      "D": "150 cm"
+    },
+    "explanation": "La loi oblige tout enfant mesurant moins de 135 cm à utiliser un dispositif de retenue particulier. À partir de 135 cm, la ceinture de sécurité suffit."
+  },
+  "kkalk-M-113": {
+    "stem": "Comment un enfant de 120 cm voyage-t-il le plus sûrement dans une voiture particulière ?",
+    "options": {
+      "A": "Dans un siège enfant dos à la route.",
+      "B": "Sur un coussin rehausseur ou dans un siège rehausseur.",
+      "C": "Avec la seule ceinture de sécurité ordinaire de la voiture.",
+      "D": "Assis à l'avant avec un airbag actif."
+    },
+    "explanation": "Un coussin ou un siège rehausseur place correctement la ceinture sur les épaules et les hanches de l'enfant, ce qui est décisif pour sa sécurité en cas de choc."
+  },
+  "kkalk-M-114": {
+    "stem": "Quel taux d'alcool dans le sang caractérise normalement la conduite sous l'emprise aggravée ?",
+    "options": {
+      "A": "0,2 gramme par litre",
+      "B": "0,5 gramme par litre",
+      "C": "1,0 gramme par litre",
+      "D": "1,5 gramme par litre"
+    },
+    "explanation": "Le seuil de la conduite sous l'emprise aggravée se situe normalement à 1,0 gramme par litre de sang. L'infraction simple commence dès 0,2 gramme par litre."
+  }
+}

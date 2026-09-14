@@ -1,0 +1,252 @@
+{
+  "kkalk-S-137": {
+    "stem": "Quelle vitesse de base s'applique en zone agglomérée si aucun panneau n'indique autre chose ?",
+    "options": {
+      "A": "40 km/h",
+      "B": "50 km/h",
+      "C": "60 km/h",
+      "D": "70 km/h"
+    },
+    "explanation": "En zone agglomérée, la vitesse de base est de 50 km/h. Pour qu'une autre vitesse s'applique, elle doit être indiquée par un panneau."
+  },
+  "kkalk-S-138": {
+    "stem": "Un panonceau indique un horaire en texte rouge. Quand cette indication s'applique-t-elle ?",
+    "options": {
+      "A": "Seulement les jours ouvrables.",
+      "B": "Les dimanches et les jours fériés.",
+      "C": "Tous les jours de la semaine.",
+      "D": "Seulement les samedis."
+    },
+    "explanation": "Un texte rouge signifie que la règle ne vaut que le dimanche et les jours fériés, les « jours rouges » du calendrier."
+  },
+  "kkalk-S-141": {
+    "stem": "Quel panneau avertit d'un passage à niveau sans barrières ?",
+    "options": {
+      "A": "Le panneau représentant une barrière.",
+      "B": "Le panneau représentant une locomotive à vapeur.",
+      "C": "Le panneau représentant un tramway.",
+      "D": "Le panneau représentant une croix."
+    },
+    "explanation": "Le panneau à la locomotive à vapeur (A36) avertit d'un passage à niveau sans barrières. Celui à la barrière (A35) avertit d'un passage qui en est muni."
+  },
+  "kkalk-S-142": {
+    "stem": "Tu vois un panneau d'obligation portant une flèche blanche sur fond bleu. Que signifie-t-il ?",
+    "options": {
+      "A": "C'est un itinéraire recommandé.",
+      "B": "C'est une information sur la voie la plus adaptée.",
+      "C": "Tu dois circuler dans le sens indiqué par la flèche.",
+      "D": "C'est un avertissement d'un danger à venir."
+    },
+    "explanation": "Un panneau d'obligation est un ordre auquel tu dois te conformer. Tu es donc tenu de circuler dans le sens que la flèche indique."
+  },
+  "kkalk-S-143": {
+    "stem": "Un policier règle la circulation et lève un bras. Que signifie ce geste ?",
+    "options": {
+      "A": "Ralentir et te préparer à t'arrêter.",
+      "B": "Si tu es déjà dans l'intersection, la quitter au plus vite.",
+      "C": "Arrêt. Le signal va changer dans un instant.",
+      "D": "Te préparer à avancer, le signal va bientôt te concerner."
+    },
+    "explanation": "Un bras levé signifie arrêt pour le trafic qui entre dans l'intersection. Le geste annonce que l'indication va changer sous peu."
+  },
+  "kkalk-S-159": {
+    "stem": "Que signifie le panneau d'avertissement représentant une locomotive à vapeur ?",
+    "options": {
+      "A": "Un passage à niveau avec barrières.",
+      "B": "Un passage à niveau sans barrières.",
+      "C": "Une traversée de voie de tramway.",
+      "D": "Un avertissement de chemin de fer touristique."
+    },
+    "explanation": "Le panneau avertit d'un passage à niveau dépourvu de barrières. Il t'incombe entièrement de vérifier qu'aucun train n'approche."
+  },
+  "kkalk-S-162": {
+    "stem": "Nous sommes le soir du 15 et tu veux stationner pour la nuit en stationnement alterné par date. De quel côté le stationnement est-il alors interdit ?",
+    "options": {
+      "A": "Du côté des numéros pairs.",
+      "B": "Du côté des numéros impairs.",
+      "C": "Des deux côtés jusqu'à minuit.",
+      "D": "Cela dépend du mois."
+    },
+    "explanation": "La règle du stationnement alterné se réfère à la date après minuit. Le lendemain étant le 16 (une date paire), le stationnement est interdit du côté des numéros pairs."
+  },
+  "kkalk-S-164": {
+    "stem": "Comment reconnais-tu un panneau d'avertissement à sa forme et à sa couleur ?",
+    "options": {
+      "A": "Rond, à fond blanc et bord rouge.",
+      "B": "Carré, à fond bleu.",
+      "C": "Triangulaire, à fond jaune et bord rouge.",
+      "D": "En losange, à fond jaune."
+    },
+    "explanation": "Les panneaux d'avertissement sont triangulaires, avec un bord rouge destiné à attirer l'attention et à signaler un danger à venir."
+  },
+  "kkalk-S-165": {
+    "stem": "Que signifie un panneau d'obligation indiquant une direction donnée ?",
+    "options": {
+      "A": "C'est un itinéraire recommandé, mais tu peux en choisir un autre.",
+      "B": "Tu dois circuler dans le sens indiqué par la flèche du panneau.",
+      "C": "La voie est réservée aux transports en commun et aux taxis.",
+      "D": "La rue est à sens unique, mais tu peux faire demi-tour si c'est opportun."
+    },
+    "explanation": "Un panneau d'obligation impose un comportement. Tu es contraint de circuler dans le sens que montre la flèche ou les flèches du panneau."
+  },
+  "kkalk-S-166": {
+    "stem": "Tu arrives à un passage étroit signalé par un panneau portant une flèche rouge et une flèche noire. Que signifie la flèche rouge ?",
+    "options": {
+      "A": "Le trafic venant en face doit te céder le passage.",
+      "B": "Tu dois céder le passage au trafic venant en face.",
+      "C": "Le passage est fermé à toute circulation motorisée.",
+      "D": "Le changement de voie est interdit sur cette section."
+    },
+    "explanation": "La flèche rouge symbolise l'arrêt et indique que tu dois céder le passage. La flèche noire désigne le trafic qui a la voie libre."
+  },
+  "kkalk-S-167": {
+    "stem": "Un panonceau indique l'horaire 8-17 en chiffres noirs sans parenthèses. Quels jours cette indication s'applique-t-elle ?",
+    "options": {
+      "A": "Les jours ouvrables hors fête (du lundi au vendredi).",
+      "B": "Tous les jours de la semaine.",
+      "C": "Les samedis et la veille d'un jour férié.",
+      "D": "Les dimanches et les autres jours fériés."
+    },
+    "explanation": "Des chiffres noirs sans parenthèses visent toujours les jours ouvrables hors fête. Les horaires entre parenthèses visent les samedis (et la veille d'un jour férié) et les chiffres rouges les dimanches et jours fériés."
+  },
+  "kkalk-S-168": {
+    "stem": "Que signifie un horaire entre parenthèses sur un panonceau, par exemple (8-17) ?",
+    "options": {
+      "A": "Il vaut les jours ouvrables, sauf la veille d'un jour férié.",
+      "B": "Il vaut la veille d'un dimanche ou d'un jour férié, le plus souvent le samedi.",
+      "C": "Il ne vaut que les dimanches et les jours fériés.",
+      "D": "Il vaut tous les jours de l'année."
+    },
+    "explanation": "Les horaires entre parenthèses visent la veille d'un dimanche ou d'un jour férié. Les horaires sans parenthèses visent les jours ouvrables et les chiffres rouges les dimanches et jours fériés."
+  },
+  "kkalk-S-169": {
+    "stem": "Un panneau porte un panonceau dont l'horaire est en texte rouge. Quels jours cette indication s'applique-t-elle ?",
+    "options": {
+      "A": "Les jours ouvrables, sauf la veille d'un dimanche ou d'un jour férié.",
+      "B": "Les samedis ainsi que la veille d'un dimanche ou d'un jour férié.",
+      "C": "Les dimanches et les jours fériés.",
+      "D": "Tous les jours de la semaine."
+    },
+    "explanation": "Des chiffres rouges indiquent que la règle vaut les dimanches et les jours fériés, appelés aussi « jours rouges »."
+  },
+  "kkalk-S-170": {
+    "stem": "Minuit est passé, nous sommes le 13. Dans une rue à stationnement alterné par date, où le stationnement est-il désormais interdit ?",
+    "options": {
+      "A": "Du côté de la rue portant les numéros pairs.",
+      "B": "Du côté de la rue portant les numéros impairs.",
+      "C": "Des deux côtés de la rue jusqu'à 6 heures.",
+      "D": "Seulement du côté où le panneau est installé."
+    },
+    "explanation": "Le stationnement alterné interdit de stationner du côté des numéros impairs aux dates impaires. La même logique s'applique aux numéros pairs aux dates paires."
+  },
+  "kkalk-S-171": {
+    "stem": "Tu approches d'une intersection portant le marquage en « dents de requin ». Que signifie-t-il ?",
+    "options": {
+      "A": "Le marquage indique où t'arrêter pour les piétons à un passage protégé.",
+      "B": "Le marquage est une ligne de cédez-le-passage qui renforce un panneau de cédez-le-passage.",
+      "C": "Le marquage est une ligne d'arrêt qui renforce un panneau stop.",
+      "D": "Le marquage avertit de la présence d'une école ou d'une crèche plus loin."
+    },
+    "explanation": "Le marquage au sol M14, les « dents de requin », sert de ligne de cédez-le-passage pour préciser un panneau de cédez-le-passage et montrer où t'arrêter."
+  },
+  "kkalk-S-172": {
+    "stem": "Quelle règle générale s'applique au stationnement sur une route prioritaire ?",
+    "options": {
+      "A": "Le stationnement est interdit.",
+      "B": "Le stationnement est autorisé 24 heures au maximum.",
+      "C": "Le stationnement est autorisé s'il existe un large accotement.",
+      "D": "Le stationnement est autorisé les week-ends et les jours fériés."
+    },
+    "explanation": "Selon la règle principale, il est interdit de stationner sur une route prioritaire. Le but est de garantir la fluidité et de ne pas gêner la circulation."
+  },
+  "kkalk-S-173": {
+    "stem": "Tu vois un panneau de direction à fond vert. Vers quel type de route mène-t-il ?",
+    "options": {
+      "A": "Une autoroute ou une voie express.",
+      "B": "Une route publique qui n'est pas une autoroute.",
+      "C": "Une destination locale dans une agglomération.",
+      "D": "Une route touristique ou un site remarquable."
+    },
+    "explanation": "Un fond vert sur un panneau de direction signifie qu'il mène à une autoroute ou à une voie express. Le bleu sert aux autres routes publiques et le brun aux destinations touristiques."
+  },
+  "kkalk-S-174": {
+    "stem": "Un panonceau indique l'horaire « 8-17 » en chiffres noirs. Quels jours cette indication s'applique-t-elle ?",
+    "options": {
+      "A": "Tous les jours ouvrables, du lundi au vendredi.",
+      "B": "Les samedis et la veille d'un jour férié.",
+      "C": "Les dimanches et les autres jours fériés.",
+      "D": "Les jours ouvrables, sauf la veille d'un dimanche ou d'un jour férié."
+    },
+    "explanation": "Des chiffres noirs sans parenthèses visent les jours ouvrables, mais pas les samedis ni les autres jours précédant un dimanche ou un jour férié."
+  },
+  "kkalk-S-175": {
+    "stem": "Quels jours un horaire entre parenthèses, par exemple (8-17), s'applique-t-il sur un panonceau ?",
+    "options": {
+      "A": "Les jours ouvrables, sauf la veille d'un jour férié.",
+      "B": "Les samedis et la veille d'un jour férié.",
+      "C": "Seulement les dimanches et les jours fériés.",
+      "D": "Tous les jours de la semaine."
+    },
+    "explanation": "Les horaires entre parenthèses valent les samedis et la veille d'un jour férié. Les chiffres noirs sans parenthèses valent les jours ouvrables et les chiffres rouges les dimanches et jours fériés."
+  },
+  "kkalk-S-177": {
+    "stem": "Il est un peu plus de minuit, le 15 du mois, dans une rue à stationnement alterné par date. Où n'as-tu pas le droit de stationner ?",
+    "options": {
+      "A": "Du côté de la rue portant les numéros pairs.",
+      "B": "Du côté de la rue portant les numéros impairs.",
+      "C": "Des deux côtés de la rue jusqu'à 6 heures.",
+      "D": "L'interdiction du 14 reste en vigueur."
+    },
+    "explanation": "En stationnement alterné, le stationnement est interdit du côté des numéros impairs les nuits de date impaire. La règle existe pour faciliter le déneigement, par exemple."
+  },
+  "kkalk-S-179": {
+    "stem": "Quelle est la différence décisive entre le panneau d'interdiction à une croix et celui à une simple barre ?",
+    "options": {
+      "A": "La croix interdit aussi les courts arrêts pour laisser descendre un passager.",
+      "B": "La croix autorise de courts arrêts pour charger et décharger des marchandises.",
+      "C": "La barre interdit toute forme d'arrêt, même pour faire monter quelqu'un.",
+      "D": "Les deux panneaux signifient exactement la même chose au fond."
+    },
+    "explanation": "Une croix signifie interdiction de s'arrêter : tu ne peux pas t'immobiliser volontairement. Une barre signifie interdiction de stationner, où l'arrêt reste permis pour la montée, la descente et le chargement."
+  },
+  "kkalk-S-180": {
+    "stem": "Qu'est-ce qui caractérise un panneau d'obligation ?",
+    "options": {
+      "A": "Il est rond, à fond bleu et symbole blanc.",
+      "B": "Il est triangulaire, à fond jaune et bord rouge.",
+      "C": "Il est carré, à fond vert et texte blanc.",
+      "D": "Il est octogonal, à fond rouge et texte blanc."
+    },
+    "explanation": "Les panneaux d'obligation sont ronds, à fond bleu et symbole blanc. Ils indiquent que tu dois faire quelque chose, par exemple circuler dans une direction donnée."
+  },
+  "kkalk-S-181": {
+    "stem": "Tu dépasses le panneau d'entrée en zone agglomérée. Quelle limitation de vitesse s'applique si aucun panneau n'indique autre chose ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "50 km/h",
+      "C": "70 km/h",
+      "D": "40 km/h"
+    },
+    "explanation": "En zone agglomérée, la limitation générale est de 50 km/h. Cette vitesse de base s'applique tant qu'aucun autre panneau n'indique une limite différente."
+  },
+  "kkalk-S-182": {
+    "stem": "La route se rétrécit et tu vois un panneau portant une flèche rouge dans ton sens de marche. Quelle règle s'applique ?",
+    "options": {
+      "A": "Le trafic venant en face doit te céder le passage.",
+      "B": "Tu dois céder le passage au trafic venant en face.",
+      "C": "Celui qui arrive le premier devant l'obstacle passe d'abord.",
+      "D": "La circulation dans ton sens est interdite."
+    },
+    "explanation": "La flèche rouge indique que tu dois céder le passage au trafic venant en face. Tu dois t'arrêter et attendre si c'est nécessaire."
+  },
+  "kkalk-S-201": {
+    "stem": "Que signifie un panneau d'obligation, c'est-à-dire un panneau rond bleu à symbole blanc ?",
+    "options": {
+      "A": "L'indication est une recommandation qu'il convient de suivre.",
+      "B": "L'indication est contraignante et tu dois t'y conformer.",
+      "C": "L'indication renseigne sur les distances vers différents lieux.",
+      "D": "L'indication avertit d'un danger plus loin sur la route."
+    },
+    "explanation": "Un panneau d'obligation donne un ordre contraignant. Tu es tenu d'agir comme il l'indique, par exemple de circuler uniquement dans une direction donnée."
+  }
+}

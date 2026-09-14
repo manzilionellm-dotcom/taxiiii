@@ -1,0 +1,252 @@
+{
+  "kkalk-T-174": {
+    "stem": "Tu es sur une autoroute limitée à 110 km/h. As-tu le droit de dépasser la voiture de la voie centrale en empruntant la voie de droite ?",
+    "options": {
+      "A": "Oui, si cela peut se faire sans danger pour les autres usagers.",
+      "B": "Oui, si la voiture de la voie centrale roule plus lentement que le reste du trafic.",
+      "C": "Non, car la vitesse autorisée sur cette route dépasse 70 km/h.",
+      "D": "Non, le dépassement par la droite n'est jamais autorisé sur autoroute."
+    },
+    "explanation": "Passer par la droite n'est autorisé que sur les routes limitées à 70 km/h ou moins. La limite étant ici plus élevée, c'est interdit."
+  },
+  "kkalk-T-201": {
+    "stem": "Tu veux stationner près d'un passage à niveau. Quelle distance minimale dois-tu respecter ?",
+    "options": {
+      "A": "10 mètres",
+      "B": "20 mètres",
+      "C": "30 mètres",
+      "D": "50 mètres"
+    },
+    "explanation": "L'interdiction existe pour que ni toi ni le conducteur du train n'ayez la visibilité masquée. Un véhicule stationné peut dissimuler le train comme des signaux d'avertissement importants."
+  },
+  "kkalk-T-202": {
+    "stem": "Quelle interdiction d'arrêt s'applique à un arrêt de bus signalé par un simple panneau ?",
+    "options": {
+      "A": "20 mètres avant et 20 mètres après le panneau.",
+      "B": "20 mètres avant et 5 mètres après le panneau.",
+      "C": "5 mètres avant et 20 mètres après le panneau.",
+      "D": "L'interdiction ne s'applique pas en l'absence de ligne d'arrêt peinte."
+    },
+    "explanation": "L'interdiction de s'arrêter et de stationner vaut 20 mètres avant et 5 mètres après le panneau. Cela donne au bus assez de place pour entrer et sortir en sûreté."
+  },
+  "kkalk-T-203": {
+    "stem": "Tu t'arrêtes au bord de la route près d'une ligne continue. Quelle distance minimale faut-il entre ta voiture et la ligne ?",
+    "options": {
+      "A": "Aucune exigence générale de distance n'existe.",
+      "B": "1,5 mètre.",
+      "C": "2,5 mètres.",
+      "D": "3,0 mètres."
+    },
+    "explanation": "La distance doit être de 3 mètres au minimum. Sinon, les autres conducteurs sont contraints de franchir la ligne continue pour passer, ce qui est une infraction."
+  },
+  "kkalk-T-204": {
+    "stem": "Quelle est la vitesse maximale autorisée dans une rue cyclable ?",
+    "options": {
+      "A": "L'allure du pas",
+      "B": "20 km/h",
+      "C": "30 km/h",
+      "D": "50 km/h"
+    },
+    "explanation": "Dans une rue cyclable, la vitesse maximale autorisée est de 30 km/h. La règle vaut pour tous les véhicules, vélos compris."
+  },
+  "kkalk-T-205": {
+    "stem": "Tu conduis dans une rue cyclable et tu rattrapes un cycliste. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu dois adapter ta vitesse à celle du cycliste.",
+      "B": "Tu n'as pas le droit de dépasser le cycliste.",
+      "C": "Le cycliste doit s'écarter si tu veux dépasser.",
+      "D": "Tu peux dépasser si tu restes sous 30 km/h."
+    },
+    "explanation": "Dans une rue cyclable, toute la circulation se fait aux conditions des cyclistes. En tant qu'automobiliste, tu dois adapter entièrement ta vitesse à la leur."
+  },
+  "kkalk-T-206": {
+    "stem": "Tu es flashé à 62 km/h sur une route limitée à 50. À combien s'élève l'amende ?",
+    "options": {
+      "A": "1 500 kr",
+      "B": "2 000 kr",
+      "C": "2 400 kr",
+      "D": "2 800 kr"
+    },
+    "explanation": "Un excès de 11 à 15 km/h sur une route limitée à 50 km/h ou plus coûte 2 000 couronnes d'amende."
+  },
+  "kkalk-T-207": {
+    "stem": "À combien s'élève l'amende si tu ne marques pas l'arrêt à un panneau stop ?",
+    "options": {
+      "A": "2 000 kr",
+      "B": "2 500 kr",
+      "C": "3 000 kr",
+      "D": "4 000 kr"
+    },
+    "explanation": "Ne pas marquer l'arrêt à un stop est une infraction grave qui coûte 2 500 couronnes d'amende. Elle conduit le plus souvent aussi au retrait du permis."
+  },
+  "kkalk-T-208": {
+    "stem": "À quels véhicules dois-tu dégager le passage sans condition quand ils utilisent leurs avertisseurs ?",
+    "options": {
+      "A": "Les véhicules de chantier à feux d'avertissement jaunes.",
+      "B": "Les véhicules militaires circulant en convoi.",
+      "C": "Les véhicules d'intervention à gyrophares bleus ou sirène.",
+      "D": "Les autobus de ligne qui quittent un arrêt."
+    },
+    "explanation": "Tu dois dégager le passage à un véhicule d'intervention signalant par gyrophares bleus ou sirène. Cette obligation prime sur toutes les autres règles de circulation."
+  },
+  "kkalk-T-210": {
+    "stem": "Tu as manqué ta sortie sur l'autoroute. Comment dois-tu agir ?",
+    "options": {
+      "A": "T'arrêter sur l'accotement pour attendre un moment sûr pour faire demi-tour.",
+      "B": "Faire un demi-tour si la chaussée est totalement libre.",
+      "C": "Continuer jusqu'à la prochaine sortie pour pouvoir y faire demi-tour.",
+      "D": "Reculer prudemment le long de l'accotement jusqu'à la sortie manquée."
+    },
+    "explanation": "Il est interdit de s'arrêter, de faire demi-tour ou de reculer sur une autoroute. Tu dois continuer jusqu'à la prochaine sortie pour faire demi-tour de façon sûre et légale."
+  },
+  "kkalk-T-231": {
+    "stem": "Où le stationnement est-il interdit près d'un arrêt de bus signalé par un simple panneau ?",
+    "options": {
+      "A": "10 mètres avant et 10 mètres après le panneau.",
+      "B": "5 mètres avant et 20 mètres après le panneau.",
+      "C": "20 mètres avant et 5 mètres après le panneau.",
+      "D": "Seulement juste au niveau du panneau d'arrêt."
+    },
+    "explanation": "La portion plus longue en amont donne au bus la place de se ranger le long du bord. La portion plus courte en aval lui permet de se réinsérer dans la circulation."
+  },
+  "kkalk-T-232": {
+    "stem": "Que signifie une ligne jaune continue le long du bord de la chaussée ?",
+    "options": {
+      "A": "Interdiction de stationner, mais l'arrêt est autorisé.",
+      "B": "Interdiction de s'arrêter et de stationner.",
+      "C": "Avertissement d'un accotement étroit ou absent.",
+      "D": "Marquage d'une déviation temporaire pour un chantier routier."
+    },
+    "explanation": "Une ligne jaune continue signifie interdiction de s'arrêter et de stationner. Une ligne jaune discontinue signifie seulement interdiction de stationner."
+  },
+  "kkalk-T-233": {
+    "stem": "Quelle est la vitesse maximale autorisée quand tu remorques une voiture particulière avec une sangle ?",
+    "options": {
+      "A": "20 km/h",
+      "B": "30 km/h",
+      "C": "40 km/h",
+      "D": "50 km/h"
+    },
+    "explanation": "La vitesse maximale autorisée pour un remorquage à la sangle est de 30 km/h. Elle vaut quelle que soit la route empruntée."
+  },
+  "kkalk-T-234": {
+    "stem": "De quel côté doit-on normalement dépasser un tramway ?",
+    "options": {
+      "A": "Par la gauche, selon la règle principale du dépassement.",
+      "B": "Par la droite.",
+      "C": "Il est interdit de dépasser un tramway en ville.",
+      "D": "Du côté de son choix, si la route est assez large."
+    },
+    "explanation": "Un tramway se dépasse normalement par la droite. C'est une exception à la règle principale qui veut qu'on dépasse par la gauche."
+  },
+  "kkalk-T-235": {
+    "stem": "Tu circules sur la voie intérieure d'un giratoire et tu veux passer sur la voie extérieure. Dois-tu mettre le clignotant ?",
+    "options": {
+      "A": "Oui, un changement de voie exige toujours un signal.",
+      "B": "Non, on ne met le clignotant qu'en sortant du giratoire.",
+      "C": "Oui, mais seulement si le trafic y est dense.",
+      "D": "Non, le clignotant est toujours facultatif dans un giratoire."
+    },
+    "explanation": "Un giratoire est juridiquement une route ordinaire, simplement en cercle. Tu dois donc toujours signaler un changement de voie, comme sur n'importe quelle autre route."
+  },
+  "kkalk-T-236": {
+    "stem": "Tu roules à 50 km/h sur une route prioritaire quand un bus met son clignotant pour quitter un arrêt. Quelle règle s'applique ?",
+    "options": {
+      "A": "Tu as la priorité, puisque tu roules sur une route prioritaire.",
+      "B": "Le bus a la priorité, puisqu'il assure un service de ligne.",
+      "C": "Tu dois ralentir et céder le passage au bus.",
+      "D": "Le bus doit céder le passage, puisqu'il change de voie."
+    },
+    "explanation": "Si la vitesse autorisée est de 50 km/h ou moins, tu dois céder le passage à un bus qui signale son départ d'un arrêt. La règle vaut aussi sur une route prioritaire."
+  },
+  "kkalk-T-237": {
+    "stem": "Nous sommes le 12 du mois et le stationnement alterné par date s'applique. Où est-il interdit de stationner ?",
+    "options": {
+      "A": "Du côté des numéros impairs.",
+      "B": "Du côté des numéros pairs.",
+      "C": "Des deux côtés de la rue.",
+      "D": "L'interdiction ne vaut que la nuit."
+    },
+    "explanation": "Le stationnement alterné interdit de stationner du côté des numéros pairs aux dates paires. Comme nous sommes le 12, l'interdiction vaut du côté pair."
+  },
+  "kkalk-T-240": {
+    "stem": "Un cycliste traverse la route en roulant sur un passage piéton non réglementé. Qui doit céder le passage ?",
+    "options": {
+      "A": "La voiture, car les cyclistes ont la même priorité que les piétons sur les passages protégés.",
+      "B": "Le cycliste, car il compte comme conducteur de véhicule et traverse une route.",
+      "C": "Celui qui roule le plus vite, car il représente alors le plus grand danger.",
+      "D": "Les deux, car une responsabilité partagée et des égards mutuels s'appliquent aux passages protégés."
+    },
+    "explanation": "Un passage piéton est destiné aux piétons. Un cycliste qui roule est un conducteur de véhicule et doit donc céder le passage à la circulation de la route."
+  },
+  "kkalk-T-283": {
+    "stem": "Tu veux stationner près d'un passage à niveau. Quelle est la distance minimale autorisée par rapport au passage ?",
+    "options": {
+      "A": "10 mètres",
+      "B": "20 mètres",
+      "C": "30 mètres",
+      "D": "La distance importe peu s'il y a des barrières."
+    },
+    "explanation": "Tu dois respecter une distance de 30 mètres au minimum. La règle existe pour que les véhicules stationnés ne masquent ni la visibilité ni les signaux d'avertissement."
+  },
+  "kkalk-T-285": {
+    "stem": "Sur quelle zone autour d'un panneau d'arrêt de bus est-il interdit de s'arrêter ou de stationner ?",
+    "options": {
+      "A": "10 mètres avant et 10 mètres après le panneau.",
+      "B": "5 mètres avant et 20 mètres après le panneau.",
+      "C": "20 mètres avant et 5 mètres après le panneau.",
+      "D": "15 mètres avant et 15 mètres après le panneau."
+    },
+    "explanation": "Le bus a besoin d'une longue portion pour se ranger à l'arrêt et d'une portion plus courte pour se réinsérer dans la circulation."
+  },
+  "kkalk-T-286": {
+    "stem": "Tu roules à 83 km/h sur une route limitée à 70 et tu es photographié par un radar. À combien s'élève l'amende ?",
+    "options": {
+      "A": "1 500 kr",
+      "B": "2 000 kr",
+      "C": "2 400 kr",
+      "D": "2 800 kr"
+    },
+    "explanation": "Sur les routes limitées à 50 km/h ou plus, l'amende est de 2 000 couronnes pour un dépassement de 11 à 15 km/h."
+  },
+  "kkalk-T-289": {
+    "stem": "Tu t'arrêtes au bord de la chaussée à côté d'une ligne continue. Quelle distance minimale doit séparer ta voiture de la ligne ?",
+    "options": {
+      "A": "1,5 mètre.",
+      "B": "2,0 mètres.",
+      "C": "3,0 mètres.",
+      "D": "Aucune règle de distance précise n'existe."
+    },
+    "explanation": "La distance doit être de 3 mètres au minimum. Sinon, les autres conducteurs sont contraints de franchir illégalement la ligne continue pour pouvoir passer."
+  },
+  "kkalk-T-290": {
+    "stem": "Quelle est la vitesse de base hors zone agglomérée en l'absence de panneaux de vitesse ?",
+    "options": {
+      "A": "50 km/h",
+      "B": "70 km/h",
+      "C": "80 km/h",
+      "D": "90 km/h"
+    },
+    "explanation": "En l'absence de panneau de limitation, c'est la vitesse de base qui s'applique. Elle est de 70 km/h hors zone agglomérée et de 50 km/h à l'intérieur."
+  },
+  "kkalk-T-292": {
+    "stem": "Sur quelle zone autour d'un panneau d'arrêt de bus le stationnement est-il interdit ?",
+    "options": {
+      "A": "20 mètres avant et 5 mètres après le panneau.",
+      "B": "5 mètres avant et 20 mètres après le panneau.",
+      "C": "15 mètres avant et 15 mètres après le panneau.",
+      "D": "20 mètres avant et 20 mètres après le panneau."
+    },
+    "explanation": "L'interdiction vaut 20 mètres avant et 5 mètres après le panneau. Le but est de laisser au bus la place d'entrer et de quitter l'arrêt en sûreté."
+  },
+  "kkalk-T-293": {
+    "stem": "As-tu le droit de stationner ta voiture juste après un passage piéton ?",
+    "options": {
+      "A": "Oui, si aucune autre interdiction ne s'applique sur place.",
+      "B": "Non, car cela pourrait masquer la visibilité des piétons.",
+      "C": "Non, l'interdiction de 10 mètres vaut avant comme après.",
+      "D": "Oui, mais seulement pour la montée et la descente."
+    },
+    "explanation": "L'interdiction de stationner porte sur le passage piéton lui-même et sur les 10 mètres qui le précèdent. Aucune interdiction générale ne vise la portion située juste après."
+  }
+}

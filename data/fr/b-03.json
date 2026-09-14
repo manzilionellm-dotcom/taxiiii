@@ -1,0 +1,252 @@
+{
+  "kkalk-E-104": {
+    "stem": "En quoi un pot catalytique transforme-t-il principalement les gaz d'échappement dangereux ?",
+    "options": {
+      "A": "En azote et en oxygène",
+      "B": "En suie et en ozone",
+      "C": "En dioxyde de carbone et en eau",
+      "D": "En soufre et en ammoniac"
+    },
+    "explanation": "Le pot catalytique transforme le monoxyde de carbone et les hydrocarbures, deux substances toxiques, en dioxyde de carbone et en eau."
+  },
+  "kkalk-E-105": {
+    "stem": "Il fait -15 °C. Pour être le plus efficace possible, combien de temps brancher le préchauffage moteur au maximum ?",
+    "options": {
+      "A": "Environ 60 minutes",
+      "B": "Environ 90 minutes",
+      "C": "Environ 2 heures",
+      "D": "Environ 3 heures"
+    },
+    "explanation": "À -15 °C, 90 minutes est la durée la plus efficace sur le plan énergétique. Au-delà, il n'y a plus d'effet perceptible, seulement de l'électricité gaspillée."
+  },
+  "kkalk-E-114": {
+    "stem": "Quelle est la consommation lorsque tu freines au moteur avec une voiture moderne ?",
+    "options": {
+      "A": "La même qu'au ralenti.",
+      "B": "La même qu'en roulant au point mort.",
+      "C": "Pratiquement nulle.",
+      "D": "Un peu plus qu'au ralenti."
+    },
+    "explanation": "Lors du frein moteur, la gestion moteur des voitures modernes coupe totalement l'alimentation en carburant. C'est l'énergie cinétique de la voiture qui entraîne le moteur, pas le carburant."
+  },
+  "kkalk-E-115": {
+    "stem": "Quel est l'effet principal sur l'environnement quand on réchauffe une voiture au ralenti par une matinée froide ?",
+    "options": {
+      "A": "Les rejets de substances toxiques sont très élevés, le pot catalytique étant froid et hors service.",
+      "B": "C'est positif, car le moteur atteint plus vite sa température de fonctionnement écologique.",
+      "C": "C'est neutre, les moteurs modernes disposant de technologies qui limitent les rejets à froid.",
+      "D": "Cela use le moteur, sans effet direct notable sur l'environnement."
+    },
+    "explanation": "Le pot catalytique n'épure pas efficacement les gaz d'échappement avant d'être chaud. Partir tout de suite en roulant doucement réchauffe le moteur et le catalyseur beaucoup plus vite que le ralenti."
+  },
+  "kkalk-E-118": {
+    "stem": "Il fait -15 °C. Combien de temps laisser le préchauffage moteur branché pour un effet optimal ?",
+    "options": {
+      "A": "1 heure",
+      "B": "1 heure 30",
+      "C": "2 heures",
+      "D": "Toute la nuit"
+    },
+    "explanation": "À -15 °C, une heure et demie est un bon repère. Plus longtemps, tu gaspilles de l'électricité sans que le moteur devienne plus chaud."
+  },
+  "kkalk-E-123": {
+    "stem": "De quoi le carburant E85 est-il principalement composé ?",
+    "options": {
+      "A": "Environ 85 % d'essence et 15 % d'éthanol.",
+      "B": "Environ 85 % d'éthanol et 15 % d'essence.",
+      "C": "Environ 85 % de biodiesel et 15 % d'essence.",
+      "D": "Environ 85 % de gaz naturel et 15 % d'éthanol."
+    },
+    "explanation": "Le E85 est un carburant renouvelable contenant environ 85 % d'éthanol. Les 15 % restants sont de l'essence, ajoutée notamment pour faciliter les démarrages par temps froid."
+  },
+  "kkalk-E-125": {
+    "stem": "Il fait -15 °C dehors. Combien de temps faire tourner le préchauffage moteur avant le départ pour le meilleur effet ?",
+    "options": {
+      "A": "Environ 45 minutes",
+      "B": "Environ 1 heure",
+      "C": "Environ 1 heure 30",
+      "D": "Environ 2 heures 30"
+    },
+    "explanation": "À -15 °C, une heure et demie est la durée optimale. Moins longtemps ne chauffe pas assez et plus longtemps ne fait que gaspiller de l'électricité."
+  },
+  "kkalk-E-126": {
+    "stem": "Il fait zéro degré dehors. Combien de temps utiliser le préchauffage moteur pour démarrer en consommant le moins possible ?",
+    "options": {
+      "A": "Environ 30 minutes",
+      "B": "Environ 1 heure",
+      "C": "Environ 1 heure 30",
+      "D": "Environ 3 heures"
+    },
+    "explanation": "Par zéro degré, une heure suffit pour que le moteur soit convenablement chaud. Au-delà, le gain est imperceptible et l'électricité est gaspillée."
+  },
+  "kkalk-E-129": {
+    "stem": "À partir de quelle vitesse peux-tu rouler en cinquième pour économiser du carburant avec une voiture manuelle moderne ?",
+    "options": {
+      "A": "Autour de 30 km/h",
+      "B": "Autour de 50 km/h",
+      "C": "Autour de 70 km/h",
+      "D": "Autour de 90 km/h"
+    },
+    "explanation": "L'éco-conduite consiste à rouler à bas régime. Sur la plupart des voitures modernes, tu peux passer la cinquième dès 50 km/h sans forcer le moteur."
+  },
+  "kkalk-E-131": {
+    "stem": "Quel régime maximal viser au passage du rapport supérieur pour rouler le plus économiquement possible ?",
+    "options": {
+      "A": "1500 tr/min",
+      "B": "2500 tr/min",
+      "C": "3500 tr/min",
+      "D": "4500 tr/min"
+    },
+    "explanation": "Passer le rapport vers 2500 tr/min (sur une voiture à essence) exploite efficacement la puissance du moteur. Monter davantage dans les tours augmente inutilement la consommation."
+  },
+  "kkalk-E-133": {
+    "stem": "Combien de temps au maximum peux-tu laisser tourner le moteur au ralenti dans une zone agglomérée ?",
+    "options": {
+      "A": "30 secondes au maximum.",
+      "B": "1 minute au maximum.",
+      "C": "3 minutes au maximum.",
+      "D": "La durée est illimitée par températures négatives."
+    },
+    "explanation": "La plupart des communes limitent le ralenti à une minute. Le but est de réduire les gaz d'échappement et le bruit inutiles dans les zones habitées."
+  },
+  "kkalk-E-135": {
+    "stem": "Tu veux rouler économiquement sur route plate. Vers quelle vitesse est-il indiqué de passer la cinquième ?",
+    "options": {
+      "A": "À 30 km/h",
+      "B": "À 50 km/h",
+      "C": "À 70 km/h",
+      "D": "À 90 km/h"
+    },
+    "explanation": "Les voitures modernes sont conçues pour rouler sur des rapports hauts à bas régime. Passer la cinquième dès 50 km/h abaisse nettement la consommation."
+  },
+  "kkalk-E-138": {
+    "stem": "Quand le pot catalytique épure-t-il le plus mal les gaz d'échappement ?",
+    "options": {
+      "A": "Sur autoroute, à vitesse élevée et régulière.",
+      "B": "En conduite agressive, avec des accélérations vives.",
+      "C": "Juste après un démarrage à froid, avant que le moteur soit chaud.",
+      "D": "En frein moteur dans une longue descente."
+    },
+    "explanation": "Le pot catalytique doit atteindre une température de travail élevée (environ 400 à 600 °C) pour fonctionner. Pendant les premières minutes après un démarrage à froid, il est trop froid et n'épure presque rien."
+  },
+  "kkalk-E-139": {
+    "stem": "Il fait 15 degrés en dessous de zéro. Combien de temps brancher le préchauffage moteur avant le départ pour le meilleur effet sans gaspiller d'électricité ?",
+    "options": {
+      "A": "Environ 30 minutes.",
+      "B": "Environ 60 minutes.",
+      "C": "Environ 90 minutes.",
+      "D": "Environ 2 heures 30."
+    },
+    "explanation": "À -15 °C, environ 90 minutes est la bonne durée. Au-delà, il n'y a aucun effet supplémentaire, seulement de l'électricité gaspillée."
+  },
+  "kkalk-E-141": {
+    "stem": "Pourquoi les huiles hautement aromatiques (huiles HA) sont-elles interdites dans les pneus neufs ?",
+    "options": {
+      "A": "Elles augmentaient le risque d'éclatement à vitesse élevée.",
+      "B": "Elles donnaient aux pneus une moins bonne adhérence sur chaussée mouillée.",
+      "C": "Elles sont cancérigènes et nuisent à l'environnement à mesure que le pneu s'use.",
+      "D": "Elles rendaient la fabrication inutilement coûteuse."
+    },
+    "explanation": "Les huiles HA contiennent des substances cancérigènes (les HAP) qui se répandent dans la nature à mesure que le pneu s'use. L'interdiction limite la diffusion de ces polluants."
+  },
+  "kkalk-E-155": {
+    "stem": "À quel régime faut-il passer le rapport supérieur pour accélérer en consommant le moins possible ?",
+    "options": {
+      "A": "Autour de 1 500 tr/min.",
+      "B": "Autour de 2 500 tr/min.",
+      "C": "Autour de 3 500 tr/min.",
+      "D": "Autour de 4 500 tr/min."
+    },
+    "explanation": "Pour économiser du carburant, il faut accélérer assez franchement et monter les rapports tôt. Sur une voiture à essence, l'optimum se situe vers 2 500 tr/min."
+  },
+  "kkalk-E-156": {
+    "stem": "Pourquoi sauter des rapports pendant l'accélération est-il économe en carburant ?",
+    "options": {
+      "A": "Le moteur atteint plus vite sa température de travail optimale.",
+      "B": "Le temps passé à haut régime, gourmand en carburant, diminue.",
+      "C": "Cela réduit l'usure de l'embrayage et de la boîte.",
+      "D": "L'accélération est plus forte qu'avec un passage classique."
+    },
+    "explanation": "Sauter un rapport te fait atteindre plus vite un rapport haut à bas régime. Le moteur passe donc moins de temps à un régime élevé et gourmand."
+  },
+  "kkalk-E-157": {
+    "stem": "Qu'est-ce qui consomme le plus de carburant supplémentaire pour rafraîchir la voiture quand tu roules à 110 km/h ?",
+    "options": {
+      "A": "Utiliser la climatisation.",
+      "B": "Rouler avec les vitres latérales grandes ouvertes.",
+      "C": "Utiliser seulement le ventilateur d'habitacle.",
+      "D": "Ouvrir les fenêtres à moitié."
+    },
+    "explanation": "À vitesse élevée, des vitres ouvertes créent une forte résistance aérodynamique, comme un parachute. Le moteur travaille alors plus dur qu'avec la climatisation."
+  },
+  "kkalk-E-159": {
+    "stem": "Quel est le principal effet négatif des pneus cloutés sur la santé dans la circulation urbaine ?",
+    "options": {
+      "A": "Ils arrachent à la chaussée des particules dangereuses pour la santé.",
+      "B": "Ils dégagent des gaz toxiques quand la gomme frotte sur l'asphalte.",
+      "C": "Le bruit qu'ils créent est une cause fréquente de stress au volant.",
+      "D": "Ils arrachent des métaux lourds qui empoisonnent les eaux de pluie."
+    },
+    "explanation": "Les pneus cloutés arrachent de fines particules (PM10) à l'asphalte, surtout sur chaussée sèche. Ces particules polluent l'air et peuvent provoquer de graves troubles respiratoires."
+  },
+  "kkalk-E-160": {
+    "stem": "Quelles voitures particulières peuvent circuler dans la zone à faibles émissions la plus stricte, la classe 3 ?",
+    "options": {
+      "A": "Toutes les voitures classées Euro 6, quel que soit leur carburant.",
+      "B": "Les voitures électriques et toutes les hybrides rechargeables respectant Euro 6.",
+      "C": "Seulement les voitures mues par l'électricité, l'hydrogène ou le gaz (Euro 6).",
+      "D": "Uniquement les voitures particulières 100 % électriques et les hybrides rechargeables les plus récentes."
+    },
+    "explanation": "La zone de classe 3 est la plus stricte et n'admet que les véhicules les plus propres. Les voitures essence, diesel et même les hybrides rechargeables modernes y sont donc interdites."
+  },
+  "kkalk-E-161": {
+    "stem": "Comment une pression des pneus trop basse influence-t-elle la consommation ?",
+    "options": {
+      "A": "Elle baisse d'environ 5 %.",
+      "B": "Elle augmente d'environ 5 à 10 %.",
+      "C": "Elle augmente d'au moins 20 %.",
+      "D": "Elle ne change pas, mais les pneus s'usent plus vite."
+    },
+    "explanation": "Une pression trop basse augmente la résistance au roulement des pneus. Le moteur doit travailler plus dur, donc consommer davantage."
+  },
+  "kkalk-E-162": {
+    "stem": "Quels sont les trois polluants principaux traités par un catalyseur trois voies sur une voiture à essence ?",
+    "options": {
+      "A": "Les hydrocarbures, le monoxyde de carbone et les oxydes d'azote.",
+      "B": "Le dioxyde de carbone, la vapeur d'eau et le dioxyde de soufre.",
+      "C": "Le monoxyde de carbone, le plomb et l'ozone de basse altitude.",
+      "D": "Les particules de suie, le méthane et le protoxyde d'azote."
+    },
+    "explanation": "Le catalyseur transforme les trois gaz les plus nocifs, hydrocarbures (HC), monoxyde de carbone (CO) et oxydes d'azote (NOx), en dioxyde de carbone et en eau, bien moins dangereux."
+  },
+  "kkalk-E-163": {
+    "stem": "Quelle est la façon la plus économe de ralentir devant un obstacle ?",
+    "options": {
+      "A": "Freiner au moteur en lâchant l'accélérateur, un rapport engagé.",
+      "B": "Rouler au point mort puis freiner à la pédale.",
+      "C": "Garder l'embrayage enfoncé et freiner doucement.",
+      "D": "Freiner fort et tard pour gagner du temps."
+    },
+    "explanation": "Lors du frein moteur, les moteurs modernes coupent totalement l'alimentation en carburant. Rouler au point mort ou embrayage enfoncé consomme en revanche pour le ralenti."
+  },
+  "kkalk-E-166": {
+    "stem": "Tu veux freiner au moteur pour amener la consommation à zéro. Comment fais-tu ?",
+    "options": {
+      "A": "Garder l'embrayage enfoncé pendant tout le ralentissement.",
+      "B": "Passer au point mort et rouler vers l'obstacle.",
+      "C": "Lâcher complètement l'accélérateur en gardant un rapport engagé.",
+      "D": "Freiner et rétrograder juste avant l'arrêt de la voiture."
+    },
+    "explanation": "Lors du frein moteur, les moteurs modernes coupent totalement l'alimentation en carburant. C'est la rotation des roues qui entraîne le moteur, pas le carburant."
+  },
+  "kkalk-E-167": {
+    "stem": "Il fait zéro degré dehors. Combien de temps au maximum utiliser le préchauffage moteur pour ne pas gaspiller d'énergie ?",
+    "options": {
+      "A": "Environ 30 minutes.",
+      "B": "Environ 60 minutes.",
+      "C": "Environ 90 minutes.",
+      "D": "Environ 120 minutes."
+    },
+    "explanation": "À 0 °C, une heure environ suffit. Au-delà, le moteur ne chauffe pas davantage et seule l'électricité est gaspillée."
+  }
+}

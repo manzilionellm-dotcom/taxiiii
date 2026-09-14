@@ -1,0 +1,252 @@
+{
+  "kkalk-B-001": {
+    "stem": "Que signifie ce panneau de signalisation ?",
+    "options": {
+      "A": "Une intersection où la priorité à droite s'applique.",
+      "B": "Une intersection avec une route prioritaire.",
+      "C": "Un passage à niveau avec barrières.",
+      "D": "Une intersection où tu dois céder le passage."
+    },
+    "explanation": "Le panneau annonce une intersection pour laquelle aucune autre règle de priorité n'est indiquée. Tu dois donc appliquer la priorité à droite."
+  },
+  "kkalk-B-002": {
+    "stem": "Tu roules sur une route prioritaire quand une voiture approche par la droite dans une intersection. Quelle règle s'applique ?",
+    "options": {
+      "A": "Je dois laisser passer cette voiture à cause de la priorité à droite.",
+      "B": "La voiture venant de la droite doit me laisser passer.",
+      "C": "Nous devons tous les deux nous arrêter et chercher le contact visuel.",
+      "D": "Celui qui roule le plus lentement doit attendre."
+    },
+    "explanation": "La circulation sur une route prioritaire a la priorité. Le trafic transversal doit céder le passage, qu'il arrive par la droite ou par la gauche."
+  },
+  "kkalk-B-003": {
+    "stem": "Qu'est-ce qui réduit le plus ta consommation de carburant ?",
+    "options": {
+      "A": "Accélérer franchement et passer tôt au rapport supérieur.",
+      "B": "Accélérer le plus lentement possible.",
+      "C": "Maintenir en permanence un régime moteur élevé.",
+      "D": "Utiliser souvent la climatisation."
+    },
+    "explanation": "En accélérant franchement jusqu'à la vitesse souhaitée puis en montant vite les rapports, le moteur travaille à plus bas régime et consomme moins de carburant."
+  },
+  "kkalk-B-004": {
+    "stem": "Qu'arrive-t-il à ta distance de réaction si tu doubles la vitesse ?",
+    "options": {
+      "A": "Elle est divisée par deux.",
+      "B": "Elle double.",
+      "C": "Elle triple.",
+      "D": "Elle quadruple."
+    },
+    "explanation": "La distance de réaction augmente au même rythme que la vitesse. Si tu doubles la vitesse, la distance parcourue pendant ton temps de réaction double aussi."
+  },
+  "kkalk-B-005": {
+    "stem": "Quelle est la profondeur minimale autorisée des sculptures d'un pneu été ?",
+    "options": {
+      "A": "1,0 mm",
+      "B": "1,6 mm",
+      "C": "3,0 mm",
+      "D": "5,0 mm"
+    },
+    "explanation": "La loi exige au minimum 1,6 mm de profondeur de sculpture sur un pneu été. Une profondeur plus grande, 3 mm par exemple, protège toutefois beaucoup mieux contre l'aquaplanage."
+  },
+  "kkalk-B-006": {
+    "stem": "Tu roules en feux de route et tu croises une voiture dans un virage. Quand dois-tu repasser en feux de croisement ?",
+    "options": {
+      "A": "Dès que tu vois les feux de la voiture qui arrive.",
+      "B": "Quand ton faisceau lumineux atteint la voiture qui arrive.",
+      "C": "Juste au moment où vous arrivez à la même hauteur.",
+      "D": "Après que la voiture qui arrive a baissé ses feux."
+    },
+    "explanation": "Tu dois baisser les feux dès que ta lumière risque d'éblouir l'autre conducteur. Dans un virage, cela se produit le plus souvent quand ton faisceau atteint la voiture."
+  },
+  "kkalk-B-007": {
+    "stem": "À quelle distance d'un passage à niveau le stationnement est-il interdit ?",
+    "options": {
+      "A": "10 mètres",
+      "B": "20 mètres",
+      "C": "30 mètres",
+      "D": "50 mètres"
+    },
+    "explanation": "Tu n'as pas le droit de stationner dans les 30 mètres avant ou après un passage à niveau. La règle évite de masquer la visibilité ou les dispositifs d'avertissement."
+  },
+  "kkalk-B-008": {
+    "stem": "À partir de quelle température la loi impose-t-elle d'utiliser un préchauffage moteur ?",
+    "options": {
+      "A": "Quand il fait +10 °C ou moins.",
+      "B": "Quand il fait 0 °C ou moins.",
+      "C": "Quand il fait -5 °C ou moins.",
+      "D": "Aucune obligation légale n'existe."
+    },
+    "explanation": "Aucune loi ne l'impose. Le préchauffage moteur est en revanche recommandé pour l'environnement dès que la température descend sous +10 degrés."
+  },
+  "kkalk-B-009": {
+    "stem": "À quelle vitesse le corps élimine-t-il l'alcool en moyenne ?",
+    "options": {
+      "A": "Environ 0,1 gramme par kilo de poids corporel et par heure.",
+      "B": "Environ 0,2 gramme par kilo de poids corporel et par heure.",
+      "C": "Environ 0,5 gramme par kilo de poids corporel et par heure.",
+      "D": "Environ 1,0 gramme par kilo de poids corporel et par heure."
+    },
+    "explanation": "Le corps élimine en moyenne 0,1 gramme d'alcool pur par kilo de poids corporel et par heure. Cette élimination est constante : rien ne l'accélère."
+  },
+  "kkalk-E-012": {
+    "stem": "Qu'arrive-t-il à la consommation de carburant quand tu utilises le frein moteur ?",
+    "options": {
+      "A": "Elle augmente, car le moteur doit travailler pour freiner.",
+      "B": "Elle devient identique à celle du moteur au ralenti.",
+      "C": "Elle tombe à zéro.",
+      "D": "Elle baisse de moitié environ."
+    },
+    "explanation": "Les voitures modernes coupent totalement l'alimentation en carburant lors du frein moteur. L'énergie cinétique de la voiture entraîne le moteur, la consommation est donc nulle."
+  },
+  "kkalk-E-014": {
+    "stem": "Pourquoi les pneus cloutés sont-ils un risque sanitaire, surtout en ville ?",
+    "options": {
+      "A": "Ils augmentent les rejets de gaz d'échappement par une consommation plus forte.",
+      "B": "Le bruit des pneus peut provoquer du stress et des lésions auditives.",
+      "C": "Ils arrachent à l'asphalte des particules nocives que nous respirons.",
+      "D": "Les métaux lourds des clous risquent de polluer la nappe phréatique."
+    },
+    "explanation": "Les clous arrachent de fines particules à l'asphalte. Elles polluent l'air que nous respirons et contribuent aux maladies respiratoires dans les villes denses."
+  },
+  "kkalk-E-015": {
+    "stem": "Tu accélères à l'arrêt et tu veux économiser du carburant en sautant un rapport. Quelle est la meilleure façon de faire ?",
+    "options": {
+      "A": "Je passe de la 1re directement à la 3e.",
+      "B": "J'accélère en 2e puis je passe en 4e.",
+      "C": "J'accélère en 3e puis je passe en 5e.",
+      "D": "J'évite de sauter des rapports, cela use la voiture."
+    },
+    "explanation": "En accélérant en deuxième puis en passant directement en quatrième, tu exploites efficacement la puissance du moteur et tu réduis la consommation."
+  },
+  "kkalk-E-016": {
+    "stem": "Pour l'environnement, à partir de quelle température faut-il commencer à utiliser le préchauffage moteur ?",
+    "options": {
+      "A": "Quand la température est sous +5 °C.",
+      "B": "Quand la température est sous +10 °C.",
+      "C": "Quand la température est sous 0 °C.",
+      "D": "Quand la température est sous -5 °C."
+    },
+    "explanation": "Un moteur froid consomme plus et son traitement des gaz d'échappement est moins efficace. Le préchauffage est donc recommandé dès que la température passe sous +10 °C."
+  },
+  "kkalk-E-017": {
+    "stem": "Qu'est-ce qui caractérise les infrasons produits par la circulation ?",
+    "options": {
+      "A": "C'est un son aigu qui provient surtout des pneus.",
+      "B": "C'est un son de très basse fréquence, difficile à percevoir par l'oreille.",
+      "C": "Il apparaît seulement au-delà de 110 km/h.",
+      "D": "Il disparaît complètement si les vitres sont fermées."
+    },
+    "explanation": "Les infrasons sont des ondes de fréquence si basse (moins de 20 Hz) que nous ne les entendons normalement pas. Ils peuvent malgré tout provoquer fatigue et maux de tête."
+  },
+  "kkalk-E-020": {
+    "stem": "Tu roules à 70 km/h et tu dois t'arrêter à un feu rouge plus loin. Comment procéder pour économiser le plus de carburant ?",
+    "options": {
+      "A": "Je débraye tôt puis je freine doucement jusqu'à l'arrêt.",
+      "B": "Je mets au point mort et je laisse la voiture rouler le plus loin possible.",
+      "C": "Je lâche l'accélérateur et je laisse le rapport engagé freiner la voiture.",
+      "D": "Je garde ma vitesse et je freine tard mais fort."
+    },
+    "explanation": "Avec le frein moteur, l'alimentation en carburant est totalement coupée. Si tu débrayes ou passes au point mort, le moteur tourne au ralenti et consomme."
+  },
+  "kkalk-E-023": {
+    "stem": "Quel gaz d'échappement est à la fois cancérigène et responsable de la formation d'ozone de basse altitude ?",
+    "options": {
+      "A": "Les oxydes d'azote (NOx)",
+      "B": "Le dioxyde de carbone (CO2)",
+      "C": "Les hydrocarbures (HC)",
+      "D": "Le monoxyde de carbone (CO)"
+    },
+    "explanation": "Les hydrocarbures (carburant imbrûlé) sont cancérigènes. Ils sont aussi un ingrédient clé lorsque la lumière du soleil réagit avec les gaz d'échappement pour former de l'ozone nocif près du sol."
+  },
+  "kkalk-E-024": {
+    "stem": "Il fait -15 °C dehors. Combien de temps faut-il brancher le préchauffage moteur pour un effet optimal avant de partir ?",
+    "options": {
+      "A": "Environ 1 heure",
+      "B": "Environ 1 heure 30",
+      "C": "Environ 2 heures",
+      "D": "Environ 2 heures 30"
+    },
+    "explanation": "À -15 °C, la durée optimale est d'environ une heure et demie. Plus longtemps n'apporte qu'un gain marginal et gaspille de l'électricité."
+  },
+  "kkalk-E-026": {
+    "stem": "Pour une conduite économe avec une voiture à essence, à quel régime maximal faut-il passer au rapport supérieur ?",
+    "options": {
+      "A": "2000 tr/min",
+      "B": "2500 tr/min",
+      "C": "3500 tr/min",
+      "D": "4500 tr/min"
+    },
+    "explanation": "Pour une voiture à essence, la recommandation est de monter les rapports avant environ 2500 tr/min afin d'économiser du carburant. Le chiffre correspondant pour un diesel est d'environ 2000 tr/min."
+  },
+  "kkalk-E-028": {
+    "stem": "Pourquoi faut-il éviter de rouler longtemps avec la pédale d'embrayage enfoncée ?",
+    "options": {
+      "A": "Cela augmente l'usure de la boîte de vitesses.",
+      "B": "Le moteur consomme du carburant inutilement.",
+      "C": "Cela dégrade la tenue de route de la voiture.",
+      "D": "Le pot catalytique risque la surchauffe."
+    },
+    "explanation": "Avec le frein moteur (rapport engagé, pied levé), l'alimentation en carburant est totalement coupée. Embrayage enfoncé, le moteur tourne au ralenti et consomme."
+  },
+  "kkalk-E-031": {
+    "stem": "La température est de zéro degré. Combien de temps faut-il brancher le préchauffage moteur pour un effet optimal ?",
+    "options": {
+      "A": "Environ 30 minutes",
+      "B": "Environ 60 minutes",
+      "C": "Environ 90 minutes",
+      "D": "Il est inutile par zéro degré"
+    },
+    "explanation": "Par zéro degré, une heure de préchauffage donne le meilleur résultat. Plus longtemps ne fait que gaspiller de l'électricité, moins longtemps ne chauffe pas assez."
+  },
+  "kkalk-E-035": {
+    "stem": "Pourquoi une voiture moderne ne consomme-t-elle pas de carburant en frein moteur ?",
+    "options": {
+      "A": "Le moteur redescend au régime de ralenti pour économiser de l'énergie.",
+      "B": "L'énergie cinétique est récupérée pour recharger la batterie.",
+      "C": "L'alimentation en carburant du moteur est totalement coupée.",
+      "D": "La pompe à huile travaille mieux et réduit les frottements du moteur."
+    },
+    "explanation": "Quand tu lâches l'accélérateur avec un rapport engagé, les roues continuent d'entraîner le moteur. Le calculateur coupe alors complètement l'injection de carburant."
+  },
+  "kkalk-E-036": {
+    "stem": "Combien de temps peux-tu normalement laisser tourner le moteur au ralenti en agglomération ?",
+    "options": {
+      "A": "30 secondes au maximum",
+      "B": "1 minute au maximum",
+      "C": "3 minutes au maximum",
+      "D": "5 minutes au maximum"
+    },
+    "explanation": "La plupart des communes appliquent une règle locale limitant le ralenti à une minute, afin de réduire le bruit et les gaz d'échappement."
+  },
+  "kkalk-E-037": {
+    "stem": "Combien de temps faut-il utiliser le préchauffage moteur quand il fait +10 °C dehors ?",
+    "options": {
+      "A": "Il est totalement inutile.",
+      "B": "Environ 30 minutes.",
+      "C": "Environ 1 heure 30.",
+      "D": "Environ 3 heures."
+    },
+    "explanation": "Le préchauffage moteur réduit les rejets et la consommation même par températures positives. À +10 °C, environ 30 minutes suffisent pour un bon résultat."
+  },
+  "kkalk-E-038": {
+    "stem": "Quelles voitures particulières peuvent circuler dans la zone à faibles émissions la plus stricte, la classe 3 ?",
+    "options": {
+      "A": "Les voitures essence et diesel répondant à la norme Euro 6.",
+      "B": "Les voitures électriques, à pile à combustible et au gaz répondant à Euro 6.",
+      "C": "Toutes les voitures de trois ans maximum, quel que soit le carburant.",
+      "D": "Les hybrides rechargeables pouvant faire au moins 50 km en électrique."
+    },
+    "explanation": "La zone à faibles émissions de classe 3 est la plus exigeante. Seuls les véhicules les plus propres y sont admis : électriques, à hydrogène (pile à combustible) et au gaz (Euro 6)."
+  },
+  "kkalk-E-039": {
+    "stem": "Quelle est la fonction principale d'un pot catalytique ?",
+    "options": {
+      "A": "Épurer les gaz d'échappement de leurs substances nocives.",
+      "B": "Réduire la consommation de carburant de la voiture.",
+      "C": "Atténuer le bruit du moteur.",
+      "D": "Augmenter les performances et la puissance du moteur."
+    },
+    "explanation": "Le pot catalytique épure les gaz d'échappement. Il transforme la plupart des substances toxiques en dioxyde de carbone et en eau."
+  }
+}

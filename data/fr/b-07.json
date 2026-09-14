@@ -1,0 +1,252 @@
+{
+  "kkalk-M-220": {
+    "stem": "Quelle particularité physique des enfants leur rend plus difficile la détection d'un véhicule qui approche ?",
+    "options": {
+      "A": "Leur temps de réaction est plus long que celui des adultes.",
+      "B": "Une vision périphérique plus faible et une difficulté à localiser les sons.",
+      "C": "Leur acuité visuelle est moins bonne de loin.",
+      "D": "Ils ne perçoivent pas correctement la vitesse ni les distances."
+    },
+    "explanation": "L'enfant a un champ visuel plus étroit (vision périphérique plus faible) et distingue mal la direction d'où vient un son. Cela complique la détection des véhicules."
+  },
+  "kkalk-M-265": {
+    "stem": "Quelle est la mission la plus importante de ta vision périphérique au volant ?",
+    "options": {
+      "A": "Voir nettement les panneaux de loin.",
+      "B": "Juger la distance jusqu'à la voiture qui précède.",
+      "C": "Détecter les mouvements en bordure de ton champ visuel.",
+      "D": "Fixer le regard sur un point fixe."
+    },
+    "explanation": "La vision périphérique est spécialisée dans la perception du mouvement, ce qui te fait repérer vite un danger qui approche par le côté."
+  },
+  "kkalk-M-267": {
+    "stem": "Rester éveillé 24 heures pèse sur ton aptitude à conduire autant qu'un certain taux d'alcool. Lequel, approximativement ?",
+    "options": {
+      "A": "0,2 gramme par litre",
+      "B": "0,5 gramme par litre",
+      "C": "0,8 gramme par litre",
+      "D": "1,0 gramme par litre"
+    },
+    "explanation": "Après une journée sans sommeil, ta capacité de réaction et ton jugement sont aussi dégradés qu'avec environ 1,0 gramme d'alcool par litre de sang."
+  },
+  "kkalk-M-269": {
+    "stem": "À quelle distance repères-tu une personne vêtue de sombre sans réflecteur quand tu roules en feux de croisement dans l'obscurité ?",
+    "options": {
+      "A": "Environ 25 mètres",
+      "B": "Environ 60 mètres",
+      "C": "Environ 125 mètres",
+      "D": "Environ 150 mètres"
+    },
+    "explanation": "En feux de croisement, une personne en vêtements sombres sans réflecteur n'apparaît qu'à environ 25 mètres. Une personne portant des réflecteurs se voit en revanche dès 125 mètres."
+  },
+  "kkalk-M-271": {
+    "stem": "Ton aptitude à conduire après 18 heures sans sommeil correspond approximativement à quel taux d'alcool ?",
+    "options": {
+      "A": "Environ 0,2 gramme par litre",
+      "B": "Environ 0,5 gramme par litre",
+      "C": "Environ 0,8 gramme par litre",
+      "D": "Environ 1,0 gramme par litre"
+    },
+    "explanation": "Rester éveillé 18 heures d'affilée peut abaisser tes performances autant qu'un taux d'environ 0,5 gramme d'alcool par litre de sang."
+  },
+  "kkalk-M-272": {
+    "stem": "En dehors de la nuit, quand le risque d'une fatigue dangereuse au volant est-il le plus élevé ?",
+    "options": {
+      "A": "En début de matinée (9 h à 11 h)",
+      "B": "Juste après le déjeuner (12 h à 13 h)",
+      "C": "En fin d'après-midi (14 h à 16 h)",
+      "D": "En début de soirée (18 h à 20 h)"
+    },
+    "explanation": "L'horloge biologique du corps te rend naturellement fatigué l'après-midi. Après la nuit avancée, c'est le moment de la journée où se produisent le plus d'accidents liés à la fatigue."
+  },
+  "kkalk-M-274": {
+    "stem": "Combien de temps la vision nocturne peut-elle mettre à se rétablir complètement après un fort éblouissement ?",
+    "options": {
+      "A": "Environ une minute.",
+      "B": "Environ cinq minutes.",
+      "C": "Environ 15 minutes.",
+      "D": "Jusqu'à 30 minutes."
+    },
+    "explanation": "Même si la première récupération est rapide, l'œil peut mettre jusqu'à 30 minutes à retrouver toute sa vision nocturne."
+  },
+  "kkalk-M-275": {
+    "stem": "Quelle proportion de ton champ visuel relève de la vision périphérique ?",
+    "options": {
+      "A": "Environ 1 à 2 %",
+      "B": "Environ 50 %",
+      "C": "Environ 75 %",
+      "D": "Environ 98 à 99 %"
+    },
+    "explanation": "Ta vision nette directe ne représente que 1 à 2 % du champ visuel. Les 98 à 99 % restants sont la vision périphérique, décisive pour repérer les dangers de la circulation."
+  },
+  "kkalk-M-280": {
+    "stem": "Quel est un exemple de pression de groupe positive venant des passagers ?",
+    "options": {
+      "A": "Ils te poussent à dépasser la voiture qui précède.",
+      "B": "Ils te demandent de ralentir parce qu'il commence à pleuvoir.",
+      "C": "Ils estiment que la ceinture est inutile sur un trajet si court.",
+      "D": "Ils trouvent que tu devrais répondre au téléphone, cela semble important."
+    },
+    "explanation": "La pression de groupe positive, c'est quand les passagers t'encouragent à conduire plus prudemment, par exemple en suggérant de ralentir par mauvais temps."
+  },
+  "kkalk-R-001": {
+    "stem": "Tu roules en feux de croisement dans l'obscurité. À quelle distance repères-tu une personne vêtue de sombre sans réflecteur ?",
+    "options": {
+      "A": "Environ 25 mètres.",
+      "B": "Environ 60 mètres.",
+      "C": "Environ 125 mètres.",
+      "D": "Environ 450 mètres."
+    },
+    "explanation": "En feux de croisement, une personne en vêtements sombres sans réflecteur n'apparaît qu'à environ 25 mètres. Cela te laisse rarement le temps de t'arrêter."
+  },
+  "kkalk-R-002": {
+    "stem": "À quelle distance repères-tu un piéton en vêtements clairs quand tu roules en feux de croisement dans l'obscurité ?",
+    "options": {
+      "A": "Environ 25 mètres",
+      "B": "Environ 60 mètres",
+      "C": "Environ 125 mètres",
+      "D": "Environ 300 mètres"
+    },
+    "explanation": "En feux de croisement, tu vois une personne en vêtements clairs à environ 60 mètres. Le chiffre correspondant pour des vêtements sombres n'est que de 20 à 30 mètres."
+  },
+  "kkalk-R-003": {
+    "stem": "À quelle distance repères-tu un piéton portant un réflecteur quand tu roules de nuit en feux de route ?",
+    "options": {
+      "A": "Environ 60 mètres",
+      "B": "Environ 125 mètres",
+      "C": "Environ 300 mètres",
+      "D": "Environ 450 mètres"
+    },
+    "explanation": "Un réflecteur renvoie très efficacement la lumière des feux de route. Tu peux donc voir la personne dès environ 450 mètres."
+  },
+  "kkalk-R-004": {
+    "stem": "Tu croises une autre voiture dans l'obscurité. Où faut-il regarder pour ne pas être ébloui ?",
+    "options": {
+      "A": "Droit vers les phares de la voiture qui arrive.",
+      "B": "Loin devant, le long du bord droit de la route.",
+      "C": "Sur la chaussée juste devant ta voiture.",
+      "D": "Vers le tableau de bord et le compteur de vitesse."
+    },
+    "explanation": "Porte le regard loin devant, le long du bord droit. Cela réduit l'éblouissement venu du trafic opposé et t'aide à tenir une trajectoire stable."
+  },
+  "kkalk-R-005": {
+    "stem": "Combien de temps ta vision nocturne peut-elle mettre à se rétablir complètement après un fort éblouissement ?",
+    "options": {
+      "A": "Environ 10 secondes",
+      "B": "Environ une minute",
+      "C": "Environ cinq minutes",
+      "D": "Jusqu'à 30 minutes"
+    },
+    "explanation": "Même si la vue semble rétablie après une minute, l'œil peut mettre jusqu'à 30 minutes à se réadapter totalement à l'obscurité."
+  },
+  "kkalk-R-007": {
+    "stem": "Tu approches d'un sommet de côte dans l'obscurité. Comment utiliser tes feux pour rouler le plus sûrement possible ?",
+    "options": {
+      "A": "Passer en feux de croisement juste avant le sommet.",
+      "B": "Garder les feux de route jusqu'à voir un éventuel véhicule arriver.",
+      "C": "Passer en feux de croisement une fois au sommet.",
+      "D": "Faire des appels de phares répétés pour prévenir."
+    },
+    "explanation": "Passer en feux de croisement avant le sommet évite d'éblouir le trafic opposé. Cela permet aussi de repérer plus facilement la lueur de ses phares."
+  },
+  "kkalk-R-009": {
+    "stem": "À quel moment de la journée le risque de collision avec un animal sauvage est-il le plus élevé ?",
+    "options": {
+      "A": "En milieu de journée.",
+      "B": "Vers minuit.",
+      "C": "À l'aube et au crépuscule.",
+      "D": "Pendant l'heure de pointe du matin."
+    },
+    "explanation": "Le plus grand nombre de collisions avec la faune se produit au lever et à la tombée du jour. C'est à ce moment que beaucoup d'animaux sauvages, élans et chevreuils notamment, sont les plus actifs."
+  },
+  "kkalk-R-010": {
+    "stem": "Tu heurtes un chevreuil qui s'enfuit blessé. Quelle est ton obligation légale ?",
+    "options": {
+      "A": "Baliser le lieu et alerter immédiatement la police par le 112.",
+      "B": "Déclarer seulement les dégâts de ta voiture à ton assureur.",
+      "C": "Suivre l'animal pour voir s'il est gravement blessé.",
+      "D": "Signaler l'événement sur le site de la police dans les 24 heures."
+    },
+    "explanation": "Tu dois signaler l'accident sans délai à la police par le 112 et baliser le lieu. Cela aide les chasseurs de recherche à retrouver l'animal blessé."
+  },
+  "kkalk-R-011": {
+    "stem": "Un élan débouche devant toi et tu ne peux pas t'arrêter à temps. Comment orienter la voiture pour limiter les dégâts d'un choc inévitable ?",
+    "options": {
+      "A": "Vers l'arrière de l'élan.",
+      "B": "Vers l'avant de l'élan.",
+      "C": "Droit vers le milieu de l'élan.",
+      "D": "Vers le fossé du côté opposé de la route."
+    },
+    "explanation": "Un animal en mouvement continue presque toujours vers l'avant. Viser derrière lui augmente la chance qu'il s'écarte avant ton arrivée."
+  },
+  "kkalk-R-012": {
+    "stem": "Contre quoi des sacs plastique noirs fixés sur les jalons de déneigement avertissent-ils le plus souvent ?",
+    "options": {
+      "A": "Des rennes sur la route ou juste à côté.",
+      "B": "Une portion particulièrement glissante.",
+      "C": "L'endroit d'une collision récente avec un animal.",
+      "D": "La préparation d'un sablage ou d'un salage de la route."
+    },
+    "explanation": "C'est un avertissement informel, courant dans le nord de la Suède, signalant des rennes près de la route. Ralentis et conduis avec une grande prudence."
+  },
+  "kkalk-R-013": {
+    "stem": "Tu as heurté un animal. Dans quel cas faut-il contacter d'abord son propriétaire plutôt qu'alerter la police par le 112 ?",
+    "options": {
+      "A": "Quand tu as heurté un loup.",
+      "B": "Quand tu as heurté un chevreuil.",
+      "C": "Quand tu as heurté un chien.",
+      "D": "Quand tu as heurté un élan."
+    },
+    "explanation": "Les accidents avec la faune sauvage, élan, chevreuil ou loup, se signalent à la police par le 112. Si tu heurtes un animal domestique comme un chien, tu dois plutôt tenter de joindre son propriétaire."
+  },
+  "kkalk-R-014": {
+    "stem": "Pourquoi la route est-elle la plus glissante juste au début d'une pluie après une période sèche ?",
+    "options": {
+      "A": "La saleté et les résidus d'huile se mêlent à l'eau pour former une boue glissante.",
+      "B": "L'eau refroidit vite l'asphalte, ce qui réduit l'adhérence des pneus.",
+      "C": "La gomme des pneus devient dure et raide dès que la chaussée est mouillée.",
+      "D": "La fine pellicule d'eau rend le risque d'aquaplanage maximal."
+    },
+    "explanation": "L'huile et la saleté de la chaussée sèche sont dissoutes par les premières gouttes et forment un film savonneux très glissant. Après un moment de pluie, ce film est lavé."
+  },
+  "kkalk-R-015": {
+    "stem": "Qu'est-ce que l'aquaplanage sur neige fondante et dans quelle situation le risque est-il le plus élevé ?",
+    "options": {
+      "A": "Les roues patinent dans la neige molle quand tu démarres en côte.",
+      "B": "La distance de freinage s'allonge beaucoup sur neige bien tassée.",
+      "C": "La voiture glisse sur la neige fondante et perd sa direction, souvent lors d'un changement de voie.",
+      "D": "La route se couvre de glace invisible quand la température approche de zéro."
+    },
+    "explanation": "L'aquaplanage sur neige fondante survient quand les pneus perdent l'adhérence et glissent sur la couche de neige molle. Le risque est maximal au moment de franchir le bourrelet de neige fondante lors d'un changement de voie."
+  },
+  "kkalk-R-017": {
+    "stem": "Ta voiture se met soudain en aquaplanage à vitesse élevée. Quelle réaction immédiate est la plus dangereuse ?",
+    "options": {
+      "A": "Lâcher l'accélérateur et garder le volant immobile.",
+      "B": "Débrayer et laisser la voiture rouler en roue libre.",
+      "C": "Freiner fort et tourner le volant.",
+      "D": "Rétrograder pour utiliser le frein moteur."
+    },
+    "explanation": "Au moment où les pneus retrouvent l'adhérence, des roues bloquées ou braquées provoquent une perte de contrôle violente et incontrôlable."
+  },
+  "kkalk-R-018": {
+    "stem": "Dans quelle mesure le risque de mort d'un piéton augmente-t-il si la vitesse de choc passe de 30 km/h à 50 km/h ?",
+    "options": {
+      "A": "Il double, d'environ 10 % à 20 %.",
+      "B": "Il quadruple, d'environ 10 % à 40 %.",
+      "C": "Il est multiplié par huit, d'environ 10 % à 80 %.",
+      "D": "Il augmente à peine, grâce aux voitures modernes plus sûres."
+    },
+    "explanation": "À 50 km/h, la violence du choc est telle que la plupart des piétons meurent. À 30 km/h, la plupart survivent."
+  },
+  "kkalk-R-019": {
+    "stem": "Tu approches d'une personne âgée avec un déambulateur près d'un passage piéton. Pourquoi redoubler d'attention ?",
+    "options": {
+      "A": "Cette personne peut avoir du mal à juger ta vitesse et ta distance.",
+      "B": "Les personnes avec déambulateur ont toujours la priorité selon la loi.",
+      "C": "Le déambulateur peut faire qu'elle se déplace soudain très vite.",
+      "D": "Elle attend probablement un coup d'avertisseur de ta part pour traverser."
+    },
+    "explanation": "La capacité des personnes âgées à juger les distances et les vitesses est souvent diminuée. Leur équilibre, leur vue et leur audition peuvent aussi être moins bons, ce qui augmente le risque."
+  }
+}

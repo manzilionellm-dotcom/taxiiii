@@ -1,0 +1,252 @@
+{
+  "kkalk-V-242": {
+    "stem": "Quel est le principal danger de placer une charge lourde tout à l'arrière d'une remorque ?",
+    "options": {
+      "A": "La remorque appuie trop fort sur l'arrière de la voiture.",
+      "B": "Les roues arrière de la voiture perdent leur adhérence et l'attelage devient instable.",
+      "C": "La boule d'attelage et le châssis subissent une usure inutile.",
+      "D": "La consommation augmente plus qu'avec un chargement correct."
+    },
+    "explanation": "Une charge lourde placée derrière l'essieu de la remorque agit comme un levier qui soulève l'arrière de la voiture. L'appui sur les roues arrière diminue, l'adhérence se dégrade et tout l'attelage devient dangereusement instable."
+  },
+  "kkalk-V-243": {
+    "stem": "Que se passe-t-il si tu possèdes une voiture en circulation sans assurance responsabilité civile ?",
+    "options": {
+      "A": "Tu dois payer une redevance élevée à l'association des assureurs automobiles.",
+      "B": "Tu reçois un avertissement mais aucune redevance si la voiture n'est pas utilisée.",
+      "C": "La voiture est automatiquement retirée de la circulation au registre des véhicules.",
+      "D": "Ton permis est retiré en attendant que tu souscrives une assurance."
+    },
+    "explanation": "Tout véhicule à moteur en circulation doit avoir une assurance responsabilité civile. À défaut, l'association des assureurs prélève une redevance légale pour chaque jour non assuré."
+  },
+  "kkalk-V-244": {
+    "stem": "Pourquoi est-il essentiel d'utiliser du liquide lave-glace en hiver ?",
+    "options": {
+      "A": "Il dissout le sel et la saleté plus efficacement que l'eau.",
+      "B": "Il empêche les organes du circuit de lavage d'éclater sous l'effet du gel.",
+      "C": "Il combat la formation de glace sur la face extérieure du pare-brise.",
+      "D": "Il lubrifie les balais d'essuie-glace pour que le caoutchouc ne sèche pas."
+    },
+    "explanation": "Le liquide lave-glace contient un antigel qui abaisse le point de congélation. Cela empêche le liquide de geler et de faire éclater le réservoir, la pompe et les conduites."
+  },
+  "kkalk-V-245": {
+    "stem": "Que prévoient les nouvelles règles de contrôle technique de 2026 pour le système d'appel d'urgence eCall (bouton SOS) ?",
+    "options": {
+      "A": "Le système doit être installé après coup sur toutes les voitures qui en sont dépourvues.",
+      "B": "Le système doit être mis à niveau en 4G ou 5G pour être accepté.",
+      "C": "Un défaut du système n'est plus un motif de refus de la voiture.",
+      "D": "Un contrôle manuel du bouton est effectué pour s'assurer de son fonctionnement."
+    },
+    "explanation": "Comme les réseaux 2G et 3G ferment, le contrôle de l'eCall a été supprimé. Cela évite que les voitures dépendant de cette technologie soient refusées inutilement."
+  },
+  "kkalk-V-246": {
+    "stem": "Quand une voiture particulière entièrement neuve doit-elle passer son premier contrôle technique ?",
+    "options": {
+      "A": "14 mois au plus tard après sa mise en service.",
+      "B": "24 mois au plus tard après sa mise en service.",
+      "C": "36 mois au plus tard après sa mise en service.",
+      "D": "48 mois au plus tard après sa mise en service."
+    },
+    "explanation": "Une voiture neuve doit passer son premier contrôle au plus tard 36 mois (3 ans) après sa mise en service. Ensuite viennent 24 mois au plus tard, puis un contrôle tous les 14 mois."
+  },
+  "kkalk-V-247": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée pour un pneu été ?",
+    "options": {
+      "A": "1,0 mm",
+      "B": "1,6 mm",
+      "C": "3,0 mm",
+      "D": "5,0 mm"
+    },
+    "explanation": "La loi exige une profondeur de sculpture d'au moins 1,6 mm pour un pneu été. Pour un pneu hiver, la profondeur minimale autorisée est de 3,0 mm."
+  },
+  "kkalk-V-248": {
+    "stem": "Quelle profondeur de sculpture minimale tes pneus hiver doivent-ils avoir en conditions hivernales ?",
+    "options": {
+      "A": "1,6 mm",
+      "B": "5,0 mm",
+      "C": "9,0 mm",
+      "D": "3,0 mm"
+    },
+    "explanation": "En conditions hivernales, l'exigence légale est de 3,0 mm de profondeur de sculpture au minimum sur les pneus hiver. Le but est d'assurer une adhérence suffisante sur la neige et la glace."
+  },
+  "kkalk-V-249": {
+    "stem": "As-tu le droit de rouler avec les feux de brouillard et les feux de croisement allumés en même temps dans l'obscurité ?",
+    "options": {
+      "A": "Oui, s'il y a du brouillard ou de fortes précipitations.",
+      "B": "Oui, mais seulement à moins de 50 km/h.",
+      "C": "Non, cette combinaison d'éclairages n'est jamais autorisée.",
+      "D": "Non, sauf sur les routes dépourvues d'éclairage public."
+    },
+    "explanation": "La combinaison des feux de brouillard et des feux de croisement est interdite car elle éblouit le trafic venant en face. Tu peux utiliser les feux de brouillard à la place des feux de croisement, mais pas en même temps."
+  },
+  "kkalk-V-250": {
+    "stem": "Comment contrôler que l'assistance de freinage de la voiture fonctionne ?",
+    "options": {
+      "A": "Appuyer fort sur le frein en coupant le moteur.",
+      "B": "Pomper la pédale jusqu'à ce qu'elle soit ferme, maintenir la pression et démarrer le moteur.",
+      "C": "Rouler lentement et freiner avec le frein de stationnement.",
+      "D": "Maintenir le frein enfoncé et faire monter le moteur dans les tours au ralenti."
+    },
+    "explanation": "Au démarrage du moteur, la pédale doit s'enfoncer légèrement. Cela montre que le vide du moteur contribue à amplifier ta force de freinage, ce qui est précisément le rôle de l'assistance."
+  },
+  "kkalk-V-291": {
+    "stem": "Que se passe-t-il au contrôle technique si le témoin eCall de ta voiture est rouge ?",
+    "options": {
+      "A": "La voiture est immédiatement interdite de circuler.",
+      "B": "La voiture est refusée avec obligation de contrôle complémentaire.",
+      "C": "Tu reçois une injonction de réparation.",
+      "D": "La voiture est acceptée sans remarque sur ce point."
+    },
+    "explanation": "L'agence des transports a supprimé le contrôle de l'eCall. La fermeture des réseaux 2G et 3G peut faire s'allumer le témoin alors que le système lui-même est en bon état."
+  },
+  "kkalk-V-292": {
+    "stem": "Quel est le poids total autorisé maximal pour qu'une remorque soit toujours classée comme légère ?",
+    "options": {
+      "A": "500 kg",
+      "B": "750 kg",
+      "C": "1000 kg",
+      "D": "1250 kg"
+    },
+    "explanation": "Une remorque dont le poids total autorisé ne dépasse pas 750 kg compte toujours comme légère. Tu peux toujours en tirer une avec un permis B, à condition que la voiture soit homologuée pour cela."
+  },
+  "kkalk-V-293": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque si tu as un permis B96 ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 250 kg",
+      "C": "5 000 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec un permis B96 (B étendu), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. Pour un permis B ordinaire, la limite correspondante est de 3 500 kg."
+  },
+  "kkalk-V-294": {
+    "stem": "Quelle est la principale limite de l'assurance responsabilité civile obligatoire si tu causes toi-même un accident ?",
+    "options": {
+      "A": "Elle n'indemnise pas les dégâts du véhicule de la partie adverse.",
+      "B": "Elle n'indemnise pas tes propres dommages corporels.",
+      "C": "Elle n'indemnise pas les dégâts sur ton propre véhicule.",
+      "D": "Elle ne couvre pas les frais d'assistance juridique."
+    },
+    "explanation": "L'assurance responsabilité civile couvre les dommages que tu causes à autrui et à ses biens. Pour être indemnisé des dégâts sur ta propre voiture, il faut une garantie dommages au véhicule."
+  },
+  "kkalk-V-296": {
+    "stem": "Tu roules à 50 km/h sur chaussée sèche. Quelle est approximativement la distance de freinage ?",
+    "options": {
+      "A": "13 mètres",
+      "B": "25 mètres",
+      "C": "15 mètres",
+      "D": "50 mètres"
+    },
+    "explanation": "La règle empirique de la distance de freinage consiste à diviser la vitesse par dix, élever le résultat au carré puis diviser par deux. Le calcul donne (5 x 5) divisé par 2, soit 12,5 mètres."
+  },
+  "kkalk-V-297": {
+    "stem": "Tu roules à 90 km/h. Quelle est approximativement ta distance de réaction si le temps de réaction est d'une seconde ?",
+    "options": {
+      "A": "Environ 9 mètres",
+      "B": "Environ 25 mètres",
+      "C": "Environ 27 mètres",
+      "D": "Environ 45 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique simple consiste à prendre la vitesse, retirer le zéro et multiplier par trois. La distance de réaction en mètres est alors de 9 x 3, soit 27 mètres."
+  },
+  "kkalk-V-298": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée pour un pneu hiver en conditions hivernales ?",
+    "options": {
+      "A": "1,6 mm",
+      "B": "3,0 mm",
+      "C": "4,0 mm",
+      "D": "5,0 mm"
+    },
+    "explanation": "La loi exige au minimum 3,0 mm de profondeur de sculpture sur les pneus hiver en conditions hivernales, afin d'assurer une adhérence suffisante dans la neige et la neige fondante."
+  },
+  "kkalk-V-299": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée pour un pneu été ?",
+    "options": {
+      "A": "1,0 mm",
+      "B": "1,6 mm",
+      "C": "2,5 mm",
+      "D": "3,0 mm"
+    },
+    "explanation": "La loi exige que la profondeur de sculpture d'un pneu été soit d'au moins 1,6 mm. En dessous, le risque d'aquaplanage augmente nettement."
+  },
+  "kkalk-V-300": {
+    "stem": "Pendant quelle période l'usage des pneus cloutés est-il en règle générale interdit ?",
+    "options": {
+      "A": "Du 1er décembre au 31 mars",
+      "B": "Du 1er octobre au 15 avril",
+      "C": "Du 16 avril au 30 septembre",
+      "D": "Du 1er mai au 31 août"
+    },
+    "explanation": "L'interdiction des pneus cloutés court normalement du 16 avril au 30 septembre, pour limiter l'usure des chaussées et les rejets de particules hors conditions hivernales."
+  },
+  "kkalk-V-301": {
+    "stem": "Tu freines en urgence depuis 50 km/h sur une route asphaltée sèche. Quelle est approximativement la distance de freinage proprement dite ?",
+    "options": {
+      "A": "Environ 15 mètres",
+      "B": "Environ 25 mètres",
+      "C": "Environ 13 mètres",
+      "D": "Environ 40 mètres"
+    },
+    "explanation": "Moyen mnémotechnique de la distance de freinage sur chaussée sèche : prends le premier chiffre de la vitesse, multiplie-le par lui-même et divise par deux. (5 x 5) divisé par 2 donne 12,5."
+  },
+  "kkalk-V-303": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée sur un pneu été ?",
+    "options": {
+      "A": "1,0 mm",
+      "B": "1,6 mm",
+      "C": "2,5 mm",
+      "D": "3,0 mm"
+    },
+    "explanation": "La loi exige une profondeur de sculpture d'au moins 1,6 mm sur un pneu été. Pour un pneu hiver, l'exigence correspondante est de 3,0 mm."
+  },
+  "kkalk-V-304": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée pour un pneu hiver en conditions hivernales ?",
+    "options": {
+      "A": "1,6 mm",
+      "B": "3,0 mm",
+      "C": "4,0 mm",
+      "D": "5,0 mm"
+    },
+    "explanation": "En conditions hivernales, un pneu hiver doit avoir une profondeur de sculpture d'au moins 3,0 mm. Pour un pneu été, l'exigence est de 1,6 mm."
+  },
+  "kkalk-V-305": {
+    "stem": "Quand une voiture particulière neuve doit-elle au plus tard passer son tout premier contrôle technique ?",
+    "options": {
+      "A": "12 mois au plus tard après sa mise en circulation.",
+      "B": "24 mois au plus tard après sa mise en circulation.",
+      "C": "36 mois au plus tard après sa mise en circulation.",
+      "D": "48 mois au plus tard après sa mise en circulation."
+    },
+    "explanation": "Une voiture neuve doit passer son premier contrôle au plus tard 36 mois après sa mise en circulation. Le contrôle suivant a lieu 24 mois plus tard au plus tard."
+  },
+  "kkalk-V-306": {
+    "stem": "Quelle assurance indemnise les dégâts de carrosserie sur ta propre voiture si tu sors de la route ?",
+    "options": {
+      "A": "L'assurance responsabilité civile",
+      "B": "L'assurance intermédiaire",
+      "C": "L'assurance accidents corporels",
+      "D": "La garantie dommages au véhicule"
+    },
+    "explanation": "La garantie dommages au véhicule couvre les dégâts sur ta propre voiture après un accident de la circulation, un accident sans tiers par exemple. L'assurance responsabilité civile n'indemnise que les dommages aux personnes ou aux biens d'autrui."
+  },
+  "kkalk-V-307": {
+    "stem": "Quand une remorque compte-t-elle toujours comme légère ?",
+    "options": {
+      "A": "Quand son poids total autorisé ne dépasse pas 500 kg.",
+      "B": "Quand son poids total autorisé ne dépasse pas 750 kg.",
+      "C": "Quand son poids à vide ne dépasse pas 500 kg.",
+      "D": "Quand son poids à vide ne dépasse pas 750 kg."
+    },
+    "explanation": "Une remorque dont le poids total autorisé ne dépasse pas 750 kg compte toujours comme légère. C'est le poids total autorisé, et non le poids à vide, qui est ici déterminant."
+  },
+  "kkalk-V-310": {
+    "stem": "Comment vérifier simplement que la direction assistée fonctionne ?",
+    "options": {
+      "A": "Comparer la résistance du volant juste avant et juste après le démarrage du moteur.",
+      "B": "Vérifier que le niveau d'huile de direction est entre le minimum et le maximum.",
+      "C": "Rouler à faible vitesse et écouter les bruits anormaux à plein braquage.",
+      "D": "Veiller à ce que les pneus avant aient la pression recommandée."
+    },
+    "explanation": "La direction assistée n'est active que moteur tournant. La différence de résistance du volant avant et après le démarrage montre clairement si elle fonctionne."
+  }
+}

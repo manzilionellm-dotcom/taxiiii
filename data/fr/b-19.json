@@ -1,0 +1,252 @@
+{
+  "kkalk-T-295": {
+    "stem": "Quand as-tu le droit de dépasser un autre véhicule par la droite ?",
+    "options": {
+      "A": "Sur toutes les routes limitées à 70 km/h ou moins.",
+      "B": "Si la limitation est de 70 km/h au plus et que la route compte au moins deux voies dans le même sens.",
+      "C": "Sur toutes les routes comptant au moins deux voies marquées dans ton sens de marche.",
+      "D": "Seulement si le véhicule de la voie de gauche roule plus lentement que la vitesse autorisée."
+    },
+    "explanation": "Le dépassement par la droite est autorisé si la limitation est de 70 km/h ou moins et qu'il existe au moins deux voies marquées dans le même sens."
+  },
+  "kkalk-T-296": {
+    "stem": "Tu es en tête à un feu rouge quand une ambulance toutes sirènes approche par l'arrière. Que fais-tu ?",
+    "options": {
+      "A": "J'attends sur place, puisqu'il est interdit de franchir un feu rouge.",
+      "B": "J'avance ou je me décale prudemment pour dégager le passage.",
+      "C": "J'allume les feux de détresse pour montrer que j'ai vu l'ambulance.",
+      "D": "Je recule vite pour créer un espace dans la voie derrière moi."
+    },
+    "explanation": "Tu as l'obligation de dégager le passage à un véhicule d'intervention. Si nécessaire, tu peux franchir prudemment le feu rouge ou monter sur un refuge."
+  },
+  "kkalk-T-298": {
+    "stem": "Qu'est-ce que le principe dit de la fermeture éclair ?",
+    "options": {
+      "A": "Que les conducteurs de la voie de droite doivent céder le passage à ceux de la voie de gauche.",
+      "B": "Que les conducteurs de deux voies s'insèrent à tour de rôle dans une voie commune.",
+      "C": "Que le conducteur qui roule le plus vite a la priorité quand deux voies fusionnent.",
+      "D": "Que les autobus de ligne ont toujours la priorité pour quitter un arrêt."
+    },
+    "explanation": "Le principe de la fermeture éclair veut que les conducteurs fassent preuve d'égards mutuels. Quand deux voies n'en font plus qu'une, ils doivent s'adapter et s'insérer alternativement depuis chaque file."
+  },
+  "kkalk-T-299": {
+    "stem": "Tu es photographié par un radar en roulant à 83 km/h sur une route limitée à 70. À combien s'élève l'amende ?",
+    "options": {
+      "A": "1 500 kr",
+      "B": "2 000 kr",
+      "C": "2 400 kr",
+      "D": "3 200 kr"
+    },
+    "explanation": "Un excès de 11 à 15 km/h sur une route limitée à 50 km/h ou plus coûte 2 000 couronnes d'amende."
+  },
+  "kkalk-T-300": {
+    "stem": "Quelle est la distance minimale entre ta voiture stationnée et une ligne médiane continue ?",
+    "options": {
+      "A": "1,5 mètre.",
+      "B": "2,0 mètres.",
+      "C": "3,0 mètres.",
+      "D": "Aucune exigence de distance particulière n'existe."
+    },
+    "explanation": "La distance doit être de 3 mètres au minimum, afin que les autres véhicules puissent passer en sûreté sans être contraints de franchir la ligne continue."
+  },
+  "kkalk-V-011": {
+    "stem": "Ta voiture a un poids total autorisé de 2400 kg. Quelle remorque peux-tu tirer avec un permis B ?",
+    "options": {
+      "A": "Une remorque de 1200 kg de poids total autorisé.",
+      "B": "Une remorque de 1300 kg de poids total autorisé.",
+      "C": "Une remorque de 1100 kg de poids total autorisé.",
+      "D": "Une remorque de 1500 kg de poids total autorisé."
+    },
+    "explanation": "Avec un permis B, le poids total autorisé cumulé de la voiture et de la remorque ne peut pas dépasser 3500 kg. Le total autorisé de la voiture (2400 kg) plus celui de la remorque (1100 kg) donne exactement 3500 kg."
+  },
+  "kkalk-V-014": {
+    "stem": "Quel éclairage n'est pas une obligation légale sur une voiture particulière ?",
+    "options": {
+      "A": "L'éclairage de la plaque",
+      "B": "Le feu de brouillard arrière",
+      "C": "Le feu de recul",
+      "D": "Les clignotants"
+    },
+    "explanation": "Le feu de recul est le seul éclairage de cette liste qui ne soit pas une obligation légale. Tous les autres doivent être présents et fonctionner."
+  },
+  "kkalk-V-015": {
+    "stem": "Quel jeu convient pour une courroie d'entraînement quand tu appuies dessus ?",
+    "options": {
+      "A": "Environ 0,5 cm.",
+      "B": "Environ 1 cm.",
+      "C": "Environ 2 cm.",
+      "D": "Environ 3 cm."
+    },
+    "explanation": "La courroie doit avoir un jeu d'environ 1 cm. Une courroie trop détendue peut patiner, tandis qu'une courroie trop tendue risque d'abîmer les paliers du moteur."
+  },
+  "kkalk-V-017": {
+    "stem": "Ta pédale de frein est spongieuse et s'enfonce lentement quand tu appuies. Quelle en est la cause la plus probable ?",
+    "options": {
+      "A": "Les garnitures de frein sont totalement usées.",
+      "B": "De l'air est entré dans le circuit de freinage.",
+      "C": "L'assistance de freinage a cessé de fonctionner.",
+      "D": "Il y a trop peu de liquide de frein dans le réservoir."
+    },
+    "explanation": "L'air se comprime, contrairement au liquide de frein. C'est lui qui rend la pédale spongieuse au lieu de ferme et directe."
+  },
+  "kkalk-V-019": {
+    "stem": "Comment vérifier que le frein de stationnement a une efficacité suffisante ?",
+    "options": {
+      "A": "Le serrer et tenter prudemment de démarrer sur un rapport bas.",
+      "B": "Descendre lentement une pente en le serrant progressivement.",
+      "C": "Vérifier que son témoin s'allume au tableau de bord.",
+      "D": "Veiller à pouvoir serrer le levier jusqu'à mi-course environ."
+    },
+    "explanation": "Tu dois vérifier l'efficacité mécanique du frein. Cela se fait en laissant la force du moteur s'opposer à un frein serré."
+  },
+  "kkalk-V-020": {
+    "stem": "Qu'est-ce qui vaut toujours pour une remorque considérée comme légère et que tu peux tirer avec un permis B ?",
+    "options": {
+      "A": "Son poids total autorisé est de 750 kg au plus.",
+      "B": "Son poids à vide est de 750 kg au plus.",
+      "C": "Son poids brut est de 750 kg au plus.",
+      "D": "Son poids total autorisé ne peut pas dépasser le poids à vide de la voiture."
+    },
+    "explanation": "Une remorque dont le poids total autorisé ne dépasse pas 750 kg compte toujours comme légère. Tu peux toujours en tirer une avec un permis B, du moment que la voiture est homologuée pour cela."
+  },
+  "kkalk-V-021": {
+    "stem": "Une voiture particulière a six ans. Quel délai maximal peut s'écouler entre deux contrôles techniques ?",
+    "options": {
+      "A": "12 mois au plus.",
+      "B": "14 mois au plus.",
+      "C": "24 mois au plus.",
+      "D": "Cela dépend du dernier chiffre de la plaque d'immatriculation."
+    },
+    "explanation": "Après le deuxième contrôle de la voiture, qui a lieu à ses cinq ans, elle doit repasser au contrôle au plus tard 14 mois après le précédent."
+  },
+  "kkalk-V-022": {
+    "stem": "Quelle assurance indemnise les dégâts sur ta propre voiture après un accident sans tiers ?",
+    "options": {
+      "A": "L'assurance responsabilité civile",
+      "B": "L'assurance intermédiaire",
+      "C": "L'assurance tous risques",
+      "D": "La garantie carrosserie du constructeur"
+    },
+    "explanation": "L'assurance tous risques comprend la garantie dommages au véhicule. C'est cette partie qui couvre les dégâts sur ta propre voiture lors d'un accident sans tiers."
+  },
+  "kkalk-V-026": {
+    "stem": "Quel est le niveau d'assurance le plus bas qui couvre normalement le vol par effraction et un vitrage brisé ?",
+    "options": {
+      "A": "L'assurance responsabilité civile",
+      "B": "L'assurance intermédiaire",
+      "C": "L'assurance tous risques",
+      "D": "L'assurance vol"
+    },
+    "explanation": "L'assurance intermédiaire est le niveau le plus bas qui indemnise les dommages de vol et de vitrage. La responsabilité civile ne couvre que les dommages que tu causes à autrui ou à ses biens."
+  },
+  "kkalk-V-027": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque avec la mention B96 ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 250 kg",
+      "C": "5 000 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec le permis B étendu (B96), le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 4 250 kg au maximum. Pour un permis B ordinaire, la limite est de 3 500 kg."
+  },
+  "kkalk-V-028": {
+    "stem": "Ta voiture est frappée d'une interdiction de circuler. Quand as-tu le droit de la conduire ?",
+    "options": {
+      "A": "Jamais, elle doit être remorquée ou chargée sur une remorque.",
+      "B": "Pour essayer dans le quartier une réparation que tu as faite toi-même.",
+      "C": "Seulement par le chemin le plus court et adapté vers un garage ou un centre de contrôle.",
+      "D": "Jusqu'à la station-service la plus proche pour vérifier la pression des pneus."
+    },
+    "explanation": "Une voiture interdite de circuler ne peut être conduite que par le chemin le plus court et le plus adapté vers un garage pour réparation et vers un centre de contrôle technique."
+  },
+  "kkalk-V-029": {
+    "stem": "Tu roules à 70 km/h sur asphalte sec. Quelle est approximativement la distance de freinage ?",
+    "options": {
+      "A": "Environ 25 mètres",
+      "B": "Environ 35 mètres",
+      "C": "Environ 49 mètres",
+      "D": "Environ 70 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique pour la distance de freinage sur route sèche consiste à diviser la vitesse par dix, élever le résultat au carré, puis diviser par deux. Cela donne (7 x 7) divisé par 2, soit environ 25 mètres."
+  },
+  "kkalk-V-030": {
+    "stem": "Quel est un temps de réaction normal dans la circulation pour un conducteur bien éveillé ?",
+    "options": {
+      "A": "0,1 à 0,4 seconde",
+      "B": "0,5 à 2,0 secondes",
+      "C": "2,5 à 4,0 secondes",
+      "D": "Plus de 4 secondes"
+    },
+    "explanation": "Le temps de réaction est le délai entre le moment où tu repères un danger et celui où tu commences à freiner. Chez un conducteur bien éveillé, il se situe normalement entre 0,5 et 2 secondes."
+  },
+  "kkalk-V-031": {
+    "stem": "Tu roules à 90 km/h. Quelle est approximativement ta distance de réaction pendant une seconde ?",
+    "options": {
+      "A": "9 mètres",
+      "B": "18 mètres",
+      "C": "25 mètres",
+      "D": "27 mètres"
+    },
+    "explanation": "Applique le moyen mnémotechnique de la distance de réaction : retire le dernier zéro de la vitesse et multiplie par 3. Le calcul donne 9 x 3, soit 27 mètres."
+  },
+  "kkalk-V-032": {
+    "stem": "Que vérifies-tu en tirant vite et fort sur la ceinture de sécurité ?",
+    "options": {
+      "A": "Que la ceinture n'a aucun dommage visible.",
+      "B": "Que la ceinture s'enroule souplement dans l'enrouleur.",
+      "C": "Que la fonction de blocage de l'enrouleur fonctionne.",
+      "D": "Que la boucle s'encliquette correctement."
+    },
+    "explanation": "Une traction brusque simule la force d'un choc. La ceinture doit alors se bloquer immédiatement pour pouvoir retenir le corps."
+  },
+  "kkalk-V-033": {
+    "stem": "Qu'est-ce qui caractérise un tracteur de catégorie a en matière de plaque et de vitesse par construction ?",
+    "options": {
+      "A": "Il porte un panneau de véhicule lent et est conçu pour 40 km/h au plus.",
+      "B": "Il porte un panneau de véhicule lent et est conçu pour 30 km/h au plus.",
+      "C": "Il porte une plaque d'immatriculation et est conçu pour 50 km/h au plus.",
+      "D": "Il porte une plaque d'immatriculation et est conçu pour 60 km/h au plus."
+    },
+    "explanation": "Un tracteur de catégorie a est conçu pour une vitesse maximale de 40 km/h et doit porter, en circulation sur route, un panneau signalant un véhicule lent."
+  },
+  "kkalk-V-038": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque avec un permis B ordinaire ?",
+    "options": {
+      "A": "2 500 kg",
+      "B": "3 500 kg",
+      "C": "4 250 kg",
+      "D": "7 000 kg"
+    },
+    "explanation": "Avec un permis B, le poids total autorisé cumulé de la voiture et de la remorque peut atteindre 3 500 kg au maximum. Un attelage plus lourd exige le permis B étendu (4 250 kg) ou le permis BE."
+  },
+  "kkalk-V-039": {
+    "stem": "Tu recules dans un arbre avec ta voiture. Quelle assurance indemnise les dégâts sur ta propre voiture ?",
+    "options": {
+      "A": "L'assurance responsabilité civile",
+      "B": "L'assurance intermédiaire",
+      "C": "L'assurance tous risques",
+      "D": "L'assurance bris de machine"
+    },
+    "explanation": "La garantie dommages au véhicule, comprise dans l'assurance tous risques, indemnise les dégâts sur ta propre voiture lors d'un accident sans tiers."
+  },
+  "kkalk-V-040": {
+    "stem": "Quand une voiture particulière entièrement neuve doit-elle passer son tout premier contrôle technique ?",
+    "options": {
+      "A": "12 mois au plus tard après sa mise en circulation.",
+      "B": "24 mois au plus tard après sa mise en circulation.",
+      "C": "36 mois au plus tard après sa mise en circulation.",
+      "D": "48 mois au plus tard après sa mise en circulation."
+    },
+    "explanation": "Une voiture particulière neuve doit passer son premier contrôle au plus tard 36 mois après sa mise en circulation. Elle doit ensuite repasser au contrôle 24 mois plus tard au plus tard."
+  },
+  "kkalk-V-041": {
+    "stem": "Le système d'appel d'urgence eCall de ta voiture signale un défaut. Que prévoit le contrôle technique à partir de 2026 ?",
+    "options": {
+      "A": "La voiture est interdite de circuler si le défaut n'est pas réparé au plus vite.",
+      "B": "Le défaut n'est plus une remarque exigeant une réparation.",
+      "C": "Tu reçois une remarque, mais sans obligation de repasser au contrôle.",
+      "D": "Le système doit être mis à niveau selon une nouvelle norme 4G ou 5G."
+    },
+    "explanation": "Comme les réseaux 2G et 3G sont mis hors service, beaucoup de systèmes eCall cesseront de fonctionner. L'exigence est donc retirée des règles de contrôle afin d'éviter des remarques inutiles."
+  }
+}

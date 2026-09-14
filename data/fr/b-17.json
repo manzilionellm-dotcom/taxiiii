@@ -1,0 +1,252 @@
+{
+  "kkalk-T-129": {
+    "stem": "À quelle distance d'un passage à niveau est-il interdit de s'arrêter et de stationner ?",
+    "options": {
+      "A": "Dans les 10 mètres du passage",
+      "B": "Dans les 20 mètres du passage",
+      "C": "Dans les 30 mètres du passage",
+      "D": "Dans les 50 mètres du passage"
+    },
+    "explanation": "L'interdiction garantit une visibilité dégagée pour que le conducteur du train et toi vous repériez à temps. La distance est de 30 mètres avant et après le passage."
+  },
+  "kkalk-T-130": {
+    "stem": "Tu t'arrêtes au bord de la route près d'une ligne continue. Quelle largeur minimale doit avoir l'écart entre ta voiture et la ligne ?",
+    "options": {
+      "A": "2,0 mètres",
+      "B": "2,5 mètres",
+      "C": "3,0 mètres",
+      "D": "Cela dépend de la largeur de la route."
+    },
+    "explanation": "L'écart doit mesurer au moins 3 mètres pour que les véhicules ordinaires, autobus et camions compris, puissent passer sans franchir la ligne."
+  },
+  "kkalk-T-131": {
+    "stem": "Tu roules sur une route prioritaire. As-tu le droit de t'arrêter sur le bord pour déposer un passager ?",
+    "options": {
+      "A": "Oui, un arrêt bref pour la montée ou la descente est autorisé.",
+      "B": "Non, puisqu'une interdiction de stationner s'applique sur route prioritaire.",
+      "C": "Non, tout arrêt est interdit sauf cas d'urgence.",
+      "D": "Oui, mais seulement si tu ne coupes pas le moteur."
+    },
+    "explanation": "Une interdiction de stationner s'applique sur route prioritaire, mais l'arrêt pour la montée et la descente reste toujours autorisé tant qu'il peut se faire en sûreté."
+  },
+  "kkalk-T-136": {
+    "stem": "Tu t'arrêtes sur une route avec une ligne médiane continue. Quelle distance minimale dois-tu laisser entre la voiture et la ligne ?",
+    "options": {
+      "A": "2,0 mètres",
+      "B": "2,5 mètres",
+      "C": "3,0 mètres",
+      "D": "4,0 mètres"
+    },
+    "explanation": "La distance doit être de 3 mètres au minimum, puisque les autres conducteurs ne peuvent pas franchir une ligne continue pour te dépasser."
+  },
+  "kkalk-T-137": {
+    "stem": "Quelle vitesse de base s'applique sur une route de campagne hors zone agglomérée en l'absence de signalisation ?",
+    "options": {
+      "A": "50 km/h",
+      "B": "70 km/h",
+      "C": "90 km/h",
+      "D": "110 km/h"
+    },
+    "explanation": "La vitesse de base est de 70 km/h hors zone agglomérée. En zone agglomérée, la vitesse correspondante est de 50 km/h."
+  },
+  "kkalk-T-138": {
+    "stem": "Tu viens juste de dépasser un passage piéton. As-tu le droit de stationner immédiatement après ?",
+    "options": {
+      "A": "Oui, aucune règle de distance ne s'applique après.",
+      "B": "Non, la règle des 10 mètres vaut des deux côtés.",
+      "C": "Oui, mais tu dois laisser un écart de 5 mètres.",
+      "D": "Non, tu ne peux t'y arrêter que pour laisser descendre quelqu'un."
+    },
+    "explanation": "L'interdiction de s'arrêter et de stationner porte sur les 10 mètres qui précèdent un passage piéton, pas sur ceux qui le suivent. La règle existe pour qu'une voiture stationnée ne masque pas la visibilité."
+  },
+  "kkalk-T-141": {
+    "stem": "Tu es mesuré à 83 km/h sur une route limitée à 70. À combien s'élève l'amende ?",
+    "options": {
+      "A": "1 500 kr",
+      "B": "2 000 kr",
+      "C": "2 400 kr",
+      "D": "2 800 kr"
+    },
+    "explanation": "Sur les routes limitées à plus de 50 km/h, l'amende est de 2 000 couronnes pour un excès de 11 à 15 km/h."
+  },
+  "kkalk-T-142": {
+    "stem": "Quelle interdiction de s'arrêter et de stationner s'applique à un arrêt de bus sans marquage au sol ?",
+    "options": {
+      "A": "Interdiction 10 mètres avant et 10 mètres après le panneau.",
+      "B": "Interdiction 20 mètres avant et 5 mètres après le panneau.",
+      "C": "Interdiction 5 mètres avant et 20 mètres après le panneau.",
+      "D": "Interdiction 20 mètres avant et 20 mètres après le panneau."
+    },
+    "explanation": "La règle donne au bus assez de place pour se ranger le long du bord puis quitter l'arrêt en sûreté."
+  },
+  "kkalk-T-145": {
+    "stem": "Quelle distance minimale dois-tu respecter en t'arrêtant ou en stationnant près d'un passage à niveau ?",
+    "options": {
+      "A": "10 mètres",
+      "B": "20 mètres",
+      "C": "30 mètres",
+      "D": "50 mètres"
+    },
+    "explanation": "Tu ne peux ni t'arrêter ni stationner à moins de 30 mètres d'un passage à niveau. La règle garantit une visibilité dégagée et la bonne visibilité des dispositifs d'avertissement."
+  },
+  "kkalk-T-155": {
+    "stem": "À combien s'élève l'amende pour avoir franchi un feu rouge en voiture ?",
+    "options": {
+      "A": "2 000 kr",
+      "B": "2 500 kr",
+      "C": "3 000 kr",
+      "D": "4 000 kr"
+    },
+    "explanation": "Franchir un feu rouge coûte 3 000 couronnes d'amende. C'est une infraction grave qui peut aussi conduire au retrait du permis."
+  },
+  "kkalk-T-156": {
+    "stem": "Quelle est la vitesse maximale autorisée dans une rue cyclable ?",
+    "options": {
+      "A": "L'allure du pas",
+      "B": "20 km/h",
+      "C": "30 km/h",
+      "D": "50 km/h"
+    },
+    "explanation": "La vitesse maximale autorisée dans une rue cyclable est de 30 km/h. Tu dois en outre adapter ta vitesse à la circulation des vélos."
+  },
+  "kkalk-T-157": {
+    "stem": "Tu approches d'une traversée cyclable prioritaire et tu vois un cycliste sur le point de s'y engager. Quelle règle s'applique ?",
+    "options": {
+      "A": "Le cycliste doit céder le passage, puisque tu roules sur une route prioritaire.",
+      "B": "Tu dois céder le passage au cycliste.",
+      "C": "La priorité à droite s'applique entre le cycliste et toi.",
+      "D": "Celui qui atteint la traversée le premier a la priorité."
+    },
+    "explanation": "À une traversée cyclable prioritaire, l'automobiliste doit céder le passage aux cyclistes qui s'y engagent ou s'y trouvent déjà."
+  },
+  "kkalk-T-158": {
+    "stem": "Tu entres dans une zone de rencontre. Où as-tu le droit de stationner ?",
+    "options": {
+      "A": "Le long du côté droit dans le sens de la marche.",
+      "B": "Seulement sur des emplacements de stationnement aménagés.",
+      "C": "Le stationnement est interdit dans toute la zone.",
+      "D": "10 minutes au plus, pour charger et décharger."
+    },
+    "explanation": "Dans une zone de rencontre, le stationnement est interdit par principe. Tu ne peux stationner que sur les emplacements clairement marqués comme tels."
+  },
+  "kkalk-T-159": {
+    "stem": "Tu veux stationner près d'un passage à niveau. Quelle distance minimale dois-tu respecter ?",
+    "options": {
+      "A": "10 mètres.",
+      "B": "20 mètres.",
+      "C": "30 mètres.",
+      "D": "Juste à l'extérieur des barrières."
+    },
+    "explanation": "L'interdiction de s'arrêter et de stationner vaut 30 mètres avant et après un passage à niveau. La règle sert à garantir une visibilité dégagée sur la zone des voies."
+  },
+  "kkalk-T-160": {
+    "stem": "Où as-tu le droit de stationner par rapport à un passage piéton non réglementé ?",
+    "options": {
+      "A": "Pas à moins de 10 mètres avant, mais juste après c'est possible.",
+      "B": "Pas à moins de 10 mètres avant ni après.",
+      "C": "Pas à moins de 5 mètres avant ni après.",
+      "D": "Juste avant, mais pas à moins de 10 mètres après."
+    },
+    "explanation": "Tu ne peux ni t'arrêter ni stationner dans les 10 mètres qui précèdent un passage piéton, afin de ne pas masquer la visibilité. L'interdiction ne porte pas sur la portion qui le suit."
+  },
+  "kkalk-T-161": {
+    "stem": "Quelle est la vitesse de base sur une route de campagne hors zone agglomérée ?",
+    "options": {
+      "A": "50 km/h",
+      "B": "70 km/h",
+      "C": "90 km/h",
+      "D": "110 km/h"
+    },
+    "explanation": "La vitesse de base hors zone agglomérée est de 70 km/h. Cette limite s'applique en l'absence de tout autre panneau de vitesse."
+  },
+  "kkalk-T-163": {
+    "stem": "Tu veux t'arrêter ou stationner près d'une ligne continue. Quelle est la distance minimale autorisée entre la voiture et la ligne ?",
+    "options": {
+      "A": "Aucune exigence de distance, du moment que la voiture reste en deçà de la ligne.",
+      "B": "1,5 mètre.",
+      "C": "3 mètres.",
+      "D": "10 mètres."
+    },
+    "explanation": "La distance doit être de 3 mètres au minimum. Les autres véhicules peuvent ainsi te dépasser en sûreté sans enfreindre la loi en franchissant la ligne."
+  },
+  "kkalk-T-164": {
+    "stem": "Un véhicule d'intervention approche, sirènes et gyrophares en marche. Tu as le feu vert. Quelle règle s'applique ?",
+    "options": {
+      "A": "J'ai le feu vert, donc le droit de passer le premier.",
+      "B": "Je m'arrête immédiatement, quelle que soit ma position dans l'intersection.",
+      "C": "Je dois dégager le passage au véhicule d'intervention.",
+      "D": "Je continue tout droit mais je ralentis."
+    },
+    "explanation": "Tu es tenu de dégager le passage à un véhicule d'intervention. Cette obligation prime sur toutes les autres règles et signaux de circulation."
+  },
+  "kkalk-T-165": {
+    "stem": "À combien s'élève l'amende si tu roules à 82 km/h sur une route limitée à 70 ?",
+    "options": {
+      "A": "1 000 kr",
+      "B": "1 500 kr",
+      "C": "2 000 kr",
+      "D": "2 400 kr"
+    },
+    "explanation": "L'amende pour un excès de 11 à 15 km/h sur une route limitée à plus de 50 km/h est de 2 000 couronnes."
+  },
+  "kkalk-T-166": {
+    "stem": "Tu roules à 82 km/h sur une route limitée à 70. À combien s'élève l'amende pour cet excès de vitesse ?",
+    "options": {
+      "A": "1 500 kr",
+      "B": "2 000 kr",
+      "C": "2 400 kr",
+      "D": "2 800 kr"
+    },
+    "explanation": "L'amende pour un excès de 11 à 15 km/h sur une route limitée à plus de 50 km/h est de 2 000 couronnes."
+  },
+  "kkalk-T-167": {
+    "stem": "À combien s'élève l'amende pour avoir franchi un feu rouge ?",
+    "options": {
+      "A": "2 000 kr",
+      "B": "2 500 kr",
+      "C": "3 000 kr",
+      "D": "4 000 kr"
+    },
+    "explanation": "Franchir un feu rouge coûte 3 000 couronnes d'amende. L'infraction est considérée comme grave car elle comporte un risque d'accident élevé."
+  },
+  "kkalk-T-169": {
+    "stem": "Quelle distance minimale dois-tu respecter par rapport à un passage à niveau quand tu stationnes ?",
+    "options": {
+      "A": "10 mètres",
+      "B": "20 mètres",
+      "C": "30 mètres",
+      "D": "50 mètres"
+    },
+    "explanation": "L'interdiction de stationner vaut 30 mètres avant et après un passage à niveau. La règle existe pour ne pas masquer la visibilité ni les dispositifs d'avertissement."
+  },
+  "kkalk-T-170": {
+    "stem": "Quelle distance l'interdiction de stationner couvre-t-elle près d'un arrêt de bus quand aucune ligne jaune n'est peinte sur la chaussée ?",
+    "options": {
+      "A": "10 mètres avant et 10 mètres après le panneau.",
+      "B": "20 mètres avant et 5 mètres après le panneau.",
+      "C": "5 mètres avant et 20 mètres après le panneau.",
+      "D": "20 mètres avant et 20 mètres après le panneau."
+    },
+    "explanation": "L'interdiction donne au bus assez de place pour se ranger à l'arrêt (20 m) puis le quitter en sûreté (5 m)."
+  },
+  "kkalk-T-172": {
+    "stem": "Où as-tu le droit de stationner ton véhicule dans une zone de rencontre ?",
+    "options": {
+      "A": "Le long du côté droit de la rue, dans le sens de la marche.",
+      "B": "Nulle part, le stationnement y est toujours interdit.",
+      "C": "Seulement sur des emplacements de stationnement aménagés.",
+      "D": "Où tu veux, du moment que tu ne constitues pas un obstacle."
+    },
+    "explanation": "Dans une zone de rencontre, le stationnement est interdit, sauf sur les emplacements marqués. La règle existe pour protéger les piétons et libérer de l'espace."
+  },
+  "kkalk-T-173": {
+    "stem": "Tu quittes une zone agglomérée. Quelle est la vitesse maximale autorisée si aucun nouveau panneau n'est présent ?",
+    "options": {
+      "A": "50 km/h",
+      "B": "70 km/h",
+      "C": "80 km/h",
+      "D": "90 km/h"
+    },
+    "explanation": "La vitesse de base est de 70 km/h hors zone agglomérée. Elle s'applique quand aucune autre limitation n'est indiquée par un panneau."
+  }
+}

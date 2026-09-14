@@ -1,0 +1,252 @@
+{
+  "kkalk-V-044": {
+    "stem": "Tu roules à 70 km/h. Quelle est ta distance de réaction approximative ?",
+    "options": {
+      "A": "Environ 14 mètres",
+      "B": "Environ 21 mètres",
+      "C": "Environ 49 mètres",
+      "D": "Environ 70 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique simple consiste à multiplier par trois le premier chiffre de la vitesse. À 70 km/h, la distance de réaction est donc de 7 x 3, soit 21 mètres."
+  },
+  "kkalk-V-047": {
+    "stem": "La visibilité se dégrade fortement à cause de la pluie en plein jour. Quel éclairage dois-tu utiliser ?",
+    "options": {
+      "A": "Les feux de jour",
+      "B": "Les feux de croisement",
+      "C": "Les feux de route",
+      "D": "Le feu de brouillard arrière"
+    },
+    "explanation": "Par visibilité réduite, sous la pluie par exemple, tu dois allumer les feux de croisement. Tu vois ainsi et les autres usagers te voient, puisque les feux arrière s'allument également."
+  },
+  "kkalk-V-048": {
+    "stem": "Ta voiture commence à faire de l'aquaplanage. Quelle action est la plus dangereuse ?",
+    "options": {
+      "A": "Freiner fort ou donner un coup de volant brusque.",
+      "B": "Lâcher complètement l'accélérateur puis débrayer.",
+      "C": "Rétrograder pour utiliser le frein moteur.",
+      "D": "Accélérer prudemment pour en sortir."
+    },
+    "explanation": "En aquaplanage, les pneus n'ont plus de contact avec la route. Un freinage ou un mouvement de volant soudain peut provoquer un violent dérapage au moment où ils retrouvent l'adhérence."
+  },
+  "kkalk-V-049": {
+    "stem": "Comment appelle-t-on le poids réel de la voiture avec le conducteur, les passagers et le chargement ?",
+    "options": {
+      "A": "Le poids total autorisé",
+      "B": "Le poids à vide en ordre de marche",
+      "C": "La charge utile",
+      "D": "Le poids brut"
+    },
+    "explanation": "Le poids brut est le poids qu'a le véhicule chargé à un moment donné. Ce poids n'est donc pas fixe : il varie selon le chargement et les passagers."
+  },
+  "kkalk-V-051": {
+    "stem": "Comment évolue la distance de freinage quand la chaussée passe de l'asphalte sec à la glace ?",
+    "options": {
+      "A": "Elle devient environ deux fois plus longue.",
+      "B": "Elle peut devenir jusqu'à 10 fois plus longue.",
+      "C": "Elle ne change pas si la voiture a l'ABS.",
+      "D": "Elle reste identique grâce aux pneus hiver."
+    },
+    "explanation": "L'adhérence entre les pneus et la route est déterminante. Sur la glace, elle chute si radicalement que la distance de freinage peut devenir dix fois plus longue que sur asphalte sec."
+  },
+  "kkalk-V-052": {
+    "stem": "Tu roules à 90 km/h sur chaussée sèche et tu dois freiner en urgence. Quelle est approximativement la distance d'arrêt ?",
+    "options": {
+      "A": "Environ 41 mètres",
+      "B": "Environ 68 mètres",
+      "C": "Environ 90 mètres",
+      "D": "Environ 108 mètres"
+    },
+    "explanation": "La distance d'arrêt est la distance de réaction plus la distance de freinage. À 90 km/h, la distance de réaction est d'environ 27 mètres et le freinage d'environ 41 mètres, soit environ 68 mètres au total."
+  },
+  "kkalk-V-057": {
+    "stem": "Quelle charge maximale peux-tu placer sur le toit de la voiture si tu ne connais pas la limite exacte ?",
+    "options": {
+      "A": "Environ 30 kg.",
+      "B": "Environ 75 kg.",
+      "C": "Environ 120 kg.",
+      "D": "Ce pour quoi la galerie est homologuée."
+    },
+    "explanation": "La charge maximale exacte figure dans le manuel de la voiture, mais la recommandation générale est de 50 à 100 kg. Une charge de toit trop lourde dégrade nettement le comportement du véhicule."
+  },
+  "kkalk-V-058": {
+    "stem": "Quelle est la vitesse maximale d'une voiture attelée à une remorque freinée sur autoroute ?",
+    "options": {
+      "A": "70 km/h",
+      "B": "80 km/h",
+      "C": "90 km/h",
+      "D": "110 km/h"
+    },
+    "explanation": "Une voiture attelée à une remorque freinée ne peut jamais rouler à plus de 80 km/h, quelle que soit la limitation de la route."
+  },
+  "kkalk-V-070": {
+    "stem": "Pendant quelle période les pneus cloutés sont-ils toujours autorisés, quel que soit l'état de la chaussée ?",
+    "options": {
+      "A": "Du 1er décembre au 31 mars",
+      "B": "Du 1er octobre au 15 avril",
+      "C": "Du 15 octobre au 30 avril",
+      "D": "Du 1er novembre au 30 mars"
+    },
+    "explanation": "Les pneus cloutés sont autorisés du 1er octobre au 15 avril. Le reste de l'année, tu ne peux les employer que si les conditions hivernales sont présentes ou attendues."
+  },
+  "kkalk-V-071": {
+    "stem": "Quel équipement de sécurité la loi impose-t-elle d'avoir à bord ?",
+    "options": {
+      "A": "Un triangle de présignalisation",
+      "B": "Un extincteur",
+      "C": "Une trousse de premiers secours",
+      "D": "Un gilet réfléchissant"
+    },
+    "explanation": "Le triangle de présignalisation est le seul équipement de sécurité que la loi t'oblige à avoir dans la voiture. Le reste, extincteur et trousse de secours, relève de la recommandation."
+  },
+  "kkalk-V-072": {
+    "stem": "Le niveau de liquide d'une ancienne batterie de voiture est trop bas. Avec quoi faut-il compléter ?",
+    "options": {
+      "A": "Du liquide de refroidissement",
+      "B": "De l'acide de batterie neuf",
+      "C": "De l'eau du robinet ordinaire",
+      "D": "De l'eau distillée"
+    },
+    "explanation": "Seule l'eau de l'électrolyte s'évapore, pas l'acide. En complétant avec de l'eau distillée, tu rétablis le niveau correct et la bonne concentration d'acide."
+  },
+  "kkalk-V-073": {
+    "stem": "Le niveau de liquide de frein est descendu au repère minimum. Quelle peut en être la cause ?",
+    "options": {
+      "A": "Le liquide s'est évaporé sous l'effet de la chaleur du moteur.",
+      "B": "Les garnitures de frein sont usées ou le circuit de freinage fuit.",
+      "C": "C'est une consommation normale, le liquide sera complété à la prochaine révision.",
+      "D": "Un fusible du système ABS a sauté."
+    },
+    "explanation": "Le liquide de frein circule en circuit fermé et ne doit pas diminuer. Le niveau baisse quand des garnitures usées font sortir les pistons, ou à cause d'une fuite dangereuse."
+  },
+  "kkalk-V-074": {
+    "stem": "Tu freines en urgence et la pédale se met à vibrer fortement. Quelle est la chose la plus importante à faire maintenant ?",
+    "options": {
+      "A": "Je continue d'appuyer sur la pédale de toute ma force.",
+      "B": "Je relâche le frein et je pompe sur la pédale à la place.",
+      "C": "Je relâche prudemment la pression pour pouvoir diriger.",
+      "D": "Je tire le frein de stationnement pour un freinage supplémentaire."
+    },
+    "explanation": "Les vibrations signifient que l'ABS de la voiture fonctionne comme il doit. Pour un freinage maximal, continue d'appuyer fermement sur la pédale."
+  },
+  "kkalk-V-075": {
+    "stem": "Le moteur se coupe en roulant et la direction assistée cesse de fonctionner. Quel est l'effet sur la direction ?",
+    "options": {
+      "A": "La direction devient très dure, mais elle fonctionne encore.",
+      "B": "L'antivol de direction s'enclenche et la voiture n'est plus dirigeable.",
+      "C": "La direction devient plus légère, la résistance disparaissant.",
+      "D": "La direction fonctionne normalement 30 secondes environ puis cesse."
+    },
+    "explanation": "La direction assistée est un moteur d'appoint qui facilite le braquage. Sans elle, la direction fonctionne toujours mécaniquement, mais devient beaucoup plus dure."
+  },
+  "kkalk-V-077": {
+    "stem": "Que signifie le panneau de véhicule lent fixé à l'arrière des tracteurs légers par exemple ?",
+    "options": {
+      "A": "Le véhicule est plus large que la normale et exige plus de place latéralement.",
+      "B": "Le véhicule est conçu pour une vitesse de 45 km/h au maximum.",
+      "C": "Le véhicule a une avarie momentanée qui exige une vitesse réduite.",
+      "D": "Le conducteur a moins de 18 ans et apprend à conduire avec un accompagnateur."
+    },
+    "explanation": "Le panneau distingue un véhicule lent. Ces véhicules sont conçus pour une vitesse de 45 km/h au maximum, ce qui inclut les tracteurs légers et les voiturettes."
+  },
+  "kkalk-V-078": {
+    "stem": "Quand une voiture particulière neuve doit-elle passer son tout premier contrôle technique ?",
+    "options": {
+      "A": "14 mois au plus tard après sa mise en circulation.",
+      "B": "24 mois au plus tard après sa mise en circulation.",
+      "C": "36 mois au plus tard après sa mise en circulation.",
+      "D": "48 mois au plus tard après sa mise en circulation."
+    },
+    "explanation": "Une voiture particulière neuve doit passer son premier contrôle technique au plus tard 36 mois après sa mise en circulation. Le contrôle suivant a lieu dans les 24 mois."
+  },
+  "kkalk-V-079": {
+    "stem": "Quelle est la vitesse maximale autorisée quand tu roules avec une roue de secours de dépannage ?",
+    "options": {
+      "A": "La vitesse inscrite sur le pneu, en général 80 km/h.",
+      "B": "70 km/h au plus, et seulement jusqu'au garage le plus proche.",
+      "C": "La même que la vitesse affichée par les panneaux.",
+      "D": "50 km/h au plus sur toutes les routes."
+    },
+    "explanation": "Une roue de dépannage est plus étroite et offre moins d'adhérence. Tu ne peux donc jamais rouler plus vite que la vitesse indiquée par le fabricant sur le pneu."
+  },
+  "kkalk-V-080": {
+    "stem": "Tu roules à 90 km/h sur route sèche. Quelle est approximativement la distance de freinage lors d'un freinage d'urgence ?",
+    "options": {
+      "A": "Environ 27 mètres",
+      "B": "Environ 41 mètres",
+      "C": "Environ 81 mètres",
+      "D": "Environ 108 mètres"
+    },
+    "explanation": "Applique le moyen mnémotechnique de la distance de freinage : retire le zéro de la vitesse, multiplie le résultat par lui-même et divise par deux sur chaussée sèche. Le calcul donne (9 x 9) divisé par 2, soit 40,5."
+  },
+  "kkalk-V-081": {
+    "stem": "Tu roules à 50 km/h. Quelle distance la voiture parcourt-elle pendant une seconde de réaction ?",
+    "options": {
+      "A": "Environ 5 mètres",
+      "B": "Environ 15 mètres",
+      "C": "Environ 25 mètres",
+      "D": "Environ 50 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique consiste à prendre la vitesse (50), retirer le zéro (5) et multiplier par 3. La distance de réaction est alors d'environ 15 mètres."
+  },
+  "kkalk-V-082": {
+    "stem": "Quel est le poids total autorisé cumulé maximal de la voiture et de la remorque avec un permis B96 ?",
+    "options": {
+      "A": "3 500 kg",
+      "B": "4 250 kg",
+      "C": "4 500 kg",
+      "D": "5 250 kg"
+    },
+    "explanation": "Un permis B96 porte le poids total autorisé cumulé de la voiture et de la remorque de 3 500 kg (permis B ordinaire) à 4 250 kg."
+  },
+  "kkalk-V-083": {
+    "stem": "La pédale de frein est ferme, mais elle s'enfonce quand tu démarres le moteur en la maintenant appuyée. Quelle fonction viens-tu de contrôler ?",
+    "options": {
+      "A": "Le système ABS",
+      "B": "La direction assistée",
+      "C": "L'assistance de freinage",
+      "D": "Le frein de stationnement"
+    },
+    "explanation": "L'assistance de freinage utilise le vide créé par le moteur pour rendre la pédale plus facile à enfoncer. Une pédale qui s'enfonce au démarrage du moteur montre que cette assistance fonctionne."
+  },
+  "kkalk-V-084": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée pour un pneu été ?",
+    "options": {
+      "A": "1,0 mm",
+      "B": "1,6 mm",
+      "C": "3,0 mm",
+      "D": "4,0 mm"
+    },
+    "explanation": "La loi exige au minimum 1,6 mm de profondeur de sculpture sur un pneu été. Pour un pneu hiver, l'exigence légale est de 3,0 mm au minimum."
+  },
+  "kkalk-V-085": {
+    "stem": "Quand es-tu obligé d'utiliser des pneus hiver en conditions hivernales ?",
+    "options": {
+      "A": "Du 1er octobre au 15 avril",
+      "B": "Du 1er novembre au 15 avril",
+      "C": "Du 1er décembre au 31 mars",
+      "D": "Toute l'année si l'état de la route l'exige"
+    },
+    "explanation": "L'obligation de pneus hiver court du 1er décembre au 31 mars dès qu'il y a de la neige, de la glace, de la neige fondante ou du givre sur la route."
+  },
+  "kkalk-V-087": {
+    "stem": "Qu'est-ce que la charge sur la boule d'attelage ?",
+    "options": {
+      "A": "Le poids avec lequel la tête d'attelage de la remorque repose sur la boule de la voiture.",
+      "B": "Le poids total autorisé de la remorque quand elle est pleinement chargée.",
+      "C": "Le poids total autorisé maximal de la voiture et de la remorque réunies.",
+      "D": "La force exercée par le frein à inertie lors d'un freinage."
+    },
+    "explanation": "La charge sur la boule est le poids vertical que la remorque exerce sur le dispositif d'attelage. Une charge correcte est décisive pour la stabilité et le comportement de l'attelage."
+  },
+  "kkalk-V-088": {
+    "stem": "Le témoin eCall de ta voiture est rouge lors du contrôle technique après 2025. Quelle en est la conséquence ?",
+    "options": {
+      "A": "La voiture est interdite de circuler.",
+      "B": "La voiture doit repasser au contrôle dans le mois.",
+      "C": "Tu reçois une remarque mais la voiture est acceptée.",
+      "D": "Cela n'a plus d'effet sur le résultat du contrôle."
+    },
+    "explanation": "Comme les réseaux 2G et 3G sont mis hors service, beaucoup de systèmes eCall cessent de fonctionner. Un témoin eCall allumé n'est donc plus un motif de refus."
+  }
+}

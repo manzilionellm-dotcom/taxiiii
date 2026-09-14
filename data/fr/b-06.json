@@ -1,0 +1,252 @@
+{
+  "kkalk-M-115": {
+    "stem": "Quel est normalement le temps de réaction d'un conducteur bien éveillé pris au dépourvu dans la circulation ?",
+    "options": {
+      "A": "Souvent moins de 0,5 seconde.",
+      "B": "Environ 1 seconde.",
+      "C": "Environ 2 à 3 secondes.",
+      "D": "Près de 4 secondes."
+    },
+    "explanation": "Chez un conducteur bien éveillé, il s'écoule habituellement environ une seconde entre la détection d'un danger et le passage à l'acte, par exemple le début du freinage."
+  },
+  "kkalk-M-118": {
+    "stem": "Quelle part des personnes tuées sur la route sont des usagers vulnérables ?",
+    "options": {
+      "A": "Environ un dixième.",
+      "B": "Environ un quart.",
+      "C": "Environ la moitié.",
+      "D": "Environ trois quarts."
+    },
+    "explanation": "Près de la moitié des personnes tuées sur la route sont des usagers vulnérables. Ils n'ont pas la protection qu'offre une carrosserie lors d'une collision."
+  },
+  "kkalk-M-124": {
+    "stem": "Le témoin rouge de pression d'huile s'allume en roulant. Comment dois-tu réagir ?",
+    "options": {
+      "A": "Ralentir et rouler prudemment jusqu'au garage le plus proche.",
+      "B": "Continuer et prendre rendez-vous pour une révision dès que possible.",
+      "C": "S'arrêter immédiatement dans un endroit sûr et couper le moteur.",
+      "D": "S'arrêter à la prochaine station pour vérifier et compléter le niveau d'huile."
+    },
+    "explanation": "Un témoin rouge signale une panne grave. Une pression d'huile insuffisante peut détruire le moteur très vite : tu dois t'arrêter et couper le moteur sans attendre."
+  },
+  "kkalk-M-128": {
+    "stem": "Tu roules de nuit en feux de route. À quelle distance approximative repères-tu un piéton portant des réflecteurs ?",
+    "options": {
+      "A": "125 mètres",
+      "B": "250 mètres",
+      "C": "300 mètres",
+      "D": "450 mètres"
+    },
+    "explanation": "En feux de route, tu peux repérer une personne portant des réflecteurs à environ 450 mètres. Cela te laisse largement le temps de réagir."
+  },
+  "kkalk-M-129": {
+    "stem": "Tu roules en feux de croisement dans l'obscurité. À quelle distance repères-tu un piéton en vêtements clairs mais sans réflecteur ?",
+    "options": {
+      "A": "Environ 25 mètres",
+      "B": "Environ 60 mètres",
+      "C": "Environ 125 mètres",
+      "D": "Environ 150 mètres"
+    },
+    "explanation": "En feux de croisement, tu vois une personne en vêtements clairs à environ 60 mètres. Avec des vêtements sombres, la distance tombe à 25 mètres."
+  },
+  "kkalk-M-132": {
+    "stem": "Quelle part environ des personnes tuées sur la route se trouvaient dans une voiture, un autobus ou un camion ?",
+    "options": {
+      "A": "Environ 30 %",
+      "B": "Environ 55 %",
+      "C": "Environ 75 %",
+      "D": "Environ 90 %"
+    },
+    "explanation": "Les occupants de voitures, autobus ou camions représentent un peu plus de la moitié des décès. L'autre moitié, un peu moins nombreuse, réunit les usagers vulnérables comme les piétons et les cyclistes."
+  },
+  "kkalk-M-137": {
+    "stem": "Quelle tranche d'âge réagit le plus souvent le plus vite dans les situations de circulation complexes ?",
+    "options": {
+      "A": "18 à 24 ans",
+      "B": "25 à 35 ans",
+      "C": "45 à 54 ans",
+      "D": "65 ans et plus"
+    },
+    "explanation": "L'expérience permet de reconnaître et de comprendre plus vite une situation à risque. C'est pourquoi le temps de réaction total est généralement le plus court dans cette tranche d'âge."
+  },
+  "kkalk-M-141": {
+    "stem": "Comment appelle-t-on le fait de regarder droit vers un danger sans que le cerveau le perçoive ?",
+    "options": {
+      "A": "La vision en tunnel",
+      "B": "L'accoutumance à la vitesse",
+      "C": "La perception sélective",
+      "D": "La surcharge cognitive"
+    },
+    "explanation": "La perception sélective désigne le filtrage par le cerveau d'une information que les yeux voient pourtant. Même un danger évident peut ainsi passer mentalement inaperçu."
+  },
+  "kkalk-M-142": {
+    "stem": "Quels deux groupes d'usagers sont les plus exposés aux blessures graves dans la circulation urbaine ?",
+    "options": {
+      "A": "Les piétons et les cyclistes",
+      "B": "Les cyclomotoristes et les conducteurs de tracteurs légers",
+      "C": "Les motocyclistes et les automobilistes",
+      "D": "Les conducteurs d'autobus et de tramways"
+    },
+    "explanation": "Les usagers vulnérables sont ceux qu'aucune carrosserie ne protège. Piétons et cyclistes sont, contrairement aux autres réponses, tous deux totalement exposés en cas d'accident."
+  },
+  "kkalk-M-144": {
+    "stem": "À quelle distance repères-tu un piéton en vêtements sombres sans réflecteur quand tu roules en feux de croisement ?",
+    "options": {
+      "A": "Environ 25 mètres",
+      "B": "Environ 60 mètres",
+      "C": "Environ 90 mètres",
+      "D": "Environ 120 mètres"
+    },
+    "explanation": "En feux de croisement, une personne vêtue de sombre sans réflecteur n'apparaît qu'à environ 25 mètres. Cela ne représente que quelques secondes de réaction à 50 km/h."
+  },
+  "kkalk-M-151": {
+    "stem": "Quelle taille minimale un enfant doit-il atteindre pour voyager sans coussin rehausseur ?",
+    "options": {
+      "A": "125 cm",
+      "B": "135 cm",
+      "C": "140 cm",
+      "D": "150 cm"
+    },
+    "explanation": "La loi oblige tout enfant mesurant moins de 135 cm à utiliser un dispositif de retenue particulier : coque pour nourrisson, siège enfant ou coussin rehausseur."
+  },
+  "kkalk-M-152": {
+    "stem": "Tu roules à 110 km/h et tu réagis à un danger. Quelle distance la voiture parcourt-elle environ en une seconde ?",
+    "options": {
+      "A": "Environ 11 mètres",
+      "B": "Environ 22 mètres",
+      "C": "Environ 31 mètres",
+      "D": "Environ 45 mètres"
+    },
+    "explanation": "Un moyen mnémotechnique simple pour la distance de réaction : prendre la vitesse, retirer le dernier zéro et multiplier par trois. Cela donne 11 x 3, soit environ 33 mètres."
+  },
+  "kkalk-M-153": {
+    "stem": "Tu roules à 70 km/h avec un temps de réaction d'une seconde. Quelle est ta distance de réaction approximative ?",
+    "options": {
+      "A": "Environ 7 mètres",
+      "B": "Environ 14 mètres",
+      "C": "Environ 21 mètres",
+      "D": "Environ 49 mètres"
+    },
+    "explanation": "Le moyen mnémotechnique consiste à retirer le zéro de la vitesse et à multiplier par 3. Cela donne la distance de réaction approximative en mètres pour un temps de réaction d'une seconde."
+  },
+  "kkalk-M-154": {
+    "stem": "Qu'est-ce qui peut accélérer l'élimination de l'alcool par le corps ?",
+    "options": {
+      "A": "Prendre un sauna et boire beaucoup d'eau.",
+      "B": "Boire du café et prendre une douche froide.",
+      "C": "Faire du sport et manger gras.",
+      "D": "Rien ne peut accélérer l'élimination."
+    },
+    "explanation": "L'élimination de l'alcool se fait dans le foie à vitesse constante. Ni le sauna, ni le café, ni aucun autre remède de grand-mère n'accélère ce processus."
+  },
+  "kkalk-M-159": {
+    "stem": "Jusqu'à quel âge est-il recommandé de garder un enfant dans un siège dos à la route ?",
+    "options": {
+      "A": "1 à 2 ans",
+      "B": "2 à 3 ans",
+      "C": "4 à 5 ans",
+      "D": "6 à 7 ans"
+    },
+    "explanation": "La tête d'un enfant est lourde de façon disproportionnée et sa nuque est fragile. Un siège dos à la route protège le mieux la nuque et le dos lors d'un choc."
+  },
+  "kkalk-M-162": {
+    "stem": "Quel est un bon exemple de pression de groupe positive venant des passagers ?",
+    "options": {
+      "A": "Qu'ils invitent le conducteur à respecter la vitesse autorisée.",
+      "B": "Qu'ils mettent la musique fort pour tenir éveillé un conducteur fatigué.",
+      "C": "Qu'ils poussent le conducteur à passer avant que le feu devienne rouge.",
+      "D": "Qu'ils indiquent au conducteur où se trouvent habituellement les contrôles de police."
+    },
+    "explanation": "La pression de groupe positive, c'est quand les passagers agissent pour renforcer la sécurité. Inviter un conducteur à respecter la limitation en est un exemple net."
+  },
+  "kkalk-M-163": {
+    "stem": "Quelle est l'exigence minimale d'acuité visuelle pour un permis B ?",
+    "options": {
+      "A": "0,3",
+      "B": "0,5",
+      "C": "0,8",
+      "D": "1,0"
+    },
+    "explanation": "Pour le permis B, ton acuité visuelle doit être d'au moins 0,5 avec les deux yeux. La mesure se fait avec ou sans lunettes ou lentilles."
+  },
+  "kkalk-M-170": {
+    "stem": "Quelle part des personnes tuées sur la route a 65 ans ou plus ?",
+    "options": {
+      "A": "Environ 15 %",
+      "B": "Environ 25 %",
+      "C": "Environ 40 %",
+      "D": "Environ 55 %"
+    },
+    "explanation": "Les personnes âgées sont surreprésentées parmi les accidents mortels, surtout parce que le corps devient plus fragile avec l'âge et qu'un choc entraîne plus facilement des blessures mortelles."
+  },
+  "kkalk-M-171": {
+    "stem": "À quel moment de la journée ton corps est-il le plus fatigué selon l'horloge biologique ?",
+    "options": {
+      "A": "Début d'après-midi (vers 13 h à 15 h)",
+      "B": "Fin de soirée (vers 21 h à 23 h)",
+      "C": "Matinée (vers 9 h à 11 h)",
+      "D": "Petit matin (vers 3 h à 5 h)"
+    },
+    "explanation": "Le rythme circadien du corps te rend naturellement le plus fatigué aux premières heures du matin. Ce créneau est parfois appelé l'heure du loup."
+  },
+  "kkalk-M-201": {
+    "stem": "Quel effet un éblouissement soudain dans l'obscurité a-t-il sur ta vision nocturne ?",
+    "options": {
+      "A": "Son rétablissement complet peut prendre jusqu'à une demi-heure.",
+      "B": "Elle se rétablit totalement en une minute environ.",
+      "C": "Elle se rétablit totalement en quelques secondes.",
+      "D": "Elle n'est pas affectée si tu détournes le regard de la source lumineuse."
+    },
+    "explanation": "Après un éblouissement, la réadaptation complète à l'obscurité est longue. Même si la vue s'améliore vite, le rétablissement total demande jusqu'à 30 minutes."
+  },
+  "kkalk-M-204": {
+    "stem": "Quelle partie de ta vision est spécialisée dans la détection des mouvements en bordure du champ visuel ?",
+    "options": {
+      "A": "La vision périphérique",
+      "B": "La vision directe",
+      "C": "La vision nocturne",
+      "D": "La vision des couleurs"
+    },
+    "explanation": "Ta vision périphérique n'est pas nette mais couvre une large zone. Elle est spécialisée dans la détection rapide des mouvements du coin de l'œil."
+  },
+  "kkalk-M-208": {
+    "stem": "Un enfant de moins de 15 ans vole un cyclomoteur et percute ta voiture stationnée. Qui doit réparer le dommage ?",
+    "options": {
+      "A": "Les parents de l'enfant.",
+      "B": "L'enfant, à sa majorité.",
+      "C": "Le propriétaire du cyclomoteur.",
+      "D": "Personne, l'enfant n'étant pas responsable pénalement."
+    },
+    "explanation": "Les parents sont tenus de réparer les dommages que leurs enfants causent par une infraction. Cette responsabilité est plafonnée à un montant maximal."
+  },
+  "kkalk-M-210": {
+    "stem": "Quelle tranche d'âge a généralement le temps de réaction le plus court dans les situations de circulation complexes ?",
+    "options": {
+      "A": "18 à 24 ans",
+      "B": "25 à 35 ans",
+      "C": "45 à 54 ans",
+      "D": "65 ans et plus"
+    },
+    "explanation": "Les conducteurs expérimentés de 45 à 54 ans perçoivent et anticipent le mieux les risques grâce à leur habitude. Cela donne le temps de réaction total le plus court."
+  },
+  "kkalk-M-215": {
+    "stem": "Qui porte la responsabilité finale de ton aptitude à conduire après la prise d'un nouveau médicament ?",
+    "options": {
+      "A": "Le médecin qui a prescrit le médicament.",
+      "B": "Le personnel de la pharmacie qui l'a délivré.",
+      "C": "Toi-même, en tant que conducteur.",
+      "D": "Le fabricant du médicament."
+    },
+    "explanation": "Le médecin et la pharmacie doivent informer des risques, mais c'est toujours à toi, conducteur, qu'il revient en dernier ressort de juger si tu es en état de conduire."
+  },
+  "kkalk-M-216": {
+    "stem": "Combien de temps dure un micro-sommeil ?",
+    "options": {
+      "A": "Une seconde tout au plus.",
+      "B": "Environ 10 secondes.",
+      "C": "Environ 30 secondes.",
+      "D": "Environ une minute."
+    },
+    "explanation": "Le micro-sommeil est une courte attaque de sommeil involontaire qui dure d'une fraction de seconde à quelques secondes. Souvent, tu ne t'aperçois même pas qu'elle a eu lieu."
+  }
+}
