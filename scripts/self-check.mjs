@@ -292,6 +292,10 @@ assert(
   !protectedViewSrc.includes("contentHidden"),
   "ProtectedView must not show the Innehållet är dolt overlay",
 );
+assert(
+  !protectedViewSrc.includes("addEventListener"),
+  "web ProtectedView must not attach capture/focus listeners",
+);
 
 console.log(
   `self-check OK · research ${researchCount} + owner-seed ${ownerCount} + owner-official ${ownerOfficialCount} + owner-import ${ownerImportCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,
