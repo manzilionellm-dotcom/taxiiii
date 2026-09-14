@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T01:14:23.485Z",
+  "generatedAt": "2026-09-14T06:17:36.474Z",
   "imagesDir": null,
   "questionsTotal": 1470,
   "researchCount": 50,
@@ -8,11 +8,11 @@
   "researchJsonl": 265,
   "manziJsonl": 1668,
   "skippedIncomplete": 270,
-  "questionsWithImageUrl": 199,
+  "questionsWithImageUrl": 748,
   "rastersCopied": 0,
-  "questionsLinkedToFile": 199,
+  "questionsLinkedToFile": 748,
   "questionsMissingFile": 0,
-  "manifestFiles": 2086,
+  "manifestFiles": 2637,
   "gulLinje": null,
   "coordinator": {
     "questions": "/workspace/taxiprov/manzi/questions-merged.jsonl",

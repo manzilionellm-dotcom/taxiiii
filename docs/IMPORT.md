@@ -6,8 +6,8 @@ Two files. **Both** are compiled. Manzi never deletes research.
 data/research-bank.jsonl    ← YouTube + apps + public examples (seed + full mined file)
 data/questions.jsonl        ← coordinator merge (1668 lines: Manzi + research copies)
 data/questions.json         ← compiled merge (research first, then Manzi; incomplete keys skipped)
-data/media-manifest.json    ← private Vercel Blob keys (~2086 rasters: 1993 T3/… + 93 pdf-pages)
-data/pdf-page-links.json    ← 93 LAGSTIFNING/S_KERHET «på bilden» id → /media/pdf-pages/…jpg
+data/media-manifest.json    ← private Vercel Blob keys (~2637: 1993 T3/… + 639 pdf-pages pathnames)
+data/pdf-page-links.json    ← every LAGSTIFNING/S_KERHET-{n}-Q{q} (q≤80) → /media/pdf-pages/…jpg
 data/vocab/session-01.json … session-05-friday-mini.json
 data/youtube-links.json
 data/youtube-transcripts/*.json
@@ -41,7 +41,7 @@ npm run import -- --coordinator
 # then (production): BLOB_READ_WRITE_TOKEN=… npm run media:upload
 ```
 
-See [MEDIA.md](MEDIA.md) for the image pipeline. Never invent SVG drawings for exam items. Lagstiftning / Säkerhet «på bilden» items use authentic PDF page rasters under `/media/pdf-pages/`.
+See [MEDIA.md](MEDIA.md) for the image pipeline. Never invent SVG drawings for exam items. Every `LAGSTIFNING-*` / `S_KERHET-*` QCM uses the authentic PDF page raster under `/media/pdf-pages/` (question N = page N). `npm run media:link-pdf-pages` reapplies the mapping.
 
 Swedish in research `sv` and Manzi `stem_sv` is copied **word for word**.
 
