@@ -14,7 +14,7 @@ This is not a toy landing page. It is a working vertical slice:
 - **IA** chat grounded on the question corpus (refuses out-of-bank answers)
 - Readiness score; at **≥ 95%** shows « Bravo, tu es prêt à passer l'examen. » / « Bravo, du är redo att göra provet. »
 - SRS 5–10 min sessions, interleaving, fragile-profile mode
-- **Taxi Företag** (`/owner`) — taxitrafiktillstånd seed (public Transportstyrelsen / SFS), own progress keys
+- **Taxi Företag** (`/owner`) — taxitrafiktillstånd practice bank (public Transportstyrelsen / SFS / TSFS 2021:118), own progress keys
 
 ## Content rule
 

@@ -71,8 +71,8 @@ const ownerImportCount = compiled.filter((item) => item.corpus === "owner-import
 const manziCount = compiled.filter((item) => item.corpus === "manzi").length;
 assert(researchCompilable.length >= 20, "too few compilable research QCM");
 assert(
-  researchCount + ownerCount === researchCompilable.length,
-  "compiled dropped research or owner-seed items",
+  researchCount + ownerCount + ownerOfficialCount + ownerImportCount === researchCompilable.length,
+  "compiled dropped research or owner-track items",
 );
 assert(manziCompilable.length >= 10, "too few compilable Manzi QCM");
 assert(manziCount === manziCompilable.length, "compiled dropped Manzi items that had a valid answer key");
@@ -81,17 +81,24 @@ assert(
   "compiled length != research + owner corpora + manzi",
 );
 assert(ownerCount >= 15, `owner-seed too small: ${ownerCount}`);
+assert(ownerOfficialCount >= 100, `owner-official too small: ${ownerOfficialCount}`);
 assert(
   compiled
-    .filter((item) => item.corpus === "owner-seed")
+    .filter((item) => isOwnerCorpus(item.corpus))
     .every((item) => item.topic === "agare" && item.trackHint === "owner"),
-  "owner-seed must be tagged topic=agare trackHint=owner",
+  "owner corpora must be tagged topic=agare trackHint=owner",
+);
+assert(
+  compiled
+    .filter((item) => item.corpus === "owner-official")
+    .every((item) => item.source && /^delprov-[1-4]$/.test(item.type || "")),
+  "owner-official must cite source and delprov-1..4",
 );
 assert(
   compiled
     .filter((item) => item.topic === "lagstiftning" || item.topic === "sakerhet" || item.topic === "karta")
-    .every((item) => item.trackHint !== "owner" && item.corpus !== "owner-seed"),
-  "owner-seed must not sit on chauffeur topics",
+    .every((item) => item.trackHint !== "owner" && !isOwnerCorpus(item.corpus)),
+  "owner corpora must not sit on chauffeur topics",
 );
 assert(
   manziCompilable.every((q) => q.stem_sv && (q.explanation_sv || q.explanation_fr || q.options?.length >= 2)),
@@ -128,6 +135,10 @@ assert(check.filter((item) => item.corpus === "research").length === researchCou
 assert(
   check.filter((item) => item.corpus === "owner-seed").length === ownerCount,
   "check compile dropped owner-seed",
+);
+assert(
+  check.filter((item) => item.corpus === "owner-official").length === ownerOfficialCount,
+  "check compile dropped owner-official",
 );
 
 const readySv = "Bravo, du är redo att göra provet.";

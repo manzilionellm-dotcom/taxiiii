@@ -74,7 +74,13 @@ Normalize on import:
 
 Until the full ~193-line file is dropped, the repo ships a **high-frequency seed** (YouTube 11/8, taxameter 24 mån, gul linje, tidbok, prisräkning, plus official SFS/Trafikverket). Replace `data/research-bank.jsonl` with the full mined file — do not merge it into Manzi’s JSONL.
 
-**Taxi Företag** items live in the same research JSONL with `topic: agare`, `trackHint: owner`, `corpus: owner-seed` (`scripts/owner-items.mjs`). They compile into `data/questions.json` but `questionsForTrack('owner')` keeps them out of chauffeur B/taxi study order. Do not invent Manzi owner stems.
+**Taxi Företag** items live in the same research JSONL with `topic: agare`, `trackHint: owner`. Three owner corpora:
+
+- `owner-seed` — 42 public Transportstyrelsen / SFS QCMs (`scripts/owner-items.mjs`). Do not rewrite or delete them.
+- `owner-official` — practice QCMs authored from official law only (TSFS 2021:118 delprov 1–4, taxitrafiklag 2012:211, taxitrafikförordning 2012:238, Transportstyrelsen pages). Source of truth: `scripts/owner-official-items.mjs` + `scripts/owner-official-rest.mjs`. Each item has `type: "delprov-1"` … `delprov-4` and a `source` cite. No paid-app stems.
+- `owner-import` — reserved for a later whole-PC dump (18 AutoPlay .exe is not a text dump).
+
+They compile into `data/questions.json` but `questionsForTrack('owner')` keeps them out of chauffeur B/taxi study order. Do not invent Manzi owner stems.
 
 Leave room for a later **whole-PC dump** (not only the Manzi folder). Scan first, then compile:
 
