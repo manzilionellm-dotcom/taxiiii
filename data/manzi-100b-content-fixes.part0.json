@@ -1,0 +1,87 @@
+[
+  {
+    "id": "LAGSTIFNING-4-Q6",
+    "topic": "lagstiftning",
+    "stem_sv": "Var kan du göra kontroll av taxameter?",
+    "options": [
+      {"letter": "A", "text": "I företagets lokaler."},
+      {"letter": "B", "text": "Hos polisen."},
+      {"letter": "C", "text": "I Förarens hus."},
+      {"letter": "D", "text": "I taxi."},
+      {"letter": "E", "text": "I verkstad."},
+      {"letter": "F", "text": "SWEDAC"}
+    ],
+    "answer": "F",
+    "explanation_sv": "Rätt svar: F",
+    "explanation_fr": "Bonne réponse : F",
+    "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-4.pdf"
+  },
+  {
+    "id": "LAGSTIFNING-1-Q27",
+    "topic": "lagstiftning",
+    "stem_sv": "Efter vilket tillfälle måste en förare skriva ut ett kvitto eller följesedel?",
+    "options": [
+      {"letter": "A", "text": "Alla körningar utom skolkörningar"},
+      {"letter": "B", "text": "Alla körningar utom flygtaxi"},
+      {"letter": "C", "text": "Alla körningar utom färdtjänst"},
+      {"letter": "D", "text": "Alla körningar."},
+      {"letter": "E", "text": "Alla körningar utom färdtjänst körningar"},
+      {"letter": "F", "text": "Alla körningar utom sjuktransport"}
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D",
+    "explanation_fr": "Bonne réponse : D",
+    "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-1.pdf"
+  },
+  {
+    "id": "LAGSTIFNING-2-Q4",
+    "topic": "lagstiftning",
+    "stem_sv": "Gäller det högerregel i någon av situationer på bilderna av följande?",
+    "options": [
+      {"letter": "A", "text": "Ja, i enbart situation A."},
+      {"letter": "B", "text": "Ja, i enbart situation B."},
+      {"letter": "C", "text": "Ja, i enbart situation C."},
+      {"letter": "D", "text": "Ja, i enbart situationer A och B."},
+      {"letter": "E", "text": "Ja, i alla situationer."},
+      {"letter": "F", "text": "Ingen av situationer."}
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C",
+    "explanation_fr": "Bonne réponse : C",
+    "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-2.pdf"
+  },
+  {
+    "id": "LAGSTIFNING-7-Q27",
+    "topic": "lagstiftning",
+    "stem_sv": "Vad varnar vägmärket för?",
+    "options": [
+      {"letter": "A", "text": "Smal väg med branta slänter."},
+      {"letter": "B", "text": "Att vägen lutar i sidled."},
+      {"letter": "C", "text": "En skarp feldoserad kurva."},
+      {"letter": "D", "text": "En brant uppförsbacke."},
+      {"letter": "E", "text": "En brant nedförsbacke."},
+      {"letter": "F", "text": "En brant slänt med risk för ras."}
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D",
+    "explanation_fr": "Bonne réponse : D",
+    "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-7.pdf"
+  },
+  {
+    "id": "S_KERHET-7-Q2009",
+    "topic": "sakerhet",
+    "stem_sv": "Vilken minsta mönsterdjup måste du ha på däcken om det kräver sommar väglag?",
+    "options": [
+      {"letter": "A", "text": "1,6 mm, men endast på inre hjul"},
+      {"letter": "B", "text": "1,6 mm, men endast på yttre hjul"},
+      {"letter": "C", "text": "1,6 mm, på alla hjul"},
+      {"letter": "D", "text": "3,0 mm, men endast på inre hjul"},
+      {"letter": "E", "text": "3,0 mm, men endast på yttre hjul"},
+      {"letter": "F", "text": "3,0mm, på alla hjul"}
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C",
+    "explanation_fr": "Bonne réponse : C",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-7.pdf"
+  }
+]

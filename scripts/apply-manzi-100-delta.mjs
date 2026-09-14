@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Apply Manzi 100% fixes onto data/questions.jsonl (+ optional media-manifest patch). */
+/** Apply Manzi 100% / 100b fixes onto data/questions.jsonl (+ optional media-manifest patch). */
 import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -19,19 +19,51 @@ function renameSakerhet(id) {
     : id;
 }
 
-function loadFixes() {
-  if (existsSync(fixesPath)) return JSON.parse(readFileSync(fixesPath, "utf8"));
-  const parts = readdirSync(dataDir)
-    .filter((n) => /^manzi-100-content-fixes\.part\d+\.json$/.test(n))
-    .sort();
-  if (parts.length) {
-    const all = [];
-    for (const n of parts) all.push(...JSON.parse(readFileSync(join(dataDir, n), "utf8")));
-    return all;
+/** Allow PDF facit letter F (LAGSTIFNING-4-Q6 etc.). Idempotent. */
+function ensureLettersF() {
+  const normPath = join(root, "scripts/research-normalize.mjs");
+  if (!existsSync(normPath)) return;
+  let s = readFileSync(normPath, "utf8");
+  const orig = s;
+  s = s.replace(
+    /const LETTERS = \["A", "B", "C", "D", "E"(?:, "F")?\];/,
+    'const LETTERS = ["A", "B", "C", "D", "E", "F"];',
+  );
+  s = s.replace("([A-E])\\.\\s*(.+)$/s", "([A-F])\\.\\s*(.+)$/s");
+  if (s !== orig) {
+    writeFileSync(normPath, s);
+    console.log("apply-manzi-100: LETTERS extended to A–F in research-normalize.mjs");
   }
-  if (existsSync(deltaPath)) return JSON.parse(readFileSync(deltaPath, "utf8"));
-  return [];
 }
+
+function loadFixes() {
+  const all = [];
+  if (existsSync(fixesPath)) {
+    all.push(...JSON.parse(readFileSync(fixesPath, "utf8")));
+  } else {
+    const parts = readdirSync(dataDir)
+      .filter((n) => /^manzi-100-content-fixes\.part\d+\.json$/.test(n))
+      .sort();
+    for (const n of parts) all.push(...JSON.parse(readFileSync(join(dataDir, n), "utf8")));
+    if (!parts.length && existsSync(deltaPath)) {
+      all.push(...JSON.parse(readFileSync(deltaPath, "utf8")));
+    }
+  }
+  // 100b overrides (e.g. LAGSTIFNING-4-Q6 answer F) — loaded after so Map last-wins
+  const bParts = readdirSync(dataDir)
+    .filter((n) => /^manzi-100b-content-fixes\.part\d+\.json$/.test(n))
+    .sort();
+  for (const n of bParts) all.push(...JSON.parse(readFileSync(join(dataDir, n), "utf8")));
+  const singleB = join(dataDir, "manzi-100b-content-fixes.json");
+  if (existsSync(singleB)) all.push(...JSON.parse(readFileSync(singleB, "utf8")));
+  return all.filter((row) => {
+    const opts = row.options || [];
+    const nonempty = opts.filter((o) => String(o.text || "").trim()).length;
+    return row.answer && nonempty >= 2;
+  });
+}
+
+ensureLettersF();
 
 const renameMap = existsSync(renamePath) ? JSON.parse(readFileSync(renamePath, "utf8")) : {};
 const fixes = loadFixes();
@@ -50,7 +82,7 @@ for (const line of lines) {
     row.id = mapped;
     if (typeof row.source === "string") row.source = row.source.replaceAll("SAKERHET-", "S_KERHET-");
     replaced++;
-  } else if (row.id.startsWith("SAKERHET-")) {
+  } else if (String(row.id || "").startsWith("SAKERHET-")) {
     row.id = renameSakerhet(row.id);
     if (typeof row.source === "string") row.source = row.source.replaceAll("SAKERHET-", "S_KERHET-");
     replaced++;
