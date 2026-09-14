@@ -31394,7 +31394,7 @@
       },
       {
         "letter": "E",
-        "text": "Fobi. 18.Vad ska du göra för att minska bränsleförbrukning?"
+        "text": "Fobi."
       }
     ],
     "answer": "A",
@@ -55940,7 +55940,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: C",
+    "explanation_sv": "Rätt svar: B — Förbud att stanna och parkera.",
     "explanation_fr": "Ligne jaune continue = förbud att stanna och parkera.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -55968,7 +55968,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: A",
+    "explanation_sv": "Rätt svar: B — Bilen från höger ska lämna mig företräde.",
     "explanation_fr": "Sur huvudled tu as priorité — la règle de droite ne te retire pas la priorité.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -55996,7 +55996,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: A",
+    "explanation_sv": "Rätt svar: B — Ja, eftersom det är tillåtet att stanna för på- eller avstigning.",
     "explanation_fr": "Oui — au P-förbud, montée/descente OK.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56024,7 +56024,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: A",
+    "explanation_sv": "Rätt svar: B — Väjningslinje",
     "explanation_fr": "Dents de requin peintes = cédez le passage.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56052,7 +56052,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: D",
+    "explanation_sv": "Rätt svar: B — 70 km/h",
     "explanation_fr": "70 km/h hors agglo si rien n’est indiqué.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56080,7 +56080,7 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt: A",
+    "explanation_sv": "Rätt svar: C — Sänka farten och släppa fram bussen.",
     "explanation_fr": "Tu dois faciliter / céder pour que le bus sorte (≤50).",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56108,7 +56108,7 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt: B",
+    "explanation_sv": "Rätt svar: C — Regeln gäller på söndag och allmän helgdag.",
     "explanation_fr": "Chiffres rouges = dimanche et jours fériés.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56136,7 +56136,7 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt: B",
+    "explanation_sv": "Rätt svar: C — Nej, det är förbjudet att både stanna och parkera där.",
     "explanation_fr": "Non — interdit de s’arrêter sur un passage piéton.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56164,7 +56164,7 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt: C",
+    "explanation_sv": "Rätt svar: C — 50 km/h",
     "explanation_fr": "50 km/h par défaut dans l’agglomération.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56192,7 +56192,7 @@
       }
     ],
     "answer": "D",
-    "explanation_sv": "Rätt: A",
+    "explanation_sv": "Rätt svar: D — Väjningsplikt",
     "explanation_fr": "Triangle pointe en bas = väjningsplikt.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56220,7 +56220,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: C",
+    "explanation_sv": "Rätt svar: B — 50 km/h",
     "explanation_fr": "50 km/h après le panneau d’agglomération.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56248,7 +56248,7 @@
       }
     ],
     "answer": "C",
-    "explanation_sv": "Rätt: B",
+    "explanation_sv": "Rätt svar: C — Tiden gäller dag före sön- och helgdag.",
     "explanation_fr": "Parenthèses = samedi, dimanche et jours fériés.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56276,7 +56276,7 @@
       }
     ],
     "answer": "A",
-    "explanation_sv": "Rätt: A",
+    "explanation_sv": "Rätt svar: A — Vardagar, utom dag före sön- och helgdag.",
     "explanation_fr": "Chiffres noirs sans parenthèses = vardagar (jours ouvrés).",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"
@@ -56304,7 +56304,7 @@
       }
     ],
     "answer": "B",
-    "explanation_sv": "Rätt: A",
+    "explanation_sv": "Rätt svar: B — Parkeringsförbud tillåter korta stopp för exempelvis på- och avstigning.",
     "explanation_fr": "P-förbud : tu peux encore stanna pour déposer. Stoppförbud : tu ne t’arrêtes pas.",
     "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
     "corpus": "manzi"

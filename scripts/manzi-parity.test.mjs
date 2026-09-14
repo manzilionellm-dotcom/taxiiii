@@ -229,10 +229,10 @@ for (const r of recovered) {
 }
 
 /**
- * bkort-classic rows must stay out. They carry an answer letter with an empty
- * option list, and bkort-classic-5 claims «A» where its verified twin
- * kkalk-S-088 answers «D» (Väjningsplikt) — the letter refers to a lost option
- * order, so importing options and keeping it would teach the wrong sign.
+ * 100c lands bkort-classic-1..14 with full option lists. Earlier they were
+ * refused: empty options + unmoored letters, and classic-5 claimed «A» while
+ * its verified twin kkalk-S-088 answers «D» (Väjningsplikt). The delta keeps
+ * D on both rows. Do not re-import a letter that is not among the options.
  */
 const q6 = compiled.find((q) => q.id === "LAGSTIFNING-4-Q6");
 assert(q6, "LAGSTIFNING-4-Q6 must be in the compiled bank (PDF facit F / SWEDAC)");
@@ -244,8 +244,25 @@ assert(
 
 const bkortClassic = compiled.filter((q) => /^bkort-classic-/.test(String(q.id)));
 assert(
-  !bkortClassic.length,
-  `bkort-classic rows must not enter the bank: ${bkortClassic.map((q) => q.id).join(", ")}`,
+  bkortClassic.length === 14,
+  `expected 14 bkort-classic rows from the 100c delta, got ${bkortClassic.length}`,
+);
+for (const q of bkortClassic) {
+  assert(
+    (q.options || []).length >= 2,
+    `${q.id}: 100c row must keep a real option list, got ${(q.options || []).length}`,
+  );
+  assert(
+    (q.options || []).some((o) => o.letter === q.answer),
+    `${q.id}: answer ${q.answer} is not among options`,
+  );
+}
+assert(optionText("bkort-classic-5", "D") === "Väjningsplikt", "bkort-classic-5 D stays Väjningsplikt");
+const twin088 = compiled.find((q) => q.id === "kkalk-S-088");
+assert(twin088?.answer === "D", "kkalk-S-088 twin must still answer D");
+assert(
+  compiled.find((q) => q.id === "bkort-classic-5")?.answer === "D",
+  "bkort-classic-5 must match twin kkalk-S-088 (D), not the old unmoored A",
 );
 
 /* No compiled question may promise a picture it does not have. */

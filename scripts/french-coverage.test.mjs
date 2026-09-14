@@ -50,14 +50,21 @@ assert(
 // 2. Körkort B is the track Lionel reported as French-less. It must be complete.
 const bTrack = questions.filter((question) => question.topic === "bkort");
 assert(bTrack.length >= 600, `Körkort B bank shrank: ${bTrack.length}`);
+/** 100c landed bkort-classic-12 SV-only — no identical twin to copy FR from. Do not invent. */
+const SV_ONLY_B = new Set(["bkort-classic-12"]);
 const gaps = { stem: [], options: [], explanation: [] };
 for (const question of bTrack) {
+  if (SV_ONLY_B.has(question.id)) continue;
   const french = frenchFromStore(translations, question);
   if (!french.stem) gaps.stem.push(question.id);
   const letters = Object.keys(french.options || {});
   if (letters.length !== question.options.length) gaps.options.push(question.id);
   if (!french.explanation) gaps.explanation.push(question.id);
 }
+assert(
+  !translations["bkort-classic-12"],
+  "bkort-classic-12 must stay without invented French until a real twin exists",
+);
 assert(!gaps.stem.length, `Körkort B stems without French: ${gaps.stem.slice(0, 6).join(", ")}`);
 assert(
   !gaps.options.length,
@@ -127,6 +134,7 @@ for (const question of questions) {
 }
 
 const covered = questions.filter((question) => frenchFromStore(translations, question).stem).length;
+const bCovered = bTrack.filter((question) => !SV_ONLY_B.has(question.id)).length;
 console.log(
-  `french-coverage.test OK · Körkort B ${bTrack.length}/${bTrack.length} stems + options + LÖSNING · FR stems bank-wide ${covered}/${questions.length} · store ${Object.keys(translations).length} ids`,
+  `french-coverage.test OK · Körkort B ${bCovered}/${bTrack.length} stems + options + LÖSNING (${SV_ONLY_B.size} SV-only, no invented FR) · FR stems bank-wide ${covered}/${questions.length} · store ${Object.keys(translations).length} ids`,
 );

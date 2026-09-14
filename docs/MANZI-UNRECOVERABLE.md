@@ -6,10 +6,12 @@ PC Shell machineId not routed in this executor (H7 + MANZI scans attempted; Copy
 - Recovered later compile PR: **1** live (`LAGSTIFNING-4-Q6` answer F + option F SWEDAC; LETTERS A–F) — now in `data/questions.json`
 - Plus **4** PDF demangles already-kept (LAG-1-Q27, LAG-2-Q4, LAG-7-Q27, S_KERHET-7-Q2009)
 - Remaining no-answer (Manzi pass): **61** (28 BKORT-Q + 28 korkortA + 5 KARTA Kvibille Q4)
-- Remaining answer-not-among-options: **1** (`S_KERHET-1-Q1`, facit D, option D lost)
+- `S_KERHET-1-Q1` is in the live bank after 100c (answer **C** among A/B/C). Source `questions.jsonl` still records the scrape (facit D, option D lost); do not invent D back.
+- Remaining answer-not-among-options in jsonl: **1** (`S_KERHET-1-Q1` scrape) — compiled row is the 100c recovery, not a guessed D
 - Remaining lt2opts: **15**
 - Terms excluded: **58**
 - HTM box `htm-bkort` / `bkort-htm`: **not mounted** on this VM — scanner shipped, 0 letters invented
+- `bkort-classic-12` (bashastighet 70 landsväg): SV landed with answer B; **no French** — no identical twin to copy. Do not invent FR.
 
 ## no-answer ids
 

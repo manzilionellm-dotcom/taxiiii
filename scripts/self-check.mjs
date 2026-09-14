@@ -83,12 +83,19 @@ const ownerOfficialCount = compiled.filter((item) => item.corpus === "owner-offi
 const ownerImportCount = compiled.filter((item) => item.corpus === "owner-import").length;
 const manziCount = compiled.filter((item) => item.corpus === "manzi").length;
 assert(researchCompilable.length >= 20, "too few compilable research QCM");
+/** 100c overlay adds 5 research QCMs that are not in research-bank.jsonl. */
+const extraResearchFrom100c = 5;
 assert(
-  researchCount + ownerCount + ownerOfficialCount === researchCompilable.length,
-  "compiled dropped research or owner-track items",
+  researchCount + ownerCount + ownerOfficialCount === researchCompilable.length + extraResearchFrom100c,
+  "compiled dropped research or owner-track items (or 100c research extras drifted)",
 );
 assert(manziCompilable.length >= 10, "too few compilable Manzi QCM");
-assert(manziCount === manziCompilable.length, "compiled dropped Manzi items that had a valid answer key");
+/** 100c overlay adds 14 bkort-classic + recovered S_KERHET-1-Q1. */
+const extraManziFrom100c = 15;
+assert(
+  manziCount === manziCompilable.length + extraManziFrom100c,
+  "compiled dropped Manzi items that had a valid answer key (or 100c manzi extras drifted)",
+);
 assert(
   compiled.length === researchCount + ownerCount + ownerOfficialCount + ownerImportCount + manziCount,
   "compiled length != research + owner corpora + manzi",
@@ -151,7 +158,10 @@ assert(
 );
 
 const check = compile({ check: true });
-assert(check.filter((item) => item.corpus === "research").length === researchCount, "check compile dropped research");
+assert(
+  check.filter((item) => item.corpus === "research").length === researchCount - extraResearchFrom100c,
+  "check compile dropped research (100c extras live only in committed questions.json)",
+);
 assert(
   check.filter((item) => item.corpus === "owner-seed").length === ownerCount,
   "check compile dropped owner-seed",
