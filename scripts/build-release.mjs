@@ -8,9 +8,9 @@ const androidHome =
   process.env.ANDROID_HOME || process.env.ANDROID_SDK_ROOT || `${process.env.HOME}/android-sdk`;
 const javaHome = process.env.JAVA_HOME || "/usr/lib/jvm/java-21-openjdk-amd64";
 
-function run(cmd, args, extraEnv = {}) {
+function run(cmd, args, extraEnv = {}, cwd = root) {
   const result = spawnSync(cmd, args, {
-    cwd: root,
+    cwd,
     stdio: "inherit",
     env: {
       ...process.env,
@@ -70,7 +70,7 @@ if (!existsSync(gradlew)) {
   process.exit(1);
 }
 
-run(gradlew, ["bundleRelease", "assembleRelease", "--no-daemon"]);
+run(gradlew, ["bundleRelease", "assembleRelease", "--no-daemon"], {}, join(root, "android"));
 
 const aab = join(root, "android/app/build/outputs/bundle/release/app-release.aab");
 const apk = join(root, "android/app/build/outputs/apk/release/app-release.apk");
