@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run import && next build",
     "start": "next start",
     "lint": "eslint",
     "manzi:apply": "node scripts/apply-manzi-100-delta.mjs && node scripts/gen-pdf-links-patch.mjs && node scripts/apply-manzi-100-media-keys.mjs",
