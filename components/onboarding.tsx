@@ -8,7 +8,7 @@ import { useAppState } from "@/components/app-state";
 import { trackLabel } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { updateProfile } from "@/lib/progress/store";
-import type { Track } from "@/lib/types";
+import { TRACKS, type Track } from "@/lib/types";
 
 export function Onboarding() {
   const { state, setState } = useAppState();
@@ -22,7 +22,7 @@ export function Onboarding() {
 
   function submit() {
     if (!tos) return;
-    const tracks: Track[] = choice === "both" ? ["b", "taxi"] : [choice];
+    const tracks: Track[] = choice === "both" ? [...TRACKS] : [choice];
     setState(
       updateProfile(state, {
         name,
@@ -89,7 +89,7 @@ export function Onboarding() {
         <TrackCard
           icon="both"
           title={dict.bothTracks}
-          description={dict.onboardingLead}
+          description={dict.bothTracksDesc}
           selected={choice === "both"}
           onClick={() => setChoice("both")}
         />

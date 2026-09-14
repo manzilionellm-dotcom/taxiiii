@@ -27,6 +27,9 @@ export function hydrateAppState() {
   if (didHydrate || typeof window === "undefined") return;
   didHydrate = true;
   snapshot = loadState();
+  if (snapshot.profile.onboarded) {
+    saveState(snapshot);
+  }
   queueMicrotask(() => {
     listeners.forEach((listener) => listener());
   });

@@ -27,7 +27,8 @@ export const sv = {
   trackOwner: BRAND.tracks.owner.label,
   trackOwnerDesc: `${BRAND.tracks.owner.product} — taxitrafiktillstånd, fordon och redovisning.`,
   comingSoon: "Kommer snart",
-  bothTracks: `${BRAND.tracks.b.label} + ${BRAND.tracks.taxi.label}`,
+  bothTracks: `${BRAND.tracks.b.label} + ${BRAND.tracks.taxi.label} + ${BRAND.tracks.owner.label}`,
+  bothTracksDesc: `${BRAND.tracks.b.product}, ${BRAND.tracks.taxi.product} och ${BRAND.tracks.owner.product}.`,
   yourName: "Ditt namn (valfritt)",
   fragileMode: "Skört läge",
   fragileHint:
