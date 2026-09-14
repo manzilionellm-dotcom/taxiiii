@@ -109,7 +109,7 @@ Shipped on quiz, mock exam, Calcul, cloze, and tutor chat:
 1. **Copy / select** — `user-select: none` on stems, options, explanations, and images; context menu disabled on protected views; common copy / save / print shortcuts blocked (inputs still work).
 2. **Visibility / capture** — leaving the tab, blurring the window, printing, or Print Screen hides the question behind a black overlay until you confirm. Exam mode waits a short beat before “continue” (soft re-auth).
 3. **Images** — files live in `content/media/` (not hotlinked as permanent `/media/…` CDN paths). The client fetches a **short-lived signed URL**, draws on a **canvas**, and paints a faint watermark (`name` / `email` / session id). Direct `/media/*` returns 403.
-4. **Scrape friction** — the full bank is `server-only`. Clients receive a **per-session slice** (study 6–10, exam 8) from `/api/questions`. Meta mode returns ids + topics only. APIs are rate-limited. `questions.jsonl` is not in `public/`.
+4. **Scrape friction** — the full bank is `server-only`. Clients receive a **per-session slice** (study 6–10, exam 65) from `/api/questions`. Meta mode returns ids + topics only. APIs are rate-limited. `questions.jsonl` is not in `public/`.
 5. **Headers** — CSP (`frame-ancestors 'none'`), `X-Frame-Options: DENY`, `Cache-Control: private, no-store` on APIs and media.
 6. **Legal UX** — ToS on onboarding / settings / nav: redistribution of the bank is forbidden. Rapid hide/capture patterns show a soft warning.
 7. **Android APK** — Capacitor WebView + `FLAG_SECURE` (see [docs/ANDROID.md](docs/ANDROID.md)). iOS capture APIs are still future.

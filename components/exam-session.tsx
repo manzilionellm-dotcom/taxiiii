@@ -16,7 +16,7 @@ import { useQuestionCatalog } from "@/lib/questions/use-catalog";
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { MockExam, Track } from "@/lib/types";
 
-const EXAM_MS = 12 * 60 * 1000;
+const EXAM_MS = 50 * 60 * 1000;
 
 export function ExamSession({ track }: { track: Track }) {
   const { state, setState, hydrated } = useAppState();
