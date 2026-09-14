@@ -9,7 +9,6 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import {
   isManziShape,
-  isOwnerCorpus,
   isResearchShape,
   knownCorpus,
   normalizeManziRecord,
@@ -132,17 +131,18 @@ export function compile({ check = false, images = null } = {}) {
       return;
     }
     const stem = stemKey(result.question.stem_sv);
-    const researchCopy =
+    const stemDedupe =
       result.question.corpus === "research" ||
-      isOwnerCorpus(result.question.corpus) ||
+      result.question.corpus === "owner-seed" ||
+      result.question.corpus === "owner-official" ||
       String(result.question.id).startsWith("research-") ||
       String(result.question.id).startsWith("rs-");
-    if (stem && seenStems.has(stem) && researchCopy) {
+    if (stem && seenStems.has(stem) && stemDedupe) {
       warnings.push(`duplicate stem ${result.question.id} (kept first / research)`);
       return;
     }
     seen.add(result.question.id);
-    if (stem && (result.question.corpus === "research" || isOwnerCorpus(result.question.corpus))) {
+    if (stem && stemDedupe) {
       seenStems.add(stem);
     }
     questions.push(result.question);

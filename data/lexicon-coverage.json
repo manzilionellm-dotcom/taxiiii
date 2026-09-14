@@ -1,335 +1,335 @@
 {
-  "generatedAt": "2026-09-14T06:29:07.193Z",
-  "questions": 1608,
+  "generatedAt": "2026-09-14T06:53:00.015Z",
+  "questions": 1900,
   "translations": 248,
-  "uniqueBankTokens": 5780,
-  "uniqueHits": 3797,
-  "uniqueMisses": 1983,
-  "uniqueCoveragePct": 65.7,
-  "occurrenceTotal": 55148,
-  "occurrenceHits": 53061,
-  "occurrenceCoveragePct": 96.2,
-  "lexiconEntries": 4080,
+  "uniqueBankTokens": 7074,
+  "uniqueHits": 4010,
+  "uniqueMisses": 3064,
+  "uniqueCoveragePct": 56.7,
+  "occurrenceTotal": 65981,
+  "occurrenceHits": 61752,
+  "occurrenceCoveragePct": 93.6,
+  "lexiconEntries": 4271,
   "missSample": [
     {
-      "sv": "kap",
-      "count": 7
-    },
-    {
-      "sv": "cp",
-      "count": 3
-    },
-    {
-      "sv": "tsfs",
-      "count": 3
-    },
-    {
-      "sv": "bc",
-      "count": 2
-    },
-    {
-      "sv": "busshållplatsskylt",
-      "count": 2
-    },
-    {
-      "sv": "co",
-      "count": 2
-    },
-    {
-      "sv": "eget",
-      "count": 2
-    },
-    {
-      "sv": "eu",
-      "count": 2
-    },
-    {
-      "sv": "fordonskombinationer",
-      "count": 2
-    },
-    {
-      "sv": "fortlöpande",
-      "count": 2
-    },
-    {
-      "sv": "foto",
-      "count": 2
-    },
-    {
-      "sv": "fysisk",
-      "count": 2
-    },
-    {
-      "sv": "förekomma",
-      "count": 2
-    },
-    {
-      "sv": "föreskriven",
-      "count": 2
-    },
-    {
-      "sv": "företagsformer",
-      "count": 2
-    },
-    {
-      "sv": "förlängd",
-      "count": 2
-    },
-    {
-      "sv": "förväg",
-      "count": 2
-    },
-    {
-      "sv": "glesbygd",
-      "count": 2
-    },
-    {
-      "sv": "godkänner",
-      "count": 2
-    },
-    {
-      "sv": "grovsopanläggning",
-      "count": 2
-    },
-    {
-      "sv": "handledare",
-      "count": 2
-    },
-    {
-      "sv": "hanteras",
-      "count": 2
-    },
-    {
-      "sv": "innevarande",
-      "count": 2
-    },
-    {
-      "sv": "installation",
-      "count": 2
-    },
-    {
-      "sv": "intäkter",
-      "count": 2
-    },
-    {
-      "sv": "jour",
-      "count": 2
-    },
-    {
-      "sv": "jämförprisdekalen",
-      "count": 2
-    },
-    {
-      "sv": "kalenderår",
-      "count": 2
-    },
-    {
-      "sv": "kassan",
-      "count": 2
-    },
-    {
-      "sv": "knappar",
-      "count": 2
-    },
-    {
-      "sv": "kompletterande",
-      "count": 2
-    },
-    {
-      "sv": "konkursboet",
-      "count": 2
-    },
-    {
-      "sv": "kontrollprov",
-      "count": 2
-    },
-    {
-      "sv": "kunskap",
-      "count": 2
-    },
-    {
-      "sv": "kunskapskraven",
-      "count": 2
-    },
-    {
-      "sv": "körjournal",
-      "count": 2
-    },
-    {
-      "sv": "körkortskrav",
-      "count": 2
-    },
-    {
-      "sv": "landet",
-      "count": 2
-    },
-    {
-      "sv": "leasing",
-      "count": 2
-    },
-    {
-      "sv": "liknande",
-      "count": 2
-    },
-    {
-      "sv": "livstid",
-      "count": 2
-    },
-    {
-      "sv": "medverkan",
-      "count": 2
-    },
-    {
-      "sv": "missförhållandena",
-      "count": 2
-    },
-    {
-      "sv": "motsvarande",
-      "count": 2
-    },
-    {
-      "sv": "muntlig",
-      "count": 2
-    },
-    {
-      "sv": "muntliga",
-      "count": 2
-    },
-    {
-      "sv": "norska",
-      "count": 2
-    },
-    {
-      "sv": "nuvarande",
-      "count": 2
-    },
-    {
-      "sv": "ordförande",
-      "count": 2
-    },
-    {
-      "sv": "ordning",
-      "count": 2
-    },
-    {
-      "sv": "parkeringsanmärkning",
-      "count": 2
-    },
-    {
-      "sv": "plagg",
-      "count": 2
-    },
-    {
-      "sv": "polismyndigheten",
-      "count": 2
-    },
-    {
-      "sv": "post",
-      "count": 2
-    },
-    {
-      "sv": "poäng",
-      "count": 2
-    },
-    {
-      "sv": "poänggivande",
-      "count": 2
-    },
-    {
-      "sv": "prövas",
-      "count": 2
-    },
-    {
-      "sv": "påminnelse",
-      "count": 2
-    },
-    {
-      "sv": "raps",
-      "count": 2
-    },
-    {
-      "sv": "registreringsnumret",
-      "count": 2
-    },
-    {
-      "sv": "resultatet",
-      "count": 2
-    },
-    {
-      "sv": "rme",
-      "count": 2
-    },
-    {
-      "sv": "rättsregler",
-      "count": 2
-    },
-    {
-      "sv": "saknad",
-      "count": 2
-    },
-    {
-      "sv": "samarbete",
-      "count": 2
-    },
-    {
-      "sv": "skedde",
-      "count": 2
+      "sv": "budgeterade",
+      "count": 25
     },
     {
       "sv": "skulder",
-      "count": 2
+      "count": 22
     },
     {
-      "sv": "sköter",
-      "count": 2
+      "sv": "intäkter",
+      "count": 18
     },
     {
-      "sv": "säkerställa",
-      "count": 2
+      "sv": "eget",
+      "count": 17
     },
     {
-      "sv": "taxameterresa",
-      "count": 2
+      "sv": "resultatet",
+      "count": 17
     },
     {
-      "sv": "taxametrar",
-      "count": 2
+      "sv": "svarsalternativ",
+      "count": 17
     },
     {
-      "sv": "taxiverksamhet",
-      "count": 2
+      "sv": "ab",
+      "count": 11
     },
     {
-      "sv": "tecknar",
-      "count": 2
+      "sv": "arbetstagare",
+      "count": 11
     },
     {
-      "sv": "teknik",
-      "count": 2
+      "sv": "kassa",
+      "count": 11
+    },
+    {
+      "sv": "likviditeten",
+      "count": 11
+    },
+    {
+      "sv": "såväl",
+      "count": 11
+    },
+    {
+      "sv": "inträffat",
+      "count": 10
+    },
+    {
+      "sv": "offentliggöras",
+      "count": 10
+    },
+    {
+      "sv": "tillgånger",
+      "count": 10
+    },
+    {
+      "sv": "arbeta",
+      "count": 9
+    },
+    {
+      "sv": "förbättras",
+      "count": 9
+    },
+    {
+      "sv": "poäng",
+      "count": 9
+    },
+    {
+      "sv": "arvika",
+      "count": 8
+    },
+    {
+      "sv": "beskattningsåret",
+      "count": 8
+    },
+    {
+      "sv": "debet",
+      "count": 8
+    },
+    {
+      "sv": "grundbokföring",
+      "count": 8
+    },
+    {
+      "sv": "kap",
+      "count": 8
+    },
+    {
+      "sv": "personalkostnader",
+      "count": 8
     },
     {
       "sv": "tillgångar",
-      "count": 2
+      "count": 8
     },
     {
-      "sv": "turas",
-      "count": 2
+      "sv": "bilförare",
+      "count": 7
     },
     {
-      "sv": "typiskt",
-      "count": 2
+      "sv": "cesar",
+      "count": 7
     },
     {
-      "sv": "tystnad",
-      "count": 2
+      "sv": "flik",
+      "count": 7
     },
     {
-      "sv": "tömningscentral",
-      "count": 2
+      "sv": "krisstöd",
+      "count": 7
     },
     {
-      "sv": "underlåtenhet",
-      "count": 2
+      "sv": "monterad",
+      "count": 7
+    },
+    {
+      "sv": "näringsidkare",
+      "count": 7
+    },
+    {
+      "sv": "skulderna",
+      "count": 7
+    },
+    {
+      "sv": "verksamhet",
+      "count": 7
+    },
+    {
+      "sv": "äganderätten",
+      "count": 7
+    },
+    {
+      "sv": "anses",
+      "count": 6
+    },
+    {
+      "sv": "arbetsmiljölagen",
+      "count": 6
+    },
+    {
+      "sv": "debitera",
+      "count": 6
+    },
+    {
+      "sv": "huvudbokföring",
+      "count": 6
+    },
+    {
+      "sv": "händelse",
+      "count": 6
+    },
+    {
+      "sv": "inträder",
+      "count": 6
+    },
+    {
+      "sv": "kredit",
+      "count": 6
+    },
+    {
+      "sv": "medel",
+      "count": 6
+    },
+    {
+      "sv": "rad",
+      "count": 6
+    },
+    {
+      "sv": "resultat",
+      "count": 6
+    },
+    {
+      "sv": "ränta",
+      "count": 6
+    },
+    {
+      "sv": "tecknar",
+      "count": 6
+    },
+    {
+      "sv": "totala",
+      "count": 6
+    },
+    {
+      "sv": "transportföretag",
+      "count": 6
+    },
+    {
+      "sv": "utgången",
+      "count": 6
+    },
+    {
+      "sv": "vilotidsbestämmelserna",
+      "count": 6
+    },
+    {
+      "sv": "vilotidsreglerna",
+      "count": 6
+    },
+    {
+      "sv": "vinst",
+      "count": 6
+    },
+    {
+      "sv": "ämnet",
+      "count": 6
+    },
+    {
+      "sv": "anders",
+      "count": 5
+    },
+    {
+      "sv": "arbetstagarna",
+      "count": 5
+    },
+    {
+      "sv": "avskrivningar",
+      "count": 5
+    },
+    {
+      "sv": "banklån",
+      "count": 5
+    },
+    {
+      "sv": "ensam",
+      "count": 5
+    },
+    {
+      "sv": "händelser",
+      "count": 5
+    },
+    {
+      "sv": "kundfordringar",
+      "count": 5
+    },
+    {
+      "sv": "leasing",
+      "count": 5
+    },
+    {
+      "sv": "miljöledningssystem",
+      "count": 5
+    },
+    {
+      "sv": "momsredovisningen",
+      "count": 5
+    },
+    {
+      "sv": "motpart",
+      "count": 5
+    },
+    {
+      "sv": "näringsverksamhet",
+      "count": 5
+    },
+    {
+      "sv": "omfatta",
+      "count": 5
+    },
+    {
+      "sv": "restvärdet",
+      "count": 5
+    },
+    {
+      "sv": "självkostnaden",
+      "count": 5
+    },
+    {
+      "sv": "skuld",
+      "count": 5
+    },
+    {
+      "sv": "skyddsombud",
+      "count": 5
+    },
+    {
+      "sv": "teckna",
+      "count": 5
+    },
+    {
+      "sv": "tillgångerna",
+      "count": 5
+    },
+    {
+      "sv": "upprätta",
+      "count": 5
+    },
+    {
+      "sv": "vidstående",
+      "count": 5
+    },
+    {
+      "sv": "ämne",
+      "count": 5
+    },
+    {
+      "sv": "ökad",
+      "count": 5
+    },
+    {
+      "sv": "överstiga",
+      "count": 5
+    },
+    {
+      "sv": "adr",
+      "count": 4
+    },
+    {
+      "sv": "amortering",
+      "count": 4
+    },
+    {
+      "sv": "arbetsställen",
+      "count": 4
+    },
+    {
+      "sv": "avskrivning",
+      "count": 4
     }
   ]
 }

@@ -320,13 +320,41 @@ assert(
 
 const importDirUrl = new URL("../data/imports/", import.meta.url);
 if (existsSync(importDirUrl)) {
-  const importFiles = readdirSync(importDirUrl).filter(
-    (name) => name.endsWith(".jsonl") || name.endsWith(".ndjson"),
-  );
+  const importFiles = readdirSync(importDirUrl)
+    .filter((name) => name.endsWith(".jsonl") || name.endsWith(".ndjson"))
+    .sort();
+  const seenImportIds = new Set();
+  let compilableImports = 0;
+  for (const name of importFiles) {
+    const parsed = parseJsonl(readFileSync(new URL(name, importDirUrl), "utf8"));
+    parsed.records.forEach((record, index) => {
+      const id = String(record.id || "");
+      if (!id || seenImportIds.has(id)) return;
+      seenImportIds.add(id);
+      const trackHint =
+        record.trackHint ||
+        (record.track === "owner" || record.track === "taxi" || record.track === "b"
+          ? record.track
+          : undefined);
+      const shaped = {
+        ...record,
+        ...(trackHint ? { trackHint } : {}),
+        corpus: record.corpus || "owner-import",
+      };
+      const result = isResearchShape(shaped)
+        ? normalizeResearchRecord(shaped, index)
+        : normalizeManziRecord(shaped, index);
+      if (result.question) compilableImports += 1;
+    });
+  }
   if (importFiles.length) {
     assert(
-      ownerImportCount >= 301,
-      `owner-import EXE dump too small: ${ownerImportCount} (expected ≥301)`,
+      seenImportIds.size >= 301,
+      `owner-import JSONL unique ids ${seenImportIds.size} (expected ≥301)`,
+    );
+    assert(
+      ownerImportCount === compilableImports,
+      `owner-import compiled ${ownerImportCount} != compilable dump rows ${compilableImports} (incomplete keys skipped, answers not invented)`,
     );
   }
 }
