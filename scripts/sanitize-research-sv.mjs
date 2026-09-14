@@ -12,7 +12,7 @@ import {
   splitSvAlts,
 } from "./research-normalize.mjs";
 
-const LETTERS = new Set(["A", "B", "C", "D", "E"]);
+const LETTERS = new Set(["A", "B", "C", "D", "E", "F"]);
 
 const EXPLANATION_SV = {
   "research-0016":

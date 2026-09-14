@@ -1,0 +1,9 @@
+# Sideload / Play binaries — not part of the Next.js web deploy
+*.apk
+*.aab
+releases/*.apk
+
+# Android / signing — web build does not need them
+android/
+secrets/
+dist/

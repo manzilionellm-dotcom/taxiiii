@@ -19,7 +19,7 @@ import { looksHybridFrench, looksUnusableFrench } from "../lib/questions/french.
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dest = join(root, "data/translations.fr.json");
 const curatedDir = join(root, "data/fr");
-const LETTERS = ["A", "B", "C", "D", "E"];
+const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
 function clean(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
