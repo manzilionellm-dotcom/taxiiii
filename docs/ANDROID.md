@@ -1,63 +1,60 @@
-# Android APK — KörkortGO by MZ
+# Android — KörkortGO by MZ (Play Store)
 
-The Play-store-ready wrapper is **Capacitor 7**. The Next.js app stays on Vercel (API routes, session-signed media, RAG). The APK is a WebView shell with **FLAG_SECURE** so Android blocks screenshots and Recents previews.
+The shipped product is a **Capacitor 7** Android app (`se.mz.korkortgo`) that loads the live Next.js site at **https://taxiiii.vercel.app**. The web app stays a prototype for study; Google Play is where anti-screenshot belongs.
 
-App id: `se.mz.korkortgo` (from [`lib/branding.ts`](../lib/branding.ts) `native.appId`).  
-Label: **KörkortGO**.  
-Default URL: `native.serverUrl` → `https://taxiiii.vercel.app`.
+Anti-screenshot is native **`FLAG_SECURE`** on `MainActivity` (plus Recents screenshot disabled on API 33+). Do **not** rely on web blur / focus-hide.
 
-Override the URL when building:
+| Field | Value |
+|---|---|
+| Application id | `se.mz.korkortgo` |
+| Launcher name | **KörkortGO by MZ** |
+| Slogan | Förstå teorin. Klara provet. |
+| versionCode | `1` |
+| versionName | `1.0.0` |
+| minSdk | **23** |
+| compileSdk / targetSdk | **35** |
+| Permissions | `INTERNET` only |
+| WebView URL | `https://taxiiii.vercel.app` (`CAPACITOR_SERVER_URL` override) |
 
-```bash
-CAPACITOR_SERVER_URL=https://your-preview.vercel.app npm run apk
-```
+Full Play Console steps: [PLAY-CONSOLE.md](PLAY-CONSOLE.md).
 
-Questions still come from the **server** (`/api/questions`) once that host is live. Drop the full Manzi (~1475) and research (~193) banks with the import scripts — do not invent Swedish. See [IMPORT.md](IMPORT.md).
+## Install a sideload APK (test only)
 
-## Install on a phone (Lionel)
+1. Phone: **Settings → Security → Install unknown apps** for Chrome / Files.
+2. Open the **release-signed** APK (not the old debug APK) → **Install**.
+3. First launch needs **internet**. WebView loads `https://taxiiii.vercel.app`.
+4. If a debug build with the same id is already installed, uninstall it first (different signing key).
 
-The app repo `taxiiii` is **private**, so unauthenticated `raw.githubusercontent.com` links **404**. The APK **is** on the PR branch (`releases/KorkortGO-by-MZ-debug.apk`, 3.9 MB, not gitignored, not LFS).
+This is **not** the Play upload. Play Console wants the **AAB**.
 
-**Public download (open on the phone):** https://gofile.io/d/N86Btgvw
+## Rebuild Play artifacts
 
-Also:
-
-- Logged in as repo owner: [GitHub blob → Download](https://github.com/manzilionellm-dotcom/taxiiii/blob/cursor/swedish-teoriprov-app-7481/releases/KorkortGO-by-MZ-debug.apk)
-- Cursor agent artifacts: https://cursor.com/agents/bc-5e3e7990-e148-4fbc-94c3-bb56f6697481 (file `KorkortGO-by-MZ-debug.apk`)
-- Public notes repo: https://github.com/manzilionellm-dotcom/korkortgo-apk
-
-Then:
-
-1. Phone: **Settings → Security → Install unknown apps** for Chrome / Files / Drive.
-2. Open the APK → **Install**.
-3. First launch needs **internet**. WebView loads `https://taxiiii.vercel.app`. **Merge PR #1** so that host is KörkortGO (today `main` is still the blank starter; the PR preview is behind Vercel login).
-
-This is a **debug-signed** APK (fine for first handoff). For Play Store later: `cd android && ./gradlew assembleRelease` with your keystore.
-
-## Rebuild on this machine
-
-Needs JDK 17+ and Android SDK (`ANDROID_HOME`).
+Needs **JDK 17+** (21 is fine) and Android SDK (`ANDROID_HOME`) with `platforms;android-35` and `build-tools;35.0.0`.
 
 ```bash
 export ANDROID_HOME=$HOME/android-sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"
 
 npm install
-npm run native:icon          # optional, regenerates assets/icon.png
-npx cap add android          # first time only
-npm run apk                  # cap sync + FLAG_SECURE patch + assembleDebug
+npm run keystore          # first time only — writes gitignored secrets/
+npm run aab               # cap sync + FLAG_SECURE patch + bundleRelease + assembleRelease
 ```
 
-Output: `releases/KorkortGO-by-MZ-debug.apk` and `android/app/build/outputs/apk/debug/app-debug.apk`.
+Outputs (gitignored):
 
-`scripts/patch-android.mjs` writes `FLAG_SECURE` on `MainActivity` after every sync so `cap sync` cannot drop it.
+- `dist/play/KorkortGO-by-MZ-1.0.0.aab` — upload this to Play Console
+- `dist/play/KorkortGO-by-MZ-1.0.0.apk` — sideload test
+- Gradle copies: `android/app/build/outputs/bundle/release/app-release.aab`
+- `android/app/build/outputs/apk/release/app-release.apk`
 
-## Content protection on device
+Debug APK (not for Play): `npm run apk` → `releases/KorkortGO-by-MZ-debug.apk`.
 
-| Layer | Where |
-|---|---|
-| `FLAG_SECURE` | Android activity (blocks screenshot / Recents) |
-| Web overlay, no-copy, signed media | existing Next.js app (see [CONTENT-PROTECTION.md](CONTENT-PROTECTION.md)) |
+`scripts/patch-android.mjs` rewrites `MainActivity` after every `cap sync` so Capacitor cannot drop `FLAG_SECURE`.
 
-A second phone photographing the glass still works. Native flags are extra friction, not DRM.
+## Signing
+
+Release builds read `android/keystore.properties` or `secrets/keystore.properties` (both gitignored). Example: [android/keystore.properties.example](../android/keystore.properties.example).
+
+The **upload keystore is never committed**. See `secrets/README.md` and the local `secrets/PLAY-SIGNING.note.md` created by `npm run keystore`.

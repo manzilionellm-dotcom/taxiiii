@@ -9,6 +9,8 @@ export const BRAND = {
   keyMessage: "Lär dig på svenska. Förstå på ditt språk.",
   native: {
     appId: "se.mz.korkortgo",
+    /** Play Store / Android launcher label. Web UI keeps `appName` + `signature`. */
+    displayName: "KörkortGO by MZ",
     /** Public production host. Override with CAPACITOR_SERVER_URL when building the APK. */
     serverUrl: "https://taxiiii.vercel.app",
   },

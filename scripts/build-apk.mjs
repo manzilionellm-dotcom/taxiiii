@@ -1,5 +1,5 @@
 import { spawnSync } from "node:child_process";
-import { copyFileSync, existsSync, mkdirSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -28,6 +28,15 @@ if (!existsSync(join(root, "assets/icon.png"))) {
 run("node", [join(root, "scripts/write-native-www.mjs")]);
 run("npx", ["cap", "sync", "android"]);
 run("node", [join(root, "scripts/patch-android.mjs")]);
+
+const mainActivity = join(
+  root,
+  "android/app/src/main/java/se/mz/korkortgo/MainActivity.java",
+);
+if (!existsSync(mainActivity) || !readFileSync(mainActivity, "utf8").includes("FLAG_SECURE")) {
+  console.error("FLAG_SECURE missing from MainActivity.java");
+  process.exit(1);
+}
 
 const gradlew = join(root, "android/gradlew");
 if (!existsSync(gradlew)) {

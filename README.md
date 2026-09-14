@@ -86,17 +86,17 @@ Auth for the MVP is a local profile (onboarding + settings). Progress tables are
 
 i18n dictionaries live in `lib/i18n/{sv,fr}.ts` and pull brand/category strings from `lib/branding.ts`. Add `ar` later by extending `LOCALES` and a new dictionary — question content stays Swedish-first.
 
-## Android APK
+## Android (Play Store)
 
-Installable debug APK (app id `se.mz.korkortgo`, label **KörkortGO**). The repo is private so anonymous GitHub raw links 404.
+Play-ready Capacitor wrapper (app id `se.mz.korkortgo`, launcher **KörkortGO by MZ**). The WebView loads `https://taxiiii.vercel.app` so content can update without a new APK. Screenshot capture is blocked with native **FLAG_SECURE** (not web blur).
 
-**Public download:** https://gofile.io/d/N86Btgvw
+**Lionel — upload to Play Console:**
 
-1. On the phone enable **Install unknown apps** for the browser/Files app.
-2. Download the APK and open it → Install.
-3. The WebView loads `https://taxiiii.vercel.app` (override with `CAPACITOR_SERVER_URL`). Screenshot capture is blocked with **FLAG_SECURE**. Merge PR #1 so production is KörkortGO (not the blank starter).
+1. Download `KorkortGO-by-MZ-1.0.0.aab` from this agent’s artifacts (or rebuild with `npm run aab`).
+2. Follow **[docs/PLAY-CONSOLE.md](docs/PLAY-CONSOLE.md)** (package name, versionCode `1` / versionName `1.0.0`, minSdk 23, targetSdk 35, permission `INTERNET` only).
+3. Store the **upload keystore + passwords** from the gitignored `secrets/PLAY-SIGNING.note.md` in a password manager. Never commit them.
 
-Rebuild: `npm run apk` (needs Android SDK + JDK). Full steps: [docs/ANDROID.md](docs/ANDROID.md).
+Sideload test APK: `dist/play/KorkortGO-by-MZ-1.0.0.apk`. Rebuild: `npm run aab` (JDK 17+ and Android SDK). Details: [docs/ANDROID.md](docs/ANDROID.md).
 
 ## Deploy
 
@@ -109,11 +109,11 @@ No web app can **100% block OS-level screenshots**, especially on desktop (Print
 Shipped on quiz, mock exam, Calcul, cloze, and tutor chat:
 
 1. **Copy / select** — `user-select: none` on stems, options, explanations, and images; context menu disabled on protected views; common copy / save / print shortcuts blocked (inputs still work).
-2. **Visibility / capture** — leaving the tab, blurring the window, printing, or Print Screen hides the question behind a black overlay until you confirm. Exam mode waits a short beat before “continue” (soft re-auth).
+2. **Web focus** — the prototype does **not** hide questions when the tab blurs. Study stays usable while multitasking.
 3. **Images** — files live in `content/media/` (not hotlinked as permanent `/media/…` CDN paths). The client fetches a **short-lived signed URL**, draws on a **canvas**, and paints a faint watermark (`name` / `email` / session id). Direct `/media/*` returns 403.
 4. **Scrape friction** — the full bank is `server-only`. Clients receive a **per-session slice** (study 6–10, exam 65) from `/api/questions`. Meta mode returns ids + topics only. APIs are rate-limited. `questions.jsonl` is not in `public/`.
 5. **Headers** — CSP (`frame-ancestors 'none'`), `X-Frame-Options: DENY`, `Cache-Control: private, no-store` on APIs and media.
-6. **Legal UX** — ToS on onboarding / settings / nav: redistribution of the bank is forbidden. Rapid hide/capture patterns show a soft warning.
-7. **Android APK** — Capacitor WebView + `FLAG_SECURE` (see [docs/ANDROID.md](docs/ANDROID.md)). iOS capture APIs are still future.
+6. **Legal UX** — ToS must be accepted at onboarding / settings / nav: redistribution of the bank is forbidden.
+7. **Android (Play)** — Capacitor WebView + native `FLAG_SECURE` on `MainActivity` (see [docs/ANDROID.md](docs/ANDROID.md) and [docs/PLAY-CONSOLE.md](docs/PLAY-CONSOLE.md)). This is the product screenshot block. Do not rely on web blur. iOS capture APIs are still future.
 
-Limits: a determined user can still photograph the screen, dump the session JSON from DevTools, or ignore the overlay. That is why the README does not promise a lock, only layered friction. Details: [docs/CONTENT-PROTECTION.md](docs/CONTENT-PROTECTION.md).
+Limits: a determined user can still photograph the glass or dump a session slice from DevTools. The README does not promise a lock. Details: [docs/CONTENT-PROTECTION.md](docs/CONTENT-PROTECTION.md).
