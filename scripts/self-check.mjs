@@ -270,6 +270,29 @@ assert(
   "import fixture must not leak into the compiled bank",
 );
 
+const bankSrc = readFileSync(new URL("../lib/questions/bank.ts", import.meta.url), "utf8");
+assert(
+  !bankSrc.includes("Traduction française à ajouter"),
+  "getFrench must not emit the FR placeholder stub",
+);
+
+const protectedViewSrc = readFileSync(
+  new URL("../components/protected-view.tsx", import.meta.url),
+  "utf8",
+);
+assert(
+  !protectedViewSrc.includes("visibilitychange"),
+  "ProtectedView must not hide on visibilitychange",
+);
+assert(
+  !/addEventListener\(\s*["']blur["']/.test(protectedViewSrc),
+  "ProtectedView must not hide on window blur",
+);
+assert(
+  !protectedViewSrc.includes("contentHidden"),
+  "ProtectedView must not show the Innehållet är dolt overlay",
+);
+
 console.log(
   `self-check OK · research ${researchCount} + owner-seed ${ownerCount} + owner-official ${ownerOfficialCount} + owner-import ${ownerImportCount} + manzi ${manziCount} · extras ${extras.length} · manifest ${manifestFiles.length} · ready@95`,
 );

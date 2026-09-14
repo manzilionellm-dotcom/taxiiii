@@ -7,6 +7,7 @@ import { ProtectedImage } from "@/components/protected-image";
 import { t } from "@/lib/i18n";
 import { hasImageUrl } from "@/lib/tokenize-stem.mjs";
 import { sanitizeCaption } from "@/lib/media/paths.mjs";
+import { isRealFrenchText } from "@/lib/questions/french-text";
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { Locale, SupportLevel } from "@/lib/types";
 
@@ -65,17 +66,19 @@ export function QuestionCard({
           revealAll={answered}
         />
 
-        {showFr || supportLevel >= 3 ? (
-          <p className="question-fr text-[1.02rem] leading-7">{french.stem}</p>
-        ) : (
-          <button
-            type="button"
-            className="min-h-11 text-left text-sm font-medium text-[#1d4ed8]"
-            onClick={() => setShowFr(true)}
-          >
-            {dict.showTranslation}
-          </button>
-        )}
+        {isRealFrenchText(french.stem) ? (
+          showFr || supportLevel >= 3 ? (
+            <p className="question-fr text-[1.02rem] leading-7">{french.stem}</p>
+          ) : (
+            <button
+              type="button"
+              className="min-h-11 text-left text-sm font-medium text-[#1d4ed8]"
+              onClick={() => setShowFr(true)}
+            >
+              {dict.showTranslation}
+            </button>
+          )
+        ) : null}
 
         {hasImageUrl(question.imageUrl) ? (
           <figure className="overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
@@ -139,7 +142,8 @@ export function QuestionCard({
                     <span className="block font-medium leading-6">
                       <GlossableText text={option.text} variant="option" />
                     </span>
-                    {(answered || showFr) && french.options?.[option.letter] ? (
+                    {(answered || showFr) &&
+                    isRealFrenchText(french.options?.[option.letter]) ? (
                       <span className="mt-1 block text-sm leading-6 text-[#1d4ed8]">
                         {french.options[option.letter]}
                       </span>
@@ -159,7 +163,7 @@ export function QuestionCard({
             <p className="mt-2 whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
               {question.explanation_sv}
             </p>
-            {supportLevel > 0 ? (
+            {supportLevel > 0 && isRealFrenchText(question.explanation_fr) ? (
               <p className="mt-2 whitespace-pre-wrap text-[0.95rem] leading-7 text-[#1d4ed8]">
                 {question.explanation_fr}
               </p>
