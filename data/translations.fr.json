@@ -7104,5 +7104,135 @@
       "B": "Au moins 11 heures",
       "C": "Au moins 6 heures"
     }
+  },
+  "bkort-classic-1": {
+    "stem": "Tu roules sur une route prioritaire quand une voiture approche par la droite dans une intersection. Quelle règle s'applique ?",
+    "options": {
+      "A": "Je dois laisser passer cette voiture à cause de la priorité à droite.",
+      "B": "La voiture venant de la droite doit me laisser passer.",
+      "C": "Nous devons tous les deux nous arrêter et chercher le contact visuel.",
+      "D": "Celui qui roule le plus lentement doit attendre."
+    },
+    "explanation": "La circulation sur une route prioritaire a la priorité. Le trafic transversal doit céder le passage, qu'il arrive par la droite ou par la gauche."
+  },
+  "bkort-classic-2": {
+    "stem": "As-tu le droit de t'arrêter sur un passage piéton pour déposer rapidement un passager ?",
+    "options": {
+      "A": "Oui, si cela peut se faire en sûreté et sans gêner personne.",
+      "B": "Oui, car l'arrêt est permis mais pas le stationnement.",
+      "C": "Non, il est interdit à la fois de s'y arrêter et d'y stationner.",
+      "D": "Non, sauf si tu allumes les feux de détresse pour prévenir les autres."
+    },
+    "explanation": "L'arrêt est interdit sur un passage piéton. Un véhicule qui s'y immobilise masque la visibilité et peut créer des situations dangereuses pour les piétons."
+  },
+  "bkort-classic-3": {
+    "stem": "Quelle est la vitesse de base en zone agglomérée ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "40 km/h",
+      "C": "50 km/h",
+      "D": "70 km/h"
+    },
+    "explanation": "La vitesse de base en zone agglomérée est de 50 km/h. Si une autre vitesse s'applique, elle doit être indiquée par un panneau."
+  },
+  "bkort-classic-4": {
+    "stem": "Que signifie une ligne jaune continue le long du bord de la chaussée ?",
+    "options": {
+      "A": "Interdiction de stationner, mais l'arrêt est autorisé.",
+      "B": "Interdiction de s'arrêter et de stationner.",
+      "C": "Avertissement d'un accotement étroit ou absent.",
+      "D": "Marquage d'une déviation temporaire pour un chantier routier."
+    },
+    "explanation": "Une ligne jaune continue signifie interdiction de s'arrêter et de stationner. Une ligne jaune discontinue signifie seulement interdiction de stationner."
+  },
+  "bkort-classic-5": {
+    "stem": "Que signifie le panneau en forme de triangle pointe vers le bas ?",
+    "options": {
+      "A": "Route prioritaire",
+      "B": "Obligation d'arrêt",
+      "C": "Avertissement d'obstacle",
+      "D": "Céder le passage"
+    },
+    "explanation": "Le panneau impose de céder le passage. Sa forme unique, pointe vers le bas, permet de le reconnaître même couvert de neige."
+  },
+  "bkort-classic-6": {
+    "stem": "Tu dépasses le panneau d'entrée en zone agglomérée. Quelle limitation de vitesse s'applique si aucun panneau n'indique autre chose ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "50 km/h",
+      "C": "70 km/h",
+      "D": "40 km/h"
+    },
+    "explanation": "En zone agglomérée, la limitation générale est de 50 km/h. Cette vitesse de base s'applique tant qu'aucun autre panneau n'indique une limite différente."
+  },
+  "bkort-classic-7": {
+    "stem": "Que signifie un horaire entre parenthèses, par exemple (8-17), sur un panonceau ?",
+    "options": {
+      "A": "L'horaire vaut tous les jours ouvrables, mais pas le samedi.",
+      "B": "L'horaire ne vaut que les dimanches et jours fériés.",
+      "C": "L'horaire vaut la veille d'un dimanche ou d'un jour férié.",
+      "D": "L'horaire est une recommandation, pas une règle contraignante."
+    },
+    "explanation": "Un horaire entre parenthèses signale que la règle s'applique la veille d'un dimanche ou d'un jour férié, le plus souvent le samedi. Les chiffres en rouge valent les dimanches et jours fériés."
+  },
+  "bkort-classic-8": {
+    "stem": "Un panonceau indique l'horaire « 8-17 » en chiffres noirs. Quels jours la règle indiquée s'applique-t-elle ?",
+    "options": {
+      "A": "Les jours ouvrables, sauf la veille d'un dimanche ou d'un jour férié.",
+      "B": "Les samedis et la veille d'un jour férié.",
+      "C": "Les dimanches et les jours fériés.",
+      "D": "Tous les jours de la semaine."
+    },
+    "explanation": "Des chiffres noirs sans parenthèses sur un panonceau valent les jours ouvrables, mais pas la veille d'un dimanche ni d'un jour férié."
+  },
+  "bkort-classic-9": {
+    "stem": "Quelle est la différence importante entre l'interdiction de stationner et l'interdiction de s'arrêter et de stationner ?",
+    "options": {
+      "A": "L'interdiction d'arrêt ne vaut que les jours ouvrables, l'interdiction de stationnement tous les jours.",
+      "B": "L'interdiction de stationner autorise de courts arrêts, par exemple pour laisser monter ou descendre.",
+      "C": "L'interdiction de stationner autorise la montée et la descente, mais pas le chargement de marchandises.",
+      "D": "L'interdiction de stationner autorise un arrêt de cinq minutes, l'interdiction d'arrêt une minute."
+    },
+    "explanation": "L'interdiction de stationner (C35) te permet de t'arrêter pour charger ou décharger, ou pour prendre et déposer des passagers. L'interdiction de s'arrêter (C39) proscrit tout cela."
+  },
+  "bkort-classic-10": {
+    "stem": "Tu vois le panneau d'interdiction de stationner. As-tu le droit de t'arrêter pour prendre un passager ?",
+    "options": {
+      "A": "Non, le panneau interdit toute forme d'arrêt.",
+      "B": "Oui, car l'arrêt pour la montée ou la descente est autorisé.",
+      "C": "Non, tu peux seulement t'arrêter pour charger ou décharger des marchandises.",
+      "D": "Oui, mais seulement en allumant les feux de détresse pendant ce temps."
+    },
+    "explanation": "Le panneau signale une interdiction de stationner. L'arrêt est permis pour laisser quelqu'un monter ou descendre, ou pour charger et décharger, mais pas pour stationner."
+  },
+  "bkort-classic-11": {
+    "stem": "Que signifie le marquage au sol en « dents de requin » ?",
+    "options": {
+      "A": "Une ligne d'arrêt",
+      "B": "Une ligne de cédez-le-passage",
+      "C": "Une ligne d'avertissement",
+      "D": "Le marquage d'un ralentisseur"
+    },
+    "explanation": "Ce marquage est une ligne de cédez-le-passage (M14) et indique où t'arrêter au plus tard pour laisser la priorité. Il complète souvent le panneau de cédez-le-passage."
+  },
+  "bkort-classic-13": {
+    "stem": "Un bus met son clignotant pour quitter un arrêt sur une route limitée à 50. Quelle est ton obligation ?",
+    "options": {
+      "A": "Attendre et voir ce que fait le conducteur du bus.",
+      "B": "Continuer à la même vitesse, puisque j'ai la priorité.",
+      "C": "Ralentir et laisser passer le bus.",
+      "D": "Ne ralentir que si la limitation est de 30 km/h ou moins."
+    },
+    "explanation": "Tu dois céder le passage à un bus qui signale son départ d'un arrêt si la vitesse autorisée sur la route est de 50 km/h ou moins."
+  },
+  "bkort-classic-14": {
+    "stem": "Que signifient des horaires en rouge sur un panonceau placé sous un panneau ?",
+    "options": {
+      "A": "La règle vaut tous les jours ouvrables sauf le samedi.",
+      "B": "La règle vaut la veille d'un dimanche ou d'un jour férié.",
+      "C": "La règle vaut le dimanche et les jours fériés officiels.",
+      "D": "La règle n'est qu'une recommandation."
+    },
+    "explanation": "Un texte rouge sur un panonceau signifie que l'indication vaut le dimanche et les jours fériés officiels, les « jours rouges » du calendrier suédois."
   }
 }

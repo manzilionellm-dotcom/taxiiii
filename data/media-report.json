@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-14T22:54:53.004Z",
+  "generatedAt": "2026-09-14T23:50:12.376Z",
   "imagesDir": null,
-  "questionsTotal": 1920,
-  "researchCount": 50,
+  "questionsTotal": 1940,
+  "researchCount": 55,
   "ownerCount": 472,
   "ownerSeedCount": 42,
   "ownerOfficialCount": 138,
   "ownerImportCount": 292,
-  "manziCount": 1398,
+  "manziCount": 1413,
   "researchJsonl": 403,
   "importJsonl": 301,
   "importFiles": [
@@ -45,7 +45,7 @@
   ],
   "manziJsonl": 1668,
   "skippedIncomplete": 259,
-  "questionsWithImageUrl": 797,
+  "questionsWithImageUrl": 798,
   "rastersCopied": 0,
   "questionsLinkedToFile": 797,
   "questionsMissingFile": 0,
@@ -57,5 +57,7 @@
     "expectedQuestions": 1668,
     "expectedImages": 2877
   },
-  "note": "No --images this run. Exam rasters resolve from data/media-manifest.json + private Vercel Blob. Do not invent SVGs."
+  "note": "manzi-100c bank-delta applied onto questions.json",
+  "beforeMainManziCount": 1378,
+  "deltaManziVsMain": 35
 }

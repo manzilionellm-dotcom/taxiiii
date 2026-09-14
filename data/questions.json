@@ -2376,9 +2376,9 @@
     "answer": "F",
     "explanation_sv": "Rätt svar: F",
     "explanation_fr": "Bonne réponse : F",
-    "imageUrl": "/media/pdf-pages/LAGSTIFNING-4/page-06.jpg",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-4.pdf",
-    "corpus": "manzi"
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/LAGSTIFNING-4/page-06.jpg"
   },
   {
     "id": "LAGSTIFNING-4-Q7",
@@ -2550,7 +2550,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — När mätningen av vägsträckan ändras med mer än 5 procent.",
     "explanation_fr": "Bonne réponse: C — « När mätningen av vägsträckan ändras med mer än 5 procent. » (mots-clés: taximètre)",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-04.jpg"
   },
@@ -23896,10 +23896,10 @@
     ],
     "answer": "D",
     "explanation_sv": "Rätt svar: D",
-    "explanation_fr": "Bonne réponse: D — « Alla körningar. »",
-    "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-27.jpg",
+    "explanation_fr": "Bonne réponse : D",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-1.pdf",
-    "corpus": "manzi"
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/LAGSTIFNING-1/page-27.jpg"
   },
   {
     "id": "LAGSTIFNING-1-Q28",
@@ -25169,10 +25169,10 @@
     ],
     "answer": "C",
     "explanation_sv": "Rätt svar: C",
-    "explanation_fr": "Bonne réponse: C — « Ja, i enbart situation C. »",
-    "imageUrl": "/media/pdf-pages/LAGSTIFNING-2/page-04.jpg",
+    "explanation_fr": "Bonne réponse : C",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-2.pdf",
-    "corpus": "manzi"
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/LAGSTIFNING-2/page-04.jpg"
   },
   {
     "id": "LAGSTIFNING-2-Q5",
@@ -29377,10 +29377,10 @@
     ],
     "answer": "D",
     "explanation_sv": "Rätt svar: D",
-    "explanation_fr": "Bonne réponse: D — « En brant uppförsbacke. »",
-    "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-27.jpg",
+    "explanation_fr": "Bonne réponse : D",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-7.pdf",
-    "corpus": "manzi"
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/LAGSTIFNING-7/page-27.jpg"
   },
   {
     "id": "LAGSTIFNING-7-Q28",
@@ -30817,15 +30817,15 @@
       },
       {
         "letter": "D",
-        "text": "Onsdag Kl 17:00 2 tim 8‐16"
+        "text": "Onsdag Kl 17:00"
       }
     ],
     "answer": "C",
     "explanation_sv": "Rätt svar: C",
-    "explanation_fr": "Bonne réponse: C (mots-clés: stationner)",
-    "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-53.jpg",
+    "explanation_fr": "Bonne réponse: C",
     "source": "Desktop/manzi/Lagstiftning/LAGSTIFNING-8.pdf",
-    "corpus": "manzi"
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/LAGSTIFNING-8/page-53.jpg"
   },
   {
     "id": "LAGSTIFNING-8-Q54",
@@ -31197,7 +31197,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Ge något söt att äta.",
     "explanation_fr": "Bonne réponse: C — « Ge något söt att äta. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-10.jpg"
   },
@@ -31226,7 +31226,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Personen har fått en hjärtinfarkt.",
     "explanation_fr": "Bonne réponse: C — « Personen har fått en hjärtinfarkt. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-11.jpg"
   },
@@ -31255,7 +31255,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Se till att personen får något sött.",
     "explanation_fr": "Bonne réponse: C — « Se till att personen får något sött. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-12.jpg"
   },
@@ -31280,7 +31280,7 @@
     "answer": "B",
     "explanation_sv": "Rätt svar: B — Personen kan vara förvirrad och har svårt att minnas.",
     "explanation_fr": "Bonne réponse: B — « Personen kan vara förvirrad och har svårt att minnas. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-13.jpg"
   },
@@ -31313,7 +31313,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Att svåra olyckor kan minska.",
     "explanation_fr": "Bonne réponse: C — « Att svåra olyckor kan minska. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-14.jpg"
   },
@@ -31342,7 +31342,7 @@
     "answer": "D",
     "explanation_sv": "Rätt svar: D — Nej.",
     "explanation_fr": "Bonne réponse: D — « Nej. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-15.jpg"
   },
@@ -31367,9 +31367,9 @@
     "answer": "B",
     "explanation_sv": "Rätt svar: B — Han ska köra med låg hastighet och vara beredd att gående kan gå ut i gatan, trotts de har rött ljus.",
     "explanation_fr": "Bonne réponse: B — « Han ska köra med låg hastighet och vara beredd att gående kan gå ut i gatan, trotts de har rött ljus. »",
-    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-16.jpg",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-16.jpg"
   },
   {
     "id": "S_KERHET-1-Q17",
@@ -31400,9 +31400,9 @@
     "answer": "A",
     "explanation_sv": "Rätt svar: A — Afasi.",
     "explanation_fr": "Bonne réponse: A — « Afasi. »",
-    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-17.jpg",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-17.jpg"
   },
   {
     "id": "S_KERHET-1-Q19",
@@ -31433,7 +31433,7 @@
     "answer": "D",
     "explanation_sv": "Rätt svar: D — Vid ca +10˚",
     "explanation_fr": "Bonne réponse: D — « Vid ca +10˚ »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-19.jpg"
   },
@@ -31462,7 +31462,7 @@
     "answer": "D",
     "explanation_sv": "Rätt svar: D — Du kör direkt utan att belasta motorn hårt.",
     "explanation_fr": "Bonne réponse: D — « Du kör direkt utan att belasta motorn hårt. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-20.jpg"
   },
@@ -31487,7 +31487,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Fram vagninställning har rubbats. (Felaktig hjulinställning)",
     "explanation_fr": "Bonne réponse: C — « Fram vagninställning har rubbats. (Felaktig hjulinställning) »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-21.jpg"
   },
@@ -31516,7 +31516,7 @@
     "answer": "B",
     "explanation_sv": "Rätt svar: B — Gående som går ut framför bussen.",
     "explanation_fr": "Bonne réponse: B — « Gående som går ut framför bussen. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-22.jpg"
   },
@@ -31545,7 +31545,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Jag lyfter med rak rygg och godset nära mig.",
     "explanation_fr": "Bonne réponse: C — « Jag lyfter med rak rygg och godset nära mig. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-23.jpg"
   },
@@ -31570,7 +31570,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Försöker få ögonkontakter med honom så att mina munrörelser syns.",
     "explanation_fr": "Bonne réponse: C — « Försöker få ögonkontakter med honom så att mina munrörelser syns. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-24.jpg"
   },
@@ -31595,7 +31595,7 @@
     "answer": "A",
     "explanation_sv": "Rätt svar: A — Minskad rörelse i lederna.",
     "explanation_fr": "Bonne réponse: A — « Minskad rörelse i lederna. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-25.jpg"
   },
@@ -31620,7 +31620,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Under resans sista timme.",
     "explanation_fr": "Bonne réponse: C — « Under resans sista timme. » (mots-clés: fatigue)",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-28.jpg"
   },
@@ -31649,7 +31649,7 @@
     "answer": "D",
     "explanation_sv": "Rätt svar: D — Om ett barn som är kortare än 135 cm ska sitta bak.",
     "explanation_fr": "Bonne réponse: D — « Om ett barn som är kortare än 135 cm ska sitta bak. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-29.jpg"
   },
@@ -31678,7 +31678,7 @@
     "answer": "B",
     "explanation_sv": "Rätt svar: B — Växla upp tidigt och köra på så hög växel som möjligt.",
     "explanation_fr": "Bonne réponse: B — « Växla upp tidigt och köra på så hög växel som möjligt. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-03.jpg"
   },
@@ -31711,7 +31711,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Bilbälte.",
     "explanation_fr": "Bonne réponse: C — « Bilbälte. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-30.jpg"
   },
@@ -31740,7 +31740,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Den drar till sig vatten.",
     "explanation_fr": "Bonne réponse: C — « Den drar till sig vatten. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-31.jpg"
   },
@@ -31769,7 +31769,7 @@
     "answer": "D",
     "explanation_sv": "Rätt svar: D — Jag bärgar bilen till närmaste verkstad.",
     "explanation_fr": "Bonne réponse: D — « Jag bärgar bilen till närmaste verkstad. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-32.jpg"
   },
@@ -31798,9 +31798,9 @@
     "answer": "B",
     "explanation_sv": "Rätt svar: B — Hög motortemperatur.",
     "explanation_fr": "Bonne réponse: B — « Hög motortemperatur. »",
-    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-33.jpg",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-33.jpg"
   },
   {
     "id": "S_KERHET-1-Q34",
@@ -31823,7 +31823,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Att hänga på cykeln i en cykelbehållare bak på bilen.",
     "explanation_fr": "Bonne réponse: C — « Att hänga på cykeln i en cykelbehållare bak på bilen. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-34.jpg"
   },
@@ -31852,7 +31852,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — När barnets huvud är i höjd med bilbarnstolen över kant.",
     "explanation_fr": "Bonne réponse: C — « När barnets huvud är i höjd med bilbarnstolen över kant. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-35.jpg"
   },
@@ -31885,7 +31885,7 @@
     "answer": "B",
     "explanation_sv": "Rätt svar: B — 39 m.",
     "explanation_fr": "Bonne réponse: B — « 39 m. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-36.jpg"
   },
@@ -31914,7 +31914,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Däcken är kalla.",
     "explanation_fr": "Bonne réponse: C — « Däcken är kalla. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-37.jpg"
   },
@@ -31939,7 +31939,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — En grusplan.",
     "explanation_fr": "Bonne réponse: C — « En grusplan. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-38.jpg"
   },
@@ -31964,7 +31964,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — Enbart dubbdäck.",
     "explanation_fr": "Bonne réponse: C — « Enbart dubbdäck. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-39.jpg"
   },
@@ -31989,7 +31989,7 @@
     "answer": "B",
     "explanation_sv": "Rätt svar: B — Problemet drabbar över 45 årsålder oavsett kön.",
     "explanation_fr": "Bonne réponse: B — « Problemet drabbar över 45 årsålder oavsett kön. » (mots-clés: fatigue)",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-40.jpg"
   },
@@ -32014,7 +32014,7 @@
     "answer": "A",
     "explanation_sv": "Rätt svar: A — För att de är korta, impulsiva och inte har full utvecklad syn.",
     "explanation_fr": "Bonne réponse: A — « För att de är korta, impulsiva och inte har full utvecklad syn. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-05.jpg"
   },
@@ -32043,7 +32043,7 @@
     "answer": "A",
     "explanation_sv": "Rätt svar: A — Långt fram och lågt.",
     "explanation_fr": "Bonne réponse: A — « Långt fram och lågt. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-06.jpg"
   },
@@ -32072,7 +32072,7 @@
     "answer": "B",
     "explanation_sv": "Rätt svar: B — Bilens köregenskaper förändras.",
     "explanation_fr": "Bonne réponse: B — « Bilens köregenskaper förändras. »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-07.jpg"
   },
@@ -32101,7 +32101,7 @@
     "answer": "C",
     "explanation_sv": "Rätt svar: C — 12",
     "explanation_fr": "Bonne réponse: C — « 12 »",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
     "corpus": "manzi",
     "imageUrl": "/media/pdf-pages/S_KERHET-1/page-08.jpg"
   },
@@ -32130,9 +32130,9 @@
     "answer": "A",
     "explanation_sv": "Rätt svar: A — Däcket har körts med lite luft.",
     "explanation_fr": "Bonne réponse: A — « Däcket har körts med lite luft. »",
-    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-09.jpg",
-    "source": "Desktop/manzi/Säkerhet/SAKERHET-1.pdf",
-    "corpus": "manzi"
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-09.jpg"
   },
   {
     "id": "S_KERHET-2-Q1",
@@ -37728,7 +37728,7 @@
     ],
     "answer": "C",
     "explanation_sv": "Rätt svar: C",
-    "explanation_fr": "Bonne réponse: C — « 1,6 mm, på alla hjul »",
+    "explanation_fr": "Bonne réponse : C",
     "source": "Desktop/manzi/Säkerhet/S_KERHET-7.pdf",
     "corpus": "manzi"
   },
@@ -55770,5 +55770,568 @@
     "corpus": "owner-seed",
     "freq": "low",
     "type": "qcm"
+  },
+  {
+    "id": "research-0131",
+    "topic": "sakerhet",
+    "stem_sv": "Vad anger en gul heldragen linje på trottoarkanten?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tillåtet att stanna för avlämning"
+      },
+      {
+        "letter": "B",
+        "text": "lasta gods"
+      },
+      {
+        "letter": "C",
+        "text": "Förbud att stanna och parkera"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt: C",
+    "explanation_fr": "Ligne jaune continue sur le bord du trottoir — signification ?",
+    "source": "https://www.youtube.com/watch?v=BFwxXv3hujU",
+    "corpus": "research",
+    "freq": "high",
+    "type": "question"
+  },
+  {
+    "id": "research-0014",
+    "topic": "lagstiftning",
+    "stem_sv": "Hur lång tid får det högst vara mellan besiktning av en taxameter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "6 månader"
+      },
+      {
+        "letter": "B",
+        "text": "18 månader"
+      },
+      {
+        "letter": "C",
+        "text": "12 månader"
+      },
+      {
+        "letter": "D",
+        "text": "24 månader"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt: D",
+    "explanation_fr": "À quelle fréquence le taximètre doit-il être contrôlé / inspecté ? Options : 6 månader / 18 månader / 12 månader / 24 månader",
+    "source": "https://www.teori-taxi.com/lagstiftning-fragor1/",
+    "corpus": "research",
+    "freq": "high",
+    "type": "question"
+  },
+  {
+    "id": "research-0032",
+    "topic": "lagstiftning",
+    "stem_sv": "När ska taxametern normalt besiktas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I samband med fordonets kontrollbesiktning"
+      },
+      {
+        "letter": "B",
+        "text": "Varje år, senast ett år efter föregående besiktning av taxametern"
+      },
+      {
+        "letter": "C",
+        "text": "Vartannat år, senast två år efter föregående besiktning av taxametern"
+      },
+      {
+        "letter": "D",
+        "text": "Varje år i januari"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt: C",
+    "explanation_fr": "À quelle fréquence le taximètre doit-il être contrôlé / inspecté ? Options : I samband med fordonets kontrollbesiktning / Varje år, senast ett år efter föregående besiktning av taxametern / Vartannat år, senast två år efter föregående besiktning av taxametern / Varje år i januari",
+    "source": "https://www.teori-taxi.com/lagstiftning-fragor1/",
+    "corpus": "research",
+    "freq": "high",
+    "type": "question"
+  },
+  {
+    "id": "research-0008",
+    "topic": "lagstiftning",
+    "stem_sv": "Vilka regler gäller för hur taxiförare ska andvända bilbälte vid körning i trafik?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "De behöver intle andvända bilbälte vid körning i tättbebyggt område"
+      },
+      {
+        "letter": "B",
+        "text": "De är inte undantagna från bilbälteskravet"
+      },
+      {
+        "letter": "C",
+        "text": "De behöver inte använda bilbälte vid korta körningar"
+      },
+      {
+        "letter": "D",
+        "text": "De är undantagna från bilbälteskravet"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt: B",
+    "explanation_fr": "Quelles règles s’appliquent à l’usage de la ceinture par le chauffeur de taxi ? Options : De behöver intle andvända bilbälte vid körning i tättbebyggt område / De är inte undantagna från bilbälteskravet / De behöver inte använda bilbälte vid korta körningar / De är undantagna från bilbälteskravet",
+    "source": "https://www.teori-taxi.com/lagstiftning-fragor1/",
+    "corpus": "research",
+    "freq": "high",
+    "type": "question"
+  },
+  {
+    "id": "research-0003",
+    "topic": "lagstiftning",
+    "stem_sv": "När ska du erbjuda kunden kvitto från Taxa mettern?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vid alla typer av köruppdrag"
+      },
+      {
+        "letter": "B",
+        "text": "Endast när kunden begär det"
+      },
+      {
+        "letter": "C",
+        "text": "Endast vid körningar med företagskunder"
+      },
+      {
+        "letter": "D",
+        "text": "Endast vid körningar med fast pris"
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt: A",
+    "explanation_fr": "Quand devez-vous proposer / imprimer un reçu (kvitto) depuis le taximètre ? Options : Vid alla typer av köruppdrag / Endast när kunden begär det / Endast vid körningar med företagskunder / Endast vid körningar med fast pris",
+    "source": "https://www.teori-taxi.com/lagstiftning-fragor1/",
+    "corpus": "research",
+    "freq": "medium",
+    "type": "question"
+  },
+  {
+    "id": "bkort-classic-4",
+    "topic": "bkort",
+    "stem_sv": "Vad betyder en heldragen gul linje längs vägkanten?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Förbud att parkera, men det är tillåtet att stanna."
+      },
+      {
+        "letter": "B",
+        "text": "Förbud att stanna och parkera."
+      },
+      {
+        "letter": "C",
+        "text": "Varning för att vägrenen är smal eller helt saknas."
+      },
+      {
+        "letter": "D",
+        "text": "Markering för en tillfällig omledning vid vägarbete."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Förbud att stanna och parkera.",
+    "explanation_fr": "Ligne jaune continue = förbud att stanna och parkera.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-1",
+    "topic": "bkort",
+    "stem_sv": "Du kör på en huvudled när en bil närmar sig från höger i en korsning. Vad gäller?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jag ska lämna bilen företräde på grund av högerregeln."
+      },
+      {
+        "letter": "B",
+        "text": "Bilen från höger ska lämna mig företräde."
+      },
+      {
+        "letter": "C",
+        "text": "Vi måste båda stanna och söka ögonkontakt."
+      },
+      {
+        "letter": "D",
+        "text": "Den som kör långsammast ska vänta."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Bilen från höger ska lämna mig företräde.",
+    "explanation_fr": "Sur huvudled tu as priorité — la règle de droite ne te retire pas la priorité.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-10",
+    "topic": "bkort",
+    "stem_sv": "Du ser vägmärket för parkeringsförbud. Får du stanna för att plocka upp en passagerare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Nej, märket förbjuder all form av stannande."
+      },
+      {
+        "letter": "B",
+        "text": "Ja, eftersom det är tillåtet att stanna för på- eller avstigning."
+      },
+      {
+        "letter": "C",
+        "text": "Nej, du får endast stanna för att lasta i eller ur gods."
+      },
+      {
+        "letter": "D",
+        "text": "Ja, men bara om du använder varningsblinkers under tiden."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Ja, eftersom det är tillåtet att stanna för på- eller avstigning.",
+    "explanation_fr": "Oui — au P-förbud, montée/descente OK.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-11",
+    "topic": "bkort",
+    "stem_sv": "Vad betyder vägmarkeringen 'hajtänder'?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stopplinje"
+      },
+      {
+        "letter": "B",
+        "text": "Väjningslinje"
+      },
+      {
+        "letter": "C",
+        "text": "Varningslinje"
+      },
+      {
+        "letter": "D",
+        "text": "Markering för farthinder"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Väjningslinje",
+    "explanation_fr": "Dents de requin peintes = cédez le passage.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-12",
+    "topic": "bkort",
+    "stem_sv": "Vilken bashastighet gäller på landsväg utanför tättbebyggt område om skyltar saknas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "50 km/h"
+      },
+      {
+        "letter": "B",
+        "text": "70 km/h"
+      },
+      {
+        "letter": "C",
+        "text": "80 km/h"
+      },
+      {
+        "letter": "D",
+        "text": "90 km/h"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — 70 km/h",
+    "explanation_fr": "70 km/h hors agglo si rien n’est indiqué.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-13",
+    "topic": "bkort",
+    "stem_sv": "En buss blinkar för att köra ut från en hållplats på en 50-väg. Vad är din skyldighet?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vänta och se vad busschauffören gör."
+      },
+      {
+        "letter": "B",
+        "text": "Fortsätta med samma fart eftersom jag har företräde."
+      },
+      {
+        "letter": "C",
+        "text": "Sänka farten och släppa fram bussen."
+      },
+      {
+        "letter": "D",
+        "text": "Endast sakta in om hastighetsgränsen är 30 km/h eller lägre."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Sänka farten och släppa fram bussen.",
+    "explanation_fr": "Tu dois faciliter / céder pour que le bus sorte (≤50).",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-14",
+    "topic": "bkort",
+    "stem_sv": "Vad betyder röda tidsangivelser på en tilläggstavla under ett vägmärke?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Regeln gäller alla vardagar utom lördag."
+      },
+      {
+        "letter": "B",
+        "text": "Regeln gäller dagen före söndag och helgdag."
+      },
+      {
+        "letter": "C",
+        "text": "Regeln gäller på söndag och allmän helgdag."
+      },
+      {
+        "letter": "D",
+        "text": "Regeln är endast en rekommendation."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Regeln gäller på söndag och allmän helgdag.",
+    "explanation_fr": "Chiffres rouges = dimanche et jours fériés.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-2",
+    "topic": "bkort",
+    "stem_sv": "Får du stanna på ett övergångsställe för att snabbt släppa av en passagerare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ja, om det kan ske säkert och utan att hindra någon."
+      },
+      {
+        "letter": "B",
+        "text": "Ja, eftersom det är tillåtet att stanna men inte att parkera."
+      },
+      {
+        "letter": "C",
+        "text": "Nej, det är förbjudet att både stanna och parkera där."
+      },
+      {
+        "letter": "D",
+        "text": "Nej, förutom om du använder varningsblinkers för att varna andra."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Nej, det är förbjudet att både stanna och parkera där.",
+    "explanation_fr": "Non — interdit de s’arrêter sur un passage piéton.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-3",
+    "topic": "bkort",
+    "stem_sv": "Vilken är bashastigheten inom ett tättbebyggt område?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "30 km/h"
+      },
+      {
+        "letter": "B",
+        "text": "40 km/h"
+      },
+      {
+        "letter": "C",
+        "text": "50 km/h"
+      },
+      {
+        "letter": "D",
+        "text": "70 km/h"
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — 50 km/h",
+    "explanation_fr": "50 km/h par défaut dans l’agglomération.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-5",
+    "topic": "bkort",
+    "stem_sv": "Vad betyder vägmärket som är en triangel med spetsen nedåt?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Huvudled"
+      },
+      {
+        "letter": "B",
+        "text": "Stopplikt"
+      },
+      {
+        "letter": "C",
+        "text": "Varning för hinder"
+      },
+      {
+        "letter": "D",
+        "text": "Väjningsplikt"
+      }
+    ],
+    "answer": "D",
+    "explanation_sv": "Rätt svar: D — Väjningsplikt",
+    "explanation_fr": "Triangle pointe en bas = väjningsplikt.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-6",
+    "topic": "bkort",
+    "stem_sv": "Du passerar vägmärket för tättbebyggt område. Vilken hastighetsgräns gäller om inget annat skyltas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "30 km/h"
+      },
+      {
+        "letter": "B",
+        "text": "50 km/h"
+      },
+      {
+        "letter": "C",
+        "text": "70 km/h"
+      },
+      {
+        "letter": "D",
+        "text": "40 km/h"
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — 50 km/h",
+    "explanation_fr": "50 km/h après le panneau d’agglomération.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-7",
+    "topic": "bkort",
+    "stem_sv": "Vad betyder en tidsangivelse inom parentes, t.ex. (8-17), på en tilläggstavla?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tiden gäller alla vardagar, men inte lördagar."
+      },
+      {
+        "letter": "B",
+        "text": "Tiden gäller endast på sön- och helgdagar."
+      },
+      {
+        "letter": "C",
+        "text": "Tiden gäller dag före sön- och helgdag."
+      },
+      {
+        "letter": "D",
+        "text": "Tiden är en rekommendation och inte en bindande regel."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C — Tiden gäller dag före sön- och helgdag.",
+    "explanation_fr": "Parenthèses = samedi, dimanche et jours fériés.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-8",
+    "topic": "bkort",
+    "stem_sv": "En tilläggstavla anger tiden \"8–17\" med svarta siffror. Vilka dagar gäller den angivna regeln?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vardagar, utom dag före sön- och helgdag."
+      },
+      {
+        "letter": "B",
+        "text": "Lördagar och dag före helgdag."
+      },
+      {
+        "letter": "C",
+        "text": "Söndagar och helgdagar."
+      },
+      {
+        "letter": "D",
+        "text": "Alla dagar i veckan."
+      }
+    ],
+    "answer": "A",
+    "explanation_sv": "Rätt svar: A — Vardagar, utom dag före sön- och helgdag.",
+    "explanation_fr": "Chiffres noirs sans parenthèses = vardagar (jours ouvrés).",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "bkort-classic-9",
+    "topic": "bkort",
+    "stem_sv": "Vad är den viktiga skillnaden mellan förbud mot parkering och förbud mot att stanna och parkera?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stannandeförbud gäller bara på vardagar, medan parkeringsförbud gäller alla dagar."
+      },
+      {
+        "letter": "B",
+        "text": "Parkeringsförbud tillåter korta stopp för exempelvis på- och avstigning."
+      },
+      {
+        "letter": "C",
+        "text": "Parkeringsförbud tillåter av- och påstigning, men inte lastning av gods."
+      },
+      {
+        "letter": "D",
+        "text": "Parkeringsförbud tillåter stopp i fem minuter, stannandeförbud i en minut."
+      }
+    ],
+    "answer": "B",
+    "explanation_sv": "Rätt svar: B — Parkeringsförbud tillåter korta stopp för exempelvis på- och avstigning.",
+    "explanation_fr": "P-förbud : tu peux encore stanna pour déposer. Stoppförbud : tu ne t’arrêtes pas.",
+    "source": "https://korkortskalkylator.se/korkortsfragor + règles officielles",
+    "corpus": "manzi"
+  },
+  {
+    "id": "S_KERHET-1-Q1",
+    "topic": "sakerhet",
+    "stem_sv": "Du får en synskadad med ledarhund som har vit sele. Hur ska du hjälpa kunden?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prata med kunden att hunden inte får följa med."
+      },
+      {
+        "letter": "B",
+        "text": "Låt hunden sätta sig ner vid mig för att kommunicerar med den."
+      },
+      {
+        "letter": "C",
+        "text": "Fråga synskadade hur jag ska uppträda mot hunden."
+      }
+    ],
+    "answer": "C",
+    "explanation_sv": "Rätt svar: C",
+    "explanation_fr": "Bonne réponse: C",
+    "source": "Desktop/manzi/Säkerhet/S_KERHET-1.pdf",
+    "corpus": "manzi",
+    "imageUrl": "/media/pdf-pages/S_KERHET-1/page-01.jpg"
   }
 ]
