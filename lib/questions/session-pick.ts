@@ -61,5 +61,5 @@ export function pickExam(track: Track) {
     const j = Math.floor(Math.random() * (i + 1));
     [bank[i], bank[j]] = [bank[j], bank[i]];
   }
-  return bank.slice(0, Math.min(8, bank.length));
+  return bank.slice(0, Math.min(65, bank.length));
 }
