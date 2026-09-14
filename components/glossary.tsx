@@ -47,13 +47,14 @@ type GlossaryApi = {
 const GlossaryContext = createContext<GlossaryApi | null>(null);
 
 function placeChip(rect: DOMRect) {
-  const width = Math.min(320, Math.max(200, window.innerWidth - 32));
+  const width = Math.min(280, Math.max(188, window.innerWidth - 32));
   const left = Math.min(
     Math.max(16, rect.left + rect.width / 2 - width / 2),
     window.innerWidth - width - 16,
   );
-  const above = rect.top > 108;
-  const top = above ? rect.top - 12 : rect.bottom + 12;
+  const spaceBelow = window.innerHeight - rect.bottom;
+  const above = spaceBelow < 132 && rect.top > 140;
+  const top = above ? rect.top - 14 : rect.bottom + 14;
   return { top, left, width, above };
 }
 
@@ -164,7 +165,7 @@ function GlossChip({
       id={labelId}
       className="gloss-chip"
       data-placement={gloss.above ? "above" : "below"}
-      style={{ top: gloss.top, left: gloss.left }}
+      style={{ top: gloss.top, left: gloss.left, width: "max-content" }}
     >
       <p className="gloss-chip-sv">{gloss.lemma}</p>
       {found ? (
