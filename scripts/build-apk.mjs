@@ -6,9 +6,9 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const androidHome = process.env.ANDROID_HOME || process.env.ANDROID_SDK_ROOT || `${process.env.HOME}/android-sdk`;
 
-function run(cmd, args, extraEnv = {}) {
+function run(cmd, args, extraEnv = {}, cwd = root) {
   const result = spawnSync(cmd, args, {
-    cwd: root,
+    cwd,
     stdio: "inherit",
     env: {
       ...process.env,
@@ -46,7 +46,7 @@ if (!existsSync(gradlew)) {
 
 run(gradlew, ["assembleDebug", "--no-daemon"], {
   JAVA_HOME: process.env.JAVA_HOME || "/usr/lib/jvm/java-21-openjdk-amd64",
-});
+}, join(root, "android"));
 
 const apk = join(
   root,
