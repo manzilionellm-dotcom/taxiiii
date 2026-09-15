@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { BrandMark } from "@/components/brand-mark";
+import { BrandGlyph, BrandMark } from "@/components/brand-mark";
 import { useAppState } from "@/components/app-state";
 import {
   CalculIcon,
@@ -14,8 +14,9 @@ import {
   SettingsIcon,
   StudyIcon,
 } from "@/components/nav-icons";
+import { useChrome } from "@/components/chrome";
 import { SplashScreen } from "@/components/splash-screen";
-import { trackLabel } from "@/lib/branding";
+import { brandLockup, trackLabel, trackShortLabel } from "@/lib/branding";
 import { t } from "@/lib/i18n";
 import { updateProfile } from "@/lib/progress/store";
 import { TRACKS, type Locale, type Track } from "@/lib/types";
@@ -32,12 +33,21 @@ const NAV = [
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const { state, setState, hydrated } = useAppState();
+  const { focus } = useChrome();
   const dict = t(state.profile.locale);
   const track = state.profile.activeTrack;
   const onboarded = hydrated && state.profile.onboarded;
+  const showNav = onboarded && !focus;
 
   function setLocale(locale: Locale) {
-    setState(updateProfile(state, { locale }));
+    /**
+     * Picking FR means "I want French", not "relabel the buttons". Turning the
+     * per-question translation on here is what a user reads this control as
+     * doing, and it removes the tap they otherwise had to repeat per question.
+     */
+    setState(
+      updateProfile(state, locale === "fr" ? { locale, showTranslations: true } : { locale }),
+    );
   }
 
   function setTrack(next: Track) {
@@ -55,72 +65,101 @@ export function AppShell({ children }: { children: ReactNode }) {
     document.documentElement.lang = state.profile.locale;
   }, [state.profile.locale]);
 
+  /** CSS-only concerns (scroll padding) read focus mode off the root element. */
+  useEffect(() => {
+    document.documentElement.dataset.focus = focus ? "true" : "false";
+  }, [focus]);
+
   if (!hydrated) {
     return <SplashScreen />;
   }
 
   return (
     <div className="flex min-h-dvh flex-col">
-      <header className="sticky top-0 z-20 border-b border-[#ddd6c8] bg-[#f3eee4]/92 backdrop-blur-md">
-        {/*
-          360px budget: brand lockup (145px) + language toggle (68px) fit one
-          row, the three track labels do not. So the track switcher takes its
-          own full-width row on phones and rejoins the top row from `sm` up.
-        */}
-        <div className="app-header mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-2 gap-y-2 pb-3">
-          <Link href="/" className="order-1 min-w-0 text-[1.15rem] text-[#1f3d2b]">
-            <BrandMark compact glyph />
-          </Link>
-          <div className="order-3 flex w-full rounded-full border border-[#ddd6c8] bg-white p-0.5 text-[11px] sm:order-2 sm:w-auto sm:text-xs">
-            {TRACKS.map((item) => (
-              <button
-                key={item}
-                type="button"
-                onClick={() => setTrack(item)}
-                aria-pressed={track === item}
-                className={`min-h-9 min-w-0 flex-1 truncate rounded-full px-2 font-medium sm:flex-none sm:px-3 ${
-                  track === item ? "bg-[#1f3d2b] text-white" : "text-[#1f3d2b]"
-                }`}
-              >
-                {trackLabel(item)}
-              </button>
-            ))}
+      {/*
+        The chrome stands down inside a session. A question screen that also
+        carries a brand bar and a product switcher spends a third of a 640px
+        phone on things the answer does not need; the session's own header
+        already offers the way out.
+      */}
+      {/*
+        Also absent during first run: onboarding carries its own lockup and
+        language control, and a track switcher above a screen that is asking
+        you to pick a track offers the same choice twice with two answers.
+      */}
+      {focus || !onboarded ? null : (
+        <header className="sticky top-0 z-20 border-b border-[#ddd6c8] bg-[#f3eee4]/92 backdrop-blur-md">
+          {/*
+            One row at 360px: glyph (22px) + three short track labels (~186px)
+            + language (68px) fits the 328px gutter budget, where the full
+            "KörkortGO by MZ" lockup (145px) did not. The wordmark returns from
+            `sm` up, and the launcher, splash and store carry it regardless.
+          */}
+          <div className="app-header mx-auto flex max-w-5xl items-center justify-between gap-2 pb-3">
+            <Link
+              href="/"
+              aria-label={brandLockup()}
+              className="shrink-0 text-[1.15rem] text-[#1f3d2b]"
+            >
+              <BrandGlyph size={26} />
+              <span className="sr-only sm:not-sr-only sm:ml-2 sm:inline-flex sm:align-middle">
+                <BrandMark compact />
+              </span>
+            </Link>
+            <div className="flex min-w-0 flex-1 justify-center rounded-full border border-[#ddd6c8] bg-white p-0.5 text-[11px] sm:flex-none sm:text-xs">
+              {TRACKS.map((item) => (
+                <button
+                  key={item}
+                  type="button"
+                  onClick={() => setTrack(item)}
+                  aria-pressed={track === item}
+                  className={`min-h-9 min-w-0 flex-1 truncate rounded-full px-1.5 font-medium sm:flex-none sm:px-3 ${
+                    track === item ? "bg-[#1f3d2b] text-white" : "text-[#1f3d2b]"
+                  }`}
+                >
+                  <span className="sm:hidden">{trackShortLabel(item)}</span>
+                  <span className="hidden sm:inline">{trackLabel(item)}</span>
+                </button>
+              ))}
+            </div>
+            <div className="flex shrink-0 rounded-full border border-[#ddd6c8] bg-white text-[11px] sm:text-xs">
+              {(["sv", "fr"] as const).map((locale) => (
+                <button
+                  key={locale}
+                  type="button"
+                  onClick={() => setLocale(locale)}
+                  aria-pressed={state.profile.locale === locale}
+                  className={`min-h-9 px-2.5 font-medium sm:px-3 ${
+                    state.profile.locale === locale
+                      ? "bg-[#1f3d2b] text-white first:rounded-l-full last:rounded-r-full"
+                      : "text-[#1f3d2b]"
+                  }`}
+                >
+                  {locale.toUpperCase()}
+                </button>
+              ))}
+            </div>
           </div>
-          <div className="order-2 flex shrink-0 rounded-full border border-[#ddd6c8] bg-white text-[11px] sm:order-3 sm:text-xs">
-            {(["sv", "fr"] as const).map((locale) => (
-              <button
-                key={locale}
-                type="button"
-                onClick={() => setLocale(locale)}
-                aria-pressed={state.profile.locale === locale}
-                className={`min-h-9 px-3 font-medium ${
-                  state.profile.locale === locale
-                    ? "bg-[#1f3d2b] text-white first:rounded-l-full last:rounded-r-full"
-                    : "text-[#1f3d2b]"
-                }`}
-              >
-                {locale.toUpperCase()}
-              </button>
-            ))}
-          </div>
-        </div>
-      </header>
+        </header>
+      )}
 
       <main
         className={`app-main page-enter mx-auto w-full max-w-5xl flex-1 pt-6 ${
-          onboarded ? "pb-[calc(7.5rem+var(--safe-bottom))]" : "pb-10"
+          showNav ? "pb-[calc(var(--nav-h)+1rem)]" : "pb-10"
         }`}
       >
         {children}
       </main>
 
-      {onboarded ? (
+      {showNav ? (
         <nav className="app-nav fixed inset-x-0 bottom-0 z-20 border-t border-[#ddd6c8] bg-[#fffdf8]/96 backdrop-blur-md">
-          <p className="mx-auto max-w-5xl px-3 pt-1.5 text-center text-[9px] leading-3 tracking-wide text-[#8a8276]">
-            {dict.tosAccept}
-          </p>
+          {/*
+            The licence reminder used to live here, on every screen, in 9px
+            type — the one detail that made a paid product look unfinished.
+            It belongs where a user acts on it: onboarding and Settings.
+          */}
           <div
-            className={`mx-auto grid max-w-5xl pt-1 ${
+            className={`mx-auto grid max-w-5xl pt-1.5 ${
               track === "taxi" ? "grid-cols-6" : "grid-cols-5"
             }`}
           >
@@ -149,7 +188,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                   >
                     <Icon className="h-[1.15rem] w-[1.15rem]" />
                   </span>
-                  <span className="app-nav-label">{dict[item.key]}</span>
+                  <span className="app-nav-label">{dict.nav[item.key]}</span>
                 </Link>
               );
             })}

@@ -18,16 +18,20 @@ export const BRAND = {
     b: {
       id: "b" as const,
       label: "Körkort",
+      /** Header switcher label — must clear three labels inside 360px. */
+      short: "Körkort",
       product: "permis B / teoriprov B",
     },
     taxi: {
       id: "taxi" as const,
       label: "Taxi",
+      short: "Taxi",
       product: "taxiförarlegitimation",
     },
     owner: {
       id: "owner" as const,
       label: "Taxi Företag",
+      short: "Företag",
       product: "taxitrafiktillstånd / taxiägare",
     },
   },
@@ -37,6 +41,10 @@ export type BrandTrackKey = keyof typeof BRAND.tracks;
 
 export function trackLabel(track: BrandTrackKey) {
   return BRAND.tracks[track].label;
+}
+
+export function trackShortLabel(track: BrandTrackKey) {
+  return BRAND.tracks[track].short;
 }
 
 export function trackProduct(track: BrandTrackKey) {

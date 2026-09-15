@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ClozeText } from "@/components/cloze-text";
 import { GlossableText, GlossaryProvider } from "@/components/glossary";
 import { ProtectedImage } from "@/components/protected-image";
+import { answerHaptic } from "@/lib/haptics";
 import { t } from "@/lib/i18n";
 import { displayFrench, distractorNote, takeawayFor } from "@/lib/questions/review.mjs";
 import { isRealFrenchText } from "@/lib/questions/french-text";
@@ -14,6 +15,10 @@ import {
 } from "@/lib/media/paths.mjs";
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { Locale, SupportLevel } from "@/lib/types";
+
+function collapseWhitespace(value: string) {
+  return String(value || "").replace(/\s+/g, " ").trim();
+}
 
 function ExamFigure({
   question,
@@ -57,6 +62,7 @@ export function QuestionCard({
   locale,
   fragile,
   supportLevel,
+  translationsOn,
   onAnswer,
   onReviewSoon,
   disabled,
@@ -66,6 +72,8 @@ export function QuestionCard({
   locale: Locale;
   fragile: boolean;
   supportLevel: SupportLevel;
+  /** The single persisted preference that decides every French line. */
+  translationsOn: boolean;
   onAnswer?: (letter: SessionQuestion["answer"], correct: boolean) => void;
   onReviewSoon?: () => void;
   disabled?: boolean;
@@ -74,15 +82,16 @@ export function QuestionCard({
   const dict = t(locale);
   const french = question.translation;
   const [picked, setPicked] = useState<string | null>(null);
-  const [showFr, setShowFr] = useState(supportLevel >= 2);
   const [lightbox, setLightbox] = useState(false);
   const [reviewQueued, setReviewQueued] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
+  const solutionRef = useRef<HTMLElement | null>(null);
 
   const answered = picked !== null;
   const correct = picked === question.answer;
   const compact = variant === "exam";
-  const showFrNow = answered || showFr || supportLevel >= 3;
+  /** Answering can no longer spoil anything, so French always joins the solution. */
+  const showFrNow = translationsOn || answered;
   const figureAlt = sanitizeCaption(question.imageCaption) || dict.examPageCaption;
   const imageFirst = question.form === "image-first" || Boolean(question.imageFirst);
   const showInlineFigure =
@@ -96,9 +105,29 @@ export function QuestionCard({
   const explanationFr = displayFrench(french.explanation || question.explanation_fr);
   const takeaway = takeawayFor(question, explanationFr);
   const distractors = distractorNote(question);
+  /**
+   * takeawayFor() falls back to the explanation's opening sentence, and for
+   * most Manzi rows the explanation opens with exactly that — so the panel
+   * printed one sentence twice under two headings. Drop the takeaway when the
+   * explanation below already contains it; the exam variant hides the
+   * explanation, so there it always stays.
+   */
+  const showTakeaway =
+    compact || !collapseWhitespace(question.explanation_sv).includes(collapseWhitespace(takeaway.sv));
   const hasFrench =
     isRealFrenchText(stemFr) ||
     question.options.some((option) => isRealFrenchText(french.options?.[option.letter]));
+
+  /** Bring the solution into view on the same tap that answers the question. */
+  useEffect(() => {
+    if (!answered) return;
+    solutionRef.current?.scrollIntoView({
+      block: "nearest",
+      behavior: window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+    });
+  }, [answered]);
 
   function markImageUnavailable() {
     setImageFailed(true);
@@ -108,6 +137,7 @@ export function QuestionCard({
   function select(letter: SessionQuestion["answer"]) {
     if (disabled || answered) return;
     setPicked(letter);
+    void answerHaptic(letter === question.answer);
     onAnswer?.(letter, letter === question.answer);
   }
 
@@ -154,15 +184,13 @@ export function QuestionCard({
           <p className="question-fr text-[1.02rem] leading-7">{stemFr}</p>
         ) : null}
 
-        {/* Offer the toggle whenever any French exists, not only for the stem. */}
-        {!showFrNow && hasFrench ? (
-          <button
-            type="button"
-            className="min-h-11 text-left text-sm font-medium text-[#1d4ed8]"
-            onClick={() => setShowFr(true)}
-          >
-            {dict.showTranslation}
-          </button>
+        {/*
+          Say it when a question has no French yet. Silence reads as a broken
+          app — the Swedish sits there and the reader assumes the translation
+          failed. A quiet, honest marker also makes the real gap visible.
+        */}
+        {translationsOn && !hasFrench ? (
+          <p className="fr-pending">{dict.translationSoon}</p>
         ) : null}
 
         {!imageFirst && showInlineFigure ? (
@@ -185,10 +213,20 @@ export function QuestionCard({
                   role="button"
                   tabIndex={disabled || answered ? -1 : 0}
                   aria-disabled={disabled || answered}
-                  onClick={(event) => {
-                    if ((event.target as HTMLElement).closest("[data-gloss-word]")) return;
-                    select(option.letter);
-                  }}
+                  /*
+                   * Tap anywhere on the row, glossed words included.
+                   *
+                   * This used to bail out when the tap landed on a
+                   * [data-gloss-word] span — and nearly every Swedish word in
+                   * an option is one, so tapping the answer text did nothing
+                   * at all and only the letter badge or a gap between words
+                   * worked. The guard was never needed: an option's gloss
+                   * fires on hold only (glossary.tsx sets allowMouseClick
+                   * false for this variant) and a fired hold already stops
+                   * the click from reaching here. So a hold still opens the
+                   * meaning without answering, and a tap now answers.
+                   */
+                  onClick={() => select(option.letter)}
                   onKeyDown={(event) => {
                     if (event.key === "Enter" || event.key === " ") {
                       event.preventDefault();
@@ -220,8 +258,7 @@ export function QuestionCard({
                     <span className="block font-medium leading-6">
                       <GlossableText text={option.text} variant="option" />
                     </span>
-                    {(answered || showFr) &&
-                    isRealFrenchText(french.options?.[option.letter]) ? (
+                    {showFrNow && isRealFrenchText(french.options?.[option.letter]) ? (
                       <span className="mt-1 block text-sm leading-6 text-[#1d4ed8]">
                         {french.options[option.letter]}
                       </span>
@@ -234,7 +271,7 @@ export function QuestionCard({
         </ul>
 
         {answered ? (
-          <section className="solution-panel" aria-live="polite">
+          <section className="solution-panel" aria-live="polite" ref={solutionRef}>
             <header className="flex items-baseline justify-between gap-3">
               <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#6b6560]">
                 {dict.solution}
@@ -244,15 +281,17 @@ export function QuestionCard({
               </p>
             </header>
 
-            <div className="space-y-1.5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
-                {dict.takeaway}
-              </p>
-              <p className="text-[1.02rem] leading-7 text-black">{takeaway.sv}</p>
-              {supportLevel > 0 && isRealFrenchText(takeaway.fr) ? (
-                <p className="question-fr text-[0.98rem] leading-7">{takeaway.fr}</p>
-              ) : null}
-            </div>
+            {showTakeaway ? (
+              <div className="space-y-1.5">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                  {dict.takeaway}
+                </p>
+                <p className="text-[1.02rem] leading-7 text-black">{takeaway.sv}</p>
+                {showFrNow && isRealFrenchText(takeaway.fr) ? (
+                  <p className="question-fr text-[0.98rem] leading-7">{takeaway.fr}</p>
+                ) : null}
+              </div>
+            ) : null}
 
             {compact ? null : (
               <div className="space-y-1.5">
@@ -262,7 +301,7 @@ export function QuestionCard({
                 <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
                   {question.explanation_sv}
                 </p>
-                {supportLevel > 0 && isRealFrenchText(explanationFr) ? (
+                {showFrNow && isRealFrenchText(explanationFr) ? (
                   <p className="question-fr whitespace-pre-wrap text-[0.95rem] leading-7">
                     {explanationFr}
                   </p>
@@ -276,7 +315,7 @@ export function QuestionCard({
                   {dict.whyOthersWrong}
                 </p>
                 <p className="text-[0.98rem] leading-7 text-black">{distractors.sv}</p>
-                {supportLevel > 0 && isRealFrenchText(distractors.fr) ? (
+                {showFrNow && isRealFrenchText(distractors.fr) ? (
                   <p className="question-fr text-[0.95rem] leading-7">{distractors.fr}</p>
                 ) : null}
               </div>

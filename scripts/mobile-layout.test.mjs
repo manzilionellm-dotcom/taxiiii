@@ -65,13 +65,33 @@ assert(
 );
 assert(shell.includes("app-main"), "main must use the safe-area gutters");
 
-// 360px budget: the track switcher takes its own row below `sm`.
+/**
+ * 360px budget, revised.
+ *
+ * #21 gave the track switcher its own wrapped row because the full
+ * "KörkortGO by MZ" lockup (145px) plus three long track labels could not
+ * share one row. That cost ~90px of every screen. The header now shows the
+ * glyph alone below `sm` and short track labels, which fits one row inside
+ * the 328px gutter budget — so the wrap is gone on purpose and the invariant
+ * to hold is the single row plus the touch targets.
+ */
 assert(
-  /app-header[^"]*flex-wrap/.test(shell),
-  "the header must wrap so the track switcher can take its own row on phones",
+  !/app-header[^"]*flex-wrap/.test(shell),
+  "the header must no longer need a wrapped second row on phones",
 );
-assert(/order-3 flex w-full rounded-full/.test(shell), "track switcher must be full width on phones");
+assert(
+  /<span className="sm:hidden">\{trackShortLabel\(item\)\}<\/span>/.test(shell),
+  "the phone header must use the short track labels",
+);
+assert(
+  /sr-only sm:not-sr-only/.test(shell),
+  "the wordmark must be screen-reader-only below `sm` so the row fits",
+);
 assert(/min-h-9/.test(shell), "header controls need a 36px touch target");
+assert(
+  /short: "Företag"/.test(read("lib/branding.ts")),
+  'the owner track needs a short header label, not "Taxi Företag"',
+);
 
 // Viewport must opt into the safe-area insets.
 assert(/viewportFit:\s*"cover"/.test(layout), "viewport needs viewportFit: cover");

@@ -17,6 +17,14 @@ export const fr: Dictionary = {
   calcul: "Calcul",
   chat: "IA · Enseignant",
   settings: "Réglages",
+  nav: {
+    home: "Accueil",
+    study: "Réviser",
+    exam: "Examen",
+    calcul: "Calcul",
+    chat: "Prof",
+    settings: "Compte",
+  },
   dashboard: "Tableau de bord",
   onboardingTitle: "Choisis ton parcours",
   onboardingLead:
@@ -129,7 +137,13 @@ export const fr: Dictionary = {
   viewExamPage: "Voir le PDF / la page d'examen",
   closeExamPage: "Fermer la page",
   examPageCaption: "Page d'examen",
-  translationSoon: "Traduction bientôt disponible.",
+  translationSoon: "Traduction française pas encore disponible pour cette question.",
+  translationsUnder: "Ligne française sous chaque question",
+  translationsUnderHint:
+    "Le suédois reste l'examen. Le français vient dessous — énoncé, réponses et solution.",
+  translationCoverage: "Couverture française",
+  translationCoverageNote:
+    "Part des questions dont l'énoncé a une vraie traduction. Vide vaut mieux qu'une ligne à moitié suédoise.",
   loadingSession: "Chargement de la session protégée…",
   sessionError: "Impossible de charger la session. Réessaie.",
   retry: "Réessayer",

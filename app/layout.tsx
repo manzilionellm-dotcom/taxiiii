@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Source_Serif_4 } from "next/font/google";
 import { AppStateProvider } from "@/components/app-state";
 import { AppShell } from "@/components/app-shell";
+import { ChromeProvider } from "@/components/chrome";
 import { BRAND, documentDescription, documentTitle } from "@/lib/branding";
 import "./globals.css";
 
@@ -53,7 +54,9 @@ export default function RootLayout({
     >
       <body className="flex min-h-full min-h-dvh flex-col">
         <AppStateProvider>
-          <AppShell>{children}</AppShell>
+          <ChromeProvider>
+            <AppShell>{children}</AppShell>
+          </ChromeProvider>
         </AppStateProvider>
       </body>
     </html>

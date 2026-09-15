@@ -16,6 +16,20 @@ export const sv = {
   calcul: "Kalkyl",
   chat: "IA · Lärare",
   settings: "Inställningar",
+  /**
+   * Tab-bar labels. Six cells share 360px, so a label is one word: the long
+   * forms above broke mid-phrase ("Examen / blanc", "IA · / Enseignant") and
+   * a wrapped tab label is the clearest sign of a UI that was never opened
+   * on a phone.
+   */
+  nav: {
+    home: "Hem",
+    study: "Öva",
+    exam: "Prov",
+    calcul: "Kalkyl",
+    chat: "Lärare",
+    settings: "Konto",
+  },
   dashboard: "Översikt",
   onboardingTitle: "Välj din väg",
   onboardingLead:
@@ -128,7 +142,14 @@ export const sv = {
   viewExamPage: "Visa PDF / examenssidan",
   closeExamPage: "Stäng sidan",
   examPageCaption: "Examenssida",
-  translationSoon: "Traduction bientôt disponible.",
+  /** Was French inside the Swedish dictionary — the one string that leaked locale. */
+  translationSoon: "Fransk översättning saknas ännu för den här frågan.",
+  translationsUnder: "Fransk rad under varje fråga",
+  translationsUnderHint:
+    "Svenskan är provet. Franskan står under — frågan, svarsalternativen och lösningen.",
+  translationCoverage: "Fransk täckning",
+  translationCoverageNote:
+    "Andel frågor med en riktig fransk frågetext. Tomt är bättre än en halvfransk rad.",
   loadingSession: "Laddar skyddat pass…",
   sessionError: "Kunde inte ladda passet. Försök igen.",
   retry: "Försök igen",
