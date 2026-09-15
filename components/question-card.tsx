@@ -12,7 +12,7 @@ import {
   markGlossHold,
 } from "@/components/glossary";
 import { ProtectedImage } from "@/components/protected-image";
-import { t } from "@/lib/i18n";
+import { glossSentence } from "@/lib/glossary";
 import { displayFrench, distractorNote, takeawayFor } from "@/lib/questions/review.mjs";
 import { isRealFrenchText } from "@/lib/questions/french-text";
 import {
@@ -153,9 +153,10 @@ export function QuestionCard({
     hasImageUrl(question.imageUrl) &&
     (imageFirst || shouldShowImageBeforeAnswer(question));
   const showSolutionFigure = answered && hasImageUrl(question.imageUrl) && !imageFailed;
-  const stemFr = displayFrench(french.stem);
+  const stemFr = displayFrench(french.stem) || glossSentence(question.stem_sv);
   const explanationFr =
     displayFrench(french.explanation || question.explanation_fr) ||
+    glossSentence(question.explanation_sv) ||
     String(question.explanation_fr || "").trim();
   const takeaway = takeawayFor(question, explanationFr);
   const distractors = distractorNote(question);
@@ -290,7 +291,10 @@ export function QuestionCard({
                   <span className="min-w-0 flex-1">
                     <GlossablePassage
                       label={`${dict.glossQuestion} ${option.letter}`}
-                      fr={french.options?.[option.letter]}
+                      fr={
+                        displayFrench(french.options?.[option.letter]) ||
+                        glossSentence(option.text)
+                      }
                       hint={dict.glossOptionHint}
                       activate="hold"
                     >
@@ -326,7 +330,12 @@ export function QuestionCard({
               <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
                 {dict.takeaway}
               </p>
-              <GlossablePassage label={dict.takeaway} fr={takeaway.fr} hint={dict.glossExplainHint}>
+              <GlossablePassage
+                label={dict.takeaway}
+                fr={takeaway.fr || glossSentence(takeaway.sv)}
+                hint={dict.glossExplainHint}
+                defaultOpen
+              >
                 <p className="text-[1.02rem] leading-7 text-black">
                   <GlossableText text={takeaway.sv} variant="stem" />
                 </p>
@@ -341,6 +350,7 @@ export function QuestionCard({
                 label={dict.explanation}
                 fr={explanationFr}
                 hint={dict.glossExplainHint}
+                defaultOpen
               >
                 <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
                   <GlossableText text={question.explanation_sv} variant="stem" />

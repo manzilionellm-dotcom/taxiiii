@@ -368,6 +368,7 @@ export function GlossablePassage({
   children,
   className,
   activate = "tap",
+  defaultOpen = false,
 }: {
   label: string;
   fr?: string | null;
@@ -375,10 +376,11 @@ export function GlossablePassage({
   children: ReactNode;
   className?: string;
   activate?: "tap" | "hold";
+  defaultOpen?: boolean;
 }) {
   const { open } = useGlossary();
   const ref = useRef<HTMLDivElement>(null);
-  const [pinned, setPinned] = useState(false);
+  const [pinned, setPinned] = useState(defaultOpen);
   const french = (fr ?? "").trim();
 
   const reveal = () => {
@@ -415,6 +417,18 @@ export function GlossablePassage({
           if (hold.fired.current || glossHoldConsumed()) {
             event.preventDefault();
             event.stopPropagation();
+            return;
+          }
+          const target = event.target;
+          if (
+            target instanceof Element &&
+            target.closest("button, input, select, textarea, label")
+          ) {
+            return;
+          }
+          if (activate === "tap") {
+            event.preventDefault();
+            setPinned(true);
           }
         }}
       >

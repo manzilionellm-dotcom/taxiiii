@@ -74,3 +74,15 @@ export function lookupGloss(token: string): GlossHit | null {
 export function shouldOfferGloss(token: string) {
   return isGlossableWord(token);
 }
+
+/** Word-by-word FR so a paragraph still translates when the curated stem is missing. */
+export function glossSentence(text: string): string {
+  const source = String(text || "");
+  if (!source.trim()) return "";
+  return splitGlossPieces(source)
+    .map((piece) => {
+      if (!piece.word) return piece.text;
+      return lookupGloss(piece.text)?.fr || piece.text;
+    })
+    .join("");
+}
