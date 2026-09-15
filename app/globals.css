@@ -332,11 +332,12 @@ input[type="range"] {
   -webkit-touch-callout: none;
   touch-action: manipulation;
   cursor: pointer;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
+  padding: 0.15rem 0.1rem 0.25rem;
 }
 
 .gloss-passage[data-open="true"] {
-  background: color-mix(in srgb, var(--cloze) 5%, transparent);
+  background: color-mix(in srgb, var(--cloze) 6%, transparent);
 }
 
 .gloss-chip[data-kind="passage"] {

@@ -412,6 +412,13 @@ export function GlossablePassage({
           }
         }}
         onPointerCancel={hold.clearHold}
+        onClick={(event) => {
+          if (activate !== "tap") return;
+          if (glossHoldConsumed()) return;
+          event.preventDefault();
+          event.stopPropagation();
+          fire();
+        }}
       >
         {children}
         {isOpen && found ? (

@@ -318,34 +318,24 @@ export function QuestionCard({
                   <GlossableText text={takeaway.sv} variant="stem" />
                 </p>
               </GlossablePassage>
-              {showFr && isRealFrenchText(takeaway.fr) ? (
-                <p className="question-fr-premium text-[0.98rem] leading-7">{takeaway.fr}</p>
-              ) : null}
             </div>
 
-            {compact ? null : (
-              <div className="space-y-1.5">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
-                  {dict.whyCorrect} · {question.answer}
+            <div className="space-y-1.5">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                {dict.whyCorrect} · {question.answer} · {dict.glossExplainHint}
+              </p>
+              <GlossablePassage
+                label={dict.explanation}
+                fr={explanationFr}
+                hint={dict.glossExplainHint}
+              >
+                <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
+                  <GlossableText text={question.explanation_sv} variant="stem" />
                 </p>
-                <GlossablePassage
-                  label={dict.explanation}
-                  fr={explanationFr}
-                  hint={dict.glossExplainHint}
-                >
-                  <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
-                    <GlossableText text={question.explanation_sv} variant="stem" />
-                  </p>
-                </GlossablePassage>
-                {showFr && isRealFrenchText(explanationFr) ? (
-                  <p className="question-fr-premium whitespace-pre-wrap text-[0.95rem] leading-7">
-                    {explanationFr}
-                  </p>
-                ) : null}
-              </div>
-            )}
+              </GlossablePassage>
+            </div>
 
-            {!compact && distractors ? (
+            {distractors ? (
               <div className="space-y-1.5">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
                   {dict.whyOthersWrong}
