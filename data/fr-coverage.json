@@ -4,7 +4,7 @@
       "questions": 854,
       "stems": 854,
       "options": 0,
-      "explanations": 213,
+      "explanations": 217,
       "none": 0
     },
     "b": {
@@ -16,10 +16,10 @@
     },
     "owner": {
       "questions": 472,
-      "stems": 181,
+      "stems": 472,
       "options": 0,
-      "explanations": 238,
-      "none": 182
+      "explanations": 241,
+      "none": 0
     }
   }
 }

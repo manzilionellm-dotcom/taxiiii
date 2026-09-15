@@ -1,12 +1,879 @@
 {
+  "agare-ekonomi-ekonomi-1-q01": {
+    "stem": "Au lancement de ton activité de transport professionnel, tu achètes au comptant un véhicule destiné à l'entreprise. Comment ce véhicule est-il classé en comptabilité ?"
+  },
+  "agare-ekonomi-ekonomi-1-q02": {
+    "stem": "Olles Åkeri AB clôture ses comptes le 31 décembre. L'entreprise a facturé une course le 15 décembre 2005. Le paiement est arrivé le 10 janvier 2006. Où le montant de la facture doit-il figurer dans la clôture annuelle ?"
+  },
+  "agare-ekonomi-ekonomi-1-q03": {
+    "stem": "Un dossier d'appel d'offres indique que les transports sont payés mensuellement, le versement intervenant le 20 du mois suivant le mois de transport. Quel délai de crédit moyen le donneur d'ordre exige-t-il avec ces données ?"
+  },
+  "agare-ekonomi-ekonomi-1-q04": {
+    "stem": "Les opérations ci-contre ont eu lieu au mois de janvier. Laquelle des réponses ci-dessous est correcte concernant la déclaration de TVA de janvier ?"
+  },
+  "agare-ekonomi-ekonomi-1-q05": {
+    "stem": "Qu'entend-on par une entreprise certifiée ISO 14001 ?"
+  },
+  "agare-ekonomi-ekonomi-1-q06": {
+    "stem": "Laquelle de ces réponses présente un calcul de la rentabilité des capitaux propres de la société ?"
+  },
+  "agare-ekonomi-ekonomi-1-q08": {
+    "stem": "Qu'entend-on par le ratio de liquidité réduite ?"
+  },
+  "agare-ekonomi-ekonomi-1-q09": {
+    "stem": "Une entreprise dispose d'une autorisation de découvert de 100 000 SEK, utilisée en moyenne à 65 %. Quel est son coût annuel d'intérêts sur le montant utilisé si le taux est de 12 % ?"
+  },
+  "agare-ekonomi-ekonomi-1-q10": {
+    "stem": "Combien reste-t-il sur le compte bancaire de l'entreprise à la fin de la période d'après la comptabilité ci-contre ?"
+  },
+  "agare-ekonomi-ekonomi-1-q11": {
+    "stem": "Selon la loi comptable, au plus tard quand dois-tu comptabiliser l'achat au comptant d'une batterie neuve effectué pendant une course le vendredi ?"
+  },
+  "agare-ekonomi-ekonomi-1-q12": {
+    "stem": "Lequel des postes du budget de résultat affecte la trésorerie ?"
+  },
+  "agare-ekonomi-ekonomi-1-q13": {
+    "stem": "Tu as effectué des transports pour 10 000 SEK TTC sur facture. Que peux-tu faire pour être payé si le client règle dans le délai de crédit ?"
+  },
+  "agare-ekonomi-ekonomi-1-q14": {
+    "stem": "À la clôture de l'exercice comptable, une société par actions établit des comptes annuels et une entreprise individuelle une clôture annuelle. Ces documents doivent-ils être publiés ?"
+  },
+  "agare-ekonomi-ekonomi-1-q17": {
+    "stem": "Tes salariés sont affiliés au syndicat des travailleurs du transport et ton entreprise adhère à une organisation patronale. Quelles assurances es-tu tenu de souscrire pour tes chauffeurs salariés ?"
+  },
+  "agare-ekonomi-ekonomi-1-q22": {
+    "stem": "Dans quelle réponse tous les postes proviennent-ils uniquement du bilan ?"
+  },
+  "agare-ekonomi-ekonomi-2-q01": {
+    "stem": "On te demande d'établir un budget de trésorerie. Que permet-il de lire ?"
+  },
+  "agare-ekonomi-ekonomi-2-q02": {
+    "stem": "Le budget de trésorerie de juin doit être établi. Laquelle de ces opérations doit être prise en compte ?"
+  },
+  "agare-ekonomi-ekonomi-2-q03": {
+    "stem": "Laquelle de ces réponses décrit correctement ce que l'on peut trouver parmi les charges dans la comptabilité de l'entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-2-q04": {
+    "stem": "Tu exerces un transport professionnel sous forme d'entreprise individuelle, avec un chiffre d'affaires annuel de 3 millions de couronnes. Au plus tard quand la clôture annuelle doit-elle être prête selon la loi comptable ?"
+  },
+  "agare-ekonomi-ekonomi-2-q05": {
+    "stem": "Dans une société par actions, les comptes annuels ont été approuvés par l'assemblée générale. Quelle règle s'applique quant à l'éventuelle obligation de les publier ?"
+  },
+  "agare-ekonomi-ekonomi-2-q06": {
+    "stem": "Une entreprise a des actifs d'une valeur comptable d'environ 2 millions de couronnes. Un jour de novembre, tu verses les salaires à tes deux salariés. Au plus tard quand dois-tu comptabiliser ce paiement ?"
+  },
+  "agare-ekonomi-ekonomi-2-q08": {
+    "stem": "Qu'est-ce que cela signifie qu'une entreprise a une solvabilité élevée ?"
+  },
+  "agare-ekonomi-ekonomi-2-q10": {
+    "stem": "Qu'entend-on par le compte de résultat ?"
+  },
+  "agare-ekonomi-ekonomi-2-q13": {
+    "stem": "Tu as une entreprise qui compte comme entreprise individuelle. Elle a un salarié et 800 000 SEK de chiffre d'affaires. À partir de quel niveau de chiffre d'affaires es-tu tenu d'établir une clôture annuelle ?"
+  },
+  "agare-ekonomi-ekonomi-2-q14": {
+    "stem": "Laquelle de ces réponses énumère de façon exhaustive les mentions qui, outre le numéro de pièce, doivent toujours figurer sur une pièce justificative selon la règle principale de la loi comptable ?"
+  },
+  "agare-ekonomi-ekonomi-2-q15": {
+    "stem": "Quelle assurance couvre le transporteur en cas de dommages ?"
+  },
+  "agare-ekonomi-ekonomi-2-q16": {
+    "stem": "Le journal comporte les écritures ci-contre. Laquelle de ces affirmations est correcte au sujet de la situation de l'entreprise après la dernière opération ?"
+  },
+  "agare-ekonomi-ekonomi-2-q17": {
+    "stem": "Quelle affirmation est correcte ?"
+  },
+  "agare-ekonomi-ekonomi-2-q19": {
+    "stem": "Suppose que ton véhicule soit impliqué dans une collision où un passager de l'autre voiture est légèrement blessé. Quelle mesure es-tu alors tenu de prendre au titre de l'assurance du véhicule ?"
+  },
+  "agare-ekonomi-ekonomi-2-q20": {
+    "stem": "Qu'exige la loi comptable lorsqu'une opération économique doit être enregistrée ?"
+  },
+  "agare-ekonomi-ekonomi-2-q21": {
+    "stem": "Quelle affirmation est correcte au sujet de la correction d'une pièce justificative ?"
+  },
+  "agare-ekonomi-ekonomi-2-q22": {
+    "stem": "Tu as emprunté une remorque à un ami et tu l'as accidentée. Quelle assurance s'applique à cette remorque ?"
+  },
+  "agare-ekonomi-ekonomi-2-q23": {
+    "stem": "Laquelle de ces réponses désigne un coût fixe dans une entreprise de transport ?"
+  },
+  "agare-ekonomi-ekonomi-3-q01": {
+    "stem": "Quel résultat l'entreprise peut-elle présenter à la fin de la période d'après la comptabilité ci-contre ?"
+  },
+  "agare-ekonomi-ekonomi-3-q02": {
+    "stem": "Qu'implique l'affacturage comme mode de financement pour une entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-3-q04": {
+    "stem": "Que doit contenir une pièce justificative selon la loi comptable ?"
+  },
+  "agare-ekonomi-ekonomi-3-q05": {
+    "stem": "Quel est le contenu complet du bilan ?"
+  },
+  "agare-ekonomi-ekonomi-3-q06": {
+    "stem": "Quel est le fonds de roulement de l'entreprise d'après la comptabilité ?"
+  },
+  "agare-ekonomi-ekonomi-3-q07": {
+    "stem": "Laquelle des réponses ci-contre contient toutes les mentions qui, selon la règle principale de la loi comptable, doivent figurer sur la pièce justificative de Taxi AB ?"
+  },
+  "agare-ekonomi-ekonomi-3-q08": {
+    "stem": "Tu crées une entreprise le 11/10/2002, mais tu n'as aucune activité en 2002. Tu commences en 2003. Quand dois-tu publier tes comptes ?"
+  },
+  "agare-ekonomi-ekonomi-3-q09": {
+    "stem": "Pendant combien de temps la clôture annuelle doit-elle être archivée ?"
+  },
+  "agare-ekonomi-ekonomi-3-q10": {
+    "stem": "Laquelle des lignes ci-contre décrit correctement l'emploi du débit et du crédit selon le type de compte ?"
+  },
+  "agare-ekonomi-ekonomi-3-q12": {
+    "stem": "Quelles sont les disponibilités de l'entreprise à la fin de la période d'après la comptabilité ci-dessous ?"
+  },
+  "agare-ekonomi-ekonomi-3-q13": {
+    "stem": "Les opérations ci-contre ont eu lieu au mois de janvier. Laquelle des réponses ci-dessous est correcte concernant la déclaration de TVA de janvier ?"
+  },
+  "agare-ekonomi-ekonomi-3-q17": {
+    "stem": "Quel est le fonds de roulement de l'entreprise d'après le bilan ci-contre ?"
+  },
+  "agare-ekonomi-ekonomi-3-q18": {
+    "stem": "Dans quelle réponse tous les postes proviennent-ils uniquement du compte de résultat ?"
+  },
+  "agare-ekonomi-ekonomi-3-q19": {
+    "stem": "En février, la TVA déductible a été nettement supérieure à la TVA collectée. Tu déclares la TVA chaque mois. À partir de quel mois au plus tôt peux-tu imputer l'excédent de TVA de février ?"
+  },
+  "agare-ekonomi-ekonomi-3-q20": {
+    "stem": "Laquelle de ces réponses entraîne habituellement une diminution de la trésorerie d'une société par actions ?"
+  },
+  "agare-ekonomi-ekonomi-3-q21": {
+    "stem": "Que peut-on lire dans le budget de résultat d'une entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-3-q22": {
+    "stem": "Lequel de ces coûts est un coût variable dans une entreprise de transport ?"
+  },
+  "agare-ekonomi-ekonomi-3-q23": {
+    "stem": "Que se passe-t-il si le paiement de l'impôt parvient à l'administration fiscale dans le délai fixé, mais que la déclaration n'arrive que 3 à 4 jours plus tard ?"
+  },
+  "agare-ekonomi-ekonomi-4-q01": {
+    "stem": "L'un des exploitants de taxi ci-dessous ne doit pas être imposé sur l'avantage en nature véhicule, bien qu'il utilise le taxi à titre privé. Lequel ?"
+  },
+  "agare-ekonomi-ekonomi-4-q02": {
+    "stem": "Tu achètes un véhicule au comptant pour 400 000 SEK hors TVA le 2 janvier de l'année 1. Il est livré le jour même et sa durée de vie économique est de 5 ans. Quelles sont les conséquences de cet achat sur l'année 1 ? Ne tiens pas compte de la TVA."
+  },
+  "agare-ekonomi-ekonomi-4-q03": {
+    "stem": "Tu as pris un véhicule neuf en leasing. Qu'est-ce que le leasing opérationnel ?"
+  },
+  "agare-ekonomi-ekonomi-4-q04": {
+    "stem": "Ton entreprise a signé un contrat de leasing portant sur un véhicule. Qu'en est-il du droit de propriété du véhicule pendant la durée du leasing ?"
+  },
+  "agare-ekonomi-ekonomi-4-q05": {
+    "stem": "Ton entreprise individuelle réalise un chiffre d'affaires annuel de 2 millions de couronnes. Quelle est l'exigence minimale en matière de comptabilité ?"
+  },
+  "agare-ekonomi-ekonomi-4-q08": {
+    "stem": "Tu factures un trajet effectué. Toi et ton client n'avez pas discuté des conditions de paiement, mais tu inscris « 15 jours net » sur la facture. Au plus tard quand le client doit-il payer ?"
+  },
+  "agare-ekonomi-ekonomi-4-q09": {
+    "stem": "Tes salariés sont affiliés au syndicat des travailleurs du transport et ton entreprise est couverte par une convention collective. Quelle assurance, ou quelles assurances, es-tu tenu de souscrire pour tes salariés ?"
+  },
+  "agare-ekonomi-ekonomi-4-q10": {
+    "stem": "Un véhicule d'une durée d'utilisation estimée à 3 ans a été acquis pour 400 000 SEK. Sa valeur résiduelle après 3 ans est estimée à 100 000 SEK et le taux d'actualisation retenu est de 8 %. Quelle réponse calcule correctement le coût annuel du capital ?"
+  },
+  "agare-ekonomi-ekonomi-4-q11": {
+    "stem": "Laquelle de ces réponses indique ce que l'on peut trouver parmi les actifs dans la comptabilité d'une entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-4-q12": {
+    "stem": "Tu constates une erreur dans ta comptabilité manuelle : un montant s'est retrouvé du mauvais côté entre les colonnes débit et crédit. Comment peux-tu corriger l'erreur selon la loi comptable ?"
+  },
+  "agare-ekonomi-ekonomi-4-q14": {
+    "stem": "Quel montant indique les actifs de l'entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-4-q15": {
+    "stem": "L'entreprise avait budgété un excédent de 125 000 SEK de disponibilités. Quelle réponse peut expliquer l'écart budgétaire ?"
+  },
+  "agare-ekonomi-ekonomi-4-q16": {
+    "stem": "Quand ta société doit-elle établir un bilan de contrôle selon la loi sur les sociétés par actions ?"
+  },
+  "agare-ekonomi-ekonomi-4-q17": {
+    "stem": "Åkeri AB effectue des transports de personnes et de marchandises en Suède. Quelle réponse désigne une charge de l'activité ?"
+  },
+  "agare-ekonomi-ekonomi-4-q18": {
+    "stem": "À la clôture de l'exercice comptable, une société par actions établit des comptes annuels et une entreprise individuelle une clôture annuelle. Ces documents doivent-ils être publiés ?"
+  },
+  "agare-ekonomi-ekonomi-4-q19": {
+    "stem": "Tes salariés sont affiliés au syndicat des travailleurs du transport et ton entreprise est donc couverte par une convention collective. Quelles assurances es-tu tenu de souscrire pour tes chauffeurs salariés ?"
+  },
+  "agare-ekonomi-ekonomi-5-q01": {
+    "stem": "Quel est le fonds de roulement de l'entreprise d'après le bilan ?"
+  },
+  "agare-ekonomi-ekonomi-5-q02": {
+    "stem": "Laquelle des réponses ci-dessous correspond aux exigences du leasing opérationnel comme mode de financement ?"
+  },
+  "agare-ekonomi-ekonomi-5-q03": {
+    "stem": "Que trouve-t-on dans le bilan d'une entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-5-q05": {
+    "stem": "Pourquoi est-il utile de suivre la rentabilité de l'actif total dans ton entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-5-q06": {
+    "stem": "AB Transportera dispose d'une autorisation de découvert de 100 000 SEK, utilisée en moyenne à 50 %. Quel est le coût annuel de ce financement si la commission de crédit est de 2 % et le taux d'intérêt de 10 % sur le montant utilisé ?"
+  },
+  "agare-ekonomi-ekonomi-5-q07": {
+    "stem": "Un calcul de coût de véhicule utilise la notion de dépréciation. Que désigne-t-elle ?"
+  },
+  "agare-ekonomi-ekonomi-5-q08": {
+    "stem": "Laquelle de ces mesures est envisageable pour améliorer immédiatement le fonds de roulement ?"
+  },
+  "agare-ekonomi-ekonomi-5-q09": {
+    "stem": "Quelle assurance protège le transporteur s'il devait être tenu responsable de dommages aux marchandises pendant un transport ?"
+  },
+  "agare-ekonomi-ekonomi-5-q12": {
+    "stem": "Laquelle de ces opérations budgétaires affecte uniquement le résultat et non la trésorerie ?"
+  },
+  "agare-ekonomi-ekonomi-5-q13": {
+    "stem": "L'entreprise de transport dispose d'une autorisation de découvert de 100 000 SEK, utilisée en moyenne à 66 %. Quel est son coût annuel pour ce financement si le taux est de 13,5 % sur le montant utilisé et la commission de crédit de 1 % ?"
+  },
+  "agare-ekonomi-ekonomi-5-q14": {
+    "stem": "Que contient le compte de résultat ?"
+  },
+  "agare-ekonomi-ekonomi-5-q15": {
+    "stem": "Le contenu de l'annonce prévue est-il autorisé par la loi sur les pratiques commerciales ?"
+  },
+  "agare-ekonomi-ekonomi-5-q16": {
+    "stem": "Tu as eu un accident dont tu es seul responsable. Quel type d'assurance peut t'indemniser pour la perte de revenus pendant la durée de la réparation du véhicule ?"
+  },
+  "agare-ekonomi-ekonomi-5-q17": {
+    "stem": "Laquelle des réponses ci-dessous contient des notions qui n'apparaissent que dans le bilan ?"
+  },
+  "agare-ekonomi-ekonomi-5-q18": {
+    "stem": "Quand plusieurs opérations de même nature peuvent-elles être documentées par une pièce justificative commune ?"
+  },
+  "agare-ekonomi-ekonomi-5-q20": {
+    "stem": "Quel est le montant des capitaux propres de l'entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-5-q21": {
+    "stem": "Qu'implique le leasing opérationnel d'un véhicule ?"
+  },
+  "agare-ekonomi-ekonomi-5-q22": {
+    "stem": "Un dossier d'appel d'offres indique que le marché porte sur un accord-cadre. Quelle réponse est typique d'un accord-cadre ?"
+  },
+  "agare-ekonomi-ekonomi-5-q23": {
+    "stem": "Tu estimes que ton activité obtient 8 points pour la qualité et 6 points pour l'environnement. Tu estimes que ton prix est nettement inférieur à celui des autres soumissionnaires. Combien de points comptes-tu obtenir à l'évaluation ?"
+  },
+  "agare-ekonomi-ekonomi-6-q02": {
+    "stem": "Que manque-t-il sur la pièce justificative pour qu'elle satisfasse à la règle principale de la loi comptable ?"
+  },
+  "agare-ekonomi-ekonomi-6-q03": {
+    "stem": "As-tu le droit de corriger une erreur comptable par une écriture de correction distincte ?"
+  },
+  "agare-ekonomi-ekonomi-6-q05": {
+    "stem": "Laquelle de ces réponses peut figurer dans un budget de trésorerie ?"
+  },
+  "agare-ekonomi-ekonomi-6-q07": {
+    "stem": "Selon le dossier d'appel d'offres, tu dois démontrer que la solvabilité et la liquidité de la société atteignent certains seuils minimaux. Quel document, ou quels documents, utilises-tu pour le démontrer ?"
+  },
+  "agare-ekonomi-ekonomi-6-q08": {
+    "stem": "L'actif s'élève à 1 250 000 SEK et les dettes à 980 000 SEK. Quel est le montant des capitaux propres de l'entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-6-q09": {
+    "stem": "Les réponses énumèrent des avantages entre lesquels les salariés de la société de transport peuvent choisir librement. Quel avantage le salarié devrait-il choisir s'il veut qu'il soit exonéré d'impôt ?"
+  },
+  "agare-ekonomi-ekonomi-6-q10": {
+    "stem": "Quelle information la banque obtient-elle à partir des bilans ?"
+  },
+  "agare-ekonomi-ekonomi-6-q11": {
+    "stem": "Laquelle de ces réponses peut se trouver dans la comptabilité de l'entreprise ?"
+  },
+  "agare-ekonomi-ekonomi-6-q12": {
+    "stem": "Que prévoit la loi si tu paies 45 jours après la date de facture ?"
+  },
+  "agare-ekonomi-ekonomi-6-q13": {
+    "stem": "Qu'entend-on par marge sur coûts variables ?"
+  },
+  "agare-ekonomi-ekonomi-6-q14": {
+    "stem": "Tu travailles seul dans ta société Färd AB, détenue à 100 % par toi, dont le chiffre d'affaires annuel est de 500 000 SEK. Quelle doit être au minimum l'étendue de la comptabilité de la société ?"
+  },
+  "agare-ekonomi-ekonomi-6-q15": {
+    "stem": "Le budget de résultat du mois prochain doit être établi. Laquelle de ces opérations affecte le résultat ?"
+  },
+  "agare-ekonomi-ekonomi-6-q16": {
+    "stem": "Au lancement de ton activité de transport professionnel, tu achètes au comptant de l'équipement automobile pour 50 000 couronnes TTC. Comment dois-tu comptabiliser cet achat ?"
+  },
+  "agare-ekonomi-ekonomi-6-q17": {
+    "stem": "Pour qu'un salarié échappe à l'imposition de l'avantage en nature véhicule, la voiture ne doit être utilisée à titre privé que dans une mesure limitée, selon les termes de la loi. Qu'entend-on ici par mesure limitée ?"
+  },
+  "agare-ekonomi-ekonomi-6-q18": {
+    "stem": "Un exploitant de taxi en entreprise individuelle a terminé son service à 06h00 le mercredi 5 septembre. Au plus tard quand les recettes en espèces encaissées doivent-elles être enregistrées au journal selon la règle principale de la loi comptable ?"
+  },
+  "agare-ekonomi-ekonomi-6-q19": {
+    "stem": "Le dossier d'appel d'offres pour un marché de transport exige que tu justifies le numéro d'immatriculation de la société, sa raison sociale, ses représentants légaux et son auditeur. Comment peux-tu justifier ces informations ?"
+  },
+  "agare-ekonomi-ekonomi-6-q20": {
+    "stem": "L'entreprise avait budgété un solde de 25 000 SEK de disponibilités. Quelle explication de l'écart budgétaire est plausible ?"
+  },
+  "agare-ekonomi-ekonomi-6-q21": {
+    "stem": "Ton entreprise adhère à une organisation patronale. Deux de tes chauffeurs salariés sont membres du syndicat des travailleurs du transport. Pour quels salariés dois-tu souscrire les assurances AFA ?"
+  },
+  "agare-ekonomi-ekonomi-6-q23": {
+    "stem": "Le dossier d'appel d'offres exige que ta société par actions ait payé ses cotisations sociales et ses impôts conformément aux règles en vigueur. Comment la société démontre-t-elle normalement qu'elle remplit cette condition ?"
+  },
+  "agare-fallstudio-fallstudio-1-q01": {
+    "stem": "Lequel ou lesquels des quatre chauffeurs de l'entreprise peuvent effectuer la mission 1 ?"
+  },
+  "agare-fallstudio-fallstudio-1-q02": {
+    "stem": "Quel poids maximal les bagages de la mission 3 peuvent-ils atteindre ?"
+  },
+  "agare-fallstudio-fallstudio-1-q03": {
+    "stem": "Conny prend un repos de 14h00 à 20h00 pendant son service du 24 décembre. Au plus tard quand doit-il cesser de conduire selon le règlement sur les temps de repos ?"
+  },
+  "agare-fallstudio-fallstudio-1-q04": {
+    "stem": "Conny veut conduire le plus longtemps possible sans repos pendant son service du 24 décembre. Au plus tard quand doit-il cesser de conduire selon le règlement sur les temps de repos ?"
+  },
+  "agare-fallstudio-fallstudio-1-q06": {
+    "stem": "Au plus tard quand Fatima doit-elle prendre un nouveau repos ?"
+  },
+  "agare-fallstudio-fallstudio-1-q07": {
+    "stem": "Combien d'heures de repos supplémentaires Fatima doit-elle prendre au minimum le dimanche avant 19h00 ?"
+  },
+  "agare-fallstudio-fallstudio-1-q09": {
+    "stem": "Au plus tard quand Irina doit-elle cesser de conduire dans la nuit de dimanche à lundi ?"
+  },
+  "agare-fallstudio-fallstudio-1-q10": {
+    "stem": "À 16h00, Irina reçoit une demande de course avec un passager seul qui emporte 25 colis de marchandises dangereuses de 15 kg chacun. Irina a-t-elle le droit d'effectuer cette course ?"
+  },
+  "agare-fallstudio-fallstudio-1-q12": {
+    "stem": "Le nombre d'heures facturées est de 1 584 pour le taxi, 1 672 pour l'autocar et 1 320 pour les marchandises. Quelle réponse indique la marge sur coûts variables (en couronnes entières) par heure facturée de la branche Taxi ?"
+  },
+  "agare-fallstudio-fallstudio-1-q13": {
+    "stem": "Quels coûts salariaux AB Tjänst prévoit-elle pour l'année 6 ?"
+  },
+  "agare-fallstudio-fallstudio-1-q14": {
+    "stem": "Lequel de ces coûts doit être couvert par les marges sur coûts variables des branches d'activité de la société ?"
+  },
+  "agare-fallstudio-fallstudio-1-q15": {
+    "stem": "La société a acheté les cadeaux de Noël au comptant. Comment Eva doit-elle comptabiliser cet achat ?"
+  },
+  "agare-fallstudio-fallstudio-1-q16": {
+    "stem": "Ce qui s'est produit lors de l'« événement » décrit dans l'étude de cas engage ta responsabilité au titre de la prescription de l'autorité du travail (AFS 1999:7) sur les premiers secours et le soutien de crise. Comment cette responsabilité est-elle formulée ?"
+  },
+  "agare-fallstudio-fallstudio-1-q17": {
+    "stem": "Lequel ou lesquels des chauffeurs peuvent effectuer la mission 1 ?"
+  },
+  "agare-fallstudio-fallstudio-1-q18": {
+    "stem": "Au plus tard quand Beda doit-elle cesser de conduire si elle ne prend pas de nouveau repos, au regard des règles sur les temps de repos ?"
+  },
+  "agare-fallstudio-fallstudio-1-q19": {
+    "stem": "Lorsque la commande de la mission 2 arrive, la voiture qui doit l'assurer est libre à Uppsala, près de l'entrée nord de la E4. À quelle heure au plus tôt cette voiture peut-elle être sur place pour prendre le client ?"
+  },
+  "agare-fallstudio-fallstudio-1-q20": {
+    "stem": "Quel poids maximal les bagages de la mission 3 peuvent-ils atteindre ?"
+  },
+  "agare-fallstudio-fallstudio-2-q01": {
+    "stem": "Combien de temps estimes-tu que la mission 1 prendra ?"
+  },
+  "agare-fallstudio-fallstudio-2-q02": {
+    "stem": "Vers quelle heure la voiture est-elle censée arriver à Kläppen dans la mission 2 ?"
+  },
+  "agare-fallstudio-fallstudio-2-q03": {
+    "stem": "Anders a commencé son service le 9/2 à 06h00 selon le planning. Au plus tard dans laquelle de ces localités doit-il s'arrêter pour entamer un nouveau repos, au regard des règles sur les temps de repos, avant de poursuivre son retour vers Skövde ?"
+  },
+  "agare-fallstudio-fallstudio-2-q04": {
+    "stem": "Qu'implique le règlement sur les temps de repos pour Lisa dans la mission 3 ?"
+  },
+  "agare-fallstudio-fallstudio-2-q05": {
+    "stem": "Quelle catégorie de permis minimale Lisa doit-elle détenir pour effectuer le transport vers Arvika (mission 3) ?"
+  },
+  "agare-fallstudio-fallstudio-2-q06": {
+    "stem": "Ton entreprise peut-elle effectuer la mission 1 avec l'une ou plusieurs de ses voitures ?"
+  },
+  "agare-fallstudio-fallstudio-2-q07": {
+    "stem": "Tu veux utiliser la MB 220 diesel de l'entreprise pour la mission 2 : dois-tu dans ce cas monter des pneus hiver ?"
+  },
+  "agare-fallstudio-fallstudio-2-q10": {
+    "stem": "La mission 3 concerne trois passagers. Quel poids maximal les bagages peuvent-ils atteindre ?"
+  },
+  "agare-fallstudio-fallstudio-2-q11": {
+    "stem": "Quand tu commences à conduire le jeudi matin, que dois-tu consigner pour cette semaine de travail ? Sur combien de journées calendaires les inscriptions portent-elles ?"
+  },
+  "agare-fallstudio-fallstudio-2-q12": {
+    "stem": "Au plus tard quand dois-tu cesser de conduire le taxi le lundi, au regard du règlement sur les temps de repos ?"
+  },
+  "agare-fallstudio-fallstudio-2-q13": {
+    "stem": "Acceptes-tu la demande du client d'emporter la marchandise dans la mission 1 ?"
+  },
+  "agare-fallstudio-fallstudio-2-q14": {
+    "stem": "Quel poids maximal les bagages de la mission 2 peuvent-ils atteindre ?"
+  },
+  "agare-fallstudio-fallstudio-2-q15": {
+    "stem": "Les clients de la mission 3 vont dans quatre localités différentes. Laquelle correspond à la course la plus courte que tu puisses accepter si tu dois être de retour à Arlanda et prendre ton repos selon le règlement sur les temps de repos ?"
+  },
+  "agare-fallstudio-fallstudio-2-q16": {
+    "stem": "Quelles voitures Bosse peut-il utiliser pour la mission 2 quand la chaussée est en état hivernal ?"
+  },
+  "agare-fallstudio-fallstudio-2-q18": {
+    "stem": "Vers quelle heure la voiture de la mission 3 arrivera-t-elle à Ystad ?"
+  },
+  "agare-fallstudio-fallstudio-2-q19": {
+    "stem": "Conny reçoit une longue course et décide de faire des heures supplémentaires jusqu'à 06h00, puis de dormir quelques heures. Au plus tôt quand peut-il effectuer la course suivante s'il ne s'est pas reposé pendant son service ?"
+  },
+  "agare-fallstudio-fallstudio-2-q20": {
+    "stem": "Anders, qui n'a pris aucune pause, reçoit à 24h00 une course très longue. Quelle durée maximale peut-elle avoir, au regard des règles sur les temps de repos, s'il doit rentrer avant de prendre son repos ?"
+  },
+  "agare-fallstudio-fallstudio-3-q01": {
+    "stem": "Quel est le coût de revient total ?"
+  },
+  "agare-fallstudio-fallstudio-3-q02": {
+    "stem": "De combien le coût de revient total augmente-t-il si le prix du carburant augmente de 1 couronne ?"
+  },
+  "agare-fallstudio-fallstudio-3-q03": {
+    "stem": "De combien le coût total serait-il plus élevé si le prix d'acquisition du véhicule était de 340 000 SEK et sa valeur résiduelle de 70 000 SEK ?"
+  },
+  "agare-fallstudio-fallstudio-3-q04": {
+    "stem": "Quel est l'effet sur le coût de revient horaire si la durée d'utilisation du véhicule peut être portée à 4 ans, toutes choses égales par ailleurs ?"
+  },
+  "agare-fallstudio-fallstudio-3-q05": {
+    "stem": "Quel est l'effet sur le coût de revient aux 10 km si la durée d'utilisation du véhicule peut être portée à 4 ans, toutes choses égales par ailleurs ?"
+  },
+  "agare-fallstudio-fallstudio-3-q06": {
+    "stem": "Tu n'es pas satisfait de la manière dont Adam accomplit son travail et tu veux mettre fin à sa période d'essai au plus vite. Tu lui as annoncé la nouvelle aujourd'hui. Quelle réponse est correcte ?"
+  },
+  "agare-fallstudio-fallstudio-3-q07": {
+    "stem": "Cesar a annoncé qu'il allait reprendre le travail. Qu'en est-il du contrat de Bertil ?"
+  },
+  "agare-fallstudio-fallstudio-3-q08": {
+    "stem": "Peu après le retour de Cesar au travail, tu reçois une demande de négociation d'un syndicat concernant son adhérent Cesar. Laquelle de ces réponses est exacte ?"
+  },
+  "agare-fallstudio-fallstudio-3-q09": {
+    "stem": "La section locale du syndicat des chauffeurs a demandé qu'un délégué à la sécurité soit désigné sur le lieu de travail. Quelle affirmation est correcte ?"
+  },
+  "agare-fallstudio-fallstudio-3-q10": {
+    "stem": "Tu as besoin d'embaucher une personne de plus au service technique, à temps plein. Tu contactes le service public de l'emploi pour ce poste et tu publies des annonces dans plusieurs journaux. Quelle affirmation est correcte ?"
+  },
+  "agare-fallstudio-fallstudio-3-q11": {
+    "stem": "Combien la société a-t-elle sur son compte courant si le solde d'ouverture en décembre était de 120 000 SEK ?"
+  },
+  "agare-fallstudio-fallstudio-3-q12": {
+    "stem": "Quel est le résultat comptable au vu de l'ensemble des opérations enregistrées en décembre ?"
+  },
+  "agare-fallstudio-fallstudio-3-q14": {
+    "stem": "À combien s'élèvent tes dettes fournisseurs au 31 décembre si la dette d'ouverture au 1er décembre est de 110 000 couronnes ?"
+  },
+  "agare-fallstudio-fallstudio-3-q15": {
+    "stem": "La dette envers la banque s'élevait à 250 000 SEK à l'ouverture de décembre. Quel en était le montant à la fin du mois ?"
+  },
+  "agare-fallstudio-fallstudio-3-q16": {
+    "stem": "Combien de temps estimes-tu que la mission 1 prendra ?"
+  },
+  "agare-fallstudio-fallstudio-3-q17": {
+    "stem": "Vers quelle heure la voiture est-elle censée arriver à Kläppen dans la mission 2 ?"
+  },
+  "agare-fallstudio-fallstudio-3-q18": {
+    "stem": "Anders a commencé son service le 9/2 à 06h00 selon le planning. Au plus tard dans laquelle de ces localités doit-il s'arrêter pour entamer un nouveau repos, au regard des règles sur les temps de repos, avant de poursuivre son retour vers Skövde ?"
+  },
+  "agare-fallstudio-fallstudio-3-q19": {
+    "stem": "Qu'implique le règlement sur les temps de repos pour Lisa dans la mission 3 ?"
+  },
+  "agare-fallstudio-fallstudio-3-q20": {
+    "stem": "Quelle catégorie de permis minimale Lisa doit-elle détenir pour effectuer le transport vers Arvika (mission 3) ?"
+  },
+  "agare-fallstudio-fallstudio-4-q02": {
+    "stem": "Les salaires acquis par les employés en juin 2008 sont versés par la société le 5 juillet 2008. Quand ces salaires constituent-ils des charges déductibles ?"
+  },
+  "agare-fallstudio-fallstudio-4-q03": {
+    "stem": "Quelle est l'assiette des cotisations sociales et de la retenue à la source pour le mois d'avril ?"
+  },
+  "agare-fallstudio-fallstudio-4-q04": {
+    "stem": "À 03h00, un client appelle et veut faire un court trajet dans Göteborg. Lequel ou lesquels des chauffeurs de nuit peuvent effectuer la course au regard des règles sur les temps de repos ?"
+  },
+  "agare-fallstudio-fallstudio-4-q05": {
+    "stem": "Suppose que le résultat de l'année soit inférieur de 20 000 SEK au résultat budgété. Laquelle de ces situations pourrait en être la cause ?"
+  },
+  "agare-fallstudio-fallstudio-4-q06": {
+    "stem": "Combien de temps faut-il pour effectuer la mission 1, en comptant depuis le départ de Piteå ?"
+  },
+  "agare-fallstudio-fallstudio-4-q10": {
+    "stem": "L'entreprise obtient un transport de jeunes skieurs et la remorque de l'entreprise doit être utilisée. Quelle habilitation, ou quelles habilitations, le chauffeur doit-il détenir au minimum ?"
+  },
+  "agare-fallstudio-fallstudio-4-q11": {
+    "stem": "De combien le coût de revient change-t-il si le nombre d'heures de production de trafic est de 4 000 et que le kilométrage reste inchangé ?"
+  },
+  "agare-fallstudio-fallstudio-4-q12": {
+    "stem": "De combien le coût de revient horaire augmente-t-il si le prix du carburant monte de 1 SEK par litre hors TVA et que le kilométrage moyen par heure reste inchangé ?"
+  },
+  "agare-fallstudio-fallstudio-4-q13": {
+    "stem": "De combien le coût annuel moyen du capital calculé serait-il plus élevé si le prix d'acquisition du véhicule était de 340 000 SEK et sa valeur résiduelle de 70 000 SEK ?"
+  },
+  "agare-fallstudio-fallstudio-4-q14": {
+    "stem": "De combien le coût annuel moyen de dépréciation serait-il plus élevé si le prix d'acquisition du véhicule était de 340 000 SEK et sa valeur résiduelle de 70 000 SEK ?"
+  },
+  "agare-fallstudio-fallstudio-4-q15": {
+    "stem": "De combien les recettes doivent-elles augmenter par heure pour que le résultat reste inchangé si la redevance versée à la centrale de réservation augmente de 2 000 SEK par mois ?"
+  },
+  "agare-fallstudio-fallstudio-4-q16": {
+    "stem": "Quel est le résultat budgété de l'exercice 1 ?"
+  },
+  "agare-fallstudio-fallstudio-4-q18": {
+    "stem": "Quel apport en capitaux propres faudrait-il pour que les disponibilités budgétées à la clôture de l'exercice atteignent 81 000 SEK ?"
+  },
+  "agare-fallstudio-fallstudio-4-q19": {
+    "stem": "Quel est l'effet sur la trésorerie et le résultat budgétés de l'exercice si les amortissements sont calculés sur quatre ans au lieu de trois ?"
+  },
+  "agare-fallstudio-fallstudio-4-q20": {
+    "stem": "Comment la trésorerie et le résultat du budget évolueraient-ils si aucun prélèvement personnel n'était effectué ?"
+  },
+  "agare-juridik-juridik-1-q01": {
+    "stem": "Un chauffeur de taxi a perdu sa carte professionnelle et en a demandé une nouvelle. A-t-il le droit de conduire un taxi avant d'avoir reçu la carte provisoire ou la nouvelle carte ?"
+  },
+  "agare-juridik-juridik-1-q02": {
+    "stem": "Dans laquelle des réponses ci-dessous la notion d'assurance entre associés est-elle employée correctement, au sens admis ?"
+  },
+  "agare-juridik-juridik-1-q03": {
+    "stem": "Quand le droit du salarié aux indemnités maladie prend-il effet ?"
+  },
+  "agare-juridik-juridik-1-q04": {
+    "stem": "Pour laquelle des personnes employées dans l'entreprise de transport de Kajsa la loi sur la protection de l'emploi (LAS) ne s'applique-t-elle pas ?"
+  },
+  "agare-juridik-juridik-1-q05": {
+    "stem": "Où peut-on vérifier si un véhicule est utilisé en transport professionnel ?"
+  },
+  "agare-juridik-juridik-1-q06": {
+    "stem": "Une entreprise de transport a cinq chauffeurs salariés, qui assurent aussi l'entretien des véhicules. L'entreprise est-elle soumise à la loi sur le milieu de travail, et si oui pourquoi ?"
+  },
+  "agare-juridik-juridik-1-q07": {
+    "stem": "Qu'implique la règle de l'ambiguïté lorsqu'un texte contractuel n'est pas clair ?"
+  },
+  "agare-juridik-juridik-2-q01": {
+    "stem": "Au cours de l'année passée, tu as été sanctionné pour plusieurs infractions au règlement sur les temps de repos. Cela peut-il avoir des conséquences, et si oui lesquelles, lorsque tu demandes une licence de transport ?"
+  },
+  "agare-juridik-juridik-2-q02": {
+    "stem": "Le secteur du taxi bénéficie d'une exemption par catégorie à l'interdiction de coopération au sein d'une centrale de réservation. Que faut-il pour relever de cette exemption ?"
+  },
+  "agare-juridik-juridik-2-q03": {
+    "stem": "Laquelle des réponses ci-dessous indique une signalisation correcte sur un taxi effectuant un transport scolaire ?"
+  },
+  "agare-juridik-juridik-2-q04": {
+    "stem": "L'un de tes chauffeurs a acquis 25 jours de congés payés. Il ne veut en prendre que 15 cette année et reporter 10 jours sur l'année de congés suivante. Quelle règle s'applique ?"
+  },
+  "agare-juridik-juridik-2-q05": {
+    "stem": "L'un de tes chauffeurs a volé un ordinateur portable neuf à l'entreprise. Tu envisages de le licencier pour faute ou pour motif personnel. Au plus tard quand dois-tu le faire ?"
+  },
+  "agare-juridik-juridik-2-q06": {
+    "stem": "Selon le règlement sur les temps de repos, pendant combien de temps au minimum le carnet de bord personnel doit-il être conservé après avoir été achevé ?"
+  },
+  "agare-juridik-juridik-2-q07": {
+    "stem": "Tu conduis un taxi et la police t'arrête lors d'un contrôle du transport de taxi. Qui doit imprimer le rapport du taximètre pour ce contrôle ?"
+  },
+  "agare-juridik-juridik-2-q08": {
+    "stem": "Un client paie en espèces après une course. Quelle exigence s'applique à la façon dont tu dois traiter le reçu du taximètre ?"
+  },
+  "agare-juridik-juridik-2-q10": {
+    "stem": "À quelle indemnité ton chauffeur salarié a-t-il droit de ta part pendant la période d'indemnités maladie en cas d'arrêt de travail ?"
+  },
+  "agare-juridik-juridik-2-q11": {
+    "stem": "Qu'implique la règle dite des deux mois pour un employeur lors d'un licenciement pour faute ou pour motif personnel ?"
+  },
+  "agare-juridik-juridik-2-q13": {
+    "stem": "L'affichage des prix d'un taxi doit indiquer le type de tarif utilisé. L'un des tarifs ci-dessous est interdit. Lequel ?"
+  },
+  "agare-juridik-juridik-2-q14": {
+    "stem": "Quand une personne physique ou morale est-elle considérée comme insolvable ?"
+  },
+  "agare-juridik-juridik-2-q15": {
+    "stem": "Un de tes chauffeurs à temps plein veut réduire son temps de travail à 75 % pour aller chercher plus tôt son fils de six ans à l'école. Y a-t-il droit ?"
+  },
+  "agare-juridik-juridik-2-q16": {
+    "stem": "Qu'est-ce qui est correct au sujet du droit d'un titulaire de licence d'effectuer à la fois des transports de marchandises et des transports de personnes ?"
+  },
+  "agare-juridik-juridik-2-q17": {
+    "stem": "Que doit notamment figurer sur un reçu de taximètre ?"
+  },
+  "agare-juridik-juridik-2-q18": {
+    "stem": "Dans laquelle de ces formes d'entreprise sont-ce en principe les associés eux-mêmes qui sont imposables sur le résultat de l'entreprise ?"
+  },
+  "agare-juridik-juridik-2-q19": {
+    "stem": "Ta voiture doit être réparée et restera donc longtemps au garage. Pendant ce temps, tu ne veux pas rester inactif : laquelle de ces options peux-tu choisir ?"
+  },
+  "agare-juridik-juridik-2-q21": {
+    "stem": "Dans laquelle de ces formes d'entreprise est-il en principe interdit au propriétaire d'emprunter de l'argent à l'entreprise ?"
+  },
+  "agare-juridik-juridik-2-q22": {
+    "stem": "Qui désigne le délégué à la sécurité ?"
+  },
+  "agare-juridik-juridik-2-q23": {
+    "stem": "Laquelle de ces mentions est obligatoire sur une lettre de voiture lors d'un transport de marchandises selon la loi sur le transport routier intérieur (LIV) ?"
+  },
+  "agare-juridik-juridik-3-q01": {
+    "stem": "Quel document doit toujours se trouver dans une voiture en service de taxi ?"
+  },
+  "agare-juridik-juridik-3-q02": {
+    "stem": "En tant qu'employeur, es-tu tenu de respecter le droit de négociation prévu par la loi sur la codétermination dans le travail (MBL) lorsqu'un salarié appelle à une négociation ?"
+  },
+  "agare-juridik-juridik-3-q03": {
+    "stem": "Quelle affirmation sur la lettre de voiture est correcte selon la loi sur le transport routier intérieur ?"
+  },
+  "agare-juridik-juridik-3-q04": {
+    "stem": "Transportåkeri AB a envoyé une offre à Carl AB sans indiquer de délai de réponse. Comment appelle-t-on le délai dont le destinataire dispose pour accepter l'offre ?"
+  },
+  "agare-juridik-juridik-3-q05": {
+    "stem": "L'affichage des prix de ton taxi mentionne un prix forfaitaire vers la ville la plus proche. Avec lequel de ces clients as-tu ainsi conclu un contrat contraignant ?"
+  },
+  "agare-juridik-juridik-3-q06": {
+    "stem": "L'un de tes chauffeurs a reprise le travail vendredi dernier après cinq jours de maladie. Le mardi de cette semaine, il appelle pour se déclarer malade à nouveau. Comment la période d'indemnités maladie doit-elle être calculée ?"
+  },
+  "agare-juridik-juridik-3-q07": {
+    "stem": "Kalle veut créer seul une entreprise de transport. Quelles deux formes peut-il choisir ?"
+  },
+  "agare-juridik-juridik-3-q08": {
+    "stem": "L'un de tes chauffeurs a été victime d'un vol avec violence pendant un transport. Quelle mesure de suivi l'entreprise doit-elle prendre selon l'AFS 1993:2 (prescriptions de l'autorité de protection du travail) ?"
+  },
+  "agare-juridik-juridik-3-q10": {
+    "stem": "Quelle forme d'activité peut être considérée comme une personne morale ?"
+  },
+  "agare-juridik-juridik-3-q11": {
+    "stem": "Où l'essentiel des conditions de salaire et d'emploi des chauffeurs de taxi suédois est-il réglé ?"
+  },
+  "agare-juridik-juridik-3-q14": {
+    "stem": "Dans une société de transport, un nouveau gestionnaire de transport doit être désigné. Laquelle de ces personnes peut être retenue pour cette fonction ?"
+  },
+  "agare-juridik-juridik-3-q15": {
+    "stem": "C'est le transporteur qui est tenu à indemnisation si des marchandises disparaissent lors d'un transport relevant de la loi sur le transport routier intérieur (LIV). L'indemnité est plafonnée à un certain montant par kilo, sauf convention contraire. Quel est ce montant ?"
+  },
+  "agare-juridik-juridik-3-q16": {
+    "stem": "Dans quelle forme d'entreprise les notions de pacte d'associés et d'assurance entre associés sont-elles pertinentes ?"
+  },
+  "agare-juridik-juridik-3-q17": {
+    "stem": "Laquelle de ces méthodes de tarification par taximètre est interdite pour une course commandée par le public sans contrat particulier ?"
+  },
+  "agare-juridik-juridik-3-q18": {
+    "stem": "La personne morale peut-elle continuer à disposer elle-même de ses actifs après une décision de faillite ?"
+  },
+  "agare-juridik-juridik-3-q19": {
+    "stem": "La loi sur la protection de l'emploi (LAS) s'applique, à quelques exceptions près, à tous les salariés. Lequel de ces salariés relève de son application ?"
+  },
+  "agare-juridik-juridik-3-q20": {
+    "stem": "Le demandeur d'une licence de transport doit disposer de ressources financières suffisantes pour exploiter l'entreprise. À quelle fréquence le titulaire doit-il ensuite pouvoir justifier qu'il satisfait à cette exigence ?"
+  },
+  "agare-juridik-juridik-3-q21": {
+    "stem": "Quelle sanction risque un chauffeur de taxi qui effectue un transport scolaire au cours duquel un enfant de moins de 15 ans ne porte pas la ceinture ?"
+  },
+  "agare-juridik-juridik-3-q22": {
+    "stem": "Quand les règles générales de précaution du chapitre 2 du code de l'environnement s'appliquent-elles ?"
+  },
+  "agare-juridik-juridik-3-q23": {
+    "stem": "Les exploitants de taxi d'une zone disposent d'une centrale de réservation commune. Selon les règles de concurrence, une telle centrale ne peut détenir une part de marché trop importante dans sa zone d'activité principale. Quelle est généralement la part de marché maximale ?"
+  },
+  "agare-tekniska-tekniska-1-q01": {
+    "stem": "Quel style de conduite est le meilleur pour l'environnement ?"
+  },
+  "agare-tekniska-tekniska-1-q02": {
+    "stem": "L'un de tes véhicules a subi une collision. Quelle réponse est correcte en ce qui concerne la remise en état du dispositif de ceinture de sécurité ?"
+  },
+  "agare-tekniska-tekniska-1-q03": {
+    "stem": "Que dois-tu faire pour limiter l'impact sur l'environnement ?"
+  },
+  "agare-tekniska-tekniska-1-q04": {
+    "stem": "Laquelle de ces personnes a la possibilité d'obtenir la carte professionnelle de chauffeur de taxi ?"
+  },
+  "agare-tekniska-tekniska-1-q05": {
+    "stem": "Ton grand taxi compte cinq places passagers, mais tu envisages d'en ajouter deux. Quelles règles et exigences dois-tu prendre en compte comme responsable ?"
+  },
+  "agare-tekniska-tekniska-1-q06": {
+    "stem": "Quand une activité compte-t-elle comme transport professionnel ?"
+  },
   "agare-tekniska-tekniska-1-q08": {
     "stem": "Combien de personnes ont été tuées chaque année dans la circulation au cours des cinq dernières années ?"
+  },
+  "agare-tekniska-tekniska-1-q09": {
+    "stem": "Quelle est la profondeur de sculpture minimale autorisée pour les pneus hiver ?"
+  },
+  "agare-tekniska-tekniska-1-q10": {
+    "stem": "À quel moment du trajet ressens-tu la somnolence ?"
+  },
+  "agare-tekniska-tekniska-1-q11": {
+    "stem": "On te propose une course le 24 septembre, estimée de 05h00 à 06h00. Peux-tu l'accepter compte tenu du repos que tu as pris d'après ta feuille de carnet de bord ?"
+  },
+  "agare-tekniska-tekniska-1-q12": {
+    "stem": "Combien de temps le pot catalytique met-il à monter en température ?"
+  },
+  "agare-tekniska-tekniska-1-q13": {
+    "stem": "Quelle affirmation est correcte au sujet du bruit du trafic routier ?"
+  },
+  "agare-tekniska-tekniska-1-q14": {
+    "stem": "Que dois-tu avoir avec toi quand tu transportes 5 kg de marchandises dangereuses ?"
+  },
+  "agare-tekniska-tekniska-1-q15": {
+    "stem": "Tu constates que l'un des scellés de ton taximètre est rompu. Quand dois-tu le faire contrôler ?"
+  },
+  "agare-tekniska-tekniska-1-q16": {
+    "stem": "Que dois-tu faire avant l'hiver pour éviter des frais de réparation ?"
+  },
+  "agare-tekniska-tekniska-1-q17": {
+    "stem": "Quelle est la vitesse maximale autorisée lors d'un remorquage ?"
+  },
+  "agare-tekniska-tekniska-1-q18": {
+    "stem": "Qu'est-ce qui est exact au sujet des premiers secours ?"
+  },
+  "agare-tekniska-tekniska-1-q19": {
+    "stem": "Après une semaine de repos, tu as commencé à travailler à 07h00. Tu as interrompu ton travail entre 14h00 et 17h00. À quelle heure doit se situer ta prochaine période de repos ?"
+  },
+  "agare-tekniska-tekniska-1-q20": {
+    "stem": "Après une semaine de repos, tu as travaillé mardi, mercredi, jeudi et samedi. Combien de journées dois-tu pouvoir présenter à un policier ?"
+  },
+  "agare-tekniska-tekniska-1-q21": {
+    "stem": "Un conducteur a bu moins de 0,2 gramme d'alcool par litre de sang. Quel en est l'effet ?"
+  },
+  "agare-tekniska-tekniska-1-q22": {
+    "stem": "Qu'est-ce qui est exact au sujet de la capacité visuelle des conducteurs âgés ?"
+  },
+  "agare-tekniska-tekniska-1-q23": {
+    "stem": "Un chauffeur est en repos le lundi et le mardi, et commence à conduire le mercredi à 07h00. Il interrompt son travail entre 11h00 et 15h00. Au plus tard quand doit-il cesser de conduire au regard du règlement sur les temps de repos, s'il ne fait pas de nouvelle interruption ?"
+  },
+  "agare-tekniska-tekniska-2-q01": {
+    "stem": "Quelle peut être l'origine des infrasons et des vibrations près d'un axe routier ?"
+  },
+  "agare-tekniska-tekniska-2-q02": {
+    "stem": "Quelle peut être la sanction si le conducteur ne consigne pas son repos journalier dans un carnet de bord ?"
+  },
+  "agare-tekniska-tekniska-2-q03": {
+    "stem": "Quelle est la cause d'une consommation de carburant excessive ?"
+  },
+  "agare-tekniska-tekniska-2-q04": {
+    "stem": "Les ronds-points sont considérés comme plus sûrs que les carrefours à feux. En quoi ?"
+  },
+  "agare-tekniska-tekniska-2-q06": {
+    "stem": "Tu conduis en taxi la Volvo V70 correspondant à la carte grise. On te confie une course avec quatre personnes pesant en moyenne 75 kg. Quelle masse de bagages peux-tu charger au maximum ?"
+  },
+  "agare-tekniska-tekniska-2-q07": {
+    "stem": "Tu travailles dans un garage du lundi au vendredi de 08h00 à 17h00. Le vendredi, tu conduis le taxi à partir de 19h00. Au plus tard quand dois-tu cesser de conduire avant de prendre un nouveau repos, au regard du règlement sur les temps de repos ?"
+  },
+  "agare-tekniska-tekniska-2-q08": {
+    "stem": "Tu dois transporter de la peinture, UN 1263, 3, II, avec ton taxi et une remorque, en quantité calculée en valeur. Combien de litres peux-tu transporter au maximum ?"
+  },
+  "agare-tekniska-tekniska-2-q09": {
+    "stem": "À quels entrepreneurs les prescriptions de l'autorité de protection du travail sur les premiers secours et le soutien de crise s'appliquent-elles, en tout ou en partie ?"
+  },
+  "agare-tekniska-tekniska-2-q10": {
+    "stem": "Quelle affirmation est correcte au sujet de l'entretien des véhicules utilisés en transport professionnel ?"
+  },
+  "agare-tekniska-tekniska-2-q12": {
+    "stem": "Pour combien de journées au minimum dois-tu pouvoir produire les inscriptions de ton carnet personnel de temps de repos ?"
+  },
+  "agare-tekniska-tekniska-2-q13": {
+    "stem": "Le calendrier montre le planning d'un chauffeur de taxi. Le mardi, l'entreprise reçoit une course à 17h00 sur 130 km, dont environ 30 km en ville. Comme régulateur, tu dois choisir parmi les réponses ci-dessous. Laquelle retiens-tu ?"
+  },
+  "agare-tekniska-tekniska-2-q16": {
+    "stem": "La préparation au soutien de crise et aux premiers secours est encadrée depuis le 1er juillet 2000 par un règlement. Que devrais-tu faire en premier lieu selon ce texte pour éviter un traumatisme durable lors d'un événement grave touchant un salarié ?"
+  },
+  "agare-tekniska-tekniska-2-q17": {
+    "stem": "Laquelle de ces personnes a la possibilité d'obtenir la carte professionnelle de chauffeur de taxi ?"
+  },
+  "agare-tekniska-tekniska-2-q18": {
+    "stem": "Quel temps est compté dans le repos journalier d'un conducteur selon les règles sur les temps de repos ?"
+  },
+  "agare-tekniska-tekniska-2-q20": {
+    "stem": "Quelle est la raison de l'abaissement de la vitesse à 30 km/h dans certaines zones agglomérées ?"
+  },
+  "agare-tekniska-tekniska-2-q21": {
+    "stem": "Quelle affirmation reflète le mieux l'idée fondamentale de la « Vision Zéro » ?"
+  },
+  "agare-tekniska-tekniska-2-q22": {
+    "stem": "Quelle affirmation est correcte au sujet des stupéfiants et des médicaments au volant ?"
+  },
+  "agare-tekniska-tekniska-2-q23": {
+    "stem": "Comment peux-tu retrouver de la vigilance pour plus que quelques minutes si tu commences à te sentir fatigué au volant ?"
+  },
+  "agare-tekniska-tekniska-3-q01": {
+    "stem": "Que faut-il pour utiliser des pneus cloutés en dehors de la période autorisée ?"
+  },
+  "agare-tekniska-tekniska-3-q03": {
+    "stem": "Laquelle de ces réponses relève du contrôle technique périodique de ton véhicule ?"
+  },
+  "agare-tekniska-tekniska-3-q05": {
+    "stem": "Quel est l'avantage de l'utilisation de l'huile de colza (EMC) ?"
+  },
+  "agare-tekniska-tekniska-3-q06": {
+    "stem": "Ton entreprise possède un véhicule mis hors circulation. Pendant cette période, un hayon élévateur y est monté. Quelle affirmation est correcte ?"
+  },
+  "agare-tekniska-tekniska-3-q07": {
+    "stem": "Où un contrôle routier du taximètre peut-il avoir lieu ?"
   },
   "agare-tekniska-tekniska-3-q08": {
     "stem": "Combien de personnes ont été tuées chaque année dans la circulation au cours des cinq dernières années ?"
   },
+  "agare-tekniska-tekniska-3-q09": {
+    "stem": "Tu conduis une MB 220 avec quatre passagers de 75 kg chacun. Quelle masse de bagages peux-tu charger au maximum ?"
+  },
+  "agare-tekniska-tekniska-3-q10": {
+    "stem": "Ton entreprise doit transporter trois colis contenant des marchandises dangereuses. Les colis portent l'étiquette de danger de l'image. Quel est le danger principal de cette matière ?"
+  },
+  "agare-tekniska-tekniska-3-q11": {
+    "stem": "Quelle est la cause la plus probable d'une consommation élevée sur un véhicule à moteur diesel ?"
+  },
+  "agare-tekniska-tekniska-3-q12": {
+    "stem": "Comment les émissions de dioxyde de carbone du trafic automobile peuvent-elles être réduites ?"
+  },
+  "agare-tekniska-tekniska-3-q13": {
+    "stem": "Quel type d'accident est le plus fréquent sur route de campagne lorsque le conducteur est fatigué ?"
+  },
   "agare-tekniska-tekniska-3-q14": {
     "stem": "Quelles trois informations peux-tu tirer d'une carte grise ?"
+  },
+  "agare-tekniska-tekniska-3-q15": {
+    "stem": "Ton entreprise de taxi reçoit une commande de transport de marchandises seules dans un taxi. Quelle habilitation le chauffeur doit-il détenir ?"
+  },
+  "agare-tekniska-tekniska-3-q16": {
+    "stem": "L'entreprise doit effectuer un transport de marchandises dangereuses en « quantité calculée en valeur » (valeur maximale 1 000). Quelle réponse est correcte ?"
+  },
+  "agare-tekniska-tekniska-3-q17": {
+    "stem": "Une conductrice commence son service à 06h00 après un jour de repos. Elle interrompt son travail entre 09h00 et 13h00. Au plus tard quand doit-elle cesser de conduire le taxi selon le règlement sur les temps de repos ?"
+  },
+  "agare-tekniska-tekniska-3-q18": {
+    "stem": "L'un des véhicules de ton entreprise présente des défauts tels qu'il est interdit de circuler à l'issue du contrôle technique. Quelle règle s'applique ?"
+  },
+  "agare-tekniska-tekniska-3-q19": {
+    "stem": "Tu travailles dans un garage du lundi au vendredi de 08h00 à 17h00. Le vendredi, tu conduis le taxi à partir de 19h00. Au plus tard quand dois-tu cesser de conduire avant de prendre un nouveau repos, au regard du règlement sur les temps de repos ?"
+  },
+  "agare-tekniska-tekniska-3-q20": {
+    "stem": "Tu vas arrêter d'exploiter ta voiture en taxi et tu veux remplacer la plaque jaune par une plaque blanche. Quel type de contrôle technique faut-il alors effectuer ?"
+  },
+  "agare-tekniska-tekniska-3-q21": {
+    "stem": "Pendant quels mois les pneus hiver sont-ils obligatoires sur les voitures particulières en cas d'état hivernal de la chaussée en Suède ?"
+  },
+  "agare-tekniska-tekniska-3-q22": {
+    "stem": "Pour lequel de ces transports la carte professionnelle de chauffeur de taxi est-elle exigée ?"
+  },
+  "agare-tekniska-tekniska-3-q23": {
+    "stem": "Quel traitement de transport est exigé pour des emballages vides non nettoyés ayant contenu des marchandises dangereuses ?"
+  },
+  "agare-tekniska-tekniska-4-q02": {
+    "stem": "Tu as monté un attelage sur le taxi que tu utilises chaque jour en service. Dans quel délai la voiture doit-elle passer le contrôle d'immatriculation au plus tard ?"
+  },
+  "agare-tekniska-tekniska-4-q03": {
+    "stem": "Après 11 heures de repos, tu conduis le taxi un samedi de 18h00 à 04h00, avec un nouveau temps de repos de 20h00 à 21h00. Au plus tôt quand peux-tu recommencer à conduire le dimanche selon le règlement sur les temps de repos ?"
+  },
+  "agare-tekniska-tekniska-4-q06": {
+    "stem": "Tu conduis en taxi la Chevrolet Trans Sport correspondant à la carte grise. On te confie une course avec sept personnes pesant en moyenne 75 kg. Quelle masse de bagages peux-tu charger au maximum ?"
+  },
+  "agare-tekniska-tekniska-4-q07": {
+    "stem": "Un chauffeur doit conduire une camionnette et une voiture particulière en service de ligne. Quelle habilitation, ou quelles habilitations, doit-il détenir ?"
+  },
+  "agare-tekniska-tekniska-4-q08": {
+    "stem": "La poussière de route est une source importante de particules dans l'air, surtout en agglomération. Lequel de ces choix de pneus en produit le plus ?"
+  },
+  "agare-tekniska-tekniska-4-q09": {
+    "stem": "Quelle autorité exerce la surveillance des entreprises de transport quant au respect des prescriptions sur le soutien de crise et les premiers secours ?"
+  },
+  "agare-tekniska-tekniska-4-q10": {
+    "stem": "L'un des véhicules de ton entreprise est interdit de circuler à l'issue du contrôle technique. Quelle affirmation est correcte ?"
+  },
+  "agare-tekniska-tekniska-4-q11": {
+    "stem": "À partir de quelle vitesse du véhicule les chances de survie d'un piéton heurté par l'avant d'une voiture chutent-elles brutalement ?"
+  },
+  "agare-tekniska-tekniska-4-q12": {
+    "stem": "Tu as la formation marchandises dangereuses au titre du chapitre 1.3 de l'ADR, ce qui te permet de transporter des marchandises dangereuses en quantité calculée en valeur. Quel document dois-tu emporter pour ce type de course ?"
+  },
+  "agare-tekniska-tekniska-4-q13": {
+    "stem": "Quelle intervention sur la voiture est la plus urgente à l'approche d'un froid soudain ?"
+  },
+  "agare-tekniska-tekniska-4-q15": {
+    "stem": "Tu conduis le taxi depuis 05h00 le 24 septembre. À 09h00, on t'annonce une course qui commence à 09h15 et devrait durer 3 heures. Peux-tu l'accepter au regard du règlement sur les temps de repos et du repos que tu as pris d'après ta feuille de carnet de bord ?"
   },
   "b-avstand-01": {
     "stem": "Pourquoi faut-il garder une distance de sécurité suffisante avec le véhicule de devant ?",
@@ -7801,6 +8668,9 @@
   "rs-off-gott-anseende": {
     "stem": "Que recouvre la bonne réputation ?"
   },
+  "rs-off-gula-skyltar-bestall": {
+    "stem": "Que peux-tu faire au moment où tu déclares un véhicule pour le service de taxi ?"
+  },
   "rs-off-hastighet-balte": {
     "stem": "Vitesse, ceinture et blessures ?"
   },
@@ -7857,6 +8727,9 @@
   },
   "rs-off-nollvisionen": {
     "stem": "Que faut-il savoir sur Nollvisionen ?"
+  },
+  "rs-off-olaga-vs-otillaten": {
+    "stem": "Qu'est-ce qui distingue le transport de taxi illégal du transport de taxi non autorisé ?"
   },
   "rs-off-olamplig-avslag-6-5": {
     "stem": "Durée d'interdiction après un refus pour réputation ?"
