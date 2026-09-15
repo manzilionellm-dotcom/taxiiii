@@ -27,6 +27,7 @@ export const defaultProfile: Profile = {
   locale: "sv",
   fragileMode: false,
   supportLevel: 2,
+  showTranslations: true,
   onboarded: false,
   tosAccepted: false,
 };

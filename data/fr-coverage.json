@@ -1,0 +1,25 @@
+{
+  "tracks": {
+    "taxi": {
+      "questions": 854,
+      "stems": 124,
+      "options": 0,
+      "explanations": 213,
+      "none": 572
+    },
+    "b": {
+      "questions": 614,
+      "stems": 613,
+      "options": 613,
+      "explanations": 614,
+      "none": 0
+    },
+    "owner": {
+      "questions": 472,
+      "stems": 178,
+      "options": 0,
+      "explanations": 238,
+      "none": 184
+    }
+  }
+}

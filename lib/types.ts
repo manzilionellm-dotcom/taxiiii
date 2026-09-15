@@ -86,6 +86,13 @@ export interface Profile {
   locale: Locale;
   fragileMode: boolean;
   supportLevel: SupportLevel;
+  /**
+   * Show the French line under every Swedish stem, option and explanation.
+   * One persisted preference is the whole rule: it used to be a per-question
+   * button that reset on the next question, crossed with supportLevel, so the
+   * same tap had to be repeated forever and exam mode hid French outright.
+   */
+  showTranslations: boolean;
   onboarded: boolean;
   tosAccepted: boolean;
 }
