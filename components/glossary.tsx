@@ -24,13 +24,16 @@ import type { Locale } from "@/lib/types";
 
 const MOVE_CANCEL_PX = 10;
 
-/** Option rows ignore the tap that just opened a word chip. */
-let glossHoldUntil = 0;
+/** Option rows ignore the tap that just opened a word/passage chip. */
+let glossHoldArmed = false;
 export function markGlossHold() {
-  glossHoldUntil = Date.now() + 500;
+  glossHoldArmed = true;
 }
 export function glossHoldConsumed() {
-  return Date.now() < glossHoldUntil;
+  return glossHoldArmed;
+}
+export function clearGlossHold() {
+  glossHoldArmed = false;
 }
 
 export type GlossKind = "word" | "passage";
@@ -314,6 +317,9 @@ export function GlossableWord({
   if (!shouldOfferGloss(text)) {
     return <span>{text}</span>;
   }
+  if (variant === "option") {
+    return <span className={`gloss-word gloss-word-${variant}`}>{text}</span>;
+  }
 
   const isOpen = activeToken === text;
 
@@ -405,6 +411,12 @@ export function GlossablePassage({
           }
         }}
         onPointerCancel={hold.clearHold}
+        onClick={(event) => {
+          if (hold.fired.current || glossHoldConsumed()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }}
       >
         {children}
         <button

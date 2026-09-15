@@ -7,7 +7,9 @@ import {
   GlossableText,
   GlossaryProvider,
   GLOSS_HOLD_MS,
+  clearGlossHold,
   glossHoldConsumed,
+  markGlossHold,
 } from "@/components/glossary";
 import { ProtectedImage } from "@/components/protected-image";
 import { t } from "@/lib/i18n";
@@ -71,8 +73,19 @@ function ExamFigure({
           clearHold();
         }
       }}
-      onPointerUp={() => {
+      onPointerUp={(event) => {
+        const wasHold = fired.current;
+        const moved =
+          Math.hypot(event.clientX - start.current.x, event.clientY - start.current.y) > 10;
         clearHold();
+        if (wasHold) {
+          markGlossHold();
+          return;
+        }
+        if (!moved && onHold) {
+          markGlossHold();
+          onHold();
+        }
       }}
       onPointerCancel={clearHold}
     >
@@ -122,11 +135,12 @@ export function QuestionCard({
   const dict = t(locale);
   const french = question.translation;
   const [picked, setPicked] = useState<string | null>(null);
-  const [showFr, setShowFr] = useState(false);
+  const [showFr] = useState(false);
   const [lightbox, setLightbox] = useState(false);
   const [pdfTranslated, setPdfTranslated] = useState(false);
   const [reviewQueued, setReviewQueued] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
+  const selectLock = useRef(false);
 
   const answered = picked !== null;
   const correct = picked === question.answer;
@@ -145,9 +159,6 @@ export function QuestionCard({
     String(question.explanation_fr || "").trim();
   const takeaway = takeawayFor(question, explanationFr);
   const distractors = distractorNote(question);
-  const hasFrench =
-    isRealFrenchText(stemFr) ||
-    question.options.some((option) => isRealFrenchText(french.options?.[option.letter]));
 
   function markImageUnavailable() {
     setImageFailed(true);
@@ -155,10 +166,23 @@ export function QuestionCard({
   }
 
   function select(letter: SessionQuestion["answer"]) {
-    if (disabled || answered) return;
+    if (disabled || answered || selectLock.current) return;
+    selectLock.current = true;
     setPicked(letter);
     onAnswer?.(letter, letter === question.answer);
   }
+
+  const pdfFrPanel = pdfTranslated ? (
+    <PdfTranslation
+      stemFr={stemFr}
+      optionFr={question.options.map((option) => ({
+        letter: option.letter,
+        text: french.options?.[option.letter],
+      }))}
+      explanationFr={explanationFr}
+      empty={dict.translationSoon}
+    />
+  ) : null;
 
   return (
     <GlossaryProvider locale={locale}>
@@ -183,14 +207,17 @@ export function QuestionCard({
         </header>
 
         {imageFirst && showInlineFigure ? (
-          <ExamFigure
-            question={question}
-            alt={figureAlt}
-            unavailableLabel={dict.imageUnavailable}
-            onUnavailable={markImageUnavailable}
-            onHold={() => setPdfTranslated((value) => !value)}
-            holdHint={dict.glossPdfHint}
-          />
+          <>
+            <ExamFigure
+              question={question}
+              alt={figureAlt}
+              unavailableLabel={dict.imageUnavailable}
+              onUnavailable={markImageUnavailable}
+              onHold={() => setPdfTranslated(true)}
+              holdHint={dict.glossPdfHint}
+            />
+            {pdfFrPanel}
+          </>
         ) : null}
 
         <GlossablePassage label={dict.glossQuestion} fr={stemFr} hint={dict.glossPassageHint}>
@@ -204,14 +231,17 @@ export function QuestionCard({
         </GlossablePassage>
 
         {!imageFirst && showInlineFigure ? (
-          <ExamFigure
-            question={question}
-            alt={figureAlt}
-            unavailableLabel={dict.imageUnavailable}
-            onUnavailable={markImageUnavailable}
-            onHold={() => setPdfTranslated((value) => !value)}
-            holdHint={dict.glossPdfHint}
-          />
+          <>
+            <ExamFigure
+              question={question}
+              alt={figureAlt}
+              unavailableLabel={dict.imageUnavailable}
+              onUnavailable={markImageUnavailable}
+              onHold={() => setPdfTranslated(true)}
+              holdHint={dict.glossPdfHint}
+            />
+            {pdfFrPanel}
+          </>
         ) : null}
 
         <ul className="space-y-2.5 pb-2">
@@ -225,10 +255,7 @@ export function QuestionCard({
                   role="button"
                   tabIndex={disabled || answered ? -1 : 0}
                   aria-disabled={disabled || answered}
-                  onPointerUp={() => {
-                    if (glossHoldConsumed()) return;
-                    select(option.letter);
-                  }}
+                  onPointerDown={() => clearGlossHold()}
                   onClick={() => {
                     if (glossHoldConsumed()) return;
                     select(option.letter);
@@ -353,9 +380,10 @@ export function QuestionCard({
                     alt={figureAlt}
                     unavailableLabel={dict.imageUnavailable}
                     onUnavailable={markImageUnavailable}
-                    onHold={() => setPdfTranslated((value) => !value)}
+                    onHold={() => setPdfTranslated(true)}
                     holdHint={dict.glossPdfHint}
                   />
+                  {pdfFrPanel}
                   <button type="button" className="btn-secondary w-full" onClick={() => setLightbox(true)}>
                     {dict.viewExamPage}
                   </button>
@@ -387,7 +415,7 @@ export function QuestionCard({
                 alt={figureAlt}
                 unavailableLabel={dict.imageUnavailable}
                 onUnavailable={markImageUnavailable}
-                onHold={() => setPdfTranslated((value) => !value)}
+                onHold={() => setPdfTranslated(true)}
                 holdHint={dict.glossPdfHint}
               />
               {pdfTranslated ? (
