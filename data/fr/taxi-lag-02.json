@@ -1,0 +1,167 @@
+{
+  "LAGSTIFNING-2-Q23": {
+    "stem": "Tu arrives au carrefour de l'image. Comment devrais-tu te comporter ?"
+  },
+  "LAGSTIFNING-5-Q24": {
+    "stem": "Tu vas rattraper dans un instant le véhicule que tu vois sur l'image. À quoi devrais-tu penser avant de dépasser ?"
+  },
+  "LAGSTIFNING-4-Q1": {
+    "stem": "Tu roules sur cette route. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-6-Q26": {
+    "stem": "Tu conduis ton taxi et la police t'arrête. L'agent veut des copies de tes rapports de service. Combien de rapports de service dois-tu présenter ?"
+  },
+  "LAGSTIFNING-5-Q35": {
+    "stem": "Tu conduis une voiture équipée de pneus hiver non cloutés. As-tu le droit de passer le panneau de l'image ?"
+  },
+  "LAGSTIFNING-7-Q26": {
+    "stem": "Tu conduis une camionnette avec une remorque légère attelée. As-tu le droit de passer le panneau de l'image ?"
+  },
+  "LAGSTIFNING-3-Q31": {
+    "stem": "Tu conduis un taxi et tu effectues un transport scolaire. Ton taxi est équipé d'un panneau lumineux. Quand doit-il être allumé ?"
+  },
+  "LAGSTIFNING-1-Q31": {
+    "stem": "Tu roules à 50 km/h et tu croises une voiture. Le véhicule devant toi roule lentement. Que dois-tu faire en premier dans cette situation pour éviter une collision ?"
+  },
+  "LAGSTIFNING-3-Q36": {
+    "stem": "Tu roules sur cette route. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-6-Q12": {
+    "stem": "Tu roules sur une route et tu vois des lignes blanches et jaunes sur ta partie de la chaussée. Qu'est-ce que cela signifie pour toi ?"
+  },
+  "LAGSTIFNING-1-Q12": {
+    "stem": "Tu roules en service taxi. Qu'est-ce qui s'applique à toi sur l'image ?"
+  },
+  "LAGSTIFNING-8-Q31": {
+    "stem": "En service taxi, tu conduis une voiture particulière avec une remorque attelée. Le poids total de la remorque est de 750 kg. Quelle catégorie de permis te faut-il au minimum ?"
+  },
+  "LAGSTIFNING-5-Q39": {
+    "stem": "Tu roules en service taxi et tu arrives à un bac fluvial où d'autres véhicules attendent en file. As-tu la priorité d'embarquement ?"
+  },
+  "LAGSTIFNING-7-Q2": {
+    "stem": "Tu roules en service taxi. Lequel de ces documents dois-tu avoir avec toi dans la voiture ?"
+  },
+  "LAGSTIFNING-3-Q16": {
+    "stem": "Tu roules à 70 km/h dans la situation de l'image. Quelle est la manœuvre la plus sûre ?"
+  },
+  "LAGSTIFNING-1-Q30": {
+    "stem": "Tu roules sur cette route à 50 km/h. Comment dois-tu te comporter dans cette situation ?"
+  },
+  "LAGSTIFNING-7-Q1": {
+    "stem": "Tu roules dans une rue limitée à 50 km/h. Quelle vitesse maximale s'applique quand tu passes le panneau de l'image ?"
+  },
+  "LAGSTIFNING-1-Q29": {
+    "stem": "Tu roules sur une route limitée à 50 km/h. Le bus vient de s'arrêter à l'arrêt. Tu continues tout droit. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q62": {
+    "stem": "Tu roules sur une route portant le panneau de l'image A. Tu dois tourner à gauche comme sur l'image B. Où dois-tu placer ta voiture ?"
+  },
+  "LAGSTIFNING-2-Q22": {
+    "stem": "Tu roules sur l'autoroute, la police te rattrape et te fait signe de t'arrêter. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-3-Q15": {
+    "stem": "Tu roules sur l'autoroute et tu constates que tu viens de manquer la sortie que tu devais prendre. Comment devrais-tu faire ?"
+  },
+  "LAGSTIFNING-7-Q17": {
+    "stem": "Tu conduis en taxi une Volvo V70, selon sa carte grise. Les bagages de tes clients pèsent 320 kg. Combien de passagers peux-tu emmener s'ils pèsent 70 kg en moyenne ?"
+  },
+  "LAGSTIFNING-4-Q24": {
+    "stem": "Tu conduis en taxi une voiture particulière avec une remorque attelée dont le poids total est de 750 kg. Quelle catégorie de permis au maximum te faut-il pour cet ensemble de véhicules ?"
+  },
+  "LAGSTIFNING-3-Q25": {
+    "stem": "Tu t'approches d'un carrefour où s'applique la priorité à droite. À quels véhicules dois-tu céder le passage ?"
+  },
+  "LAGSTIFNING-8-Q3": {
+    "stem": "Tu t'approches d'un carrefour. Qu'est-ce qui s'applique au carrefour de l'image ?"
+  },
+  "LAGSTIFNING-7-Q13": {
+    "stem": "Avec ton taxi, tu heurtes par accident une voiture stationnée. Son conducteur est introuvable. Qu'exige la loi de ta part ?"
+  },
+  "LAGSTIFNING-8-Q10": {
+    "stem": "Tu vois une voiture de police rouler derrière toi. Son panneau affiche des signaux bleus et rouges alternés. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q29": {
+    "stem": "Dans ton rétroviseur, tu vois une voiture de police gyrophare allumé. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-1-Q19": {
+    "stem": "Tu vas commencer un nouveau service. Que dois-tu remplir avant de le commencer ?"
+  },
+  "LAGSTIFNING-1-Q8": {
+    "stem": "Tu vas changer de voie. Tu contrôles la circulation sur la voie de gauche et tu mets ton clignotant. Que dois-tu faire ensuite ?"
+  },
+  "LAGSTIFNING-2-Q10": {
+    "stem": "Tu vas changer de voie. Quelle règle s'applique au signal du clignotant ?"
+  },
+  "LAGSTIFNING-2-Q5": {
+    "stem": "Tu continues tout droit aux carrefours. Dans laquelle des situations ci-dessous la priorité à droite s'applique-t-elle ?"
+  },
+  "LAGSTIFNING-8-Q42": {
+    "stem": "Tu continues tout droit au carrefour. Quelle règle s'applique ?"
+  },
+  "LAGSTIFNING-2-Q32": {
+    "stem": "Tu continues tout droit au carrefour et les feux sont hors service. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q44": {
+    "stem": "Tu vas effectuer un transport scolaire avec un autocar de 10 places assises. Quelle catégorie de permis te faut-il ?"
+  },
+  "LAGSTIFNING-8-Q45": {
+    "stem": "Tu vas prendre un client à prix forfaitaire. Ton entreprise n'utilise pas de système de planification commune. Quand dois-tu calculer le prix de la course ?"
+  },
+  "LAGSTIFNING-2-Q19": {
+    "stem": "Tu vas effectuer un transport scolaire. Quand le panneau clignotant de transport scolaire doit-il être allumé ?"
+  },
+  "LAGSTIFNING-8-Q2": {
+    "stem": "Tu vas chercher un client qui habite dans une rue où ce panneau est installé. Ton taxi est équipé de pneus cloutés. As-tu le droit d'entrer dans la rue ?"
+  },
+  "LAGSTIFNING-7-Q8": {
+    "stem": "Tu vas chercher un client qui habite dans une rue où ce panneau est installé. Ton taxi est équipé de pneus hiver non cloutés. As-tu le droit d'entrer dans la rue ?"
+  },
+  "LAGSTIFNING-7-Q40": {
+    "stem": "Tu vas aider un collègue à remorquer son taxi jusqu'à un garage. Devez-vous utiliser les feux de détresse ?"
+  },
+  "LAGSTIFNING-5-Q18": {
+    "stem": "Tu vas transporter 4 passagers de 75 kg chacun. Quelle masse de bagages peux-tu charger compte tenu de la carte grise ?"
+  },
+  "LAGSTIFNING-8-Q22": {
+    "stem": "Tu vas faire un transport de colis vers Norrköping avec une remorque attelée. La vitesse est limitée à 100 km/h sur cette route. Quelle voie dois-tu choisir ?"
+  },
+  "LAGSTIFNING-4-Q9": {
+    "stem": "Tu vas conduire un client sur une courte distance. Dois-tu mettre ta ceinture de sécurité ?"
+  },
+  "LAGSTIFNING-5-Q36": {
+    "stem": "Tu vas t'engager sur une route où ce panneau est installé. Quelle règle y s'applique ?"
+  },
+  "LAGSTIFNING-6-Q24": {
+    "stem": "Tu vas t'engager sur une route depuis un parking. À quels véhicules dois-tu céder le passage ?"
+  },
+  "LAGSTIFNING-7-Q7": {
+    "stem": "Tu vas t'engager sur l'autoroute depuis la voie d'accélération. Où est-il le plus important de regarder ?"
+  },
+  "LAGSTIFNING-7-Q25": {
+    "stem": "Tu vas t'engager sur l'autoroute depuis la bretelle d'accès de l'image. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-6-Q35": {
+    "stem": "Tu vas t'engager sur la route de l'image. Tu dois y chercher un client un jour ouvré, à 13h00. As-tu le droit de continuer tout droit ?"
+  },
+  "LAGSTIFNING-7-Q11": {
+    "stem": "Tu continues tout droit au carrefour. Aucun piéton n'est à proximité. Où dois-tu t'arrêter ?"
+  },
+  "LAGSTIFNING-5-Q29": {
+    "stem": "Tu continues tout droit au carrefour. Quelle règle s'applique ?"
+  },
+  "LAGSTIFNING-6-Q15": {
+    "stem": "Tu vas continuer tout droit vers le centre dans le rond-point devant toi, sur l'image. Dois-tu mettre ton clignotant ?"
+  },
+  "LAGSTIFNING-7-Q23": {
+    "stem": "Tu vas sortir d'un rond-point et traverser une traversée cyclable et un passage piéton. Dois-tu céder le passage à l'un de ces usagers vulnérables ?"
+  },
+  "LAGSTIFNING-8-Q58": {
+    "stem": "Tu vas sortir d'un garage. Dois-tu céder le passage à quelqu'un ?"
+  },
+  "LAGSTIFNING-6-Q22": {
+    "stem": "Tu continues tout droit au carrefour. Quelle est la façon la plus sûre de passer le cycliste de l'image ?"
+  },
+  "LAGSTIFNING-7-Q34": {
+    "stem": "Tu veux stationner le 12, un vendredi, en restant le plus longtemps possible. Où dois-tu garer la voiture et pendant combien de temps au maximum ?"
+  }
+}

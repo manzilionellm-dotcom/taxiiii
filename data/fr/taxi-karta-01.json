@@ -1,0 +1,83 @@
+{
+  "KARTA-KARTP1-Q2": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP1-Q4": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP1-Q1": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP1-Q3": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP2-Q6": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 2 ?"
+  },
+  "KARTA-KARTP2-Q10": {
+    "stem": "Quelle est la longueur de la course de la mission 1 ?"
+  },
+  "KARTA-KARTP2-Q11": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP2-Q1": {
+    "stem": "Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP2-Q7": {
+    "stem": "Quelle est la longueur du transport sanitaire de la mission 3 d'après les indications de distance portées sur la carte ?"
+  },
+  "KARTA-KARTP2-Q2": {
+    "stem": "Dans la mission 2, tu t'engages sur la E6 depuis Halmstad au niveau de la RN 25. Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP2-Q8": {
+    "stem": "La chaussée est glissante sur la E4, ce qui limite la vitesse à 40 km/h. Quel est le temps de parcours sur la E4 ?"
+  },
+  "KARTA-KARTP2-Q3": {
+    "stem": "À gauche de l'église d'Asige, tu trouves deux symboles. Que représentent-ils ?"
+  },
+  "KARTA-KARTP2-Q5": {
+    "stem": "À quelle heure les enfants seront-ils à l'école ? Compte une vitesse de 55 km/h en raison du trafic du matin."
+  },
+  "KARTA-KARTP2-Q12": {
+    "stem": "À quelle heure dois-tu effectuer la prise en charge de la mission 3 ?"
+  },
+  "KARTA-KARTP2-Q9": {
+    "stem": "À quelle heure dois-tu quitter le garage pour assurer ta première course ? Tu dois être sur place 3 minutes avant l'heure prévue."
+  },
+  "KARTA-KARTP1-Q11": {
+    "stem": "Tu conduis ton client vers l'aéroport de Norrköping par la E4, dans la mission 2. À Bäckeby, le client demande quelle distance il reste jusqu'à l'aéroport ?"
+  },
+  "KARTA-KARTP1-Q10": {
+    "stem": "Tu t'engages sur la E4 à Säby ; juste au sud de Säby, l'opérateur demande combien de temps il te reste, selon ton estimation, jusqu'au circuit automobile de Mantorp dans la mission 2. De la sortie de la E4 au circuit, compte 3 minutes."
+  },
+  "KARTA-KARTP1-Q9": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 1 ?"
+  },
+  "KARTA-KARTP1-Q13": {
+    "stem": "Quelle est la longueur du trajet de la mission 1 ?"
+  },
+  "KARTA-KARTP1-Q5": {
+    "stem": "Quelle distance dois-tu parcourir dans la mission 1 ?"
+  },
+  "KARTA-KARTP1-Q15": {
+    "stem": "Combien de temps le trajet d'approche jusqu'à l'église d'Alva est-il estimé prendre dans la mission 3 ?"
+  },
+  "KARTA-KARTP1-Q14": {
+    "stem": "Combien de temps prend la course de la mission 2 ?"
+  },
+  "KARTA-KARTP1-Q7": {
+    "stem": "Combien de temps prend le trajet jusqu'à l'aéroport de Landvetter à partir du moment où tu quittes la E6 pour la RN 40 ?"
+  },
+  "KARTA-KARTP1-Q6": {
+    "stem": "À 9h00, en route vers Björkö, tu es au croisement de la E6 et de la RN 155. Quel bac pourras-tu prendre au plus tôt ?"
+  },
+  "KARTA-KARTP1-Q8": {
+    "stem": "Après avoir déposé ton client de la mission 3 à l'aéroport de Landvetter, un nouveau client te demande de le conduire au camping le plus proche. Où se trouve-t-il ?"
+  },
+  "KARTA-KARTP1-Q12": {
+    "stem": "Sur l'autoroute entre Norrköping et Linköping, dans la mission 3, il te reste 10 km d'autoroute quand il commence soudain à pleuvoir. Tu dois réduire ta vitesse de moitié. De combien de temps ton trajet est-il rallongé ?"
+  },
+  "KARTA-KARTP1-Q16": {
+    "stem": "Quel est le chemin le plus court entre le port de plaisance de Burgsvik et le centre de Visby ?"
+  }
+}

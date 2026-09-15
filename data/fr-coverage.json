@@ -2,10 +2,10 @@
   "tracks": {
     "taxi": {
       "questions": 854,
-      "stems": 124,
+      "stems": 854,
       "options": 0,
       "explanations": 213,
-      "none": 572
+      "none": 0
     },
     "b": {
       "questions": 614,
@@ -16,10 +16,10 @@
     },
     "owner": {
       "questions": 472,
-      "stems": 178,
+      "stems": 181,
       "options": 0,
       "explanations": 238,
-      "none": 184
+      "none": 182
     }
   }
 }

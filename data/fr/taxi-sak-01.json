@@ -1,0 +1,182 @@
+{
+  "S_KERHET-4-Q36": {
+    "stem": "Combien de personnes ont été tuées chaque année dans la circulation au cours des cinq dernières années ?"
+  },
+  "S_KERHET-8-Q41": {
+    "stem": "Ta voiture, millésime 2005, est équipée d'une injection de carburant. Lequel de ces styles de conduite permet d'économiser le plus de carburant ?"
+  },
+  "S_KERHET-8-Q52": {
+    "stem": "Ta voiture a des phares au xénon. Quel est le risque qu'ils présentent ?"
+  },
+  "S_KERHET-8-Q43": {
+    "stem": "Tu as une fuite dans la ligne d'échappement et du monoxyde de carbone pénètre dans la voiture. Comment peux-tu le détecter ?"
+  },
+  "S_KERHET-8-Q44": {
+    "stem": "Tu as des clients à bord de ton taxi et tu dois t'arrêter à un stop. Comment t'arrêter en douceur ?"
+  },
+  "S_KERHET-8-Q59": {
+    "stem": "Tu t'es arrêté devant un passage piéton pour laisser traverser une personne malvoyante. Comment dois-tu te comporter ?"
+  },
+  "S_KERHET-8-Q55": {
+    "stem": "Tu contrôles la direction assistée de ton taxi en tournant le volant. Les roues ne réagissent pas immédiatement. Quelle est la cause la plus probable ?"
+  },
+  "S_KERHET-8-Q48": {
+    "stem": "Tu dois arrimer un chargement dans ton taxi. Quelle force latérale l'arrimage doit-il supporter ?"
+  },
+  "S_KERHET-8-Q50": {
+    "stem": "Tu démarres un moteur froid sur une voiture équipée d'un pot catalytique. À partir de quand le catalyseur devient-il efficace ?"
+  },
+  "S_KERHET-8-Q65": {
+    "stem": "Tu dois pratiquer la respiration artificielle sur une personne malade. Comment savoir que l'air entre bien dans les poumons ?"
+  },
+  "S_KERHET-8-Q47": {
+    "stem": "Tu prends un médicament qui peut être dangereux pour la conduite. Pourquoi ne devrais-tu pas conduire ?"
+  },
+  "S_KERHET-8-Q60": {
+    "stem": "Tu constates que la température du moteur est élevée. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-8-Q45": {
+    "stem": "Le poids du chargement de la voiture change-t-il quelque chose pour l'environnement ?"
+  },
+  "S_KERHET-8-Q51": {
+    "stem": "Combien de temps avant le départ dois-tu brancher le préchauffage moteur quand il fait 0 degré ?"
+  },
+  "S_KERHET-8-Q56": {
+    "stem": "Comment dois-tu aider un client atteint de la maladie de Parkinson ?"
+  },
+  "S_KERHET-8-Q53": {
+    "stem": "Quel est le risque si tu démarres ton taxi avec des câbles de démarrage ?"
+  },
+  "S_KERHET-8-Q58": {
+    "stem": "Que se passe-t-il si la pression des pneus est inférieure à la pression recommandée ?"
+  },
+  "S_KERHET-8-Q46": {
+    "stem": "Qu'est-ce qui provoque le survirage d'une voiture ?"
+  },
+  "S_KERHET-8-Q64": {
+    "stem": "Qu'y a-t-il au cœur de la Vision Zéro en matière de sécurité routière ?"
+  },
+  "S_KERHET-8-Q61": {
+    "stem": "Où le risque qu'une personne ait un accident à cause de la fatigue est-il le plus élevé ?"
+  },
+  "S_KERHET-8-Q57": {
+    "stem": "Pourquoi dois-tu garder l'intérieur du taxi propre ?"
+  },
+  "S_KERHET-8-Q49": {
+    "stem": "Quel est l'avantage des freins ABS par rapport à des freins sans ABS ?"
+  },
+  "S_KERHET-8-Q54": {
+    "stem": "Quelle est la fonction du servofrein dans le circuit de freinage hydraulique de la voiture ?"
+  },
+  "S_KERHET-8-Q42": {
+    "stem": "Quel pictogramme signale une personne atteinte de la maladie d'Alzheimer ?"
+  },
+  "S_KERHET-8-Q62": {
+    "stem": "Quelle profondeur de sculpture dois-tu avoir sur les pneus au mois de juillet ?"
+  },
+  "S_KERHET-8-Q27": {
+    "stem": "Bien se tenir assis compte beaucoup pour un chauffeur de taxi. Ta position de conduite peut-elle influer sur ta santé et sur ta capacité à conduire en sécurité ?"
+  },
+  "S_KERHET-6-Q21": {
+    "stem": "La voiture est équipée de freins antiblocage ABS. Comment sais-tu qu'ils fonctionnent ?"
+  },
+  "S_KERHET-1-Q21": {
+    "stem": "La voiture tire fortement de travers vers la droite quand tu roules, et le pneu est usé de façon irrégulière comme sur l'image. À quoi cela est-il dû ?"
+  },
+  "S_KERHET-1-Q16": {
+    "stem": "Le conducteur de l'image va tourner à droite. Comment doit-il se comporter en sécurité ?"
+  },
+  "S_KERHET-8-Q38": {
+    "stem": "Le bus s'est arrêté à un arrêt et tu continues tout droit dans la situation de l'image. À quoi dois-tu d'abord te préparer ?"
+  },
+  "S_KERHET-1-Q32": {
+    "stem": "Ce voyant s'allume au tableau de bord pendant que tu roules. En contrôlant le liquide de frein, tu vois qu'il est sous le niveau minimum. Que devrais-tu faire ?"
+  },
+  "S_KERHET-1-Q39": {
+    "stem": "Nous sommes le 1er février. Tu vas atteler une remorque à ton taxi, qui est équipé de pneus cloutés. Quels pneus dois-tu avoir sur la remorque ?"
+  },
+  "S_KERHET-6-Q1": {
+    "stem": "La chaussée est glissante et tu conduis une traction avant. Que se passe-t-il quand tu tournes ?"
+  },
+  "S_KERHET-1-Q19": {
+    "stem": "C'est l'automne et tu commences à utiliser le préchauffage moteur. À partir de quelle température son usage devient-il payant du point de vue de l'environnement et de la consommation ?"
+  },
+  "S_KERHET-2-Q36": {
+    "stem": "Chaque année, de nombreuses personnes meurent parce qu'elles boivent de l'alcool et conduisent. Quel pourcentage des accidents mortels annuels se produit sous l'emprise de l'alcool ?"
+  },
+  "S_KERHET-8-Q5": {
+    "stem": "Ta voiture est équipée d'une direction assistée. Lors d'un contrôle de sécurité, tu constates qu'il y a trop peu de liquide hydraulique dans le réservoir. Comment dois-tu faire ?"
+  },
+  "S_KERHET-6-Q39": {
+    "stem": "Ta voiture a une fuite dans la ligne d'échappement. Quel risque cela représente-t-il ?"
+  },
+  "S_KERHET-7-Q39": {
+    "stem": "Ton médecin traitant te prescrit un médicament contenant une substance classée comme stupéfiant. Si la police t'arrête après que tu l'as pris, peux-tu être condamné pour conduite sous l'emprise de stupéfiants ?"
+  },
+  "S_KERHET-8-Q10": {
+    "stem": "L'airbag passager avant de ton taxi est activé. Où dois-tu installer le siège auto ?"
+  },
+  "S_KERHET-4-Q12": {
+    "stem": "Ton taxi est équipé d'un système de navigation. Quel type de GPS gêne le plus le chauffeur ?"
+  },
+  "S_KERHET-2-Q32": {
+    "stem": "Le niveau de liquide de ta batterie est trop bas. Quel liquide dois-tu ajouter ?"
+  },
+  "S_KERHET-9-Q26": {
+    "stem": "Tu utilises un carburant (EMC) produit à partir de colza. Quels sont ses avantages par rapport au gazole ?"
+  },
+  "S_KERHET-4-Q38": {
+    "stem": "Tu prends un médicament dont tu ne sais pas s'il est dangereux pour la conduite, mais il te donne des vertiges. Peux-tu être condamné pour conduite sous l'emprise de substances si tu conduis malgré tout ?"
+  },
+  "S_KERHET-8-Q8": {
+    "stem": "Tu es parmi les premiers à arriver sur un lieu d'accident. Une personne saigne abondamment de la jambe et tu la laisses allongée. Que devrais-tu faire ensuite ?"
+  },
+  "S_KERHET-4-Q8": {
+    "stem": "Tu es impliqué dans un accident où des personnes ont été blessées. Tu n'as aucune responsabilité dans l'accident. Dois-tu malgré tout t'arrêter et aider les blessés ?"
+  },
+  "S_KERHET-6-Q35": {
+    "stem": "Tu es en route vers un client. Pendant le trajet, un opérateur t'appelle et t'annonce que tu attendras la personne de 14h15 à 14h51. Combien le temps d'attente coûtera-t-il au client ?"
+  },
+  "S_KERHET-7-Q9": {
+    "stem": "Tu es obligé de t'arrêter : tu as crevé juste avant un sommet de côte, sur une route limitée à 70 km/h. Dois-tu utiliser le triangle de présignalisation ?"
+  },
+  "S_KERHET-5-Q26": {
+    "stem": "Tu prends en charge un client avec un enfant de 17 mois. Ils n'ont pas de dispositif de retenue pour l'enfant et tu ne dois pas utiliser de rehausseur. Quel équipement convient ?"
+  },
+  "S_KERHET-7-Q5": {
+    "stem": "Tu prends en charge un client avec un enfant de moins de 3 ans. Ils n'ont pas de dispositif de retenue pour l'enfant et tu ne dois pas utiliser de rehausseur. Quel équipement convient ?"
+  },
+  "S_KERHET-3-Q38": {
+    "stem": "Tu prends en charge un client accompagné d'un assistant. Comment dois-tu faire ?"
+  },
+  "S_KERHET-1-Q24": {
+    "stem": "Tu prends en charge un client atteint d'une surdité sévère. Que dois-tu faire pour qu'il comprenne ce que tu dis ?"
+  },
+  "S_KERHET-5-Q9": {
+    "stem": "Tu prends en charge un client qui porte autour du cou le symbole de l'image. Soudain, il a mal aux bras et au dos. Que devrais-tu faire immédiatement ?"
+  },
+  "S_KERHET-6-Q2": {
+    "stem": "Tu prends en charge un client qui a une canne blanche. Qu'est-ce que cela indique ?"
+  },
+  "S_KERHET-8-Q11": {
+    "stem": "Tu prends en charge une personne mesurant 120 cm. Où est-elle le plus en sécurité si l'airbag de la voiture est activé ?"
+  },
+  "S_KERHET-3-Q16": {
+    "stem": "Tu prends en charge une personne qui porte ce symbole sur son vêtement. De quelle maladie souffre-t-elle ?"
+  },
+  "S_KERHET-1-Q1": {
+    "stem": "Tu prends en charge une personne malvoyante avec un chien guide portant un harnais blanc. Comment dois-tu aider ce client ?"
+  },
+  "S_KERHET-5-Q5": {
+    "stem": "On te confie une course avec une personne fortement alcoolisée mais de bonne humeur. Comment devrais-tu faire ?"
+  },
+  "S_KERHET-8-Q28": {
+    "stem": "Tu perds définitivement la vue d'un œil. L'Agence des transports retire ton permis et ta carte professionnelle de taxi. Peux-tu récupérer ton permis de catégorie B ?"
+  },
+  "S_KERHET-2-Q13": {
+    "stem": "Tu fais un contrôle de sécurité sur ta voiture particulière et tu constates que le niveau du réservoir de liquide de frein est bas. Que devrais-tu faire ?"
+  },
+  "S_KERHET-5-Q22": {
+    "stem": "Tu as pris un médicament et tu ne sais pas s'il peut provoquer un accident sur la route. Que dois-tu faire parmi les réponses suivantes ?"
+  }
+}

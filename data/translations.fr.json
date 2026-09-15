@@ -1,4 +1,13 @@
 {
+  "agare-tekniska-tekniska-1-q08": {
+    "stem": "Combien de personnes ont été tuées chaque année dans la circulation au cours des cinq dernières années ?"
+  },
+  "agare-tekniska-tekniska-3-q08": {
+    "stem": "Combien de personnes ont été tuées chaque année dans la circulation au cours des cinq dernières années ?"
+  },
+  "agare-tekniska-tekniska-3-q14": {
+    "stem": "Quelles trois informations peux-tu tirer d'une carte grise ?"
+  },
   "b-avstand-01": {
     "stem": "Pourquoi faut-il garder une distance de sécurité suffisante avec le véhicule de devant ?",
     "options": {
@@ -86,6 +95,505 @@
       "B": "Tu marques les lieux, tu préviens les autres usagers et tu contactes la police.",
       "C": "Tu dois toujours achever l'animal toi-même avant d'appeler."
     }
+  },
+  "bkort-classic-1": {
+    "stem": "Tu roules sur une route prioritaire quand une voiture approche par la droite dans une intersection. Quelle règle s'applique ?",
+    "options": {
+      "A": "Je dois laisser passer cette voiture à cause de la priorité à droite.",
+      "B": "La voiture venant de la droite doit me laisser passer.",
+      "C": "Nous devons tous les deux nous arrêter et chercher le contact visuel.",
+      "D": "Celui qui roule le plus lentement doit attendre."
+    },
+    "explanation": "La circulation sur une route prioritaire a la priorité. Le trafic transversal doit céder le passage, qu'il arrive par la droite ou par la gauche."
+  },
+  "bkort-classic-10": {
+    "stem": "Tu vois le panneau d'interdiction de stationner. As-tu le droit de t'arrêter pour prendre un passager ?",
+    "options": {
+      "A": "Non, le panneau interdit toute forme d'arrêt.",
+      "B": "Oui, car l'arrêt pour la montée ou la descente est autorisé.",
+      "C": "Non, tu peux seulement t'arrêter pour charger ou décharger des marchandises.",
+      "D": "Oui, mais seulement en allumant les feux de détresse pendant ce temps."
+    },
+    "explanation": "Le panneau signale une interdiction de stationner. L'arrêt est permis pour laisser quelqu'un monter ou descendre, ou pour charger et décharger, mais pas pour stationner."
+  },
+  "bkort-classic-11": {
+    "stem": "Que signifie le marquage au sol en « dents de requin » ?",
+    "options": {
+      "A": "Une ligne d'arrêt",
+      "B": "Une ligne de cédez-le-passage",
+      "C": "Une ligne d'avertissement",
+      "D": "Le marquage d'un ralentisseur"
+    },
+    "explanation": "Ce marquage est une ligne de cédez-le-passage (M14) et indique où t'arrêter au plus tard pour laisser la priorité. Il complète souvent le panneau de cédez-le-passage."
+  },
+  "bkort-classic-13": {
+    "stem": "Un bus met son clignotant pour quitter un arrêt sur une route limitée à 50. Quelle est ton obligation ?",
+    "options": {
+      "A": "Attendre et voir ce que fait le conducteur du bus.",
+      "B": "Continuer à la même vitesse, puisque j'ai la priorité.",
+      "C": "Ralentir et laisser passer le bus.",
+      "D": "Ne ralentir que si la limitation est de 30 km/h ou moins."
+    },
+    "explanation": "Tu dois céder le passage à un bus qui signale son départ d'un arrêt si la vitesse autorisée sur la route est de 50 km/h ou moins."
+  },
+  "bkort-classic-14": {
+    "stem": "Que signifient des horaires en rouge sur un panonceau placé sous un panneau ?",
+    "options": {
+      "A": "La règle vaut tous les jours ouvrables sauf le samedi.",
+      "B": "La règle vaut la veille d'un dimanche ou d'un jour férié.",
+      "C": "La règle vaut le dimanche et les jours fériés officiels.",
+      "D": "La règle n'est qu'une recommandation."
+    },
+    "explanation": "Un texte rouge sur un panonceau signifie que l'indication vaut le dimanche et les jours fériés officiels, les « jours rouges » du calendrier suédois."
+  },
+  "bkort-classic-2": {
+    "stem": "As-tu le droit de t'arrêter sur un passage piéton pour déposer rapidement un passager ?",
+    "options": {
+      "A": "Oui, si cela peut se faire en sûreté et sans gêner personne.",
+      "B": "Oui, car l'arrêt est permis mais pas le stationnement.",
+      "C": "Non, il est interdit à la fois de s'y arrêter et d'y stationner.",
+      "D": "Non, sauf si tu allumes les feux de détresse pour prévenir les autres."
+    },
+    "explanation": "L'arrêt est interdit sur un passage piéton. Un véhicule qui s'y immobilise masque la visibilité et peut créer des situations dangereuses pour les piétons."
+  },
+  "bkort-classic-3": {
+    "stem": "Quelle est la vitesse de base en zone agglomérée ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "40 km/h",
+      "C": "50 km/h",
+      "D": "70 km/h"
+    },
+    "explanation": "La vitesse de base en zone agglomérée est de 50 km/h. Si une autre vitesse s'applique, elle doit être indiquée par un panneau."
+  },
+  "bkort-classic-4": {
+    "stem": "Que signifie une ligne jaune continue le long du bord de la chaussée ?",
+    "options": {
+      "A": "Interdiction de stationner, mais l'arrêt est autorisé.",
+      "B": "Interdiction de s'arrêter et de stationner.",
+      "C": "Avertissement d'un accotement étroit ou absent.",
+      "D": "Marquage d'une déviation temporaire pour un chantier routier."
+    },
+    "explanation": "Une ligne jaune continue signifie interdiction de s'arrêter et de stationner. Une ligne jaune discontinue signifie seulement interdiction de stationner."
+  },
+  "bkort-classic-5": {
+    "stem": "Que signifie le panneau en forme de triangle pointe vers le bas ?",
+    "options": {
+      "A": "Route prioritaire",
+      "B": "Obligation d'arrêt",
+      "C": "Avertissement d'obstacle",
+      "D": "Céder le passage"
+    },
+    "explanation": "Le panneau impose de céder le passage. Sa forme unique, pointe vers le bas, permet de le reconnaître même couvert de neige."
+  },
+  "bkort-classic-6": {
+    "stem": "Tu dépasses le panneau d'entrée en zone agglomérée. Quelle limitation de vitesse s'applique si aucun panneau n'indique autre chose ?",
+    "options": {
+      "A": "30 km/h",
+      "B": "50 km/h",
+      "C": "70 km/h",
+      "D": "40 km/h"
+    },
+    "explanation": "En zone agglomérée, la limitation générale est de 50 km/h. Cette vitesse de base s'applique tant qu'aucun autre panneau n'indique une limite différente."
+  },
+  "bkort-classic-7": {
+    "stem": "Que signifie un horaire entre parenthèses, par exemple (8-17), sur un panonceau ?",
+    "options": {
+      "A": "L'horaire vaut tous les jours ouvrables, mais pas le samedi.",
+      "B": "L'horaire ne vaut que les dimanches et jours fériés.",
+      "C": "L'horaire vaut la veille d'un dimanche ou d'un jour férié.",
+      "D": "L'horaire est une recommandation, pas une règle contraignante."
+    },
+    "explanation": "Un horaire entre parenthèses signale que la règle s'applique la veille d'un dimanche ou d'un jour férié, le plus souvent le samedi. Les chiffres en rouge valent les dimanches et jours fériés."
+  },
+  "bkort-classic-8": {
+    "stem": "Un panonceau indique l'horaire « 8-17 » en chiffres noirs. Quels jours la règle indiquée s'applique-t-elle ?",
+    "options": {
+      "A": "Les jours ouvrables, sauf la veille d'un dimanche ou d'un jour férié.",
+      "B": "Les samedis et la veille d'un jour férié.",
+      "C": "Les dimanches et les jours fériés.",
+      "D": "Tous les jours de la semaine."
+    },
+    "explanation": "Des chiffres noirs sans parenthèses sur un panonceau valent les jours ouvrables, mais pas la veille d'un dimanche ni d'un jour férié."
+  },
+  "bkort-classic-9": {
+    "stem": "Quelle est la différence importante entre l'interdiction de stationner et l'interdiction de s'arrêter et de stationner ?",
+    "options": {
+      "A": "L'interdiction d'arrêt ne vaut que les jours ouvrables, l'interdiction de stationnement tous les jours.",
+      "B": "L'interdiction de stationner autorise de courts arrêts, par exemple pour laisser monter ou descendre.",
+      "C": "L'interdiction de stationner autorise la montée et la descente, mais pas le chargement de marchandises.",
+      "D": "L'interdiction de stationner autorise un arrêt de cinq minutes, l'interdiction d'arrêt une minute."
+    },
+    "explanation": "L'interdiction de stationner (C35) te permet de t'arrêter pour charger ou décharger, ou pour prendre et déposer des passagers. L'interdiction de s'arrêter (C39) proscrit tout cela."
+  },
+  "KARTA-KARTP1-Q1": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP1-Q10": {
+    "stem": "Tu t'engages sur la E4 à Säby ; juste au sud de Säby, l'opérateur demande combien de temps il te reste, selon ton estimation, jusqu'au circuit automobile de Mantorp dans la mission 2. De la sortie de la E4 au circuit, compte 3 minutes."
+  },
+  "KARTA-KARTP1-Q11": {
+    "stem": "Tu conduis ton client vers l'aéroport de Norrköping par la E4, dans la mission 2. À Bäckeby, le client demande quelle distance il reste jusqu'à l'aéroport ?"
+  },
+  "KARTA-KARTP1-Q12": {
+    "stem": "Sur l'autoroute entre Norrköping et Linköping, dans la mission 3, il te reste 10 km d'autoroute quand il commence soudain à pleuvoir. Tu dois réduire ta vitesse de moitié. De combien de temps ton trajet est-il rallongé ?"
+  },
+  "KARTA-KARTP1-Q13": {
+    "stem": "Quelle est la longueur du trajet de la mission 1 ?"
+  },
+  "KARTA-KARTP1-Q14": {
+    "stem": "Combien de temps prend la course de la mission 2 ?"
+  },
+  "KARTA-KARTP1-Q15": {
+    "stem": "Combien de temps le trajet d'approche jusqu'à l'église d'Alva est-il estimé prendre dans la mission 3 ?"
+  },
+  "KARTA-KARTP1-Q16": {
+    "stem": "Quel est le chemin le plus court entre le port de plaisance de Burgsvik et le centre de Visby ?"
+  },
+  "KARTA-KARTP1-Q2": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP1-Q3": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP1-Q4": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP1-Q5": {
+    "stem": "Quelle distance dois-tu parcourir dans la mission 1 ?"
+  },
+  "KARTA-KARTP1-Q6": {
+    "stem": "À 9h00, en route vers Björkö, tu es au croisement de la E6 et de la RN 155. Quel bac pourras-tu prendre au plus tôt ?"
+  },
+  "KARTA-KARTP1-Q7": {
+    "stem": "Combien de temps prend le trajet jusqu'à l'aéroport de Landvetter à partir du moment où tu quittes la E6 pour la RN 40 ?"
+  },
+  "KARTA-KARTP1-Q8": {
+    "stem": "Après avoir déposé ton client de la mission 3 à l'aéroport de Landvetter, un nouveau client te demande de le conduire au camping le plus proche. Où se trouve-t-il ?"
+  },
+  "KARTA-KARTP1-Q9": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 1 ?"
+  },
+  "KARTA-KARTP2-Q1": {
+    "stem": "Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP2-Q10": {
+    "stem": "Quelle est la longueur de la course de la mission 1 ?"
+  },
+  "KARTA-KARTP2-Q11": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP2-Q12": {
+    "stem": "À quelle heure dois-tu effectuer la prise en charge de la mission 3 ?"
+  },
+  "KARTA-KARTP2-Q13": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP2-Q14": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP2-Q15": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP2-Q16": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP2-Q2": {
+    "stem": "Dans la mission 2, tu t'engages sur la E6 depuis Halmstad au niveau de la RN 25. Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP2-Q3": {
+    "stem": "À gauche de l'église d'Asige, tu trouves deux symboles. Que représentent-ils ?"
+  },
+  "KARTA-KARTP2-Q5": {
+    "stem": "À quelle heure les enfants seront-ils à l'école ? Compte une vitesse de 55 km/h en raison du trafic du matin."
+  },
+  "KARTA-KARTP2-Q6": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 2 ?"
+  },
+  "KARTA-KARTP2-Q7": {
+    "stem": "Quelle est la longueur du transport sanitaire de la mission 3 d'après les indications de distance portées sur la carte ?"
+  },
+  "KARTA-KARTP2-Q8": {
+    "stem": "La chaussée est glissante sur la E4, ce qui limite la vitesse à 40 km/h. Quel est le temps de parcours sur la E4 ?"
+  },
+  "KARTA-KARTP2-Q9": {
+    "stem": "À quelle heure dois-tu quitter le garage pour assurer ta première course ? Tu dois être sur place 3 minutes avant l'heure prévue."
+  },
+  "KARTA-KARTP3-Q1": {
+    "stem": "Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP3-Q10": {
+    "stem": "Quelle est la longueur de la course de la mission 1 ?"
+  },
+  "KARTA-KARTP3-Q11": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP3-Q12": {
+    "stem": "À quelle heure dois-tu effectuer la prise en charge de la mission 3 ?"
+  },
+  "KARTA-KARTP3-Q13": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP3-Q14": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP3-Q15": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP3-Q16": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP3-Q2": {
+    "stem": "Dans la mission 2, tu t'engages sur la E6 depuis Halmstad au niveau de la RN 25. Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP3-Q3": {
+    "stem": "À gauche de l'église d'Asige, tu trouves deux symboles. Que représentent-ils ?"
+  },
+  "KARTA-KARTP3-Q5": {
+    "stem": "À quelle heure les enfants seront-ils à l'école ? Compte une vitesse de 55 km/h en raison du trafic du matin."
+  },
+  "KARTA-KARTP3-Q6": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 2 ?"
+  },
+  "KARTA-KARTP3-Q7": {
+    "stem": "Quelle est la longueur du transport sanitaire de la mission 3 d'après les indications de distance portées sur la carte ?"
+  },
+  "KARTA-KARTP3-Q8": {
+    "stem": "La chaussée est glissante sur la E4, ce qui limite la vitesse à 40 km/h. Quel est le temps de parcours sur la E4 ?"
+  },
+  "KARTA-KARTP3-Q9": {
+    "stem": "À quelle heure dois-tu quitter le garage pour assurer ta première course ? Tu dois être sur place 3 minutes avant l'heure prévue."
+  },
+  "KARTA-KARTP4-Q1": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP4-Q10": {
+    "stem": "Tu t'engages sur la E4 à Säby ; juste au sud de Säby, l'opérateur demande combien de temps il te reste, selon ton estimation, jusqu'au circuit automobile de Mantorp dans la mission 2. De la sortie de la E4 au circuit, compte 3 minutes."
+  },
+  "KARTA-KARTP4-Q11": {
+    "stem": "Tu conduis ton client vers l'aéroport de Norrköping par la E4, dans la mission 2. À Bäckeby, le client demande quelle distance il reste jusqu'à l'aéroport ?"
+  },
+  "KARTA-KARTP4-Q12": {
+    "stem": "Sur l'autoroute entre Norrköping et Linköping, dans la mission 3, il te reste 10 km d'autoroute quand il commence soudain à pleuvoir. Tu dois réduire ta vitesse de moitié. De combien de temps ton trajet est-il rallongé ?"
+  },
+  "KARTA-KARTP4-Q13": {
+    "stem": "Quelle est la longueur du trajet de la mission 1 ?"
+  },
+  "KARTA-KARTP4-Q14": {
+    "stem": "Combien de temps prend la course de la mission 2 ?"
+  },
+  "KARTA-KARTP4-Q15": {
+    "stem": "Combien de temps le trajet d'approche jusqu'à l'église d'Alva est-il estimé prendre dans la mission 3 ?"
+  },
+  "KARTA-KARTP4-Q16": {
+    "stem": "Quel est le chemin le plus court entre le port de plaisance de Burgsvik et le centre de Visby ?"
+  },
+  "KARTA-KARTP4-Q2": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP4-Q3": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP4-Q4": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP4-Q5": {
+    "stem": "Quelle distance dois-tu parcourir dans la mission 1 ?"
+  },
+  "KARTA-KARTP4-Q6": {
+    "stem": "À 9h00, en route vers Björkö, tu es au croisement de la E6 et de la RN 155. Quel bac pourras-tu prendre au plus tôt ?"
+  },
+  "KARTA-KARTP4-Q7": {
+    "stem": "Combien de temps prend le trajet jusqu'à l'aéroport de Landvetter à partir du moment où tu quittes la E6 pour la RN 40 ?"
+  },
+  "KARTA-KARTP4-Q8": {
+    "stem": "Après avoir déposé ton client de la mission 3 à l'aéroport de Landvetter, un nouveau client te demande de le conduire au camping le plus proche. Où se trouve-t-il ?"
+  },
+  "KARTA-KARTP4-Q9": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 1 ?"
+  },
+  "KARTA-KARTP5-Q1": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP5-Q10": {
+    "stem": "Tu t'engages sur la E4 à Säby ; juste au sud de Säby, l'opérateur demande combien de temps il te reste, selon ton estimation, jusqu'au circuit automobile de Mantorp dans la mission 2. De la sortie de la E4 au circuit, compte 3 minutes."
+  },
+  "KARTA-KARTP5-Q11": {
+    "stem": "Tu conduis ton client vers l'aéroport de Norrköping par la E4, dans la mission 2. À Bäckeby, le client demande quelle distance il reste jusqu'à l'aéroport ?"
+  },
+  "KARTA-KARTP5-Q12": {
+    "stem": "Sur l'autoroute entre Norrköping et Linköping, dans la mission 3, il te reste 10 km d'autoroute quand il commence soudain à pleuvoir. Tu dois réduire ta vitesse de moitié. De combien de temps ton trajet est-il rallongé ?"
+  },
+  "KARTA-KARTP5-Q13": {
+    "stem": "Quelle est la longueur du trajet de la mission 1 ?"
+  },
+  "KARTA-KARTP5-Q14": {
+    "stem": "Combien de temps prend la course de la mission 2 ?"
+  },
+  "KARTA-KARTP5-Q15": {
+    "stem": "Combien de temps le trajet d'approche jusqu'à l'église d'Alva est-il estimé prendre dans la mission 3 ?"
+  },
+  "KARTA-KARTP5-Q16": {
+    "stem": "Quel est le chemin le plus court entre le port de plaisance de Burgsvik et le centre de Visby ?"
+  },
+  "KARTA-KARTP5-Q2": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP5-Q3": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP5-Q4": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP5-Q5": {
+    "stem": "Quelle distance dois-tu parcourir dans la mission 1 ?"
+  },
+  "KARTA-KARTP5-Q6": {
+    "stem": "À 9h00, en route vers Björkö, tu es au croisement de la E6 et de la RN 155. Quel bac pourras-tu prendre au plus tôt ?"
+  },
+  "KARTA-KARTP5-Q7": {
+    "stem": "Combien de temps prend le trajet jusqu'à l'aéroport de Landvetter à partir du moment où tu quittes la E6 pour la RN 40 ?"
+  },
+  "KARTA-KARTP5-Q8": {
+    "stem": "Après avoir déposé ton client de la mission 3 à l'aéroport de Landvetter, un nouveau client te demande de le conduire au camping le plus proche. Où se trouve-t-il ?"
+  },
+  "KARTA-KARTP5-Q9": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 1 ?"
+  },
+  "KARTA-KARTP6-Q1": {
+    "stem": "Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP6-Q10": {
+    "stem": "Quelle est la longueur de la course de la mission 1 ?"
+  },
+  "KARTA-KARTP6-Q11": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP6-Q12": {
+    "stem": "À quelle heure dois-tu effectuer la prise en charge de la mission 3 ?"
+  },
+  "KARTA-KARTP6-Q13": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP6-Q14": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP6-Q15": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP6-Q16": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP6-Q2": {
+    "stem": "Dans la mission 2, tu t'engages sur la E6 depuis Halmstad au niveau de la RN 25. Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP6-Q3": {
+    "stem": "À gauche de l'église d'Asige, tu trouves deux symboles. Que représentent-ils ?"
+  },
+  "KARTA-KARTP6-Q5": {
+    "stem": "À quelle heure les enfants seront-ils à l'école ? Compte une vitesse de 55 km/h en raison du trafic du matin."
+  },
+  "KARTA-KARTP6-Q6": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 2 ?"
+  },
+  "KARTA-KARTP6-Q7": {
+    "stem": "Quelle est la longueur du transport sanitaire de la mission 3 d'après les indications de distance portées sur la carte ?"
+  },
+  "KARTA-KARTP6-Q8": {
+    "stem": "La chaussée est glissante sur la E4, ce qui limite la vitesse à 40 km/h. Quel est le temps de parcours sur la E4 ?"
+  },
+  "KARTA-KARTP6-Q9": {
+    "stem": "À quelle heure dois-tu quitter le garage pour assurer ta première course ? Tu dois être sur place 3 minutes avant l'heure prévue."
+  },
+  "KARTA-KARTP7-Q1": {
+    "stem": "Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP7-Q10": {
+    "stem": "Quelle est la longueur de la course de la mission 1 ?"
+  },
+  "KARTA-KARTP7-Q11": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP7-Q12": {
+    "stem": "À quelle heure dois-tu effectuer la prise en charge de la mission 3 ?"
+  },
+  "KARTA-KARTP7-Q13": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP7-Q14": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP7-Q15": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP7-Q16": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP7-Q2": {
+    "stem": "Dans la mission 2, tu t'engages sur la E6 depuis Halmstad au niveau de la RN 25. Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP7-Q3": {
+    "stem": "À gauche de l'église d'Asige, tu trouves deux symboles. Que représentent-ils ?"
+  },
+  "KARTA-KARTP7-Q5": {
+    "stem": "À quelle heure les enfants seront-ils à l'école ? Compte une vitesse de 55 km/h en raison du trafic du matin."
+  },
+  "KARTA-KARTP7-Q6": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 2 ?"
+  },
+  "KARTA-KARTP7-Q7": {
+    "stem": "Quelle est la longueur du transport sanitaire de la mission 3 d'après les indications de distance portées sur la carte ?"
+  },
+  "KARTA-KARTP7-Q8": {
+    "stem": "La chaussée est glissante sur la E4, ce qui limite la vitesse à 40 km/h. Quel est le temps de parcours sur la E4 ?"
+  },
+  "KARTA-KARTP7-Q9": {
+    "stem": "À quelle heure dois-tu quitter le garage pour assurer ta première course ? Tu dois être sur place 3 minutes avant l'heure prévue."
+  },
+  "KARTA-KARTP8-Q1": {
+    "stem": "Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP8-Q10": {
+    "stem": "Quelle est la longueur de la course de la mission 1 ?"
+  },
+  "KARTA-KARTP8-Q11": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP8-Q12": {
+    "stem": "À quelle heure dois-tu effectuer la prise en charge de la mission 3 ?"
+  },
+  "KARTA-KARTP8-Q13": {
+    "stem": "Au plus tard à quelle heure dois-tu quitter Kivik pour pouvoir déposer le groupe de la mission 1 avec 10 minutes d'avance ?"
+  },
+  "KARTA-KARTP8-Q14": {
+    "stem": "Quelle est la longueur de la course de la mission 2 ?"
+  },
+  "KARTA-KARTP8-Q15": {
+    "stem": "Sur le retour de la mission 2, alors que tu passes Tomelilla, la centrale de Kivik t'appelle et demande à quelle heure au plus tôt tu peux être de retour à Kivik ?"
+  },
+  "KARTA-KARTP8-Q16": {
+    "stem": "Au plus tard à quelle heure peux-tu commencer la mission 3 si tu passes par Simrishamn ?"
+  },
+  "KARTA-KARTP8-Q2": {
+    "stem": "Dans la mission 2, tu t'engages sur la E6 depuis Halmstad au niveau de la RN 25. Quelle est la longueur du trajet ?"
+  },
+  "KARTA-KARTP8-Q3": {
+    "stem": "À gauche de l'église d'Asige, tu trouves deux symboles. Que représentent-ils ?"
+  },
+  "KARTA-KARTP8-Q5": {
+    "stem": "À quelle heure les enfants seront-ils à l'école ? Compte une vitesse de 55 km/h en raison du trafic du matin."
+  },
+  "KARTA-KARTP8-Q6": {
+    "stem": "Quelle est la longueur du trajet d'approche de la mission 2 ?"
+  },
+  "KARTA-KARTP8-Q7": {
+    "stem": "Quelle est la longueur du transport sanitaire de la mission 3 d'après les indications de distance portées sur la carte ?"
+  },
+  "KARTA-KARTP8-Q8": {
+    "stem": "La chaussée est glissante sur la E4, ce qui limite la vitesse à 40 km/h. Quel est le temps de parcours sur la E4 ?"
+  },
+  "KARTA-KARTP8-Q9": {
+    "stem": "À quelle heure dois-tu quitter le garage pour assurer ta première course ? Tu dois être sur place 3 minutes avant l'heure prévue."
   },
   "kkalk-B-001": {
     "stem": "Que signifie ce panneau de signalisation ?",
@@ -6087,20 +6595,137 @@
     },
     "explanation": "La direction assistée n'est active que moteur tournant. La différence de résistance du volant avant et après le démarrage montre clairement si elle fonctionne."
   },
+  "LAGSTIFNING-1-Q1": {
+    "stem": "La voie portant le panneau de l'image est réservée aux bus. D'autres véhicules ont-ils le droit d'y circuler ?"
+  },
+  "LAGSTIFNING-1-Q10": {
+    "stem": "Quels deux documents dois-tu avoir avec toi quand tu roules en service taxi ?"
+  },
+  "LAGSTIFNING-1-Q11": {
+    "stem": "As-tu le droit de t'arrêter à l'arrêt de bus de l'image pour charger des marchandises ?"
+  },
+  "LAGSTIFNING-1-Q12": {
+    "stem": "Tu roules en service taxi. Qu'est-ce qui s'applique à toi sur l'image ?"
+  },
+  "LAGSTIFNING-1-Q13": {
+    "stem": "Tu arrives au rond-point de l'image. Tu vas à droite. Dois-tu céder le passage aux véhicules déjà engagés dans le rond-point ?"
+  },
+  "LAGSTIFNING-1-Q14": {
+    "stem": "Dans lequel de ces cas as-tu le droit de dépasser la vitesse autorisée ?"
+  },
+  "LAGSTIFNING-1-Q15": {
+    "stem": "Laquelle des réponses ci-dessous est considérée comme du transport professionnel ?"
+  },
   "LAGSTIFNING-1-Q16": {
     "stem": "Que dois-tu faire du livret de temps de repos une fois qu'il est terminé ?"
   },
   "LAGSTIFNING-1-Q17": {
     "stem": "Quand dois une taximètre besiktigas?"
   },
+  "LAGSTIFNING-1-Q18": {
+    "stem": "Au bout de combien de temps une carte professionnelle de taxi doit-elle être renouvelée après sa délivrance ?"
+  },
+  "LAGSTIFNING-1-Q19": {
+    "stem": "Tu vas commencer un nouveau service. Que dois-tu remplir avant de le commencer ?"
+  },
+  "LAGSTIFNING-1-Q2": {
+    "stem": "Qui n'a pas le droit de passer le panneau de l'image ?"
+  },
+  "LAGSTIFNING-1-Q20": {
+    "stem": "Tu dois déposer un client devant la maison en brique, sur le côté droit. En as-tu le droit ?"
+  },
+  "LAGSTIFNING-1-Q21": {
+    "stem": "Tu vas tourner à droite sur ces images. Sur quelle image les piétons qui traversent ta trajectoire ont-ils le feu vert en même temps que toi ?"
+  },
+  "LAGSTIFNING-1-Q22": {
+    "stem": "Où dois-tu placer ta carte professionnelle de taxi ?"
+  },
   "LAGSTIFNING-1-Q24": {
     "stem": "Tu travailles comme salarié dans une entreprise de taxi. Qui est responsable que les annotations du livret de temps de repos soient correctement remplies ?"
+  },
+  "LAGSTIFNING-1-Q25": {
+    "stem": "Que faut-il pour conduire avec une carte professionnelle de chauffeur de taxi ?"
   },
   "LAGSTIFNING-1-Q26": {
     "stem": "Ton service commence à 07.00 le 30 septembre. Une fois le service commencé, on t'annonce une longue course réservée qui commence à 17.00 et doit durer 7 heures. Quand dois-tu au plus tard commencer une nouvelle période de repos pour pouvoir effectuer cette longue course selon la feuille du livret de temps ?"
   },
+  "LAGSTIFNING-1-Q27": {
+    "stem": "Après quel événement un conducteur doit-il imprimer un reçu ou un bordereau de transport ?"
+  },
+  "LAGSTIFNING-1-Q28": {
+    "stem": "Quelle porte, ou quelles portes, doivent être verrouillées de l'intérieur pour les passagers si ton taxi effectue un transport scolaire ?"
+  },
+  "LAGSTIFNING-1-Q29": {
+    "stem": "Tu roules sur une route limitée à 50 km/h. Le bus vient de s'arrêter à l'arrêt. Tu continues tout droit. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-1-Q3": {
+    "stem": "Tu arrives à un carrefour où tu dois céder le passage. Comment les autres véhicules du carrefour peuvent-ils être sûrs que tu vas respecter cette obligation ?"
+  },
+  "LAGSTIFNING-1-Q30": {
+    "stem": "Tu roules sur cette route à 50 km/h. Comment dois-tu te comporter dans cette situation ?"
+  },
+  "LAGSTIFNING-1-Q31": {
+    "stem": "Tu roules à 50 km/h et tu croises une voiture. Le véhicule devant toi roule lentement. Que dois-tu faire en premier dans cette situation pour éviter une collision ?"
+  },
+  "LAGSTIFNING-1-Q32": {
+    "stem": "On te confie une course en taxi. En arrivant à l'adresse de prise en charge, tu vois cinq passagers qui attendent. Ta voiture est homologuée pour quatre personnes. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-1-Q33": {
+    "stem": "Sur quelle image dois-tu céder le passage à la voiture qui vient de droite ?"
+  },
+  "LAGSTIFNING-1-Q34": {
+    "stem": "Quelle est la vitesse à respecter dans une zone de rencontre ?"
+  },
+  "LAGSTIFNING-1-Q35": {
+    "stem": "As-tu le droit d'entrer ici avec ton taxi ?"
+  },
+  "LAGSTIFNING-1-Q36": {
+    "stem": "Tu arrives à ce carrefour et tu vas continuer tout droit. Qui doit céder le passage ?"
+  },
+  "LAGSTIFNING-1-Q37": {
+    "stem": "Que désigne le poids brut d'une voiture ?"
+  },
+  "LAGSTIFNING-1-Q38": {
+    "stem": "Tu vas t'arrêter dans une rue sombre et sans éclairage. Tu attends un client qui tarde. Quels feux dois-tu utiliser ?"
+  },
+  "LAGSTIFNING-1-Q39": {
+    "stem": "Un client paie la course en espèces. Es-tu obligé d'imprimer un reçu ou un bordereau de transport ?"
+  },
   "LAGSTIFNING-1-Q4": {
     "stem": "Tu commences à conduire un taxi à 08:00 après un repos journalier. Tu fais une pause dans le travail entre 09:00 et 13:00. Quand dois-tu cesser de conduire et commencer le prochain repos journalier selon le règlement et les dispositions sur les temps de repos ?"
+  },
+  "LAGSTIFNING-1-Q40": {
+    "stem": "Tu vas tourner à droite au carrefour de l'image. Comment dois-tu te comporter dans cette situation ?"
+  },
+  "LAGSTIFNING-1-Q5": {
+    "stem": "Tu as fait une course dans une propriété privée. Tu en ressors et tu dois traverser une piste cyclable et piétonne. Dois-tu céder le passage à quelqu'un ?"
+  },
+  "LAGSTIFNING-1-Q6": {
+    "stem": "C'est un lundi ordinaire et le lendemain est également un jour ouvré. Que signifie cette combinaison de panneaux ?"
+  },
+  "LAGSTIFNING-1-Q7": {
+    "stem": "Lequel des véhicules ci-dessous n'est pas considéré comme une voiture particulière ?"
+  },
+  "LAGSTIFNING-1-Q8": {
+    "stem": "Tu vas changer de voie. Tu contrôles la circulation sur la voie de gauche et tu mets ton clignotant. Que dois-tu faire ensuite ?"
+  },
+  "LAGSTIFNING-1-Q9": {
+    "stem": "Quelles informations une affichette de prix doit-elle toujours contenir ?"
+  },
+  "LAGSTIFNING-2-Q1": {
+    "stem": "Quand peux-tu t'arrêter ou stationner 15 minutes d'après ces panneaux ?"
+  },
+  "LAGSTIFNING-2-Q10": {
+    "stem": "Tu vas changer de voie. Quelle règle s'applique au signal du clignotant ?"
+  },
+  "LAGSTIFNING-2-Q12": {
+    "stem": "Tu conduis deux clients vers un hôtel situé dans la rue de l'image. As-tu le droit d'entrer dans cette rue piétonne ?"
+  },
+  "LAGSTIFNING-2-Q13": {
+    "stem": "As-tu le droit d'emprunter une piste cyclable quand tu conduis un taxi ?"
+  },
+  "LAGSTIFNING-2-Q14": {
+    "stem": "Lors d'un contrôle de police, on te demande une copie des rapports de service des derniers jours pendant lesquels le taxi a roulé en service. Combien de copies de rapport de service dois-tu produire ?"
   },
   "LAGSTIFNING-2-Q15": {
     "stem": "Qui est tenu de présenter le contrôle de vacation du taximètre si tu conduis en trafic de taxi ?"
@@ -6108,11 +6733,29 @@
   "LAGSTIFNING-2-Q16": {
     "stem": "Que s'applique-t-il au prix de comparaison (jämförpris) dans un taxi ?"
   },
+  "LAGSTIFNING-2-Q17": {
+    "stem": "Que signifie ce panneau ?"
+  },
+  "LAGSTIFNING-2-Q18": {
+    "stem": "Tu es salarié d'une entreprise de taxi. On te confie une course avec un autocar de 10 places assises. As-tu le droit de prendre cette course ?"
+  },
+  "LAGSTIFNING-2-Q19": {
+    "stem": "Tu vas effectuer un transport scolaire. Quand le panneau clignotant de transport scolaire doit-il être allumé ?"
+  },
   "LAGSTIFNING-2-Q2": {
     "stem": "Tu commences à conduire à 19 h le 3 septembre selon la feuille de temps de repos. Quand dois-tu commencer le prochain repos journalier selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-2-Q20": {
     "stem": "Quand dois-tu erbjuda kunden un kvitto?"
+  },
+  "LAGSTIFNING-2-Q21": {
+    "stem": "Quelle est la cause des collisions par l'arrière ?"
+  },
+  "LAGSTIFNING-2-Q22": {
+    "stem": "Tu roules sur l'autoroute, la police te rattrape et te fait signe de t'arrêter. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-2-Q23": {
+    "stem": "Tu arrives au carrefour de l'image. Comment devrais-tu te comporter ?"
   },
   "LAGSTIFNING-2-Q24": {
     "stem": "Que anger la gula linjemarkeringen?"
@@ -6120,17 +6763,71 @@
   "LAGSTIFNING-2-Q25": {
     "stem": "As-tu le droit, à un moment donné, de franchir une zone d'interdiction ou une ligne continue ?"
   },
+  "LAGSTIFNING-2-Q26": {
+    "stem": "Quelle combinaison de feux peux-tu utiliser de jour ?"
+  },
+  "LAGSTIFNING-2-Q27": {
+    "stem": "Où ne peux-tu pas t'arrêter pour déposer des passagers ?"
+  },
+  "LAGSTIFNING-2-Q28": {
+    "stem": "Tu prends en charge une femme handicapée de 20 ans, en fauteuil roulant. Elle refuse de mettre sa ceinture de sécurité pendant le trajet. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-2-Q29": {
+    "stem": "Qui a le droit de conduire un taxi ?"
+  },
   "LAGSTIFNING-2-Q3": {
     "stem": "Tu dois conduire un taxi le 2 août à partir de 17.00. Combien d'heures peux-tu conduire au maximum avant la prochaine période de repos selon la feuille du livret de temps, sans enfreindre le règlement sur les temps de repos ?"
+  },
+  "LAGSTIFNING-2-Q30": {
+    "stem": "Que désigne le poids total autorisé ?"
+  },
+  "LAGSTIFNING-2-Q31": {
+    "stem": "Quelle est la durée du repos journalier sur une période de repos de 24 heures ?"
+  },
+  "LAGSTIFNING-2-Q32": {
+    "stem": "Tu continues tout droit au carrefour et les feux sont hors service. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-2-Q33": {
+    "stem": "Tu dois tourner à gauche au carrefour de l'image. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-2-Q35": {
+    "stem": "Le conducteur de la voiture grise a-t-il le droit de dépasser comme sur l'image ?"
+  },
+  "LAGSTIFNING-2-Q36": {
+    "stem": "En quoi consiste la conduite défensive ?"
   },
   "LAGSTIFNING-2-Q37": {
     "stem": "Tu travailles comme salarié dans une entreprise de taxi qui n'utilise pas de prix fixes. Que s'applique-t-il au prix de comparaison ?"
   },
+  "LAGSTIFNING-2-Q38": {
+    "stem": "La première voiture s'est arrêtée à la ligne d'arrêt du carrefour. Le conducteur de la deuxième voiture doit-il s'arrêter une seconde fois avant de s'engager sur la route transversale ?"
+  },
+  "LAGSTIFNING-2-Q39": {
+    "stem": "Lequel des éléments suivants ne peut pas être considéré comme un taxi ?"
+  },
+  "LAGSTIFNING-2-Q4": {
+    "stem": "Dans laquelle de ces situations la priorité à droite s'applique-t-elle ?"
+  },
   "LAGSTIFNING-2-Q40": {
     "stem": "Lequel des transports suivants est soumis aux dispositions sur les temps de repos pour le trafic de taxi selon le règlement sur les temps de repos ?"
   },
+  "LAGSTIFNING-2-Q5": {
+    "stem": "Tu continues tout droit aux carrefours. Dans laquelle des situations ci-dessous la priorité à droite s'applique-t-elle ?"
+  },
+  "LAGSTIFNING-2-Q6": {
+    "stem": "Sur quelle image dois-tu marquer l'arrêt, qu'il y ait ou non de la circulation au carrefour ?"
+  },
+  "LAGSTIFNING-2-Q7": {
+    "stem": "Tu as perdu ta carte professionnelle de chauffeur de taxi. À quelle autorité dois-tu le signaler ?"
+  },
+  "LAGSTIFNING-2-Q8": {
+    "stem": "Au bout de combien d'années au minimum la carte professionnelle de taxi doit-elle être renouvelée après sa délivrance ?"
+  },
   "LAGSTIFNING-2-Q9": {
     "stem": "Où doit kontrollrapport de taximètre être conservé?"
+  },
+  "LAGSTIFNING-3-Q1": {
+    "stem": "Que désigne la notion de voiture particulière ?"
   },
   "LAGSTIFNING-3-Q10": {
     "stem": "As-tu le droit de réduire le prix pour un client après une course terminée, lorsque le taximètre est sur STOPPAD ou KASSA ?"
@@ -6138,11 +6835,29 @@
   "LAGSTIFNING-3-Q11": {
     "stem": "Qu'est-ce qui est juste concernant l'information tarifaire de ton taxi si tu roules au tarif au compteur (summatariff) ?"
   },
+  "LAGSTIFNING-3-Q12": {
+    "stem": "Tu as une course un mercredi à 12h00, un jour ouvré qui n'est pas férié. As-tu le droit de t'arrêter pour déposer un client ?"
+  },
+  "LAGSTIFNING-3-Q13": {
+    "stem": "Tu arrives avec un client à un bac fluvial où la file d'attente est longue. As-tu la priorité d'embarquement ?"
+  },
+  "LAGSTIFNING-3-Q14": {
+    "stem": "Tu arrives au carrefour de l'image et tu comptes continuer tout droit. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-3-Q15": {
+    "stem": "Tu roules sur l'autoroute et tu constates que tu viens de manquer la sortie que tu devais prendre. Comment devrais-tu faire ?"
+  },
+  "LAGSTIFNING-3-Q16": {
+    "stem": "Tu roules à 70 km/h dans la situation de l'image. Quelle est la manœuvre la plus sûre ?"
+  },
   "LAGSTIFNING-3-Q17": {
     "stem": "Après un repos journalier, tu commences à conduire en taxi à 16.00. Tu as fait une pause entre 19.00 et 22.00, puis tu as une longue course vers Stockholm. Elle dure exactement 10 heures sans pause, et autant pour le retour. Tu commences le retour depuis Stockholm à 16:00. Combien de temps peux-tu encore travailler avant de prendre le prochain repos selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-3-Q19": {
     "stem": "Après 11 heures de congé, tu conduis un taxi un samedi de 18.00 à 04.00, avec une nouvelle période de repos de 20.00 à 21.00. Le dimanche, tu recommences à 12.00. Quand dois-tu au plus tard commencer une période de repos supplémentaire le dimanche ?"
+  },
+  "LAGSTIFNING-3-Q2": {
+    "stem": "Que désigne la charge utile maximale ?"
   },
   "LAGSTIFNING-3-Q20": {
     "stem": "Tu travailles comme chauffeur de taxi dans une entreprise. Ton livret de temps de repos est plein. Que dois-tu en faire ?"
@@ -6150,8 +6865,119 @@
   "LAGSTIFNING-3-Q21": {
     "stem": "Tu conduis et tu découvres qu'un plombage de ton taximètre est rompu. Que dois-tu faire ?"
   },
+  "LAGSTIFNING-3-Q22": {
+    "stem": "Quelle est la fonction du feu jaune clignotant de l'image ?"
+  },
+  "LAGSTIFNING-3-Q23": {
+    "stem": "Si le titulaire d'une licence de transport de taxi emploie un chauffeur sans carte professionnelle, quelle est la peine maximale qu'il encourt ?"
+  },
+  "LAGSTIFNING-3-Q24": {
+    "stem": "Quels véhicules n'ont pas le droit de passer ce panneau ?"
+  },
+  "LAGSTIFNING-3-Q25": {
+    "stem": "Tu t'approches d'un carrefour où s'applique la priorité à droite. À quels véhicules dois-tu céder le passage ?"
+  },
+  "LAGSTIFNING-3-Q26": {
+    "stem": "Tu viens de réussir l'examen de taxi. As-tu le droit de conduire un taxi ?"
+  },
+  "LAGSTIFNING-3-Q27": {
+    "stem": "Tu as perdu ta carte professionnelle de chauffeur de taxi et tu en as demandé une nouvelle. As-tu le droit de conduire en attendant la carte provisoire ou la nouvelle carte ?"
+  },
+  "LAGSTIFNING-3-Q28": {
+    "stem": "Tu vas t'arrêter pour attendre un certain nombre de passagers. Devant quel panneau est-il permis de s'arrêter 10 minutes pour attendre un client ?"
+  },
+  "LAGSTIFNING-3-Q29": {
+    "stem": "Que signifie le panneau entouré ?"
+  },
+  "LAGSTIFNING-3-Q3": {
+    "stem": "Tu vas tourner à gauche sur ces images. Sur laquelle dois-tu céder le passage à la voiture qui vient en face ?"
+  },
+  "LAGSTIFNING-3-Q30": {
+    "stem": "Que signifie ce panneau ?"
+  },
+  "LAGSTIFNING-3-Q31": {
+    "stem": "Tu conduis un taxi et tu effectues un transport scolaire. Ton taxi est équipé d'un panneau lumineux. Quand doit-il être allumé ?"
+  },
+  "LAGSTIFNING-3-Q32": {
+    "stem": "Quels véhicules, en dehors de la voiture particulière, peuvent être utilisés en service taxi ?"
+  },
+  "LAGSTIFNING-3-Q33": {
+    "stem": "Où dois-tu conserver le rapport de contrôle de l'équipement du taximètre ?"
+  },
+  "LAGSTIFNING-3-Q34": {
+    "stem": "Tu arrives dans la rue de l'image. As-tu le droit d'y entrer ?"
+  },
+  "LAGSTIFNING-3-Q35": {
+    "stem": "Quels feux ne doivent pas être utilisés ensemble en roulant ?"
+  },
+  "LAGSTIFNING-3-Q36": {
+    "stem": "Tu roules sur cette route. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-3-Q38": {
+    "stem": "Tu vas tourner à gauche au carrefour. Comment devrais-tu te comporter ?"
+  },
+  "LAGSTIFNING-3-Q39": {
+    "stem": "Tu prends en charge une mère avec un enfant de deux ans. Ils n'ont pas de dispositif de retenue adapté à l'enfant. L'enfant a-t-il le droit de monter ?"
+  },
+  "LAGSTIFNING-3-Q4": {
+    "stem": "Tu vas tourner à droite au carrefour de l'image. Dois-tu céder le passage aux piétons ?"
+  },
+  "LAGSTIFNING-3-Q40": {
+    "stem": "Conduire dans la circulation doit se faire de manière sûre. Voici trois personnes : l'une a bu de l'alcool, l'autre est épuisée après avoir conduit toute la nuit, la troisième a pris un médicament prescrit par un médecin. Parmi ces personnes, laquelle n'a pas le droit de conduire ?"
+  },
+  "LAGSTIFNING-3-Q5": {
+    "stem": "Tu vas tourner à droite au carrefour de l'image. Dois-tu céder le passage au cycliste ?"
+  },
+  "LAGSTIFNING-3-Q6": {
+    "stem": "Nous sommes le 9 mars, comme l'indique l'image A. Tu veux stationner la voiture comme sur l'image B. La route n'est pas une route prioritaire et ne porte aucune indication de stationnement. As-tu le droit de stationner ?"
+  },
+  "LAGSTIFNING-3-Q7": {
+    "stem": "La carte professionnelle de taxi doit être renouvelée après un certain nombre d'années. Combien ?"
+  },
+  "LAGSTIFNING-3-Q8": {
+    "stem": "Pour une course, tu dois t'arrêter près d'un carrefour afin de prendre un passager. À quelle distance du carrefour dois-tu t'arrêter ?"
+  },
+  "LAGSTIFNING-3-Q9": {
+    "stem": "As-tu le droit de t'arrêter à un arrêt de bus balisé sans gêner les transports en commun ?"
+  },
+  "LAGSTIFNING-4-Q1": {
+    "stem": "Tu roules sur cette route. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-4-Q10": {
+    "stem": "Tu vas à gauche sur l'image. Qui doit céder le passage ?"
+  },
+  "LAGSTIFNING-4-Q11": {
+    "stem": "D'après le panonceau, quelles personnes traversent habituellement à ce passage piéton ?"
+  },
+  "LAGSTIFNING-4-Q12": {
+    "stem": "Sur laquelle de ces images dois-tu céder le passage à droite ?"
+  },
+  "LAGSTIFNING-4-Q13": {
+    "stem": "Qui peut conduire un taxi ?"
+  },
+  "LAGSTIFNING-4-Q14": {
+    "stem": "Quelles deux informations doivent toujours figurer sur un reçu de taxi ?"
+  },
+  "LAGSTIFNING-4-Q15": {
+    "stem": "Il n'y a pas de ligne d'arrêt dans cette situation. Où dois-tu t'arrêter ?"
+  },
+  "LAGSTIFNING-4-Q16": {
+    "stem": "Qui peut stationner sur une place portant ces panneaux ?"
+  },
   "LAGSTIFNING-4-Q17": {
     "stem": "Que betyder polismannens tecken?"
+  },
+  "LAGSTIFNING-4-Q18": {
+    "stem": "Quel véhicule peut être conduit par un conducteur titulaire du permis de catégorie B ?"
+  },
+  "LAGSTIFNING-4-Q19": {
+    "stem": "Le repos journalier sur une période de 24 heures peut être fractionné. Quel fractionnement est le bon ?"
+  },
+  "LAGSTIFNING-4-Q2": {
+    "stem": "Ta carte professionnelle de taxi peut être retirée si tu commets une infraction. Pour combien d'années au minimum est-elle retirée ?"
+  },
+  "LAGSTIFNING-4-Q20": {
+    "stem": "Pour combien de courses faut-il pouvoir présenter une copie du reçu ou du bordereau de transport à la demande de la police ?"
   },
   "LAGSTIFNING-4-Q21": {
     "stem": "Tu as reposé une semaine et tu dois reprendre le travail. Combien de temps de repos dois-tu inscrire dans le livret après le congé, avant de commencer ?"
@@ -6162,11 +6988,23 @@
   "LAGSTIFNING-4-Q23": {
     "stem": "Quand un taxi peut-il être utilisé sans que le taximètre soit allumé ?"
   },
+  "LAGSTIFNING-4-Q24": {
+    "stem": "Tu conduis en taxi une voiture particulière avec une remorque attelée dont le poids total est de 750 kg. Quelle catégorie de permis au maximum te faut-il pour cet ensemble de véhicules ?"
+  },
+  "LAGSTIFNING-4-Q25": {
+    "stem": "Quels véhicules peuvent être utilisés en transport professionnel ?"
+  },
+  "LAGSTIFNING-4-Q26": {
+    "stem": "Quels véhicules as-tu le droit de conduire en transport professionnel de taxi selon la réglementation suédoise ?"
+  },
   "LAGSTIFNING-4-Q27": {
     "stem": "Tu as rempli ton livret de temps. Selon la loi, tu dois annoter les jours où tu conduis. Combien d'annotations dois-tu présenter lors d'un contrôle de police selon le règlement sur les temps de repos ?"
   },
   "LAGSTIFNING-4-Q28": {
     "stem": "Tu conduis en trafic de taxi et le taximètre tombe en panne. Qui est alors tenu de cesser de conduire en trafic de taxi ?"
+  },
+  "LAGSTIFNING-4-Q29": {
+    "stem": "Ta carte professionnelle de taxi peut être retirée si tu as commis une infraction. Pour combien d'années au maximum est-elle retirée ?"
   },
   "LAGSTIFNING-4-Q3": {
     "stem": "Quand dois-tu besiktiga ton taximètre?"
@@ -6174,68 +7012,401 @@
   "LAGSTIFNING-4-Q30": {
     "stem": "Quel est l'intervalle maximal entre deux contrôles du taximètre ?"
   },
+  "LAGSTIFNING-4-Q31": {
+    "stem": "Tu arrives sur un accident de la route où plusieurs personnes saignent. Quelle protection dois-tu utiliser ?"
+  },
+  "LAGSTIFNING-4-Q32": {
+    "stem": "Tu as crevé un pneu et tu as dû monter la roue de secours provisoire d'origine (roue galette). Sur quelle distance peux-tu rouler avec elle ?"
+  },
+  "LAGSTIFNING-4-Q33": {
+    "stem": "As-tu le droit de déposer un passager sur la route où ce panneau est installé ?"
+  },
   "LAGSTIFNING-4-Q34": {
     "stem": "Le taximètre peut-il être éteint pendant une course ?"
+  },
+  "LAGSTIFNING-4-Q35": {
+    "stem": "Qui doit être condamné si une entreprise de taxi n'a pas de licence de transport ?"
   },
   "LAGSTIFNING-4-Q36": {
     "stem": "Tu as commencé un service et tu découvres que tu as oublié ton livret de temps de repos. Que s'applique-t-il ?"
   },
+  "LAGSTIFNING-4-Q37": {
+    "stem": "Quels véhicules as-tu le droit de conduire comme taxi ?"
+  },
+  "LAGSTIFNING-4-Q38": {
+    "stem": "Tu comptes dépasser le camion de l'image alors qu'un véhicule arrive en face. As-tu le droit de franchir la ligne médiane ?"
+  },
+  "LAGSTIFNING-4-Q39": {
+    "stem": "Quel poids change si tu prends un passager à bord de ton taxi ?"
+  },
   "LAGSTIFNING-4-Q4": {
     "stem": "Qu'est-ce qui est juste concernant le tarif à prix fixe dans ton taxi ?"
+  },
+  "LAGSTIFNING-4-Q40": {
+    "stem": "As-tu le droit de t'arrêter à côté d'une voiture stationnée, comme celle de l'image ?"
+  },
+  "LAGSTIFNING-4-Q5": {
+    "stem": "Quelle réponse indique deux informations qui doivent toujours figurer sur un reçu de taxi ?"
+  },
+  "LAGSTIFNING-4-Q6": {
+    "stem": "Où peux-tu faire contrôler le taximètre ?"
+  },
+  "LAGSTIFNING-4-Q7": {
+    "stem": "Où un contrôle routier du taximètre peut-il avoir lieu ?"
+  },
+  "LAGSTIFNING-4-Q8": {
+    "stem": "Qui est responsable du port des dispositifs de retenue et de la ceinture par les enfants de moins de 15 ans ?"
+  },
+  "LAGSTIFNING-4-Q9": {
+    "stem": "Tu vas conduire un client sur une courte distance. Dois-tu mettre ta ceinture de sécurité ?"
+  },
+  "LAGSTIFNING-5-Q1": {
+    "stem": "Quel éclairage dois-tu utiliser dans la situation de l'image ?"
+  },
+  "LAGSTIFNING-5-Q10": {
+    "stem": "Quelle est la durée normale de retrait d'une licence de transport ?"
+  },
+  "LAGSTIFNING-5-Q11": {
+    "stem": "As-tu le droit de t'arrêter à un arrêt de bus pour décharger des marchandises s'il n'y a aucun bus à proximité ?"
   },
   "LAGSTIFNING-5-Q12": {
     "stem": "Comment ofta dois taximètre besiktas?"
   },
+  "LAGSTIFNING-5-Q13": {
+    "stem": "Lequel des éléments suivants n'a pas besoin de figurer dans le rapport de service ?"
+  },
+  "LAGSTIFNING-5-Q14": {
+    "stem": "À quelles heures le stationnement est-il gratuit ?"
+  },
+  "LAGSTIFNING-5-Q15": {
+    "stem": "Quelles trois informations peux-tu tirer d'une carte grise ?"
+  },
+  "LAGSTIFNING-5-Q16": {
+    "stem": "Quel âge minimum faut-il avoir pour pouvoir conduire un taxi ?"
+  },
   "LAGSTIFNING-5-Q17": {
     "stem": "Pendant une semaine, tu conduis un taxi le jeudi, le vendredi et le samedi. Chaque fois, tu conduis de 07:00 à 17:00. Pour combien de jours calendaires dois-tu faire des annotations dans le livret de temps cette semaine, selon la loi et le règlement sur les temps de repos ?"
+  },
+  "LAGSTIFNING-5-Q18": {
+    "stem": "Tu vas transporter 4 passagers de 75 kg chacun. Quelle masse de bagages peux-tu charger compte tenu de la carte grise ?"
+  },
+  "LAGSTIFNING-5-Q19": {
+    "stem": "Laquelle des catégories de permis ci-dessous est exigée pour qu'un chauffeur puisse effectuer une course avec 12 passagers ?"
+  },
+  "LAGSTIFNING-5-Q20": {
+    "stem": "Qu'est-ce qui est vrai à propos des poids lourds ?"
+  },
+  "LAGSTIFNING-5-Q21": {
+    "stem": "Ton véhicule pèse 4,5 tonnes. Quelle catégorie de permis minimale te faut-il pour le conduire ?"
+  },
+  "LAGSTIFNING-5-Q22": {
+    "stem": "Est-il permis d'utiliser les feux de croisement et les feux de brouillard en même temps ?"
+  },
+  "LAGSTIFNING-5-Q23": {
+    "stem": "Quelle affirmation est correcte concernant la présélection des voies indiquée sur l'image ?"
+  },
+  "LAGSTIFNING-5-Q24": {
+    "stem": "Tu vas rattraper dans un instant le véhicule que tu vois sur l'image. À quoi devrais-tu penser avant de dépasser ?"
+  },
+  "LAGSTIFNING-5-Q25": {
+    "stem": "Quand est-il interdit de dépasser un autre véhicule ?"
+  },
+  "LAGSTIFNING-5-Q26": {
+    "stem": "Quelle affirmation sur l'accotement est correcte ?"
   },
   "LAGSTIFNING-5-Q27": {
     "stem": "Ton livret de temps de repos est terminé. Qui est responsable qu'un livret personnel d'un salarié d'une entreprise de taxi soit correctement rempli ?"
   },
+  "LAGSTIFNING-5-Q28": {
+    "stem": "Qui est responsable de ce que la voiture dispose du bon équipement lors d'un transport scolaire ?"
+  },
+  "LAGSTIFNING-5-Q29": {
+    "stem": "Tu continues tout droit au carrefour. Quelle règle s'applique ?"
+  },
+  "LAGSTIFNING-5-Q3": {
+    "stem": "Quels véhicules peuvent être utilisés pour le transport professionnel ?"
+  },
   "LAGSTIFNING-5-Q30": {
     "stem": "As le droit du stanna ou parkera sur une cykelbana si Tu conduis un taxi?"
+  },
+  "LAGSTIFNING-5-Q31": {
+    "stem": "Un client est pressé d'arriver à l'aéroport et exige que tu dépasses la vitesse autorisée pour ne pas manquer son vol. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-5-Q32": {
+    "stem": "Les voitures des images arrivent à une intersection en T. Le dépassement est-il permis dans l'une de ces situations ?"
   },
   "LAGSTIFNING-5-Q33": {
     "stem": "Que menas avec trafic de taxi?"
   },
+  "LAGSTIFNING-5-Q34": {
+    "stem": "Tu as l'intention de tourner à gauche au carrefour, mais par erreur tu te retrouves sur la voie de droite. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-5-Q35": {
+    "stem": "Tu conduis une voiture équipée de pneus hiver non cloutés. As-tu le droit de passer le panneau de l'image ?"
+  },
+  "LAGSTIFNING-5-Q36": {
+    "stem": "Tu vas t'engager sur une route où ce panneau est installé. Quelle règle y s'applique ?"
+  },
+  "LAGSTIFNING-5-Q37": {
+    "stem": "Ton client veut être conduit au 14 Bäckvägen. Est-il permis d'y entrer avec ton taxi ?"
+  },
+  "LAGSTIFNING-5-Q38": {
+    "stem": "Quelle voie choisis-tu sur l'image pour aller à l'hôpital ?"
+  },
+  "LAGSTIFNING-5-Q39": {
+    "stem": "Tu roules en service taxi et tu arrives à un bac fluvial où d'autres véhicules attendent en file. As-tu la priorité d'embarquement ?"
+  },
   "LAGSTIFNING-5-Q4": {
     "stem": "Quelle est la durée maximale de travail pendant une période de 24 heures selon le règlement sur les temps de repos ?"
+  },
+  "LAGSTIFNING-5-Q40": {
+    "stem": "As-tu le droit de conduire un taxi si tu as perdu ta carte professionnelle ? Quelle règle s'applique ?"
+  },
+  "LAGSTIFNING-5-Q5": {
+    "stem": "Quelle affirmation est vraie ?"
+  },
+  "LAGSTIFNING-5-Q6": {
+    "stem": "Quelle sanction risques-tu si la carte professionnelle de chauffeur de taxi n'est pas affichée de la manière prescrite ?"
   },
   "LAGSTIFNING-5-Q7": {
     "stem": "Toutes les voitures utilisées en trafic de taxi doivent être équipées d'un taximètre de type homologué. Quel marquage parmi les alternatives suivantes est homologué ?"
   },
+  "LAGSTIFNING-5-Q8": {
+    "stem": "Qu'est-ce qui doit d'abord déterminer ta vitesse lorsque tu franchis le passage à niveau de l'image ?"
+  },
+  "LAGSTIFNING-5-Q9": {
+    "stem": "À quelle autorité faut-il envoyer une demande de licence de transport de taxi ?"
+  },
+  "LAGSTIFNING-6-Q1": {
+    "stem": "Où ce marquage se trouve-t-il le plus probablement sur la voiture ?"
+  },
+  "LAGSTIFNING-6-Q10": {
+    "stem": "Avec une carte professionnelle de taxi, quels véhicules peux-tu conduire en plus des voitures particulières ?"
+  },
+  "LAGSTIFNING-6-Q11": {
+    "stem": "Quand le stationnement est-il interdit ?"
+  },
+  "LAGSTIFNING-6-Q12": {
+    "stem": "Tu roules sur une route et tu vois des lignes blanches et jaunes sur ta partie de la chaussée. Qu'est-ce que cela signifie pour toi ?"
+  },
+  "LAGSTIFNING-6-Q13": {
+    "stem": "De nuit et par visibilité réduite, la police utilise une lanterne à lumière rouge pour être bien visible. Que dois-tu faire lorsque la police fait ce signe ?"
+  },
   "LAGSTIFNING-6-Q14": {
     "stem": "Comment dois man ta fram un fordon maximilast?"
+  },
+  "LAGSTIFNING-6-Q15": {
+    "stem": "Tu vas continuer tout droit vers le centre dans le rond-point devant toi, sur l'image. Dois-tu mettre ton clignotant ?"
+  },
+  "LAGSTIFNING-6-Q16": {
+    "stem": "As-tu le droit de t'arrêter ou de stationner sur une piste cyclable pour déposer ou prendre des passagers ?"
+  },
+  "LAGSTIFNING-6-Q17": {
+    "stem": "Laquelle de ces affirmations est correcte ?"
+  },
+  "LAGSTIFNING-6-Q18": {
+    "stem": "Tu t'arrêtes pour attendre un client comme sur les images. Est-ce permis ?"
+  },
+  "LAGSTIFNING-6-Q19": {
+    "stem": "Quand la limitation à 50 km/h s'applique-t-elle ?"
+  },
+  "LAGSTIFNING-6-Q2": {
+    "stem": "C'est samedi et il est 08h00. Tu vas tourner à droite dans un instant. Peux-tu utiliser la voie marquée A ?"
   },
   "LAGSTIFNING-6-Q20": {
     "stem": "Que s'applique-t-il sur cette image avec une ligne jaune continue ?"
   },
+  "LAGSTIFNING-6-Q21": {
+    "stem": "As-tu le droit de rouler ici, sur cette voie, avec ton taxi ?"
+  },
+  "LAGSTIFNING-6-Q22": {
+    "stem": "Tu continues tout droit au carrefour. Quelle est la façon la plus sûre de passer le cycliste de l'image ?"
+  },
+  "LAGSTIFNING-6-Q23": {
+    "stem": "Tu as l'intention de continuer tout droit sur l'image. Par erreur, tu t'es retrouvé sur la voie de gauche. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-6-Q24": {
+    "stem": "Tu vas t'engager sur une route depuis un parking. À quels véhicules dois-tu céder le passage ?"
+  },
+  "LAGSTIFNING-6-Q25": {
+    "stem": "Ton client habite dans cette rue, un peu plus loin. Peux-tu le déposer sur la voie ?"
+  },
+  "LAGSTIFNING-6-Q26": {
+    "stem": "Tu conduis ton taxi et la police t'arrête. L'agent veut des copies de tes rapports de service. Combien de rapports de service dois-tu présenter ?"
+  },
+  "LAGSTIFNING-6-Q3": {
+    "stem": "Tu as 250 kg de chargement dans la voiture. Combien de personnes peux-tu emmener compte tenu de la carte grise, si chaque passager pèse entre 70 et 80 kg ?"
+  },
   "LAGSTIFNING-6-Q31": {
     "stem": "Après 11 heures de repos, tu commences à conduire un taxi à 07:00. Tu as des pauses et tu te reposes de 11 à 12 et de 18 à 19. Quand dois-tu au plus tard commencer le prochain repos journalier selon le règlement sur les temps de repos ?"
+  },
+  "LAGSTIFNING-6-Q32": {
+    "stem": "Tu rattrapes la voiture devant toi et tu constates que tu roules nettement plus vite qu'elle. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-6-Q34": {
+    "stem": "La voiture est stationnée. Est-elle correctement stationnée dans l'une des situations ?"
+  },
+  "LAGSTIFNING-6-Q35": {
+    "stem": "Tu vas t'engager sur la route de l'image. Tu dois y chercher un client un jour ouvré, à 13h00. As-tu le droit de continuer tout droit ?"
+  },
+  "LAGSTIFNING-6-Q36": {
+    "stem": "Quelle voie dois-tu choisir pour aller au parking de Hamngatan ?"
   },
   "LAGSTIFNING-6-Q37": {
     "stem": "Après 11 heures de congé, tu commences à conduire un taxi le lundi entre 15 h et 24 h, avec une période de repos entre 19 h et 20 h. Tu dois recommencer le mardi matin à 08 h. Quand dois-tu commencer une période de repos supplémentaire selon le règlement sur les temps de repos ?"
   },
+  "LAGSTIFNING-6-Q38": {
+    "stem": "Est-il permis d'empêcher quelqu'un de te dépasser ?"
+  },
+  "LAGSTIFNING-6-Q39": {
+    "stem": "As-tu le droit d'entrer avec ton taxi dans la rue de l'image ?"
+  },
+  "LAGSTIFNING-6-Q4": {
+    "stem": "Tu vas à gauche. Dois-tu mettre ton clignotant gauche ?"
+  },
+  "LAGSTIFNING-6-Q40": {
+    "stem": "Dans laquelle de ces situations dois-tu céder le passage à la circulation venant de droite ?"
+  },
+  "LAGSTIFNING-6-Q5": {
+    "stem": "Tu te rends à l'école maternelle située plus loin sur la route. D'après le panonceau, quels enfants circulent souvent sur cette route ?"
+  },
+  "LAGSTIFNING-6-Q6": {
+    "stem": "Que signifient les panneaux de l'image ?"
+  },
+  "LAGSTIFNING-6-Q8": {
+    "stem": "Tu vas à droite. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-6-Q9": {
+    "stem": "Qu'est-ce qui est exact au sujet de ce panneau ?"
+  },
+  "LAGSTIFNING-7-Q1": {
+    "stem": "Tu roules dans une rue limitée à 50 km/h. Quelle vitesse maximale s'applique quand tu passes le panneau de l'image ?"
+  },
   "LAGSTIFNING-7-Q10": {
     "stem": "Tu conduis un taxi et tu commences un service à 13:00 le 4 août. La feuille du livret de temps montre tes temps de repos des derniers jours. Quand dois-tu au plus tard commencer la prochaine période de repos selon le règlement sur les temps de repos ?"
+  },
+  "LAGSTIFNING-7-Q11": {
+    "stem": "Tu continues tout droit au carrefour. Aucun piéton n'est à proximité. Où dois-tu t'arrêter ?"
   },
   "LAGSTIFNING-7-Q12": {
     "stem": "As-tu le droit, avec ton taxi, de franchir à un moment donné une zone d'interdiction ou une ligne continue sur la chaussée ?"
   },
+  "LAGSTIFNING-7-Q13": {
+    "stem": "Avec ton taxi, tu heurtes par accident une voiture stationnée. Son conducteur est introuvable. Qu'exige la loi de ta part ?"
+  },
+  "LAGSTIFNING-7-Q15": {
+    "stem": "Tu vas tourner à droite au carrefour. Une piétonne s'apprête à traverser et elle a le feu vert en même temps que toi. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-7-Q16": {
+    "stem": "Tu arrives au rond-point de l'image. Tu vas à droite. Dois-tu céder le passage à la voiture grise déjà engagée dans le rond-point ?"
+  },
+  "LAGSTIFNING-7-Q17": {
+    "stem": "Tu conduis en taxi une Volvo V70, selon sa carte grise. Les bagages de tes clients pèsent 320 kg. Combien de passagers peux-tu emmener s'ils pèsent 70 kg en moyenne ?"
+  },
+  "LAGSTIFNING-7-Q18": {
+    "stem": "Où peut-on trouver ce panneau ?"
+  },
+  "LAGSTIFNING-7-Q19": {
+    "stem": "Sur quelle image dois-tu céder le passage à droite ?"
+  },
+  "LAGSTIFNING-7-Q2": {
+    "stem": "Tu roules en service taxi. Lequel de ces documents dois-tu avoir avec toi dans la voiture ?"
+  },
+  "LAGSTIFNING-7-Q20": {
+    "stem": "Tu as l'intention de tourner à gauche sur l'image. Comment dois-tu te comporter ?"
+  },
   "LAGSTIFNING-7-Q21": {
     "stem": "As le droit du stanna sur bilden?"
+  },
+  "LAGSTIFNING-7-Q22": {
+    "stem": "As-tu le droit de t'arrêter à un arrêt de bus pour attendre un passager, s'il n'y a aucun bus de ligne à proximité ?"
+  },
+  "LAGSTIFNING-7-Q23": {
+    "stem": "Tu vas sortir d'un rond-point et traverser une traversée cyclable et un passage piéton. Dois-tu céder le passage à l'un de ces usagers vulnérables ?"
+  },
+  "LAGSTIFNING-7-Q24": {
+    "stem": "Le panneau avertit de la présence d'animaux sur ou au bord de la route. Où commence la section la plus dangereuse ?"
+  },
+  "LAGSTIFNING-7-Q25": {
+    "stem": "Tu vas t'engager sur l'autoroute depuis la bretelle d'accès de l'image. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-7-Q26": {
+    "stem": "Tu conduis une camionnette avec une remorque légère attelée. As-tu le droit de passer le panneau de l'image ?"
+  },
+  "LAGSTIFNING-7-Q27": {
+    "stem": "De quoi ce panneau avertit-il ?"
+  },
+  "LAGSTIFNING-7-Q28": {
+    "stem": "Tu prends en charge une personne avec deux enfants. Le premier mesure 135 cm, le second 125 cm. Où les enfants sont-ils le plus en sécurité si l'airbag passager avant est activé ?"
+  },
+  "LAGSTIFNING-7-Q29": {
+    "stem": "Qu'est-ce qui est exact au sujet de la route de l'image ?"
+  },
+  "LAGSTIFNING-7-Q3": {
+    "stem": "Tu dois transporter dans ton taxi une femme de 20 ans en fauteuil roulant. Elle ne veut pas mettre la ceinture de sécurité. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-7-Q32": {
+    "stem": "Quelle règle s'applique si tu veux continuer tout droit dans la situation de l'image ?"
+  },
+  "LAGSTIFNING-7-Q33": {
+    "stem": "Si tu prends un passager à bord, quel poids change ?"
+  },
+  "LAGSTIFNING-7-Q34": {
+    "stem": "Tu veux stationner le 12, un vendredi, en restant le plus longtemps possible. Où dois-tu garer la voiture et pendant combien de temps au maximum ?"
+  },
+  "LAGSTIFNING-7-Q35": {
+    "stem": "Quels deux marquages au sol accompagnent une traversée cyclable prioritaire ?"
+  },
+  "LAGSTIFNING-7-Q36": {
+    "stem": "Un chauffeur de taxi s'arrête pour saisir une adresse dans son GPS. Doit-il mettre son clignotant gauche avant de repartir du bord de la chaussée ?"
+  },
+  "LAGSTIFNING-7-Q37": {
+    "stem": "As-tu le droit de t'arrêter juste après le panneau de l'image pour appeler la centrale de réservation ?"
   },
   "LAGSTIFNING-7-Q38": {
     "stem": "Le 30 août, tu as fait un autre travail rémunéré entre 07:00 et 13:00. Tu recommences à conduire un taxi à 18:00. Quand dois-tu cesser de conduire selon la feuille de temps de repos et les dispositions ?"
   },
+  "LAGSTIFNING-7-Q39": {
+    "stem": "Tu t'es déporté sur l'accotement pour faciliter le dépassement d'une autre voiture. Que vaut la règle entre toi et les autres véhicules quand tu veux revenir sur la chaussée ?"
+  },
   "LAGSTIFNING-7-Q4": {
     "stem": "Tu es en congé lundi et mardi et tu commences à conduire un taxi mercredi à 07:00. Tu fais une pause entre 11:00 et 15:00. Quand dois-tu au plus tard cesser de conduire selon le règlement sur les temps de repos si tu ne fais pas une nouvelle pause ?"
+  },
+  "LAGSTIFNING-7-Q40": {
+    "stem": "Tu vas aider un collègue à remorquer son taxi jusqu'à un garage. Devez-vous utiliser les feux de détresse ?"
+  },
+  "LAGSTIFNING-7-Q5": {
+    "stem": "Un chauffeur de taxi perd définitivement la vue d'un œil et sa carte professionnelle est retirée. Peut-il la récupérer ?"
   },
   "LAGSTIFNING-7-Q6": {
     "stem": "Lequel des transports suivants est soumis aux dispositions sur les temps de repos pour certains transports routiers à l'intérieur du pays ?"
   },
+  "LAGSTIFNING-7-Q7": {
+    "stem": "Tu vas t'engager sur l'autoroute depuis la voie d'accélération. Où est-il le plus important de regarder ?"
+  },
+  "LAGSTIFNING-7-Q8": {
+    "stem": "Tu vas chercher un client qui habite dans une rue où ce panneau est installé. Ton taxi est équipé de pneus hiver non cloutés. As-tu le droit d'entrer dans la rue ?"
+  },
+  "LAGSTIFNING-7-Q9": {
+    "stem": "Tu prends en charge une cliente qui porte un grand bouquet de fleurs. Pour ne pas l'abîmer, elle veut le garder sur ses genoux à l'avant. En a-t-elle le droit ?"
+  },
   "LAGSTIFNING-8-Q1": {
     "stem": "Tu as écrit une erreur dans ton livret de temps de repos. Quelle est la bonne façon de procéder ?"
+  },
+  "LAGSTIFNING-8-Q10": {
+    "stem": "Tu vois une voiture de police rouler derrière toi. Son panneau affiche des signaux bleus et rouges alternés. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q11": {
+    "stem": "Tu as l'intention de continuer tout droit au carrefour, mais par erreur tu te retrouves sur la voie de droite. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-8-Q12": {
+    "stem": "Quand le stationnement est-il interdit d'après la combinaison de panneaux de l'image ?"
+  },
+  "LAGSTIFNING-8-Q13": {
+    "stem": "Tu accélères dans une voie d'accélération et tu mets ton clignotant. Dans le rétroviseur extérieur gauche, tu vois une voiture qui s'est engagée sur l'autoroute avant toi. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q14": {
+    "stem": "Dois-tu céder le passage à la circulation venant de gauche sur l'image ?"
   },
   "LAGSTIFNING-8-Q15": {
     "stem": "Un chauffeur de taxi peut-il faire des écarts temporaires aux règles du repos journalier ?"
@@ -6243,11 +7414,32 @@
   "LAGSTIFNING-8-Q16": {
     "stem": "Que menas avec Maximilasten?"
   },
+  "LAGSTIFNING-8-Q17": {
+    "stem": "Tu vas à gauche sur l'image. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q19": {
+    "stem": "Tu vas prendre à droite dans le rond-point de l'image. Comment dois-tu faire dans la situation représentée ?"
+  },
+  "LAGSTIFNING-8-Q2": {
+    "stem": "Tu vas chercher un client qui habite dans une rue où ce panneau est installé. Ton taxi est équipé de pneus cloutés. As-tu le droit d'entrer dans la rue ?"
+  },
   "LAGSTIFNING-8-Q20": {
     "stem": "Tu as conduit un taxi depuis 05.00 le 24 septembre. À 11.00 on t'annonce une course qui commence à 11.15 et doit se terminer à 15.00. Peux-tu prendre cette course compte tenu du temps de repos que tu as eu selon la feuille du livret de temps ?"
   },
   "LAGSTIFNING-8-Q21": {
     "stem": "Tu cesses de conduire un taxi le 4 octobre à 4:00. Quand peux-tu au plus tard recommencer à conduire selon la feuille de temps de repos et le règlement ?"
+  },
+  "LAGSTIFNING-8-Q22": {
+    "stem": "Tu vas faire un transport de colis vers Norrköping avec une remorque attelée. La vitesse est limitée à 100 km/h sur cette route. Quelle voie dois-tu choisir ?"
+  },
+  "LAGSTIFNING-8-Q23": {
+    "stem": "Le taxi est-il mal stationné dans l'une des situations de l'image ?"
+  },
+  "LAGSTIFNING-8-Q24": {
+    "stem": "Tu vas tourner à droite pour t'engager sur la route. Tu vois que la voiture grise est en train de dépasser une autre voiture. Comment dois-tu faire dans la situation de l'image ?"
+  },
+  "LAGSTIFNING-8-Q25": {
+    "stem": "Comment dois-tu te comporter si un véhicule d'urgence émet des éclats de lumière rouge ?"
   },
   "LAGSTIFNING-8-Q26": {
     "stem": "Qui a le droit de plomber un taximètre ?"
@@ -6258,20 +7450,146 @@
   "LAGSTIFNING-8-Q28": {
     "stem": "Ton livret de temps personnel est terminé. Quand dois-tu, en tant que chauffeur salarié, le rendre au plus tôt à ton employeur ?"
   },
+  "LAGSTIFNING-8-Q29": {
+    "stem": "Dans ton rétroviseur, tu vois une voiture de police gyrophare allumé. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q3": {
+    "stem": "Tu t'approches d'un carrefour. Qu'est-ce qui s'applique au carrefour de l'image ?"
+  },
+  "LAGSTIFNING-8-Q30": {
+    "stem": "Tu vas faire demi-tour en utilisant l'encoche sur le côté droit de la route. Dois-tu mettre ton clignotant pendant la manœuvre ?"
+  },
+  "LAGSTIFNING-8-Q31": {
+    "stem": "En service taxi, tu conduis une voiture particulière avec une remorque attelée. Le poids total de la remorque est de 750 kg. Quelle catégorie de permis te faut-il au minimum ?"
+  },
+  "LAGSTIFNING-8-Q32": {
+    "stem": "Qui doit être sanctionné si un enfant de moins de 15 ans ne porte pas la ceinture ou un dispositif de retenue adapté lors d'un transport scolaire ?"
+  },
+  "LAGSTIFNING-8-Q33": {
+    "stem": "Tu dois transporter une mère et son enfant de deux ans. Il n'y a aucun dispositif de retenue pour l'enfant. A-t-il le droit de monter dans ton taxi ?"
+  },
+  "LAGSTIFNING-8-Q34": {
+    "stem": "Qu'est-ce qui est exact concernant l'affichage des prix sur ton taxi ?"
+  },
+  "LAGSTIFNING-8-Q35": {
+    "stem": "Le bus s'apprête à quitter l'arrêt et met son clignotant à gauche. Dans laquelle de ces situations es-tu obligé de lui céder le passage ?"
+  },
+  "LAGSTIFNING-8-Q36": {
+    "stem": "Tu vas tourner à droite. Quelle règle s'applique ?"
+  },
+  "LAGSTIFNING-8-Q37": {
+    "stem": "Ton client habite dans cette rue. Peux-tu y entrer avec ton taxi pour le déposer devant son logement ?"
+  },
+  "LAGSTIFNING-8-Q39": {
+    "stem": "Quand le stationnement est-il interdit d'après ces panneaux ?"
+  },
+  "LAGSTIFNING-8-Q4": {
+    "stem": "Tu vas à gauche au carrefour de l'image, où tu dois céder le passage. La voiture blanche arrive à droite sur la voie de droite. As-tu le droit de tourner à gauche dans cette situation ?"
+  },
+  "LAGSTIFNING-8-Q40": {
+    "stem": "Tu constates que tu t'es trompé de route et tu veux faire demi-tour en reculant au coin de la rue. Quelle règle s'applique entre toi et les autres usagers dans cette situation ?"
+  },
   "LAGSTIFNING-8-Q41": {
     "stem": "Après 11 heures de repos, tu commences à conduire un taxi à 07:00. Tu prends une pause et tu te reposes de 09:00 à 12:00. Quand dois-tu cesser de conduire et commencer le prochain repos journalier selon le règlement sur les temps de repos ?"
+  },
+  "LAGSTIFNING-8-Q42": {
+    "stem": "Tu continues tout droit au carrefour. Quelle règle s'applique ?"
+  },
+  "LAGSTIFNING-8-Q43": {
+    "stem": "Qui est responsable de l'équipement d'un taxi effectuant un transport scolaire ?"
+  },
+  "LAGSTIFNING-8-Q44": {
+    "stem": "Tu vas effectuer un transport scolaire avec un autocar de 10 places assises. Quelle catégorie de permis te faut-il ?"
+  },
+  "LAGSTIFNING-8-Q45": {
+    "stem": "Tu vas prendre un client à prix forfaitaire. Ton entreprise n'utilise pas de système de planification commune. Quand dois-tu calculer le prix de la course ?"
+  },
+  "LAGSTIFNING-8-Q46": {
+    "stem": "As-tu le droit d'arrêter ton taxi à un arrêt de bus balisé s'il n'y a aucun bus de ligne à proximité ?"
+  },
+  "LAGSTIFNING-8-Q47": {
+    "stem": "Dans certaines situations, tu dois rouler suffisamment lentement parce que le risque d'accident est élevé. Quelles deux images illustrent le mieux de telles situations ?"
+  },
+  "LAGSTIFNING-8-Q48": {
+    "stem": "Tu as terminé ton service en taxi. Sur le chemin du retour, tu veux faire des courses au magasin. Est-il permis de stationner sur l'une des trois places indiquées par le panonceau ?"
+  },
+  "LAGSTIFNING-8-Q49": {
+    "stem": "Tu arrives sur un lieu d'accident où les secours sont arrivés les premiers et ont installé le dispositif d'avertissement de l'image. Quelle réponse est correcte ?"
+  },
+  "LAGSTIFNING-8-Q5": {
+    "stem": "Tu vas garer ton taxi sur un parking où ces panneaux sont installés. Le stationnement y est-il gratuit ?"
+  },
+  "LAGSTIFNING-8-Q50": {
+    "stem": "Tu as des clients à bord et tu dois prendre la sortie à droite de l'autoroute, comme sur l'image. Comment le faire en douceur ?"
+  },
+  "LAGSTIFNING-8-Q52": {
+    "stem": "Comment dois-tu te comporter si tu vois un policier comme celui de l'image ?"
+  },
+  "LAGSTIFNING-8-Q53": {
+    "stem": "Tu comptes stationner un mardi à 15h00, et ce jour n'est pas férié. Au plus tard quand dois-tu venir rechercher la voiture ?"
+  },
+  "LAGSTIFNING-8-Q54": {
+    "stem": "As-tu le droit de faire demi-tour sur l'autoroute par l'ouverture visible sur l'image ?"
+  },
+  "LAGSTIFNING-8-Q55": {
+    "stem": "Tu vas tourner à gauche au carrefour de l'image. Dois-tu céder le passage à la voiture qui vient en face ?"
+  },
+  "LAGSTIFNING-8-Q56": {
+    "stem": "Tu comptes continuer tout droit à ce carrefour, mais tu t'es trompé de voie. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q57": {
+    "stem": "À quoi dois-tu faire le plus attention dans la situation de l'image ?"
+  },
+  "LAGSTIFNING-8-Q58": {
+    "stem": "Tu vas sortir d'un garage. Dois-tu céder le passage à quelqu'un ?"
   },
   "LAGSTIFNING-8-Q59": {
     "stem": "Tu es arrêté lors d'un contrôle de police le 19 septembre à 16.00 et tu présentes cette feuille du livret de temps. Le temps de repos pris est-il suffisant ?"
   },
+  "LAGSTIFNING-8-Q6": {
+    "stem": "Sur l'image, les voies se rejoignent en une seule. Quelle règle s'applique dans cette situation ?"
+  },
+  "LAGSTIFNING-8-Q60": {
+    "stem": "Tu as terminé ton service et tu vas garer ton taxi à un endroit portant la combinaison de panneaux de l'image. Que signifie cette combinaison ?"
+  },
+  "LAGSTIFNING-8-Q61": {
+    "stem": "Tu vas tourner à droite sur l'image. Que signifie ce feu pour toi ?"
+  },
+  "LAGSTIFNING-8-Q62": {
+    "stem": "Tu roules sur une route portant le panneau de l'image A. Tu dois tourner à gauche comme sur l'image B. Où dois-tu placer ta voiture ?"
+  },
+  "LAGSTIFNING-8-Q63": {
+    "stem": "Que signifie le geste du policier lorsqu'il lève et abaisse la main comme sur l'image ?"
+  },
+  "LAGSTIFNING-8-Q64": {
+    "stem": "Tu vas t'arrêter pour déposer un passager comme sur l'image. Comment dois-tu te comporter ?"
+  },
   "LAGSTIFNING-8-Q7": {
     "stem": "Tu reçois une course à prix fixe. Ton entreprise de taxi n'applique pas de système externe de co-planification. Quand dois-tu au plus tard l'enregistrer dans le taximètre ?"
+  },
+  "LAGSTIFNING-8-Q8": {
+    "stem": "Qui est responsable du port de la ceinture par les enfants de moins de 15 ans lors d'un transport scolaire ?"
+  },
+  "LAGSTIFNING-8-Q9": {
+    "stem": "Tu as déposé un client dans une propriété de la rue de l'image et tu dois maintenant en sortir. Dois-tu céder le passage ?"
+  },
+  "research-0003": {
+    "stem": "Quand proposer un reçu taximètre ?"
+  },
+  "research-0008": {
+    "stem": "Ceinture pour le chauffeur taxi ?"
+  },
+  "research-0014": {
+    "stem": "Quel est l'intervalle maximal entre deux contrôles d'un taximètre ?"
   },
   "research-0016": {
     "stem": "Quelle affirmation est correcte au sujet du tarif à prix fixe en taxi ?"
   },
   "research-0030": {
     "stem": "Après quelles courses dois-tu imprimer un reçu ou une lettre de voiture depuis le taximètre ?"
+  },
+  "research-0032": {
+    "stem": "Quand le taximètre doit-il normalement être contrôlé ?"
   },
   "research-0034": {
     "stem": "Où le rapport de contrôle et de plombage du taximètre doit-il être conservé ?"
@@ -6287,6 +7605,9 @@
   },
   "research-0121": {
     "stem": "Un taxi a une prise en charge de 55 kr, 23 kr/km et 7 kr/min. Le client fait 8 km et le trajet dure 12 minutes. Quel est le prix ?"
+  },
+  "research-0131": {
+    "stem": "Que signifie une ligne jaune continue sur le bord du trottoir ?"
   },
   "rs-fri-pris": {
     "stem": "Y a-t-il un tarif légal plafond ?"
@@ -6951,14 +8272,587 @@
   "rs-yt-prisresa-jamfor": {
     "stem": "Qu'est-ce que le jämförpris ?"
   },
+  "S_KERHET-1-Q1": {
+    "stem": "Tu prends en charge une personne malvoyante avec un chien guide portant un harnais blanc. Comment dois-tu aider ce client ?"
+  },
+  "S_KERHET-1-Q10": {
+    "stem": "Un client à bord, diabétique, devient soudain confus. Que devrais-tu faire en premier lieu ?"
+  },
+  "S_KERHET-1-Q11": {
+    "stem": "Un client ressent soudain une douleur sourde dans la poitrine qui s'étend vers les bras. Quelle en est la cause probable ? Quelle réponse est correcte ?"
+  },
+  "S_KERHET-1-Q12": {
+    "stem": "Tu as dans ton taxi une personne diabétique. Elle devient soudain pâle, en sueurs froides et irritable. Que devrais-tu faire ?"
+  },
+  "S_KERHET-1-Q13": {
+    "stem": "Quels sont les symptômes d'une personne atteinte de démence ?"
+  },
+  "S_KERHET-1-Q14": {
+    "stem": "Pourquoi la vitesse a-t-elle été abaissée de 50 km/h à 30 km/h dans certaines agglomérations ?"
+  },
+  "S_KERHET-1-Q15": {
+    "stem": "Tu arrives sur un lieu d'accident où une personne est pâle et couverte de sueurs froides. Devrais-tu lui donner à boire ?"
+  },
+  "S_KERHET-1-Q16": {
+    "stem": "Le conducteur de l'image va tourner à droite. Comment doit-il se comporter en sécurité ?"
+  },
+  "S_KERHET-1-Q17": {
+    "stem": "De quelle maladie le texte de l'image parle-t-il ?"
+  },
+  "S_KERHET-1-Q19": {
+    "stem": "C'est l'automne et tu commences à utiliser le préchauffage moteur. À partir de quelle température son usage devient-il payant du point de vue de l'environnement et de la consommation ?"
+  },
+  "S_KERHET-1-Q20": {
+    "stem": "Que devrais-tu faire pour limiter l'impact environnemental d'un démarrage à froid ?"
+  },
+  "S_KERHET-1-Q21": {
+    "stem": "La voiture tire fortement de travers vers la droite quand tu roules, et le pneu est usé de façon irrégulière comme sur l'image. À quoi cela est-il dû ?"
+  },
+  "S_KERHET-1-Q22": {
+    "stem": "À quoi dois-tu d'abord te préparer dans cette situation ?"
+  },
+  "S_KERHET-1-Q23": {
+    "stem": "Quelle technique de levage devrais-tu utiliser pour soulever un objet lourd ?"
+  },
+  "S_KERHET-1-Q24": {
+    "stem": "Tu prends en charge un client atteint d'une surdité sévère. Que dois-tu faire pour qu'il comprenne ce que tu dis ?"
+  },
+  "S_KERHET-1-Q25": {
+    "stem": "Quels sont les signes caractéristiques d'une personne atteinte de polyarthrite rhumatoïde ?"
+  },
+  "S_KERHET-1-Q28": {
+    "stem": "Tu dois faire un long trajet qui commence à 22h00 et se termine à 03h00. Quand le risque d'accident lié à la fatigue est-il le plus élevé ?"
+  },
+  "S_KERHET-1-Q29": {
+    "stem": "Ta voiture a un airbag à la place du conducteur et à la place du passager avant. Quelle réponse est correcte ?"
+  },
+  "S_KERHET-1-Q3": {
+    "stem": "Tu conduis une voiture à boîte manuelle. Comment procéder, du point de vue de l'environnement, pour réduire la consommation de carburant ?"
+  },
+  "S_KERHET-1-Q30": {
+    "stem": "Quel est normalement l'équipement le plus efficace de la voiture pour protéger les passagers d'un choc frontal ?"
+  },
+  "S_KERHET-1-Q31": {
+    "stem": "Pourquoi le liquide de frein doit-il être remplacé à intervalles réguliers ?"
+  },
+  "S_KERHET-1-Q32": {
+    "stem": "Ce voyant s'allume au tableau de bord pendant que tu roules. En contrôlant le liquide de frein, tu vois qu'il est sous le niveau minimum. Que devrais-tu faire ?"
+  },
+  "S_KERHET-1-Q33": {
+    "stem": "Que signifie le voyant de l'image ?"
+  },
+  "S_KERHET-1-Q34": {
+    "stem": "Tu dois transporter un vélo mais tu n'as pas de place à l'intérieur de la voiture. Où le placer, du point de vue de l'environnement et de la consommation ?"
+  },
+  "S_KERHET-1-Q35": {
+    "stem": "Quand faut-il passer du siège auto à un rehausseur, par exemple ?"
+  },
+  "S_KERHET-1-Q36": {
+    "stem": "Un conducteur qui parle au téléphone a une capacité de réaction dégradée. Le temps de réaction normal est de 1 seconde ; au téléphone à 70 km/h, il passe à 2 secondes. Quelle est alors la distance de réaction à 70 km/h ?"
+  },
+  "S_KERHET-1-Q37": {
+    "stem": "À quoi dois-tu veiller quand tu contrôles la pression recommandée des pneus ?"
+  },
+  "S_KERHET-1-Q38": {
+    "stem": "Tu veux laver ta voiture mais tu n'as pas accès à une station de lavage. Où la laver pour nuire le moins possible à l'environnement ?"
+  },
+  "S_KERHET-1-Q39": {
+    "stem": "Nous sommes le 1er février. Tu vas atteler une remorque à ton taxi, qui est équipé de pneus cloutés. Quels pneus dois-tu avoir sur la remorque ?"
+  },
   "S_KERHET-1-Q4": {
     "stem": "Le taximètre doit être contrôlé à différentes occasions. Quand dois-tu normalement faire contrôler le taximètre de ton taxi ?"
+  },
+  "S_KERHET-1-Q40": {
+    "stem": "Nous savons que les conducteurs peuvent souffrir de troubles du sommeil et de fatigue, ce qui nuit à la sécurité routière. Qu'est-ce qui est vrai ?"
+  },
+  "S_KERHET-1-Q5": {
+    "stem": "Pourquoi les enfants ont-ils du mal à se comporter de façon sûre dans la circulation ?"
+  },
+  "S_KERHET-1-Q6": {
+    "stem": "Tu dois placer un chargement dans le coffre. Comment faut-il t'y prendre ?"
+  },
+  "S_KERHET-1-Q7": {
+    "stem": "Que se passe-t-il si tu places une charge lourde à l'arrière de la voiture ?"
+  },
+  "S_KERHET-1-Q8": {
+    "stem": "À partir de quel âge les enfants commencent-ils normalement à se comporter de façon sûre dans la circulation ?"
+  },
+  "S_KERHET-1-Q9": {
+    "stem": "Tu vois sur l'image que le pneu est usé de façon irrégulière. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-2-Q1": {
+    "stem": "Dans le cas de quelle maladie une personne peut-elle normalement manger ou boire ?"
+  },
+  "S_KERHET-2-Q10": {
+    "stem": "Que ne devrais-tu pas faire en soulevant une charge ?"
   },
   "S_KERHET-2-Q11": {
     "stem": "Quel sjukdom beskrivs de texten i bilden?"
   },
+  "S_KERHET-2-Q12": {
+    "stem": "Cela change-t-il quelque chose d'utiliser une huile minérale ou une huile entièrement synthétique dans le moteur de ta voiture ?"
+  },
+  "S_KERHET-2-Q13": {
+    "stem": "Tu fais un contrôle de sécurité sur ta voiture particulière et tu constates que le niveau du réservoir de liquide de frein est bas. Que devrais-tu faire ?"
+  },
+  "S_KERHET-2-Q14": {
+    "stem": "Que devrait faire un conducteur pour que l'objectif de la Vision Zéro soit atteint ?"
+  },
+  "S_KERHET-2-Q15": {
+    "stem": "Pourquoi ne devrais-tu pas utiliser le téléphone en conduisant ?"
+  },
+  "S_KERHET-2-Q16": {
+    "stem": "Quel groupe de conducteurs a du mal à embrasser du regard la circulation dans un carrefour à temps ?"
+  },
+  "S_KERHET-2-Q17": {
+    "stem": "Tu arrives le premier en voiture sur un accident de la route impliquant plusieurs véhicules. Que devrais-tu faire en premier ?"
+  },
+  "S_KERHET-2-Q18": {
+    "stem": "Tu arrives sur un accident de la route où une personne a froid. Elle est pâle et couverte de sueurs froides. Comment dois-tu l'aider ?"
+  },
+  "S_KERHET-2-Q19": {
+    "stem": "À quoi dois-tu porter le plus d'attention sur l'image ?"
+  },
+  "S_KERHET-2-Q2": {
+    "stem": "Quel type d'accidents un conducteur fatigué provoque-t-il ?"
+  },
+  "S_KERHET-2-Q20": {
+    "stem": "Tu as à bord de ton taxi un client ivre qui se comporte de façon agressive et menaçante. Comment dois-tu faire ?"
+  },
+  "S_KERHET-2-Q21": {
+    "stem": "Quelle réponse est correcte concernant la pression des pneus ?"
+  },
+  "S_KERHET-2-Q22": {
+    "stem": "Tu as à bord de ton taxi un client sous l'emprise de stupéfiants et menaçant. Comment devrais-tu faire ?"
+  },
+  "S_KERHET-2-Q23": {
+    "stem": "Tu vois sur l'image le verrou de sécurité enfants sur l'une des portes arrière. Comment fonctionne-t-il lorsqu'il est activé ?"
+  },
+  "S_KERHET-2-Q24": {
+    "stem": "Lequel des pneus ci-dessous peux-tu utiliser sans danger ?"
+  },
+  "S_KERHET-2-Q25": {
+    "stem": "Tu as attelé une remorque légère à deux essieux. Tu roules sur chaussée glissante un jour de mars et ta voiture a des pneus cloutés. Son poids total est de 1 800 kg. La remorque doit-elle aussi avoir des pneus cloutés ?"
+  },
+  "S_KERHET-2-Q26": {
+    "stem": "Un client à bord commence à respirer lourdement et tu entends que sa respiration est gênée. Quelle peut en être la cause probable ?"
+  },
+  "S_KERHET-2-Q27": {
+    "stem": "Tu conduis un taxi. Quelle taille le client doit-il avoir pour s'asseoir à l'avant si ta voiture est équipée d'un airbag ?"
+  },
+  "S_KERHET-2-Q28": {
+    "stem": "Que dois-tu faire pour réduire des réparations coûteuses à l'approche de l'hiver ?"
+  },
+  "S_KERHET-2-Q3": {
+    "stem": "Pendant une course, un client s'effondre soudain et est pris de convulsions. Quelle est la cause probable ?"
+  },
+  "S_KERHET-2-Q30": {
+    "stem": "Qu'est-ce qui est exact au sujet du pot catalytique d'un véhicule à essence ?"
+  },
+  "S_KERHET-2-Q31": {
+    "stem": "Quel est l'effet sur les émissions de dioxyde de carbone, et donc sur l'environnement, quand tu réduis ta consommation de carburant ?"
+  },
+  "S_KERHET-2-Q32": {
+    "stem": "Le niveau de liquide de ta batterie est trop bas. Quel liquide dois-tu ajouter ?"
+  },
+  "S_KERHET-2-Q33": {
+    "stem": "Tu as une course à faire. En arrivant chez le client, tu vois qu'il est malvoyant. Comment dois-tu faire ?"
+  },
+  "S_KERHET-2-Q34": {
+    "stem": "Qu'entend-on par état démentiel ?"
+  },
+  "S_KERHET-2-Q35": {
+    "stem": "Lequel de ces repères désigne ce qu'il faut détacher pour libérer le déambulateur avant de le charger ?"
+  },
+  "S_KERHET-2-Q36": {
+    "stem": "Chaque année, de nombreuses personnes meurent parce qu'elles boivent de l'alcool et conduisent. Quel pourcentage des accidents mortels annuels se produit sous l'emprise de l'alcool ?"
+  },
+  "S_KERHET-2-Q37": {
+    "stem": "Tu arrives sur un accident de la route où plusieurs personnes saignent. Quelle protection dois-tu utiliser ?"
+  },
+  "S_KERHET-2-Q38": {
+    "stem": "À quoi dois-tu penser ici ?"
+  },
+  "S_KERHET-2-Q39": {
+    "stem": "Tu as crevé un pneu et tu as dû monter la roue de secours provisoire d'origine (roue galette). Sur quelle distance peux-tu rouler avec elle ?"
+  },
   "S_KERHET-2-Q4": {
     "stem": "Quelle peut être la conséquence de conduire avec un filtre à air encrassé dans ton taxi ?"
+  },
+  "S_KERHET-2-Q40": {
+    "stem": "À quelle période de l'année les pneus hiver sont-ils obligatoires par la loi, même si l'état hivernal de la chaussée n'est pas établi ?"
+  },
+  "S_KERHET-2-Q5": {
+    "stem": "Tu conduis une voiture particulière de 2008 et tu comptes changer les pneus pour une autre dimension. Peux-tu choisir la dimension que tu veux ?"
+  },
+  "S_KERHET-2-Q6": {
+    "stem": "Ta voiture est équipée de pneus marqués M+S, pour « mud and snow ». Que signifie ce marquage ?"
+  },
+  "S_KERHET-2-Q7": {
+    "stem": "Dans le rétroviseur, tu vois que tu vas être heurté par l'arrière. Que devrais-tu faire pour éviter une lésion cervicale ?"
+  },
+  "S_KERHET-2-Q8": {
+    "stem": "Tu as acheté un désodorisant « sapin » et tu l'as accroché dans ton taxi. Peut-il provoquer des allergies ou des troubles de santé chez les clients ?"
+  },
+  "S_KERHET-2-Q9": {
+    "stem": "Tu conduis un taxi et tu dois emmener ton chien chez le vétérinaire. Cela peut-il avoir une conséquence pour le client suivant ?"
+  },
+  "S_KERHET-3-Q1": {
+    "stem": "Une personne doit prendre un taxi un vendredi matin à 10h00. Le trajet prend 30 minutes pour 10 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-3-Q10": {
+    "stem": "Tu roules sur la route de l'image et tu crèves soudain du pneu avant gauche. Tu vas t'arrêter sur l'accotement pour le changer. Quel est le plus grand risque ici ?"
+  },
+  "S_KERHET-3-Q11": {
+    "stem": "Combien de temps avant le départ dois-tu brancher le préchauffage moteur par -15 degrés pour que le moteur soit chaud ?"
+  },
+  "S_KERHET-3-Q12": {
+    "stem": "Quel gaz sortant de la voiture contribue à l'effet de serre ?"
+  },
+  "S_KERHET-3-Q14": {
+    "stem": "Quels sont les signes caractéristiques d'une personne atteinte d'infirmité motrice cérébrale (IMC) ?"
+  },
+  "S_KERHET-3-Q15": {
+    "stem": "Que signifie ce symbole ?"
+  },
+  "S_KERHET-3-Q16": {
+    "stem": "Tu prends en charge une personne qui porte ce symbole sur son vêtement. De quelle maladie souffre-t-elle ?"
+  },
+  "S_KERHET-3-Q17": {
+    "stem": "Tu fumes à l'extérieur de la voiture et tu ne souffles pas dedans. Cela a-t-il une conséquence pour le passager suivant ?"
+  },
+  "S_KERHET-3-Q18": {
+    "stem": "À quel groupe la schizophrénie appartient-elle ?"
+  },
+  "S_KERHET-3-Q2": {
+    "stem": "Quel est l'argument environnemental le plus fort pour acheter des pneus rechapés plutôt que des pneus neufs ?"
+  },
+  "S_KERHET-3-Q20": {
+    "stem": "À quoi dois-tu faire attention dans cette situation ?"
+  },
+  "S_KERHET-3-Q21": {
+    "stem": "La vitesse est ici limitée à 30 km/h et tu roules à 30 km/h. Comment dois-tu te comporter ?"
+  },
+  "S_KERHET-3-Q23": {
+    "stem": "Tu prends une course, un de tes collègues s'est montré jaloux de toi et cela t'a agacé. Est-ce que cela a une conséquence sur la course suivante ?"
+  },
+  "S_KERHET-3-Q27": {
+    "stem": "Tu as beaucoup chargé la voiture, elle est lourdement chargée. Comment peut-elle se comporter ?"
+  },
+  "S_KERHET-3-Q28": {
+    "stem": "Si ce voyant s'allume au tableau de bord, quelle devrait être la première mesure à prendre ?"
+  },
+  "S_KERHET-3-Q29": {
+    "stem": "Quelle affirmation est correcte au sujet du pot catalytique ?"
+  },
+  "S_KERHET-3-Q3": {
+    "stem": "Pourquoi ne devrais-tu pas garder le coffre de toit si tu ne l'utilises pas ?"
+  },
+  "S_KERHET-3-Q30": {
+    "stem": "Tu fais un long trajet et tu te sens fatigué. Quelle est la mesure la plus efficace pour réduire le risque de micro-sommeil ?"
+  },
+  "S_KERHET-3-Q31": {
+    "stem": "De quelle maladie souffre une personne atteinte d'un trouble psychique ?"
+  },
+  "S_KERHET-3-Q32": {
+    "stem": "Un médecin t'a prescrit un médicament. Qui est responsable du fait que toi, qui prends ce médicament, te comportes en sécurité dans la circulation ?"
+  },
+  "S_KERHET-3-Q33": {
+    "stem": "Quel pictogramme signale une personne atteinte d'épilepsie ?"
+  },
+  "S_KERHET-3-Q34": {
+    "stem": "Comment savoir que le servofrein fonctionne ?"
+  },
+  "S_KERHET-3-Q36": {
+    "stem": "Ton style de conduite peut-il influer sur la consommation d'essence ?"
+  },
+  "S_KERHET-3-Q37": {
+    "stem": "Conduire dans la circulation doit se faire de manière sûre. Voici trois personnes : l'une a bu de l'alcool, l'autre est épuisée après avoir conduit toute la nuit, la troisième a pris un médicament prescrit par un médecin. Parmi ces personnes, laquelle n'a pas le droit de conduire ?"
+  },
+  "S_KERHET-3-Q38": {
+    "stem": "Tu prends en charge un client accompagné d'un assistant. Comment dois-tu faire ?"
+  },
+  "S_KERHET-3-Q39": {
+    "stem": "Tu vas transporter dans ton taxi une personne en fauteuil roulant. Dois-tu utiliser la ceinture ?"
+  },
+  "S_KERHET-3-Q4": {
+    "stem": "Cela change-t-il quelque chose d'utiliser des pneus larges à profil bas ou des pneus étroits standard ?"
+  },
+  "S_KERHET-3-Q40": {
+    "stem": "Que dois-tu faire pour réduire des frais de réparation coûteux à l'approche de l'hiver ?"
+  },
+  "S_KERHET-3-Q5": {
+    "stem": "Tu as acheté deux pneus neufs pour remplacer tes pneus usés. Que dois-tu faire des pneus usés ?"
+  },
+  "S_KERHET-3-Q6": {
+    "stem": "Quel pictogramme signale une personne atteinte d'une maladie neurologique ?"
+  },
+  "S_KERHET-3-Q7": {
+    "stem": "Tu entends un bruit de frottement métallique quand tu freines. Peux-tu prendre une mesure ?"
+  },
+  "S_KERHET-3-Q8": {
+    "stem": "À quelles forces un être humain peut-il être soumis lors d'un choc frontal entre deux véhicules équivalents à 70 km/h ?"
+  },
+  "S_KERHET-3-Q9": {
+    "stem": "Un client à bord a soudain du mal à respirer. Il porte le symbole de l'image. Comment devrais-tu réagir ?"
+  },
+  "S_KERHET-4-Q1": {
+    "stem": "En contrôlant le circuit de freinage hydraulique de ta voiture, tu constates que la pédale descend lentement vers le plancher. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-4-Q10": {
+    "stem": "Laquelle des propositions suivantes est correcte pour éviter des frais de réparation élevés ?"
+  },
+  "S_KERHET-4-Q11": {
+    "stem": "Tu as un client à mobilité réduite atteint de la maladie de Parkinson, avec des bagages. Tu vas à un hôtel dont la rue d'entrée est interdite à la circulation. Quelle est la règle concernant les bagages ?"
+  },
+  "S_KERHET-4-Q12": {
+    "stem": "Ton taxi est équipé d'un système de navigation. Quel type de GPS gêne le plus le chauffeur ?"
+  },
+  "S_KERHET-4-Q13": {
+    "stem": "Dans quel cas as-tu le droit de raconter ce qui s'est passé dans la voiture pendant une course ?"
+  },
+  "S_KERHET-4-Q14": {
+    "stem": "Comment remarques-tu qu'une conduite de frein d'un circuit à double freinage a cédé, en dehors du voyant qui s'allume ?"
+  },
+  "S_KERHET-4-Q15": {
+    "stem": "Tu constates que le freinage est retardé et tu comprends que les garnitures de frein sont humides. Que devrais-tu faire ?"
+  },
+  "S_KERHET-4-Q16": {
+    "stem": "Combien de personnes meurent chaque année parce que quelqu'un a dépassé la vitesse autorisée ?"
+  },
+  "S_KERHET-4-Q17": {
+    "stem": "Rouler avec la galerie de toit sur la voiture change-t-il quelque chose pour la consommation et l'environnement ?"
+  },
+  "S_KERHET-4-Q18": {
+    "stem": "Quel type d'accidents l'usage du téléphone provoque-t-il ?"
+  },
+  "S_KERHET-4-Q19": {
+    "stem": "Tu arrives sur un accident de la route. Comment dois-tu aider une personne qui saigne abondamment de la jambe ?"
+  },
+  "S_KERHET-4-Q2": {
+    "stem": "Tu as changé l'huile moteur de ta voiture. Que dois-tu faire de l'huile usagée ?"
+  },
+  "S_KERHET-4-Q20": {
+    "stem": "Qu'est-ce qui est exact au sujet des émissions de dioxyde de carbone de la voiture ?"
+  },
+  "S_KERHET-4-Q22": {
+    "stem": "Pourquoi dois-tu garder le taxi propre ?"
+  },
+  "S_KERHET-4-Q23": {
+    "stem": "Paralysie d'un côté du corps, perte de sensibilité, troubles de la parole et de la vue. Quelle maladie donne ces symptômes ?"
+  },
+  "S_KERHET-4-Q24": {
+    "stem": "Tu sors d'une propriété et tu sens des vibrations dans le volant. Tu t'arrêtes, tu contrôles les pneus et tu constates qu'un pneu avant est usé de façon irrégulière. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-4-Q25": {
+    "stem": "Quel liquide faut-il ajouter au besoin dans la batterie, et jusqu'à quel niveau ?"
+  },
+  "S_KERHET-4-Q26": {
+    "stem": "Tu as l'affichage des prix de l'image. Tu conduis un client un jour ouvré à 07h00. Le trajet a pris 30 minutes pour 20 km. Quel est le prix de la course ?"
+  },
+  "S_KERHET-4-Q27": {
+    "stem": "Tu conduis au mois de mars avec des pneus hiver non cloutés. Quelle est la profondeur de sculpture minimale autorisée sur tes pneus ?"
+  },
+  "S_KERHET-4-Q28": {
+    "stem": "Que présente une personne en train de faire un infarctus ?"
+  },
+  "S_KERHET-4-Q29": {
+    "stem": "Tu dois soulever un objet lourd. Comment faut-il t'y prendre ?"
+  },
+  "S_KERHET-4-Q3": {
+    "stem": "Quel liquide dois-tu mettre dans le réservoir montré sur l'image ?"
+  },
+  "S_KERHET-4-Q30": {
+    "stem": "Que signifie ce symbole ?"
+  },
+  "S_KERHET-4-Q31": {
+    "stem": "Un passager monte dans ton taxi en portant ce badge. Que peut-il signifier ?"
+  },
+  "S_KERHET-4-Q32": {
+    "stem": "Que signifie le badge d'identification ci-contre ?"
+  },
+  "S_KERHET-4-Q33": {
+    "stem": "Tu as à bord une personne qui porte le badge de l'image sur son vêtement. Que signifie-t-il ?"
+  },
+  "S_KERHET-4-Q34": {
+    "stem": "Tu as un client qui porte autour du cou le symbole de l'image. Quels symptômes cette maladie peut-elle provoquer ?"
+  },
+  "S_KERHET-4-Q35": {
+    "stem": "Combien de personnes meurent chaque année dans la circulation sous l'emprise de l'alcool ?"
+  },
+  "S_KERHET-4-Q36": {
+    "stem": "Combien de personnes ont été tuées chaque année dans la circulation au cours des cinq dernières années ?"
+  },
+  "S_KERHET-4-Q37": {
+    "stem": "À quel moment de la journée le risque de fatigue est-il le plus élevé ?"
+  },
+  "S_KERHET-4-Q38": {
+    "stem": "Tu prends un médicament dont tu ne sais pas s'il est dangereux pour la conduite, mais il te donne des vertiges. Peux-tu être condamné pour conduite sous l'emprise de substances si tu conduis malgré tout ?"
+  },
+  "S_KERHET-4-Q39": {
+    "stem": "Un client dans ton taxi fait une crise d'asthme, avec toux et difficulté à respirer. Comment dois-tu l'aider ?"
+  },
+  "S_KERHET-4-Q4": {
+    "stem": "Quand le risque de se sentir fatigué, « somnolent », est-il le plus élevé ?"
+  },
+  "S_KERHET-4-Q5": {
+    "stem": "Quelle affirmation reflète le mieux l'idée fondamentale de la « Vision Zéro » ?"
+  },
+  "S_KERHET-4-Q7": {
+    "stem": "Tu roules sur autoroute et tu sens des vibrations dans le volant. Comment préserver la durée de vie des pneus ?"
+  },
+  "S_KERHET-4-Q8": {
+    "stem": "Tu es impliqué dans un accident où des personnes ont été blessées. Tu n'as aucune responsabilité dans l'accident. Dois-tu malgré tout t'arrêter et aider les blessés ?"
+  },
+  "S_KERHET-4-Q9": {
+    "stem": "Quel carburant renouvelable est aujourd'hui mélangé à toute l'essence vendue en Suède ?"
+  },
+  "S_KERHET-5-Q1": {
+    "stem": "Un client part avec toi pour un long trajet et il a besoin de son déambulateur pour marcher. Comment faire pour l'aider ?"
+  },
+  "S_KERHET-5-Q10": {
+    "stem": "Tu conduis un taxi immatriculé en 2008 et tu vas monter les pneus hiver. Le lendemain du montage, tu sens des vibrations et tu entends un bruit venant d'une roue. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-5-Q11": {
+    "stem": "Tu contrôles l'huile moteur et tu constates qu'elle est gris blanchâtre. Quelle est la cause la plus probable ?"
+  },
+  "S_KERHET-5-Q12": {
+    "stem": "Tu sens des vibrations dans le volant en roulant. Quelle en est la cause ?"
+  },
+  "S_KERHET-5-Q13": {
+    "stem": "Comment la Vision Zéro doit-elle être atteinte ?"
+  },
+  "S_KERHET-5-Q14": {
+    "stem": "Quel est le type d'accident le plus fréquent lors d'un virage à gauche depuis une route principale ?"
+  },
+  "S_KERHET-5-Q15": {
+    "stem": "Comment dois-tu arrimer un chargement dans ton taxi ?"
+  },
+  "S_KERHET-5-Q16": {
+    "stem": "Lequel des éléments suivants influe le plus sur la conduite en cas d'aquaplanage ?"
+  },
+  "S_KERHET-5-Q17": {
+    "stem": "Qu'est-ce qui influe le plus sur l'usure des pneus ?"
+  },
+  "S_KERHET-5-Q2": {
+    "stem": "Combien de personnes meurent chaque année dans des accidents où l'un des impliqués était sous l'emprise de l'alcool ?"
+  },
+  "S_KERHET-5-Q21": {
+    "stem": "Pourquoi une personne mesurant moins de 140 cm doit-elle être assise à l'arrière avec tous les dispositifs de retenue ?"
+  },
+  "S_KERHET-5-Q22": {
+    "stem": "Tu as pris un médicament et tu ne sais pas s'il peut provoquer un accident sur la route. Que dois-tu faire parmi les réponses suivantes ?"
+  },
+  "S_KERHET-5-Q23": {
+    "stem": "Combien de vies sauverions-nous chaque année si nous portions tous toujours la ceinture de sécurité ?"
+  },
+  "S_KERHET-5-Q24": {
+    "stem": "Tu as freiné fortement et tu as senti des pulsations dans la pédale de frein en entendant un bruit mécanique. À quoi cela est-il dû ?"
+  },
+  "S_KERHET-5-Q25": {
+    "stem": "Tu transportes un enfant de 6 ans. Quel équipement dois-tu utiliser pour lui ?"
+  },
+  "S_KERHET-5-Q26": {
+    "stem": "Tu prends en charge un client avec un enfant de 17 mois. Ils n'ont pas de dispositif de retenue pour l'enfant et tu ne dois pas utiliser de rehausseur. Quel équipement convient ?"
+  },
+  "S_KERHET-5-Q27": {
+    "stem": "Si ce voyant s'allume à ton tableau de bord, quelle peut être la panne ?"
+  },
+  "S_KERHET-5-Q28": {
+    "stem": "Un client avec son enfant a apporté un siège auto. Comment faire pour l'aider ?"
+  },
+  "S_KERHET-5-Q29": {
+    "stem": "Quelle est la meilleure façon de vérifier que la direction assistée fonctionne ?"
+  },
+  "S_KERHET-5-Q3": {
+    "stem": "Qu'est-ce qui est vrai des substances dangereuses présentes dans les gaz d'échappement des voitures ?"
+  },
+  "S_KERHET-5-Q30": {
+    "stem": "Quelle affirmation est correcte au sujet de la direction assistée ?"
+  },
+  "S_KERHET-5-Q31": {
+    "stem": "Quelle affirmation est correcte au sujet de l'aquaplanage ?"
+  },
+  "S_KERHET-5-Q32": {
+    "stem": "Tu roules avec des pneus radiaux. Quel effet la pression d'air a-t-elle sur eux ?"
+  },
+  "S_KERHET-5-Q33": {
+    "stem": "Tu conduis une voiture de 2008 au mois de mars. Elle a des pneus non cloutés et tu vas atteler une remorque. Quels pneus dois-tu utiliser sur la remorque ?"
+  },
+  "S_KERHET-5-Q36": {
+    "stem": "Tu conduis un véhicule adapté aux fauteuils roulants et on te confie un transport adapté avec une personne en fauteuil. Comment dois-tu faire ?"
+  },
+  "S_KERHET-5-Q37": {
+    "stem": "Si ce voyant s'allume au tableau de bord, quelle en est la cause probable ?"
+  },
+  "S_KERHET-5-Q38": {
+    "stem": "Que signifie le fait qu'une voiture soit équipée d'un circuit de freinage à double circuit ?"
+  },
+  "S_KERHET-5-Q39": {
+    "stem": "Tu roules sur une route de campagne et tu heurtes un sanglier. Comment dois-tu te comporter ?"
+  },
+  "S_KERHET-5-Q4": {
+    "stem": "Tu conduis une voiture un jour de janvier. Son poids total est de 2 000 kg et elle est équipée de pneus cloutés. Tu vas y atteler une remorque. Celle-ci doit-elle aussi avoir des pneus cloutés ?"
+  },
+  "S_KERHET-5-Q40": {
+    "stem": "Tu arrives sur un lieu d'accident impliquant un motocycliste. Dois-tu lui retirer son casque ?"
+  },
+  "S_KERHET-5-Q5": {
+    "stem": "On te confie une course avec une personne fortement alcoolisée mais de bonne humeur. Comment devrais-tu faire ?"
+  },
+  "S_KERHET-5-Q6": {
+    "stem": "Un client à bord devient soudain pâle, en sueurs froides, tremblant et irritable. Quelle est la cause la plus probable ?"
+  },
+  "S_KERHET-5-Q7": {
+    "stem": "Au-delà de quelle température extérieure le préchauffage moteur électrique ne devrait-il pas être utilisé ?"
+  },
+  "S_KERHET-5-Q8": {
+    "stem": "Qu'est-ce qui allonge ton temps de réaction au volant ?"
+  },
+  "S_KERHET-5-Q9": {
+    "stem": "Tu prends en charge un client qui porte autour du cou le symbole de l'image. Soudain, il a mal aux bras et au dos. Que devrais-tu faire immédiatement ?"
+  },
+  "S_KERHET-6-Q1": {
+    "stem": "La chaussée est glissante et tu conduis une traction avant. Que se passe-t-il quand tu tournes ?"
+  },
+  "S_KERHET-6-Q10": {
+    "stem": "Tu dois tourner à gauche au carrefour de l'image. Comment dois-tu te comporter ?"
+  },
+  "S_KERHET-6-Q11": {
+    "stem": "À partir de quelle taille une personne est-elle en sécurité à l'avant si l'airbag de ta voiture est activé ?"
+  },
+  "S_KERHET-6-Q12": {
+    "stem": "Tu dois transporter deux personnes un mardi matin à 05h00. Le trajet fait 5 km et prend 10 minutes. Quel sera le prix de la course ?"
+  },
+  "S_KERHET-6-Q13": {
+    "stem": "Quelle maladie ou lésion se caractérise par des troubles de la vue et de l'audition, des difficultés de parole, une perte de sensibilité et parfois un handicap intellectuel ?"
+  },
+  "S_KERHET-6-Q14": {
+    "stem": "Tu conduis le taxi et tu te fais piquer par une guêpe près d'un œil. L'œil enfle, rougit et tu ne vois plus de cet œil. As-tu le droit de continuer à conduire ?"
+  },
+  "S_KERHET-6-Q15": {
+    "stem": "Tu conduis le taxi et la voiture tire de travers. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-6-Q16": {
+    "stem": "À quoi dois-tu penser quand tu utilises des câbles de démarrage ?"
+  },
+  "S_KERHET-6-Q18": {
+    "stem": "Tu conduis ton taxi un jour de mars et tu vas y atteler une remorque légère. Le poids total de ta voiture est de 1 800 kg et elle est équipée de pneus hiver non cloutés. Quels pneus faut-il sur la remorque ?"
+  },
+  "S_KERHET-6-Q19": {
+    "stem": "Le style de conduite, le comportement routier de la voiture et d'autres facteurs influent sur la consommation. Lequel des éléments suivants la réduit le plus ?"
+  },
+  "S_KERHET-6-Q2": {
+    "stem": "Tu prends en charge un client qui a une canne blanche. Qu'est-ce que cela indique ?"
+  },
+  "S_KERHET-6-Q20": {
+    "stem": "Comment remarques-tu que l'assistance de freinage ne fonctionne pas ?"
+  },
+  "S_KERHET-6-Q21": {
+    "stem": "La voiture est équipée de freins antiblocage ABS. Comment sais-tu qu'ils fonctionnent ?"
+  },
+  "S_KERHET-6-Q22": {
+    "stem": "Qu'est-ce que la démence ?"
   },
   "S_KERHET-6-Q23": {
     "stem": "Tu conduis un taxi et tu auras trois personnes à l'arrière. Tes pneus sont en 195/65 R15. Quelle pression dois-tu avoir dans les pneus arrière selon le tableau ?"
@@ -6966,8 +8860,101 @@
   "S_KERHET-6-Q24": {
     "stem": "Quel tarif dois-tu utiliser pour une course le mardi à 14 h 00 ?"
   },
+  "S_KERHET-6-Q25": {
+    "stem": "Tu dois transporter deux clients un lundi à 11h00. Le trajet fait 20 km et prend 25 minutes. Quel sera le prix de la course ?"
+  },
+  "S_KERHET-6-Q26": {
+    "stem": "Tu dois attendre deux clients pendant 58 minutes. Combien cela coûtera-t-il ?"
+  },
+  "S_KERHET-6-Q27": {
+    "stem": "La vue est un sens essentiel pour conduire. Si tu perds la vue d'un œil, quand peux-tu conduire un taxi à nouveau ?"
+  },
+  "S_KERHET-6-Q28": {
+    "stem": "Comment peux-tu détecter une fuite dans le circuit de freinage ?"
+  },
+  "S_KERHET-6-Q29": {
+    "stem": "Quelle est la cause probable si la pédale de frein est spongieuse sous le pied ?"
+  },
+  "S_KERHET-6-Q3": {
+    "stem": "Quelle réponse décrit le mieux les qualités des conducteurs mûrs pour atteindre la Vision Zéro ?"
+  },
+  "S_KERHET-6-Q30": {
+    "stem": "Quand as-tu le droit d'utiliser des pneus cloutés si l'état hivernal de la chaussée l'exige ?"
+  },
+  "S_KERHET-6-Q31": {
+    "stem": "Tu t'approches d'un carrefour sur route de campagne et tu vas tourner à gauche. Pour quel véhicule venant en face la vitesse est-elle la plus difficile à estimer ?"
+  },
+  "S_KERHET-6-Q32": {
+    "stem": "À quoi dois-tu d'abord te préparer quand tu dépasses un bus à l'arrêt ?"
+  },
+  "S_KERHET-6-Q33": {
+    "stem": "Tu arrives à un passage piéton où une personne aveugle avec une canne blanche veut traverser. Comment dois-tu l'aider ?"
+  },
+  "S_KERHET-6-Q34": {
+    "stem": "Comment dois-tu aider un client malvoyant ?"
+  },
+  "S_KERHET-6-Q35": {
+    "stem": "Tu es en route vers un client. Pendant le trajet, un opérateur t'appelle et t'annonce que tu attendras la personne de 14h15 à 14h51. Combien le temps d'attente coûtera-t-il au client ?"
+  },
+  "S_KERHET-6-Q36": {
+    "stem": "Tu charges le coffre de ta voiture. Tu as placé tout le poids à l'avant du coffre. Quelle charge dois-tu mettre sur les côtés ?"
+  },
+  "S_KERHET-6-Q37": {
+    "stem": "En roulant, tu constates que ce symbole s'allume au tableau de bord. Que dois-tu faire ?"
+  },
+  "S_KERHET-6-Q38": {
+    "stem": "Quel symbole signale la maladie d'Alzheimer ?"
+  },
+  "S_KERHET-6-Q39": {
+    "stem": "Ta voiture a une fuite dans la ligne d'échappement. Quel risque cela représente-t-il ?"
+  },
+  "S_KERHET-6-Q4": {
+    "stem": "Tu places le chargement bas et le plus en avant possible dans le coffre. Est-ce suffisant du point de vue de la sécurité ?"
+  },
+  "S_KERHET-6-Q40": {
+    "stem": "Quand le pot catalytique commence-t-il à fonctionner le plus efficacement ?"
+  },
+  "S_KERHET-6-Q5": {
+    "stem": "Quels signes présente une personne en hypoglycémie insulinique ?"
+  },
+  "S_KERHET-6-Q6": {
+    "stem": "Qu'est-ce qui caractérise une personne en train de faire un AVC ?"
+  },
+  "S_KERHET-6-Q7": {
+    "stem": "Si tu as chargé lourdement le coffre, cela change-t-il le comportement de la voiture en courbe ?"
+  },
+  "S_KERHET-6-Q8": {
+    "stem": "Un conducteur ayant bu peut-il être condamné pour conduite en état d'ivresse s'il a moins de 0,2 gramme d'alcool par litre de sang ?"
+  },
   "S_KERHET-6-Q9": {
     "stem": "Comment dois du starta un trasigt batteri sur une bil avec statkablar?"
+  },
+  "S_KERHET-7-Q1": {
+    "stem": "À quoi dois-tu penser en premier dans la situation de l'image ?"
+  },
+  "S_KERHET-7-Q10": {
+    "stem": "Quel liquide dois-tu mettre dans le réservoir montré sur l'image ?"
+  },
+  "S_KERHET-7-Q11": {
+    "stem": "Dans quelle situation le port de la ceinture est-il exigé lors d'un transport de marchandises ?"
+  },
+  "S_KERHET-7-Q12": {
+    "stem": "Quelle affirmation sur les freins ABS est correcte ?"
+  },
+  "S_KERHET-7-Q14": {
+    "stem": "Que devrais-tu faire si un client s'est évanoui dans la voiture et ne réagit pas quand tu lui parles ou que tu le secoues doucement ?"
+  },
+  "S_KERHET-7-Q15": {
+    "stem": "Que signifie l'allumage d'un voyant d'alerte ?"
+  },
+  "S_KERHET-7-Q16": {
+    "stem": "Quelle est la différence entre des freins à disque et des freins à tambour ?"
+  },
+  "S_KERHET-7-Q17": {
+    "stem": "On te confie une course pendant Pâques avec deux personnes, de la gare centrale de Växjö au terminal des ferries de Karlskrona. Le trajet a pris 1 heure et 55 minutes pour 125 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-7-Q18": {
+    "stem": "On te confie une course le lundi à 07h30 avec deux personnes, de l'aéroport d'Arlanda à la gare centrale d'Örebro. Le trajet a pris 2 heures et 15 minutes pour 201 km. Combien coûtera-t-il d'après l'affichage des prix ?"
   },
   "S_KERHET-7-Q19": {
     "stem": "Tu dois transporter 1 à 3 personnes un dimanche. Quel tarif dois-tu utiliser ?"
@@ -6975,23 +8962,365 @@
   "S_KERHET-7-Q20": {
     "stem": "Tu conduis un taxi et tu auras trois personnes à l'arrière. Tes pneus sont en 225/45 R17. Quelle pression dois-tu avoir dans les pneus arrière selon le tableau ?"
   },
+  "S_KERHET-7-Q2009": {
+    "stem": "Quelle profondeur de sculpture minimale dois-tu avoir sur les pneus quand la chaussée est en état estival ?"
+  },
+  "S_KERHET-7-Q21": {
+    "stem": "Que se passe-t-il si tu gonfles un pneu chaud ?"
+  },
+  "S_KERHET-7-Q22": {
+    "stem": "Tu heurtes un sanglier. Qu'es-tu obligé de faire ?"
+  },
+  "S_KERHET-7-Q23": {
+    "stem": "Quel effet une pression insuffisante des pneus a-t-elle sur les émissions ?"
+  },
+  "S_KERHET-7-Q24": {
+    "stem": "Un enfant de moins de 3 ans peut-il voyager en taxi sans dispositif de retenue adapté ?"
+  },
+  "S_KERHET-7-Q25": {
+    "stem": "À quel endroit de l'image dois-tu faire l'appoint de liquide de refroidissement ?"
+  },
+  "S_KERHET-7-Q26": {
+    "stem": "Un passager adulte est assis sans ceinture à l'arrière de ta voiture. Combien de fois son poids corporel atteint son poids au moment du choc si tu heurtes un poids lourd de face à environ 50 km/h ?"
+  },
+  "S_KERHET-7-Q27": {
+    "stem": "Un client porte la main à sa poitrine, a du mal à respirer, devient pâle et couvert de sueurs froides. Que devrais-tu faire en premier ?"
+  },
+  "S_KERHET-7-Q28": {
+    "stem": "Tu conduis un véhicule de transport adapté. Comment un fauteuil roulant doit-il être arrimé pendant le trajet ?"
+  },
+  "S_KERHET-7-Q29": {
+    "stem": "On te confie une course à Pâques à 16h00 avec quatre personnes. Le trajet a pris 1 heure et 10 minutes pour 65 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
   "S_KERHET-7-Q3": {
     "stem": "Tu conduis un taxi et tu auras une charge à l'arrière. Tes pneus sont en 195/65 R15. Quelle pression dois-tu avoir selon le tableau ?"
+  },
+  "S_KERHET-7-Q30": {
+    "stem": "À quel endroit de l'image faut-il contrôler le liquide de frein ?"
+  },
+  "S_KERHET-7-Q31": {
+    "stem": "On te confie une course le jeudi à 20h45 avec deux personnes, de Växjö à l'aéroport de Sturup. Le trajet a pris 3 heures pour 210 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-7-Q32": {
+    "stem": "On te confie une course le mercredi à 10h00 avec une personne, de l'aéroport de Sturup à l'hôpital Sahlgrenska. Le trajet a pris 3 heures et 10 minutes pour 297 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-7-Q33": {
+    "stem": "Tu dois charger dans ton taxi le déambulateur de l'image. Quelle lettre désigne le verrou à libérer pour le plier ?"
+  },
+  "S_KERHET-7-Q35": {
+    "stem": "Comme chauffeur de taxi, tu travailles à des horaires irréguliers. Quand est-il particulièrement important de ne pas manger de grandes quantités ?"
+  },
+  "S_KERHET-7-Q36": {
+    "stem": "En déposant un client, tu heurtes un panneau de signalisation. Que devrais-tu faire ?"
+  },
+  "S_KERHET-7-Q37": {
+    "stem": "Tu conduis ton taxi et le voyant de l'image s'allume en roulant. Tu t'arrêtes, tu contrôles le niveau d'huile à la jauge et il est correct. Que devrais-tu faire ?"
+  },
+  "S_KERHET-7-Q38": {
+    "stem": "Tu vas conduire ton taxi de Malmö à l'aéroport de Kastrup le 31 mars. Dois-tu avoir des pneus hiver ?"
+  },
+  "S_KERHET-7-Q39": {
+    "stem": "Ton médecin traitant te prescrit un médicament contenant une substance classée comme stupéfiant. Si la police t'arrête après que tu l'as pris, peux-tu être condamné pour conduite sous l'emprise de stupéfiants ?"
+  },
+  "S_KERHET-7-Q4": {
+    "stem": "Tu conduis une voiture à freins antiblocage ABS. Comment le risque de dérapage évolue-t-il par rapport à une voiture sans ABS ?"
+  },
+  "S_KERHET-7-Q40": {
+    "stem": "Sur quoi dois-tu porter avant tout ton attention quand tu roules de jour à côté d'une école, aux heures de classe ?"
+  },
+  "S_KERHET-7-Q5": {
+    "stem": "Tu prends en charge un client avec un enfant de moins de 3 ans. Ils n'ont pas de dispositif de retenue pour l'enfant et tu ne dois pas utiliser de rehausseur. Quel équipement convient ?"
+  },
+  "S_KERHET-7-Q6": {
+    "stem": "Tu conduis une voiture équipée de l'ABS. Que se passe-t-il si tu freines fortement ?"
+  },
+  "S_KERHET-7-Q7": {
+    "stem": "Tu vas utiliser un siège auto dos à la route à l'avant. De quoi dois-tu t'assurer avant de l'installer ?"
+  },
+  "S_KERHET-7-Q8": {
+    "stem": "Que faut-il pour que tu puisses utiliser des pneus hiver non cloutés au mois de mars ?"
+  },
+  "S_KERHET-7-Q9": {
+    "stem": "Tu es obligé de t'arrêter : tu as crevé juste avant un sommet de côte, sur une route limitée à 70 km/h. Dois-tu utiliser le triangle de présignalisation ?"
+  },
+  "S_KERHET-8-Q1": {
+    "stem": "Comment dois-tu arrimer un chargement dans ton taxi ?"
+  },
+  "S_KERHET-8-Q10": {
+    "stem": "L'airbag passager avant de ton taxi est activé. Où dois-tu installer le siège auto ?"
+  },
+  "S_KERHET-8-Q11": {
+    "stem": "Tu prends en charge une personne mesurant 120 cm. Où est-elle le plus en sécurité si l'airbag de la voiture est activé ?"
+  },
+  "S_KERHET-8-Q12": {
+    "stem": "De manière générale, quel effet le téléphone au volant a-t-il sur un conducteur ?"
+  },
+  "S_KERHET-8-Q13": {
+    "stem": "Un client est sous l'emprise de l'alcool et se comporte de façon menaçante. Que devrais-tu faire ?"
+  },
+  "S_KERHET-8-Q14": {
+    "stem": "Que dois-tu faire d'une batterie de voiture hors d'usage ?"
+  },
+  "S_KERHET-8-Q15": {
+    "stem": "Quelle est la raison la plus importante de ne pas allonger une personne inconsciente sur le dos ?"
+  },
+  "S_KERHET-8-Q16": {
+    "stem": "À laquelle de ces personnes est-il inapproprié de donner à manger ou à boire ?"
+  },
+  "S_KERHET-8-Q17": {
+    "stem": "Le voyant de l'image A s'allume pendant que tu roules. À quel endroit de l'image B dois-tu faire l'appoint de liquide ?"
   },
   "S_KERHET-8-Q18": {
     "stem": "Tu conduis un taxi. Tes pneus sont en 205/55 R16. Quelle pression dois-tu avoir dans les pneus avant selon le tableau ?"
   },
+  "S_KERHET-8-Q19": {
+    "stem": "Deux personnes prennent un taxi un lundi à 07h00. Le trajet est estimé à environ 10 minutes pour 5 km. Combien la course coûtera-t-elle d'après l'affichage des prix ?"
+  },
+  "S_KERHET-8-Q2": {
+    "stem": "Du point de vue de l'environnement, quels sont les meilleurs pneus que tu peux acheter ?"
+  },
+  "S_KERHET-8-Q20": {
+    "stem": "Tu roules à 30 km/h. Comment devrais-tu agir dans la situation de l'image ?"
+  },
+  "S_KERHET-8-Q21": {
+    "stem": "Tu subis un choc frontal. Ta voiture a des airbags. La ceinture de sécurité a-t-elle une importance dans cette situation ?"
+  },
+  "S_KERHET-8-Q22": {
+    "stem": "On te confie une course le jour de l'An avec deux personnes, de l'aéroport de Landvetter à la gare centrale de Linköping. Le trajet a pris 2 heures et 30 minutes pour 232 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-8-Q23": {
+    "stem": "On te confie une course le mardi à 09h00 avec deux personnes, de l'université d'Uppsala à Helsingborg. Le trajet a pris 3 heures et 5 minutes pour 266 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-8-Q24": {
+    "stem": "Tu conduis un taxi et tu reçois une réservation qui commence à 07h30. En route, le client t'appelle pour dire qu'il sera en retard et te demande de l'attendre. Il arrive à 08h15. Combien cela coûtera-t-il jusque-là ?"
+  },
+  "S_KERHET-8-Q25": {
+    "stem": "Tu as quatre clients à bord et tu soupçonnes que du monoxyde de carbone entre dans la voiture par la ligne d'échappement. Que dois-tu faire ?"
+  },
+  "S_KERHET-8-Q26": {
+    "stem": "Tu roules dans une zone où des enfants jouent. À quoi dois-tu penser au sujet des enfants en général ?"
+  },
+  "S_KERHET-8-Q27": {
+    "stem": "Bien se tenir assis compte beaucoup pour un chauffeur de taxi. Ta position de conduite peut-elle influer sur ta santé et sur ta capacité à conduire en sécurité ?"
+  },
+  "S_KERHET-8-Q28": {
+    "stem": "Tu perds définitivement la vue d'un œil. L'Agence des transports retire ton permis et ta carte professionnelle de taxi. Peux-tu récupérer ton permis de catégorie B ?"
+  },
+  "S_KERHET-8-Q29": {
+    "stem": "Tu conduis une voiture particulière. As-tu le droit de rouler avec des pneus cloutés au mois de septembre ?"
+  },
   "S_KERHET-8-Q3": {
     "stem": "Quatre personnes doivent aller du centre-ville à l'aéroport un dimanche matin à 05.30. Le trajet fait 5 km. Quel est le prix selon le prix de comparaison de l'information tarifaire ?"
+  },
+  "S_KERHET-8-Q30": {
+    "stem": "Un chauffeur de taxi vient d'apprendre qu'un proche est gravement malade. Cela peut-il affecter sa capacité à conduire ?"
+  },
+  "S_KERHET-8-Q31": {
+    "stem": "Quel est l'avantage d'un siège à harnais par rapport à un rehausseur comme dispositif de retenue pour enfant ?"
+  },
+  "S_KERHET-8-Q32": {
+    "stem": "Quelle réponse décrit le mieux la façon de vérifier que le servofrein de ton taxi fonctionne correctement ?"
+  },
+  "S_KERHET-8-Q33": {
+    "stem": "Tu fais une pause cigarette à l'extérieur de ton taxi. Cela peut-il avoir une conséquence sur la santé de ton prochain client ?"
+  },
+  "S_KERHET-8-Q34": {
+    "stem": "Tu sais que ton passager, sur un long transport sanitaire, est diabétique. En début de trajet, il devient de plus en plus silencieux et semble sur le point de perdre conscience. Que devrais-tu faire en premier ?"
+  },
+  "S_KERHET-8-Q35": {
+    "stem": "Quels sont les problèmes les plus courants pour une personne atteinte de rhumatisme ?"
+  },
+  "S_KERHET-8-Q36": {
+    "stem": "Quels symptômes peuvent indiquer qu'une personne diabétique entre en hypoglycémie insulinique ?"
+  },
+  "S_KERHET-8-Q37": {
+    "stem": "Tu as crevé et monté une roue de secours provisoire. Quelle réponse est correcte ?"
+  },
+  "S_KERHET-8-Q38": {
+    "stem": "Le bus s'est arrêté à un arrêt et tu continues tout droit dans la situation de l'image. À quoi dois-tu d'abord te préparer ?"
   },
   "S_KERHET-8-Q39": {
     "stem": "Quelle peut être la conséquence de placer une charge lourde à l'arrière de la voiture ?"
   },
+  "S_KERHET-8-Q4": {
+    "stem": "Les voitures récentes utilisent l'EMC, produit à partir de colza. Quels avantages a-t-il par rapport au gazole ?"
+  },
+  "S_KERHET-8-Q40": {
+    "stem": "Que peut entraîner un poids trop faible sur la boule d'attelage quand tu roules avec une remorque attelée ?"
+  },
+  "S_KERHET-8-Q41": {
+    "stem": "Ta voiture, millésime 2005, est équipée d'une injection de carburant. Lequel de ces styles de conduite permet d'économiser le plus de carburant ?"
+  },
+  "S_KERHET-8-Q42": {
+    "stem": "Quel pictogramme signale une personne atteinte de la maladie d'Alzheimer ?"
+  },
+  "S_KERHET-8-Q43": {
+    "stem": "Tu as une fuite dans la ligne d'échappement et du monoxyde de carbone pénètre dans la voiture. Comment peux-tu le détecter ?"
+  },
+  "S_KERHET-8-Q44": {
+    "stem": "Tu as des clients à bord de ton taxi et tu dois t'arrêter à un stop. Comment t'arrêter en douceur ?"
+  },
+  "S_KERHET-8-Q45": {
+    "stem": "Le poids du chargement de la voiture change-t-il quelque chose pour l'environnement ?"
+  },
+  "S_KERHET-8-Q46": {
+    "stem": "Qu'est-ce qui provoque le survirage d'une voiture ?"
+  },
+  "S_KERHET-8-Q47": {
+    "stem": "Tu prends un médicament qui peut être dangereux pour la conduite. Pourquoi ne devrais-tu pas conduire ?"
+  },
+  "S_KERHET-8-Q48": {
+    "stem": "Tu dois arrimer un chargement dans ton taxi. Quelle force latérale l'arrimage doit-il supporter ?"
+  },
+  "S_KERHET-8-Q49": {
+    "stem": "Quel est l'avantage des freins ABS par rapport à des freins sans ABS ?"
+  },
+  "S_KERHET-8-Q5": {
+    "stem": "Ta voiture est équipée d'une direction assistée. Lors d'un contrôle de sécurité, tu constates qu'il y a trop peu de liquide hydraulique dans le réservoir. Comment dois-tu faire ?"
+  },
+  "S_KERHET-8-Q50": {
+    "stem": "Tu démarres un moteur froid sur une voiture équipée d'un pot catalytique. À partir de quand le catalyseur devient-il efficace ?"
+  },
+  "S_KERHET-8-Q51": {
+    "stem": "Combien de temps avant le départ dois-tu brancher le préchauffage moteur quand il fait 0 degré ?"
+  },
+  "S_KERHET-8-Q52": {
+    "stem": "Ta voiture a des phares au xénon. Quel est le risque qu'ils présentent ?"
+  },
+  "S_KERHET-8-Q53": {
+    "stem": "Quel est le risque si tu démarres ton taxi avec des câbles de démarrage ?"
+  },
+  "S_KERHET-8-Q54": {
+    "stem": "Quelle est la fonction du servofrein dans le circuit de freinage hydraulique de la voiture ?"
+  },
+  "S_KERHET-8-Q55": {
+    "stem": "Tu contrôles la direction assistée de ton taxi en tournant le volant. Les roues ne réagissent pas immédiatement. Quelle est la cause la plus probable ?"
+  },
+  "S_KERHET-8-Q56": {
+    "stem": "Comment dois-tu aider un client atteint de la maladie de Parkinson ?"
+  },
+  "S_KERHET-8-Q57": {
+    "stem": "Pourquoi dois-tu garder l'intérieur du taxi propre ?"
+  },
+  "S_KERHET-8-Q58": {
+    "stem": "Que se passe-t-il si la pression des pneus est inférieure à la pression recommandée ?"
+  },
+  "S_KERHET-8-Q59": {
+    "stem": "Tu t'es arrêté devant un passage piéton pour laisser traverser une personne malvoyante. Comment dois-tu te comporter ?"
+  },
+  "S_KERHET-8-Q6": {
+    "stem": "Que se passe-t-il si tu charges ta caravane de façon à obtenir un poids faible sur la boule d'attelage ?"
+  },
+  "S_KERHET-8-Q60": {
+    "stem": "Tu constates que la température du moteur est élevée. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-8-Q61": {
+    "stem": "Où le risque qu'une personne ait un accident à cause de la fatigue est-il le plus élevé ?"
+  },
+  "S_KERHET-8-Q62": {
+    "stem": "Quelle profondeur de sculpture dois-tu avoir sur les pneus au mois de juillet ?"
+  },
   "S_KERHET-8-Q63": {
     "stem": "As le droit du flytta une bil lors de olyckan si bilen varit inblandad i olyckan?"
   },
+  "S_KERHET-8-Q64": {
+    "stem": "Qu'y a-t-il au cœur de la Vision Zéro en matière de sécurité routière ?"
+  },
+  "S_KERHET-8-Q65": {
+    "stem": "Tu dois pratiquer la respiration artificielle sur une personne malade. Comment savoir que l'air entre bien dans les poumons ?"
+  },
+  "S_KERHET-8-Q7": {
+    "stem": "Que se passe-t-il si tu charges ta caravane de façon à obtenir un poids élevé sur la boule d'attelage ?"
+  },
+  "S_KERHET-8-Q8": {
+    "stem": "Tu es parmi les premiers à arriver sur un lieu d'accident. Une personne saigne abondamment de la jambe et tu la laisses allongée. Que devrais-tu faire ensuite ?"
+  },
+  "S_KERHET-8-Q9": {
+    "stem": "Tu conduis une voiture de 2009 le 31 mars. Quelle profondeur de sculpture dois-tu avoir sur les pneus ?"
+  },
+  "S_KERHET-9-Q1": {
+    "stem": "Ta voiture, millésime 2005, est équipée d'une injection de carburant. Lequel de ces styles de conduite permet d'économiser le plus de carburant ?"
+  },
+  "S_KERHET-9-Q10": {
+    "stem": "Tu démarres un moteur froid sur une voiture équipée d'un pot catalytique. À partir de quand le catalyseur devient-il efficace ?"
+  },
+  "S_KERHET-9-Q11": {
+    "stem": "Combien de temps avant le départ dois-tu brancher le préchauffage moteur quand il fait 0 degré ?"
+  },
+  "S_KERHET-9-Q12": {
+    "stem": "Ta voiture a des phares au xénon. Quel est le risque qu'ils présentent ?"
+  },
+  "S_KERHET-9-Q13": {
+    "stem": "Quel est le risque si tu démarres ton taxi avec des câbles de démarrage ?"
+  },
+  "S_KERHET-9-Q14": {
+    "stem": "Quelle est la fonction du servofrein dans le circuit de freinage hydraulique de la voiture ?"
+  },
+  "S_KERHET-9-Q15": {
+    "stem": "Tu contrôles la direction assistée de ton taxi en tournant le volant. Les roues ne réagissent pas immédiatement. Quelle est la cause la plus probable ?"
+  },
+  "S_KERHET-9-Q16": {
+    "stem": "Comment dois-tu aider un client atteint de la maladie de Parkinson ?"
+  },
+  "S_KERHET-9-Q17": {
+    "stem": "Pourquoi dois-tu garder l'intérieur du taxi propre ?"
+  },
+  "S_KERHET-9-Q18": {
+    "stem": "Que se passe-t-il si la pression des pneus est inférieure à la pression recommandée ?"
+  },
+  "S_KERHET-9-Q19": {
+    "stem": "Tu t'es arrêté devant un passage piéton pour laisser traverser une personne malvoyante. Comment dois-tu te comporter ?"
+  },
+  "S_KERHET-9-Q2": {
+    "stem": "Quel pictogramme signale une personne atteinte de la maladie d'Alzheimer ?"
+  },
+  "S_KERHET-9-Q20": {
+    "stem": "Tu constates que la température du moteur est élevée. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-9-Q21": {
+    "stem": "Où le risque qu'une personne ait un accident à cause de la fatigue est-il le plus élevé ?"
+  },
+  "S_KERHET-9-Q22": {
+    "stem": "Quelle profondeur de sculpture dois-tu avoir sur les pneus au mois de juillet ?"
+  },
   "S_KERHET-9-Q23": {
     "stem": "As le droit du flytta une bil lors de olyckan si bilen varit inblandad i olyckan?"
+  },
+  "S_KERHET-9-Q24": {
+    "stem": "Qu'y a-t-il au cœur de la Vision Zéro en matière de sécurité routière ?"
+  },
+  "S_KERHET-9-Q25": {
+    "stem": "Tu dois pratiquer la respiration artificielle sur une personne malade. Comment savoir que l'air entre bien dans les poumons ?"
+  },
+  "S_KERHET-9-Q26": {
+    "stem": "Tu utilises un carburant (EMC) produit à partir de colza. Quels sont ses avantages par rapport au gazole ?"
+  },
+  "S_KERHET-9-Q27": {
+    "stem": "Quand as-tu le droit d'utiliser des pneus cloutés si l'état hivernal de la chaussée est établi ou attendu ?"
+  },
+  "S_KERHET-9-Q28": {
+    "stem": "Sur laquelle des images la ceinture est-elle le mieux utilisée pour protéger en cas d'accident ?"
+  },
+  "S_KERHET-9-Q3": {
+    "stem": "Tu as une fuite dans la ligne d'échappement et du monoxyde de carbone pénètre dans la voiture. Comment peux-tu le détecter ?"
+  },
+  "S_KERHET-9-Q4": {
+    "stem": "Tu as des clients à bord de ton taxi et tu dois t'arrêter à un stop. Comment t'arrêter en douceur ?"
+  },
+  "S_KERHET-9-Q5": {
+    "stem": "Le poids du chargement de la voiture change-t-il quelque chose pour l'environnement ?"
+  },
+  "S_KERHET-9-Q6": {
+    "stem": "Qu'est-ce qui provoque le survirage d'une voiture ?"
+  },
+  "S_KERHET-9-Q7": {
+    "stem": "Tu prends un médicament qui peut être dangereux pour la conduite. Pourquoi ne devrais-tu pas conduire ?"
+  },
+  "S_KERHET-9-Q8": {
+    "stem": "Tu dois arrimer un chargement dans ton taxi. Quelle force latérale l'arrimage doit-il supporter ?"
+  },
+  "S_KERHET-9-Q9": {
+    "stem": "Quel est l'avantage des freins ABS par rapport à des freins sans ABS ?"
   },
   "tx-arlanda-01": {
     "stem": "Tu dois conduire un client de Stockholm C à Arlanda. Dans quelle direction approximative roules-tu ?",
@@ -7104,135 +9433,5 @@
       "B": "Au moins 11 heures",
       "C": "Au moins 6 heures"
     }
-  },
-  "bkort-classic-1": {
-    "stem": "Tu roules sur une route prioritaire quand une voiture approche par la droite dans une intersection. Quelle règle s'applique ?",
-    "options": {
-      "A": "Je dois laisser passer cette voiture à cause de la priorité à droite.",
-      "B": "La voiture venant de la droite doit me laisser passer.",
-      "C": "Nous devons tous les deux nous arrêter et chercher le contact visuel.",
-      "D": "Celui qui roule le plus lentement doit attendre."
-    },
-    "explanation": "La circulation sur une route prioritaire a la priorité. Le trafic transversal doit céder le passage, qu'il arrive par la droite ou par la gauche."
-  },
-  "bkort-classic-2": {
-    "stem": "As-tu le droit de t'arrêter sur un passage piéton pour déposer rapidement un passager ?",
-    "options": {
-      "A": "Oui, si cela peut se faire en sûreté et sans gêner personne.",
-      "B": "Oui, car l'arrêt est permis mais pas le stationnement.",
-      "C": "Non, il est interdit à la fois de s'y arrêter et d'y stationner.",
-      "D": "Non, sauf si tu allumes les feux de détresse pour prévenir les autres."
-    },
-    "explanation": "L'arrêt est interdit sur un passage piéton. Un véhicule qui s'y immobilise masque la visibilité et peut créer des situations dangereuses pour les piétons."
-  },
-  "bkort-classic-3": {
-    "stem": "Quelle est la vitesse de base en zone agglomérée ?",
-    "options": {
-      "A": "30 km/h",
-      "B": "40 km/h",
-      "C": "50 km/h",
-      "D": "70 km/h"
-    },
-    "explanation": "La vitesse de base en zone agglomérée est de 50 km/h. Si une autre vitesse s'applique, elle doit être indiquée par un panneau."
-  },
-  "bkort-classic-4": {
-    "stem": "Que signifie une ligne jaune continue le long du bord de la chaussée ?",
-    "options": {
-      "A": "Interdiction de stationner, mais l'arrêt est autorisé.",
-      "B": "Interdiction de s'arrêter et de stationner.",
-      "C": "Avertissement d'un accotement étroit ou absent.",
-      "D": "Marquage d'une déviation temporaire pour un chantier routier."
-    },
-    "explanation": "Une ligne jaune continue signifie interdiction de s'arrêter et de stationner. Une ligne jaune discontinue signifie seulement interdiction de stationner."
-  },
-  "bkort-classic-5": {
-    "stem": "Que signifie le panneau en forme de triangle pointe vers le bas ?",
-    "options": {
-      "A": "Route prioritaire",
-      "B": "Obligation d'arrêt",
-      "C": "Avertissement d'obstacle",
-      "D": "Céder le passage"
-    },
-    "explanation": "Le panneau impose de céder le passage. Sa forme unique, pointe vers le bas, permet de le reconnaître même couvert de neige."
-  },
-  "bkort-classic-6": {
-    "stem": "Tu dépasses le panneau d'entrée en zone agglomérée. Quelle limitation de vitesse s'applique si aucun panneau n'indique autre chose ?",
-    "options": {
-      "A": "30 km/h",
-      "B": "50 km/h",
-      "C": "70 km/h",
-      "D": "40 km/h"
-    },
-    "explanation": "En zone agglomérée, la limitation générale est de 50 km/h. Cette vitesse de base s'applique tant qu'aucun autre panneau n'indique une limite différente."
-  },
-  "bkort-classic-7": {
-    "stem": "Que signifie un horaire entre parenthèses, par exemple (8-17), sur un panonceau ?",
-    "options": {
-      "A": "L'horaire vaut tous les jours ouvrables, mais pas le samedi.",
-      "B": "L'horaire ne vaut que les dimanches et jours fériés.",
-      "C": "L'horaire vaut la veille d'un dimanche ou d'un jour férié.",
-      "D": "L'horaire est une recommandation, pas une règle contraignante."
-    },
-    "explanation": "Un horaire entre parenthèses signale que la règle s'applique la veille d'un dimanche ou d'un jour férié, le plus souvent le samedi. Les chiffres en rouge valent les dimanches et jours fériés."
-  },
-  "bkort-classic-8": {
-    "stem": "Un panonceau indique l'horaire « 8-17 » en chiffres noirs. Quels jours la règle indiquée s'applique-t-elle ?",
-    "options": {
-      "A": "Les jours ouvrables, sauf la veille d'un dimanche ou d'un jour férié.",
-      "B": "Les samedis et la veille d'un jour férié.",
-      "C": "Les dimanches et les jours fériés.",
-      "D": "Tous les jours de la semaine."
-    },
-    "explanation": "Des chiffres noirs sans parenthèses sur un panonceau valent les jours ouvrables, mais pas la veille d'un dimanche ni d'un jour férié."
-  },
-  "bkort-classic-9": {
-    "stem": "Quelle est la différence importante entre l'interdiction de stationner et l'interdiction de s'arrêter et de stationner ?",
-    "options": {
-      "A": "L'interdiction d'arrêt ne vaut que les jours ouvrables, l'interdiction de stationnement tous les jours.",
-      "B": "L'interdiction de stationner autorise de courts arrêts, par exemple pour laisser monter ou descendre.",
-      "C": "L'interdiction de stationner autorise la montée et la descente, mais pas le chargement de marchandises.",
-      "D": "L'interdiction de stationner autorise un arrêt de cinq minutes, l'interdiction d'arrêt une minute."
-    },
-    "explanation": "L'interdiction de stationner (C35) te permet de t'arrêter pour charger ou décharger, ou pour prendre et déposer des passagers. L'interdiction de s'arrêter (C39) proscrit tout cela."
-  },
-  "bkort-classic-10": {
-    "stem": "Tu vois le panneau d'interdiction de stationner. As-tu le droit de t'arrêter pour prendre un passager ?",
-    "options": {
-      "A": "Non, le panneau interdit toute forme d'arrêt.",
-      "B": "Oui, car l'arrêt pour la montée ou la descente est autorisé.",
-      "C": "Non, tu peux seulement t'arrêter pour charger ou décharger des marchandises.",
-      "D": "Oui, mais seulement en allumant les feux de détresse pendant ce temps."
-    },
-    "explanation": "Le panneau signale une interdiction de stationner. L'arrêt est permis pour laisser quelqu'un monter ou descendre, ou pour charger et décharger, mais pas pour stationner."
-  },
-  "bkort-classic-11": {
-    "stem": "Que signifie le marquage au sol en « dents de requin » ?",
-    "options": {
-      "A": "Une ligne d'arrêt",
-      "B": "Une ligne de cédez-le-passage",
-      "C": "Une ligne d'avertissement",
-      "D": "Le marquage d'un ralentisseur"
-    },
-    "explanation": "Ce marquage est une ligne de cédez-le-passage (M14) et indique où t'arrêter au plus tard pour laisser la priorité. Il complète souvent le panneau de cédez-le-passage."
-  },
-  "bkort-classic-13": {
-    "stem": "Un bus met son clignotant pour quitter un arrêt sur une route limitée à 50. Quelle est ton obligation ?",
-    "options": {
-      "A": "Attendre et voir ce que fait le conducteur du bus.",
-      "B": "Continuer à la même vitesse, puisque j'ai la priorité.",
-      "C": "Ralentir et laisser passer le bus.",
-      "D": "Ne ralentir que si la limitation est de 30 km/h ou moins."
-    },
-    "explanation": "Tu dois céder le passage à un bus qui signale son départ d'un arrêt si la vitesse autorisée sur la route est de 50 km/h ou moins."
-  },
-  "bkort-classic-14": {
-    "stem": "Que signifient des horaires en rouge sur un panonceau placé sous un panneau ?",
-    "options": {
-      "A": "La règle vaut tous les jours ouvrables sauf le samedi.",
-      "B": "La règle vaut la veille d'un dimanche ou d'un jour férié.",
-      "C": "La règle vaut le dimanche et les jours fériés officiels.",
-      "D": "La règle n'est qu'une recommandation."
-    },
-    "explanation": "Un texte rouge sur un panonceau signifie que l'indication vaut le dimanche et les jours fériés officiels, les « jours rouges » du calendrier suédois."
   }
 }

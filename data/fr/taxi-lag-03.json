@@ -1,0 +1,167 @@
+{
+  "LAGSTIFNING-8-Q5": {
+    "stem": "Tu vas garer ton taxi sur un parking où ces panneaux sont installés. Le stationnement y est-il gratuit ?"
+  },
+  "LAGSTIFNING-7-Q3": {
+    "stem": "Tu dois transporter dans ton taxi une femme de 20 ans en fauteuil roulant. Elle ne veut pas mettre la ceinture de sécurité. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q33": {
+    "stem": "Tu dois transporter une mère et son enfant de deux ans. Il n'y a aucun dispositif de retenue pour l'enfant. A-t-il le droit de monter dans ton taxi ?"
+  },
+  "LAGSTIFNING-8-Q64": {
+    "stem": "Tu vas t'arrêter pour déposer un passager comme sur l'image. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-3-Q28": {
+    "stem": "Tu vas t'arrêter pour attendre un certain nombre de passagers. Devant quel panneau est-il permis de s'arrêter 10 minutes pour attendre un client ?"
+  },
+  "LAGSTIFNING-1-Q38": {
+    "stem": "Tu vas t'arrêter dans une rue sombre et sans éclairage. Tu attends un client qui tarde. Quels feux dois-tu utiliser ?"
+  },
+  "LAGSTIFNING-3-Q5": {
+    "stem": "Tu vas tourner à droite au carrefour de l'image. Dois-tu céder le passage au cycliste ?"
+  },
+  "LAGSTIFNING-3-Q4": {
+    "stem": "Tu vas tourner à droite au carrefour de l'image. Dois-tu céder le passage aux piétons ?"
+  },
+  "LAGSTIFNING-1-Q40": {
+    "stem": "Tu vas tourner à droite au carrefour de l'image. Comment dois-tu te comporter dans cette situation ?"
+  },
+  "LAGSTIFNING-1-Q21": {
+    "stem": "Tu vas tourner à droite sur ces images. Sur quelle image les piétons qui traversent ta trajectoire ont-ils le feu vert en même temps que toi ?"
+  },
+  "LAGSTIFNING-8-Q61": {
+    "stem": "Tu vas tourner à droite sur l'image. Que signifie ce feu pour toi ?"
+  },
+  "LAGSTIFNING-8-Q19": {
+    "stem": "Tu vas prendre à droite dans le rond-point de l'image. Comment dois-tu faire dans la situation représentée ?"
+  },
+  "LAGSTIFNING-7-Q15": {
+    "stem": "Tu vas tourner à droite au carrefour. Une piétonne s'apprête à traverser et elle a le feu vert en même temps que toi. Comment dois-tu te comporter ?"
+  },
+  "LAGSTIFNING-8-Q24": {
+    "stem": "Tu vas tourner à droite pour t'engager sur la route. Tu vois que la voiture grise est en train de dépasser une autre voiture. Comment dois-tu faire dans la situation de l'image ?"
+  },
+  "LAGSTIFNING-8-Q36": {
+    "stem": "Tu vas tourner à droite. Quelle règle s'applique ?"
+  },
+  "LAGSTIFNING-8-Q55": {
+    "stem": "Tu vas tourner à gauche au carrefour de l'image. Dois-tu céder le passage à la voiture qui vient en face ?"
+  },
+  "LAGSTIFNING-3-Q38": {
+    "stem": "Tu vas tourner à gauche au carrefour. Comment devrais-tu te comporter ?"
+  },
+  "LAGSTIFNING-3-Q3": {
+    "stem": "Tu vas tourner à gauche sur ces images. Sur laquelle dois-tu céder le passage à la voiture qui vient en face ?"
+  },
+  "LAGSTIFNING-6-Q5": {
+    "stem": "Tu te rends à l'école maternelle située plus loin sur la route. D'après le panonceau, quels enfants circulent souvent sur cette route ?"
+  },
+  "LAGSTIFNING-6-Q8": {
+    "stem": "Tu vas à droite. Que dois-tu faire ?"
+  },
+  "LAGSTIFNING-8-Q4": {
+    "stem": "Tu vas à gauche au carrefour de l'image, où tu dois céder le passage. La voiture blanche arrive à droite sur la voie de droite. As-tu le droit de tourner à gauche dans cette situation ?"
+  },
+  "LAGSTIFNING-8-Q17": {
+    "stem": "Tu vas à gauche sur l'image. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-4-Q10": {
+    "stem": "Tu vas à gauche sur l'image. Qui doit céder le passage ?"
+  },
+  "LAGSTIFNING-6-Q4": {
+    "stem": "Tu vas à gauche. Dois-tu mettre ton clignotant gauche ?"
+  },
+  "LAGSTIFNING-8-Q30": {
+    "stem": "Tu vas faire demi-tour en utilisant l'encoche sur le côté droit de la route. Dois-tu mettre ton clignotant pendant la manœuvre ?"
+  },
+  "LAGSTIFNING-6-Q18": {
+    "stem": "Tu t'arrêtes pour attendre un client comme sur les images. Est-ce permis ?"
+  },
+  "LAGSTIFNING-4-Q38": {
+    "stem": "Tu comptes dépasser le camion de l'image alors qu'un véhicule arrive en face. As-tu le droit de franchir la ligne médiane ?"
+  },
+  "LAGSTIFNING-8-Q53": {
+    "stem": "Tu comptes stationner un mardi à 15h00, et ce jour n'est pas férié. Au plus tard quand dois-tu venir rechercher la voiture ?"
+  },
+  "LAGSTIFNING-8-Q40": {
+    "stem": "Tu constates que tu t'es trompé de route et tu veux faire demi-tour en reculant au coin de la rue. Quelle règle s'applique entre toi et les autres usagers dans cette situation ?"
+  },
+  "LAGSTIFNING-4-Q19": {
+    "stem": "Le repos journalier sur une période de 24 heures peut être fractionné. Quel fractionnement est le bon ?"
+  },
+  "LAGSTIFNING-1-Q27": {
+    "stem": "Après quel événement un conducteur doit-il imprimer un reçu ou un bordereau de transport ?"
+  },
+  "LAGSTIFNING-1-Q39": {
+    "stem": "Un client paie la course en espèces. Es-tu obligé d'imprimer un reçu ou un bordereau de transport ?"
+  },
+  "LAGSTIFNING-5-Q31": {
+    "stem": "Un client est pressé d'arriver à l'aéroport et exige que tu dépasses la vitesse autorisée pour ne pas manquer son vol. Comment dois-tu faire ?"
+  },
+  "LAGSTIFNING-2-Q14": {
+    "stem": "Lors d'un contrôle de police, on te demande une copie des rapports de service des derniers jours pendant lesquels le taxi a roulé en service. Combien de copies de rapport de service dois-tu produire ?"
+  },
+  "LAGSTIFNING-7-Q5": {
+    "stem": "Un chauffeur de taxi perd définitivement la vue d'un œil et sa carte professionnelle est retirée. Peut-il la récupérer ?"
+  },
+  "LAGSTIFNING-7-Q36": {
+    "stem": "Un chauffeur de taxi s'arrête pour saisir une adresse dans son GPS. Doit-il mettre son clignotant gauche avant de repartir du bord de la chaussée ?"
+  },
+  "LAGSTIFNING-1-Q14": {
+    "stem": "Dans lequel de ces cas as-tu le droit de dépasser la vitesse autorisée ?"
+  },
+  "LAGSTIFNING-6-Q21": {
+    "stem": "As-tu le droit de rouler ici, sur cette voie, avec ton taxi ?"
+  },
+  "LAGSTIFNING-1-Q35": {
+    "stem": "As-tu le droit d'entrer ici avec ton taxi ?"
+  },
+  "LAGSTIFNING-6-Q39": {
+    "stem": "As-tu le droit d'entrer avec ton taxi dans la rue de l'image ?"
+  },
+  "LAGSTIFNING-5-Q40": {
+    "stem": "As-tu le droit de conduire un taxi si tu as perdu ta carte professionnelle ? Quelle règle s'applique ?"
+  },
+  "LAGSTIFNING-4-Q33": {
+    "stem": "As-tu le droit de déposer un passager sur la route où ce panneau est installé ?"
+  },
+  "LAGSTIFNING-2-Q13": {
+    "stem": "As-tu le droit d'emprunter une piste cyclable quand tu conduis un taxi ?"
+  },
+  "LAGSTIFNING-6-Q16": {
+    "stem": "As-tu le droit de t'arrêter ou de stationner sur une piste cyclable pour déposer ou prendre des passagers ?"
+  },
+  "LAGSTIFNING-8-Q46": {
+    "stem": "As-tu le droit d'arrêter ton taxi à un arrêt de bus balisé s'il n'y a aucun bus de ligne à proximité ?"
+  },
+  "LAGSTIFNING-7-Q37": {
+    "stem": "As-tu le droit de t'arrêter juste après le panneau de l'image pour appeler la centrale de réservation ?"
+  },
+  "LAGSTIFNING-1-Q11": {
+    "stem": "As-tu le droit de t'arrêter à l'arrêt de bus de l'image pour charger des marchandises ?"
+  },
+  "LAGSTIFNING-7-Q22": {
+    "stem": "As-tu le droit de t'arrêter à un arrêt de bus pour attendre un passager, s'il n'y a aucun bus de ligne à proximité ?"
+  },
+  "LAGSTIFNING-3-Q9": {
+    "stem": "As-tu le droit de t'arrêter à un arrêt de bus balisé sans gêner les transports en commun ?"
+  },
+  "LAGSTIFNING-5-Q11": {
+    "stem": "As-tu le droit de t'arrêter à un arrêt de bus pour décharger des marchandises s'il n'y a aucun bus à proximité ?"
+  },
+  "LAGSTIFNING-4-Q40": {
+    "stem": "As-tu le droit de t'arrêter à côté d'une voiture stationnée, comme celle de l'image ?"
+  },
+  "LAGSTIFNING-8-Q54": {
+    "stem": "As-tu le droit de faire demi-tour sur l'autoroute par l'ouverture visible sur l'image ?"
+  },
+  "LAGSTIFNING-2-Q35": {
+    "stem": "Le conducteur de la voiture grise a-t-il le droit de dépasser comme sur l'image ?"
+  },
+  "LAGSTIFNING-2-Q4": {
+    "stem": "Dans laquelle de ces situations la priorité à droite s'applique-t-elle ?"
+  },
+  "LAGSTIFNING-6-Q40": {
+    "stem": "Dans laquelle de ces situations dois-tu céder le passage à la circulation venant de droite ?"
+  }
+}

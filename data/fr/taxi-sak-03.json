@@ -1,0 +1,185 @@
+{
+  "S_KERHET-8-Q24": {
+    "stem": "Tu conduis un taxi et tu reçois une réservation qui commence à 07h30. En route, le client t'appelle pour dire qu'il sera en retard et te demande de l'attendre. Il arrive à 08h15. Combien cela coûtera-t-il jusque-là ?"
+  },
+  "S_KERHET-5-Q10": {
+    "stem": "Tu conduis un taxi immatriculé en 2008 et tu vas monter les pneus hiver. Le lendemain du montage, tu sens des vibrations et tu entends un bruit venant d'une roue. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-2-Q27": {
+    "stem": "Tu conduis un taxi. Quelle taille le client doit-il avoir pour s'asseoir à l'avant si ta voiture est équipée d'un airbag ?"
+  },
+  "S_KERHET-6-Q15": {
+    "stem": "Tu conduis le taxi et la voiture tire de travers. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-6-Q14": {
+    "stem": "Tu conduis le taxi et tu te fais piquer par une guêpe près d'un œil. L'œil enfle, rougit et tu ne vois plus de cet œil. As-tu le droit de continuer à conduire ?"
+  },
+  "S_KERHET-4-Q24": {
+    "stem": "Tu sors d'une propriété et tu sens des vibrations dans le volant. Tu t'arrêtes, tu contrôles les pneus et tu constates qu'un pneu avant est usé de façon irrégulière. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-6-Q31": {
+    "stem": "Tu t'approches d'un carrefour sur route de campagne et tu vas tourner à gauche. Pour quel véhicule venant en face la vitesse est-elle la plus difficile à estimer ?"
+  },
+  "S_KERHET-8-Q21": {
+    "stem": "Tu subis un choc frontal. Ta voiture a des airbags. La ceinture de sécurité a-t-elle une importance dans cette situation ?"
+  },
+  "S_KERHET-3-Q17": {
+    "stem": "Tu fumes à l'extérieur de la voiture et tu ne souffles pas dedans. Cela a-t-il une conséquence pour le passager suivant ?"
+  },
+  "S_KERHET-1-Q9": {
+    "stem": "Tu vois sur l'image que le pneu est usé de façon irrégulière. Quelle en est la cause probable ?"
+  },
+  "S_KERHET-2-Q7": {
+    "stem": "Dans le rétroviseur, tu vois que tu vas être heurté par l'arrière. Que devrais-tu faire pour éviter une lésion cervicale ?"
+  },
+  "S_KERHET-2-Q23": {
+    "stem": "Tu vois sur l'image le verrou de sécurité enfants sur l'une des portes arrière. Comment fonctionne-t-il lorsqu'il est activé ?"
+  },
+  "S_KERHET-7-Q7": {
+    "stem": "Tu vas utiliser un siège auto dos à la route à l'avant. De quoi dois-tu t'assurer avant de l'installer ?"
+  },
+  "S_KERHET-3-Q39": {
+    "stem": "Tu vas transporter dans ton taxi une personne en fauteuil roulant. Dois-tu utiliser la ceinture ?"
+  },
+  "S_KERHET-7-Q38": {
+    "stem": "Tu vas conduire ton taxi de Malmö à l'aéroport de Kastrup le 31 mars. Dois-tu avoir des pneus hiver ?"
+  },
+  "S_KERHET-6-Q25": {
+    "stem": "Tu dois transporter deux clients un lundi à 11h00. Le trajet fait 20 km et prend 25 minutes. Quel sera le prix de la course ?"
+  },
+  "S_KERHET-6-Q12": {
+    "stem": "Tu dois transporter deux personnes un mardi matin à 05h00. Le trajet fait 5 km et prend 10 minutes. Quel sera le prix de la course ?"
+  },
+  "S_KERHET-6-Q36": {
+    "stem": "Tu charges le coffre de ta voiture. Tu as placé tout le poids à l'avant du coffre. Quelle charge dois-tu mettre sur les côtés ?"
+  },
+  "S_KERHET-1-Q34": {
+    "stem": "Tu dois transporter un vélo mais tu n'as pas de place à l'intérieur de la voiture. Où le placer, du point de vue de l'environnement et de la consommation ?"
+  },
+  "S_KERHET-7-Q33": {
+    "stem": "Tu dois charger dans ton taxi le déambulateur de l'image. Quelle lettre désigne le verrou à libérer pour le plier ?"
+  },
+  "S_KERHET-4-Q29": {
+    "stem": "Tu dois soulever un objet lourd. Comment faut-il t'y prendre ?"
+  },
+  "S_KERHET-1-Q28": {
+    "stem": "Tu dois faire un long trajet qui commence à 22h00 et se termine à 03h00. Quand le risque d'accident lié à la fatigue est-il le plus élevé ?"
+  },
+  "S_KERHET-1-Q6": {
+    "stem": "Tu dois placer un chargement dans le coffre. Comment faut-il t'y prendre ?"
+  },
+  "S_KERHET-6-Q4": {
+    "stem": "Tu places le chargement bas et le plus en avant possible dans le coffre. Est-ce suffisant du point de vue de la sécurité ?"
+  },
+  "S_KERHET-1-Q38": {
+    "stem": "Tu veux laver ta voiture mais tu n'as pas accès à une station de lavage. Où la laver pour nuire le moins possible à l'environnement ?"
+  },
+  "S_KERHET-6-Q26": {
+    "stem": "Tu dois attendre deux clients pendant 58 minutes. Combien cela coûtera-t-il ?"
+  },
+  "S_KERHET-3-Q23": {
+    "stem": "Tu prends une course, un de tes collègues s'est montré jaloux de toi et cela t'a agacé. Est-ce que cela a une conséquence sur la course suivante ?"
+  },
+  "S_KERHET-8-Q33": {
+    "stem": "Tu fais une pause cigarette à l'extérieur de ton taxi. Cela peut-il avoir une conséquence sur la santé de ton prochain client ?"
+  },
+  "S_KERHET-4-Q15": {
+    "stem": "Tu constates que le freinage est retardé et tu comprends que les garnitures de frein sont humides. Que devrais-tu faire ?"
+  },
+  "S_KERHET-8-Q34": {
+    "stem": "Tu sais que ton passager, sur un long transport sanitaire, est diabétique. En début de trajet, il devient de plus en plus silencieux et semble sur le point de perdre conscience. Que devrais-tu faire en premier ?"
+  },
+  "S_KERHET-1-Q36": {
+    "stem": "Un conducteur qui parle au téléphone a une capacité de réaction dégradée. Le temps de réaction normal est de 1 seconde ; au téléphone à 70 km/h, il passe à 2 secondes. Quelle est alors la distance de réaction à 70 km/h ?"
+  },
+  "S_KERHET-8-Q13": {
+    "stem": "Un client est sous l'emprise de l'alcool et se comporte de façon menaçante. Que devrais-tu faire ?"
+  },
+  "S_KERHET-4-Q39": {
+    "stem": "Un client dans ton taxi fait une crise d'asthme, avec toux et difficulté à respirer. Comment dois-tu l'aider ?"
+  },
+  "S_KERHET-1-Q10": {
+    "stem": "Un client à bord, diabétique, devient soudain confus. Que devrais-tu faire en premier lieu ?"
+  },
+  "S_KERHET-5-Q28": {
+    "stem": "Un client avec son enfant a apporté un siège auto. Comment faire pour l'aider ?"
+  },
+  "S_KERHET-5-Q1": {
+    "stem": "Un client part avec toi pour un long trajet et il a besoin de son déambulateur pour marcher. Comment faire pour l'aider ?"
+  },
+  "S_KERHET-3-Q32": {
+    "stem": "Un médecin t'a prescrit un médicament. Qui est responsable du fait que toi, qui prends ce médicament, te comportes en sécurité dans la circulation ?"
+  },
+  "S_KERHET-4-Q31": {
+    "stem": "Un passager monte dans ton taxi en portant ce badge. Que peut-il signifier ?"
+  },
+  "S_KERHET-3-Q1": {
+    "stem": "Une personne doit prendre un taxi un vendredi matin à 10h00. Le trajet prend 30 minutes pour 10 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-8-Q30": {
+    "stem": "Un chauffeur de taxi vient d'apprendre qu'un proche est gravement malade. Cela peut-il affecter sa capacité à conduire ?"
+  },
+  "S_KERHET-7-Q24": {
+    "stem": "Un enfant de moins de 3 ans peut-il voyager en taxi sans dispositif de retenue adapté ?"
+  },
+  "S_KERHET-6-Q19": {
+    "stem": "Le style de conduite, le comportement routier de la voiture et d'autres facteurs influent sur la consommation. Lequel des éléments suivants la réduit le plus ?"
+  },
+  "S_KERHET-4-Q17": {
+    "stem": "Rouler avec la galerie de toit sur la voiture change-t-il quelque chose pour la consommation et l'environnement ?"
+  },
+  "S_KERHET-4-Q23": {
+    "stem": "Paralysie d'un côté du corps, perte de sensibilité, troubles de la parole et de la vue. Quelle maladie donne ces symptômes ?"
+  },
+  "S_KERHET-3-Q21": {
+    "stem": "La vitesse est ici limitée à 30 km/h et tu roules à 30 km/h. Comment dois-tu te comporter ?"
+  },
+  "S_KERHET-6-Q28": {
+    "stem": "Comment peux-tu détecter une fuite dans le circuit de freinage ?"
+  },
+  "S_KERHET-3-Q34": {
+    "stem": "Comment savoir que le servofrein fonctionne ?"
+  },
+  "S_KERHET-5-Q29": {
+    "stem": "Quelle est la meilleure façon de vérifier que la direction assistée fonctionne ?"
+  },
+  "S_KERHET-3-Q11": {
+    "stem": "Combien de temps avant le départ dois-tu brancher le préchauffage moteur par -15 degrés pour que le moteur soit chaud ?"
+  },
+  "S_KERHET-4-Q16": {
+    "stem": "Combien de personnes meurent chaque année parce que quelqu'un a dépassé la vitesse autorisée ?"
+  },
+  "S_KERHET-5-Q2": {
+    "stem": "Combien de personnes meurent chaque année dans des accidents où l'un des impliqués était sous l'emprise de l'alcool ?"
+  },
+  "S_KERHET-4-Q14": {
+    "stem": "Comment remarques-tu qu'une conduite de frein d'un circuit à double freinage a cédé, en dehors du voyant qui s'allume ?"
+  },
+  "S_KERHET-6-Q20": {
+    "stem": "Comment remarques-tu que l'assistance de freinage ne fonctionne pas ?"
+  },
+  "S_KERHET-4-Q35": {
+    "stem": "Combien de personnes meurent chaque année dans la circulation sous l'emprise de l'alcool ?"
+  },
+  "S_KERHET-3-Q8": {
+    "stem": "À quelles forces un être humain peut-il être soumis lors d'un choc frontal entre deux véhicules équivalents à 70 km/h ?"
+  },
+  "S_KERHET-5-Q23": {
+    "stem": "Combien de vies sauverions-nous chaque année si nous portions tous toujours la ceinture de sécurité ?"
+  },
+  "S_KERHET-7-Q23": {
+    "stem": "Quel effet une pression insuffisante des pneus a-t-elle sur les émissions ?"
+  },
+  "S_KERHET-8-Q12": {
+    "stem": "De manière générale, quel effet le téléphone au volant a-t-il sur un conducteur ?"
+  },
+  "S_KERHET-2-Q31": {
+    "stem": "Quel est l'effet sur les émissions de dioxyde de carbone, et donc sur l'environnement, quand tu réduis ta consommation de carburant ?"
+  },
+  "S_KERHET-6-Q34": {
+    "stem": "Comment dois-tu aider un client malvoyant ?"
+  },
+  "S_KERHET-5-Q15": {
+    "stem": "Comment dois-tu arrimer un chargement dans ton taxi ?"
+  }
+}

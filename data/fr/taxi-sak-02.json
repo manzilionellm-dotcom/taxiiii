@@ -1,0 +1,188 @@
+{
+  "S_KERHET-5-Q24": {
+    "stem": "Tu as freiné fortement et tu as senti des pulsations dans la pédale de frein en entendant un bruit mécanique. À quoi cela est-il dû ?"
+  },
+  "S_KERHET-4-Q2": {
+    "stem": "Tu as changé l'huile moteur de ta voiture. Que dois-tu faire de l'huile usagée ?"
+  },
+  "S_KERHET-2-Q6": {
+    "stem": "Ta voiture est équipée de pneus marqués M+S, pour « mud and snow ». Que signifie ce marquage ?"
+  },
+  "S_KERHET-1-Q29": {
+    "stem": "Ta voiture a un airbag à la place du conducteur et à la place du passager avant. Quelle réponse est correcte ?"
+  },
+  "S_KERHET-5-Q6": {
+    "stem": "Un client à bord devient soudain pâle, en sueurs froides, tremblant et irritable. Quelle est la cause la plus probable ?"
+  },
+  "S_KERHET-3-Q9": {
+    "stem": "Un client à bord a soudain du mal à respirer. Il porte le symbole de l'image. Comment devrais-tu réagir ?"
+  },
+  "S_KERHET-2-Q26": {
+    "stem": "Un client à bord commence à respirer lourdement et tu entends que sa respiration est gênée. Quelle peut en être la cause probable ?"
+  },
+  "S_KERHET-2-Q20": {
+    "stem": "Tu as à bord de ton taxi un client ivre qui se comporte de façon agressive et menaçante. Comment dois-tu faire ?"
+  },
+  "S_KERHET-2-Q22": {
+    "stem": "Tu as à bord de ton taxi un client sous l'emprise de stupéfiants et menaçant. Comment devrais-tu faire ?"
+  },
+  "S_KERHET-4-Q34": {
+    "stem": "Tu as un client qui porte autour du cou le symbole de l'image. Quels symptômes cette maladie peut-elle provoquer ?"
+  },
+  "S_KERHET-7-Q27": {
+    "stem": "Un client porte la main à sa poitrine, a du mal à respirer, devient pâle et couvert de sueurs froides. Que devrais-tu faire en premier ?"
+  },
+  "S_KERHET-4-Q11": {
+    "stem": "Tu as un client à mobilité réduite atteint de la maladie de Parkinson, avec des bagages. Tu vas à un hôtel dont la rue d'entrée est interdite à la circulation. Quelle est la règle concernant les bagages ?"
+  },
+  "S_KERHET-1-Q12": {
+    "stem": "Tu as dans ton taxi une personne diabétique. Elle devient soudain pâle, en sueurs froides et irritable. Que devrais-tu faire ?"
+  },
+  "S_KERHET-4-Q33": {
+    "stem": "Tu as à bord une personne qui porte le badge de l'image sur son vêtement. Que signifie-t-il ?"
+  },
+  "S_KERHET-7-Q26": {
+    "stem": "Un passager adulte est assis sans ceinture à l'arrière de ta voiture. Combien de fois son poids corporel atteint son poids au moment du choc si tu heurtes un poids lourd de face à environ 50 km/h ?"
+  },
+  "S_KERHET-5-Q25": {
+    "stem": "Tu transportes un enfant de 6 ans. Quel équipement dois-tu utiliser pour lui ?"
+  },
+  "S_KERHET-2-Q33": {
+    "stem": "Tu as une course à faire. En arrivant chez le client, tu vois qu'il est malvoyant. Comment dois-tu faire ?"
+  },
+  "S_KERHET-7-Q18": {
+    "stem": "On te confie une course le lundi à 07h30 avec deux personnes, de l'aéroport d'Arlanda à la gare centrale d'Örebro. Le trajet a pris 2 heures et 15 minutes pour 201 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-8-Q22": {
+    "stem": "On te confie une course le jour de l'An avec deux personnes, de l'aéroport de Landvetter à la gare centrale de Linköping. Le trajet a pris 2 heures et 30 minutes pour 232 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-7-Q32": {
+    "stem": "On te confie une course le mercredi à 10h00 avec une personne, de l'aéroport de Sturup à l'hôpital Sahlgrenska. Le trajet a pris 3 heures et 10 minutes pour 297 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-7-Q29": {
+    "stem": "On te confie une course à Pâques à 16h00 avec quatre personnes. Le trajet a pris 1 heure et 10 minutes pour 65 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-8-Q23": {
+    "stem": "On te confie une course le mardi à 09h00 avec deux personnes, de l'université d'Uppsala à Helsingborg. Le trajet a pris 3 heures et 5 minutes pour 266 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-7-Q31": {
+    "stem": "On te confie une course le jeudi à 20h45 avec deux personnes, de Växjö à l'aéroport de Sturup. Le trajet a pris 3 heures pour 210 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-7-Q17": {
+    "stem": "On te confie une course pendant Pâques avec deux personnes, de la gare centrale de Växjö au terminal des ferries de Karlskrona. Le trajet a pris 1 heure et 55 minutes pour 125 km. Combien coûtera-t-il d'après l'affichage des prix ?"
+  },
+  "S_KERHET-2-Q3": {
+    "stem": "Pendant une course, un client s'effondre soudain et est pris de convulsions. Quelle est la cause probable ?"
+  },
+  "S_KERHET-8-Q37": {
+    "stem": "Tu as crevé et monté une roue de secours provisoire. Quelle réponse est correcte ?"
+  },
+  "S_KERHET-8-Q25": {
+    "stem": "Tu as quatre clients à bord et tu soupçonnes que du monoxyde de carbone entre dans la voiture par la ligne d'échappement. Que dois-tu faire ?"
+  },
+  "S_KERHET-2-Q25": {
+    "stem": "Tu as attelé une remorque légère à deux essieux. Tu roules sur chaussée glissante un jour de mars et ta voiture a des pneus cloutés. Son poids total est de 1 800 kg. La remorque doit-elle aussi avoir des pneus cloutés ?"
+  },
+  "S_KERHET-2-Q8": {
+    "stem": "Tu as acheté un désodorisant « sapin » et tu l'as accroché dans ton taxi. Peut-il provoquer des allergies ou des troubles de santé chez les clients ?"
+  },
+  "S_KERHET-3-Q5": {
+    "stem": "Tu as acheté deux pneus neufs pour remplacer tes pneus usés. Que dois-tu faire des pneus usés ?"
+  },
+  "S_KERHET-3-Q27": {
+    "stem": "Tu as beaucoup chargé la voiture, elle est lourdement chargée. Comment peut-elle se comporter ?"
+  },
+  "S_KERHET-4-Q26": {
+    "stem": "Tu as l'affichage des prix de l'image. Tu conduis un client un jour ouvré à 07h00. Le trajet a pris 30 minutes pour 20 km. Quel est le prix de la course ?"
+  },
+  "S_KERHET-3-Q7": {
+    "stem": "Tu entends un bruit de frottement métallique quand tu freines. Peux-tu prendre une mesure ?"
+  },
+  "S_KERHET-5-Q12": {
+    "stem": "Tu sens des vibrations dans le volant en roulant. Quelle en est la cause ?"
+  },
+  "S_KERHET-7-Q22": {
+    "stem": "Tu heurtes un sanglier. Qu'es-tu obligé de faire ?"
+  },
+  "S_KERHET-2-Q17": {
+    "stem": "Tu arrives le premier en voiture sur un accident de la route impliquant plusieurs véhicules. Que devrais-tu faire en premier ?"
+  },
+  "S_KERHET-1-Q15": {
+    "stem": "Tu arrives sur un lieu d'accident où une personne est pâle et couverte de sueurs froides. Devrais-tu lui donner à boire ?"
+  },
+  "S_KERHET-2-Q18": {
+    "stem": "Tu arrives sur un accident de la route où une personne a froid. Elle est pâle et couverte de sueurs froides. Comment dois-tu l'aider ?"
+  },
+  "S_KERHET-5-Q40": {
+    "stem": "Tu arrives sur un lieu d'accident impliquant un motocycliste. Dois-tu lui retirer son casque ?"
+  },
+  "S_KERHET-6-Q33": {
+    "stem": "Tu arrives à un passage piéton où une personne aveugle avec une canne blanche veut traverser. Comment dois-tu l'aider ?"
+  },
+  "S_KERHET-4-Q19": {
+    "stem": "Tu arrives sur un accident de la route. Comment dois-tu aider une personne qui saigne abondamment de la jambe ?"
+  },
+  "S_KERHET-5-Q11": {
+    "stem": "Tu contrôles l'huile moteur et tu constates qu'elle est gris blanchâtre. Quelle est la cause la plus probable ?"
+  },
+  "S_KERHET-7-Q37": {
+    "stem": "Tu conduis ton taxi et le voyant de l'image s'allume en roulant. Tu t'arrêtes, tu contrôles le niveau d'huile à la jauge et il est correct. Que devrais-tu faire ?"
+  },
+  "S_KERHET-6-Q18": {
+    "stem": "Tu conduis ton taxi un jour de mars et tu vas y atteler une remorque légère. Le poids total de ta voiture est de 1 800 kg et elle est équipée de pneus hiver non cloutés. Quels pneus faut-il sur la remorque ?"
+  },
+  "S_KERHET-5-Q4": {
+    "stem": "Tu conduis une voiture un jour de janvier. Son poids total est de 2 000 kg et elle est équipée de pneus cloutés. Tu vas y atteler une remorque. Celle-ci doit-elle aussi avoir des pneus cloutés ?"
+  },
+  "S_KERHET-4-Q27": {
+    "stem": "Tu conduis au mois de mars avec des pneus hiver non cloutés. Quelle est la profondeur de sculpture minimale autorisée sur tes pneus ?"
+  },
+  "S_KERHET-7-Q6": {
+    "stem": "Tu conduis une voiture équipée de l'ABS. Que se passe-t-il si tu freines fortement ?"
+  },
+  "S_KERHET-5-Q33": {
+    "stem": "Tu conduis une voiture de 2008 au mois de mars. Elle a des pneus non cloutés et tu vas atteler une remorque. Quels pneus dois-tu utiliser sur la remorque ?"
+  },
+  "S_KERHET-8-Q9": {
+    "stem": "Tu conduis une voiture de 2009 le 31 mars. Quelle profondeur de sculpture dois-tu avoir sur les pneus ?"
+  },
+  "S_KERHET-2-Q5": {
+    "stem": "Tu conduis une voiture particulière de 2008 et tu comptes changer les pneus pour une autre dimension. Peux-tu choisir la dimension que tu veux ?"
+  },
+  "S_KERHET-8-Q29": {
+    "stem": "Tu conduis une voiture particulière. As-tu le droit de rouler avec des pneus cloutés au mois de septembre ?"
+  },
+  "S_KERHET-2-Q9": {
+    "stem": "Tu conduis un taxi et tu dois emmener ton chien chez le vétérinaire. Cela peut-il avoir une conséquence pour le client suivant ?"
+  },
+  "S_KERHET-7-Q28": {
+    "stem": "Tu conduis un véhicule de transport adapté. Comment un fauteuil roulant doit-il être arrimé pendant le trajet ?"
+  },
+  "S_KERHET-8-Q20": {
+    "stem": "Tu roules à 30 km/h. Comment devrais-tu agir dans la situation de l'image ?"
+  },
+  "S_KERHET-3-Q30": {
+    "stem": "Tu fais un long trajet et tu te sens fatigué. Quelle est la mesure la plus efficace pour réduire le risque de micro-sommeil ?"
+  },
+  "S_KERHET-8-Q26": {
+    "stem": "Tu roules dans une zone où des enfants jouent. À quoi dois-tu penser au sujet des enfants en général ?"
+  },
+  "S_KERHET-1-Q3": {
+    "stem": "Tu conduis une voiture à boîte manuelle. Comment procéder, du point de vue de l'environnement, pour réduire la consommation de carburant ?"
+  },
+  "S_KERHET-5-Q32": {
+    "stem": "Tu roules avec des pneus radiaux. Quel effet la pression d'air a-t-elle sur eux ?"
+  },
+  "S_KERHET-3-Q10": {
+    "stem": "Tu roules sur la route de l'image et tu crèves soudain du pneu avant gauche. Tu vas t'arrêter sur l'accotement pour le changer. Quel est le plus grand risque ici ?"
+  },
+  "S_KERHET-5-Q39": {
+    "stem": "Tu roules sur une route de campagne et tu heurtes un sanglier. Comment dois-tu te comporter ?"
+  },
+  "S_KERHET-4-Q7": {
+    "stem": "Tu roules sur autoroute et tu sens des vibrations dans le volant. Comment préserver la durée de vie des pneus ?"
+  },
+  "S_KERHET-5-Q36": {
+    "stem": "Tu conduis un véhicule adapté aux fauteuils roulants et on te confie un transport adapté avec une personne en fauteuil. Comment dois-tu faire ?"
+  }
+}
