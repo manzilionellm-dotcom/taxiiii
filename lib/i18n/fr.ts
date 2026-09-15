@@ -53,6 +53,7 @@ export const fr: Dictionary = {
   glossEmpty: "Pas encore au glossaire",
   glossClose: "Fermer le glossaire",
   glossHint: "Appui long pour le sens",
+  glossInPhrase: "Dans la phrase",
   glossQuestion: "Question",
   glossPassageHint: "Appuie pour traduire toute la question",
   glossExplainHint: "Appuie pour traduire toute l'explication",

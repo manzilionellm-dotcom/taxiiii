@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { GlossableText, GlossableWord } from "@/components/glossary";
 import { tokenizeStem } from "@/lib/hard-words";
 import { t } from "@/lib/i18n";
 import type { Locale, SupportLevel } from "@/lib/types";
@@ -42,7 +43,7 @@ export function ClozeText({
     <p className="question-sv font-serif text-[1.15rem] leading-8 text-black sm:text-[1.25rem]">
       {tokens.map((token, index) => {
         if (token.type === "text") {
-          return <span key={index}>{token.text}</span>;
+          return <GlossableText key={index} text={token.text} variant="stem" />;
         }
         const i = blankSlots.findIndex((item) => item.index === index);
         const typed = values[i] ?? "";
@@ -55,7 +56,11 @@ export function ClozeText({
         if (show) {
           return (
             <span key={index} className="cloze-box">
-              {token.text}
+              {token.text.includes(" ") ? (
+                <GlossableText text={token.text} variant="cloze" />
+              ) : (
+                <GlossableWord text={token.text} variant="cloze" />
+              )}
             </span>
           );
         }

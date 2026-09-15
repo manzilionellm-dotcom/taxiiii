@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { ClozeText } from "@/components/cloze-text";
 import {
   GlossablePassage,
+  GlossableText,
   GlossaryProvider,
   GLOSS_HOLD_MS,
   glossHoldConsumed,
@@ -280,7 +281,9 @@ export function QuestionCard({
                       hint={dict.glossOptionHint}
                       activate="hold"
                     >
-                      <span className="block font-medium leading-6">{option.text}</span>
+                      <span className="block font-medium leading-6">
+                        <GlossableText text={option.text} variant="option" />
+                      </span>
                     </GlossablePassage>
                     {(answered || showFr) &&
                     isRealFrenchText(french.options?.[option.letter]) ? (
@@ -311,7 +314,9 @@ export function QuestionCard({
                 {dict.takeaway}
               </p>
               <GlossablePassage label={dict.takeaway} fr={takeaway.fr} hint={dict.glossExplainHint}>
-                <p className="text-[1.02rem] leading-7 text-black">{takeaway.sv}</p>
+                <p className="text-[1.02rem] leading-7 text-black">
+                  <GlossableText text={takeaway.sv} variant="stem" />
+                </p>
               </GlossablePassage>
               {showFr && isRealFrenchText(takeaway.fr) ? (
                 <p className="question-fr-premium text-[0.98rem] leading-7">{takeaway.fr}</p>
@@ -329,7 +334,7 @@ export function QuestionCard({
                   hint={dict.glossExplainHint}
                 >
                   <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
-                    {question.explanation_sv}
+                    <GlossableText text={question.explanation_sv} variant="stem" />
                   </p>
                 </GlossablePassage>
                 {showFr && isRealFrenchText(explanationFr) ? (
@@ -350,7 +355,9 @@ export function QuestionCard({
                   fr={distractors.fr}
                   hint={dict.glossExplainHint}
                 >
-                  <p className="text-[0.98rem] leading-7 text-black">{distractors.sv}</p>
+                  <p className="text-[0.98rem] leading-7 text-black">
+                    <GlossableText text={distractors.sv} variant="stem" />
+                  </p>
                 </GlossablePassage>
                 {showFr && isRealFrenchText(distractors.fr) ? (
                   <p className="question-fr-premium text-[0.95rem] leading-7">{distractors.fr}</p>

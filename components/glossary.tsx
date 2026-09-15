@@ -8,7 +8,6 @@ import {
   useId,
   useRef,
   useState,
-  type PointerEvent as ReactPointerEvent,
   type ReactNode,
 } from "react";
 import { createPortal } from "react-dom";
@@ -50,12 +49,14 @@ type OpenGloss = GlossSurface & {
   left: number;
   above: boolean;
   width: number;
+  viaPhrase?: boolean;
 };
 
 export type GlossOpenExtra = {
   fr?: string | null;
   lemma?: string;
   kind?: GlossKind;
+  viaPhrase?: boolean;
 };
 
 type GlossaryApi = {
@@ -66,6 +67,7 @@ type GlossaryApi = {
 };
 
 const GlossaryContext = createContext<GlossaryApi | null>(null);
+const PhraseFrContext = createContext<string | null>(null);
 
 function placeChip(rect: DOMRect, preferAbove = false, kind: GlossKind = "word") {
   const width =
@@ -119,6 +121,7 @@ export function GlossaryProvider({
         fr,
         phonetic: hit?.phonetic,
         kind,
+        viaPhrase: extra?.viaPhrase,
         top: pos.top,
         left: pos.left,
         above: pos.above,
@@ -137,19 +140,21 @@ export function GlossaryProvider({
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") close();
     };
-    const onScroll = () => close();
     const onPointer = (event: PointerEvent) => {
       const target = event.target;
-      if (target instanceof Element && target.closest("[data-gloss-root]")) return;
+      if (
+        target instanceof Element &&
+        target.closest("[data-gloss-root], [data-gloss-passage], [data-gloss-word]")
+      ) {
+        return;
+      }
       close();
     };
     window.addEventListener("keydown", onKey);
-    window.addEventListener("scroll", onScroll, true);
     window.addEventListener("resize", close);
     window.addEventListener("pointerdown", onPointer);
     return () => {
       window.removeEventListener("keydown", onKey);
-      window.removeEventListener("scroll", onScroll, true);
       window.removeEventListener("resize", close);
       window.removeEventListener("pointerdown", onPointer);
     };
@@ -207,7 +212,12 @@ function GlossChip({
     >
       <p className="gloss-chip-sv">{gloss.lemma}</p>
       {found ? (
-        <p className="gloss-chip-fr">{gloss.fr}</p>
+        <>
+          {gloss.viaPhrase ? (
+            <p className="gloss-chip-ipa">{dict.glossInPhrase}</p>
+          ) : null}
+          <p className="gloss-chip-fr">{gloss.fr}</p>
+        </>
       ) : (
         <p className="gloss-chip-empty">{dict.translationSoon}</p>
       )}
@@ -286,16 +296,26 @@ export function GlossableWord({
   variant?: "stem" | "option" | "cloze";
 }) {
   const { open, activeToken, hint } = useGlossary();
+  const phraseFr = useContext(PhraseFrContext);
   const ref = useRef<HTMLSpanElement>(null);
-  const allowMouseClick = variant !== "option";
-  const hold = useHoldTimer(() => open(text, ref.current));
+  const hold = useHoldTimer(() => {
+    const hit = lookupGloss(text);
+    if (hit?.fr) {
+      open(text, ref.current);
+      return;
+    }
+    if (phraseFr?.trim()) {
+      open(text, ref.current, { fr: phraseFr, lemma: text, viaPhrase: true });
+      return;
+    }
+    open(text, ref.current);
+  });
 
   if (!shouldOfferGloss(text)) {
     return <span>{text}</span>;
   }
 
   const isOpen = activeToken === text;
-  const interactive = variant !== "option";
 
   return (
     <span
@@ -303,26 +323,13 @@ export function GlossableWord({
       data-gloss-word
       data-gloss-variant={variant}
       data-open={isOpen ? "true" : "false"}
-      role={interactive ? "button" : undefined}
-      tabIndex={interactive ? 0 : undefined}
       className={`gloss-word gloss-word-${variant}`}
       aria-label={`${text}. ${hint}`}
-      aria-haspopup={interactive ? "true" : undefined}
-      aria-expanded={interactive ? isOpen : undefined}
-      onKeyDown={(event) => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          event.stopPropagation();
-          open(text, ref.current);
-        }
-      }}
       onContextMenu={(event) => {
         event.preventDefault();
       }}
       onPointerDown={(event) => {
         if (event.button !== 0) return;
-        // Options must keep the tap: one press = pick the answer.
-        if (variant !== "option") event.stopPropagation();
         hold.arm(event.clientX, event.clientY);
       }}
       onPointerMove={(event) => hold.onMove(event.clientX, event.clientY)}
@@ -332,30 +339,14 @@ export function GlossableWord({
         if (wasHold) {
           event.preventDefault();
           event.stopPropagation();
-          return;
-        }
-        if (
-          allowMouseClick &&
-          !hold.moved.current &&
-          event.button === 0 &&
-          event.pointerType !== "touch"
-        ) {
-          event.preventDefault();
-          event.stopPropagation();
-          open(text, ref.current);
         }
       }}
       onPointerCancel={hold.clearHold}
       onClick={(event) => {
-        if (variant === "option") {
-          if (hold.fired.current) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          return;
+        if (hold.fired.current) {
+          event.preventDefault();
+          event.stopPropagation();
         }
-        event.preventDefault();
-        event.stopPropagation();
       }}
     >
       {text}
@@ -363,7 +354,7 @@ export function GlossableWord({
   );
 }
 
-/** Tap or long-press a whole Swedish block → red FR for the entire text. */
+/** Tap the block → full FR stays. Long-press a word → that word. */
 export function GlossablePassage({
   label,
   fr,
@@ -381,62 +372,53 @@ export function GlossablePassage({
 }) {
   const { open, activeToken } = useGlossary();
   const ref = useRef<HTMLDivElement>(null);
+  const [pinned, setPinned] = useState(false);
   const surface = `passage:${label}`;
-  const fire = () => open(label, ref.current, { fr: fr ?? null, lemma: label, kind: "passage" });
+  const fire = () => {
+    setPinned(true);
+    open(label, ref.current, { fr: fr ?? null, lemma: label, kind: "passage" });
+  };
   const hold = useHoldTimer(fire);
-  const isOpen = activeToken === surface;
+  const isOpen = pinned || activeToken === surface;
   const found = Boolean(fr?.trim());
 
-  const onPointerDown = (event: ReactPointerEvent) => {
-    if (event.button !== 0) return;
-    hold.arm(event.clientX, event.clientY);
-  };
-
   return (
-    <div
-      ref={ref}
-      data-gloss-passage
-      data-open={isOpen ? "true" : "false"}
-      role={activate === "tap" ? "button" : undefined}
-      tabIndex={activate === "tap" ? 0 : undefined}
-      className={`gloss-passage ${className ?? ""}`}
-      aria-label={hint}
-      aria-expanded={isOpen}
-      onContextMenu={(event) => event.preventDefault()}
-      onKeyDown={(event) => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          fire();
-        }
-      }}
-      onPointerDown={onPointerDown}
-      onPointerMove={(event) => hold.onMove(event.clientX, event.clientY)}
-      onPointerUp={(event) => {
-        const wasHold = hold.fired.current;
-        const moved = hold.moved.current;
-        hold.clearHold();
-        if (wasHold) {
-          event.preventDefault();
-          event.stopPropagation();
-          return;
-        }
-        if (activate === "tap" && !moved && event.button === 0) {
-          event.preventDefault();
-          event.stopPropagation();
-          fire();
-        }
-      }}
-      onPointerCancel={hold.clearHold}
-    >
-      {children}
-      {isOpen ? (
-        found ? (
+    <PhraseFrContext.Provider value={fr ?? null}>
+      <div
+        ref={ref}
+        data-gloss-passage
+        data-open={isOpen ? "true" : "false"}
+        className={`gloss-passage ${className ?? ""}`}
+        aria-label={hint}
+        onContextMenu={(event) => event.preventDefault()}
+        onPointerDown={(event) => {
+          if (event.button !== 0) return;
+          if (activate === "hold") hold.arm(event.clientX, event.clientY);
+        }}
+        onPointerMove={(event) => hold.onMove(event.clientX, event.clientY)}
+        onPointerUp={(event) => {
+          const wasHold = hold.fired.current;
+          const moved = hold.moved.current;
+          hold.clearHold();
+          if (wasHold || glossHoldConsumed()) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+          }
+          if (activate === "tap" && !moved && event.button === 0) {
+            event.preventDefault();
+            event.stopPropagation();
+            fire();
+          }
+        }}
+        onPointerCancel={hold.clearHold}
+      >
+        {children}
+        {isOpen && found ? (
           <p className="question-fr-premium mt-2 whitespace-pre-wrap text-[1.02rem] leading-7">{fr}</p>
-        ) : (
-          <p className="gloss-chip-empty mt-2">{hint}</p>
-        )
-      ) : null}
-    </div>
+        ) : null}
+      </div>
+    </PhraseFrContext.Provider>
   );
 }
 

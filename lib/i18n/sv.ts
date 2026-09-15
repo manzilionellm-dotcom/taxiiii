@@ -52,6 +52,7 @@ export const sv = {
   glossEmpty: "Finns inte i glossariet än",
   glossClose: "Stäng glossariet",
   glossHint: "Tryck länge för betydelsen",
+  glossInPhrase: "I meningen",
   glossQuestion: "Fråga",
   glossPassageHint: "Tryck för att översätta hela frågan",
   glossExplainHint: "Tryck för att översätta hela förklaringen",
