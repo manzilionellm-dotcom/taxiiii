@@ -1,8 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ClozeText } from "@/components/cloze-text";
-import { GlossableText, GlossaryProvider } from "@/components/glossary";
+import {
+  GlossablePassage,
+  GlossableText,
+  GlossaryProvider,
+  GLOSS_HOLD_MS,
+  glossHoldConsumed,
+} from "@/components/glossary";
 import { ProtectedImage } from "@/components/protected-image";
 import { t } from "@/lib/i18n";
 import { displayFrench, distractorNote, takeawayFor } from "@/lib/questions/review.mjs";
@@ -20,17 +26,56 @@ function ExamFigure({
   alt,
   unavailableLabel,
   onUnavailable,
+  onHold,
+  holdHint,
 }: {
   question: SessionQuestion;
   alt: string;
   unavailableLabel: string;
   onUnavailable?: () => void;
+  onHold?: () => void;
+  holdHint?: string;
 }) {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
+  const timer = useRef<number>(0);
+  const start = useRef({ x: 0, y: 0 });
+  const fired = useRef(false);
   if (failed) return null;
+
+  const clearHold = () => {
+    if (timer.current) window.clearTimeout(timer.current);
+    timer.current = 0;
+  };
+
   return (
-    <figure className="exam-figure overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
+    <figure
+      className="exam-figure overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]"
+      aria-label={holdHint}
+      onContextMenu={(event) => {
+        if (onHold) event.preventDefault();
+      }}
+      onPointerDown={(event) => {
+        if (!onHold || event.button !== 0) return;
+        fired.current = false;
+        start.current = { x: event.clientX, y: event.clientY };
+        clearHold();
+        timer.current = window.setTimeout(() => {
+          fired.current = true;
+          onHold();
+        }, GLOSS_HOLD_MS);
+      }}
+      onPointerMove={(event) => {
+        if (!timer.current) return;
+        if (Math.hypot(event.clientX - start.current.x, event.clientY - start.current.y) > 10) {
+          clearHold();
+        }
+      }}
+      onPointerUp={() => {
+        clearHold();
+      }}
+      onPointerCancel={clearHold}
+    >
       <div className="flex min-h-40 items-center justify-center overflow-auto px-2 pt-3">
         <ProtectedImage
           src={question.imageUrl!}
@@ -46,7 +91,10 @@ function ExamFigure({
         />
       </div>
       {ready ? (
-        <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">{alt}</figcaption>
+        <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">
+          {alt}
+          {holdHint ? <span className="mt-1 block text-[11px] text-[#b91c1c]">{holdHint}</span> : null}
+        </figcaption>
       ) : null}
     </figure>
   );
@@ -74,15 +122,16 @@ export function QuestionCard({
   const dict = t(locale);
   const french = question.translation;
   const [picked, setPicked] = useState<string | null>(null);
-  const [showFr, setShowFr] = useState(supportLevel >= 2);
+  const [showFr, setShowFr] = useState(false);
   const [lightbox, setLightbox] = useState(false);
+  const [pdfTranslated, setPdfTranslated] = useState(false);
   const [reviewQueued, setReviewQueued] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
 
   const answered = picked !== null;
   const correct = picked === question.answer;
   const compact = variant === "exam";
-  const showFrNow = answered || showFr || supportLevel >= 3;
+  const showFrNow = showFr;
   const figureAlt = sanitizeCaption(question.imageCaption) || dict.examPageCaption;
   const imageFirst = question.form === "image-first" || Boolean(question.imageFirst);
   const showInlineFigure =
@@ -139,29 +188,32 @@ export function QuestionCard({
             alt={figureAlt}
             unavailableLabel={dict.imageUnavailable}
             onUnavailable={markImageUnavailable}
+            onHold={() => setPdfTranslated((value) => !value)}
+            holdHint={dict.glossPdfHint}
           />
         ) : null}
 
-        <ClozeText
-          stem={question.stem_sv}
-          locale={locale}
-          fragile={fragile}
-          supportLevel={supportLevel}
-          revealAll={answered}
-        />
+        <GlossablePassage label={dict.glossQuestion} fr={stemFr} hint={dict.glossPassageHint}>
+          <ClozeText
+            stem={question.stem_sv}
+            locale={locale}
+            fragile={fragile}
+            supportLevel={supportLevel}
+            revealAll={answered}
+          />
+        </GlossablePassage>
 
         {showFrNow && isRealFrenchText(stemFr) ? (
-          <p className="question-fr text-[1.02rem] leading-7">{stemFr}</p>
+          <p className="question-fr-premium text-[1.02rem] leading-7">{stemFr}</p>
         ) : null}
 
-        {/* Offer the toggle whenever any French exists, not only for the stem. */}
         {!showFrNow && hasFrench ? (
           <button
             type="button"
-            className="min-h-11 text-left text-sm font-medium text-[#1d4ed8]"
+            className="min-h-11 text-left text-sm font-medium text-[#b91c1c]"
             onClick={() => setShowFr(true)}
           >
-            {dict.showTranslation}
+            {dict.glossPassageHint}
           </button>
         ) : null}
 
@@ -171,6 +223,8 @@ export function QuestionCard({
             alt={figureAlt}
             unavailableLabel={dict.imageUnavailable}
             onUnavailable={markImageUnavailable}
+            onHold={() => setPdfTranslated((value) => !value)}
+            holdHint={dict.glossPdfHint}
           />
         ) : null}
 
@@ -185,8 +239,12 @@ export function QuestionCard({
                   role="button"
                   tabIndex={disabled || answered ? -1 : 0}
                   aria-disabled={disabled || answered}
-                  onClick={(event) => {
-                    if ((event.target as HTMLElement).closest("[data-gloss-word]")) return;
+                  onPointerUp={() => {
+                    if (glossHoldConsumed()) return;
+                    select(option.letter);
+                  }}
+                  onClick={() => {
+                    if (glossHoldConsumed()) return;
                     select(option.letter);
                   }}
                   onKeyDown={(event) => {
@@ -222,7 +280,7 @@ export function QuestionCard({
                     </span>
                     {(answered || showFr) &&
                     isRealFrenchText(french.options?.[option.letter]) ? (
-                      <span className="mt-1 block text-sm leading-6 text-[#1d4ed8]">
+                      <span className="question-fr-premium mt-1 block text-sm leading-6">
                         {french.options[option.letter]}
                       </span>
                     ) : null}
@@ -248,9 +306,13 @@ export function QuestionCard({
               <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
                 {dict.takeaway}
               </p>
-              <p className="text-[1.02rem] leading-7 text-black">{takeaway.sv}</p>
-              {supportLevel > 0 && isRealFrenchText(takeaway.fr) ? (
-                <p className="question-fr text-[0.98rem] leading-7">{takeaway.fr}</p>
+              <GlossablePassage label={dict.takeaway} fr={takeaway.fr} hint={dict.glossExplainHint}>
+                <p className="text-[1.02rem] leading-7 text-black">
+                  <GlossableText text={takeaway.sv} variant="stem" />
+                </p>
+              </GlossablePassage>
+              {showFr && isRealFrenchText(takeaway.fr) ? (
+                <p className="question-fr-premium text-[0.98rem] leading-7">{takeaway.fr}</p>
               ) : null}
             </div>
 
@@ -259,11 +321,17 @@ export function QuestionCard({
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
                   {dict.whyCorrect} · {question.answer}
                 </p>
-                <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
-                  {question.explanation_sv}
-                </p>
-                {supportLevel > 0 && isRealFrenchText(explanationFr) ? (
-                  <p className="question-fr whitespace-pre-wrap text-[0.95rem] leading-7">
+                <GlossablePassage
+                  label={dict.explanation}
+                  fr={explanationFr}
+                  hint={dict.glossExplainHint}
+                >
+                  <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
+                    <GlossableText text={question.explanation_sv} variant="stem" />
+                  </p>
+                </GlossablePassage>
+                {showFr && isRealFrenchText(explanationFr) ? (
+                  <p className="question-fr-premium whitespace-pre-wrap text-[0.95rem] leading-7">
                     {explanationFr}
                   </p>
                 ) : null}
@@ -275,9 +343,17 @@ export function QuestionCard({
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
                   {dict.whyOthersWrong}
                 </p>
-                <p className="text-[0.98rem] leading-7 text-black">{distractors.sv}</p>
-                {supportLevel > 0 && isRealFrenchText(distractors.fr) ? (
-                  <p className="question-fr text-[0.95rem] leading-7">{distractors.fr}</p>
+                <GlossablePassage
+                  label={dict.whyOthersWrong}
+                  fr={distractors.fr}
+                  hint={dict.glossExplainHint}
+                >
+                  <p className="text-[0.98rem] leading-7 text-black">
+                    <GlossableText text={distractors.sv} variant="stem" />
+                  </p>
+                </GlossablePassage>
+                {showFr && isRealFrenchText(distractors.fr) ? (
+                  <p className="question-fr-premium text-[0.95rem] leading-7">{distractors.fr}</p>
                 ) : null}
               </div>
             ) : null}
@@ -294,6 +370,8 @@ export function QuestionCard({
                     alt={figureAlt}
                     unavailableLabel={dict.imageUnavailable}
                     onUnavailable={markImageUnavailable}
+                    onHold={() => setPdfTranslated((value) => !value)}
+                    holdHint={dict.glossPdfHint}
                   />
                   <button type="button" className="btn-secondary w-full" onClick={() => setLightbox(true)}>
                     {dict.viewExamPage}
@@ -326,7 +404,20 @@ export function QuestionCard({
                 alt={figureAlt}
                 unavailableLabel={dict.imageUnavailable}
                 onUnavailable={markImageUnavailable}
+                onHold={() => setPdfTranslated((value) => !value)}
+                holdHint={dict.glossPdfHint}
               />
+              {pdfTranslated ? (
+                <PdfTranslation
+                  stemFr={stemFr}
+                  optionFr={question.options.map((option) => ({
+                    letter: option.letter,
+                    text: french.options?.[option.letter],
+                  }))}
+                  explanationFr={explanationFr}
+                  empty={dict.translationSoon}
+                />
+              ) : null}
               <button type="button" className="btn-primary w-full" onClick={() => setLightbox(false)}>
                 {dict.closeExamPage}
               </button>
@@ -335,5 +426,37 @@ export function QuestionCard({
         ) : null}
       </article>
     </GlossaryProvider>
+  );
+}
+
+function PdfTranslation({
+  stemFr,
+  optionFr,
+  explanationFr,
+  empty,
+}: {
+  stemFr?: string | null;
+  optionFr: Array<{ letter: string; text?: string }>;
+  explanationFr?: string | null;
+  empty: string;
+}) {
+  const lines = [
+    isRealFrenchText(stemFr) ? stemFr : null,
+    ...optionFr.map((option) =>
+      isRealFrenchText(option.text) ? `${option.letter}. ${option.text}` : null,
+    ),
+    isRealFrenchText(explanationFr) ? explanationFr : null,
+  ].filter((line): line is string => Boolean(line));
+  if (!lines.length) {
+    return <p className="question-fr-premium text-sm">{empty}</p>;
+  }
+  return (
+    <div className="pdf-fr-panel space-y-2">
+      {lines.map((line) => (
+        <p key={line.slice(0, 48)} className="question-fr-premium whitespace-pre-wrap text-[0.98rem] leading-7">
+          {line}
+        </p>
+      ))}
+    </div>
   );
 }

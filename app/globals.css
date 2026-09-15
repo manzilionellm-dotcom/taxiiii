@@ -321,6 +321,35 @@ input[type="range"] {
   color: var(--french);
 }
 
+.question-fr-premium {
+  color: var(--cloze);
+  font-family: var(--font-source-serif), "Source Serif 4", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.gloss-passage {
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+}
+
+.gloss-chip[data-kind="passage"] {
+  max-width: min(26rem, calc(100vw - 2rem));
+}
+
+.gloss-chip[data-kind="passage"] .gloss-chip-fr {
+  white-space: pre-wrap;
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+
+.pdf-fr-panel {
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  background: #fffdf8;
+  padding: 0.9rem 1rem;
+}
+
 .solution-panel {
   display: grid;
   gap: 1.05rem;
