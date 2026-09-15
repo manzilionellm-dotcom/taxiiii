@@ -15,6 +15,8 @@ const config: CapacitorConfig = {
   },
   android: {
     allowMixedContent: false,
+    /** Any gap between two paints is the brand colour, never white. */
+    backgroundColor: "#1f3d2b",
     /**
      * targetSdk 35 forces edge-to-edge on Android 15+, and an Android WebView
      * reports env(safe-area-inset-*) for display cutouts only — never for the
@@ -26,10 +28,21 @@ const config: CapacitorConfig = {
   },
   plugins: {
     SplashScreen: {
-      launchShowDuration: 1200,
+      /**
+       * The app loads a remote page, so "ready" is a network event the native
+       * splash cannot see. Rather than hold the splash on a plugin call that
+       * would strand the user on a brand screen when the request fails, the
+       * splash fades into the bridge page, which paints the same forest green
+       * and owns the offline case. Three surfaces, one colour, no white flash.
+       */
+      launchShowDuration: 1400,
       launchAutoHide: true,
+      launchFadeOutDuration: 320,
       backgroundColor: "#1f3d2b",
       showSpinner: false,
+      androidSplashResourceName: "splash",
+      splashFullScreen: false,
+      splashImmersive: false,
     },
     StatusBar: {
       style: "LIGHT",

@@ -1,23 +1,27 @@
 import { BrandGlyph, BrandMark } from "@/components/brand-mark";
 import { BRAND } from "@/lib/branding";
 
+/**
+ * Cold start, one continuous brand moment. The Android launch screen, the
+ * Capacitor bridge page (scripts/write-native-www.mjs) and this screen paint
+ * the same forest green, so the app opens on its own colour instead of
+ * flashing white between three different first paints.
+ *
+ * Kept deliberately quiet: a launch screen that explains the product is a
+ * launch screen the user reads once and then waits through every morning.
+ */
 export function SplashScreen() {
   return (
-    <div className="flex min-h-dvh flex-col items-center justify-center bg-[var(--background)] px-6 text-center">
-      <div className="splash-ring mb-6">
-        <BrandGlyph size={72} />
+    <div className="splash-screen">
+      <div className="splash-ring">
+        <BrandGlyph size={64} tone="light" />
       </div>
-      <BrandMark className="text-3xl text-[var(--forest)]" />
-      <p className="mt-4 max-w-xs font-serif text-xl leading-snug text-black">{BRAND.slogan}</p>
-      <p className="mt-2 max-w-xs text-sm text-[var(--muted)]">{BRAND.keyMessage}</p>
-      <p className="mt-5 max-w-xs text-sm leading-6 text-[#1f3d2b]">
-        Läraren är här. / L&apos;enseignant est là.
-      </p>
-      <div className="mt-10 flex gap-1.5" aria-hidden>
-        <span className="skeleton h-1.5 w-8 rounded-full" />
-        <span className="skeleton h-1.5 w-8 rounded-full" />
-        <span className="skeleton h-1.5 w-8 rounded-full" />
-      </div>
+      <BrandMark className="mt-6 text-[1.75rem] text-[#fffdf8]" />
+      <p className="mt-2 text-sm leading-6 text-[#cfe0d4]">{BRAND.slogan}</p>
+      <span className="splash-progress" aria-hidden />
+      <span className="sr-only" role="status">
+        {BRAND.keyMessage}
+      </span>
     </div>
   );
 }

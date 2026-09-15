@@ -1,6 +1,15 @@
 import { BRAND, brandLockup } from "@/lib/branding";
 
-export function BrandGlyph({ size = 28 }: { size?: number }) {
+export function BrandGlyph({
+  size = 28,
+  tone = "dark",
+}: {
+  size?: number;
+  /** "light" inverts the mark for the forest-green splash and launch screens. */
+  tone?: "dark" | "light";
+}) {
+  const ground = tone === "light" ? "#fffdf8" : "#1f3d2b";
+  const ring = tone === "light" ? "#1f3d2b" : "#fffdf8";
   return (
     <svg
       width={size}
@@ -9,15 +18,8 @@ export function BrandGlyph({ size = 28 }: { size?: number }) {
       aria-hidden
       className="shrink-0"
     >
-      <circle cx="16" cy="16" r="16" fill="#1f3d2b" />
-      <circle
-        cx="16"
-        cy="16"
-        r="7.4"
-        fill="none"
-        stroke="#fffdf8"
-        strokeWidth="2.4"
-      />
+      <circle cx="16" cy="16" r="16" fill={ground} />
+      <circle cx="16" cy="16" r="7.4" fill="none" stroke={ring} strokeWidth="2.4" />
     </svg>
   );
 }

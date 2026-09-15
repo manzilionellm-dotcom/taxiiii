@@ -157,11 +157,30 @@ if (existsSync(manifest)) {
   writeFileSync(manifest, xml);
 }
 
-const splashSrc = join(root, "assets/splash.png");
-const drawable = join(root, "android/app/src/main/res/drawable");
-if (existsSync(splashSrc)) {
-  mkdirSync(drawable, { recursive: true });
-  copyFileSync(splashSrc, join(drawable, "splash.png"));
+/**
+ * Launch screen art into every folder Android may resolve.
+ *
+ * This used to write `drawable/splash.png` only — but `cap sync` also lays
+ * down `drawable-port-*` and `drawable-land-*` copies, and a qualified folder
+ * always beats the unqualified one, so on a real phone the brand splash was
+ * never the bitmap that rendered. Portrait art goes to the port buckets,
+ * landscape art to the land buckets, portrait to the bare fallback.
+ */
+const res = join(root, "android/app/src/main/res");
+const splashPort = join(root, "assets/splash-port.png");
+const splashLand = join(root, "assets/splash-land.png");
+const DENSITIES = ["mdpi", "hdpi", "xhdpi", "xxhdpi", "xxxhdpi"];
+if (existsSync(splashPort) && existsSync(splashLand)) {
+  const targets = [["drawable", splashPort]];
+  for (const density of DENSITIES) {
+    targets.push([`drawable-port-${density}`, splashPort]);
+    targets.push([`drawable-land-${density}`, splashLand]);
+  }
+  for (const [folder, src] of targets) {
+    const dir = join(res, folder);
+    mkdirSync(dir, { recursive: true });
+    copyFileSync(src, join(dir, "splash.png"));
+  }
 }
 
 const sdkDir = process.env.ANDROID_HOME || process.env.ANDROID_SDK_ROOT || `${process.env.HOME}/android-sdk`;

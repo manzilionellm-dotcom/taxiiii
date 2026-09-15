@@ -3,26 +3,9 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-/** Forest-green square icon — no extra image deps. */
-const SIZE = 1024;
+/** Brand art with no image dependencies: forest ground, cream ring. */
 const FOREST = [0x1f, 0x3d, 0x2b, 0xff];
 const CREAM = [0xff, 0xfd, 0xf8, 0xff];
-
-const raw = Buffer.alloc(SIZE * SIZE * 4);
-for (let y = 0; y < SIZE; y++) {
-  for (let x = 0; x < SIZE; x++) {
-    const i = (y * SIZE + x) * 4;
-    const dx = x - SIZE / 2;
-    const dy = y - SIZE / 2;
-    const r = Math.sqrt(dx * dx + dy * dy);
-    const ring = r > 310 && r < 390;
-    const pixel = ring ? CREAM : FOREST;
-    raw[i] = pixel[0];
-    raw[i + 1] = pixel[1];
-    raw[i + 2] = pixel[2];
-    raw[i + 3] = pixel[3];
-  }
-}
 
 function crc32(buf) {
   let crc = ~0;
@@ -44,29 +27,68 @@ function chunk(type, data) {
   return Buffer.concat([len, typeBuf, data, crc]);
 }
 
-const signature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
-const ihdr = Buffer.alloc(13);
-ihdr.writeUInt32BE(SIZE, 0);
-ihdr.writeUInt32BE(SIZE, 4);
-ihdr[8] = 8;
-ihdr[9] = 6;
+/**
+ * @param width  pixels
+ * @param height pixels
+ * @param ring   outer diameter of the mark as a fraction of the shorter side
+ */
+function render(width, height, ring) {
+  const short = Math.min(width, height);
+  const outer = (short * ring) / 2;
+  const inner = outer * 0.795;
+  const cx = width / 2;
+  const cy = height / 2;
+  const raw = Buffer.alloc(width * height * 4);
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const i = (y * width + x) * 4;
+      const dx = x + 0.5 - cx;
+      const dy = y + 0.5 - cy;
+      const r = Math.sqrt(dx * dx + dy * dy);
+      const pixel = r > inner && r < outer ? CREAM : FOREST;
+      raw[i] = pixel[0];
+      raw[i + 1] = pixel[1];
+      raw[i + 2] = pixel[2];
+      raw[i + 3] = pixel[3];
+    }
+  }
 
-const rows = [];
-for (let y = 0; y < SIZE; y++) {
-  rows.push(Buffer.from([0]));
-  rows.push(raw.subarray(y * SIZE * 4, (y + 1) * SIZE * 4));
+  const ihdr = Buffer.alloc(13);
+  ihdr.writeUInt32BE(width, 0);
+  ihdr.writeUInt32BE(height, 4);
+  ihdr[8] = 8;
+  ihdr[9] = 6;
+
+  const rows = [];
+  for (let y = 0; y < height; y++) {
+    rows.push(Buffer.from([0]));
+    rows.push(raw.subarray(y * width * 4, (y + 1) * width * 4));
+  }
+  return Buffer.concat([
+    Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]),
+    chunk("IHDR", ihdr),
+    chunk("IDAT", deflateSync(Buffer.concat(rows), { level: 9 })),
+    chunk("IEND", Buffer.alloc(0)),
+  ]);
 }
-const idat = deflateSync(Buffer.concat(rows), { level: 9 });
-const png = Buffer.concat([
-  signature,
-  chunk("IHDR", ihdr),
-  chunk("IDAT", idat),
-  chunk("IEND", Buffer.alloc(0)),
-]);
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const assets = join(root, "assets");
 mkdirSync(assets, { recursive: true });
-writeFileSync(join(assets, "icon.png"), png);
-writeFileSync(join(assets, "splash.png"), png);
-console.log("wrote assets/icon.png and assets/splash.png");
+
+/** Launcher icon: the mark fills the tile, the way app icons are drawn. */
+writeFileSync(join(assets, "icon.png"), render(1024, 1024, 0.76));
+
+/**
+ * Launch screen art, one file per orientation. The old build reused the square
+ * 1024² icon as the splash: `android:background="@drawable/splash"` stretches a
+ * bitmap to the window, so on a 9:19.5 phone the ring came out as a wide
+ * ellipse. Drawing the mark at 30 % of the short side in the real aspect ratio
+ * keeps it a circle on every device.
+ */
+writeFileSync(join(assets, "splash-port.png"), render(1080, 1920, 0.3));
+writeFileSync(join(assets, "splash-land.png"), render(1920, 1080, 0.3));
+/** Kept as the portrait alias for anything still reading assets/splash.png. */
+writeFileSync(join(assets, "splash.png"), render(1080, 1920, 0.3));
+
+console.log("wrote assets/icon.png, splash-port.png, splash-land.png, splash.png");

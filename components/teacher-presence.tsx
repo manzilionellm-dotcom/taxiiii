@@ -8,7 +8,7 @@ import { lawWatchDateLabel, lawWatchFresh, lawWatchMeta } from "@/lib/law-watch"
 import { computeTeacherPresence, persistableWeakTopics } from "@/lib/teacher/presence";
 import { topicSv } from "@/lib/teacher/copy.mjs";
 import { useQuestionCatalog } from "@/lib/questions/use-catalog";
-import type { Track } from "@/lib/types";
+import type { Locale, Topic, Track } from "@/lib/types";
 
 export function TeacherPresence({
   track,
@@ -62,26 +62,7 @@ export function TeacherPresence({
         <p className="text-[1.02rem] leading-7 text-[#1f3d2b]">{model.note}</p>
       </header>
 
-      {model.weak.length ? (
-        <div className="space-y-2">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
-            {dict.teacherWeakMap}
-          </p>
-          <ul className="space-y-1.5">
-            {model.weak.map((row) => (
-              <li key={row.topic}>
-                <Link
-                  href={`/${track}/study?focus=${row.topic}`}
-                  className="flex items-baseline justify-between gap-3 text-sm text-black hover:text-[#1f3d2b]"
-                >
-                  <span>{dict.topic[row.topic]}</span>
-                  <span className="tabular-nums text-[#6b6560]">{row.accuracy}%</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
+      <WeakTopicList track={track} locale={state.profile.locale} weak={model.weak} />
 
       <div className="grid gap-2 sm:grid-cols-2">
         <Link href={model.correctHref} className="btn-primary">
@@ -96,6 +77,45 @@ export function TeacherPresence({
 
       <LawWatchBadge locale={state.profile.locale} />
     </section>
+  );
+}
+
+/**
+ * The weak-topic list, shared by the teacher panel and the home screen so both
+ * read the same ranking from lib/teacher/presence.ts instead of two copies.
+ */
+export function WeakTopicList({
+  track,
+  locale,
+  weak,
+  className = "",
+}: {
+  track: Track;
+  locale: Locale;
+  weak: { topic: Topic; accuracy: number }[];
+  className?: string;
+}) {
+  const dict = t(locale);
+  if (!weak.length) return null;
+  return (
+    <div className={`space-y-2 ${className}`}>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+        {dict.teacherWeakMap}
+      </p>
+      <ul className="space-y-1.5">
+        {weak.map((row) => (
+          <li key={row.topic}>
+            <Link
+              href={`/${track}/study?focus=${row.topic}`}
+              className="flex min-h-9 items-baseline justify-between gap-3 text-sm text-black hover:text-[#1f3d2b]"
+            >
+              <span>{dict.topic[row.topic]}</span>
+              <span className="tabular-nums text-[#6b6560]">{row.accuracy}%</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

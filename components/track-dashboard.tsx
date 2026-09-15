@@ -71,7 +71,6 @@ export function TrackDashboard({ track }: { track: Track }) {
         <p className="max-w-xl text-sm text-[#6b6560]">
           {track === "owner" ? dict.studyOrderOwner : dict.studyOrder}
         </p>
-        <p className="text-xs leading-5 text-[#8a8276]">{dict.demoNote}</p>
       </header>
 
       <ReadinessWidget locale={state.profile.locale} readiness={readiness} />
