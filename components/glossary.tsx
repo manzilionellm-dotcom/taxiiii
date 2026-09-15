@@ -363,32 +363,32 @@ export function GlossableWord({
   );
 }
 
-/** Long-press a whole Swedish block (question / explanation) → red FR, same chip as words. */
+/** Tap or long-press a whole Swedish block → red FR for the entire text. */
 export function GlossablePassage({
   label,
   fr,
   hint,
   children,
   className,
+  activate = "tap",
 }: {
   label: string;
   fr?: string | null;
   hint: string;
   children: ReactNode;
   className?: string;
+  activate?: "tap" | "hold";
 }) {
   const { open, activeToken } = useGlossary();
   const ref = useRef<HTMLDivElement>(null);
   const surface = `passage:${label}`;
-  const hold = useHoldTimer(() =>
-    open(label, ref.current, { fr: fr ?? null, lemma: label, kind: "passage" }),
-  );
+  const fire = () => open(label, ref.current, { fr: fr ?? null, lemma: label, kind: "passage" });
+  const hold = useHoldTimer(fire);
   const isOpen = activeToken === surface;
+  const found = Boolean(fr?.trim());
 
   const onPointerDown = (event: ReactPointerEvent) => {
     if (event.button !== 0) return;
-    const target = event.target;
-    if (target instanceof Element && target.closest("[data-gloss-word]")) return;
     hold.arm(event.clientX, event.clientY);
   };
 
@@ -397,22 +397,45 @@ export function GlossablePassage({
       ref={ref}
       data-gloss-passage
       data-open={isOpen ? "true" : "false"}
+      role={activate === "tap" ? "button" : undefined}
+      tabIndex={activate === "tap" ? 0 : undefined}
       className={`gloss-passage ${className ?? ""}`}
       aria-label={hint}
+      aria-expanded={isOpen}
       onContextMenu={(event) => event.preventDefault()}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          fire();
+        }
+      }}
       onPointerDown={onPointerDown}
       onPointerMove={(event) => hold.onMove(event.clientX, event.clientY)}
       onPointerUp={(event) => {
         const wasHold = hold.fired.current;
+        const moved = hold.moved.current;
         hold.clearHold();
         if (wasHold) {
           event.preventDefault();
           event.stopPropagation();
+          return;
+        }
+        if (activate === "tap" && !moved && event.button === 0) {
+          event.preventDefault();
+          event.stopPropagation();
+          fire();
         }
       }}
       onPointerCancel={hold.clearHold}
     >
       {children}
+      {isOpen ? (
+        found ? (
+          <p className="question-fr-premium mt-2 whitespace-pre-wrap text-[1.02rem] leading-7">{fr}</p>
+        ) : (
+          <p className="gloss-chip-empty mt-2">{hint}</p>
+        )
+      ) : null}
     </div>
   );
 }
