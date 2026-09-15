@@ -370,24 +370,24 @@ export function GlossablePassage({
   className?: string;
   activate?: "tap" | "hold";
 }) {
-  const { open, activeToken } = useGlossary();
+  const { open } = useGlossary();
   const ref = useRef<HTMLDivElement>(null);
   const [pinned, setPinned] = useState(false);
-  const surface = `passage:${label}`;
-  const fire = () => {
+  const french = (fr ?? "").trim();
+
+  const reveal = () => {
     setPinned(true);
-    open(label, ref.current, { fr: fr ?? null, lemma: label, kind: "passage" });
+    open(label, ref.current, { fr: french || null, lemma: label, kind: "passage" });
   };
-  const hold = useHoldTimer(fire);
-  const isOpen = pinned || activeToken === surface;
-  const found = Boolean(fr?.trim());
+
+  const hold = useHoldTimer(reveal);
 
   return (
-    <PhraseFrContext.Provider value={fr ?? null}>
+    <PhraseFrContext.Provider value={french || null}>
       <div
         ref={ref}
         data-gloss-passage
-        data-open={isOpen ? "true" : "false"}
+        data-open={pinned ? "true" : "false"}
         className={`gloss-passage ${className ?? ""}`}
         aria-label={hint}
         onContextMenu={(event) => event.preventDefault()}
@@ -398,31 +398,36 @@ export function GlossablePassage({
         onPointerMove={(event) => hold.onMove(event.clientX, event.clientY)}
         onPointerUp={(event) => {
           const wasHold = hold.fired.current;
-          const moved = hold.moved.current;
           hold.clearHold();
-          if (wasHold || glossHoldConsumed()) {
+          if (wasHold) {
             event.preventDefault();
             event.stopPropagation();
-            return;
-          }
-          if (activate === "tap" && !moved && event.button === 0) {
-            event.preventDefault();
-            event.stopPropagation();
-            fire();
           }
         }}
         onPointerCancel={hold.clearHold}
-        onClick={(event) => {
-          if (activate !== "tap") return;
-          if (glossHoldConsumed()) return;
-          event.preventDefault();
-          event.stopPropagation();
-          fire();
-        }}
       >
         {children}
-        {isOpen && found ? (
-          <p className="question-fr-premium mt-2 whitespace-pre-wrap text-[1.02rem] leading-7">{fr}</p>
+        <button
+          type="button"
+          className="mt-1 min-h-11 w-full text-left text-sm font-semibold text-[#b91c1c]"
+          onPointerDown={(event) => event.stopPropagation()}
+          onPointerUp={(event) => event.stopPropagation()}
+          onClick={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            setPinned((value) => !value);
+          }}
+        >
+          {pinned ? "Masquer la traduction" : hint}
+        </button>
+        {pinned ? (
+          french ? (
+            <p className="question-fr-premium mt-1 whitespace-pre-wrap text-[1.02rem] leading-7">
+              {french}
+            </p>
+          ) : (
+            <p className="gloss-chip-empty mt-1">Pas encore de traduction pour ce paragraphe.</p>
+          )
         ) : null}
       </div>
     </PhraseFrContext.Provider>

@@ -131,7 +131,6 @@ export function QuestionCard({
   const answered = picked !== null;
   const correct = picked === question.answer;
   const compact = variant === "exam";
-  const showFrNow = showFr;
   const figureAlt = sanitizeCaption(question.imageCaption) || dict.examPageCaption;
   const imageFirst = question.form === "image-first" || Boolean(question.imageFirst);
   const showInlineFigure =
@@ -141,8 +140,9 @@ export function QuestionCard({
     (imageFirst || shouldShowImageBeforeAnswer(question));
   const showSolutionFigure = answered && hasImageUrl(question.imageUrl) && !imageFailed;
   const stemFr = displayFrench(french.stem);
-  /** Curated FR wins; a question's own explanation_fr is the fallback. */
-  const explanationFr = displayFrench(french.explanation || question.explanation_fr);
+  const explanationFr =
+    displayFrench(french.explanation || question.explanation_fr) ||
+    String(question.explanation_fr || "").trim();
   const takeaway = takeawayFor(question, explanationFr);
   const distractors = distractorNote(question);
   const hasFrench =
@@ -202,20 +202,6 @@ export function QuestionCard({
             revealAll={answered}
           />
         </GlossablePassage>
-
-        {showFrNow && isRealFrenchText(stemFr) ? (
-          <p className="question-fr-premium text-[1.02rem] leading-7">{stemFr}</p>
-        ) : null}
-
-        {!showFrNow && hasFrench ? (
-          <button
-            type="button"
-            className="min-h-11 text-left text-sm font-medium text-[#b91c1c]"
-            onClick={() => setShowFr(true)}
-          >
-            {dict.glossPassageHint}
-          </button>
-        ) : null}
 
         {!imageFirst && showInlineFigure ? (
           <ExamFigure
