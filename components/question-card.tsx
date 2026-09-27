@@ -256,4 +256,126 @@ export function QuestionCard({
                     }`}
                   >
                     {option.letter}
-               
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block font-medium leading-6">
+                      <GlossableText text={option.text} variant="option" />
+                    </span>
+                    {showFrNow && isRealFrenchText(french.options?.[option.letter]) ? (
+                      <span className="mt-1 block text-sm leading-6 text-[#1d4ed8]">
+                        {french.options[option.letter]}
+                      </span>
+                    ) : null}
+                  </span>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+
+        {answered ? (
+          <section className="solution-panel" aria-live="polite" ref={solutionRef}>
+            <header className="flex items-baseline justify-between gap-3">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#6b6560]">
+                {dict.solution}
+              </p>
+              <p className={`text-sm font-semibold ${correct ? "text-emerald-800" : "text-red-800"}`}>
+                {correct ? dict.correct : dict.incorrect}
+              </p>
+            </header>
+
+            {showTakeaway ? (
+              <div className="space-y-1.5">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                  {dict.takeaway}
+                </p>
+                <p className="text-[1.02rem] leading-7 text-black">{takeaway.sv}</p>
+                {showFrNow && isRealFrenchText(takeaway.fr) ? (
+                  <p className="question-fr text-[0.98rem] leading-7">{takeaway.fr}</p>
+                ) : null}
+              </div>
+            ) : null}
+
+            {compact ? null : (
+              <div className="space-y-1.5">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                  {dict.whyCorrect} · {question.answer}
+                </p>
+                <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
+                  {question.explanation_sv}
+                </p>
+                {showFrNow && isRealFrenchText(explanationFr) ? (
+                  <p className="question-fr whitespace-pre-wrap text-[0.95rem] leading-7">
+                    {explanationFr}
+                  </p>
+                ) : null}
+              </div>
+            )}
+
+            {!compact && distractors ? (
+              <div className="space-y-1.5">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                  {dict.whyOthersWrong}
+                </p>
+                <p className="text-[0.98rem] leading-7 text-black">{distractors.sv}</p>
+                {showFrNow && isRealFrenchText(distractors.fr) ? (
+                  <p className="question-fr text-[0.95rem] leading-7">{distractors.fr}</p>
+                ) : null}
+              </div>
+            ) : null}
+
+            {showSolutionFigure ? (
+              compact ? (
+                <button type="button" className="btn-secondary w-full" onClick={() => setLightbox(true)}>
+                  {dict.viewExamPage}
+                </button>
+              ) : (
+                <div className="space-y-3">
+                  <ExamFigure
+                    question={question}
+                    alt={figureAlt}
+                    unavailableLabel={dict.imageUnavailable}
+                    onUnavailable={markImageUnavailable}
+                  />
+                  <button type="button" className="btn-secondary w-full" onClick={() => setLightbox(true)}>
+                    {dict.viewExamPage}
+                  </button>
+                </div>
+              )
+            ) : null}
+
+            {!compact && !correct && onReviewSoon ? (
+              <button
+                type="button"
+                className="btn-secondary w-full"
+                disabled={reviewQueued}
+                onClick={() => {
+                  onReviewSoon();
+                  setReviewQueued(true);
+                }}
+              >
+                {reviewQueued ? dict.reviewSoonDone : dict.reviewSoon}
+              </button>
+            ) : null}
+          </section>
+        ) : null}
+
+        {lightbox && hasImageUrl(question.imageUrl) && !imageFailed ? (
+          <div className="exam-lightbox" role="dialog" aria-modal="true" aria-label={dict.examPageCaption}>
+            <div className="exam-lightbox-sheet">
+              <ExamFigure
+                question={question}
+                alt={figureAlt}
+                unavailableLabel={dict.imageUnavailable}
+                onUnavailable={markImageUnavailable}
+              />
+              <button type="button" className="btn-primary w-full" onClick={() => setLightbox(false)}>
+                {dict.closeExamPage}
+              </button>
+            </div>
+          </div>
+        ) : null}
+      </article>
+    </GlossaryProvider>
+  );
+}
