@@ -1,1 +1,1 @@
-@/workspace/taxiiii/scripts/session-ux.test.mjs
+PLACEHOLDER_LOAD_FROM_/tmp/cu_su2.json
