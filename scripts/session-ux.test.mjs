@@ -89,4 +89,65 @@ assert(!/@keyframes rise\b/.test(css), "the transform-based rise keyframes must 
 assert(/window\.scrollTo\(\{ top: 0/.test(sessionFrame), "a new question must arrive at its stem");
 assert(/scrollIntoView/.test(questionCard), "the solution must be brought into view on answering");
 assert(/answerHaptic/.test(questionCard), "answering must give haptic confirmation");
+assert(/answerHaptic/.test(read("lib/haptics.ts")), "lib/haptics must expose answerHaptic");
 assert(
+  /dx < -64 && Math\.abs\(dx\) > Math\.abs\(dy\) \* 2/.test(sessionFrame),
+  "a left flick must advance, and must not fire on a vertical scroll",
+);
+assert(
+  /event\.key === "Enter" \|\| event\.key === "ArrowRight"/.test(sessionFrame),
+  "keyboard parity for advancing must exist",
+);
+
+/** Focus mode: the session owns the screen. */
+assert(/useFocusMode/.test(chrome) && /useFocusMode\(\)/.test(sessionFrame), "sessions must claim focus mode");
+assert(/focus \|\| !onboarded \? null :/.test(shell), "the app header must stand down in a session and during first run");
+assert(/const showNav = onboarded && !focus/.test(shell), "the tab bar must stand down in a session");
+assert(/dataset\.focus/.test(shell), "focus mode must reach CSS for scroll padding");
+
+/** Both runners share one frame instead of two copies of the same chrome. */
+assert(/SessionFrame/.test(study) && /SessionFrame/.test(exam), "both runners must use SessionFrame");
+assert(
+  !/btn-primary w-full"\s*\n\s*onClick/.test(study) && !/btn-primary w-full"\s*\n\s*onClick/.test(exam),
+  "neither runner may keep its own end-of-page next button",
+);
+
+/** The licence line is not tab-bar furniture. */
+const navBlock = shell.match(/<nav className="app-nav[\s\S]*?<\/nav>/)?.[0] ?? "";
+assert(navBlock, "the tab bar must still exist");
+assert(!/dict\.tosAccept/.test(navBlock), "the licence reminder must not sit in the tab bar");
+assert(/dict\.tosAccept/.test(settings), "the licence reminder must live in Settings");
+assert(/dict\.demoNote/.test(settings), "the corpus note must live in Settings");
+assert(!/demoNote/.test(read("app/page.tsx")), "the corpus note must not be on the home screen");
+
+/* -------------------------------------------------------- translations */
+
+assert(/showTranslations: boolean/.test(types), "the profile must carry the translation preference");
+assert(/showTranslations: true/.test(store), "translations must be on by default");
+assert(
+  /translationsOn=\{state\.profile\.showTranslations\}/.test(study) &&
+    /translationsOn=\{state\.profile\.showTranslations\}/.test(exam),
+  "study and exam must both read the same persisted preference",
+);
+assert(
+  /const showFrNow = translationsOn \|\| answered/.test(questionCard),
+  "one rule must decide every French line",
+);
+assert(
+  !/supportLevel > 0 && isRealFrenchText/.test(questionCard),
+  "supportLevel must no longer gate French — it hid French in exam mode",
+);
+assert(
+  !/setShowFr/.test(questionCard),
+  "the per-question translation toggle must be gone; it reset on every question",
+);
+assert(
+  /locale === "fr" \? \{ locale, showTranslations: true \}/.test(shell),
+  "choosing FR in the header must turn the French line on",
+);
+assert(
+  /translationsOn && !hasFrench/.test(questionCard) && /fr-pending/.test(css),
+  "a question with no French yet must say so instead of looking broken",
+);
+assert(
+  !/translationSoon: "Traduction/.test(sv),
