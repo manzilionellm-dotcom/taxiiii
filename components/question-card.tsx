@@ -138,4 +138,122 @@ export function QuestionCard({
 
   function select(letter: SessionQuestion["answer"]) {
     if (disabled || answered || selectLock.current) return;
-    selectLock.curre
+    selectLock.current = true;
+    setPicked(letter);
+    void answerHaptic(letter === question.answer);
+    onAnswer?.(letter, letter === question.answer);
+  }
+
+  return (
+    <GlossaryProvider locale={locale}>
+      <article className="question-paper space-y-5">
+        <header className="space-y-1 text-[11px] uppercase tracking-[0.14em] text-[#6b6560]">
+          <span title={question.source ?? question.corpus}>
+            {dict.topic[question.topic]}
+            {question.corpus === "research"
+              ? ` · ${dict.corpusResearch}`
+              : question.corpus === "manzi"
+                ? ` · ${dict.corpusManzi}`
+                : question.corpus === "owner-seed" ||
+                    question.corpus === "owner-official" ||
+                    question.corpus === "owner-import"
+                  ? ` · ${dict.corpusOwner}`
+                  : ""}
+            {question.freq === "high" ? ` · ${dict.freqHigh}` : ""}
+          </span>
+          <span className="block truncate text-right text-[10px] tracking-normal text-[#8a8276]">
+            {question.id}
+          </span>
+        </header>
+
+        {imageFirst && showInlineFigure ? (
+          <ExamFigure
+            question={question}
+            alt={figureAlt}
+            unavailableLabel={dict.imageUnavailable}
+            onUnavailable={markImageUnavailable}
+          />
+        ) : null}
+
+        <ClozeText
+          stem={question.stem_sv}
+          locale={locale}
+          fragile={fragile}
+          supportLevel={supportLevel}
+          revealAll={answered}
+        />
+
+        {showFrNow && isRealFrenchText(stemFr) ? (
+          <p className="question-fr text-[1.02rem] leading-7">{stemFr}</p>
+        ) : null}
+
+        {/*
+          Say it when a question has no French yet. Silence reads as a broken
+          app — the Swedish sits there and the reader assumes the translation
+          failed. A quiet, honest marker also makes the real gap visible.
+        */}
+        {translationsOn && !hasFrench ? (
+          <p className="fr-pending">{dict.translationSoon}</p>
+        ) : null}
+
+        {!imageFirst && showInlineFigure ? (
+          <ExamFigure
+            question={question}
+            alt={figureAlt}
+            unavailableLabel={dict.imageUnavailable}
+            onUnavailable={markImageUnavailable}
+          />
+        ) : null}
+
+        <ul className="space-y-2.5 pb-2">
+          {question.options.map((option) => {
+            const selected = picked === option.letter;
+            const isRight = answered && option.letter === question.answer;
+            const isWrong = answered && selected && !correct;
+            return (
+              <li key={option.letter}>
+                <div
+                  role="button"
+                  tabIndex={disabled || answered ? -1 : 0}
+                  aria-disabled={disabled || answered}
+                  /*
+                   * Tap anywhere on the row, glossed words included.
+                   *
+                   * This used to bail out when the tap landed on a
+                   * [data-gloss-word] span — and nearly every Swedish word in
+                   * an option is one, so tapping the answer text did nothing
+                   * at all and only the letter badge or a gap between words
+                   * worked. The guard was never needed: an option's gloss
+                   * fires on hold only (glossary.tsx sets allowMouseClick
+                   * false for this variant) and a fired hold already stops
+                   * the click from reaching here. So a hold still opens the
+                   * meaning without answering, and a tap now answers.
+                   */
+                  onClick={() => select(option.letter)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      select(option.letter);
+                    }
+                  }}
+                  className={`flex min-h-14 w-full cursor-pointer items-center gap-3 rounded-2xl border px-3.5 py-3 text-left text-black transition ${
+                    isRight
+                      ? "border-emerald-700 bg-emerald-50"
+                      : isWrong
+                        ? "border-red-300 bg-red-50"
+                        : selected
+                          ? "border-[#1f3d2b] bg-[#1f3d2b]/5"
+                          : "border-[#ddd6c8] bg-white hover:border-[#1f3d2b]/40"
+                  } ${disabled || answered ? "cursor-default" : ""}`}
+                >
+                  <span
+                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-semibold ${
+                      isRight
+                        ? "bg-emerald-700 text-white"
+                        : isWrong
+                          ? "bg-red-600 text-white"
+                          : "bg-[#f3eee4] text-[#1f3d2b]"
+                    }`}
+                  >
+                    {option.letter}
+               
