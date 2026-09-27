@@ -151,3 +151,78 @@ assert(
 );
 assert(
   !/translationSoon: "Traduction/.test(sv),
+  "the Swedish dictionary must not hold a French string",
+);
+assert(/nav: \{/.test(sv) && /nav: \{/.test(fr), "both dictionaries need short tab-bar labels");
+for (const [name, dict] of [["sv", sv], ["fr", fr]]) {
+  const block = dict.match(/nav: \{[^}]*\}/s)?.[0] ?? "";
+  const labels = [...block.matchAll(/"([^"]+)"/g)].map((m) => m[1]);
+  assert(labels.length === 6, `${name} must define all six tab labels`);
+  assert(
+    labels.every((label) => !label.includes("·") && label.length <= 13),
+    `${name} tab labels must be single words that fit a 60px cell: ${labels.join(", ")}`,
+  );
+}
+
+/** Körkort B was translated end to end in #21 and must stay that way. */
+const coverage = measureFrench();
+const b = coverage.tracks.b;
+assert(b, "the bank must still contain a Körkort B track");
+assert(
+  b.stems >= b.questions - 1,
+  `Körkort B French stems must stay complete: ${b.stems}/${b.questions}`,
+);
+assert(
+  b.options >= b.questions - 1,
+  `Körkort B French options must stay complete: ${b.options}/${b.questions}`,
+);
+const committed = JSON.parse(read("data/fr-coverage.json"));
+assert(
+  JSON.stringify(committed.tracks) === JSON.stringify(coverage.tracks),
+  "data/fr-coverage.json is stale — run npm run fr:coverage",
+);
+
+/* ---------------------------------------------------------- cold start */
+
+/** Three surfaces paint the same green so a cold start never flashes white. */
+assert(/backgroundColor: "#1f3d2b"/.test(capacitor), "the Android WebView background must be brand green");
+assert(/launchFadeOutDuration/.test(capacitor), "the native splash must fade rather than cut");
+assert(/background: var\(--forest\)/.test(css.match(/\.splash-screen\s*\{[^}]*\}/s)?.[0] ?? ""),
+  "the web splash must paint the brand green");
+assert(/#1f3d2b/.test(nativeWww), "the bridge page must paint the brand green");
+assert(!/liveUrl\.replace\("https:\/\/", ""\)/.test(nativeWww), "the bridge page must not show a raw URL");
+assert(/navigator\.onLine === false/.test(nativeWww), "the bridge page must handle having no network");
+/** Scoped to SplashScreen: PageSkeleton and SessionSkeleton legitimately shimmer. */
+const splashFn = splash.match(/export function SplashScreen\(\)[\s\S]*?\n\}/)?.[0] ?? "";
+assert(splashFn, "SplashScreen must exist");
+assert(
+  /splash-progress/.test(splashFn) && !/skeleton/.test(splashFn),
+  "the launch screen must show one honest progress hairline, not fake skeleton content",
+);
+assert(/tone="light"/.test(splash), "the splash glyph must be the inverted mark on green");
+
+/** The splash bitmap Android actually resolves. */
+const patch = read("scripts/patch-android.mjs");
+assert(/drawable-port-\$\{density\}/.test(patch), "splash art must reach the port density buckets");
+assert(/drawable-land-\$\{density\}/.test(patch), "splash art must reach the land density buckets");
+const icon = read("scripts/make-app-icon.mjs");
+assert(/render\(1080, 1920/.test(icon) && /render\(1920, 1080/.test(icon),
+  "splash art must be generated per orientation, not a stretched square icon");
+
+/** FLAG_SECURE and the absence of the web blur overlay stay pinned. */
+const mainActivity = read("android/app/src/main/java/se/mz/korkortgo/MainActivity.java");
+assert(/FLAG_SECURE/.test(mainActivity), "FLAG_SECURE must stay");
+assert(/setRecentsScreenshotEnabled\(false\)/.test(mainActivity), "the Recents guard must stay");
+for (const file of ["components/protected-view.tsx", "app/globals.css", "components/app-shell.tsx"]) {
+  assert(!/Innehållet är dolt/.test(read(file)), `${file} must not reintroduce the blur overlay`);
+}
+
+if (failures) {
+  console.error(`\nsession-ux.test FAILED · ${failures} assertion(s)`);
+  process.exit(1);
+}
+console.log(
+  `session-ux.test OK · FR stems b ${coverage.tracks.b.stems}/${coverage.tracks.b.questions} · ` +
+    `taxi ${coverage.tracks.taxi.stems}/${coverage.tracks.taxi.questions} · ` +
+    `owner ${coverage.tracks.owner.stems}/${coverage.tracks.owner.questions}`,
+);
