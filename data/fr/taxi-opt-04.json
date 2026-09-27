@@ -1,0 +1,298 @@
+{
+  "LAGSTIFNING-8-Q55": { "options": { "A": "Oui", "B": "Non" } },
+  "LAGSTIFNING-1-Q3": {
+    "options": {
+      "A": "Par le panneau « cédez le passage », ils voient que je dois céder.",
+      "B": "Par le fait que je suis chauffeur professionnel et que je respecte la loi et les règles.",
+      "C": "Par le fait que je ralentis suffisamment tôt."
+    }
+  },
+  "LAGSTIFNING-1-Q30": {
+    "options": {
+      "A": "Klaxonner le cycliste pour qu'il s'écarte, puis le dépasser avant de croiser le camion",
+      "B": "Ralentir et laisser passer le camion avant de dépasser le cycliste",
+      "C": "Accélérer avant de croiser le camion et dépasser le cycliste"
+    }
+  },
+  "LAGSTIFNING-1-Q31": {
+    "options": {
+      "A": "Klaxonner.",
+      "B": "Faire un appel de phares.",
+      "C": "Freiner.",
+      "D": "Braquer à droite.",
+      "E": "Braquer à gauche."
+    }
+  },
+  "LAGSTIFNING-1-Q32": {
+    "options": {
+      "A": "Les laisser tous monter, puisque le taxi est exempté de la règle sur le nombre de passagers.",
+      "B": "Laisser monter quatre personnes et proposer d'appeler une deuxième voiture pour la cinquième.",
+      "C": "Les laisser tous monter, puisque le trajet est court."
+    }
+  },
+  "LAGSTIFNING-1-Q33": {
+    "options": {
+      "A": "Dans la situation A.",
+      "B": "Dans la situation B.",
+      "C": "Dans la situation C.",
+      "D": "Dans la situation D."
+    }
+  },
+  "LAGSTIFNING-1-Q34": {
+    "options": {
+      "A": "Allure du pas = 7 km/h.",
+      "B": "Allure du pas = 12 km/h.",
+      "C": "Allure du pas = 17 km/h."
+    }
+  },
+  "LAGSTIFNING-1-Q35": {
+    "options": {
+      "A": "Oui, si je rends visite à un ami qui habite là.",
+      "B": "Oui, à l'allure du pas.",
+      "C": "Oui, si je viens chercher ou déposer un client dont l'adresse est dans cette rue.",
+      "D": "Non."
+    }
+  },
+  "LAGSTIFNING-1-Q36": {
+    "options": {
+      "A": "Je dois céder le passage à la circulation venant de gauche et de droite.",
+      "B": "Je dois céder le passage à la circulation venant de droite.",
+      "C": "Je dois céder le passage à la circulation venant de gauche.",
+      "D": "La circulation venant de gauche et de droite doit me céder le passage."
+    }
+  },
+  "LAGSTIFNING-1-Q37": {
+    "options": {
+      "A": "Le poids correspondant au nombre de passagers occasionnels et des marchandises",
+      "B": "Le poids à vide de la voiture plus le nombre maximal de passagers autorisé",
+      "C": "Le poids que la voiture a à l'instant donné, marchandises et passagers compris"
+    }
+  },
+  "LAGSTIFNING-1-Q38": {
+    "options": {
+      "A": "Les feux de croisement.",
+      "B": "Les feux de brouillard.",
+      "C": "Les feux de position.",
+      "D": "Les feux de route."
+    }
+  },
+  "LAGSTIFNING-1-Q39": {
+    "options": {
+      "A": "Je dois toujours remettre au client un reçu du taximètre",
+      "B": "Je dois toujours proposer au client un reçu du taximètre",
+      "C": "Je dois toujours imprimer une copie du reçu pour mes propres besoins.",
+      "D": "Je dois toujours imprimer un reçu et conserver la copie restante au moins un mois",
+      "E": "Je ne dois imprimer un reçu que si le client le demande."
+    }
+  },
+  "LAGSTIFNING-1-Q40": {
+    "options": {
+      "A": "Je dois m'arrêter et attendre que le policier m'autorise à passer, même si le feu est rouge.",
+      "B": "Je dois m'arrêter et attendre que le policier m'autorise à passer, seulement si le feu est vert.",
+      "C": "Je ne dois pas m'arrêter et je tourne à droite, car le geste du policier signifie qu'on ne peut pas continuer tout droit.",
+      "D": "Je ne dois pas m'arrêter et je tourne à droite, en vérifiant seulement que le carrefour est libre avant de tourner."
+    }
+  },
+  "LAGSTIFNING-1-Q5": {
+    "options": {
+      "A": "Oui, aux piétons et aux cyclistes.",
+      "B": "Non.",
+      "C": "Oui, aux piétons, aux cyclistes et aux cyclomoteurs de classe II",
+      "D": "Oui, aux piétons seulement."
+    }
+  },
+  "LAGSTIFNING-1-Q6": {
+    "options": {
+      "A": "Le stationnement est interdit de 9h à 17h.",
+      "B": "Le stationnement est permis de 9h à 17h.",
+      "C": "L'arrêt et le stationnement sont interdits de 9h à 17h.",
+      "D": "L'arrêt et le stationnement sont permis de 9h à 17h."
+    }
+  },
+  "LAGSTIFNING-1-Q7": {
+    "options": {
+      "A": "Une ambulance dont le poids total est de 3 800 kg.",
+      "B": "Un minibus aménagé pour 10 passagers.",
+      "C": "Un camping-car aménagé pour 6 passagers."
+    }
+  },
+  "LAGSTIFNING-1-Q8": {
+    "options": {
+      "A": "Je change de voie, car les autres véhicules sont tenus de me laisser la place.",
+      "B": "Je freine pour laisser passer les voitures de la voie de gauche avant de changer de voie.",
+      "C": "Je m'assure une fois de plus que la voie est libre avant de changer de voie."
+    }
+  },
+  "LAGSTIFNING-1-Q9": {
+    "options": {
+      "A": "Le nom, l'adresse et le téléphone de l'entreprise – le numéro d'immatriculation de l'entreprise.",
+      "B": "Le coût du taximètre – le nom de l'entreprise",
+      "C": "Le mot « affichage des prix » – les tarifs utilisés",
+      "D": "La constante du taximètre – le prix de comparaison"
+    }
+  },
+  "LAGSTIFNING-2-Q1": {
+    "options": {
+      "A": "Un samedi à 08h00.",
+      "B": "Un jour ouvré qui ne précède pas un jour férié, à 17h00.",
+      "C": "Un jour ouvré qui ne précède pas un jour férié, à 15h00.",
+      "D": "Un jour ouvré qui ne précède pas un jour férié, à 07h00."
+    }
+  },
+  "LAGSTIFNING-2-Q10": {
+    "options": {
+      "A": "Je dois mettre mon clignotant suffisamment tôt, et m'assurer malgré tout de changer de voie sans gêner inutilement les autres.",
+      "B": "Je dois mettre mon clignotant suffisamment tôt, et les autres usagers doivent me céder le passage.",
+      "C": "Je n'ai pas besoin de mettre mon clignotant si mon changement de voie est évident pour les autres."
+    }
+  },
+  "LAGSTIFNING-2-Q12": {
+    "options": {
+      "A": "Oui, si l'hôtel se trouve seulement au bord de cette rue.",
+      "B": "Non, jamais.",
+      "C": "Oui, si je roule à l'allure du pas.",
+      "D": "Oui, toujours."
+    }
+  },
+  "LAGSTIFNING-2-Q13": {
+    "options": {
+      "A": "Oui, mais seulement si je dois traverser la piste cyclable.",
+      "B": "Non, jamais.",
+      "C": "Oui, si je dois m'arrêter pour déposer le client à son adresse.",
+      "D": "Oui, toujours, puisque je conduis un taxi."
+    }
+  },
+  "LAGSTIFNING-2-Q14": {
+    "options": {
+      "A": "Les deux dernières journées.",
+      "B": "Les trois dernières journées.",
+      "C": "Les quatre dernières journées.",
+      "D": "Les cinq dernières journées.",
+      "E": "Les sept dernières journées."
+    }
+  },
+  "LAGSTIFNING-2-Q17": {
+    "options": {
+      "A": "La distance minimale recommandée entre les véhicules est de 50 mètres.",
+      "B": "La distance maximale recommandée entre les véhicules est de 50 mètres.",
+      "C": "La distance minimale autorisée entre les véhicules est de 50 mètres.",
+      "D": "La distance maximale autorisée entre les véhicules est de 50 mètres."
+    }
+  },
+  "LAGSTIFNING-2-Q18": {
+    "options": {
+      "A": "Oui, toujours.",
+      "B": "Non.",
+      "C": "Oui, si j'ai le permis de catégorie D1 ou D.",
+      "D": "Non, jamais."
+    }
+  },
+  "LAGSTIFNING-2-Q19": {
+    "options": {
+      "A": "Pendant tout le transport scolaire.",
+      "B": "100 m avant l'endroit où les enfants montent ou descendent, et après cet endroit.",
+      "C": "À l'endroit où les enfants montent ou descendent et 100 m après.",
+      "D": "De 100 m avant l'endroit où les enfants montent ou descendent jusqu'à 100 m après.",
+      "E": "À l'endroit où les enfants montent ou descendent."
+    }
+  },
+  "LAGSTIFNING-2-Q20": {
+    "options": {
+      "A": "Seulement s'il s'agissait d'un transport scolaire.",
+      "B": "Seulement s'il s'agissait d'une course à prix forfaitaire.",
+      "C": "Seulement s'il s'agissait d'un transport adapté.",
+      "D": "Après tous les types de course."
+    }
+  },
+  "LAGSTIFNING-2-Q21": {
+    "options": {
+      "A": "Le conducteur du véhicule heurté parle au téléphone.",
+      "B": "Le conducteur du véhicule heurté freine brusquement sans raison.",
+      "C": "Le conducteur du véhicule heurté roule avec des feux cassés.",
+      "D": "Une distance trop courte entre les véhicules.",
+      "E": "Le conducteur du véhicule heurté est obligé de tourner à droite ou à gauche."
+    }
+  },
+  "LAGSTIFNING-2-Q22": {
+    "options": {
+      "A": "Je roule jusqu'au prochain poste de contrôle routier et je m'y arrête.",
+      "B": "Je roule jusqu'à la prochaine sortie et je m'arrête à un endroit approprié.",
+      "C": "Je roule jusqu'à la prochaine aire de retournement et je m'y arrête.",
+      "D": "Je me range sur l'accotement et je m'arrête selon les indications de la police."
+    }
+  },
+  "LAGSTIFNING-2-Q23": {
+    "options": {
+      "A": "Regarder à droite dans le carrefour.",
+      "B": "Placer la voiture au milieu de la route pour garder une marge latérale.",
+      "C": "Réduire la vitesse."
+    }
+  },
+  "LAGSTIFNING-2-Q24": {
+    "options": {
+      "A": "Interdiction de rouler sur la ligne jaune continue.",
+      "B": "Interdiction de stationner.",
+      "C": "Interdiction de s'arrêter et de stationner."
+    }
+  },
+  "LAGSTIFNING-2-Q26": {
+    "options": {
+      "A": "Feux de route et feux de position.",
+      "B": "Feux de croisement et feux de brouillard.",
+      "C": "Feux de route et feux de brouillard.",
+      "D": "Feux de croisement et feux de position."
+    }
+  },
+  "LAGSTIFNING-2-Q27": {
+    "options": {
+      "A": "Sur une route prioritaire hors agglomération.",
+      "B": "Sur une route prioritaire en agglomération.",
+      "C": "De façon à masquer un feu de circulation.",
+      "D": "Devant l'entrée d'une propriété."
+    }
+  },
+  "LAGSTIFNING-2-Q28": {
+    "options": {
+      "A": "Elle peut rester dans la voiture sans ceinture, car les personnes en fauteuil roulant sont exemptées de l'obligation.",
+      "B": "Je dois essayer de la convaincre de mettre la ceinture, sans la forcer.",
+      "C": "Je dois la forcer à mettre la ceinture, car j'en suis responsable en tant que chauffeur professionnel."
+    }
+  },
+  "LAGSTIFNING-2-Q29": {
+    "options": {
+      "A": "Une personne de 20 ans titulaire du permis B depuis deux ans.",
+      "B": "Une personne de 21 ans titulaire du permis D depuis 1 mois.",
+      "C": "Une personne de 20 ans titulaire du permis B depuis un an."
+    }
+  },
+  "LAGSTIFNING-2-Q30": {
+    "options": {
+      "A": "La somme du poids brut et de la charge utile maximale.",
+      "B": "La somme du poids à vide et de la charge utile maximale.",
+      "C": "La somme du poids brut et du poids à vide."
+    }
+  },
+  "LAGSTIFNING-2-Q31": {
+    "options": {
+      "A": "11 heures, fractionnables en une période de 8 heures et une de 3 heures.",
+      "B": "12 heures, fractionnables en une période de 8 heures et deux de deux heures chacune.",
+      "C": "10 heures ininterrompues.",
+      "D": "14 heures, fractionnables en une période de 10 heures et deux de deux heures chacune."
+    }
+  },
+  "LAGSTIFNING-2-Q32": {
+    "options": {
+      "A": "Je dois m'arrêter à la ligne d'arrêt et céder le passage à la voiture qui tourne.",
+      "B": "Je dois m'arrêter à la ligne d'arrêt mais je n'ai pas à céder le passage à la voiture qui tourne.",
+      "C": "Je ne dois pas m'arrêter à la ligne d'arrêt et je continue tout droit sans céder le passage à la voiture qui tourne."
+    }
+  },
+  "LAGSTIFNING-2-Q35": {
+    "options": {
+      "A": "Oui, parce qu'il roule sur une route prioritaire.",
+      "B": "Non, parce qu'il dépasse dans un carrefour.",
+      "C": "Non, parce qu'il dépasse juste avant un passage piéton non régulé.",
+      "D": "Oui, toujours."
+    }
+  }
+}

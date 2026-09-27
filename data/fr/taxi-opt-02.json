@@ -1,0 +1,285 @@
+{
+  "LAGSTIFNING-7-Q37": { "options": { "A": "Oui", "B": "Non" } },
+  "LAGSTIFNING-2-Q8": {
+    "options": { "A": "3 ans.", "B": "5 ans.", "C": "7 ans.", "D": "10 ans." }
+  },
+  "rs-tt-anmal-borttappad": {
+    "options": {
+      "A": "La préfecture",
+      "B": "La fédération suédoise des taxis",
+      "C": "L'administration des routes",
+      "D": "La police"
+    }
+  },
+  "rs-tt-boter-placering": {
+    "options": {
+      "A": "Une peine de prison de 3 mois au maximum",
+      "B": "Une amende",
+      "C": "Le retrait de la carte professionnelle de taxi",
+      "D": "Une peine de prison de 6 mois au maximum"
+    }
+  },
+  "rs-tt-dokument": {
+    "options": {
+      "A": "Le macaron de transport professionnel – une copie de la licence de transport",
+      "B": "La carte professionnelle de taxi – la carte grise de la voiture",
+      "C": "Une copie de la licence de transport – le permis de conduire",
+      "D": "La carte professionnelle de taxi – le rapport de contrôle et de scellement du taximètre"
+    }
+  },
+  "rs-tt-prisinfo-lasbar": {
+    "options": {
+      "A": "Elle doit être apposée dans le coin inférieur gauche du pare-brise",
+      "B": "Elle doit être imprimée sur un matériau réfléchissant, lisible dans l'obscurité",
+      "C": "Elle doit être lisible depuis chaque place passager du véhicule",
+      "D": "Elle doit être disponible sur papier pour que le client puisse en avoir un exemplaire"
+    }
+  },
+  "rs-tv-delprov": {
+    "options": {
+      "A": "Une seule épreuve de 90 minutes",
+      "B": "Deux épreuves de 50 minutes : sécurité et comportement, puis législation",
+      "C": "Uniquement l'épreuve de carte",
+      "D": "Uniquement un examen de conduite oral"
+    }
+  },
+  "rs-tv-poang": {
+    "options": {
+      "A": "25 bonnes réponses sur 50",
+      "B": "Au moins 34 bonnes réponses (4 questions sont des questions test et ne comptent pas, soit 46 points au maximum)",
+      "C": "46 bonnes réponses sur 46",
+      "D": "Aucune exigence de points, seulement le temps"
+    }
+  },
+  "rs-ts-gul-kort": {
+    "options": {
+      "A": "Bleue, comme le permis de conduire",
+      "B": "Jaune",
+      "C": "Verte",
+      "D": "Blanche"
+    }
+  },
+  "rs-ts-kopia-6-veckor": {
+    "options": {
+      "A": "Une semaine",
+      "B": "Six semaines à compter de la date de délivrance",
+      "C": "Un an",
+      "D": "Jusqu'à l'arrivée de la nouvelle carte plastique, sans limite de temps"
+    }
+  },
+  "LAGSTIFNING-2-Q25": {
+    "options": {
+      "A": "Oui, toujours.",
+      "B": "Oui, si je dois m'arrêter pour déposer ou prendre un passager.",
+      "C": "Oui, si je fais demi-tour pour prendre une course dans l'autre sens.",
+      "D": "Oui, si je dois contourner un obstacle sur la route.",
+      "E": "Non, jamais."
+    }
+  },
+  "LAGSTIFNING-6-Q20": {
+    "options": {
+      "A": "Arrêt permis pour décharger des marchandises",
+      "B": "Arrêt permis pour déposer des passagers",
+      "C": "Arrêt et stationnement interdits."
+    }
+  },
+  "LAGSTIFNING-7-Q12": {
+    "options": {
+      "A": "Oui, si c'est nécessaire pour dépasser un véhicule lent",
+      "B": "Oui, si c'est nécessaire pour accéder à une propriété ou en sortir",
+      "C": "Oui, si c'est nécessaire pour ne pas éclabousser un piéton qui marche le long de la route",
+      "D": "Non, jamais"
+    }
+  },
+  "LAGSTIFNING-1-Q17": {
+    "options": {
+      "A": "Quand la voiture change de propriétaire.",
+      "B": "Quand la mesure de la distance change de ±2 % après un changement de pneus.",
+      "C": "Lors du contrôle annuel du véhicule.",
+      "D": "Lors du contrôle d'immatriculation effectué régulièrement."
+    }
+  },
+  "LAGSTIFNING-2-Q15": {
+    "options": {
+      "A": "Le titulaire de la licence, même s'il ne conduit pas lui-même le taxi.",
+      "B": "L'inspecteur des véhicules seulement, s'il a arrêté le taxi.",
+      "C": "Le conducteur, à la demande d'un inspecteur des véhicules ou de la police.",
+      "D": "La police, en utilisant le bouton dit P.K."
+    }
+  },
+  "LAGSTIFNING-2-Q9": {
+    "options": {
+      "A": "À la préfecture.",
+      "B": "Dans le véhicule.",
+      "C": "Chez l'employeur.",
+      "D": "À l'administration des routes."
+    }
+  },
+  "LAGSTIFNING-3-Q10": {
+    "options": {
+      "A": "Oui, seulement si le prix est supérieur à celui annoncé au client avant le trajet.",
+      "B": "Non, jamais.",
+      "C": "Oui, si tu planifies le trajet avec un système externe de planification commune."
+    }
+  },
+  "LAGSTIFNING-3-Q21": {
+    "options": {
+      "A": "Svensk Bilprovning doit sceller le taximètre avant que je puisse utiliser la voiture en service de taxi.",
+      "B": "Je ne peux utiliser la voiture que pour des courses à prix forfaitaire.",
+      "C": "Je peux terminer un service déjà commencé, mais ensuite un atelier agréé doit sceller le taximètre avant que j'utilise la voiture en service de taxi.",
+      "D": "Un atelier accrédité par SWEDAC doit sceller le taximètre avant que je puisse utiliser la voiture en service de taxi."
+    }
+  },
+  "LAGSTIFNING-3-Q33": {
+    "options": {
+      "A": "En lieu sûr à la préfecture.",
+      "B": "En lieu sûr à l'Agence des transports.",
+      "C": "En lieu sûr dans les locaux de l'entreprise.",
+      "D": "Dans le taxi."
+    }
+  },
+  "LAGSTIFNING-4-Q23": {
+    "options": {
+      "A": "Quand le chauffeur retire un colis à la poste sur ordre de l'entreprise.",
+      "B": "Quand la course est effectuée à prix forfaitaire.",
+      "C": "Quand le passager demande un reçu avant le trajet.",
+      "D": "Non, jamais."
+    }
+  },
+  "LAGSTIFNING-4-Q28": {
+    "options": {
+      "A": "Le conducteur seul.",
+      "B": "La société seule.",
+      "C": "Le conducteur et la société.",
+      "D": "Le propriétaire du taxi."
+    }
+  },
+  "LAGSTIFNING-4-Q3": {
+    "options": {
+      "A": "Chaque année, au plus tard un an après le contrôle précédent du taximètre",
+      "B": "Tous les deux ans, au plus tard deux ans après le contrôle précédent du taximètre",
+      "C": "Tous les 6 mois.",
+      "D": "Chaque année, en même temps que le contrôle technique du véhicule."
+    }
+  },
+  "LAGSTIFNING-4-Q30": {
+    "options": { "A": "6 mois.", "B": "12 mois.", "C": "18 mois.", "D": "24 mois." }
+  },
+  "LAGSTIFNING-4-Q34": {
+    "options": {
+      "A": "Oui, s'il s'agissait d'un transport scolaire",
+      "B": "Oui, s'il s'agissait d'une course à prix forfaitaire",
+      "C": "Non, il doit toujours être en fonction",
+      "D": "Oui, s'il s'agissait d'un transport adapté",
+      "E": "Oui, s'il s'agissait d'une course en service de ligne"
+    }
+  },
+  "LAGSTIFNING-4-Q6": {
+    "options": {
+      "A": "Dans les locaux de l'entreprise.",
+      "B": "Chez la police.",
+      "C": "Au domicile du conducteur.",
+      "D": "Dans le taxi.",
+      "E": "Dans un atelier.",
+      "F": "SWEDAC"
+    }
+  },
+  "LAGSTIFNING-4-Q7": {
+    "options": {
+      "A": "Seulement sur la route, quand tu roules en service de taxi.",
+      "B": "Uniquement dans les locaux de l'entreprise.",
+      "C": "Dans les locaux de l'entreprise et sur la route, quand tu roules en service de taxi.",
+      "D": "Seulement sur la route quand tu roules en service de taxi, à condition qu'aucun client ne soit à bord."
+    }
+  },
+  "LAGSTIFNING-5-Q12": {
+    "options": {
+      "A": "En même temps que le contrôle technique du taxi.",
+      "B": "Tous les deux ans.",
+      "C": "En janvier de chaque année.",
+      "D": "Dans l'année qui suit le contrôle précédent."
+    }
+  },
+  "LAGSTIFNING-5-Q7": {
+    "options": { "A": "TX", "B": "TS", "C": "TA", "D": "TR" }
+  },
+  "LAGSTIFNING-8-Q26": {
+    "options": {
+      "A": "Tous les ateliers de marque",
+      "B": "Les ateliers accrédités par SWEDAC",
+      "C": "L'administration des transports uniquement",
+      "D": "L'Agence des transports uniquement"
+    }
+  },
+  "LAGSTIFNING-8-Q7": {
+    "options": {
+      "A": "Avant de m'arrêter et de clôturer la course",
+      "B": "À la moitié de la course",
+      "C": "Quand je commence la course",
+      "D": "Quand je clôture la course, mais avant le débit de la carte bancaire"
+    }
+  },
+  "LAGSTIFNING-1-Q16": {
+    "options": {
+      "A": "Je dois le remettre à l'employeur quand il est terminé.",
+      "B": "Je dois le garder une semaine puis le remettre à l'employeur.",
+      "C": "Je dois le garder un mois puis le remettre à l'employeur.",
+      "D": "Je dois le garder un an puis le remettre à l'employeur.",
+      "E": "Je dois le remettre à un gestionnaire de transport."
+    }
+  },
+  "LAGSTIFNING-1-Q24": {
+    "options": {
+      "A": "L'employeur seul.",
+      "B": "Le conducteur seul.",
+      "C": "Le conducteur et l'employeur.",
+      "D": "Un gestionnaire de transport."
+    }
+  },
+  "LAGSTIFNING-1-Q4": {
+    "options": {
+      "A": "À 24h00.",
+      "B": "À 01h00.",
+      "C": "À 02h00.",
+      "D": "À 03h00.",
+      "E": "À 05h00."
+    }
+  },
+  "LAGSTIFNING-2-Q40": {
+    "options": {
+      "A": "Transport de personnes en voiture particulière selon un horaire établi",
+      "B": "Transport de marchandises en voiture particulière selon un horaire établi",
+      "C": "Transport de marchandises en motocyclette selon un horaire établi",
+      "D": "Transport scolaire en minibus.",
+      "E": "Transport de marchandises ou de personnes en voiture particulière selon un horaire établi"
+    }
+  },
+  "LAGSTIFNING-3-Q17": {
+    "options": {
+      "A": "Trois.",
+      "B": "Cinq.",
+      "C": "Treize.",
+      "D": "Huit.",
+      "E": "Six."
+    }
+  },
+  "LAGSTIFNING-3-Q19": {
+    "options": { "A": "À 14h00", "B": "À 15h00", "C": "À 16h00", "D": "À 17h00" }
+  },
+  "LAGSTIFNING-3-Q20": {
+    "options": {
+      "A": "Je dois l'avoir avec moi dans la voiture, puis le remettre à l'employeur qui me l'a donné.",
+      "B": "Je dois l'avoir avec moi dans la voiture, puis le remettre au bout d'une semaine à l'employeur qui me l'a donné.",
+      "C": "Je dois l'avoir avec moi dans la voiture, puis le remettre au bout d'un mois à l'employeur qui me l'a donné.",
+      "D": "Je dois l'avoir avec moi dans la voiture, puis le remettre au bout de trois jours à l'employeur qui me l'a donné."
+    }
+  },
+  "LAGSTIFNING-4-Q21": {
+    "options": {
+      "A": "Les huit heures immédiatement précédentes.",
+      "B": "Le repos journalier immédiatement précédent.",
+      "C": "Toute la période de repos.",
+      "D": "Les trois heures immédiatement précédentes."
+    }
+  }
+}

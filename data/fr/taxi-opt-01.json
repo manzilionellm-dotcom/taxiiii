@@ -1,0 +1,295 @@
+{
+  "LAGSTIFNING-6-Q25": { "options": { "A": "Oui", "B": "Non" } },
+  "rs-tt-fornya-10": { "options": { "A": "3 ans", "B": "5 ans", "C": "7 ans", "D": "10 ans" } },
+  "rs-yt-lag1-taxameter-24": {
+    "options": { "A": "6 mois", "B": "18 mois", "C": "12 mois", "D": "24 mois" }
+  },
+  "rs-ts-anvand-varje": {
+    "options": {
+      "A": "Seulement en cas de paiement en espèces",
+      "B": "À chaque course",
+      "C": "Seulement si le client demande un reçu",
+      "D": "Seulement hors agglomération"
+    }
+  },
+  "rs-yt-lag1-taxameter-nar": {
+    "options": {
+      "A": "Lors du contrôle technique du véhicule",
+      "B": "Chaque année, au plus tard un an après le contrôle précédent du taximètre",
+      "C": "Tous les deux ans, au plus tard deux ans après le contrôle précédent du taximètre",
+      "D": "Chaque année en janvier"
+    }
+  },
+  "rs-ts-ag-12-man": {
+    "options": {
+      "A": "Une semaine",
+      "B": "Trois mois",
+      "C": "Au moins douze mois à compter du jour auquel les inscriptions se rapportent",
+      "D": "Sept ans"
+    }
+  },
+  "rs-tt-kvitto": {
+    "options": {
+      "A": "Pour tous les types de courses",
+      "B": "Seulement quand le client le demande",
+      "C": "Seulement pour les courses avec des clients professionnels",
+      "D": "Seulement pour les courses à prix forfaitaire"
+    }
+  },
+  "LAGSTIFNING-2-Q33": {
+    "options": {
+      "A": "Je dois céder le passage à toute la circulation transversale.",
+      "B": "Je dois céder le passage à la circulation venant de droite.",
+      "C": "Toute la circulation transversale doit me céder le passage.",
+      "D": "Je dois céder le passage à la circulation venant en face.",
+      "E": "Je dois céder le passage à la circulation venant de gauche."
+    }
+  },
+  "LAGSTIFNING-4-Q24": {
+    "options": {
+      "A": "Permis de conduire",
+      "B": "Permis BE",
+      "C": "Permis B et carte professionnelle de taxi",
+      "D": "Permis BE et carte professionnelle de taxi"
+    }
+  },
+  "LAGSTIFNING-4-Q32": {
+    "options": {
+      "A": "La roue ne doit jamais être montée si les autres pneus sont cloutés.",
+      "B": "Ces pneus vieillissent plus vite que des pneus ordinaires.",
+      "C": "Ces pneus ne doivent jamais rouler plus vite que la vitesse indiquée sur le pneu.",
+      "D": "La roue ne doit être utilisée que sur chaussée sèche.",
+      "E": "La roue ne doit jamais rouler plus vite que 30 km/h."
+    }
+  },
+  "LAGSTIFNING-7-Q28": {
+    "options": {
+      "A": "À l'avant.",
+      "B": "Aussi en sécurité à l'avant qu'à l'arrière.",
+      "C": "À l'arrière."
+    }
+  },
+  "rs-yt-lag1-gul-linje": {
+    "options": {
+      "A": "Arrêt permis, mais seulement pour déposer des passagers",
+      "B": "Arrêt permis, mais seulement pour décharger des marchandises",
+      "C": "Arrêt et stationnement interdits"
+    }
+  },
+  "rs-yt-lag2-vila-11-8": {
+    "options": {
+      "A": "8 heures, et il doit être ininterrompu",
+      "B": "8 heures, et il peut être fractionné en deux périodes",
+      "C": "11 heures, et il peut être fractionné en deux périodes"
+    }
+  },
+  "rs-ts-tidbok-fore": {
+    "options": {
+      "A": "Après la fin du service",
+      "B": "Avant le début de la course",
+      "C": "Seulement si la police le demande",
+      "D": "Une fois par semaine"
+    }
+  },
+  "rs-yt-prisresa-jamfor": {
+    "options": {
+      "A": "Le prix de 10 km à 50 km/h sans frais de prise en charge",
+      "B": "Le prix TTC d'un trajet type de 10 kilomètres en 15 minutes, frais de prise en charge éventuels inclus",
+      "C": "Le prix moyen de toutes les courses d'un service",
+      "D": "Un prix forfaitaire vers Arlanda"
+    }
+  },
+  "research-0034": {
+    "options": {
+      "A": "Auprès de la préfecture",
+      "B": "Auprès de l'administration des routes",
+      "C": "Dans le véhicule",
+      "D": "Auprès du titulaire de la licence"
+    }
+  },
+  "rs-tt-plomb": {
+    "options": {
+      "A": "Je ne peux utiliser la voiture que pour des courses à prix forfaitaire",
+      "B": "Un atelier accrédité par SWEDAC doit sceller le taximètre avant que je puisse utiliser la voiture en service de taxi",
+      "C": "Je peux terminer un service déjà commencé, mais ensuite un atelier agréé doit sceller le taximètre avant que j'utilise la voiture en service de taxi",
+      "D": "Svensk Bilprovning doit sceller le taximètre avant que je puisse utiliser la voiture en service de taxi"
+    }
+  },
+  "rs-yt-prisresa-formel": {
+    "options": {
+      "A": "Seulement kilomètres × prix au kilomètre",
+      "B": "Frais de prise en charge + (km × prix au km) + (minutes × prix au temps)",
+      "C": "Le prix de comparaison × 2",
+      "D": "200 SEK forfaitaires en agglomération"
+    }
+  },
+  "research-0030": {
+    "options": {
+      "A": "Toutes les courses sauf le transport scolaire",
+      "B": "Toutes les courses",
+      "C": "Toutes les courses sauf celles à prix forfaitaire",
+      "D": "Toutes les courses sauf le transport adapté"
+    }
+  },
+  "rs-ts-redovisning": {
+    "options": {
+      "A": "Une fois par an",
+      "B": "Au moins une fois par semaine",
+      "C": "Seulement lors d'un contrôle",
+      "D": "Jamais si on roule à prix forfaitaire"
+    }
+  },
+  "rs-ts-sarskild-utr": {
+    "options": {
+      "A": "Une dérogation peut être demandée à la commune",
+      "B": "La dérogation n'est plus possible ; le véhicule doit avoir un taximètre homologué ou un équipement spécial relié à une centrale de réservation soumise à licence",
+      "C": "Le taximètre est facultatif en zone rurale",
+      "D": "Seuls les exploitants ont besoin d'un taximètre"
+    }
+  },
+  "rs-taxi-prov-vila-split-fail": {
+    "options": {
+      "A": "Oui, le repos cumulé dépasse 11 heures",
+      "B": "Non, le repos ne peut pas être fractionné du tout",
+      "C": "Non : quand le repos est fractionné, une période doit durer au moins 8 heures"
+    }
+  },
+  "rs-taxikortet-demo-vila": {
+    "options": {
+      "A": "Oui",
+      "B": "Non, 8 heures suffisent toujours",
+      "C": "Non, la règle ne vaut que pour les autocars"
+    }
+  },
+  "rs-ts-jour-inte-vila": {
+    "options": {
+      "A": "Le sommeil à domicile sans astreinte",
+      "B": "Le temps pendant lequel le conducteur est disponible sur le lieu de travail ou dans le véhicule du fait d'une astreinte",
+      "C": "Du temps libre sans disponibilité",
+      "D": "Un repos nocturne ininterrompu de 11 heures à domicile"
+    }
+  },
+  "rs-ts-en-tidbok": {
+    "options": {
+      "A": "Un carnet par employeur, tenus en même temps dans le même jeu",
+      "B": "Tu ne peux utiliser qu'un seul carnet de bord à la fois",
+      "C": "Un analogique et un numérique",
+      "D": "Sans limite"
+    }
+  },
+  "rs-ts-fardsrivare": {
+    "options": {
+      "A": "Ignorer les temps de repos",
+      "B": "Utiliser le chronotachygraphe au lieu du carnet de bord personnel",
+      "C": "Conduire 24 heures d'affilée",
+      "D": "Laisser la carte de conducteur à la maison"
+    }
+  },
+  "research-0049": {
+    "options": {
+      "A": "Le repos journalier immédiatement précédent",
+      "B": "Les deux repos journaliers immédiatement précédents",
+      "C": "Les trois repos journaliers immédiatement précédents",
+      "D": "Les sept repos journaliers immédiatement précédents"
+    }
+  },
+  "rs-tt-tidbok-ansvar": {
+    "options": {
+      "A": "L'employeur et la centrale de réservation",
+      "B": "Le conducteur et l'employeur",
+      "C": "Le conducteur seul",
+      "D": "L'employeur seul"
+    }
+  },
+  "rs-tt-tidbok-fel": {
+    "options": {
+      "A": "Je dois effacer ce qui est mal écrit",
+      "B": "Je dois barrer d'un trait ce qui est mal écrit",
+      "C": "Je dois arracher la page où j'ai fait l'erreur et recommencer sur une page neuve",
+      "D": "Je dois recouvrir l'erreur avec du correcteur"
+    }
+  },
+  "rs-tt-tidbok-vecka": {
+    "options": {
+      "A": "Je dois le remettre à l'employeur juste après la fin du service",
+      "B": "Je dois le garder un jour puis le remettre à l'employeur",
+      "C": "Je dois le garder un mois puis le remettre à l'employeur",
+      "D": "Je dois le garder une semaine puis le remettre à l'employeur"
+    }
+  },
+  "rs-ts-visa-polis": {
+    "options": {
+      "A": "L'Agence des transports uniquement",
+      "B": "Un policier ou un inspecteur des véhicules",
+      "C": "La centrale de réservation",
+      "D": "Le client"
+    }
+  },
+  "rs-ts-undantag-4h30": {
+    "options": {
+      "A": "Toujours en agglomération",
+      "B": "Si les transports ont un caractère accessoire et que le temps de conduite cumulé sur chaque période de 24 heures ne dépasse pas quatre heures trente",
+      "C": "Jamais",
+      "D": "Si on conduit un taxi"
+    }
+  },
+  "rs-yt-prisresa-700": {
+    "options": {
+      "A": "Toujours, avant chaque trajet",
+      "B": "Quand le prix de comparaison du trajet dépasse 700 couronnes",
+      "C": "Seulement si le client le demande",
+      "D": "Jamais pour une course au taximètre"
+    }
+  },
+  "research-0016": {
+    "options": {
+      "A": "C'est un montant déterminé, en plus du forfait de base, qui doit être enregistré avant le trajet",
+      "B": "C'est un montant déterminé qui doit être enregistré au début de la course",
+      "C": "C'est un tarif utilisé uniquement pour le transport de marchandises",
+      "D": "C'est un tarif utilisé uniquement pour le transport de personnes"
+    }
+  },
+  "research-0037": {
+    "options": {
+      "A": "L'enfant lui-même",
+      "B": "Le personnel scolaire s'il est présent dans la voiture",
+      "C": "Les parents de l'enfant s'ils sont présents dans la voiture",
+      "D": "Le conducteur"
+    }
+  },
+  "rs-sfs-alder-20": {
+    "options": { "A": "18 ans", "B": "20 ans", "C": "21 ans", "D": "25 ans" }
+  },
+  "rs-sfs-b-tva-ar": {
+    "options": {
+      "A": "Le permis AM depuis au moins un an",
+      "B": "Le permis de catégorie B depuis au moins deux ans, ou un permis de catégorie D",
+      "C": "Le permis C depuis au moins cinq ans",
+      "D": "Aucun permis si on a un certificat professionnel"
+    }
+  },
+  "rs-tt-legitimation-synlig": {
+    "options": {
+      "A": "Avec le permis de conduire",
+      "B": "Avec la carte grise du véhicule",
+      "C": "Facilement accessible dans la voiture",
+      "D": "Bien visible pour les passagers"
+    }
+  },
+  "rs-fri-pris": {
+    "options": {
+      "A": "Oui, 500 SEK en agglomération",
+      "B": "Non, les prix sont libres — c'est pourquoi l'affichage des prix et le prix de comparaison sont importants",
+      "C": "Oui, l'Agence des transports fixe le tarif chaque année",
+      "D": "Oui, la commune"
+    }
+  },
+  "rs-sfs-giltig-med-korkort": {
+    "options": {
+      "A": "Seule, même sans permis de conduire",
+      "B": "À compter de sa délivrance, et uniquement accompagnée d'un permis de conduire valide",
+      "C": "À compter de la demande",
+      "D": "Seulement dans la commune de résidence"
+    }
+  }
+}

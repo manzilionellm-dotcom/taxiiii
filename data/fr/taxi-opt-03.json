@@ -1,0 +1,265 @@
+{
+  "LAGSTIFNING-8-Q14": { "options": { "A": "Oui", "B": "Non" } },
+  "LAGSTIFNING-4-Q27": {
+    "options": {
+      "A": "La dernière journée",
+      "B": "Les deux dernières journées",
+      "C": "Les cinq dernières journées",
+      "D": "Les sept dernières journées",
+      "E": "Les dix dernières journées"
+    }
+  },
+  "LAGSTIFNING-4-Q36": {
+    "options": {
+      "A": "Tu peux utiliser un carnet neuf et jeter celui que tu as oublié dès la fin du service.",
+      "B": "Tu peux utiliser temporairement le carnet de l'employeur.",
+      "C": "Tu dois aller chercher ton carnet avant de commencer le service, car il doit être clôturé avant d'en utiliser un nouveau.",
+      "D": "Tu peux utiliser un carnet neuf seulement pendant le service, puis l'échanger contre celui que tu as oublié."
+    }
+  },
+  "LAGSTIFNING-5-Q17": {
+    "options": { "A": "Six", "B": "Quatre", "C": "Trois", "D": "Cinq" }
+  },
+  "LAGSTIFNING-5-Q27": {
+    "options": {
+      "A": "Le conducteur et la centrale de réservation",
+      "B": "Le conducteur seul",
+      "C": "Le conducteur et l'employeur",
+      "D": "L'employeur seul"
+    }
+  },
+  "LAGSTIFNING-6-Q31": {
+    "options": { "A": "À 20h", "B": "À 21h", "C": "À 22h", "D": "À 23h" }
+  },
+  "LAGSTIFNING-6-Q37": {
+    "options": { "A": "À 10h", "B": "À 11h", "C": "À 12h", "D": "À 13h" }
+  },
+  "LAGSTIFNING-7-Q10": {
+    "options": {
+      "A": "À 16h00 le 4 août",
+      "B": "À 19h00 le 4 août",
+      "C": "À 21h30 le 4 août",
+      "D": "À 02h00 le 5 août"
+    }
+  },
+  "LAGSTIFNING-7-Q38": {
+    "options": { "A": "À 23h00", "B": "À 01h00", "C": "À 03h00", "D": "À 05h00" }
+  },
+  "LAGSTIFNING-7-Q4": {
+    "options": { "A": "À 22h00", "B": "À 23h00", "C": "À 24h00", "D": "À 01h00" }
+  },
+  "LAGSTIFNING-7-Q6": {
+    "options": {
+      "A": "Un transport scolaire avec une voiture immatriculée comme autocar",
+      "B": "Un transport scolaire avec une voiture immatriculée comme voiture particulière",
+      "C": "Un transport de marchandises avec un camion de plus de 3,5 tonnes de poids total"
+    }
+  },
+  "LAGSTIFNING-8-Q1": {
+    "options": {
+      "A": "Tu dois barrer le texte erroné d'un trait",
+      "B": "Tu dois recouvrir le texte erroné de Tipp-Ex ou d'un autre correcteur",
+      "C": "Tu dois arracher toute la page contenant le texte erroné",
+      "D": "Tu dois jeter tout le carnet et en utiliser un neuf"
+    }
+  },
+  "LAGSTIFNING-8-Q15": {
+    "options": {
+      "A": "Oui, sur ordre direct de l'employeur, qui en assume alors la responsabilité",
+      "B": "Oui, si le conducteur a été impliqué dans un accident et est donc en retard",
+      "C": "Oui, la course peut être terminée si le conducteur n'a pas le temps de rentrer à sa base à l'heure",
+      "D": "Oui, quand le conducteur a effectué d'autres tâches que la conduite, le repos journalier peut être réduit de deux heures au maximum",
+      "E": "Non, jamais"
+    }
+  },
+  "LAGSTIFNING-8-Q20": {
+    "options": {
+      "A": "Oui",
+      "B": "Non, il manque 1 heure de repos",
+      "C": "Non, il manque 2 heures de repos",
+      "D": "Non, il manque 3 heures de repos"
+    }
+  },
+  "LAGSTIFNING-8-Q21": {
+    "options": { "A": "À 13h00", "B": "À 14h00", "C": "À 15h00", "D": "À 16h00" }
+  },
+  "LAGSTIFNING-8-Q27": {
+    "options": {
+      "A": "J'indique le repos journalier de la journée immédiatement précédente.",
+      "B": "J'indique le repos journalier des sept journées immédiatement précédentes.",
+      "C": "J'indique le repos journalier des huit journées immédiatement précédentes.",
+      "D": "J'indique le repos journalier de toute la période de congé."
+    }
+  },
+  "LAGSTIFNING-8-Q41": {
+    "options": { "A": "À 20h", "B": "À 22h", "C": "À 23h", "D": "À 01h" }
+  },
+  "LAGSTIFNING-8-Q59": {
+    "options": {
+      "A": "Oui",
+      "B": "Non, il manque 1 heure de repos",
+      "C": "Non, il manque 2 heures de repos",
+      "D": "Non, il manque 3 heures de repos"
+    }
+  },
+  "LAGSTIFNING-1-Q26": {
+    "options": { "A": "À 09h00", "B": "À 15h00", "C": "À 11h00", "D": "À 13h00" }
+  },
+  "LAGSTIFNING-8-Q28": {
+    "options": {
+      "A": "Immédiatement après la fin de ton service",
+      "B": "Au bout d'une journée",
+      "C": "Au bout d'une semaine",
+      "D": "Au bout d'un mois",
+      "E": "Au bout d'un an"
+    }
+  },
+  "LAGSTIFNING-2-Q16": {
+    "options": {
+      "A": "Le prix de comparaison est calculé sur 20 km en 30 minutes",
+      "B": "Le prix de comparaison doit être en texte noir sur fond jaune",
+      "C": "Le prix de comparaison doit être bien visible, en texte jaune sur fond noir"
+    }
+  },
+  "LAGSTIFNING-2-Q37": {
+    "options": {
+      "A": "Tu dois toujours pouvoir indiquer le coût exact du trajet avant le départ.",
+      "B": "Tu dois toujours pouvoir produire dans la voiture une liste des prix de comparaison quand le client la demande.",
+      "C": "Tu dois toujours avoir dans la voiture un prix de comparaison disponible par écrit."
+    }
+  },
+  "LAGSTIFNING-1-Q1": {
+    "options": {
+      "A": "Non, seulement les bus.",
+      "B": "Oui, les véhicules portant le panneau LGF (véhicule lent)",
+      "C": "Oui, les véhicules en service de taxi.",
+      "D": "Oui, les vélos et les cyclomoteurs de classe II."
+    }
+  },
+  "LAGSTIFNING-1-Q10": {
+    "options": {
+      "A": "Copie du macaron de transport professionnel – rapport de contrôle et de scellement du taximètre.",
+      "B": "Carte professionnelle de taxi – carte grise.",
+      "C": "Carte grise du véhicule – carnet de bord",
+      "D": "Contrôle de l'équipement du taximètre – permis de conduire"
+    }
+  },
+  "LAGSTIFNING-1-Q11": {
+    "options": {
+      "A": "Oui.",
+      "B": "Non.",
+      "C": "Oui, si je ne gêne aucun bus."
+    }
+  },
+  "LAGSTIFNING-1-Q12": {
+    "options": {
+      "A": "Je peux tourner à droite et à gauche au carrefour.",
+      "B": "Je ne peux que tourner à droite au carrefour.",
+      "C": "Je ne peux que tourner à gauche au carrefour.",
+      "D": "Je ne peux tourner ni à droite ni à gauche au carrefour."
+    }
+  },
+  "LAGSTIFNING-1-Q13": {
+    "options": {
+      "A": "Non.",
+      "B": "Oui, toujours.",
+      "C": "Oui, seulement pour les véhicules de la voie de droite."
+    }
+  },
+  "LAGSTIFNING-1-Q14": {
+    "options": {
+      "A": "Oui, sur une courte distance lors d'un dépassement.",
+      "B": "Oui, si je dois attraper un avion.",
+      "C": "Non, jamais.",
+      "D": "Oui, si le client le demande et propose de payer une éventuelle amende."
+    }
+  },
+  "LAGSTIFNING-1-Q15": {
+    "options": {
+      "A": "Tu transportes contre rémunération en motocyclette.",
+      "B": "Tu conduis tes enfants à l'école.",
+      "C": "Une entreprise te paie pour transporter des marchandises dans ton taxi.",
+      "D": "Tu proposes de conduire tes coéquipiers de sport."
+    }
+  },
+  "LAGSTIFNING-1-Q18": {
+    "options": {
+      "A": "Quand le titulaire change d'adresse.",
+      "B": "Quand le titulaire change de nom",
+      "C": "Tous les trois ans après la délivrance, puis tous les trois ans.",
+      "D": "Tous les cinq ans après la délivrance, puis tous les cinq ans."
+    }
+  },
+  "LAGSTIFNING-1-Q19": {
+    "options": {
+      "A": "Le repos journalier immédiatement précédent.",
+      "B": "Les deux repos journaliers immédiatement précédents.",
+      "C": "Les trois repos journaliers immédiatement précédents.",
+      "D": "Les cinq repos journaliers immédiatement précédents."
+    }
+  },
+  "LAGSTIFNING-1-Q2": {
+    "options": {
+      "A": "Tous les véhicules sauf les vélos.",
+      "B": "Tous les véhicules de plus de deux roues.",
+      "C": "Tous les véhicules.",
+      "D": "Seulement les véhicules motorisés."
+    }
+  },
+  "LAGSTIFNING-1-Q20": {
+    "options": {
+      "A": "Oui, je m'arrête le long du trottoir.",
+      "B": "Oui, je dois m'arrêter le long de la ligne continue.",
+      "C": "Non, le panneau signifie que je n'ai pas le droit de m'arrêter."
+    }
+  },
+  "LAGSTIFNING-1-Q21": {
+    "options": {
+      "A": "Sur l'image A.",
+      "B": "Sur l'image B.",
+      "C": "Ni sur l'image A ni sur l'image B.",
+      "D": "Dans aucune des situations."
+    }
+  },
+  "LAGSTIFNING-1-Q22": {
+    "options": {
+      "A": "Bien visible pour les personnes se trouvant à l'extérieur de la voiture.",
+      "B": "Bien visible seulement pour les occupants des places avant.",
+      "C": "Bien visible pour les occupants des places avant et arrière."
+    }
+  },
+  "LAGSTIFNING-1-Q25": {
+    "options": {
+      "A": "Un autocar aménagé pour plus de 17 passagers.",
+      "B": "Un transport de personnes en motocyclette, en service de ligne.",
+      "C": "Un transport de personnes en voiture particulière, en service de ligne.",
+      "D": "Un autocar destiné à 9–17 passagers."
+    }
+  },
+  "LAGSTIFNING-1-Q27": {
+    "options": {
+      "A": "Toutes les courses sauf les transports scolaires",
+      "B": "Toutes les courses sauf les taxis aéroport",
+      "C": "Toutes les courses sauf le transport adapté",
+      "D": "Toutes les courses.",
+      "E": "Toutes les courses sauf les transports adaptés",
+      "F": "Toutes les courses sauf les transports sanitaires"
+    }
+  },
+  "LAGSTIFNING-1-Q28": {
+    "options": {
+      "A": "L'avant uniquement.",
+      "B": "La porte du côté droit",
+      "C": "Toutes les portes sauf celle du conducteur.",
+      "D": "La porte du côté gauche.",
+      "E": "Les portes arrière."
+    }
+  },
+  "LAGSTIFNING-1-Q29": {
+    "options": {
+      "A": "Ralentir et dépasser le bus en restant prêt à ce qu'un piéton surgisse devant lui",
+      "B": "Je dois m'arrêter derrière le bus, car je n'ai pas le droit de dépasser avant un passage piéton",
+      "C": "Je dois m'arrêter derrière le bus et attendre qu'il mette son clignotant, puis rouler derrière lui"
+    }
+  }
+}
