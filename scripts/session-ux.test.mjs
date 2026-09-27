@@ -58,3 +58,35 @@ assert(
     /selectLock\.current = true/.test(questionCard),
   "question-card must lock after the first tap so a double-tap cannot change the answer",
 );
+/** The hold path is what protects the glossary, so it has to stay. */
+assert(
+  /allowMouseClick\s*=\s*variant !== "option"/.test(read("components/glossary.tsx")),
+  "an option's gloss must still open on hold only, never on a plain tap",
+);
+
+assert(/\.session-actions\s*\{/.test(css), "the fixed session action bar must exist");
+assert(
+  /\.session-actions\s*\{[^}]*position:\s*fixed[^}]*\}/s.test(css),
+  "the action bar must be fixed, not a button at the end of the page",
+);
+assert(
+  /--action-h:/.test(css) && /h-\[var\(--action-h\)\]/.test(sessionFrame),
+  "the session must reserve the action bar's height so the last line stays readable",
+);
+
+/**
+ * A transform on an ancestor makes it the containing block for fixed
+ * children: with it, the action bar rendered below the fold, the exam
+ * lightbox covered the document instead of the screen, and the glossary chip
+ * was offset by <main>'s top edge. page-enter must stay transform-free.
+ */
+const pageEnter = css.match(/\.page-enter\s*\{[^}]*\}/s)?.[0] ?? "";
+assert(pageEnter && !/transform/.test(pageEnter), ".page-enter must not set a transform");
+const fadeIn = css.match(/@keyframes fade-in\s*\{.*?\n\}/s)?.[0] ?? "";
+assert(fadeIn && !/transform/.test(fadeIn), "the page-enter keyframes must not animate transform");
+assert(!/@keyframes rise\b/.test(css), "the transform-based rise keyframes must be gone");
+
+assert(/window\.scrollTo\(\{ top: 0/.test(sessionFrame), "a new question must arrive at its stem");
+assert(/scrollIntoView/.test(questionCard), "the solution must be brought into view on answering");
+assert(/answerHaptic/.test(questionCard), "answering must give haptic confirmation");
+assert(
