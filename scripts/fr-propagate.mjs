@@ -12,6 +12,10 @@
  * letter by letter, so an option's French can never land on a different
  * question's answer list.
  *
+ * Explanations require the same full key (stem + options + image), never the
+ * stem alone — two papers can share a Swedish stem with different images or
+ * answers, and copying the LÖSNING across them would be wrong.
+ *
  * Usage: node scripts/fr-propagate.mjs [--check]
  */
 import { readFileSync, writeFileSync } from "node:fs";
@@ -36,23 +40,37 @@ const usable = (value) => {
 const optionSignature = (question) =>
   (question.options || []).map((option) => `${option.letter}:${norm(option.text)}`).join("|");
 
+/** Image path joins the explanation key so a picture-specific LÖSNING stays put. */
+const imageSignature = (question) => norm(question.imageUrl || "");
+
+/** Options: stem + option set. Explanations: that plus image. */
+const optionsKeyOf = (question) =>
+  `${norm(question.stem_sv)}##${optionSignature(question)}`;
+const explanationKeyOf = (question) =>
+  `${optionsKeyOf(question)}##${imageSignature(question)}`;
+
 export function propagate({ questions, store }) {
   const next = { ...store };
   /** stem signature -> the first record that has a usable French stem */
   const stemDonor = new Map();
-  const fullDonor = new Map();
+  const optionsDonor = new Map();
+  const explanationDonor = new Map();
 
   for (const question of questions) {
     const record = store[question.id];
     if (!record) continue;
     const stemKey = norm(question.stem_sv);
     if (usable(record.stem) && !stemDonor.has(stemKey)) stemDonor.set(stemKey, record);
-    const fullKey = `${stemKey}##${optionSignature(question)}`;
+    const optionsKey = optionsKeyOf(question);
+    const explanationKey = explanationKeyOf(question);
     const options = record.options || {};
     const everyOption =
       (question.options || []).length > 0 &&
       question.options.every((option) => usable(options[option.letter]));
-    if (everyOption && !fullDonor.has(fullKey)) fullDonor.set(fullKey, record);
+    if (everyOption && !optionsDonor.has(optionsKey)) optionsDonor.set(optionsKey, record);
+    if (usable(record.explanation) && !explanationDonor.has(explanationKey)) {
+      explanationDonor.set(explanationKey, record);
+    }
   }
 
   let stems = 0;
@@ -61,7 +79,8 @@ export function propagate({ questions, store }) {
 
   for (const question of questions) {
     const stemKey = norm(question.stem_sv);
-    const fullKey = `${stemKey}##${optionSignature(question)}`;
+    const optionsKey = optionsKeyOf(question);
+    const explanationKey = explanationKeyOf(question);
     const current = next[question.id] || {};
 
     if (!usable(current.stem)) {
@@ -74,7 +93,7 @@ export function propagate({ questions, store }) {
 
     const after = next[question.id] || {};
     if (!usable(after.explanation)) {
-      const donor = stemDonor.get(stemKey);
+      const donor = explanationDonor.get(explanationKey);
       if (donor && usable(donor.explanation)) {
         next[question.id] = { ...(next[question.id] || {}), explanation: donor.explanation };
         explanations += 1;
@@ -84,7 +103,7 @@ export function propagate({ questions, store }) {
     const optionsNow = (next[question.id] || {}).options || {};
     const missingOption = (question.options || []).some((option) => !usable(optionsNow[option.letter]));
     if (missingOption) {
-      const donor = fullDonor.get(fullKey);
+      const donor = optionsDonor.get(optionsKey);
       if (donor) {
         next[question.id] = { ...(next[question.id] || {}), options: { ...donor.options } };
         optionSets += 1;

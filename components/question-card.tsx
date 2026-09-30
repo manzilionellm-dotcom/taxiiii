@@ -152,6 +152,8 @@ export function QuestionCard({
   const [imageFailed, setImageFailed] = useState(false);
   const selectLock = useRef(false);
   const solutionRef = useRef<HTMLElement | null>(null);
+  /** Second tap in the same event turn must not flip the answer. */
+  const selectLock = useRef(false);
 
   const answered = picked !== null;
   const correct = picked === question.answer;

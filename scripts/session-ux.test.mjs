@@ -62,6 +62,12 @@ assert(
   /onPointerDown=\{\(\) => clearGlossHold\(\)\}/.test(questionCard),
   "each new gesture on a row must clear the previous hold flag, or one hold would eat the next tap",
 );
+assert(
+  /const selectLock = useRef\(false\)/.test(questionCard) &&
+    /selectLock\.current\) return/.test(questionCard) &&
+    /selectLock\.current = true/.test(questionCard),
+  "question-card must lock after the first tap so a double-tap cannot change the answer",
+);
 /** The hold path is what protects the glossary, so it has to stay. */
 const glossary = read("components/glossary.tsx");
 assert(
