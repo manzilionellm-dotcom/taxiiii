@@ -42,20 +42,31 @@ const fr = read("lib/i18n/fr.ts");
 /**
  * The one that actually cost taps: every Swedish word in an option is a
  * glossary token, and the click handler used to return early on those, so a
- * tap on the answer text did nothing.
+ * tap on the answer text did nothing at all.
+ *
+ * The outcome is pinned here, not one particular implementation of it. This
+ * branch and main fixed it independently and main's version shipped, so the
+ * assertions follow main's mechanism: a hold marks itself consumed, and the
+ * row's onClick selects unless a hold just fired. What must never come back is
+ * the early return on a glossed target, which made the text dead to a tap.
  */
 assert(
   !/closest\("\[data-gloss-word\]"\)\)\s*return/.test(questionCard),
   "question-card must not skip a tap that lands on a glossed word",
 );
 assert(
-  /onClick=\{\(\) => select\(option\.letter\)\}/.test(questionCard),
-  "an option row's tap must select that option unconditionally",
+  /if \(glossHoldConsumed\(\)\) return;\s*\n\s*select\(option\.letter\);/.test(questionCard),
+  "an option row's tap must select that option unless a hold just fired",
+);
+assert(
+  /onPointerDown=\{\(\) => clearGlossHold\(\)\}/.test(questionCard),
+  "each new gesture on a row must clear the previous hold flag, or one hold would eat the next tap",
 );
 /** The hold path is what protects the glossary, so it has to stay. */
+const glossary = read("components/glossary.tsx");
 assert(
-  /allowMouseClick\s*=\s*variant !== "option"/.test(read("components/glossary.tsx")),
-  "an option's gloss must still open on hold only, never on a plain tap",
+  /export function markGlossHold\(\)/.test(glossary) && /export function glossHoldConsumed\(\)/.test(glossary),
+  "the hold-consumed handshake must stay exported, it is what separates a tap from a hold",
 );
 
 assert(/\.session-actions\s*\{/.test(css), "the fixed session action bar must exist");
@@ -123,9 +134,20 @@ assert(
     /translationsOn=\{state\.profile\.showTranslations\}/.test(exam),
   "study and exam must both read the same persisted preference",
 );
+/*
+ * main replaced the single showFrNow rule with per-passage reveal (tap a
+ * paragraph, or the red "Traduire tout" button). The persisted preference now
+ * drives the INITIAL state of that reveal, which is what removes the repeated
+ * tap: a francophone gets French without asking for it question by question,
+ * and every one of main's reveal gestures still works on top.
+ */
 assert(
-  /const showFrNow = translationsOn \|\| answered/.test(questionCard),
-  "one rule must decide every French line",
+  /const \[showFr\] = useState\(translationsOn\)/.test(questionCard),
+  "the persisted preference must set the initial French state",
+);
+assert(
+  /\{showFr && isRealFrenchText\(stemFr\) \?/.test(questionCard),
+  "the stem must carry a persistent French line when the preference is on",
 );
 assert(
   !/supportLevel > 0 && isRealFrenchText/.test(questionCard),
@@ -140,7 +162,8 @@ assert(
   "choosing FR in the header must turn the French line on",
 );
 assert(
-  /translationsOn && !hasFrench/.test(questionCard) && /fr-pending/.test(css),
+  /showFr && !isRealFrenchText\(stemFr\) \? <p className="fr-pending">/.test(questionCard) &&
+    /\.fr-pending/.test(css),
   "a question with no French yet must say so instead of looking broken",
 );
 assert(

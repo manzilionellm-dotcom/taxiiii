@@ -2,9 +2,18 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ClozeText } from "@/components/cloze-text";
-import { GlossableText, GlossaryProvider } from "@/components/glossary";
+import {
+  GlossablePassage,
+  GlossableText,
+  GlossaryProvider,
+  GLOSS_HOLD_MS,
+  clearGlossHold,
+  glossHoldConsumed,
+  markGlossHold,
+} from "@/components/glossary";
 import { ProtectedImage } from "@/components/protected-image";
 import { answerHaptic } from "@/lib/haptics";
+import { glossSentence } from "@/lib/glossary";
 import { t } from "@/lib/i18n";
 import { displayFrench, distractorNote, takeawayFor } from "@/lib/questions/review.mjs";
 import { isRealFrenchText } from "@/lib/questions/french-text";
@@ -16,26 +25,72 @@ import {
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { Locale, SupportLevel } from "@/lib/types";
 
-function collapseWhitespace(value: string) {
-  return String(value || "").replace(/\s+/g, " ").trim();
-}
-
 function ExamFigure({
   question,
   alt,
   unavailableLabel,
   onUnavailable,
+  onHold,
+  holdHint,
 }: {
   question: SessionQuestion;
   alt: string;
   unavailableLabel: string;
   onUnavailable?: () => void;
+  onHold?: () => void;
+  holdHint?: string;
 }) {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
+  const timer = useRef<number>(0);
+  const start = useRef({ x: 0, y: 0 });
+  const fired = useRef(false);
   if (failed) return null;
+
+  const clearHold = () => {
+    if (timer.current) window.clearTimeout(timer.current);
+    timer.current = 0;
+  };
+
   return (
-    <figure className="exam-figure overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]">
+    <figure
+      className="exam-figure overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#f3eee4]"
+      aria-label={holdHint}
+      onContextMenu={(event) => {
+        if (onHold) event.preventDefault();
+      }}
+      onPointerDown={(event) => {
+        if (!onHold || event.button !== 0) return;
+        fired.current = false;
+        start.current = { x: event.clientX, y: event.clientY };
+        clearHold();
+        timer.current = window.setTimeout(() => {
+          fired.current = true;
+          onHold();
+        }, GLOSS_HOLD_MS);
+      }}
+      onPointerMove={(event) => {
+        if (!timer.current) return;
+        if (Math.hypot(event.clientX - start.current.x, event.clientY - start.current.y) > 10) {
+          clearHold();
+        }
+      }}
+      onPointerUp={(event) => {
+        const wasHold = fired.current;
+        const moved =
+          Math.hypot(event.clientX - start.current.x, event.clientY - start.current.y) > 10;
+        clearHold();
+        if (wasHold) {
+          markGlossHold();
+          return;
+        }
+        if (!moved && onHold) {
+          markGlossHold();
+          onHold();
+        }
+      }}
+      onPointerCancel={clearHold}
+    >
       <div className="flex min-h-40 items-center justify-center overflow-auto px-2 pt-3">
         <ProtectedImage
           src={question.imageUrl!}
@@ -51,7 +106,10 @@ function ExamFigure({
         />
       </div>
       {ready ? (
-        <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">{alt}</figcaption>
+        <figcaption className="px-4 py-2.5 text-center text-xs text-[#6b6560]">
+          {alt}
+          {holdHint ? <span className="mt-1 block text-[11px] text-[#b91c1c]">{holdHint}</span> : null}
+        </figcaption>
       ) : null}
     </figure>
   );
@@ -72,7 +130,12 @@ export function QuestionCard({
   locale: Locale;
   fragile: boolean;
   supportLevel: SupportLevel;
-  /** The single persisted preference that decides every French line. */
+  /**
+   * Préférence persistée (profile.showTranslations). Elle pilote l'ÉTAT INITIAL
+   * du français : le francophone n'a plus à révéler chaque question une par une.
+   * L'appui sur un passage et le bouton « Traduire tout » continuent de marcher
+   * par-dessus — cette préférence ne retire rien, elle part ouverte.
+   */
   translationsOn: boolean;
   onAnswer?: (letter: SessionQuestion["answer"], correct: boolean) => void;
   onReviewSoon?: () => void;
@@ -82,16 +145,17 @@ export function QuestionCard({
   const dict = t(locale);
   const french = question.translation;
   const [picked, setPicked] = useState<string | null>(null);
+  const [showFr] = useState(translationsOn);
   const [lightbox, setLightbox] = useState(false);
+  const [pdfTranslated, setPdfTranslated] = useState(false);
   const [reviewQueued, setReviewQueued] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
+  const selectLock = useRef(false);
   const solutionRef = useRef<HTMLElement | null>(null);
 
   const answered = picked !== null;
   const correct = picked === question.answer;
   const compact = variant === "exam";
-  /** Answering can no longer spoil anything, so French always joins the solution. */
-  const showFrNow = translationsOn || answered;
   const figureAlt = sanitizeCaption(question.imageCaption) || dict.examPageCaption;
   const imageFirst = question.form === "image-first" || Boolean(question.imageFirst);
   const showInlineFigure =
@@ -100,34 +164,22 @@ export function QuestionCard({
     hasImageUrl(question.imageUrl) &&
     (imageFirst || shouldShowImageBeforeAnswer(question));
   const showSolutionFigure = answered && hasImageUrl(question.imageUrl) && !imageFailed;
-  const stemFr = displayFrench(french.stem);
-  /** Curated FR wins; a question's own explanation_fr is the fallback. */
-  const explanationFr = displayFrench(french.explanation || question.explanation_fr);
+  const stemFr = displayFrench(french.stem) || glossSentence(question.stem_sv);
+  const explanationFr =
+    displayFrench(french.explanation || question.explanation_fr) ||
+    glossSentence(question.explanation_sv) ||
+    String(question.explanation_fr || "").trim();
   const takeaway = takeawayFor(question, explanationFr);
   const distractors = distractorNote(question);
-  /**
-   * takeawayFor() falls back to the explanation's opening sentence, and for
-   * most Manzi rows the explanation opens with exactly that — so the panel
-   * printed one sentence twice under two headings. Drop the takeaway when the
-   * explanation below already contains it; the exam variant hides the
-   * explanation, so there it always stays.
-   */
-  const showTakeaway =
-    compact || !collapseWhitespace(question.explanation_sv).includes(collapseWhitespace(takeaway.sv));
-  const hasFrench =
-    isRealFrenchText(stemFr) ||
-    question.options.some((option) => isRealFrenchText(french.options?.[option.letter]));
 
-  /** Bring the solution into view on the same tap that answers the question. */
+  /** La solution arrive dans le champ de vision sur le même geste que la réponse. */
   useEffect(() => {
-    if (!answered) return;
+    if (picked === null) return;
     solutionRef.current?.scrollIntoView({
       block: "nearest",
-      behavior: window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
-        ? "auto"
-        : "smooth",
+      behavior: window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
     });
-  }, [answered]);
+  }, [picked]);
 
   function markImageUnavailable() {
     setImageFailed(true);
@@ -135,11 +187,24 @@ export function QuestionCard({
   }
 
   function select(letter: SessionQuestion["answer"]) {
-    if (disabled || answered) return;
+    if (disabled || answered || selectLock.current) return;
+    selectLock.current = true;
     setPicked(letter);
     void answerHaptic(letter === question.answer);
     onAnswer?.(letter, letter === question.answer);
   }
+
+  const pdfFrPanel = pdfTranslated ? (
+    <PdfTranslation
+      stemFr={stemFr}
+      optionFr={question.options.map((option) => ({
+        letter: option.letter,
+        text: french.options?.[option.letter],
+      }))}
+      explanationFr={explanationFr}
+      empty={dict.translationSoon}
+    />
+  ) : null;
 
   return (
     <GlossaryProvider locale={locale}>
@@ -164,42 +229,47 @@ export function QuestionCard({
         </header>
 
         {imageFirst && showInlineFigure ? (
-          <ExamFigure
-            question={question}
-            alt={figureAlt}
-            unavailableLabel={dict.imageUnavailable}
-            onUnavailable={markImageUnavailable}
-          />
+          <>
+            <ExamFigure
+              question={question}
+              alt={figureAlt}
+              unavailableLabel={dict.imageUnavailable}
+              onUnavailable={markImageUnavailable}
+              onHold={() => setPdfTranslated(true)}
+              holdHint={dict.glossPdfHint}
+            />
+            {pdfFrPanel}
+          </>
         ) : null}
 
-        <ClozeText
-          stem={question.stem_sv}
-          locale={locale}
-          fragile={fragile}
-          supportLevel={supportLevel}
-          revealAll={answered}
-        />
+        <GlossablePassage label={dict.glossQuestion} fr={stemFr} hint={dict.glossPassageHint}>
+          <ClozeText
+            stem={question.stem_sv}
+            locale={locale}
+            fragile={fragile}
+            supportLevel={supportLevel}
+            revealAll={answered}
+          />
+        </GlossablePassage>
 
-        {showFrNow && isRealFrenchText(stemFr) ? (
+        {showFr && isRealFrenchText(stemFr) ? (
           <p className="question-fr text-[1.02rem] leading-7">{stemFr}</p>
         ) : null}
 
-        {/*
-          Say it when a question has no French yet. Silence reads as a broken
-          app — the Swedish sits there and the reader assumes the translation
-          failed. A quiet, honest marker also makes the real gap visible.
-        */}
-        {translationsOn && !hasFrench ? (
-          <p className="fr-pending">{dict.translationSoon}</p>
-        ) : null}
+        {showFr && !isRealFrenchText(stemFr) ? <p className="fr-pending">{dict.translationSoon}</p> : null}
 
         {!imageFirst && showInlineFigure ? (
-          <ExamFigure
-            question={question}
-            alt={figureAlt}
-            unavailableLabel={dict.imageUnavailable}
-            onUnavailable={markImageUnavailable}
-          />
+          <>
+            <ExamFigure
+              question={question}
+              alt={figureAlt}
+              unavailableLabel={dict.imageUnavailable}
+              onUnavailable={markImageUnavailable}
+              onHold={() => setPdfTranslated(true)}
+              holdHint={dict.glossPdfHint}
+            />
+            {pdfFrPanel}
+          </>
         ) : null}
 
         <ul className="space-y-2.5 pb-2">
@@ -213,20 +283,11 @@ export function QuestionCard({
                   role="button"
                   tabIndex={disabled || answered ? -1 : 0}
                   aria-disabled={disabled || answered}
-                  /*
-                   * Tap anywhere on the row, glossed words included.
-                   *
-                   * This used to bail out when the tap landed on a
-                   * [data-gloss-word] span — and nearly every Swedish word in
-                   * an option is one, so tapping the answer text did nothing
-                   * at all and only the letter badge or a gap between words
-                   * worked. The guard was never needed: an option's gloss
-                   * fires on hold only (glossary.tsx sets allowMouseClick
-                   * false for this variant) and a fired hold already stops
-                   * the click from reaching here. So a hold still opens the
-                   * meaning without answering, and a tap now answers.
-                   */
-                  onClick={() => select(option.letter)}
+                  onPointerDown={() => clearGlossHold()}
+                  onClick={() => {
+                    if (glossHoldConsumed()) return;
+                    select(option.letter);
+                  }}
                   onKeyDown={(event) => {
                     if (event.key === "Enter" || event.key === " ") {
                       event.preventDefault();
@@ -254,12 +315,23 @@ export function QuestionCard({
                   >
                     {option.letter}
                   </span>
-                  <span className="min-w-0">
-                    <span className="block font-medium leading-6">
-                      <GlossableText text={option.text} variant="option" />
-                    </span>
-                    {showFrNow && isRealFrenchText(french.options?.[option.letter]) ? (
-                      <span className="mt-1 block text-sm leading-6 text-[#1d4ed8]">
+                  <span className="min-w-0 flex-1">
+                    <GlossablePassage
+                      label={`${dict.glossQuestion} ${option.letter}`}
+                      fr={
+                        displayFrench(french.options?.[option.letter]) ||
+                        glossSentence(option.text)
+                      }
+                      hint={dict.glossOptionHint}
+                      activate="hold"
+                    >
+                      <span className="block font-medium leading-6">
+                        <GlossableText text={option.text} variant="option" />
+                      </span>
+                    </GlossablePassage>
+                    {(answered || showFr) &&
+                    isRealFrenchText(french.options?.[option.letter]) ? (
+                      <span className="question-fr-premium mt-1 block text-sm leading-6">
                         {french.options[option.letter]}
                       </span>
                     ) : null}
@@ -281,42 +353,54 @@ export function QuestionCard({
               </p>
             </header>
 
-            {showTakeaway ? (
-              <div className="space-y-1.5">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
-                  {dict.takeaway}
+            <div className="space-y-1.5">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                {dict.takeaway}
+              </p>
+              <GlossablePassage
+                label={dict.takeaway}
+                fr={takeaway.fr || glossSentence(takeaway.sv)}
+                hint={dict.glossExplainHint}
+                defaultOpen
+              >
+                <p className="text-[1.02rem] leading-7 text-black">
+                  <GlossableText text={takeaway.sv} variant="stem" />
                 </p>
-                <p className="text-[1.02rem] leading-7 text-black">{takeaway.sv}</p>
-                {showFrNow && isRealFrenchText(takeaway.fr) ? (
-                  <p className="question-fr text-[0.98rem] leading-7">{takeaway.fr}</p>
-                ) : null}
-              </div>
-            ) : null}
+              </GlossablePassage>
+            </div>
 
-            {compact ? null : (
-              <div className="space-y-1.5">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
-                  {dict.whyCorrect} · {question.answer}
-                </p>
+            <div className="space-y-1.5">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
+                {dict.whyCorrect} · {question.answer} · {dict.glossExplainHint}
+              </p>
+              <GlossablePassage
+                label={dict.explanation}
+                fr={explanationFr}
+                hint={dict.glossExplainHint}
+                defaultOpen
+              >
                 <p className="whitespace-pre-wrap text-[0.98rem] leading-7 text-black">
-                  {question.explanation_sv}
+                  <GlossableText text={question.explanation_sv} variant="stem" />
                 </p>
-                {showFrNow && isRealFrenchText(explanationFr) ? (
-                  <p className="question-fr whitespace-pre-wrap text-[0.95rem] leading-7">
-                    {explanationFr}
-                  </p>
-                ) : null}
-              </div>
-            )}
+              </GlossablePassage>
+            </div>
 
-            {!compact && distractors ? (
+            {distractors ? (
               <div className="space-y-1.5">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8a8276]">
                   {dict.whyOthersWrong}
                 </p>
-                <p className="text-[0.98rem] leading-7 text-black">{distractors.sv}</p>
-                {showFrNow && isRealFrenchText(distractors.fr) ? (
-                  <p className="question-fr text-[0.95rem] leading-7">{distractors.fr}</p>
+                <GlossablePassage
+                  label={dict.whyOthersWrong}
+                  fr={distractors.fr}
+                  hint={dict.glossExplainHint}
+                >
+                  <p className="text-[0.98rem] leading-7 text-black">
+                    <GlossableText text={distractors.sv} variant="stem" />
+                  </p>
+                </GlossablePassage>
+                {showFr && isRealFrenchText(distractors.fr) ? (
+                  <p className="question-fr-premium text-[0.95rem] leading-7">{distractors.fr}</p>
                 ) : null}
               </div>
             ) : null}
@@ -333,7 +417,10 @@ export function QuestionCard({
                     alt={figureAlt}
                     unavailableLabel={dict.imageUnavailable}
                     onUnavailable={markImageUnavailable}
+                    onHold={() => setPdfTranslated(true)}
+                    holdHint={dict.glossPdfHint}
                   />
+                  {pdfFrPanel}
                   <button type="button" className="btn-secondary w-full" onClick={() => setLightbox(true)}>
                     {dict.viewExamPage}
                   </button>
@@ -365,7 +452,20 @@ export function QuestionCard({
                 alt={figureAlt}
                 unavailableLabel={dict.imageUnavailable}
                 onUnavailable={markImageUnavailable}
+                onHold={() => setPdfTranslated(true)}
+                holdHint={dict.glossPdfHint}
               />
+              {pdfTranslated ? (
+                <PdfTranslation
+                  stemFr={stemFr}
+                  optionFr={question.options.map((option) => ({
+                    letter: option.letter,
+                    text: french.options?.[option.letter],
+                  }))}
+                  explanationFr={explanationFr}
+                  empty={dict.translationSoon}
+                />
+              ) : null}
               <button type="button" className="btn-primary w-full" onClick={() => setLightbox(false)}>
                 {dict.closeExamPage}
               </button>
@@ -374,5 +474,37 @@ export function QuestionCard({
         ) : null}
       </article>
     </GlossaryProvider>
+  );
+}
+
+function PdfTranslation({
+  stemFr,
+  optionFr,
+  explanationFr,
+  empty,
+}: {
+  stemFr?: string | null;
+  optionFr: Array<{ letter: string; text?: string }>;
+  explanationFr?: string | null;
+  empty: string;
+}) {
+  const lines = [
+    isRealFrenchText(stemFr) ? stemFr : null,
+    ...optionFr.map((option) =>
+      isRealFrenchText(option.text) ? `${option.letter}. ${option.text}` : null,
+    ),
+    isRealFrenchText(explanationFr) ? explanationFr : null,
+  ].filter((line): line is string => Boolean(line));
+  if (!lines.length) {
+    return <p className="question-fr-premium text-sm">{empty}</p>;
+  }
+  return (
+    <div className="pdf-fr-panel space-y-2">
+      {lines.map((line) => (
+        <p key={line.slice(0, 48)} className="question-fr-premium whitespace-pre-wrap text-[0.98rem] leading-7">
+          {line}
+        </p>
+      ))}
+    </div>
   );
 }
