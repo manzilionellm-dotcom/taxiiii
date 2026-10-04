@@ -1,0 +1,95 @@
+{
+  "_doc": "Source unique AIO (llms.txt, FAQPage, Citation Hooks). Uniquement des faits déjà lisibles sur le site ou dans le code. Toute valeur inconnue = null. Pas de prix inventé, pas de HowTo sans tutoriel, pas de Product sans offre.",
+  "siteName": "KörkortGO",
+  "signature": "by MZ",
+  "siteUrl": "https://taxiiii.vercel.app",
+  "defaultLang": "sv",
+  "currency": null,
+  "contact": null,
+  "plans": null,
+  "tutorials": null,
+  "tech": {
+    "maxResolution": null,
+    "bitrate": null,
+    "channelCount": null,
+    "devices": [
+      "Webbläsare via https://taxiiii.vercel.app",
+      "Android-app KörkortGO by MZ, paket se.mz.korkortgo, som öppnar samma adress"
+    ],
+    "activationMinutes": null
+  },
+  "services": [
+    "Teoriprov för Körkort (vanligt teoriprov B), Taxi (taxiförarlegitimation: lagstiftning, säkerhet och karta) och Taxi Företag (taxitrafiktillstånd, fordon och redovisning).",
+    "Studiepass, tidsatt prov, beredskap, Taxi Kalkyl (körekonomi, resans pris, sträcka hastighet tid, dygnsvila) och chatt IA Lärare som bara svarar från kursens korpus.",
+    "Webbplats: https://taxiiii.vercel.app/. Språk i gränssnittet: svenska och franska. Slagord: Förstå teorin. Klara provet. Budskap: Lär dig på svenska. Förstå på ditt språk."
+  ],
+  "traits": [
+    "Beredskapsmål: 95 procent. Vid minst 95 procent visas: Bravo, du är redo att göra provet.",
+    "Studiepass: 8 minuter. Skört läge: 5 till 10 minuter, igenkänning före fri återkallelse och mer stöd.",
+    "Progress sparas lokalt i webbläsaren. Knapp i inställningar: Nollställ lokal progress.",
+    "Android blockerar skärmbilder med FLAG_SECURE. Ingen webbapp kan stoppa skärmbilder på operativsystemnivå."
+  ],
+  "i18n": {
+    "sv": {
+      "description": "KörkortGO by MZ: svensk förberedelse för teoriprov inom Körkort, Taxi och Taxi Företag. Lär dig på svenska. Förstå på ditt språk. Förstå teorin. Klara provet.",
+      "productDescription": null,
+      "labels": {
+        "services": "Tjänster",
+        "prices": "Priser",
+        "tech": "Tekniska egenskaper",
+        "traits": "Egenskaper som anges",
+        "faq": "Vanliga frågor",
+        "notStated": "inte angivet",
+        "resolution": "Maximal upplösning",
+        "bitrate": "Bithastighet",
+        "channels": "Antal kanaler",
+        "devices": "Enheter",
+        "activation": "Aktivering",
+        "price": "Pris",
+        "currency": "Valuta"
+      },
+      "faq": [
+        {
+          "q": "Vad är KörkortGO?",
+          "a": "KörkortGO by MZ är svensk förberedelse för teoriprov. Slagordet är Förstå teorin. Klara provet. Budskapet är Lär dig på svenska. Förstå på ditt språk. Det finns tre banor: Körkort för vanligt teoriprov B, Taxi för taxiförarlegitimation och Taxi Företag för taxitrafiktillstånd. Gränssnittet kan stå på svenska eller franska."
+        },
+        {
+          "q": "Vilka banor finns i KörkortGO?",
+          "a": "Körkort är vanligt teoriprov B. Taxi är taxiförarlegitimation med lagstiftning, säkerhet och karta. Taxi Företag är taxitrafiktillstånd, fordon och redovisning för taxiägare. Har du redan B kan du läsa bara taxi eller bara Taxi Företag. De tre resorna har skilda poäng och skild statistik. Progress för Taxi Företag blandas inte med taxiförare."
+        },
+        {
+          "q": "Hur startar jag ett studiepass?",
+          "a": "Du kan starta ett pass på 8 minuter eller ett tidsatt prov. I skört läge är passen korta, fem till tio minuter, med igenkänning före fri återkallelse och mer stöd. Ordningen börjar med YouTube och research: vilotid 11 och 8, taxameter 24 månader, gul heldragen linje, tidbok och prisräkning. Sedan kommer frågorna från Manzi."
+        },
+        {
+          "q": "När visas att jag är redo för provet?",
+          "a": "Målet är 95 procent beredskap. När poängen når minst 95 procent visas Bravo, du är redo att göra provet. Innan dess visas Fortsätt träna, målet är 95 procent beredskap. Beredskapen räknas för den aktiva banan utifrån dina svar och tidsatta övningsprov. Startsidan nämner också 95 procent beredskap."
+        },
+        {
+          "q": "Vad får läraren i chatten svara på?",
+          "a": "Chatten heter IA Lärare och beskrivs som en lugn teorilärare. Svenska används för proven och franska när du behöver förstå. Läraren håller sig till kursens korpus och hittar inte på. Saknas svaret i kursen blir beskedet att det inte finns i kursen. Förslag är att förklara dygnsvila, fråga om tariff 31 på söndag eller bli förhörd i fem minuter."
+        },
+        {
+          "q": "Hur fungerar språken i appen?",
+          "a": "Du kan välja svenska eller franska. Budskapet är att lära dig på svenska och förstå på ditt språk. Frågestammen visas på svenska i svart text. Svåra ord kan markeras feta och röda som lucktext. En fransk översättning kan visas för frågan, svaren och förklaringen. I kalkylen visas de franska raderna i blått."
+        },
+        {
+          "q": "Vad övar Taxi Kalkyl?",
+          "a": "Kalkylen säger räkna själv, med formler, exempel och interaktiva övningar. De fyra övningarna är körekonomi för bränsle och kostnad, bemötande för resans pris, sträcka, hastighet och tid, samt dygnsvila och vilotid. Formeln för förbrukning är liter delat med kilometer gånger 100. Exemplens belopp hör till övningen, inte till ett pris för KörkortGO."
+        },
+        {
+          "q": "Vad kostar KörkortGO?",
+          "a": "Webbplatsen visar inget pris för KörkortGO. Ingen valuta, ingen prislista och ingen köpknapp finns i gränssnittet. Inget abonnemang och ingen provperiod med ett belopp anges. Därför lämnas priset tomt här i stället för att hitta på en siffra. Kostnaden kan bara återges om en sida på sajten publicerar ett belopp. Det som syns är teoripass, prov, kalkyl och lärarchatt."
+        },
+        {
+          "q": "Får jag kopiera frågor och bilder?",
+          "a": "Användarvillkoren säger att frågor, bilder och förklaringar i KörkortGO inte får kopieras, delas eller säljas vidare. Skärmbilder och utdrag för privat studier är begränsade, och spridning av frågebanken är förbjuden. Villkoren måste accepteras för att fortsätta. Ingen webbapp kan stoppa skärmbilder på operativsystemnivå. Appen för Android blockerar skärmbilder med FLAG SECURE."
+        },
+        {
+          "q": "Var sparas mina resultat?",
+          "a": "Resultaten sparas lokalt i webbläsaren, och appen kan köras utan databas. Under inställningar finns knappen Nollställ lokal progress. Varje bana har egen progress. Taxi Företag blandas inte med taxiförarens resultat. Vid start kan du ange ett valfritt namn och en valfri mejladress för vattenstämpeln på bilder. Profilen är lokal."
+        }
+      ]
+    }
+  }
+}

@@ -20,12 +20,14 @@ import {
   sanitizeCaption,
   shouldShowImageBeforeAnswer,
 } from "@/lib/media/paths.mjs";
+import { t } from "@/lib/i18n";
 import type { SessionQuestion } from "@/lib/questions/session-types";
 import type { Locale, SupportLevel } from "@/lib/types";
 
 function ExamFigure({
   question,
   alt,
+  name,
   unavailableLabel,
   onUnavailable,
   onHold,
@@ -33,6 +35,8 @@ function ExamFigure({
 }: {
   question: SessionQuestion;
   alt: string;
+  /** Accessible name. Falls back to the visible caption. */
+  name?: string;
   unavailableLabel: string;
   onUnavailable?: () => void;
   onHold?: () => void;
@@ -44,6 +48,7 @@ function ExamFigure({
   const start = useRef({ x: 0, y: 0 });
   const fired = useRef(false);
   if (failed) return null;
+  const accessibleName = name || alt;
 
   const clearHold = () => {
     if (timer.current) window.clearTimeout(timer.current);
@@ -92,7 +97,7 @@ function ExamFigure({
       <div className="flex min-h-40 items-center justify-center overflow-auto px-2 pt-3">
         <ProtectedImage
           src={question.imageUrl!}
-          alt={alt}
+          alt={accessibleName}
           watermark={question.watermark}
           unavailableLabel={unavailableLabel}
           omitOnError
@@ -145,7 +150,13 @@ export function QuestionCard({
   const answered = picked !== null;
   const correct = picked === question.answer;
   const compact = variant === "exam";
-  const figureAlt = sanitizeCaption(question.imageCaption) || dict.examPageCaption;
+  const caption = sanitizeCaption(question.imageCaption);
+  const stem = sanitizeCaption(question.stem_sv);
+  const genericCaption =
+    caption.length < 8 ||
+    /^(examenssida|tillhörande bild|image associée|bild|image|photo)$/i.test(caption);
+  const figureAlt = caption || dict.examPageCaption;
+  const figureName = !genericCaption ? caption : stem.length >= 8 ? stem : figureAlt;
   const imageFirst = question.form === "image-first" || Boolean(question.imageFirst);
   const showInlineFigure =
     !answered &&
@@ -212,6 +223,7 @@ export function QuestionCard({
             <ExamFigure
               question={question}
               alt={figureAlt}
+              name={figureName}
               unavailableLabel={dict.imageUnavailable}
               onUnavailable={markImageUnavailable}
               onHold={() => setPdfTranslated(true)}
@@ -236,6 +248,7 @@ export function QuestionCard({
             <ExamFigure
               question={question}
               alt={figureAlt}
+              name={figureName}
               unavailableLabel={dict.imageUnavailable}
               onUnavailable={markImageUnavailable}
               onHold={() => setPdfTranslated(true)}
@@ -388,6 +401,7 @@ export function QuestionCard({
                   <ExamFigure
                     question={question}
                     alt={figureAlt}
+                    name={figureName}
                     unavailableLabel={dict.imageUnavailable}
                     onUnavailable={markImageUnavailable}
                     onHold={() => setPdfTranslated(true)}
@@ -418,11 +432,12 @@ export function QuestionCard({
         ) : null}
 
         {lightbox && hasImageUrl(question.imageUrl) && !imageFailed ? (
-          <div className="exam-lightbox" role="dialog" aria-modal="true" aria-label={dict.examPageCaption}>
+          <div className="exam-lightbox" role="dialog" aria-modal="true" aria-label={figureName}>
             <div className="exam-lightbox-sheet">
               <ExamFigure
                 question={question}
                 alt={figureAlt}
+                name={figureName}
                 unavailableLabel={dict.imageUnavailable}
                 onUnavailable={markImageUnavailable}
                 onHold={() => setPdfTranslated(true)}
