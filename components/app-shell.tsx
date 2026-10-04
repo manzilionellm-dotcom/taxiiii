@@ -56,6 +56,16 @@ export function AppShell({ children }: { children: ReactNode }) {
   }, [state.profile.locale]);
 
   if (!hydrated) {
+    // The splash replaces the shell, but the homepage FAQ must stay in the
+    // raw HTML (no JS). Other routes keep the splash-only first paint.
+    if (pathname === "/") {
+      return (
+        <>
+          <SplashScreen />
+          <div className="app-main mx-auto w-full max-w-5xl pb-16">{children}</div>
+        </>
+      );
+    }
     return <SplashScreen />;
   }
 

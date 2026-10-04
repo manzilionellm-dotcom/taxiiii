@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "node scripts/maybe-import.mjs && next build",
     "start": "next start",
+    "aio:llms": "node scripts/aio-llms.mjs",
+    "aio:check": "node scripts/aio-check.mjs",
     "lint": "eslint",
     "manzi:apply": "node scripts/recover-htm-bkort-facit.mjs && node scripts/apply-manzi-100-delta.mjs && node scripts/gen-pdf-links-patch.mjs && node scripts/apply-manzi-100-media-keys.mjs",
     "land:100c": "node scripts/land-manzi-100c-gz.mjs && node scripts/apply-manzi-100c-bank-delta.mjs",
