@@ -24,6 +24,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://taxiiii.vercel.app"),
+    openGraph: { type: "website", siteName: "KörkortGO", title: "KörkortGO", images: [{ url: "https://taxiiii.vercel.app/social-share-v1.png", width: 1200, height: 630, alt: "KörkortGO" }] },
+    twitter: { card: "summary_large_image", title: "KörkortGO", images: ["https://taxiiii.vercel.app/social-share-v1.png"] },
   title: documentTitle(),
   description: documentDescription(),
   applicationName: BRAND.appName,
