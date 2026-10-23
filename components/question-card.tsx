@@ -13,6 +13,7 @@ import {
 } from "@/components/glossary";
 import { ProtectedImage } from "@/components/protected-image";
 import { glossSentence } from "@/lib/glossary";
+import { t } from "@/lib/i18n";
 import { displayFrench, distractorNote, takeawayFor } from "@/lib/questions/review.mjs";
 import { isRealFrenchText } from "@/lib/questions/french-text";
 import {
